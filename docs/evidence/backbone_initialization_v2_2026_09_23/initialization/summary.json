@@ -1,0 +1,12 @@
+{
+  "status": "INITIALIZATION_PASS",
+  "initialization_only": true,
+  "physical_trials_started": 0,
+  "completed_cases": [],
+  "outcomes": [],
+  "server": "0.9.15",
+  "client": "0.9.15",
+  "controller": "/root/autodl-tmp/ToolV2X/vendor/carla_agents_0_9_15/agents/navigation/controller.py",
+  "reference_preflight_passed": true,
+  "initialization_status": "INITIALIZATION_PASS"
+}

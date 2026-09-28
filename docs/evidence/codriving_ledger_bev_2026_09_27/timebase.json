@@ -1,0 +1,68 @@
+{
+  "version": "codriving_route_time_audit_v1",
+  "route": "routes_town05_11_w0_04_30_23_14_33",
+  "logged_collection_arguments": {
+    "host": "localhost",
+    "port": "40018",
+    "trafficManagerPort": "40518",
+    "trafficManagerSeed": "2000",
+    "carlaProviderSeed": "2000",
+    "debug": 0,
+    "record": "",
+    "timeout": "600",
+    "routes": "leaderboard/data/training_routes/cop3_split_routes/routes_town05_11.xml",
+    "scenarios": "leaderboard/data/scenarios/town05_all_scenarios.json",
+    "repetitions": 1,
+    "agent": "leaderboard/team_code/auto_pilot.py",
+    "agent_config": "data_collection/yamls/weather-0.yaml",
+    "track": "SENSORS",
+    "resume": 0,
+    "checkpoint": "/GPFS/public/InterFuser/dataset_cop3_lidarmini/weather-0/results/routes_town05_11.json",
+    "ego_num": 2,
+    "crazy_level": 3,
+    "crazy_propotion": 70
+  },
+  "configured_simulator_hz": 20.0,
+  "configured_save_skip_frames": 4,
+  "nominal_saved_dt_seconds": 0.2,
+  "future_times_seconds": [
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0,
+    1.2000000000000002,
+    1.4000000000000001,
+    1.6,
+    1.8,
+    2.0
+  ],
+  "status": "configuration_binding_supported_by_own_motion_not_timestamp_measurement",
+  "selection": {
+    "min_mean_speed_mps": 2.0,
+    "max_endpoint_speed_change_mps": 0.5,
+    "consecutive_saved_indices": true
+  },
+  "vehicles": [
+    {
+      "vehicle": 0,
+      "measurements": 161,
+      "selected_pairs": 21,
+      "dt_quantiles_05_50_95": [
+        0.19468781299842022,
+        0.20151467631073733,
+        0.20785736692052434
+      ]
+    },
+    {
+      "vehicle": 1,
+      "measurements": 160,
+      "selected_pairs": 55,
+      "dt_quantiles_05_50_95": [
+        0.19722076887342,
+        0.20063943521744496,
+        0.2032452729246228
+      ]
+    }
+  ]
+}

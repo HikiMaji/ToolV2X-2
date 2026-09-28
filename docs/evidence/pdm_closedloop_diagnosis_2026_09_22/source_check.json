@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-09-22T09:33:47.745132+00:00",
+  "v3_source_equalities": {
+    "scripts/probe_v2xverse_detector.py": true,
+    "scripts/probe_lidar_tracking.py": true,
+    "scripts/probe_pdm_closedloop.py": false,
+    "scripts/local_runtime_worker.py": true,
+    "scripts/check_review.py": true,
+    "src/planning/pdm_control.py": true,
+    "src/planning/pdm_core.py": true,
+    "tests/test_pdm_control.py": true,
+    "tests/test_pdm_core.py": true
+  },
+  "changed_runtime_files": [
+    "scripts/probe_pdm_closedloop.py"
+  ],
+  "other_source_files_unchanged": true
+}

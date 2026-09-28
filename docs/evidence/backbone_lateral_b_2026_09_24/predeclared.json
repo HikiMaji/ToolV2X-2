@@ -1,0 +1,19 @@
+{
+  "scope": "lateral reference repair B only",
+  "cases": [
+    "S2",
+    "L2"
+  ],
+  "runs_per_case": 1,
+  "min_lookahead_m": 1.0,
+  "time_lookahead_s": 0.4,
+  "speed_preview_s": 0.1,
+  "stationary": "reference actor tangent, no target-time advance",
+  "moving": "nearest projection onto given actor reference polyline then forward arc lookahead",
+  "endpoint": "tangent virtual direction only, not added to planned trajectory",
+  "longitudinal_and_pid": "unchanged",
+  "evaluation": "unchanged absolute time; full failures retained",
+  "continue_to_L2": "only if S2 completes with no abort/collision/delivery error and original lateral/yaw/geometry bounds pass; longitudinal-only quality failure does not prevent this independent lateral diagnostic",
+  "training": false,
+  "pf": false
+}

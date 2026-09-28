@@ -1,0 +1,46 @@
+test_forecast_state_geometry_velocity_are_time_consistent (test_pdm_core.PDMCoreTests) ... /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:88: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_original_cv_equivalence_and_same_time_repeat (test_pdm_core.PDMCoreTests) ... ok
+test_pristine_upstream_modules_match_adapted_cv (test_pdm_core.PDMCoreTests) ... ok
+test_receipted_p_f_use_existing_association_and_no_private_bypass (test_pdm_core.PDMCoreTests) ... ok
+test_state_and_future_path_change_actual_plan (test_pdm_core.PDMCoreTests) ... ok
+test_stationary_clear_road_has_positive_control_speed (test_pdm_core.PDMCoreTests) ... ok
+test_turn_then_stop_keeps_last_motion_heading (test_pdm_core.PDMCoreTests) ... ok
+test_unknown_fields_and_insufficient_horizon_fail_closed (test_pdm_core.PDMCoreTests) ... ok
+test_v1_default_contract_excludes_project_v2_fields (test_pdm_core.PDMCoreTests) ... ok
+test_v2_all_zero_scores_fail_closed_without_selecting_index_zero (test_pdm_core.PDMCoreTests) ... ok
+test_v2_emergency_is_an_explicit_controller_brake_action (test_pdm_core.PDMCoreTests) ... ok
+test_v2_has_the_fixed_horizon_required_by_the_control_adapter (test_pdm_core.PDMCoreTests) ... ok
+test_v2_injects_actual_wheelbase_into_the_real_tracker (test_pdm_core.PDMCoreTests) ... ok
+test_v2_rejects_nonfinite_candidate_arrays_before_rpc_serialization (test_pdm_core.PDMCoreTests) ... ok
+test_v2_requires_every_hard_metric_and_forward_finite_states (test_pdm_core.PDMCoreTests) ... ok
+test_v2_returns_the_selected_scored_simulation (test_pdm_core.PDMCoreTests) ... ok
+test_core_exists (test_pdm_core.PDMModuleTests) ... ok
+test_backward_or_nonfinite_plan_is_not_silently_clipped (test_pdm_control.ControlTests) ... ok
+test_controller_uses_ahead_of_body_waypoint_and_kmh (test_pdm_control.ControlTests) ... ok
+test_future_heading_rotates_rear_to_actor_offset (test_pdm_control.ControlTests) ... ok
+test_missing_nonfinite_or_nonincreasing_times_rejected (test_pdm_control.ControlTests) ... ok
+test_short_forward_rear_path_does_not_force_brake (test_pdm_control.ControlTests) ... ok
+test_startup_requires_stable_ego_and_observed_tracks (test_pdm_control.ControlTests) ... ok
+test_v2_infeasible_and_emergency_plans_hold_explicitly (test_pdm_control.ControlTests) ... ok
+test_v2_rejects_bad_dense_contract_and_no_forward_rollout (test_pdm_control.ControlTests) ... ok
+test_v2_rejects_preview_beyond_dense_horizon (test_pdm_control.ControlTests) ... ok
+test_v2_rejects_unscored_raw_generator_rollout (test_pdm_control.ControlTests) ... ok
+test_v2_short_forward_rollout_tracks_endpoint_without_inventing_stop (test_pdm_control.ControlTests) ... ok
+test_v2_stationary_feasible_rollout_enters_stop_before_no_forward_check (test_pdm_control.ControlTests) ... ok
+test_v2_stop_distance_is_rear_path_progress_not_rotating_body_offset (test_pdm_control.ControlTests) ... ok
+test_v2_stop_latch_uses_three_entry_conditions_and_hysteretic_release (test_pdm_control.ControlTests) ... ok
+test_v2_uses_simulated_half_second_speed_and_spatial_lookahead (test_pdm_control.ControlTests) ... ok
+test_zero_path_holds_brake (test_pdm_control.ControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 4.025s
+
+OK

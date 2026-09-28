@@ -1,0 +1,114 @@
+{
+  "scope": "offline diagnostic only; no regenerated evidence, training, detector/MTR/planner run",
+  "reference_transform": "unmodified upstream x_to_world; source sensor origin -> world -> receiver actor -> forward/left",
+  "localization_note": "current x/y used for geometric diagnosis, not substituted into model inputs",
+  "configurations": [
+    {
+      "label": "route11",
+      "route": "routes_town05_11_w0_04_30_23_14_33",
+      "windows": 11,
+      "selected_receiver_within_1m": 0,
+      "selected_receiver_within_old_3m_exclusion": 0,
+      "receiver_distance_m": {
+        "min": 3.7318371580550025,
+        "mean": 5.098180357393622,
+        "max": 7.87648469477762
+      },
+      "coordinate_error_m": {
+        "min": 1.3836471778055468,
+        "mean": 2.232753853916155,
+        "max": 3.1416694920505797
+      },
+      "wrong_scene_refs": 0,
+      "metrics_count": 3,
+      "metrics_null_identity": 3,
+      "metrics": {
+        "ADE_m": 0.10845645517110825,
+        "FDE_m": 0.29575801889101666,
+        "base_ADE_m": 0.15133237714568773,
+        "base_FDE_m": 0.38358137259880704
+      }
+    },
+    {
+      "label": "route05_28",
+      "route": "routes_town05_28_w0_05_01_11_18_29",
+      "windows": 11,
+      "selected_receiver_within_1m": 11,
+      "selected_receiver_within_old_3m_exclusion": 11,
+      "receiver_distance_m": {
+        "min": 0.028037209160651298,
+        "mean": 0.07841818269688611,
+        "max": 0.16669111586830737
+      },
+      "coordinate_error_m": {
+        "min": 6.268969403772575,
+        "mean": 10.744613982700685,
+        "max": 14.410513849446229
+      },
+      "wrong_scene_refs": 11,
+      "metrics_count": 11,
+      "metrics_null_identity": 11,
+      "metrics": {
+        "ADE_m": 0.7276560962200165,
+        "FDE_m": 1.7141754925251007,
+        "base_ADE_m": 0.5107686939564619,
+        "base_FDE_m": 1.1794182685288517
+      }
+    }
+  ],
+  "adjacent_split": {
+    "train_label_frames": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ],
+    "eval_label_frames": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "overlapping_label_frames": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ]
+  },
+  "artifact_sha256": {
+    "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/V2Xverse_official/opencood/utils/transformation_utils.py": "15cceb0e775ddf3bb4f6bf66760218c9e450771a5d650c206901800c9ffa1a81",
+    "/root/autodl-tmp/ToolV2X/outputs/codriving_real_detection_long_probe_2026_09_27/detections.json": "6363d7258a7a9afdf75c54675f7799b3753251b1282eb260390eef8fa691b309",
+    "/root/autodl-tmp/ToolV2X/outputs/codriving_real_detection_long_probe_2026_09_27/multi_windows.json": "fe00c51ffb9038b7a825dded0c80764d630b5916bb33739e541c53ab8c164a95",
+    "/root/autodl-tmp/ToolV2X/outputs/codriving_route11_p_train_checkpoint/metrics_per_sample.jsonl": "8492e13bc7a3d3f64ac59dc540cd505593722e85f1fbb523e586c3072ddb777a",
+    "/root/autodl-tmp/ToolV2X/outputs/crossroute_town05_28_detection_2026_09_28/detections.json": "cba76809afeb5b9a49c958d5844d6b03cc193bb69b5fa49fa7771867832b22a8",
+    "/root/autodl-tmp/ToolV2X/outputs/crossroute_town05_28_detection_2026_09_28/multi_windows.json": "8ea608dc6f385c00dc6f5f92a66213e6f967d90ab04c9bfeafeeb925aecf75bd",
+    "/root/autodl-tmp/ToolV2X/outputs/crossroute_town05_28_adapter_eval_2026_09_28/metrics_per_sample.jsonl": "d72c45f50af451b26eff53e41119e00d36b26cb39417d2ce2777eeba7cfd039a"
+  }
+}

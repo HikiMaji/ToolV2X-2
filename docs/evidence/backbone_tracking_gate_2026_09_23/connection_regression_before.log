@@ -1,0 +1,30 @@
+F
+======================================================================
+FAIL: test_client_connects_only_after_owned_listener_is_ready (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_tracking_runtime_contract.py", line 110, in __init__
+    with socket.create_connection((host, port), timeout=.2): pass
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_tracking_runtime_contract.py", line 123, in test_client_connects_only_after_owned_listener_is_ready
+    with m.owned_server(root, port, root) as client:
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/root/autodl-tmp/ToolV2X/scripts/probe_backbone_tracking.py", line 331, in owned_server
+    client=carla.Client('127.0.0.1',port);client.set_timeout(1.)
+  File "/root/autodl-tmp/ToolV2X/tests/test_tracking_runtime_contract.py", line 112, in __init__
+    raise AssertionError('client connected before server was listening') from exc
+AssertionError: client connected before server was listening
+
+----------------------------------------------------------------------
+Ran 1 test in 0.030s
+
+FAILED (failures=1)

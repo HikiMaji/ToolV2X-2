@@ -1,0 +1,196 @@
+{
+  "date": "2026-09-22T10:47:12.846484",
+  "scope": "User authorized deletion of only training_state.pt and optim_states.pt from the two specified roots",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/first_step/recovery-step000001/training_state.pt",
+      "bytes": 2726765370
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/checkpoint-epoch01/training_state.pt",
+      "bytes": 2726766266
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001900/training_state.pt",
+      "bytes": 2726766266
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001925/training_state.pt",
+      "bytes": 2726766266
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_check_v1/checkpoint-step000002/training_state.pt",
+      "bytes": 2726765370
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_continuous_v1/checkpoint-step000003/training_state.pt",
+      "bytes": 2726765370
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_epoch_v1/checkpoint-epoch01/training_state.pt",
+      "bytes": 2726766202
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_resume_v1/checkpoint-step000003/training_state.pt",
+      "bytes": 2726765370
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+      "bytes": 555251762
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_attfuse/checkpoint-3080/global_step3080/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 4441970834
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_cobevt/checkpoint-2310/global_step2310/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 4441970834
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_early/checkpoint-1540/global_step1540/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 4441970834
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_ego_only/checkpoint-2695/global_step2695/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 4441970834
+    },
+    {
+      "path": "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_v2xvit/checkpoint-3850/global_step3850/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 4441970834
+    }
+  ],
+  "bytes": 57350022938,
+  "deleted": [
+    "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/first_step/recovery-step000001/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/checkpoint-epoch01/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001900/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001925/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_training_check_v1/checkpoint-step000002/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_training_continuous_v1/checkpoint-step000003/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_training_epoch_v1/checkpoint-epoch01/training_state.pt",
+    "/root/autodl-tmp/ToolV2X/outputs/framework_training_resume_v1/checkpoint-step000003/training_state.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vgot_10ep_both_shallow_f2/checkpoint-4330/global_step4330/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f1/checkpoint-490/global_step490/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2/checkpoint-490/global_step490/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_attfuse/checkpoint-3080/global_step3080/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_cobevt/checkpoint-2310/global_step2310/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_early/checkpoint-1540/global_step1540/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_ego_only/checkpoint-2695/global_step2695/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+    "/root/autodl-tmp/V2V-GoT/LLaVA/checkpoints/llava-v1.5-7b-task-lora/llava-v1.5-7b-task-lora_v2v4real_3d_grounding_v2vllmq5_10ep_both_shallow_f2_v2xvit/checkpoint-3850/global_step3850/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt"
+  ],
+  "status": "complete",
+  "disk_free_bytes_after": 71004844032
+}

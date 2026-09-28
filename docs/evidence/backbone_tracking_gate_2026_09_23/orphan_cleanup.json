@@ -1,0 +1,9 @@
+{
+  "pid": 71801,
+  "group": 71793,
+  "purpose": "cleanup_diagnostic_owned_server_only",
+  "cmdline": "/root/autodl-tmp/CARLA_0.9.15/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping CarlaUE4 -RenderOffScreen -nosound -quality-level=Low -carla-rpc-port=2015 ",
+  "start_ticks": "221208190",
+  "error": "time-out of 3000ms while waiting for the simulator, make sure the simulator is ready and connected to 127.0.0.1:2015",
+  "action": "SIGKILL owned group after launcher had exited and server remained"
+}

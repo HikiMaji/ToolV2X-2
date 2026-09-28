@@ -1,0 +1,32 @@
+test_invalid_point_or_height_rejected (test_v2xverse_detector_probe.DetectorProbeTests) ... ERROR
+test_native_rotation_height_and_intensity (test_v2xverse_detector_probe.DetectorProbeTests) ... ERROR
+test_single_vehicle_reader_never_needs_peer_or_labels (test_v2xverse_detector_probe.DetectorProbeTests) ... ERROR
+
+======================================================================
+ERROR: test_invalid_point_or_height_rejected (test_v2xverse_detector_probe.DetectorProbeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_v2xverse_detector_probe.py", line 14, in test_invalid_point_or_height_rejected
+    from probe_v2xverse_detector import native_points
+ModuleNotFoundError: No module named 'probe_v2xverse_detector'
+
+======================================================================
+ERROR: test_native_rotation_height_and_intensity (test_v2xverse_detector_probe.DetectorProbeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_v2xverse_detector_probe.py", line 8, in test_native_rotation_height_and_intensity
+    from probe_v2xverse_detector import native_points
+ModuleNotFoundError: No module named 'probe_v2xverse_detector'
+
+======================================================================
+ERROR: test_single_vehicle_reader_never_needs_peer_or_labels (test_v2xverse_detector_probe.DetectorProbeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_v2xverse_detector_probe.py", line 18, in test_single_vehicle_reader_never_needs_peer_or_labels
+    from probe_v2xverse_detector import load_local_input
+ModuleNotFoundError: No module named 'probe_v2xverse_detector'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=3)

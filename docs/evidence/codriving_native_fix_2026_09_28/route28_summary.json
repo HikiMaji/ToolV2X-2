@@ -1,0 +1,40 @@
+{
+  "scope": "corrected_saved_detection_preparation_no_model_or_training",
+  "scene": "routes_town05_28_w0_05_01_11_18_29",
+  "source": "ego_vehicle_1",
+  "receiver": "ego_vehicle_0",
+  "execution_spec": {
+    "version": "codriving_native_inputs_v1",
+    "dt_seconds": 0.2,
+    "history_steps": 11,
+    "source_self_radius_m": 1.4,
+    "receiver_self_radius_m": 3.0,
+    "input_frames": 5,
+    "skip_frames": 1,
+    "output_points": 10,
+    "time_binding": "v2xverse_saved_frames_0p2s_v1"
+  },
+  "time_origin": "recording_relative_frame_times_config_period_not_sensor_timestamp",
+  "detector_sha256": "cba76809afeb5b9a49c958d5844d6b03cc193bb69b5fa49fa7771867832b22a8",
+  "decisions": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "tracking_frames": 21,
+  "samples": 11,
+  "source_self_excluded": 21,
+  "receiver_target_exclusions": 11,
+  "empty_return_samples": 6,
+  "empty_current_raster_samples": 11,
+  "learned_model_calls": 0,
+  "training_updates": 0
+}

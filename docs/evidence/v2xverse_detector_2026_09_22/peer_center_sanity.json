@@ -1,0 +1,137 @@
+{
+  "scope": "offline counterpart localization consistency only; both poses NOT given to detector; nearest-center match is not tracking or AP",
+  "checks": [
+    {
+      "vehicle": 0,
+      "frame": 10,
+      "peer_center_in_network_xy": [
+        11.615757952996098,
+        0.060281362498742976
+      ],
+      "nearest_detected_center": [
+        11.6171875,
+        0.054931640625
+      ],
+      "center_distance_m": 0.005537429797547612
+    },
+    {
+      "vehicle": 0,
+      "frame": 11,
+      "peer_center_in_network_xy": [
+        11.59328925397248,
+        0.040706124437569886
+      ],
+      "nearest_detected_center": [
+        11.625,
+        -0.113037109375
+      ],
+      "center_distance_m": 0.1569794679465068
+    },
+    {
+      "vehicle": 0,
+      "frame": 12,
+      "peer_center_in_network_xy": [
+        11.571314169703989,
+        0.11014062648743767
+      ],
+      "nearest_detected_center": [
+        11.6171875,
+        0.111328125
+      ],
+      "center_distance_m": 0.045888697793294186
+    },
+    {
+      "vehicle": 0,
+      "frame": 13,
+      "peer_center_in_network_xy": [
+        11.550559261088473,
+        0.18683108655505815
+      ],
+      "nearest_detected_center": [
+        11.587890625,
+        0.1741943359375
+      ],
+      "center_distance_m": 0.039412157993
+    },
+    {
+      "vehicle": 0,
+      "frame": 14,
+      "peer_center_in_network_xy": [
+        11.62196346791221,
+        0.14068307346151285
+      ],
+      "nearest_detected_center": [
+        11.646484375,
+        0.12744140625
+      ],
+      "center_distance_m": 0.027867842308806585
+    },
+    {
+      "vehicle": 1,
+      "frame": 10,
+      "peer_center_in_network_xy": [
+        -14.210288571280808,
+        -0.11907092426179001
+      ],
+      "nearest_detected_center": [
+        -14.12109375,
+        -0.30029296875
+      ],
+      "center_distance_m": 0.20198303283147823
+    },
+    {
+      "vehicle": 1,
+      "frame": 11,
+      "peer_center_in_network_xy": [
+        -14.188637669378092,
+        -0.06701043042969425
+      ],
+      "nearest_detected_center": [
+        -14.115234375,
+        -0.070556640625
+      ],
+      "center_distance_m": 0.07348890550488686
+    },
+    {
+      "vehicle": 1,
+      "frame": 12,
+      "peer_center_in_network_xy": [
+        -14.167054839538668,
+        -0.1092608614812946
+      ],
+      "nearest_detected_center": [
+        -14.126953125,
+        -0.1038818359375
+      ],
+      "center_distance_m": 0.04046086287687925
+    },
+    {
+      "vehicle": 1,
+      "frame": 13,
+      "peer_center_in_network_xy": [
+        -14.14721891763584,
+        -0.12612156446857095
+      ],
+      "nearest_detected_center": [
+        -14.146484375,
+        -0.08447265625
+      ],
+      "center_distance_m": 0.041655385110244914
+    },
+    {
+      "vehicle": 1,
+      "frame": 14,
+      "peer_center_in_network_xy": [
+        -14.22059275653369,
+        -0.13982794132847168
+      ],
+      "nearest_detected_center": [
+        -14.296875,
+        -0.117919921875
+      ],
+      "center_distance_m": 0.07936587418170975
+    }
+  ],
+  "mean_center_distance_m": 0.0712639656344354,
+  "max_center_distance_m": 0.20198303283147823
+}

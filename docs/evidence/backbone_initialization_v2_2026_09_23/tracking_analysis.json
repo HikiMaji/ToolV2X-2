@@ -1,0 +1,88 @@
+{
+  "status": "FAIL",
+  "effective_cases": 1,
+  "effective_controls": 150,
+  "record_count": 151,
+  "initial_target_distance_m": 9.32480947089769e-05,
+  "maximum_initial_hold_abs_steer": 0.800000011920929,
+  "final_x_reference_m": 16.0,
+  "final_x_actual_m": 13.90252873908178,
+  "independent_failures": [
+    "illegal_control",
+    "steer_slew",
+    "longitudinal_max",
+    "longitudinal_rmse",
+    "moving_speed_max",
+    "longitudinal_acceleration",
+    "longitudinal_jerk_p99",
+    "start_midpoint_speed",
+    "stop_end_longitudinal"
+  ],
+  "physical_failures_excluding_float_boundary_flags": [
+    "longitudinal_max",
+    "longitudinal_rmse",
+    "moving_speed_max",
+    "longitudinal_acceleration",
+    "longitudinal_jerk_p99",
+    "start_midpoint_speed",
+    "stop_end_longitudinal"
+  ],
+  "metrics": {
+    "expected_samples": 151,
+    "observed_samples": 151,
+    "expected_controls": 150,
+    "observed_controls": 150,
+    "max_steer_command_change": 0.10000002384185791,
+    "max_abs_e_long_m": 2.1002906362848286,
+    "rmse_e_long_m": 1.287495028182638,
+    "max_abs_e_lat_m": 0.0016923306723119454,
+    "rmse_e_lat_m": 0.0005884633436461155,
+    "max_abs_e_yaw_rad": 0.0008664191491368736,
+    "min_forward_speed_mps": -0.009839601558183782,
+    "max_forward_speed_mps": 2.1581687508752863,
+    "max_rear_speed_mps": 2.15816875088025,
+    "moving_speed_rmse_mps": 0.2865840227946373,
+    "max_abs_moving_speed_error_mps": 0.9174021340937135,
+    "initial_position_error_m": 9.38490404790345e-05,
+    "initial_yaw_error_rad": 1.7083832641948462e-08,
+    "initial_wheel_steer_max_rad": 0.0,
+    "min_geometry_margin_m": 0.6832302808761597,
+    "max_abs_a_long_mps2": 6.187060245178974,
+    "max_abs_a_lat_mps2": 0.06072641280306968,
+    "p99_abs_j_long_mps3": 65.68687514848058,
+    "max_abs_j_long_mps3": 67.33921132689078,
+    "starts": [
+      {
+        "start": 1.0,
+        "end": 5.0,
+        "midpoint_speed_mps": 0.16642201974602472,
+        "end_speed_mps": 2.0727211416617024
+      }
+    ],
+    "stops": [
+      {
+        "start": 0.0,
+        "end": 1.0,
+        "strict_start": 1.0,
+        "max_speed_mps": 0.0061322613967358525,
+        "path_m": 0.0,
+        "net_displacement_m": 0.0,
+        "end_abs_e_long_m": 2.1514894193330747e-05
+      },
+      {
+        "start": 13.0,
+        "end": 15.0,
+        "strict_start": 14.0,
+        "max_speed_mps": 3.8146988444242644e-05,
+        "path_m": 8.31814058869817e-06,
+        "net_displacement_m": 6.940852805165164e-06,
+        "end_abs_e_long_m": 2.097471260918219
+      }
+    ],
+    "native_velocity_vector_diff_max_mps": null,
+    "native_speed_diff_max_mps": null,
+    "turn": null
+  },
+  "initialization_status": "INITIALIZATION_PASS",
+  "explanation": "Near-coincident waypoint direction causes stationary steering saturation. Longitudinal root cause not isolated. No criteria changed."
+}

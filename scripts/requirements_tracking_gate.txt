@@ -1,0 +1,4 @@
+# Python 3.10; CARLA server must separately be exactly 0.9.15.
+carla==0.9.15
+numpy==1.24.2
+shapely==2.0.7

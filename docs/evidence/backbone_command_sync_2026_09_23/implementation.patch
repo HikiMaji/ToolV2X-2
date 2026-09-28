@@ -1,0 +1,397 @@
+--- before/scripts/probe_backbone_tracking.py
++++ after/scripts/probe_backbone_tracking.py
+@@ -27,7 +27,8 @@
+ ORIGIN = np.array([50., 0.])  # right-handed world XY
+ NOMINAL = dict(front=3.848486, rear=1.053197, width=2.128324,
+                box_center_y=0., box_yaw=0.)
+-SPEC = dict(version='toolv2x_backbone_tracking_gate_v2',
++SPEC = dict(version='toolv2x_backbone_tracking_gate_v3',
++            command_submission_version='toolv2x_control_submission_v1',
+             carla_version='0.9.15', python_version='3.10',
+             blueprint='vehicle.lincoln.mkz_2017', dt=DT,
+             lateral_pid=dict(K_P=1.95, K_I=.05, K_D=.2, dt=DT),
+@@ -106,7 +107,7 @@
+ 
+ def archive_sources(out):
+     paths = ['scripts/probe_backbone_tracking.py', 'src/planning/tracking_reference.py',
+-             'src/evaluation/tracking_gate.py', 'docs/backbone_initialization_review_2026_09_23.md', 'docs/backbone_decision_and_tracking_spec_2026_09_22.md',
++             'src/evaluation/tracking_gate.py', 'docs/backbone_initialization_review_2026_09_23.md', 'docs/tracking_failure_diagnosis_2026_09_23.md', 'docs/backbone_decision_and_tracking_spec_2026_09_22.md',
+              'vendor/carla_agents_0_9_15/agents/navigation/controller.py',
+              'vendor/carla_agents_0_9_15/agents/tools/misc.py', 'vendor/carla_agents_0_9_15/PROVENANCE.json']
+     for name in paths:
+@@ -265,13 +266,32 @@
+                 cumulative=float(np.linalg.norm(np.diff(points,axis=0),axis=1).sum()), passed=maximum<=.02)
+ 
+ 
+-def initialize_actor(actor, world, geometry, case_dir, carla):
++def submit_control(client, world, actor, control, carla, journal, stage):
++    """Acknowledge server receipt without advancing simulation time."""
++    source=world.get_snapshot().frame
++    ack=dict(version='toolv2x_control_submission_v1',stage=stage,actor_id=actor.id,
++             source_frame=source,expected_next_frame=source+1,request=control_dict(control),
++             do_tick_cue=False,accepted=False,error=None)
++    try:
++        responses=client.apply_batch_sync([carla.command.ApplyVehicleControl(actor.id,control)],False)
++        if len(responses)!=1:raise RuntimeError('expected one command response')
++        if responses[0].error:raise RuntimeError(str(responses[0].error))
++        if responses[0].actor_id!=actor.id:raise RuntimeError('response actor mismatch')
++        if world.get_snapshot().frame!=source:raise RuntimeError('world advanced during command submission')
++        ack['accepted']=True
++    except Exception as exc:ack['error']=str(exc)
++    with Path(journal).open('a') as stream:stream.write(json.dumps(ack,allow_nan=False)+'\n')
++    if not ack['accepted']:raise RuntimeError('control submission failed: '+ack['error'])
++    return ack
++
++
++def initialize_actor(actor, world, geometry, case_dir, carla, client):
+     from evaluation.tracking_gate import audit_initialization
+     records=[];result=None
+     for phase,count,manual in [('settle',20,False),('engage_drive',1,True),('verify_automatic',9,False)]:
+         command=dict(throttle=0.,brake=1.,steer=0.,hand_brake=False,reverse=False,
+                      manual_gear_shift=manual,gear=1 if manual else 0)
+-        actor.apply_control(carla.VehicleControl(**command))
++        submit_control(client,world,actor,carla.VehicleControl(**command),carla,case_dir/'command_submissions.jsonl','initialization:'+phase)
+         for _ in range(count):
+             frame=world.tick();snapshot=world.get_snapshot();raw=raw_vehicle(actor)
+             records.append(dict(phase=phase,frame=frame,timestamp=snapshot.timestamp.elapsed_seconds,
+@@ -381,17 +401,17 @@
+         log.close()
+ 
+ 
+-def execute(out, port, carla_root, initialization_only=False):
++def execute(out, port, carla_root, initialization_only=False, s2_only=False):
+     import carla
+     validate_versions('0.9.15',carla.Client('127.0.0.1',port).get_client_version(),sys.version_info)
+     with owned_server(carla_root,port,out) as client:
+-        return execute_connected(out,client,initialization_only)
+-
+-
+-def execute_connected(out, client, initialization_only=False):
++        return execute_connected(out,client,initialization_only,s2_only)
++
++
++def execute_connected(out, client, initialization_only=False, s2_only=False):
+     import carla
+     from planning.tracking_reference import CASES, case_spec
+-    from evaluation.tracking_gate import audit_trial
++    from evaluation.tracking_gate import audit_trial, control_echo_matches, audit_control_delivery
+     sys.path.insert(0, str(ROOT / 'vendor/carla_agents_0_9_15'))
+     from agents.navigation.controller import VehiclePIDController
+     import agents.navigation.controller as controller_module
+@@ -403,7 +423,7 @@
+         vertex_distance=1., max_road_length=50., wall_height=0., additional_width=0.,
+         smooth_junctions=False, enable_mesh_visibility=True, enable_pedestrian_navigation=False))
+     actors = []; sensors = []
+-    summary = dict(status='PREFLIGHT', initialization_only=initialization_only, physical_trials_started=0, completed_cases=[], outcomes=[],
++    summary = dict(status='PREFLIGHT', initialization_only=initialization_only, s2_only=s2_only, physical_trials_started=0, completed_cases=[], outcomes=[],
+                    server=client.get_server_version(), client=client.get_client_version(), controller=str(controller_module.__file__))
+     write_json(out / 'summary.json', summary)
+     recording_active=False
+@@ -424,7 +444,8 @@
+             user=pwd.getpwnam('autodl');os.chown(recordings,user.pw_uid,user.pw_gid)
+         # One stationary 2-second geometry read, before all scored trials. No PID.
+         calibration = world.spawn_actor(blueprint, carla.Transform(carla.Location(x=50., y=0., z=1.)))
+-        actors.append(calibration); calibration.apply_control(carla.VehicleControl(brake=1.))
++        actors.append(calibration)
++        submit_control(client,world,calibration,carla.VehicleControl(brake=1.),carla,out/'calibration_commands.jsonl','calibration')
+         for _ in range(20): world.tick()
+         raw=raw_vehicle(calibration); g=vehicle_geometry(raw['pose_lh'],raw['wheel_world_cm'],raw['box'])
+         failures=geometry_gate(g)
+@@ -433,7 +454,7 @@
+         if failures: raise ValueError('vehicle geometry preflight failed: '+','.join(failures))
+         refs, corridors=prepare_references(out,g['geometry'])
+         summary['reference_preflight_passed']=True
+-        for name in (CASES[:1] if initialization_only else CASES):
++        for name in (CASES[:1] if initialization_only or s2_only else CASES):
+             case_dir=out/name; case_dir.mkdir(); events=[]; rows=[]; initialization=[]
+             spec=case_spec(name); n=round(spec['duration']/DT); begun=False
+             actor = world.spawn_actor(blueprint, carla.Transform(carla.Location(
+@@ -444,7 +465,7 @@
+             sensor.listen(lambda e, sink=events: sink.append(dict(frame=e.frame, timestamp=e.timestamp, other_type=e.other_actor.type_id,
+                                                        impulse=float(e.normal_impulse.length()))))
+             try:
+-                initialization=initialize_actor(actor,world,g,case_dir,carla)
++                initialization=initialize_actor(actor,world,g,case_dir,carla,client)
+                 summary['initialization_status']=initialization['status']
+                 if not initialization['passed']:
+                     raise ValueError('initialization failed: '+','.join(initialization['failures']))
+@@ -469,6 +490,8 @@
+                         row['collision_events']=[e for e in list(events) if f0<e['frame']<=row['frame']]
+                         if row['frame']!=f0+i or abs(row['elapsed_sim_time']-i*DT)>1e-5:
+                             abort='frame_or_timestamp_gap'
++                        if i and not control_echo_matches(rows[-1]['control'],row['last_control']):
++                            abort=abort or 'control_echo_mismatch'
+                         abort=abort or immediate_failure(row,refs[name][i],corridors[name],rows[-1] if rows else None)
+                         if i<n and not abort:
+                             target=control_reference(refs[name],i*DT,g['rear_to_actor_xy']); row['target']=target
+@@ -478,11 +501,19 @@
+                             row['control']=control_dict(control)
+                             if not np.isfinite([control.throttle,control.brake,control.steer]).all():
+                                 abort='nonfinite_control'
++                        if i<n and not abort:
++                            try:
++                                row['command_submission']=submit_control(client,world,actor,control,carla,case_dir/'command_submissions.jsonl','tracking')
++                            except RuntimeError as exc:
++                                abort='command_submission_failed';row['submission_error']=str(exc)
+                         row['abort_reason']=abort; rows.append(row)
+                         stream.write(json.dumps(row,allow_nan=False)+'\n');stream.flush()
+-                        if abort: actor.apply_control(carla.VehicleControl(brake=1.));break
++                        if abort:
++                            if abort!='command_submission_failed':
++                                try:submit_control(client,world,actor,carla.VehicleControl(brake=1.),carla,case_dir/'command_submissions.jsonl','abort')
++                                except RuntimeError as exc:summary.setdefault('abort_control_errors',[]).append(str(exc))
++                            break
+                         if i<n:
+-                            actor.apply_control(control)
+                             if not begun:
+                                 begun=True;summary['physical_trials_started']+=1
+                                 write_json(out/'summary.json',summary)
+@@ -496,8 +527,10 @@
+                 write_json(case_dir/'collision_events.json',dict(all_events=events,driving_events=driving_events,initial_frame=f0,recorder=recorder))
+                 if driving_events: rows[-1]['collision_events']=driving_events
+                 audit=audit_trial(spec,refs[name],rows,corridors[name])
++                delivery=audit_control_delivery(rows,[json.loads(line) for line in (case_dir/'command_submissions.jsonl').read_text().splitlines()],actor_id=actor.id)
++                audit['metrics']['command_delivery']=delivery
+                 audit['metrics']['recorder']=coverage
+-                extra=([abort] if abort else [])+(['collision'] if driving_events or coverage['collision_count'] else [])
++                extra=delivery['failures']+([abort] if abort else [])+(['collision'] if driving_events or coverage['collision_count'] else [])
+                 if not coverage['complete']: extra.append('recorder_incomplete')
+                 if extra:
+                     audit['passed']=False;audit['status']='FAIL'
+@@ -520,6 +553,7 @@
+                         except RuntimeError as exc: summary.setdefault('cleanup_errors',[]).append(str(exc))
+                         actors.remove(item)
+                 client.set_timeout(60.)
++        if s2_only and summary['completed_cases']==['S2'] and summary['outcomes'][0]['passed']:summary['status']='S2_COMPLETE_PENDING_AUDIT'
+         if len(summary['completed_cases'])==8 and all(x['passed'] for x in summary['outcomes']): summary['status']='TRACKING_COMPLETE_PENDING_AUDIT'
+     except Exception as exc:
+         summary['status']=('INITIALIZATION_FAIL' if initialization_only else
+@@ -547,24 +581,26 @@
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--output',required=True)
+     parser.add_argument('--execute',action='store_true',help='launch a dedicated 0.9.15 server process group; default is offline preparation')
++    parser.add_argument('--s2-only',action='store_true',help='one fixed S2 diagnostic; never continue into other cases')
+     parser.add_argument('--initialization-only',action='store_true',help='execute one startup check without constructing PID or running a tracking case')
+     parser.add_argument('--port',type=int,default=2015)
+     parser.add_argument('--carla-root',help='0.9.15 package directory; required only with --execute')
+     args=parser.parse_args()
+     if args.execute and not args.carla_root: parser.error('--execute requires --carla-root; existing servers are never reused')
++    if args.s2_only and (not args.execute or args.initialization_only): parser.error('--s2-only requires --execute and excludes --initialization-only')
+     if args.initialization_only and not args.execute: parser.error('--initialization-only requires --execute')
+     out=Path(args.output).resolve();out.mkdir(parents=True,exist_ok=False)
+-    write_json(out/'spec.json',SPEC);(out/'fixture.xodr').write_text(fixture_opendrive());archive_sources(out)
++    write_json(out/'spec.json',dict(SPEC,execution_mode='s2_only' if args.s2_only else 'initialization_only' if args.initialization_only else 'full_gate'));(out/'fixture.xodr').write_text(fixture_opendrive());archive_sources(out)
+     try:
+         if args.execute:
+-            result=execute(out,args.port,args.carla_root,args.initialization_only)
++            result=execute(out,args.port,args.carla_root,args.initialization_only,args.s2_only)
+         else:
+             prepare_references(out,NOMINAL)
+             result=dict(status='PREPARED_NOT_EXECUTED',nominal_geometry=NOMINAL,physical_trials_started=0,
+                         limitation='Nominal geometry only. Actual server/vehicle geometry/physics and tracking remain unverified.')
+             write_json(out/'summary.json',result)
+         print(json.dumps(result),flush=True)
+-        return 0 if result['status'] in ['PASS','INITIALIZATION_PASS','PREPARED_NOT_EXECUTED','TRACKING_COMPLETE_PENDING_AUDIT'] else 1
++        return 0 if result['status'] in ['PASS','S2_COMPLETE_PENDING_AUDIT','INITIALIZATION_PASS','PREPARED_NOT_EXECUTED','TRACKING_COMPLETE_PENDING_AUDIT'] else 1
+     except Exception as exc:
+         if not (out/'summary.json').exists():
+             write_json(out/'summary.json',dict(status='PREPARATION_OR_CONNECTION_FAIL',physical_trials_started=0,error=str(exc)))
+--- before/src/evaluation/tracking_gate.py
++++ after/src/evaluation/tracking_gate.py
+@@ -372,6 +372,49 @@
+ 
+ 
+ 
++def control_echo_matches(requested, readback):
++    """Transport equality in CARLA float32 fields; auto gear is simulator-owned."""
++    try:
++        a=np.array([requested[k] for k in ('throttle','brake','steer')],dtype=np.float32)
++        b=np.array([readback[k] for k in ('throttle','brake','steer')],dtype=np.float32)
++        return bool(np.isfinite(a).all() and np.isfinite(b).all() and np.array_equal(a,b)
++            and all(requested[k]==readback[k] for k in ('hand_brake','reverse','manual_gear_shift'))
++            and (not requested['manual_gear_shift'] or requested['gear']==readback['gear']))
++    except (KeyError,TypeError,ValueError,OverflowError):return False
++
++
++def audit_control_delivery(frames, submissions, *, actor_id=None):
++    """Validate acknowledged commands against the next physical-frame readback."""
++    failures=[];observed=0
++    def fail(name):
++        if name not in failures:failures.append(name)
++    selected=[a for a in submissions if a.get('stage')=='tracking']
++    embedded=[r.get('command_submission') for r in frames if r.get('control') is not None]
++    if selected!=embedded:fail('submission_journal_mismatch')
++    for i,row in enumerate(frames):
++        if row.get('control') is None:continue
++        try:
++            ack=row['command_submission']
++            if (ack['version']!='toolv2x_control_submission_v1' or ack['accepted'] is not True
++                    or ack['error'] is not None or ack['do_tick_cue'] is not False
++                    or ack['source_frame']!=row['frame'] or ack['expected_next_frame']!=row['frame']+1
++                    or ack['stage']!='tracking' or ack['request']!=row['control']
++                    or (actor_id is not None and ack['actor_id']!=actor_id)):
++                fail('command_ack_contract')
++            following=frames[i+1]
++            if (type(row['frame']) is not int or type(following['frame']) is not int
++                    or following['frame']!=row['frame']+1
++                    or not np.isfinite([row['timestamp'],following['timestamp']]).all()
++                    or abs(following['timestamp']-row['timestamp']-DT)>1e-6):
++                fail('command_tick_binding')
++            if not control_echo_matches(row['control'],following['last_control']):fail('control_echo_mismatch')
++            observed+=1
++        except (KeyError,IndexError,TypeError,ValueError):fail('command_delivery_incomplete')
++    if not embedded:fail('no_tracking_commands')
++    return dict(version='toolv2x_control_delivery_audit_v1',passed=not failures,failures=failures,
++                observed_transitions=observed,attempted_commands=len(embedded))
++
++
+ def audit_case_dir(case_dir):
+     """Fail-closed independent replay of one runner output directory."""
+     case_dir = Path(case_dir).resolve()
+@@ -411,6 +454,21 @@
+         additions.append('recorder_sidecar_mismatch')
+     if collision['driving_events']:
+         additions.append('collision')
++    run_spec=case_dir.parent/'spec.json'
++    metadata=_read_json(run_spec) if run_spec.is_file() else {}
++    journal=case_dir/'command_submissions.jsonl'
++    modern=(journal.exists() or any('command_submission' in row for row in frames)
++            or metadata.get('version')=='toolv2x_backbone_tracking_gate_v3'
++            or 'command_submission_version' in metadata)
++    if modern:
++        if (metadata.get('version')!='toolv2x_backbone_tracking_gate_v3'
++                or metadata.get('command_submission_version')!='toolv2x_control_submission_v1'):
++            additions.append('command_submission_metadata')
++        if not journal.is_file():additions.append('submission_journal_missing')
++        else:
++            delivery=audit_control_delivery(frames,[json.loads(line) for line in journal.read_text().splitlines()],actor_id=recorder['ego_id'])
++            result['metrics']['command_delivery']=delivery
++            additions.extend(delivery['failures'])
+     result['failures'] = list(dict.fromkeys(result['failures'] + additions))
+     result['passed'] = not result['failures']
+     result['status'] = 'PASS' if result['passed'] else 'FAIL'
+--- before/tests/test_tracking_runtime_contract.py
++++ after/tests/test_tracking_runtime_contract.py
+@@ -154,12 +154,17 @@
+             def tick(self):self.i+=1;return 100+self.i
+             def get_snapshot(self):return types.SimpleNamespace(frame=100+self.i,timestamp=types.SimpleNamespace(elapsed_seconds=10.+self.i*.1))
+         world=World();commands=[]
+-        actor=types.SimpleNamespace(apply_control=lambda c:commands.append(vars(c).copy()),
++        actor=types.SimpleNamespace(id=7,
+             get_control=lambda:types.SimpleNamespace(**rows[world.i]['readback_control']),get_wheel_steer_angle=lambda w:0.)
+-        carla=types.SimpleNamespace(VehicleControl=lambda **kw:types.SimpleNamespace(**kw),
++        carla=types.SimpleNamespace(command=types.SimpleNamespace(ApplyVehicleControl=lambda actor_id,c:(actor_id,c)),
++            VehicleControl=lambda **kw:types.SimpleNamespace(**kw),
+             VehicleWheelLocation=types.SimpleNamespace(FL_Wheel=0,FR_Wheel=1))
++        def batch(values,do_tick):
++            self.assertFalse(do_tick);commands.append(vars(values[0][1]).copy())
++            return [types.SimpleNamespace(actor_id=7,error='')]
++        client=types.SimpleNamespace(apply_batch_sync=batch)
+         with patch.object(runtime,'raw_vehicle',side_effect=lambda a:rows[world.i]['raw']):
+-            result=runtime.initialize_actor(actor,world,g,Path(directory),carla)
++            result=runtime.initialize_actor(actor,world,g,Path(directory),carla,client)
+         return result,world.i+1,commands
+ 
+     def test_fixed_three_phase_schedule_and_zero_throttle(self):
+@@ -198,5 +203,37 @@
+             self.assertEqual(saved,result)
+             self.assertEqual(saved['status'],'INITIALIZATION_FAIL')
+ 
++class CommandSubmissionTests(unittest.TestCase):
++    def test_ack_is_waited_for_without_advancing_clock(self):
++        from types import SimpleNamespace as NS
++        import tempfile,json
++        events=[]
++        world=NS(get_snapshot=lambda:NS(frame=100),tick=lambda:events.append('tick'))
++        actor=NS(id=7)
++        def batch(commands,do_tick):
++            events.append('ack');self.assertFalse(do_tick);self.assertEqual(commands[0][0],7)
++            return [NS(actor_id=7,error='')]
++        client=NS(apply_batch_sync=batch)
++        carla=NS(command=NS(ApplyVehicleControl=lambda actor_id,c:(actor_id,c)))
++        control=NS(throttle=.2,brake=0.,steer=.1,hand_brake=False,reverse=False,manual_gear_shift=False,gear=0)
++        with tempfile.TemporaryDirectory() as folder:
++            ack=runtime.submit_control(client,world,actor,control,carla,Path(folder)/'commands.jsonl','tracking')
++            self.assertEqual(events,['ack']);world.tick();self.assertEqual(events,['ack','tick'])
++            self.assertTrue(ack['accepted']);self.assertEqual(ack['expected_next_frame'],101)
++            self.assertEqual(json.loads((Path(folder)/'commands.jsonl').read_text()),ack)
++
++    def test_rejected_or_wrong_actor_response_is_saved_without_tick(self):
++        from types import SimpleNamespace as NS
++        import tempfile,json
++        for responses in [[NS(actor_id=7,error='rejected')],[],[NS(actor_id=8,error='')]]:
++            events=[];world=NS(get_snapshot=lambda:NS(frame=100),tick=lambda:events.append('tick'))
++            client=NS(apply_batch_sync=lambda c,t:responses)
++            carla=NS(command=NS(ApplyVehicleControl=lambda a,c:(a,c)))
++            control=NS(throttle=.2,brake=0.,steer=0.,hand_brake=False,reverse=False,manual_gear_shift=False,gear=0)
++            with tempfile.TemporaryDirectory() as folder:
++                with self.assertRaises(RuntimeError):runtime.submit_control(client,world,NS(id=7),control,carla,Path(folder)/'commands.jsonl','tracking')
++                saved=json.loads((Path(folder)/'commands.jsonl').read_text())
++                self.assertFalse(saved['accepted']);self.assertTrue(saved['error']);self.assertEqual(events,[])
++
+ if __name__ == '__main__':
+     unittest.main()
+--- before/tests/test_tracking_gate.py
++++ after/tests/test_tracking_gate.py
+@@ -277,6 +277,22 @@
+             bad[25]['readback_control']['gear']=0;init_path.write_text(json.dumps(bad))
+             self.assertIn('initialization_recompute_S2',audit_batch(root)['failures'])
+ 
++            # Modern transport evidence must never silently fall back to legacy auditing.
++            self.assertTrue(audit_case_dir(root/'S2')['passed'])
++            journal=root/'S2/command_submissions.jsonl';manifest=root/'spec.json'
++            for evidence in ['journal','embedded','v3','unknown']:
++                frame_path.write_text(original_frames)
++                if journal.exists():journal.unlink()
++                if manifest.exists():manifest.unlink()
++                if evidence=='journal':journal.write_text('')
++                elif evidence=='embedded':
++                    modern=[json.loads(line) for line in original_frames.splitlines()]
++                    modern[0]['command_submission']={'accepted':False}
++                    frame_path.write_text(''.join(json.dumps(row)+'\n' for row in modern))
++                elif evidence=='v3':manifest.write_text(json.dumps({'version':'toolv2x_backbone_tracking_gate_v3'}))
++                else:manifest.write_text(json.dumps({'command_submission_version':'unknown'}))
++                self.assertFalse(audit_case_dir(root/'S2')['passed'],evidence)
++
+ 
+ def initialization_fixture():
+     import copy
+@@ -336,5 +352,38 @@
+             else:rows[-1]['raw']['velocity_lh_mps'][0]=float('nan')
+             self.assertFalse(audit_initialization(rows,g)['passed'],change)
+ 
++class CommandDeliveryTests(unittest.TestCase):
++    @staticmethod
++    def fixture():
++        command=dict(throttle=.3,brake=0.,steer=.1,hand_brake=False,reverse=False,manual_gear_shift=False,gear=0)
++        echo=dict(command,throttle=float(np.float32(.3)),steer=float(np.float32(.1)),gear=1)
++        ack=dict(version='toolv2x_control_submission_v1',stage='tracking',actor_id=7,source_frame=10,
++                 expected_next_frame=11,accepted=True,error=None,do_tick_cue=False,request=command)
++        rows=[dict(frame=10,timestamp=1.,control=command,command_submission=ack),
++              dict(frame=11,timestamp=1.1,control=None,last_control=echo)]
++        return rows,[ack]
++
++    def test_echo_compares_float32_and_does_not_require_auto_requested_gear(self):
++        from evaluation.tracking_gate import audit_control_delivery,control_echo_matches
++        rows,acks=self.fixture()
++        self.assertTrue(control_echo_matches(rows[0]['control'],rows[1]['last_control']))
++        result=audit_control_delivery(rows,acks)
++        self.assertTrue(result['passed'],result)
++        self.assertEqual(result['observed_transitions'],1)
++
++    def test_old_control_missing_ack_or_extra_tick_cannot_pass(self):
++        from evaluation.tracking_gate import audit_control_delivery
++        for kind in ['stale','frame','error','missing','journal','request','actor','nan']:
++            rows,acks=self.fixture()
++            if kind=='stale':rows[1]['last_control']['throttle']=.1
++            elif kind=='frame':rows[1]['frame']=12
++            elif kind=='error':rows[0]['command_submission']['accepted']=False
++            elif kind=='missing':rows[0].pop('command_submission')
++            elif kind=='journal':acks=[]
++            elif kind=='actor':rows[0]['command_submission']['actor_id']=8
++            elif kind=='nan':rows[1]['timestamp']=float('nan')
++            else:rows[0]['control']=dict(rows[0]['control'],throttle=.7)
++            self.assertFalse(audit_control_delivery(rows,acks,actor_id=7)['passed'],kind)
++
+ if __name__ == '__main__':
+     unittest.main()

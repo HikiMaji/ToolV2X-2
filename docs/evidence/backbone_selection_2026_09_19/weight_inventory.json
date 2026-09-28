@@ -1,0 +1,240 @@
+[
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": ".gitattributes",
+    "bytes": 1519,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "README.md",
+    "bytes": 24,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "codriving/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "codriving/perception/config.yaml",
+    "bytes": 4127,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "codriving/perception/net_epoch_bestval_at16.pth",
+    "bytes": 32817341,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "codriving/planner/codriving_planner.ckpt",
+    "bytes": 20002291,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "early_fusion/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "early_fusion/perception/config.yaml",
+    "bytes": 4085,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "early_fusion/perception/net_epoch_bestval_at14.pth",
+    "bytes": 32817085,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "early_fusion/planner/early_fusion_planner.ckpt",
+    "bytes": 20002291,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "fcooper/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "fcooper/perception/config.yaml",
+    "bytes": 3673,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "fcooper/perception/net_epoch_bestval_at22.pth",
+    "bytes": 32320733,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "fcooper/planner/fcooper_planner.ckpt",
+    "bytes": 20444659,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "late_fusion/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "late_fusion/perception/config.yaml",
+    "bytes": 4026,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "late_fusion/perception/net_epoch_bestval_at16.pth",
+    "bytes": 32817341,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "late_fusion/planner/late_fusion_planner.ckpt",
+    "bytes": 20002291,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "no_collaboration/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "no_collaboration/perception/config.yaml",
+    "bytes": 4060,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "no_collaboration/perception/net_epoch_bestval_at16.pth",
+    "bytes": 32817341,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "no_collaboration/planner/no_collaboration_planner.ckpt",
+    "bytes": 20002291,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "v2xvit/.DS_Store",
+    "bytes": 6148,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "v2xvit/perception/config.yaml",
+    "bytes": 4562,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "v2xvit/perception/net_epoch_bestval_at26.pth",
+    "bytes": 53962897,
+    "type": "file"
+  },
+  {
+    "repository": "gjliu/v2xverse",
+    "kind": "models",
+    "path": "v2xvit/planner/v2xvit_planner.ckpt",
+    "bytes": 20444659,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": ".gitattributes",
+    "bytes": 1665,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "LICENSE",
+    "bytes": 11346,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "README.md",
+    "bytes": 7357,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "assets/figures/omniv2x_architecture.png",
+    "bytes": 750543,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "assets/figures/omniv2x_teaser.png",
+    "bytes": 307546,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "docs/CHECKPOINTS.md",
+    "bytes": 3730,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "omniv2x_dairv2x_map.ckpt",
+    "bytes": 886817975,
+    "type": "file"
+  },
+  {
+    "repository": "AndyPJT/OmniV2X",
+    "kind": "models",
+    "path": "omniv2x_dairv2x_no_map.ckpt",
+    "bytes": 862446982,
+    "type": "file"
+  }
+]

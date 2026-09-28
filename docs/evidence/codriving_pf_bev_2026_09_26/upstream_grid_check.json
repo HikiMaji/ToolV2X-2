@@ -1,0 +1,52 @@
+{
+  "scope": "original rasterizer geometry check only; no detector/MTR/planner evaluation",
+  "source": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/V2Xverse_official/opencood/utils/occ_render.py",
+  "grid_checks": [
+    {
+      "box": [
+        10.0,
+        0.0,
+        4.0,
+        2.0,
+        0.0
+      ],
+      "iou_thresholded": 1.0,
+      "centroid_error_pixels": 0.0
+    },
+    {
+      "box": [
+        10.0,
+        4.0,
+        4.0,
+        2.0,
+        0.0
+      ],
+      "iou_thresholded": 1.0,
+      "centroid_error_pixels": 0.0
+    },
+    {
+      "box": [
+        -5.0,
+        -4.0,
+        4.0,
+        2.0,
+        0.7
+      ],
+      "iou_thresholded": 0.9411764705882353,
+      "centroid_error_pixels": 0.0
+    },
+    {
+      "box": [
+        35.0,
+        0.0,
+        4.0,
+        2.0,
+        0.3
+      ],
+      "iou_thresholded": 0.9702970297029703,
+      "centroid_error_pixels": 0.03884685560753838
+    }
+  ],
+  "bitwise_equivalent": false,
+  "reason": "binary pixel-centre mask versus upstream matplotlib antialiasing and polygon edges"
+}

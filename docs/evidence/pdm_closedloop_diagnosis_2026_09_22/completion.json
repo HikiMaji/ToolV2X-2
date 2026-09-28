@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-09-22T09:37:29.197188+00:00",
+  "targeted_tests": {
+    "count": 16,
+    "seconds": 3.518,
+    "status": "PASS"
+  },
+  "lightweight_tests": {
+    "count": 369,
+    "seconds": 240.562,
+    "status": "PASS"
+  },
+  "v3_replay_calls": 560,
+  "v4_detector_forwards": 340,
+  "v4_pdm_calls": 320,
+  "original_acceptance": {
+    "empty": "PASS",
+    "lead": "PASS"
+  },
+  "secondary_diagnostics": "FAIL",
+  "remaining_runtime_processes": [],
+  "gpu": "4 MiB, 0 %",
+  "training_steps": 0,
+  "pf_requests": 0,
+  "committed": false,
+  "pushed": false
+}

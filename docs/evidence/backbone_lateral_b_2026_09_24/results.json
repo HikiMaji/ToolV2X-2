@@ -1,0 +1,165 @@
+{
+  "S2": {
+    "status": "FAIL",
+    "failures": [
+      "illegal_control",
+      "longitudinal_max",
+      "longitudinal_rmse",
+      "moving_speed_max",
+      "longitudinal_acceleration",
+      "longitudinal_jerk_p99",
+      "start_midpoint_speed",
+      "stop_end_longitudinal"
+    ],
+    "metrics": {
+      "expected_samples": 151,
+      "observed_samples": 151,
+      "expected_controls": 150,
+      "observed_controls": 150,
+      "max_steer_command_change": 0.0010809683299157768,
+      "max_abs_e_long_m": 2.1278440586164002,
+      "rmse_e_long_m": 1.2772864576103555,
+      "max_abs_e_lat_m": 0.0024054611291800167,
+      "rmse_e_lat_m": 0.0005305457740320562,
+      "max_abs_e_yaw_rad": 0.0011986067531950635,
+      "min_forward_speed_mps": -0.003179117773316533,
+      "max_forward_speed_mps": 2.0512874224841,
+      "max_rear_speed_mps": 2.0512874225314675,
+      "moving_speed_rmse_mps": 0.291183891981288,
+      "max_abs_moving_speed_error_mps": 0.9858880223777089,
+      "initial_position_error_m": 9.38490404790345e-05,
+      "initial_yaw_error_rad": 1.7083832641948462e-08,
+      "initial_wheel_steer_max_rad": 0.0,
+      "min_geometry_margin_m": 0.6821573972702026,
+      "max_abs_a_long_mps2": 7.209612267376614,
+      "max_abs_a_lat_mps2": 0.13425442995625883,
+      "p99_abs_j_long_mps3": 58.80393825024662,
+      "max_abs_j_long_mps3": 58.93079025891944,
+      "starts": [
+        {
+          "start": 1.0,
+          "end": 5.0,
+          "midpoint_speed_mps": 0.14269455836619482,
+          "end_speed_mps": 1.9020310049277622
+        }
+      ],
+      "stops": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "strict_start": 1.0,
+          "max_speed_mps": 0.013327565969439988,
+          "path_m": 0.0,
+          "net_displacement_m": 0.0,
+          "end_abs_e_long_m": 2.1514894193330747e-05
+        },
+        {
+          "start": 13.0,
+          "end": 15.0,
+          "strict_start": 14.0,
+          "max_speed_mps": 0.0,
+          "path_m": 0.0,
+          "net_displacement_m": 0.0,
+          "end_abs_e_long_m": 2.1275235289171235
+        }
+      ],
+      "native_velocity_vector_diff_max_mps": null,
+      "native_speed_diff_max_mps": null,
+      "turn": null,
+      "command_delivery": {
+        "version": "toolv2x_control_delivery_audit_v1",
+        "passed": true,
+        "failures": [],
+        "observed_transitions": 150,
+        "attempted_commands": 150
+      }
+    },
+    "initial_hold_max_abs_steer": 0.0001815877913031727,
+    "collision_count": 0
+  },
+  "L2": {
+    "status": "FAIL",
+    "failures": [
+      "illegal_control",
+      "longitudinal_max",
+      "longitudinal_rmse",
+      "moving_speed_max",
+      "longitudinal_acceleration",
+      "longitudinal_jerk_p99",
+      "start_midpoint_speed",
+      "stop_end_longitudinal",
+      "native_velocity_rate"
+    ],
+    "metrics": {
+      "expected_samples": 271,
+      "observed_samples": 271,
+      "expected_controls": 270,
+      "observed_controls": 270,
+      "max_steer_command_change": 0.005917750298976898,
+      "max_abs_e_long_m": 3.4742871133493107,
+      "rmse_e_long_m": 1.9391649785090332,
+      "max_abs_e_lat_m": 0.09175029139528423,
+      "rmse_e_lat_m": 0.0379601795191843,
+      "max_abs_e_yaw_rad": 0.0777054473414266,
+      "min_forward_speed_mps": -0.003388841004246341,
+      "max_forward_speed_mps": 2.0610969850770404,
+      "max_rear_speed_mps": 2.061200682317881,
+      "moving_speed_rmse_mps": 0.2327197042910503,
+      "max_abs_moving_speed_error_mps": 0.9464141086967,
+      "initial_position_error_m": 9.38490404790345e-05,
+      "initial_yaw_error_rad": 1.7083832641948462e-08,
+      "initial_wheel_steer_max_rad": 0.0,
+      "min_geometry_margin_m": 0.3830640430760069,
+      "max_abs_a_long_mps2": 7.0749196237286345,
+      "max_abs_a_lat_mps2": 0.265856207341414,
+      "p99_abs_j_long_mps3": 55.094043257989824,
+      "max_abs_j_long_mps3": 67.7779619973768,
+      "starts": [
+        {
+          "start": 1.0,
+          "end": 5.0,
+          "midpoint_speed_mps": 0.14269455836619482,
+          "end_speed_mps": 1.9020310049277622
+        }
+      ],
+      "stops": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "strict_start": 1.0,
+          "max_speed_mps": 0.013327565969439988,
+          "path_m": 0.0,
+          "net_displacement_m": 0.0,
+          "end_abs_e_long_m": 2.1514894193330747e-05
+        },
+        {
+          "start": 25.0,
+          "end": 27.0,
+          "strict_start": 26.0,
+          "max_speed_mps": 0.0,
+          "path_m": 0.0,
+          "net_displacement_m": 0.0,
+          "end_abs_e_long_m": 3.473940743774945
+        }
+      ],
+      "native_velocity_vector_diff_max_mps": 0.0813932238519163,
+      "native_speed_diff_max_mps": 0.06539458269386422,
+      "turn": {
+        "start": 7.0,
+        "end": 19.0,
+        "actual_heading_change_rad": 0.8001002747500022,
+        "expected_heading_change_rad": 0.8,
+        "absolute_error_rad": 0.00010027475000218278
+      },
+      "command_delivery": {
+        "version": "toolv2x_control_delivery_audit_v1",
+        "passed": true,
+        "failures": [],
+        "observed_transitions": 270,
+        "attempted_commands": 270
+      }
+    },
+    "initial_hold_max_abs_steer": 0.0001815877913031727,
+    "collision_count": 0
+  }
+}

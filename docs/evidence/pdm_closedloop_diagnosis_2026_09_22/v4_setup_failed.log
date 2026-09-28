@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/detector/V2Xverse/opencood/data_utils/pre_processor/sp_voxel_preprocessor.py", line 25, in __init__
+    from spconv.utils import VoxelGeneratorV2 as VoxelGenerator
+  File "/root/miniconda3/envs/tcp_codriving/lib/python3.7/site-packages/spconv/__init__.py", line 35, in <module>
+    torch.ops.load_library(_LIB_PATH)
+  File "/root/miniconda3/envs/tcp_codriving/lib/python3.7/site-packages/torch/_ops.py", line 110, in load_library
+    ctypes.CDLL(path)
+  File "/root/miniconda3/envs/tcp_codriving/lib/python3.7/ctypes/__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libcuhash.so: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "scripts/probe_pdm_closedloop.py", line 155, in <module>
+    p.add_argument('--port',type=int,default=2200);run(p.parse_args())
+  File "scripts/probe_pdm_closedloop.py", line 43, in run
+    detector,metadata=load_detector(args);(out/'detector_metadata.json').write_text(json.dumps(metadata,indent=2))
+  File "/root/autodl-tmp/ToolV2X/scripts/probe_v2xverse_detector.py", line 53, in load_detector
+    pre=SpVoxelPreprocessor(config['preprocess'],train=False)
+  File "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/detector/V2Xverse/opencood/data_utils/pre_processor/sp_voxel_preprocessor.py", line 29, in __init__
+    from spconv.utils import Point2VoxelCPU3d as VoxelGenerator
+ImportError: cannot import name 'Point2VoxelCPU3d' from 'spconv.utils' (/root/miniconda3/envs/tcp_codriving/lib/python3.7/site-packages/spconv/utils/__init__.py)

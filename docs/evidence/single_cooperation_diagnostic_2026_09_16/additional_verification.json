@@ -1,0 +1,23 @@
+{
+  "corrupted_waypoint_rejected": true,
+  "original_ego_metrics_reproduced": [
+    {
+      "checkpoint": "0",
+      "absolute_prefix_error_difference": 8.316294319854478e-10
+    },
+    {
+      "checkpoint": "500",
+      "absolute_prefix_error_difference": 1.4589884855809032e-10
+    },
+    {
+      "checkpoint": "3200",
+      "absolute_prefix_error_difference": 2.2098445295881675e-09
+    }
+  ],
+  "source_snapshots_equal": {
+    "structured_driver.py": true,
+    "structured_inputs.py": true,
+    "train_structured_driver.py": true
+  },
+  "content_analysis_after_spec_portability_fix_exact": true
+}

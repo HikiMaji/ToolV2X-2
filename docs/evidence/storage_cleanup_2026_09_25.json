@@ -1,0 +1,104 @@
+{
+  "status": "COMPLETE",
+  "authorized_groups": [
+    "1_install_archives",
+    "2_old_training_smoke_checkpoints",
+    "3_old_got_recovery_checkpoints",
+    "4_old_expanded_driver_generated_data"
+  ],
+  "started": "2026-09-25 11:12:02",
+  "free_before_bytes": 16468361216,
+  "deleted": [
+    {
+      "path": "/root/autodl-tmp/carla-download/CARLA_0.9.10.1.tar.gz",
+      "allocated_bytes_before": 3956994048,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/carla-download/CARLA_0.9.15.tar.gz",
+      "allocated_bytes_before": 8386641920,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/driving_training_readiness_v1/got_direct_flash/checkpoint",
+      "allocated_bytes_before": 1422557184,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/driving_training_readiness_v1/got_q8_q9_flash/checkpoint",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/driving_training_readiness_v1/llm_direct_flash/checkpoint",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/driving_training_readiness_v1/llm_q8_q9_flash/checkpoint",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_check_v1/checkpoint-step000002",
+      "allocated_bytes_before": 1422536704,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_continuous_v1/checkpoint-step000003",
+      "allocated_bytes_before": 1422557184,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_epoch_v1/checkpoint-epoch01",
+      "allocated_bytes_before": 1422548992,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_training_resume_v1/checkpoint-step000003",
+      "allocated_bytes_before": 1422524416,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/first_step/recovery-step000001",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001900",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/recovery-step001925",
+      "allocated_bytes_before": 1422520320,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/structured_driver_expanded_2026_09_15_v1/collection/tasks",
+      "allocated_bytes_before": 10652409856,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/structured_driver_expanded_2026_09_15_v1/collection/inputs",
+      "allocated_bytes_before": 869236736,
+      "deleted": true
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/outputs/structured_driver_expanded_2026_09_15_v1/training/inputs",
+      "allocated_bytes_before": 2821152768,
+      "deleted": true
+    }
+  ],
+  "protected": [
+    "/root/autodl-tmp/ToolV2X/outputs/framework_baseline_restart_v1/training/checkpoint-epoch01",
+    "/root/autodl-tmp/ToolV2X/outputs/mtr_stability_v1/full_seed20/best_model.pth",
+    "/root/autodl-tmp/ToolV2X/outputs/structured_driver_expanded_2026_09_15_v1/training/report.json",
+    "/root/autodl-tmp/CARLA_0.9.10.1/CarlaUE4.sh",
+    "/root/autodl-tmp/CARLA_0.9.15/CarlaUE4.sh"
+  ],
+  "free_after_bytes": 58786824192,
+  "free_increase_bytes": 42318462976,
+  "allocated_bytes_removed": 42334281728,
+  "protected_verified": true
+}

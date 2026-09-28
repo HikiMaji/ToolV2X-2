@@ -1,0 +1,21 @@
+{
+  "scope": "offline fixed old-state reference computation, not new driving result",
+  "speed_targets_exact_equal": 150,
+  "initial_new_target": {
+    "position_time": null,
+    "reference_time": 0.0,
+    "speed_time": 0.1,
+    "target_kind": "stationary_tangent",
+    "lookahead_m": 1.0,
+    "projection_path_s": null,
+    "target_path_s": null,
+    "virtual_extension_m": 0.0,
+    "actor_local_xy": [
+      2.393598746303723,
+      1.5983069406866335e-07
+    ],
+    "speed_mps": 0.0,
+    "speed_kmh": 0.0
+  },
+  "initial_direction_error_deg": -0.005202116109419105
+}

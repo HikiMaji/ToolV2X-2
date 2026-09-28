@@ -1,0 +1,58 @@
+{
+  "resource_independent": {
+    "tests": 447,
+    "passed": 437,
+    "skipped": 10,
+    "failures": 0,
+    "seconds": 209.105,
+    "log": "check_review_final.log"
+  },
+  "adapter_model_environment": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /root/miniconda3/envs/tcp_codriving/bin/python -m unittest discover -s tests -p test_codriving_tool_adapter.py -v",
+    "exit_code": 0,
+    "tests": 10,
+    "seconds": 6.787,
+    "cuda_and_cpu_checked": true,
+    "synthetic_optimizer_updates_per_branch": 20,
+    "branches": [
+      "P",
+      "F",
+      "F_CV"
+    ],
+    "dataset_training_updates": 0,
+    "scope": "record of completed tool execution; not a saved stdout transcript"
+  },
+  "real_saved_detection_replay": {
+    "real_replay": [
+      {
+        "directory": "codriving_native_fix_route11_2026_09_28",
+        "decisions": 11,
+        "sample_bindings_and_saved_rasters_verified": true
+      },
+      {
+        "directory": "codriving_native_fix_route28_2026_09_28",
+        "decisions": 11,
+        "sample_bindings_and_saved_rasters_verified": true
+      }
+    ],
+    "learned_model_calls_in_preparation": 0,
+    "dataset_training_updates": 0,
+    "implementation_sha256": {
+      "src/planning/codriving_native_inputs.py": "ef3ef801709a856db47d8313e1f64d35d517b02e781b7366819f982c1df33aaf",
+      "src/planning/codriving_causal_context.py": "f230ec3f09681e8585146e2b460263ff5a59c5071de162665992b6663b3f6f8a",
+      "src/planning/codriving_tool_adapter.py": "5aa09e6a844711e089704b432c30649b21ddcafc2a88cef54960fcadca0f1c22",
+      "scripts/prepare_codriving_native_probe.py": "d38dc27ff0a1926926a416a4e5e2d704bcd30b79b5e2bf7a72022bad59362e10"
+    }
+  },
+  "independent_review": {
+    "scope": "explicit sample consistency and immutable full predictor context",
+    "tests": 8,
+    "failures": 0
+  },
+  "v1_wire_and_legacy_golden_tests": "included in passing resource-independent suite; protocol implementation unchanged this batch",
+  "limits": [
+    "No dataset training or new learned detector/MTR/full planner/closed-loop run",
+    "Synthetic optimizer steps are unit tests, not evidence of planning gain",
+    "No automatic migration of legacy adapter weights"
+  ]
+}

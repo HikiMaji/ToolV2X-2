@@ -1,0 +1,37 @@
+EEEE
+======================================================================
+ERROR: test_left_and_right_curves_have_mirrored_spatial_targets (test_tracking_runtime_contract.SpatialReferenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-lateral-b/tests/test_tracking_runtime_contract.py", line 261, in test_left_and_right_curves_have_mirrored_spatial_targets
+    result=runtime.control_reference(ref,12.,[1.4,0.],[state['x'],state['y']],2.)
+TypeError: control_reference() takes 3 positional arguments but 5 were given
+
+======================================================================
+ERROR: test_speed_time_law_is_unchanged_for_every_sample (test_tracking_runtime_contract.SpatialReferenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-lateral-b/tests/test_tracking_runtime_contract.py", line 273, in test_speed_time_law_is_unchanged_for_every_sample
+    result=runtime.control_reference(ref,t,[1.4,0.],[current['x'],current['y']],3.5)
+TypeError: control_reference() takes 3 positional arguments but 5 were given
+
+======================================================================
+ERROR: test_stationary_pose_noise_does_not_become_large_direction_error (test_tracking_runtime_contract.SpatialReferenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-lateral-b/tests/test_tracking_runtime_contract.py", line 242, in test_stationary_pose_noise_does_not_become_large_direction_error
+    result=runtime.control_reference(ref,0.,[1.4,0.],ego,0.)
+TypeError: control_reference() takes 3 positional arguments but 5 were given
+
+======================================================================
+ERROR: test_stopped_endpoint_remains_forward_after_small_overshoot (test_tracking_runtime_contract.SpatialReferenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-lateral-b/tests/test_tracking_runtime_contract.py", line 252, in test_stopped_endpoint_remains_forward_after_small_overshoot
+    result=runtime.control_reference(ref,15.,[1.4,0.],ego,0.)
+TypeError: control_reference() takes 3 positional arguments but 5 were given
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.679s
+
+FAILED (errors=4)

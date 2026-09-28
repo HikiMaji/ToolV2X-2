@@ -1,0 +1,616 @@
+# Full unittest discovery attempt (not the formal resource-independent review)
+
+Command:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /root/autodl-tmp/conda-envs/carla015/bin/python -m unittest discover -s tests -p 'test_*.py'
+
+Environment purpose: isolated CARLA 0.9.15 / Python 3.10 tracking-gate environment. It intentionally does not contain the legacy model stack.
+Exit code: 1
+Recorded result: Ran 134 tests in 16.512s; FAILED (failures=2, errors=62).
+
+Capture boundary: the execution tool truncated the middle before the session record was stored. The recovered output below is the exact surviving 39,029-character string and retains its own truncation marker. No test was rerun to create this log.
+
+===== RECOVERED ACTUAL OUTPUT =====
+EEEEEEEEE....EEE.EEE.EEEE.EEE......EEEEEEEE.EEEEEEEEE..EEE...................EEE.E....EEEEE....E......................E........EEEE
+======================================================================
+ERROR: test_missing_or_cross_record_future_keeps_mask_without_fabricating_label (test_adaptation_data.AdaptationDataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 34, in test_missing_or_cross_record_future_keeps_mask_without_fabricating_label
+    module = self.module()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 15, in module
+    from planning import adaptation_data
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/adaptation_data.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_native_labels_use_six_future_poses_in_fixed_current_frame (test_adaptation_data.AdaptationDataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 19, in test_native_labels_use_six_future_poses_in_fixed_current_frame
+    module = self.module()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 15, in module
+    from planning import adaptation_data
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/adaptation_data.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_runner_selects_authorized_training_frame_without_using_validation (test_adaptation_data.AdaptationDataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 73, in test_runner_selects_authorized_training_frame_without_using_validation
+    from planning import run_connection
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/run_connection.py", line 10, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_supervised_q9_uses_generated_parent_even_when_q9_prediction_failed (test_adaptation_data.AdaptationDataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 51, in test_supervised_q9_uses_generated_parent_even_when_q9_prediction_failed
+    module = self.module()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 15, in module
+    from planning import adaptation_data
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/adaptation_data.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_training_tokens_mask_all_prompt_and_feature_positions (test_adaptation_data.AdaptationDataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 83, in test_training_tokens_mask_all_prompt_and_feature_positions
+    module = self.module()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_adaptation_data.py", line 15, in module
+    from planning import adaptation_data
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/adaptation_data.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_budget_review (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_budget_review
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_budget_review.py", line 8, in <module>
+    import test_method_episode as fixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_method_episode.py", line 18, in <module>
+    from test_evidence_ledger import LedgerFixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_evidence_ledger.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_bundle_data (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_bundle_data
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_bundle_data.py", line 11, in <module>
+    import test_control_bundle as bundle_fixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_control_bundle.py", line 8, in <module>
+    from probe.kinematic_tools import encode
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_cmp_adapter (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_cmp_adapter
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_cmp_adapter.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_cmp_training (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_cmp_training
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_cmp_training.py", line 6, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_control_bundle (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_control_bundle
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_control_bundle.py", line 8, in <module>
+    from probe.kinematic_tools import encode
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_decision_accounting (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_decision_accounting
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_decision_accounting.py", line 8, in <module>
+    import test_evidence_ledger as ledger_fixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_evidence_ledger.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_direct_evaluation_excludes_q8_and_retains_trajectory_failures (test_direct_planning.DirectPlanningInputTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_direct_planning.py", line 45, in test_direct_evaluation_excludes_q8_and_retains_trajectory_failures
+    from evaluation.planning import evaluate_plan, summarize
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/evaluation/planning.py", line 12, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_direct_supervision_contains_only_trajectory_target (test_direct_planning.DirectPlanningInputTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_direct_planning.py", line 32, in test_direct_supervision_contains_only_trajectory_target
+    from planning.adaptation_data import supervised_examples
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/adaptation_data.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_direct_calls_generation_once_with_same_evidence_as_two_stage (test_direct_planning.DirectPlanningModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_direct_planning.py", line 69, in test_direct_calls_generation_once_with_same_evidence_as_two_stage
+    from transformers import AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+
+======================================================================
+ERROR: test_failed_write_never_publishes_checkpoint (test_driver_checkpoints.CheckpointTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_checkpoints.py", line 31, in test_failed_write_never_publishes_checkpoint
+    planner, optimizer, state = self.fixture()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_checkpoints.py", line 16, in fixture
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_recovery_rotation_keeps_two_complete_states_and_epoch_checkpoint (test_driver_checkpoints.CheckpointTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_checkpoints.py", line 40, in test_recovery_rotation_keeps_two_complete_states_and_epoch_checkpoint
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_empty_shifted_supervision_is_rejected (test_driver_efficiency.AnswerHeadTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_efficiency.py", line 54, in test_empty_shifted_supervision_is_rejected
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_loss_and_all_gradients_match_with_dropout_and_causal_mask (test_driver_efficiency.AnswerHeadTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_efficiency.py", line 26, in test_loss_and_all_gradients_match_with_dropout_and_causal_mask
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_altered_acceptance_identity_fails (test_driver_readiness_preparation.DriverReadinessPreparationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 70, in test_altered_acceptance_identity_fails
+    module().validate_package(target)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 23, in module
+    spec.loader.exec_module(value)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/scripts/prepare_driver_readiness.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_driver_mode_and_actual_budget_mutations_fail (test_driver_readiness_preparation.DriverReadinessPreparationTests) (filename='training_v2.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 126, in test_driver_mode_and_actual_budget_mutations_fail
+    module().validate_package(target)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 23, in module
+    spec.loader.exec_module(value)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/scripts/prepare_driver_readiness.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_driver_mode_and_actual_budget_mutations_fail (test_driver_readiness_preparation.DriverReadinessPreparationTests) (filename='readiness.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 126, in test_driver_mode_and_actual_budget_mutations_fail
+    module().validate_package(target)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 23, in module
+    spec.loader.exec_module(value)
+  File "<froz…7781 tokens truncated…le "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/evaluation/planning.py", line 12, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_repeated_far_points_retain_initial_jump_but_stationary_origin_is_valid (test_planning_evaluation.PlanningEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_planning_evaluation.py", line 18, in test_repeated_far_points_retain_initial_jump_but_stationary_origin_is_valid
+    from evaluation.planning import trajectory_metrics
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/evaluation/planning.py", line 12, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_query_data (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_query_data
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_query_data.py", line 14, in <module>
+    from test_evidence_ledger import LedgerFixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_evidence_ledger.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_query_value (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_query_value
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_query_value.py", line 9, in <module>
+    from test_query_data import QueryFixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_query_data.py", line 14, in <module>
+    from test_evidence_ledger import LedgerFixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_evidence_ledger.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_review_fixes (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_review_fixes
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_review_fixes.py", line 13, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_framework_archive_keeps_actual_query_costs_and_early_stops (test_saved_review_evidence.SavedReviewEvidenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_saved_review_evidence.py", line 51, in test_framework_archive_keeps_actual_query_costs_and_early_stops
+    from probe.kinematic_tools import encode
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/prediction/../probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+ERROR: test_structured_admission (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structured_admission
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_structured_admission.py", line 13, in <module>
+    from test_evidence_ledger import LedgerFixture
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_evidence_ledger.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_structured_driver (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structured_driver
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_structured_driver.py", line 8, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_structured_episode (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structured_episode
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_structured_episode.py", line 10, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_structured_inputs (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structured_inputs
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_structured_inputs.py", line 14, in <module>
+    from test_task_spec import provenance, task_request
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_task_spec.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_structured_training (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structured_training
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_structured_training.py", line 15, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_task_spec (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_task_spec
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_task_spec.py", line 13, in <module>
+    from test_vehicle_tools import window, fixture_prediction
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_training_retains_adapter_and_inference_remains_default (test_trainable_planning.TrainablePlannerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_trainable_planning.py", line 14, in test_training_retains_adapter_and_inference_remains_default
+    from planning import v2vgot as V
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/planning/v2vgot.py", line 10, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_v2vgot_connection (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v2vgot_connection
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_v2vgot_connection.py", line 6, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+
+======================================================================
+ERROR: test_vehicle_probe (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_vehicle_probe
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_probe.py", line 12, in <module>
+    from probe import kinematic_tools as K
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/../src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_vehicle_tools (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_vehicle_tools
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_vehicle_tools.py", line 12, in <module>
+    from tools.vehicle import VehicleTools, decode_response, history_window, make_evidence
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/tools/vehicle.py", line 11, in <module>
+    from probe.kinematic_tools import encode, history_packet
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: test_wire_comparison (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_wire_comparison
+Traceback (most recent call last):
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/root/autodl-tmp/conda-envs/carla015/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_wire_comparison.py", line 12, in <module>
+    from probe.kinematic_tools import encode
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/probe/kinematic_tools.py", line 10, in <module>
+    from scipy.optimize import linear_sum_assignment
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+FAIL: test_public_validate_only_cli_needs_no_private_preparation_inputs (test_driver_readiness_preparation.DriverReadinessPreparationTests) (source_comparison=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 111, in test_public_validate_only_cli_needs_no_private_preparation_inputs
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/scripts/prepare_driver_readiness.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+FAIL: test_public_validate_only_cli_needs_no_private_preparation_inputs (test_driver_readiness_preparation.DriverReadinessPreparationTests) (source_comparison=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/tests/test_driver_readiness_preparation.py", line 111, in test_public_validate_only_cli_needs_no_private_preparation_inputs
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/scripts/prepare_driver_readiness.py", line 16, in <module>
+    from common.audit_protocol import recording
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-tracking-v1/src/common/audit_protocol.py", line 10, in <module>
+    from scipy.spatial import cKDTree
+ModuleNotFoundError: No module named 'scipy'
+
+
+----------------------------------------------------------------------
+Ran 134 tests in 16.512s
+
+FAILED (failures=2, errors=62)
+
+===== DEPENDENCY CLASSIFICATION =====
+
+The 62 ERROR results are import/setup failures in this intentionally minimal environment, grouped by the missing legacy dependency that appears in the saved tracebacks:
+
+1. SciPy: missing scipy.spatial.cKDTree and scipy.optimize.linear_sum_assignment. Affected families include adaptation/planning evaluation, vehicle tools/probe, evidence ledger, task/query/method/bundle tests, structured admission/inputs, saved evidence, and readiness validation.
+2. PyTorch: missing torch. Affected families include CMP adapter/training, driver checkpoint/efficiency, structured driver/episode/training, V2V-GoT connection, review fixes, and model-backed adaptation paths.
+3. Transformers: missing transformers.AutoTokenizer. The recovered direct-planning model test fails at this import; other model-stack tests can be blocked earlier by torch or scipy, so categories overlap and should not be summed as independent defects.
+
+Because the stored output itself is truncated, an exact 62-way per-package count cannot be recovered without rerunning. The reliable classification is three missing dependency roots, not 62 code regressions. The formal resource-independent review was run separately by the root agent and is not represented by this attempt.
+
+===== TWO FAILURE RESULTS =====
+
+Both are subtests of:
+test_public_validate_only_cli_needs_no_private_preparation_inputs (test_driver_readiness_preparation.DriverReadinessPreparationTests)
+
+- source_comparison=False
+- source_comparison=True
+
+Both failed the same assertion at tests/test_driver_readiness_preparation.py:111:
+self.assertEqual(result.returncode, 0, result.stderr)
+Observed: AssertionError: 1 != 0.
+The subprocess exited 1 while importing scripts/prepare_driver_readiness.py because common.audit_protocol imports scipy.spatial.cKDTree and SciPy is absent.

@@ -1,0 +1,28 @@
+{
+  "archive": "/root/autodl-tmp/carla-download/CARLA_0.9.15.tar.gz",
+  "archive_bytes": 8386636048,
+  "gzip_complete_read": "PASS",
+  "tar_layout": "PASS",
+  "members": 36163,
+  "uncompressed_file_bytes": 20205989874,
+  "top_level": [
+    "CHANGELOG",
+    "CarlaUE4",
+    "CarlaUE4.sh",
+    "Co-Simulation",
+    "Dockerfile",
+    "Engine",
+    "HDMaps",
+    "Import",
+    "ImportAssets.sh",
+    "LICENSE",
+    "Manifest_DebugFiles_Linux.txt",
+    "Plugins",
+    "PythonAPI",
+    "README",
+    "Tools",
+    "VERSION"
+  ],
+  "seconds": 125.72910231677815,
+  "data_filter_available": true
+}

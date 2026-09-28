@@ -1,0 +1,1 @@
+{"status": "PREPARED_NOT_EXECUTED", "nominal_geometry": {"front": 3.848486, "rear": 1.053197, "width": 2.128324, "box_center_y": 0.0, "box_yaw": 0.0}, "physical_trials_started": 0, "limitation": "Nominal geometry only. Actual server/vehicle geometry/physics and tracking remain unverified."}

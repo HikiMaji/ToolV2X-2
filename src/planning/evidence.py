@@ -32,9 +32,16 @@ def _forecast_value(obj, scope):
 
 
 def new_ledger(local_window, local_prediction, *, predictor, local_provenance,
-               p_processing='local_mtr', include_local_history=False):
-    _check_window(local_window)
-    validate_prediction(local_window, local_prediction)
+               p_processing='local_mtr', include_local_history=False, task_version='toolv2x_task_v2', frame_binding=None):
+    native=task_version=='toolv2x_task_v3'
+    if task_version not in ('toolv2x_task_v2','toolv2x_task_v3'):raise ValueError('unsupported ledger task version')
+    if native:
+        from tools.native_time import check_binding
+        check_binding(frame_binding)
+        if p_processing!='observations_only':raise ValueError('native local MTR requires an explicit future adapter')
+    elif frame_binding is not None:raise ValueError('legacy ledger has no native frame binding')
+    _check_window(local_window,native=native)
+    validate_prediction(local_window, local_prediction,native=native)
     validate_provenance(local_provenance)
     if (not isinstance(predictor, FrozenPredictor) or
             predictor.descriptor['model_version'] != local_provenance['prediction'] or
@@ -43,7 +50,12 @@ def new_ledger(local_window, local_prediction, *, predictor, local_provenance,
         raise ValueError('explicit frozen predictor/provenance and P processing required')
     w = dict(local_window, states=np.asarray(local_window['states']), scores=np.asarray(local_window['scores']))
     local = []
-    for row, obj in enumerate(prediction_objects(w, local_prediction)):
+    if native:
+        objects=[dict(track_id=int(t),box=w['states'][i,-1].tolist(),score=float(w['scores'][i,-1]),
+            forecast=local_prediction['means'][i].tolist(),forecast_scores=local_prediction['scores'][i].tolist(),
+            model_used=bool(local_prediction['model_used'][i])) for i,t in enumerate(w['track_ids'])]
+    else:objects=prediction_objects(w,local_prediction)
+    for row, obj in enumerate(objects):
         fields = [('anchor', dict(box=obj['box'], score=obj['score']))]
         if include_local_history:
             valid = np.asarray(w['valid'][row])
@@ -52,16 +64,19 @@ def new_ledger(local_window, local_prediction, *, predictor, local_provenance,
                 history_times=np.asarray(w['time_seconds']).tolist(), proxy_status=
                 'causal_tracking_state_motion_proxy' if valid.sum() >= 2 else 'single_state_static_proxy')))
         fields.append(('forecast', _forecast_value(obj, 'ego_full_at_t')))
+        if native:fields[-1][1]['forecast_times']=np.asarray(local_prediction['forecast_times']).tolist()
         for kind, value in fields:
             ref = _ref(w, obj['track_id'], kind, local_provenance[
                 'prediction' if kind == 'forecast' else 'tracking'], local_provenance['context'])
             local.append(dict(ref=ref, value=value, origin='local'))
-    return dict(version='toolv2x_evidence_ledger_v2' if include_local_history else 'toolv2x_evidence_ledger_v1',
+    result = dict(version='toolv2x_evidence_ledger_v2' if include_local_history else 'toolv2x_evidence_ledger_v1',
         scene=w['scene'], g=w['g'],
         local_source=w['source'], coordinate_frame='ego_at_t', local_fields=local,
         predictor_binding=predictor.descriptor, p_processing=p_processing,
         acquired_fields=[], derived_fields=[], receipts=[], contexts=[], active_contexts={},
         receiver_events=[], failed_receives=[], status='ready')
+    if native:result.update(task_version=task_version,frame_binding=copy.deepcopy(frame_binding))
+    return result
 
 
 def _index(records):
@@ -103,6 +118,10 @@ def _validate_resolved(records):
         history, forecast = fields.get('history'), fields.get('forecast')
         if history and (history['history'][-1] != anchor['box'] or history['history_scores'][-1] != anchor['score']):
             raise ValueError('referenced anchor and history conflict')
+        if history and 'motion' in anchor:
+            from tools.native_time import motion
+            if anchor['motion']!=motion(np.asarray(history['history']),np.asarray(history['history_valid']),np.asarray(history['history_times'])):
+                raise ValueError('referenced motion and paid history conflict')
         if forecast and not forecast['model_used'] and not np.all(
                 np.asarray(forecast['forecast']) == np.asarray(anchor['box'][:2])):
             raise ValueError('referenced anchor and fallback conflict')
@@ -135,7 +154,7 @@ def _context(ledger, provider):
         raise ValueError('context dtype conversion would change purchased values')
     if cert and cert['has_eligible']:
         w['eligible'] = w['valid'].sum(axis=1) >= 2
-    _check_window(w)
+    _check_window(w,native=ledger.get('task_version')=='toolv2x_task_v3')
     base = histories[order[0]]['ref']['context_version']
     revision = base['revision'] + ('.full.' if cert else '.subset.') + '.'.join(map(str, order))
     version = dict(name='receiver_' + base['name'], revision=revision)
@@ -187,6 +206,10 @@ def _apply_response(ledger, response, predictor, p_processing):
             (p_processing is not None and p_processing != ledger['p_processing'])):
         raise ValueError('receiver processing or frozen predictor changed')
     req = response['request']
+    if (req['version']=='toolv2x_task_v3') != (ledger.get('task_version')=='toolv2x_task_v3') or req.get('frame_binding')!=ledger.get('frame_binding'):
+        raise ValueError('ledger protocol/frame binding mismatch')
+    if ledger.get('task_version')=='toolv2x_task_v3' and ledger.get('request_times',req['times'])!=req['times']:
+        raise ValueError('native request time axis frozen across ledger providers')
     packet = decode_task_response(response['wire'], req)
     if (req['scene'], req['g']) != (ledger['scene'], ledger['g']) or req['provider'] == ledger['local_source']:
         raise ValueError('response source/scene/time differs from receiver')
@@ -207,6 +230,7 @@ def _apply_response(ledger, response, predictor, p_processing):
     known = {r['receipt_id']: r['record_refs'] for r in ledger['receipts']}
     validate_task_request(req, known)
     result = copy.deepcopy(ledger)
+    if req['version']=='toolv2x_task_v3':result['request_times']=copy.deepcopy(req['times'])
     index = _index(result['acquired_fields'])
     for record in packet['records']:
         key = field_key(record['ref'])

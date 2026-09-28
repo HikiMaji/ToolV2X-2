@@ -1,0 +1,5 @@
+{
+  "compared_samples": 14,
+  "max_absolute_norm_difference": 3.5762786865234375e-07,
+  "scope": "residual norm, not full original tensor replay"
+}

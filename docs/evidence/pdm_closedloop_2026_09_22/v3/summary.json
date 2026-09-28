@@ -1,0 +1,92 @@
+{
+  "spec": {
+    "version": "toolv2x_pdm_closedloop_probe_v3",
+    "dt": 0.05,
+    "steps": 160,
+    "settling_ticks": 30,
+    "min_stable_frames": 10,
+    "max_start_acceleration": 1.0,
+    "min_track_hits": 3,
+    "max_warmup_frames": 60,
+    "self_iou": 0.5,
+    "max_tilt_rad": 0.05,
+    "planning_speed_cap_mps": 4.0,
+    "lead_distance_m": 15.0,
+    "lateral_pid": {
+      "K_P": 1.95,
+      "K_D": 0.2,
+      "K_I": 0.07,
+      "dt": 0.05
+    },
+    "longitudinal_pid": {
+      "K_P": 1.0,
+      "K_D": 0.0,
+      "K_I": 0.05,
+      "dt": 0.05
+    },
+    "max_throttle": 0.75,
+    "max_brake": 0.3,
+    "max_steering": 0.8,
+    "velocity_proxy_min_speed": 0.2,
+    "target_forward_margin": 0.5,
+    "controller_reference": "future actor origin from PDM rear axle plus heading-rotated rear-to-actor offset",
+    "controller_speed": "first two actor-origin path samples displacement over returned time delta converted to km/h; original generator velocity slots unused",
+    "criteria": {
+      "min_empty_progress_m": 8.0,
+      "min_lead_progress_m": 2.0,
+      "max_final_lead_speed_mps": 0.5,
+      "min_clearance_m": 0.0,
+      "max_lateral_error_m": 0.5,
+      "collisions": 0,
+      "invalid_plans": 0
+    },
+    "scope": "controlled synchronous Ego-only chain; inference pauses simulation; not realtime or ToolV2X method evaluation"
+  },
+  "outcomes": [
+    {
+      "case": "empty",
+      "acceptance_pass": true,
+      "driving_steps": 160,
+      "warmup_steps": 9,
+      "final_metrics": {
+        "speed_mps": 2.243308902867557,
+        "lateral_error_m": 1.002824279960901e-05,
+        "progress_m": 21.200744026956034
+      },
+      "min_clearance_m": null,
+      "max_lateral_error_m": 2.8077226720490955e-05,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 33928,
+      "invalid_plans": 0,
+      "wall_seconds": 24.44055360602215,
+      "max_driving_abs_acceleration": 9.387914514561555,
+      "mean_loop_seconds": 0.07726495718525257,
+      "pdm_calls": 160,
+      "detections": 169
+    },
+    {
+      "case": "lead",
+      "acceptance_pass": false,
+      "driving_steps": 160,
+      "warmup_steps": 11,
+      "final_metrics": {
+        "speed_mps": 0.5032778254456844,
+        "lateral_error_m": 0.0006773738184373268,
+        "progress_m": 7.92970527792391,
+        "bumper_clearance_m": 2.168325239480282
+      },
+      "min_clearance_m": 2.168325239480282,
+      "max_lateral_error_m": 0.05439125971440664,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 34131,
+      "invalid_plans": 0,
+      "wall_seconds": 28.846957609057426,
+      "max_driving_abs_acceleration": 10.552853866743765,
+      "mean_loop_seconds": 0.09951164369122126,
+      "pdm_calls": 160,
+      "detections": 171
+    }
+  ]
+}

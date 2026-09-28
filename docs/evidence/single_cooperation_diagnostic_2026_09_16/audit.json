@@ -1,0 +1,17 @@
+{
+  "validated_tasks": 156,
+  "initial_inputs_equal": 117,
+  "shared_features_equal": 117,
+  "deterministic_repeat_checks": 3,
+  "invalid_common_priors": 0,
+  "actual_model_forwards": 2460,
+  "model_parameters_unchanged": true,
+  "checkpoint_files_unchanged": true,
+  "new_optimizer_steps": 0,
+  "new_provider_calls": 0,
+  "new_mtr_calls": 0,
+  "new_llm_calls": 0,
+  "state": "completed",
+  "rows": 117,
+  "wall_seconds": 192.02020336990245
+}

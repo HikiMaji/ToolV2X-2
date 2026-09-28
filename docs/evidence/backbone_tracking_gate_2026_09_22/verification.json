@@ -1,0 +1,182 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "physical_trials_started": 0,
+  "training_started": false,
+  "pid_parameter_search": false,
+  "environment": {
+    "prefix": "/root/autodl-tmp/conda-envs/carla015",
+    "python": "3.10.19",
+    "carla_client": "0.9.15",
+    "numpy": "1.24.2",
+    "shapely": "2.0.7"
+  },
+  "targeted_tests": {
+    "passed": 24,
+    "failed": 0,
+    "seconds": 24.186,
+    "log": "targeted_tests.log"
+  },
+  "isolated_worktree_review": {
+    "passed": 349,
+    "failed": 0,
+    "seconds": 239.753,
+    "log": "review_suite.log"
+  },
+  "main_worktree_review": {
+    "passed": 378,
+    "failed": 0,
+    "seconds": 239.474,
+    "log": "main_review_suite.log"
+  },
+  "reference_checks": {
+    "S2": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 9.983125437429408e-13,
+        "half_step_yaw_max_rad": 0.0,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.7200000000000006,
+        "max_abs_curvature_1pm": 0.0,
+        "max_abs_curvature_rate_1pms": 0.0,
+        "min_body_clearance_m": 0.6858380000000001
+      }
+    },
+    "L2": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 4.616787718089681e-11,
+        "half_step_yaw_max_rad": 1.991740106177531e-12,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.7200000000000006,
+        "max_abs_curvature_1pm": 0.05,
+        "max_abs_curvature_rate_1pms": 0.0234375,
+        "min_body_clearance_m": 0.3371581789566272
+      }
+    },
+    "R2": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 4.616787718089681e-11,
+        "half_step_yaw_max_rad": 1.991740106177531e-12,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.7200000000000006,
+        "max_abs_curvature_1pm": 0.05,
+        "max_abs_curvature_rate_1pms": 0.0234375,
+        "min_body_clearance_m": 0.33715814440361674
+      }
+    },
+    "SR2": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 9.983125437429408e-13,
+        "half_step_yaw_max_rad": 0.0,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.7200000000000006,
+        "max_abs_curvature_1pm": 0.0,
+        "max_abs_curvature_rate_1pms": 0.0,
+        "min_body_clearance_m": 0.6858380000000001
+      }
+    },
+    "S4": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 9.379164112033322e-13,
+        "half_step_yaw_max_rad": 0.0,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.3608349609375012,
+        "max_abs_curvature_1pm": 0.0,
+        "max_abs_curvature_rate_1pms": 0.0,
+        "min_body_clearance_m": 0.685838
+      }
+    },
+    "L4": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 1.7562083560768556e-10,
+        "half_step_yaw_max_rad": 1.4204748488566565e-12,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.3608349609375012,
+        "max_abs_curvature_1pm": 0.05,
+        "max_abs_curvature_rate_1pms": 0.046875,
+        "min_body_clearance_m": 0.3371581789567697
+      }
+    },
+    "R4": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 1.7562083560768556e-10,
+        "half_step_yaw_max_rad": 1.4204748488566565e-12,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.3608349609375012,
+        "max_abs_curvature_1pm": 0.05,
+        "max_abs_curvature_rate_1pms": 0.046875,
+        "min_body_clearance_m": 0.33715814440375963
+      }
+    },
+    "SR4": {
+      "passed": true,
+      "errors": [],
+      "metrics": {
+        "half_step_position_max_m": 9.379164112033322e-13,
+        "half_step_yaw_max_rad": 0.0,
+        "analytic_max_difference": 0.0,
+        "max_abs_accel_mps2": 0.9375,
+        "max_abs_jerk_mps3": 0.3608349609375012,
+        "max_abs_curvature_1pm": 0.0,
+        "max_abs_curvature_rate_1pms": 0.0,
+        "min_body_clearance_m": 0.685838
+      }
+    }
+  },
+  "client_native_map_parse": "PASS; no physical mesh/vehicle execution",
+  "server_package": {
+    "present": false,
+    "official_url": "https://downloads.carlasim.com/Linux/CARLA_0.9.15.tar.gz",
+    "expected_bytes": 8386636048,
+    "expected_archive": "/root/autodl-tmp/carla-download/CARLA_0.9.15.tar.gz",
+    "target_directory": "/root/autodl-tmp/CARLA_0.9.15"
+  },
+  "full_model_integration": "NOT_PASSED: incomplete attempt plus isolated-environment discovery dependency failures; see implementation report and full_discovery_attempt.log",
+  "implementation_modified_existing_driving_code": false,
+  "prepared_source_comparison": [
+    {
+      "path": "scripts/probe_backbone_tracking.py",
+      "identical_to_current": true
+    },
+    {
+      "path": "src/planning/tracking_reference.py",
+      "identical_to_current": true
+    },
+    {
+      "path": "src/evaluation/tracking_gate.py",
+      "identical_to_current": true
+    },
+    {
+      "path": "vendor/carla_agents_0_9_15/PROVENANCE.json",
+      "identical_to_current": true
+    },
+    {
+      "path": "vendor/carla_agents_0_9_15/agents/navigation/controller.py",
+      "identical_to_current": true
+    },
+    {
+      "path": "vendor/carla_agents_0_9_15/agents/tools/misc.py",
+      "identical_to_current": true
+    }
+  ],
+  "git_diff_check": "PASS"
+}

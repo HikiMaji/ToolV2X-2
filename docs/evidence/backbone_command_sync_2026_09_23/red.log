@@ -1,0 +1,37 @@
+EEEE
+======================================================================
+ERROR: test_ack_is_waited_for_without_advancing_clock (test_tracking_runtime_contract.CommandSubmissionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/tests/test_tracking_runtime_contract.py", line 215, in test_ack_is_waited_for_without_advancing_clock
+    ack=runtime.submit_control(client,world,actor,control,carla,Path(folder)/'commands.jsonl','tracking')
+AttributeError: module 'probe_backbone_tracking' has no attribute 'submit_control'
+
+======================================================================
+ERROR: test_rejected_or_wrong_actor_response_is_saved_without_tick (test_tracking_runtime_contract.CommandSubmissionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/tests/test_tracking_runtime_contract.py", line 229, in test_rejected_or_wrong_actor_response_is_saved_without_tick
+    with self.assertRaises(RuntimeError):runtime.submit_control(client,world,NS(id=7),control,carla,Path(folder)/'commands.jsonl','tracking')
+AttributeError: module 'probe_backbone_tracking' has no attribute 'submit_control'
+
+======================================================================
+ERROR: test_echo_compares_float32_and_does_not_require_auto_requested_gear (test_tracking_gate.CommandDeliveryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/tests/test_tracking_gate.py", line 351, in test_echo_compares_float32_and_does_not_require_auto_requested_gear
+    from evaluation.tracking_gate import audit_control_delivery,control_echo_matches
+ImportError: cannot import name 'audit_control_delivery' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/src/evaluation/tracking_gate.py)
+
+======================================================================
+ERROR: test_old_control_missing_ack_or_extra_tick_cannot_pass (test_tracking_gate.CommandDeliveryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/tests/test_tracking_gate.py", line 359, in test_old_control_missing_ack_or_extra_tick_cannot_pass
+    from evaluation.tracking_gate import audit_control_delivery
+ImportError: cannot import name 'audit_control_delivery' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/src/evaluation/tracking_gate.py)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.012s
+
+FAILED (errors=4)

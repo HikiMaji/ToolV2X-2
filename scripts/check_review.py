@@ -8,6 +8,10 @@ sys.path.insert(0, str(ROOT / 'tests'))
 sys.path.insert(0, str(ROOT / 'src'))
 
 names = [
+    'test_codriving_native_inputs', 'test_codriving_causal_context', 'test_codriving_probe_pipeline', 'test_prepare_codriving_native_probe',
+    'test_codriving_pf_bev', 'test_codriving_ledger_bev', 'test_native_task', 'test_codriving_tool_adapter',
+    'test_pdm_control',
+    'test_lidar_tracks.GeometryTests', 'test_carla_map_inputs', 'test_v2xverse_detector_probe', 'test_v2xverse_inputs', 'test_pdm_core.PDMModuleTests',
     'test_driver_readiness_preparation', 'test_structured_inputs', 'test_structured_admission', 'test_compact_evidence', 'test_planning_inputs', 'test_protocol',
     'test_task_spec', 'test_vehicle_tools', 'test_evidence_ledger', 'test_method_episode', 'test_method_evaluation', 'test_decision_accounting', 'test_method_controls.ControlTests', 'test_control_bundle', 'test_vehicle_probe', 'test_learned_probe',
     'test_review_portability', 'test_saved_review_evidence', 'test_wire_comparison',

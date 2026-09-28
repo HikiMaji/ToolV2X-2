@@ -1,0 +1,43 @@
+{
+  "version": "toolv2x_pdm_closedloop_probe_v2",
+  "dt": 0.05,
+  "steps": 160,
+  "settling_ticks": 30,
+  "min_stable_frames": 10,
+  "max_start_acceleration": 1.0,
+  "min_track_hits": 3,
+  "max_warmup_frames": 60,
+  "self_iou": 0.5,
+  "max_tilt_rad": 0.05,
+  "planning_speed_cap_mps": 4.0,
+  "lead_distance_m": 15.0,
+  "lateral_pid": {
+    "K_P": 1.95,
+    "K_D": 0.2,
+    "K_I": 0.07,
+    "dt": 0.05
+  },
+  "longitudinal_pid": {
+    "K_P": 1.0,
+    "K_D": 0.0,
+    "K_I": 0.05,
+    "dt": 0.05
+  },
+  "max_throttle": 0.75,
+  "max_brake": 0.3,
+  "max_steering": 0.8,
+  "velocity_proxy_min_speed": 0.2,
+  "target_forward_margin": 0.5,
+  "controller_reference": "future actor origin from PDM rear axle plus heading-rotated rear-to-actor offset",
+  "controller_speed": "original PDM rear axle speed at first 0.5s sample converted to km/h",
+  "criteria": {
+    "min_empty_progress_m": 8.0,
+    "min_lead_progress_m": 2.0,
+    "max_final_lead_speed_mps": 0.5,
+    "min_clearance_m": 0.0,
+    "max_lateral_error_m": 0.5,
+    "collisions": 0,
+    "invalid_plans": 0
+  },
+  "scope": "controlled synchronous Ego-only chain; inference pauses simulation; not realtime or ToolV2X method evaluation"
+}

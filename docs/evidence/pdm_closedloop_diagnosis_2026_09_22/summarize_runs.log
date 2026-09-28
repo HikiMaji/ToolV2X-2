@@ -1,0 +1,215 @@
+{
+  "v3": {
+    "empty": {
+      "acceptance_recomputed": true,
+      "driving_steps": 160,
+      "detections": 169,
+      "progress_m": 21.200744026956034,
+      "final_speed_mps": 2.243308902867557,
+      "min_clearance_m": null,
+      "max_lateral_error_m": 2.8077226720490955e-05,
+      "collision_event_count": 0,
+      "invalid_plans": 0,
+      "status_counts": {
+        "pdm_pid": 160
+      },
+      "max_abs_acceleration": 9.387914514561555,
+      "max_abs_acceleration_after_2s": 2.4600081975965904,
+      "min_acceleration": -2.283508347130002,
+      "max_brake": 0.30000001192092896,
+      "brake_saturated_steps": 2,
+      "speed_target_rmse": 0.4107497147170974,
+      "stop_then_restart_indices": [],
+      "last40_speed_range": [
+        2.243308902867557,
+        3.3459857792997463
+      ],
+      "last40_target_range": [
+        2.2981888816738163,
+        3.3878070260294115
+      ],
+      "last10_speeds": [
+        2.523576493361175,
+        2.500753551278308,
+        2.475483180452248,
+        2.4474168145335087,
+        2.4166641553569708,
+        2.383730486678589,
+        2.3494058910311604,
+        2.314509897853904,
+        2.27879275109877,
+        2.243308902867557
+      ],
+      "candidate_switches": 0,
+      "zero_score_frames": 0,
+      "detector_misses": 0,
+      "track_id_sets": [
+        []
+      ],
+      "secondary_acceleration_pass": false,
+      "secondary_lead_tail_pass": null,
+      "mean_loop_seconds": 0.07726495718525257
+    },
+    "lead": {
+      "acceptance_recomputed": false,
+      "driving_steps": 160,
+      "detections": 171,
+      "progress_m": 7.92970527792391,
+      "final_speed_mps": 0.5032778254456844,
+      "min_clearance_m": 2.168325239480282,
+      "max_lateral_error_m": 0.05439125971440664,
+      "collision_event_count": 0,
+      "invalid_plans": 0,
+      "status_counts": {
+        "pdm_pid": 160
+      },
+      "max_abs_acceleration": 10.552853866743765,
+      "max_abs_acceleration_after_2s": 10.552853866743765,
+      "min_acceleration": -10.552853866743765,
+      "max_brake": 0.30000001192092896,
+      "brake_saturated_steps": 15,
+      "speed_target_rmse": 0.43320853340638765,
+      "stop_then_restart_indices": [
+        136,
+        146,
+        155,
+        164
+      ],
+      "last40_speed_range": [
+        0.0017782005267943197,
+        1.0069423440432967
+      ],
+      "last40_target_range": [
+        0.5098601965491093,
+        0.7939017467087023
+      ],
+      "last10_speeds": [
+        0.6610828010912326,
+        0.7162539477779688,
+        0.2939890631979241,
+        0.0017782005267943197,
+        0.06382679975315432,
+        0.09219215088126233,
+        0.2226120026410678,
+        0.3116955410716856,
+        0.41858220753431524,
+        0.5032778254456844
+      ],
+      "candidate_switches": 46,
+      "zero_score_frames": 14,
+      "detector_misses": 0,
+      "track_id_sets": [
+        [
+          0
+        ]
+      ],
+      "secondary_acceleration_pass": false,
+      "secondary_lead_tail_pass": false,
+      "mean_loop_seconds": 0.09951164369122126
+    }
+  },
+  "v4": {
+    "empty": {
+      "acceptance_recomputed": true,
+      "driving_steps": 160,
+      "detections": 169,
+      "progress_m": 17.393879128884993,
+      "final_speed_mps": 2.3455693939628266,
+      "min_clearance_m": null,
+      "max_lateral_error_m": 4.869335194720992e-05,
+      "collision_event_count": 0,
+      "invalid_plans": 0,
+      "status_counts": {
+        "pdm_pid": 160
+      },
+      "max_abs_acceleration": 9.27457641335487,
+      "max_abs_acceleration_after_2s": 1.0652767739869193,
+      "min_acceleration": -0.2760713108169832,
+      "max_brake": 0.0,
+      "brake_saturated_steps": 0,
+      "speed_target_rmse": 0.5378545367588624,
+      "stop_then_restart_indices": [],
+      "last40_speed_range": [
+        2.3455693939628266,
+        2.7377222437117794
+      ],
+      "last40_target_range": [
+        2.663075994294978,
+        3.122333799230775
+      ],
+      "last10_speeds": [
+        2.4630294181585035,
+        2.451435122235296,
+        2.4396753842046666,
+        2.4275245178297666,
+        2.414425359025087,
+        2.400681027159392,
+        2.3868774653605973,
+        2.373123821729887,
+        2.3593709554558657,
+        2.3455693939628266
+      ],
+      "candidate_switches": 0,
+      "zero_score_frames": 0,
+      "detector_misses": 0,
+      "track_id_sets": [
+        []
+      ],
+      "secondary_acceleration_pass": false,
+      "secondary_lead_tail_pass": null,
+      "mean_loop_seconds": 0.07709800723241642
+    },
+    "lead": {
+      "acceptance_recomputed": true,
+      "driving_steps": 160,
+      "detections": 171,
+      "progress_m": 7.376662099431662,
+      "final_speed_mps": 0.4060902570992289,
+      "min_clearance_m": 2.721378543581409,
+      "max_lateral_error_m": 0.04924027342220369,
+      "collision_event_count": 0,
+      "invalid_plans": 0,
+      "status_counts": {
+        "pdm_pid": 160
+      },
+      "max_abs_acceleration": 9.27457641335487,
+      "max_abs_acceleration_after_2s": 1.4721984153971952,
+      "min_acceleration": -1.458798465117729,
+      "max_brake": 0.0,
+      "brake_saturated_steps": 0,
+      "speed_target_rmse": 0.45443847803536186,
+      "stop_then_restart_indices": [],
+      "last40_speed_range": [
+        0.3683545511098351,
+        0.6875015732679758
+      ],
+      "last40_target_range": [
+        0.6372968719958302,
+        0.953614002700871
+      ],
+      "last10_speeds": [
+        0.3960149108304371,
+        0.3845621002956035,
+        0.3683545511098351,
+        0.39391000828580874,
+        0.4128265044981913,
+        0.40844504263734366,
+        0.40139896944606795,
+        0.42283066770989425,
+        0.4235608747654976,
+        0.4060902570992289
+      ],
+      "candidate_switches": 50,
+      "zero_score_frames": 7,
+      "detector_misses": 0,
+      "track_id_sets": [
+        [
+          0
+        ]
+      ],
+      "secondary_acceleration_pass": false,
+      "secondary_lead_tail_pass": false,
+      "mean_loop_seconds": 0.10127340456529055
+    }
+  }
+}

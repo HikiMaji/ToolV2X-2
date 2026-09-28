@@ -1,0 +1,41 @@
+{
+  "number": 1,
+  "change_reason": "",
+  "protocol": {
+    "version": "toolv2x_pdm_project_adaptation_batch_v1",
+    "scope": "common Ego-only driving foundation; no training or P/F method claim",
+    "runs": {
+      "empty": 160,
+      "lead": 400,
+      "lead_release": 440
+    },
+    "dt_seconds": 0.05,
+    "lead_release_at_driving_step": 300,
+    "lead_release_throttle": 0.3,
+    "max_complete_batches": 2,
+    "second_batch_rule": "only if first exposes a concrete implementation or control-contract defect; archive both",
+    "criteria": {
+      "empty_min_progress_m": 8.0,
+      "lead_min_progress_m": 2.0,
+      "min_clearance_m": 0.5,
+      "max_lateral_error_m": 0.5,
+      "hold_window_steps": 40,
+      "hold_speed_each_below_mps": 0.1,
+      "release_progress_m": 2.0,
+      "release_peak_speed_mps": 0.5,
+      "collisions": 0,
+      "invalid_plan": 0,
+      "no_feasible_plans": 0,
+      "max_abs_longitudinal_acceleration_mps2": 4.0,
+      "unconfirmed_track_holds": 0
+    },
+    "changes": [
+      "v2 PLAN returns scored simulated 2s rollout rather than unscored raw 3s path",
+      "explicit dense speeds and plan validity",
+      "causal common stop-hold/release hysteresis",
+      "same original CARLA PID with P-only longitudinal Kp .2 and low-speed throttle cap .25",
+      "additional own observed-control and gearbox logging"
+    ],
+    "same_case_comparability": "new durations/criteria are predeclared; do not reclassify v3/v4 or call this paired method evaluation"
+  }
+}

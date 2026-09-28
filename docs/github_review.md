@@ -1,4 +1,20 @@
+# 2026-09-28 最新审查范围
+
+当前发布目标为 `HikiMaji/ToolV2X-2` 的 `main`，保留项目历史。先读 [09-28 修复报告](codriving_native_fix_2026_09_28.md) 与 [审计报告](codriving_input_audit_2026_09_28.md)。最新源码入口为 `codriving_native_inputs.py`、`codriving_causal_context.py`、`codriving_tool_adapter.py`，以及 `scripts/prepare_codriving_native_probe.py`。
+
+审查重点：原生 sensor/world/actor 坐标；start/decision/label 自洽；receiver 只排除返回、不截断完整 F context；predictor 不得原地裁剪输入；P 不预测；同导航空证据中心化修正；旧 adapter 权重拒绝；recording 隔离。真实数据训练和效果评价尚未执行，不应把合成优化测试写成论文收益。完整 paid receipt 链在 CoDriving 上仍未实跑。
+
+轻量复核：`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/check_review.py`，依赖 `requirements-review.txt`。模型环境与外部资源检查另行运行。精选验证证据见 `docs/evidence/codriving_native_fix_2026_09_28/`；旧审计数值见 `docs/evidence/codriving_input_audit_2026_09_28/`。
+
+以下为历史审查记录。
+
+---
+
 # GitHub 审查入口
+
+**最新研究（09-19，底座选型）：** 本批仅新增研究报告、官方资源与小样本核验记录，并更新文档入口；推荐PDM-Closed＋V2Xverse双车，CoDriving为学习式备选。没有生产代码改动、模型执行、数据迁移或训练。审查应区分官方原有能力、拟适配接口与尚未验证的效果，特别注意原PDM默认恒速占据、CARLA地图/时标、多模式F以及MTR跨域质量。见[选型报告](backbone_selection_2026_09_19.md)和[证据摘要](evidence/backbone_selection_2026_09_19/README.md)。本批未提交/推送；下方为历史审查快照。
+
+**当前状态（09-16，一次协作诊断已完成）：** 39个完整开发帧、156个真实归档任务、500/0/3200冻结检查点完成2460次模型前向（192秒），3042组六点输出独立复算通过，62项定向测试通过。主检查点收到P/F/PF后平均轨迹位移仅0.061/1.223/0.884毫米；同源内容比较排除完全重复，未证明远端更准。直接换回恒速基底未改善，故未实施该修复。生产驾驶器与P/F不变，零训练/新工具调用；后续LLM调度主方案已确认但尚未实现。下一项聚焦驾驶器证据使用与相关目标质量，不能继续相同训练或将本批当方法收益。见[诊断报告](single_cooperation_diagnostic_2026_09_16.md)与[可复查证据](evidence/single_cooperation_diagnostic_2026_09_16/README.md)。
 
 **最新研究（09-15，导航接入）：** 已核对参考源码、现有 3,095 条准备记录及 3 条原生导航样本；建议局部路线目标点通过普通 MLP token 接入共同驾驶器。导航尚未实现或训练，先完成来源/坐标绑定；小样本训练退化排查后置。见[导航方案与边界](navigation_research_2026_09_15.md)。本次发布包含验收修复、训练预检/结果和导航研究的代码或文档及精简证据；下方未推送等表述保留各历史阶段状态。
 

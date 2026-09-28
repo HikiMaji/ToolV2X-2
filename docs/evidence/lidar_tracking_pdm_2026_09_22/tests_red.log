@@ -1,0 +1,50 @@
+test_reflected_plan_frame_has_correct_heading_velocity (test_lidar_tracks.GeometryTests) ... ERROR
+test_self_filter_keeps_adjacent_vehicle (test_lidar_tracks.GeometryTests) ... ERROR
+test_tracker_box_roundtrip_and_camera_heading (test_lidar_tracks.GeometryTests) ... ERROR
+test_fixed_rate_prefix_and_velocity_units (test_lidar_tracks.TrackerTests) ... ERROR
+test_missed_frame_is_marked_as_prediction (test_lidar_tracks.TrackerTests) ... ERROR
+
+======================================================================
+ERROR: test_reflected_plan_frame_has_correct_heading_velocity (test_lidar_tracks.GeometryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 17, in test_reflected_plan_frame_has_correct_heading_velocity
+    from tracking.lidar_tracks import plan_objects
+ModuleNotFoundError: No module named 'tracking.lidar_tracks'
+
+======================================================================
+ERROR: test_self_filter_keeps_adjacent_vehicle (test_lidar_tracks.GeometryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 6, in test_self_filter_keeps_adjacent_vehicle
+    from tracking.lidar_tracks import exclude_self
+ModuleNotFoundError: No module named 'tracking.lidar_tracks'
+
+======================================================================
+ERROR: test_tracker_box_roundtrip_and_camera_heading (test_lidar_tracks.GeometryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 11, in test_tracker_box_roundtrip_and_camera_heading
+    from tracking.lidar_tracks import to_camera,from_camera
+ModuleNotFoundError: No module named 'tracking.lidar_tracks'
+
+======================================================================
+ERROR: test_fixed_rate_prefix_and_velocity_units (test_lidar_tracks.TrackerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 27, in test_fixed_rate_prefix_and_velocity_units
+    from tracking.lidar_tracks import FixedRateTracker
+ModuleNotFoundError: No module named 'tracking.lidar_tracks'
+
+======================================================================
+ERROR: test_missed_frame_is_marked_as_prediction (test_lidar_tracks.TrackerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 39, in test_missed_frame_is_marked_as_prediction
+    from tracking.lidar_tracks import FixedRateTracker
+ModuleNotFoundError: No module named 'tracking.lidar_tracks'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=5)

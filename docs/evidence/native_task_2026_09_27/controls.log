@@ -1,0 +1,21 @@
+..................................E...E...............................
+======================================================================
+ERROR: test_measured_table_fits_real_tiny_checkpoint_and_freezes_identical_policy (test_bundle_data.BundleModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_bundle_data.py", line 263, in test_measured_table_fits_real_tiny_checkpoint_and_freezes_identical_policy
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_original_planner_accepts_explicit_refinement_and_rejects_tampering (test_method_controls.ControlModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_method_controls.py", line 311, in test_original_planner_accepts_explicit_refinement_and_rejects_tampering
+    from transformers import AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+
+----------------------------------------------------------------------
+Ran 70 tests in 55.899s
+
+FAILED (errors=2)

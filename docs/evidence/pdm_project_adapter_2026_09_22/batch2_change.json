@@ -1,0 +1,17 @@
+{
+  "batch": 2,
+  "reason": "Fixed +/-1m lateral references cannot fit the declared single-lane geometry: lane width 3.500029m, ego width 2.128324m, feasible center offset <=0.685852m. Short dynamic horizon nevertheless admits incomplete transitions; these cause steering oscillation and no-feasible braking even on an empty road.",
+  "change": "Explicit lateral_offsets=[] for this shared single-route lane-keeping runtime; five longitudinal candidates retained",
+  "unchanged": [
+    "controller",
+    "all durations and criteria",
+    "detector",
+    "tracker",
+    "vehicle physics",
+    "map route",
+    "sensors"
+  ],
+  "limits": "No lane-change or obstacle-bypass claim; all later Ego/P/F arms must share the same declared maneuver domain; no general geometry-adaptive lateral generator implemented",
+  "batch1_original_output": "outputs/pdm_project_adapter_2026_09_22_v1",
+  "final_permitted_batch": true
+}

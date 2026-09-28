@@ -1,0 +1,32 @@
+test_first_adapter_rejects_multi_lane_route (test_carla_map_inputs.CarlaMapInputsTests) ... ERROR
+test_rejects_non_rigid_calibration (test_carla_map_inputs.CarlaMapInputsTests) ... ERROR
+test_route_world_to_rear_axle_and_handedness (test_carla_map_inputs.CarlaMapInputsTests) ... ERROR
+
+======================================================================
+ERROR: test_first_adapter_rejects_multi_lane_route (test_carla_map_inputs.CarlaMapInputsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_carla_map_inputs.py", line 19, in test_first_adapter_rejects_multi_lane_route
+    from planning.carla_map_inputs import route_geometry
+ModuleNotFoundError: No module named 'planning.carla_map_inputs'
+
+======================================================================
+ERROR: test_rejects_non_rigid_calibration (test_carla_map_inputs.CarlaMapInputsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_carla_map_inputs.py", line 15, in test_rejects_non_rigid_calibration
+    from planning.carla_map_inputs import route_geometry
+ModuleNotFoundError: No module named 'planning.carla_map_inputs'
+
+======================================================================
+ERROR: test_route_world_to_rear_axle_and_handedness (test_carla_map_inputs.CarlaMapInputsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_carla_map_inputs.py", line 6, in test_route_world_to_rear_axle_and_handedness
+    from planning.carla_map_inputs import route_geometry
+ModuleNotFoundError: No module named 'planning.carla_map_inputs'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=3)

@@ -1,0 +1,37 @@
+.F.FF.F
+======================================================================
+FAIL: test_controller_uses_ahead_of_body_waypoint_and_kmh (test_pdm_control.ControlTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_pdm_control.py", line 20, in test_controller_uses_ahead_of_body_waypoint_and_kmh
+    self.assertAlmostEqual(result['speed_kmh'],3.6)
+AssertionError: 1.8 != 3.6 within 7 places (1.8 difference)
+
+======================================================================
+FAIL: test_missing_nonfinite_or_nonincreasing_times_rejected (test_pdm_control.ControlTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_pdm_control.py", line 47, in test_missing_nonfinite_or_nonincreasing_times_rejected
+    with self.assertRaises(ValueError):control_target([[1,0],[2,0]],np.eye(4),1.4,headings,times)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_short_forward_rear_path_does_not_force_brake (test_pdm_control.ControlTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_pdm_control.py", line 36, in test_short_forward_rear_path_does_not_force_brake
+    self.assertAlmostEqual(r['speed_kmh'],2.16)
+AssertionError: 1.8 != 2.16 within 7 places (0.3600000000000001 difference)
+
+======================================================================
+FAIL: test_zero_path_holds_brake (test_pdm_control.ControlTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_pdm_control.py", line 29, in test_zero_path_holds_brake
+    self.assertEqual(r['speed_kmh'],0.)
+AssertionError: 1.8 != 0.0
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+FAILED (failures=4)

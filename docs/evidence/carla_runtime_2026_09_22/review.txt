@@ -1,0 +1,6 @@
+Independent read-only review: no confirmed important defect for the current capture.
+New map tests: 3/3 pass.
+Recomputed rear axle x=-1.393600m; wheelbase=2.871130m; CoG from rear=1.993600m.
+Centerline x=-6.6064..31.3936m; max lateral residual=1.50e-5m; heading=5.88e-7rad.
+Frames and timestamps match in this capture.
+Deferred diagnostic limitations: sensor_frame_matches records rather than blocks; single lane identity does not itself guarantee absence of signals/junctions. These remain acquisition preconditions, not deployment guarantees.

@@ -1,0 +1,15 @@
+{
+  "empty": {
+    "frames": 160,
+    "target_modes": {
+      "track": 160
+    }
+  },
+  "lead": {
+    "frames": 160,
+    "target_modes": {
+      "track": 153,
+      "hold_infeasible": 7
+    }
+  }
+}

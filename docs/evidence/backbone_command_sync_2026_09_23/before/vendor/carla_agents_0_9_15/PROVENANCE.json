@@ -1,0 +1,26 @@
+{
+  "upstream": "CARLA",
+  "tag": "0.9.15",
+  "retrieved_date": "2026-09-22",
+  "files": [
+    {
+      "path": "agents/navigation/controller.py",
+      "url": "https://raw.githubusercontent.com/carla-simulator/carla/0.9.15/PythonAPI/carla/agents/navigation/controller.py",
+      "bytes": 9433,
+      "modified": false
+    },
+    {
+      "path": "agents/tools/misc.py",
+      "url": "https://raw.githubusercontent.com/carla-simulator/carla/0.9.15/PythonAPI/carla/agents/tools/misc.py",
+      "bytes": 5836,
+      "modified": false
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/carla-simulator/carla/0.9.15/LICENSE",
+      "bytes": 1133,
+      "modified": false
+    }
+  ],
+  "scope": "Only the official PID and its misc helpers; package markers added locally."
+}

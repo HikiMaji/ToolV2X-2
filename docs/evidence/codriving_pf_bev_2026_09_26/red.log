@@ -1,0 +1,75 @@
+EEEEEEE
+======================================================================
+ERROR: test_future_history_rejected_and_input_not_mutated (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 52, in test_future_history_rejected_and_input_not_mutated
+    t=target();original=copy.deepcopy(t);self.build([t]);self.assertEqual(t,original)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_grid_forward_up_left_left_and_box_extent (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 20, in test_grid_forward_up_left_left_and_box_extent
+    r=self.build([target()]);p=r['P']
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_missing_refs_and_wrong_transform_rejected (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 64, in test_missing_refs_and_wrong_transform_rejected
+    with self.assertRaises(ValueError):self.build([t])
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_no_extrapolation_or_fabricated_velocity (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 44, in test_no_extrapolation_or_fabricated_velocity
+    r=self.build(f=[f]);self.assertEqual(r['F_valid'].tolist(),[True,True]) # anchor -> .5 interpolation
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_overlap_is_order_invariant_and_invalid_velocity_has_mask (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 58, in test_overlap_is_order_invariant_and_invalid_velocity_has_mask
+    np.testing.assert_array_equal(self.build([a,b])['P'],self.build([b,a])['P'])
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_rigid_rotation_transforms_velocity_and_history (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 29, in test_rigid_rotation_transforms_velocity_and_history
+    r=self.build([t],transform=T);mask=r['P'][4]>0
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+======================================================================
+ERROR: test_top1_and_cv_share_targets_anchor_shape_and_time_grid (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 37, in test_top1_and_cv_share_targets_anchor_shape_and_time_grid
+    f['model_used']=True;r=self.build(f=[f]);np.testing.assert_array_equal(r['F'],r['F_CV'])
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 15, in build
+    from planning.codriving_pf_bev import rasterize_pf
+ModuleNotFoundError: No module named 'planning.codriving_pf_bev'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+FAILED (errors=7)

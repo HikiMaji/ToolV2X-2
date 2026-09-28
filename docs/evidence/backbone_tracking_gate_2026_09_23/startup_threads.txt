@@ -1,0 +1,338 @@
+   PID    TID %CPU STAT COMMAND         WCHAN
+ 71801  71801 48.9 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  71804  0.0 SNl  TaskGraphNP 0   futex_wait_queue_me
+ 71801  71805  0.0 SNl  TaskGraphNP 1   futex_wait_queue_me
+ 71801  71806  0.0 SNl  TaskGraphNP 2   futex_wait_queue_me
+ 71801  71807  0.0 SNl  TaskGraphNP 3   futex_wait_queue_me
+ 71801  71808  0.0 SNl  TaskGraphNP 4   futex_wait_queue_me
+ 71801  71809  0.0 SNl  TaskGraphNP 5   futex_wait_queue_me
+ 71801  71810  0.0 SNl  TaskGraphNP 6   futex_wait_queue_me
+ 71801  71811  0.0 SNl  TaskGraphNP 7   futex_wait_queue_me
+ 71801  71812  0.0 SNl  TaskGraphNP 8   futex_wait_queue_me
+ 71801  71813  0.0 SNl  TaskGraphNP 9   futex_wait_queue_me
+ 71801  71814  0.0 SNl  TaskGraphNP 10  futex_wait_queue_me
+ 71801  71815  0.0 SNl  TaskGraphNP 11  futex_wait_queue_me
+ 71801  71816  0.0 SNl  TaskGraphNP 12  futex_wait_queue_me
+ 71801  71817  0.0 SNl  TaskGraphNP 13  futex_wait_queue_me
+ 71801  71818  0.0 SNl  TaskGraphNP 14  futex_wait_queue_me
+ 71801  71819  0.0 SNl  TaskGraphNP 15  futex_wait_queue_me
+ 71801  71820  0.0 SNl  TaskGraphNP 16  futex_wait_queue_me
+ 71801  71821  0.0 SNl  TaskGraphNP 17  futex_wait_queue_me
+ 71801  71822  0.0 SNl  TaskGraphNP 18  futex_wait_queue_me
+ 71801  71823  0.0 SNl  TaskGraphNP 19  futex_wait_queue_me
+ 71801  71824  0.0 SNl  TaskGraphNP 20  futex_wait_queue_me
+ 71801  71825  0.0 SNl  TaskGraphNP 21  futex_wait_queue_me
+ 71801  71826  0.0 SNl  TaskGraphNP 22  futex_wait_queue_me
+ 71801  71827  0.0 SNl  TaskGraphNP 23  futex_wait_queue_me
+ 71801  71828  0.0 SNl  TaskGraphNP 24  futex_wait_queue_me
+ 71801  71829  0.0 SNl  TaskGraphNP 25  futex_wait_queue_me
+ 71801  71830  0.1 SNl  TaskGraphHP 26  futex_wait_queue_me
+ 71801  71831  0.0 SNl  TaskGraphHP 27  futex_wait_queue_me
+ 71801  71832  0.1 SNl  TaskGraphHP 28  futex_wait_queue_me
+ 71801  71833  0.0 SNl  TaskGraphHP 29  futex_wait_queue_me
+ 71801  71834  0.0 SNl  TaskGraphHP 30  futex_wait_queue_me
+ 71801  71835  0.0 SNl  TaskGraphHP 31  futex_wait_queue_me
+ 71801  71836  0.0 SNl  TaskGraphHP 32  futex_wait_queue_me
+ 71801  71837  0.0 SNl  TaskGraphHP 33  futex_wait_queue_me
+ 71801  71838  0.0 SNl  TaskGraphHP 34  futex_wait_queue_me
+ 71801  71839  0.0 SNl  TaskGraphHP 35  futex_wait_queue_me
+ 71801  71840  0.0 SNl  TaskGraphHP 36  futex_wait_queue_me
+ 71801  71841  0.0 SNl  TaskGraphHP 37  futex_wait_queue_me
+ 71801  71842  0.0 SNl  TaskGraphHP 38  futex_wait_queue_me
+ 71801  71843  0.0 SNl  TaskGraphHP 39  futex_wait_queue_me
+ 71801  71844  0.0 SNl  TaskGraphHP 40  futex_wait_queue_me
+ 71801  71845  0.0 SNl  TaskGraphHP 41  futex_wait_queue_me
+ 71801  71846  0.0 SNl  TaskGraphHP 42  futex_wait_queue_me
+ 71801  71847  0.0 SNl  TaskGraphHP 43  futex_wait_queue_me
+ 71801  71848  0.0 SNl  TaskGraphHP 44  futex_wait_queue_me
+ 71801  71849  0.0 SNl  TaskGraphHP 45  futex_wait_queue_me
+ 71801  71850  0.0 SNl  TaskGraphHP 46  futex_wait_queue_me
+ 71801  71851  0.0 SNl  TaskGraphHP 47  futex_wait_queue_me
+ 71801  71852  0.0 SNl  TaskGraphHP 48  futex_wait_queue_me
+ 71801  71853  0.0 SNl  TaskGraphHP 49  futex_wait_queue_me
+ 71801  71854  0.0 SNl  TaskGraphHP 50  futex_wait_queue_me
+ 71801  71855  0.0 SNl  TaskGraphHP 51  futex_wait_queue_me
+ 71801  71856  0.0 SNl  TaskGraphBP 52  futex_wait_queue_me
+ 71801  71857  0.0 SNl  TaskGraphBP 53  futex_wait_queue_me
+ 71801  71858  0.0 SNl  TaskGraphBP 54  futex_wait_queue_me
+ 71801  71859  0.0 SNl  TaskGraphBP 55  futex_wait_queue_me
+ 71801  71860  0.0 SNl  TaskGraphBP 56  futex_wait_queue_me
+ 71801  71861  0.0 SNl  TaskGraphBP 57  futex_wait_queue_me
+ 71801  71862  0.0 SNl  TaskGraphBP 58  futex_wait_queue_me
+ 71801  71863  0.0 SNl  TaskGraphBP 59  futex_wait_queue_me
+ 71801  71864  0.0 SNl  TaskGraphBP 60  futex_wait_queue_me
+ 71801  71865  0.0 SNl  TaskGraphBP 61  futex_wait_queue_me
+ 71801  71866  0.0 SNl  TaskGraphBP 62  futex_wait_queue_me
+ 71801  71867  0.0 SNl  TaskGraphBP 63  futex_wait_queue_me
+ 71801  71868  0.0 SNl  TaskGraphBP 64  futex_wait_queue_me
+ 71801  71869  0.0 SNl  TaskGraphBP 65  futex_wait_queue_me
+ 71801  71870  0.0 SNl  TaskGraphBP 66  futex_wait_queue_me
+ 71801  71871  0.0 SNl  TaskGraphBP 67  futex_wait_queue_me
+ 71801  71872  0.0 SNl  TaskGraphBP 68  futex_wait_queue_me
+ 71801  71873  0.0 SNl  TaskGraphBP 69  futex_wait_queue_me
+ 71801  71874  0.0 SNl  TaskGraphBP 70  futex_wait_queue_me
+ 71801  71875  0.0 SNl  TaskGraphBP 71  futex_wait_queue_me
+ 71801  71876  0.0 SNl  TaskGraphBP 72  futex_wait_queue_me
+ 71801  71877  0.0 SNl  TaskGraphBP 73  futex_wait_queue_me
+ 71801  71878  0.0 SNl  TaskGraphBP 74  futex_wait_queue_me
+ 71801  71879  0.0 SNl  TaskGraphBP 75  futex_wait_queue_me
+ 71801  71880  0.0 SNl  TaskGraphBP 76  futex_wait_queue_me
+ 71801  71881  0.0 SNl  TaskGraphBP 77  futex_wait_queue_me
+ 71801  71882  0.0 SNl  StatsThread     futex_wait_queue_me
+ 71801  71883  0.0 SNl  PoolThread 0    futex_wait_queue_me
+ 71801  71884  0.0 SNl  PoolThread 1    futex_wait_queue_me
+ 71801  71885  0.0 SNl  PoolThread 2    futex_wait_queue_me
+ 71801  71886  0.0 SNl  PoolThread 3    futex_wait_queue_me
+ 71801  71887  0.0 SNl  PoolThread 4    futex_wait_queue_me
+ 71801  71888  0.0 SNl  PoolThread 5    futex_wait_queue_me
+ 71801  71889  0.0 SNl  PoolThread 6    futex_wait_queue_me
+ 71801  71890  0.0 SNl  PoolThread 7    futex_wait_queue_me
+ 71801  71891  0.0 SNl  PoolThread 8    futex_wait_queue_me
+ 71801  71892  0.0 SNl  PoolThread 9    futex_wait_queue_me
+ 71801  71893  0.0 SNl  PoolThread 10   futex_wait_queue_me
+ 71801  71894  0.0 SNl  PoolThread 11   futex_wait_queue_me
+ 71801  71895  0.0 SNl  PoolThread 12   futex_wait_queue_me
+ 71801  71896  0.0 SNl  PoolThread 13   futex_wait_queue_me
+ 71801  71897  0.0 SNl  PoolThread 14   futex_wait_queue_me
+ 71801  71898  0.0 SNl  PoolThread 15   futex_wait_queue_me
+ 71801  71899  0.0 SNl  PoolThread 16   futex_wait_queue_me
+ 71801  71900  0.0 SNl  PoolThread 17   futex_wait_queue_me
+ 71801  71901  0.0 SNl  PoolThread 18   futex_wait_queue_me
+ 71801  71902  0.0 SNl  PoolThread 19   futex_wait_queue_me
+ 71801  71903  0.0 SNl  PoolThread 20   futex_wait_queue_me
+ 71801  71904  0.0 SNl  PoolThread 21   futex_wait_queue_me
+ 71801  71905  0.0 SNl  PoolThread 22   futex_wait_queue_me
+ 71801  71906  0.0 SNl  PoolThread 23   futex_wait_queue_me
+ 71801  71907  0.0 SNl  PoolThread 24   futex_wait_queue_me
+ 71801  71908  0.0 SNl  PoolThread 25   futex_wait_queue_me
+ 71801  71909  0.0 SNl  PoolThread 26   futex_wait_queue_me
+ 71801  71910  0.0 SNl  PoolThread 27   futex_wait_queue_me
+ 71801  71913  0.0 Sl   HttpManager     hrtimer_nanosleep
+ 71801  71914  0.0 Sl   OnlineA-ance(1) futex_wait_queue_me
+ 71801  71915  5.6 Sl   PoolThread 28   futex_wait_queue_me
+ 71801  71916  6.5 Sl   PoolThread 29   futex_wait_queue_me
+ 71801  71917  6.7 Sl   PoolThread 30   futex_wait_queue_me
+ 71801  71918  5.7 Sl   PoolThread 31   futex_wait_queue_me
+ 71801  71919  0.0 Sl   SDLTimer        futex_wait_queue_me
+ 71801  71922  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  71923  0.0 Sl   [vkcf] Analysis futex_wait_queue_me
+ 71801  71924  0.0 Sl   [vkrt] Analysis futex_wait_queue_me
+ 71801  71925  0.0 Sl   [vkps] Update   futex_wait_queue_me
+ 71801  71926  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  71929  0.0 Sl   FMediaTicker    futex_wait_queue_me
+ 71801  71930  5.7 SNl  RHIThread       futex_wait_queue_me
+ 71801  71933  0.0 Sl   PoolThread 32   futex_wait_queue_me
+ 71801  71934  0.0 Sl   PoolThread 33   futex_wait_queue_me
+ 71801  71935  0.0 Sl   PoolThread 34   futex_wait_queue_me
+ 71801  71936  0.0 Sl   PoolThread 35   futex_wait_queue_me
+ 71801  71937  0.0 Sl   PoolThread 36   futex_wait_queue_me
+ 71801  71938  0.0 Sl   PoolThread 37   futex_wait_queue_me
+ 71801  71939  0.0 Sl   PoolThread 38   futex_wait_queue_me
+ 71801  71940  0.0 Sl   PoolThread 39   futex_wait_queue_me
+ 71801  71941  0.0 Sl   PoolThread 40   futex_wait_queue_me
+ 71801  71942  0.0 Sl   PoolThread 41   futex_wait_queue_me
+ 71801  71943  0.0 Sl   PoolThread 42   futex_wait_queue_me
+ 71801  71944  0.0 Sl   PoolThread 43   futex_wait_queue_me
+ 71801  71945  0.0 Sl   PoolThread 44   futex_wait_queue_me
+ 71801  71946  0.0 Sl   PoolThread 45   futex_wait_queue_me
+ 71801  71947  0.0 Sl   PoolThread 46   futex_wait_queue_me
+ 71801  71948  0.0 Sl   PoolThread 47   futex_wait_queue_me
+ 71801  71949  0.0 Sl   PoolThread 48   futex_wait_queue_me
+ 71801  71950  0.0 Sl   PoolThread 49   futex_wait_queue_me
+ 71801  71951  0.0 Sl   PoolThread 50   futex_wait_queue_me
+ 71801  71952  0.0 Sl   PoolThread 51   futex_wait_queue_me
+ 71801  71953  0.0 Sl   PoolThread 52   futex_wait_queue_me
+ 71801  71954  0.0 Sl   PoolThread 53   futex_wait_queue_me
+ 71801  71955  0.0 Sl   PoolThread 54   futex_wait_queue_me
+ 71801  71956  0.0 Sl   PoolThread 55   futex_wait_queue_me
+ 71801  71957  0.0 Sl   PoolThread 56   futex_wait_queue_me
+ 71801  71958  0.0 Sl   PoolThread 57   futex_wait_queue_me
+ 71801  71959  0.0 Sl   PoolThread 58   futex_wait_queue_me
+ 71801  71960  0.0 Sl   PoolThread 59   futex_wait_queue_me
+ 71801  71961  0.0 Sl   PoolThread 60   futex_wait_queue_me
+ 71801  71962  0.0 Sl   PoolThread 61   futex_wait_queue_me
+ 71801  71963  0.0 Sl   PoolThread 62   futex_wait_queue_me
+ 71801  71964  0.0 Sl   PoolThread 63   futex_wait_queue_me
+ 71801  71965  0.0 Sl   PoolThread 64   futex_wait_queue_me
+ 71801  71966  0.0 Sl   PoolThread 65   futex_wait_queue_me
+ 71801  71967  0.0 Sl   PoolThread 66   futex_wait_queue_me
+ 71801  71968  0.0 Sl   PoolThread 67   futex_wait_queue_me
+ 71801  71969  0.0 Sl   PoolThread 68   futex_wait_queue_me
+ 71801  71970  0.0 Sl   PoolThread 69   futex_wait_queue_me
+ 71801  71971  0.0 Sl   PoolThread 70   futex_wait_queue_me
+ 71801  71972  0.0 Sl   PoolThread 71   futex_wait_queue_me
+ 71801  71973  0.0 Sl   PoolThread 72   futex_wait_queue_me
+ 71801  71974  0.0 Sl   PoolThread 73   futex_wait_queue_me
+ 71801  71975  0.0 Sl   PoolThread 74   futex_wait_queue_me
+ 71801  71976  0.0 Sl   PoolThread 75   futex_wait_queue_me
+ 71801  71977  0.0 Sl   PoolThread 76   futex_wait_queue_me
+ 71801  71978  0.0 Sl   PoolThread 77   futex_wait_queue_me
+ 71801  71979  0.0 Sl   PoolThread 78   futex_wait_queue_me
+ 71801  71980  0.0 Sl   PoolThread 79   futex_wait_queue_me
+ 71801  71981  0.0 Sl   PoolThread 80   futex_wait_queue_me
+ 71801  71982  0.0 Sl   PoolThread 81   futex_wait_queue_me
+ 71801  71983  0.0 Sl   PoolThread 82   futex_wait_queue_me
+ 71801  71984  0.0 Sl   PoolThread 83   futex_wait_queue_me
+ 71801  71985  0.0 Sl   PoolThread 84   futex_wait_queue_me
+ 71801  71986  0.0 Sl   PoolThread 85   futex_wait_queue_me
+ 71801  71987  0.0 Sl   PoolThread 86   futex_wait_queue_me
+ 71801  71988  0.0 Sl   PoolThread 87   futex_wait_queue_me
+ 71801  71989  0.0 Sl   PoolThread 88   futex_wait_queue_me
+ 71801  71990  0.0 Sl   PoolThread 89   futex_wait_queue_me
+ 71801  71991  0.0 Sl   PoolThread 90   futex_wait_queue_me
+ 71801  71992  0.0 Sl   PoolThread 91   futex_wait_queue_me
+ 71801  71993  0.0 Sl   PoolThread 92   futex_wait_queue_me
+ 71801  71994  0.0 Sl   PoolThread 93   futex_wait_queue_me
+ 71801  71995  0.0 Sl   PoolThread 94   futex_wait_queue_me
+ 71801  71996  0.0 Sl   PoolThread 95   futex_wait_queue_me
+ 71801  71997  0.0 Sl   PoolThread 96   futex_wait_queue_me
+ 71801  71998  0.0 Sl   PoolThread 97   futex_wait_queue_me
+ 71801  71999  0.0 Sl   PoolThread 98   futex_wait_queue_me
+ 71801  72000  0.0 Sl   PoolThread 99   futex_wait_queue_me
+ 71801  72001  0.0 Sl   PoolThread 100  futex_wait_queue_me
+ 71801  72002  0.0 Sl   PoolThread 101  futex_wait_queue_me
+ 71801  72003  0.0 Sl   PoolThread 102  futex_wait_queue_me
+ 71801  72004  0.0 Sl   PoolThread 103  futex_wait_queue_me
+ 71801  72005  0.0 Sl   PoolThread 104  futex_wait_queue_me
+ 71801  72006  0.0 Sl   PoolThread 105  futex_wait_queue_me
+ 71801  72007  0.0 Sl   PoolThread 106  futex_wait_queue_me
+ 71801  72008  0.0 Sl   PoolThread 107  futex_wait_queue_me
+ 71801  72009  0.0 Sl   PoolThread 108  futex_wait_queue_me
+ 71801  72010  0.0 Sl   PoolThread 109  futex_wait_queue_me
+ 71801  72011  0.0 Sl   PoolThread 110  futex_wait_queue_me
+ 71801  72012  0.0 Sl   PoolThread 111  futex_wait_queue_me
+ 71801  72013  0.0 Sl   PoolThread 112  futex_wait_queue_me
+ 71801  72014  0.0 Sl   PoolThread 113  futex_wait_queue_me
+ 71801  72015  0.0 Sl   PoolThread 114  futex_wait_queue_me
+ 71801  72016  0.0 Sl   PoolThread 115  futex_wait_queue_me
+ 71801  72017  0.0 Sl   PoolThread 116  futex_wait_queue_me
+ 71801  72018  0.0 Sl   PoolThread 117  futex_wait_queue_me
+ 71801  72019  0.0 Sl   PoolThread 118  futex_wait_queue_me
+ 71801  72020  0.0 Sl   PoolThread 119  futex_wait_queue_me
+ 71801  72021  0.0 Sl   PoolThread 120  futex_wait_queue_me
+ 71801  72022  0.0 Sl   PoolThread 121  futex_wait_queue_me
+ 71801  72023  0.0 Sl   PoolThread 122  futex_wait_queue_me
+ 71801  72024  0.0 Sl   PoolThread 123  futex_wait_queue_me
+ 71801  72025  0.0 Sl   PoolThread 124  futex_wait_queue_me
+ 71801  72026  0.0 Sl   PoolThread 125  futex_wait_queue_me
+ 71801  72027  0.0 Sl   PoolThread 126  futex_wait_queue_me
+ 71801  72028  0.0 Sl   PoolThread 127  futex_wait_queue_me
+ 71801  72029  0.0 Sl   PoolThread 128  futex_wait_queue_me
+ 71801  72030  0.0 Sl   PoolThread 129  futex_wait_queue_me
+ 71801  72031  0.0 Sl   PoolThread 130  futex_wait_queue_me
+ 71801  72032  0.0 Sl   PoolThread 131  futex_wait_queue_me
+ 71801  72033  0.0 Sl   PoolThread 132  futex_wait_queue_me
+ 71801  72034  0.0 Sl   PoolThread 133  futex_wait_queue_me
+ 71801  72035  0.0 Sl   PoolThread 134  futex_wait_queue_me
+ 71801  72036  0.0 Sl   PoolThread 135  futex_wait_queue_me
+ 71801  72037  0.0 Sl   PoolThread 136  futex_wait_queue_me
+ 71801  72038  0.0 Sl   PoolThread 137  futex_wait_queue_me
+ 71801  72039  0.0 Sl   PoolThread 138  futex_wait_queue_me
+ 71801  72040  0.0 Sl   PoolThread 139  futex_wait_queue_me
+ 71801  72041  0.0 Sl   PoolThread 140  futex_wait_queue_me
+ 71801  72042  0.0 Sl   PoolThread 141  futex_wait_queue_me
+ 71801  72043  0.0 Sl   PoolThread 142  futex_wait_queue_me
+ 71801  72044  0.0 Sl   PoolThread 143  futex_wait_queue_me
+ 71801  72045  0.0 Sl   PoolThread 144  futex_wait_queue_me
+ 71801  72046  0.0 Sl   PoolThread 145  futex_wait_queue_me
+ 71801  72047  0.0 Sl   PoolThread 146  futex_wait_queue_me
+ 71801  72048  0.0 Sl   PoolThread 147  futex_wait_queue_me
+ 71801  72049  0.0 Sl   PoolThread 148  futex_wait_queue_me
+ 71801  72050  0.0 Sl   PoolThread 149  futex_wait_queue_me
+ 71801  72051  0.0 Sl   PoolThread 150  futex_wait_queue_me
+ 71801  72052  0.0 Sl   PoolThread 151  futex_wait_queue_me
+ 71801  72053  0.0 Sl   PoolThread 152  futex_wait_queue_me
+ 71801  72054  0.0 Sl   PoolThread 153  futex_wait_queue_me
+ 71801  72055  0.0 Sl   PoolThread 154  futex_wait_queue_me
+ 71801  72056  0.0 Sl   PoolThread 155  futex_wait_queue_me
+ 71801  72057  0.0 Sl   PoolThread 156  futex_wait_queue_me
+ 71801  72058  0.0 Sl   PoolThread 157  futex_wait_queue_me
+ 71801  72059  0.0 Sl   PoolThread 158  futex_wait_queue_me
+ 71801  72060  0.0 Sl   PoolThread 159  futex_wait_queue_me
+ 71801  72069  0.0 Sl   server          futex_wait_queue_me
+ 71801  72106  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72107  0.0 Sl   CarlaUE4-Linux- ep_poll
+ 71801  72108  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72109  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72110  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72111  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72112  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72113  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72114  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72115  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72116  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72117  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72118  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72119  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72120  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72121  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72122  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72123  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72124  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72125  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72126  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72127  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72128  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72129  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72130  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72131  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72132  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72133  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72134  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72135  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72136  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72137  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72138  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72139  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72140  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72141  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72142  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72143  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72144  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72145  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72146  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72147  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72148  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72149  0.0 Sl   CarlaUE4-Linux- ep_poll
+ 71801  72150  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72151  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72152  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72153  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72154  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72155  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72156  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72157  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72158  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72159  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72160  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72161  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72162  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72163  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72164  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72165  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72166  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72167  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72168  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72169  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72170  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72171  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72172  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72173  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72174  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72175  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72176  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72177  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72178  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72179  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72180  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72181  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72182  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72183  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72184  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72185  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72186  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72187  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72188  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72189  0.0 Sl   CarlaUE4-Linux- futex_wait_queue_me
+ 71801  72323  0.8 Sl   RenderThread 1  futex_wait_queue_me
+ 71801  72324  0.0 Sl   RTHeartBeat 1   hrtimer_nanosleep

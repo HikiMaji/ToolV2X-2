@@ -1,0 +1,184 @@
+{
+  "train_Ego": {
+    "tasks": 160,
+    "with_remote_primary": 0,
+    "remote_primary_fields": {},
+    "local_forecast_sets": 1989,
+    "remote_forecast_sets": 0,
+    "remote_mtr_sets": 0,
+    "remote_fallback_sets": 0,
+    "exclusions": {},
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 8,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "train_P": {
+    "tasks": 160,
+    "with_remote_primary": 160,
+    "remote_primary_fields": {
+      "history": 523
+    },
+    "local_forecast_sets": 1989,
+    "remote_forecast_sets": 0,
+    "remote_mtr_sets": 0,
+    "remote_fallback_sets": 0,
+    "exclusions": {
+      "ego_filter": 98
+    },
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 12,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "train_F": {
+    "tasks": 160,
+    "with_remote_primary": 160,
+    "remote_primary_fields": {
+      "forecast": 621
+    },
+    "local_forecast_sets": 1989,
+    "remote_forecast_sets": 621,
+    "remote_mtr_sets": 609,
+    "remote_fallback_sets": 12,
+    "exclusions": {},
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 12,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "train_PF": {
+    "tasks": 160,
+    "with_remote_primary": 160,
+    "remote_primary_fields": {
+      "history": 523,
+      "forecast": 523
+    },
+    "local_forecast_sets": 1989,
+    "remote_forecast_sets": 523,
+    "remote_mtr_sets": 511,
+    "remote_fallback_sets": 12,
+    "exclusions": {
+      "ego_filter": 196
+    },
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 12,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "validation_Ego": {
+    "tasks": 39,
+    "with_remote_primary": 0,
+    "remote_primary_fields": {},
+    "local_forecast_sets": 716,
+    "remote_forecast_sets": 0,
+    "remote_mtr_sets": 0,
+    "remote_fallback_sets": 0,
+    "exclusions": {},
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 21,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "validation_P": {
+    "tasks": 39,
+    "with_remote_primary": 39,
+    "remote_primary_fields": {
+      "history": 120
+    },
+    "local_forecast_sets": 716,
+    "remote_forecast_sets": 0,
+    "remote_mtr_sets": 0,
+    "remote_fallback_sets": 0,
+    "exclusions": {
+      "ego_filter": 36
+    },
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 21,
+        "ego_filtered_entities": 1,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "validation_F": {
+    "tasks": 39,
+    "with_remote_primary": 39,
+    "remote_primary_fields": {
+      "forecast": 156
+    },
+    "local_forecast_sets": 716,
+    "remote_forecast_sets": 156,
+    "remote_mtr_sets": 155,
+    "remote_fallback_sets": 1,
+    "exclusions": {},
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 22,
+        "ego_filtered_entities": 0,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  },
+  "validation_PF": {
+    "tasks": 39,
+    "with_remote_primary": 39,
+    "remote_primary_fields": {
+      "history": 120,
+      "forecast": 123
+    },
+    "local_forecast_sets": 716,
+    "remote_forecast_sets": 123,
+    "remote_mtr_sets": 122,
+    "remote_fallback_sets": 1,
+    "exclusions": {
+      "ego_filter": 69
+    },
+    "capacity_examples": [
+      {
+        "max_entities": 64,
+        "max_forecast_sets_per_entity": 4,
+        "tensor_entities": 21,
+        "ego_filtered_entities": 1,
+        "entity_capacity_filtered_entities": 0,
+        "structured_capacity_filtered_forecast_sets": 0
+      }
+    ]
+  }
+}

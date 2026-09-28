@@ -50,7 +50,11 @@ def prediction_objects(window, prediction):
 
 
 class VehicleTools:
-    def __init__(self, window_loader, predictor, scene, g, provider='no_fusion_cav1', *, task_provenance=None):
+    def __init__(self, window_loader, predictor, scene, g, provider='no_fusion_cav1', *, task_provenance=None, task_frame_binding=None):
+        self._task_frame_binding=copy.deepcopy(task_frame_binding)
+        if task_frame_binding is not None:
+            from tools.native_time import check_binding
+            check_binding(task_frame_binding)
         self._load = window_loader
         self._predict = predictor
         self.scene, self.g, self.provider = scene, int(g), provider
@@ -107,7 +111,7 @@ class VehicleTools:
                 r.get('status')!='completed' for r in self._task_records):
             raise ValueError('branch service requires a successful zero/one-call task prefix')
         result=VehicleTools(self._load,self._predict,self.scene,self.g,self.provider,
-                            task_provenance=self._task_provenance)
+                            task_provenance=self._task_provenance,task_frame_binding=self._task_frame_binding)
         for name in ('_task_window','_task_forecast','_task_receipts','_task_records','_task_spec','_task_bytes'):
             setattr(result,name,copy.deepcopy(getattr(self,name)))
         return result
@@ -131,6 +135,13 @@ class VehicleTools:
         begin = perf_counter()
         request = copy.deepcopy(request)
         validate_task_request(request, self._task_receipts)
+        native=request['version']=='toolv2x_task_v3'
+        if native and request['frame_binding']!=self._task_frame_binding:
+            raise ValueError('native request must match provider-owned frame/time binding')
+        if self._task_records:
+            first=self._task_records[0]['request']
+            if (native or first['version']=='toolv2x_task_v3') and (request['version']!=first['version'] or request.get('frame_binding')!=first.get('frame_binding') or request['times']!=first['times']):
+                raise ValueError('protocol and frame binding frozen within episode')
         validate_provenance(self._task_provenance)
         if isinstance(self._predict, FrozenPredictor) and (
                 self._predict.descriptor['model_version'] != self._task_provenance['prediction']):
@@ -148,7 +159,7 @@ class VehicleTools:
         request_bytes = len(encode(request))
         if not internal and self._task_bytes + request_bytes + spec.max_response_bytes > spec.max_episode_bytes:
             raise ValueError('remaining episode budget cannot reserve response cap')
-        packet = dict(version='toolv2x_task_response_v2', request=request, receipt_id=uuid4().hex,
+        packet = dict(version='toolv2x_task_response_v3' if native else 'toolv2x_task_response_v2', request=request, receipt_id=uuid4().hex,
             provenance=copy.deepcopy(self._task_provenance), records=[], references=[], ranking=[],
             status='no_observed_targets', coverage='not_established', truncated=False)
         if request['tool'] == 'F' and isinstance(self._predict, FrozenPredictor):
@@ -168,7 +179,7 @@ class VehicleTools:
         try:
             if self._task_window is None:
                 w = copy.deepcopy(self._load())
-                _check_window(w)
+                _check_window(w,native=native)
                 if (w['source'], w['scene'], w['g']) != (self.provider, self.scene, self.g):
                     raise ValueError('provider window source/scene/time mismatch')
                 for key in ('states', 'valid', 'scores', 'track_ids', 'time_seconds'):
@@ -201,12 +212,20 @@ class VehicleTools:
             stage = 'response_packing'
             acknowledged = {field_key(entry['ref']): entry for entry in request['acquired_field_manifest']}
             positions = {int(handle): i for i, handle in enumerate(w['track_ids'])}
-            forecasts = {o['track_id']: o for o in prediction_objects(w, forecast)} if tool == 'F' else {}
+            if tool=='F' and native:
+                from tools.native_time import forecast_at
+                paths=forecast_at(w,forecast,request['times'])
+                forecasts={int(t):dict(forecast=paths[i].tolist(),forecast_scores=forecast['scores'][i].tolist(),model_used=bool(forecast['model_used'][i])) for i,t in enumerate(w['track_ids'])}
+            else:
+                forecasts = {o['track_id']: o for o in prediction_objects(w, forecast)} if tool == 'F' else {}
             candidates = []
             for rank in ranked:
                 handle = rank['track_handle']
                 i = positions[handle]
                 values = dict(anchor=dict(box=w['states'][i, -1].tolist(), score=float(w['scores'][i, -1])))
+                if native:
+                    from tools.native_time import motion
+                    values['anchor']['motion']=motion(w['states'][i],w['valid'][i],w['time_seconds'])
                 if tool == 'P':
                     values['history'] = dict(history=w['states'][i].tolist(), history_valid=w['valid'][i].tolist(),
                         history_scores=w['scores'][i].tolist(), history_times=w['time_seconds'].tolist(),
@@ -214,7 +233,7 @@ class VehicleTools:
                 else:
                     predicted = forecasts[handle]
                     values['forecast'] = dict(forecast=predicted['forecast'], forecast_scores=predicted['forecast_scores'],
-                        forecast_times=TIMES, model_used=predicted['model_used'], context_scope='provider_full_at_t')
+                        forecast_times=request['times'] if native else TIMES, model_used=predicted['model_used'], context_scope='provider_full_at_t')
                 records, references = [], []
                 for kind, value in values.items():
                     ref = dict(provider=self.provider, scene=self.scene, g=self.g, track_handle=handle,
@@ -437,6 +456,7 @@ def decode_task_response(wire, request):
     from tools.task_spec import (_request_spec, _keys, _array, _text, _integer,
                                  field_key, validate_provenance)
     spec = _request_spec(request)
+    native=request['version']=='toolv2x_task_v3'
     if not isinstance(wire, bytes) or len(wire) > spec.max_response_bytes:
         raise ValueError('response must be UTF-8 bytes within configured cap')
 
@@ -453,7 +473,7 @@ def decode_task_response(wire, request):
                 'ranking', 'status', 'coverage', 'truncated'}
     _keys(packet, expected | (set(packet) & {'context_certificate', 'predictor_binding'}), 'task response')
     _request_spec(packet['request'])
-    if (packet['version'] != 'toolv2x_task_response_v2' or packet['request'] != request or
+    if (packet['version'] != ('toolv2x_task_response_v3' if native else 'toolv2x_task_response_v2') or packet['request'] != request or
             packet['coverage'] != 'not_established' or type(packet['truncated']) is not bool):
         raise ValueError('response request/coverage contract mismatch')
     _text(packet['receipt_id'])
@@ -489,7 +509,8 @@ def decode_task_response(wire, request):
             else:
                 if key in acknowledged:
                     raise ValueError('response retransmitted an acknowledged field')
-                _validate_task_value(kind, item['value'])
+                _validate_task_value(kind, item['value'],native=native)
+                if native and kind=='forecast' and item['value']['forecast_times']!=request['times']:raise ValueError('forecast/request time mismatch')
                 if request['mode'] == 'roi' and kind == 'anchor' and not in_roi(item['value']['box'], request['roi']):
                     raise ValueError('returned anchor is outside the controls ROI')
                 new_targets.add(handle)
@@ -529,6 +550,10 @@ def decode_task_response(wire, request):
     for values in target_fields.values():
         if 'value' in values['anchor'] and 'history' in values and 'value' in values['history']:
             anchor, history = values['anchor']['value'], values['history']['value']
+            if native:
+                from tools.native_time import motion
+                expected_motion=motion(np.asarray(history['history']),np.asarray(history['history_valid']),np.asarray(history['history_times']))
+                if anchor['motion']!=expected_motion:raise ValueError('motion anchor and paid history disagree')
             if history['history'][-1] != anchor['box'] or history['history_scores'][-1] != anchor['score']:
                 raise ValueError('history and current anchor disagree')
         if 'value' in values['anchor'] and 'forecast' in values and 'value' in values['forecast']:
@@ -582,32 +607,50 @@ def _validate_predictor_binding(binding, provenance):
         raise ValueError('context predictor identity mismatch')
 
 
-def _validate_task_value(kind, value):
+def _validate_task_value(kind, value, native=False):
     from tools.task_spec import _keys, _array
+    if native:
+        from tools.native_time import time_axis
     if kind == 'anchor':
-        _keys(value, ('box', 'score'), 'anchor bundle')
+        _keys(value, ('box', 'score', 'motion') if native else ('box', 'score'), 'anchor bundle')
         box = _array(value['box'], (7,))
         if ((box[3:6] <= 0).any() or type(value['score']) not in (int, float) or
                 not np.isfinite(value['score']) or not 0 <= value['score'] <= 1):
             raise ValueError('invalid current anchor')
+        if native:
+            m=value['motion']
+            _keys(m,('velocity','valid','support_times','source'),'motion anchor')
+            velocity=_array(m['velocity'],(2,))
+            if type(m['valid']) is not bool or m['source']!='causal_tracking_state_motion_proxy':raise ValueError('invalid motion source/validity')
+            if m['valid']:
+                t=_array(m['support_times'],(2,))
+                if not t[0]<t[1] or t[1]!=0:raise ValueError('current causal velocity support required')
+            elif m['support_times']!=[] or np.any(velocity!=0):raise ValueError('unknown velocity must be marked zero with no support')
     elif kind == 'history':
         _keys(value, ('history', 'history_valid', 'history_scores', 'history_times', 'proxy_status'), 'history bundle')
-        history = _array(value['history'], (11, 7))
-        scores = _array(value['history_scores'], (11,))
-        times = _array(value['history_times'], (11,))
+        h=len(value['history_times']) if native else 11
+        history = _array(value['history'], (h, 7))
+        scores = _array(value['history_scores'], (h,))
+        times = _array(value['history_times'], (h,))
+        if native:time_axis(times,history=True)
         valid = np.asarray(value['history_valid'])
-        if (valid.shape != (11,) or valid.dtype != np.dtype(bool) or not valid[-1] or
+        if (valid.shape != (h,) or valid.dtype != np.dtype(bool) or not valid[-1] or
                 (history[valid, 3:6] <= 0).any() or (scores < 0).any() or (scores > 1).any() or
-                times[-1] != 0 or (times > 0).any() or not np.allclose(times, np.arange(-10, 1) / 10.)):
+                times[-1] != 0 or (times > 0).any() or (not native and not np.allclose(times, np.arange(-10, 1) / 10.))):
             raise ValueError('invalid causal tracking-state history')
         expected = 'causal_tracking_state_motion_proxy' if valid.sum() >= 2 else 'single_state_static_proxy'
         if value['proxy_status'] != expected:
             raise ValueError('history proxy boundary mismatch')
     else:
         _keys(value, ('forecast', 'forecast_scores', 'forecast_times', 'model_used', 'context_scope'), 'forecast bundle')
-        paths = _array(value['forecast'], (6, 6, 2))
-        scores = _array(value['forecast_scores'], (6,))
-        if (not np.array_equal(_array(value['forecast_times'], (6,)), TIMES) or
+        m=len(value['forecast']) if native else 6
+        k=len(value['forecast_times']) if native else 6
+        if native:
+            time_axis(value['forecast_times'])
+            if m<1:raise ValueError('empty forecast modes')
+        paths = _array(value['forecast'], (m, k, 2))
+        scores = _array(value['forecast_scores'], (m,))
+        if ((not native and not np.array_equal(_array(value['forecast_times'], (6,)), TIMES)) or
                 (scores < 0).any() or scores.sum() > 1.0001 or type(value['model_used']) is not bool or
                 value['context_scope'] != 'provider_full_at_t'):
             raise ValueError('invalid full-context forecast metadata')

@@ -1,0 +1,458 @@
+--- before/scripts/probe_backbone_tracking.py
++++ after/scripts/probe_backbone_tracking.py
+@@ -27,14 +27,15 @@
+ ORIGIN = np.array([50., 0.])  # right-handed world XY
+ NOMINAL = dict(front=3.848486, rear=1.053197, width=2.128324,
+                box_center_y=0., box_yaw=0.)
+-SPEC = dict(version='toolv2x_backbone_tracking_gate_v1',
++SPEC = dict(version='toolv2x_backbone_tracking_gate_v2',
+             carla_version='0.9.15', python_version='3.10',
+             blueprint='vehicle.lincoln.mkz_2017', dt=DT,
+             lateral_pid=dict(K_P=1.95, K_I=.05, K_D=.2, dt=DT),
+             longitudinal_pid=dict(K_P=1., K_I=.05, K_D=0., dt=DT),
+             max_throttle=.75, max_brake=.3, max_steering=.8,
+             position_preview=.4, speed_preview=.1,
+-            settling_ticks=20, preload_ticks=10, preload_throttle=.1,
++            settling_ticks=20, engage_drive_ticks=1, verify_automatic_ticks=9,
++            initialization_version='toolv2x_backbone_initialization_v2', initialization_throttle=0.,
+             origin_xy=ORIGIN.tolist(), seed=0, max_effective_control_ticks=2160,
+             reference_contract='RH rear axle; actor point position/derivative targets',
+             scope='Given-reference independent tracking only; no planner or P/F')
+@@ -105,7 +106,7 @@
+ 
+ def archive_sources(out):
+     paths = ['scripts/probe_backbone_tracking.py', 'src/planning/tracking_reference.py',
+-             'src/evaluation/tracking_gate.py', 'docs/backbone_decision_and_tracking_spec_2026_09_22.md',
++             'src/evaluation/tracking_gate.py', 'docs/backbone_initialization_review_2026_09_23.md', 'docs/backbone_decision_and_tracking_spec_2026_09_22.md',
+              'vendor/carla_agents_0_9_15/agents/navigation/controller.py',
+              'vendor/carla_agents_0_9_15/agents/tools/misc.py', 'vendor/carla_agents_0_9_15/PROVENANCE.json']
+     for name in paths:
+@@ -262,6 +263,28 @@
+     maximum = float(np.linalg.norm(points-points[0], axis=1).max())
+     return dict(net=float(np.linalg.norm(points[-1]-points[0])), max_from_start=maximum,
+                 cumulative=float(np.linalg.norm(np.diff(points,axis=0),axis=1).sum()), passed=maximum<=.02)
++
++
++def initialize_actor(actor, world, geometry, case_dir, carla):
++    from evaluation.tracking_gate import audit_initialization
++    records=[];result=None
++    for phase,count,manual in [('settle',20,False),('engage_drive',1,True),('verify_automatic',9,False)]:
++        command=dict(throttle=0.,brake=1.,steer=0.,hand_brake=False,reverse=False,
++                     manual_gear_shift=manual,gear=1 if manual else 0)
++        actor.apply_control(carla.VehicleControl(**command))
++        for _ in range(count):
++            frame=world.tick();snapshot=world.get_snapshot();raw=raw_vehicle(actor)
++            records.append(dict(phase=phase,frame=frame,timestamp=snapshot.timestamp.elapsed_seconds,
++                requested_control=dict(command),readback_control=control_dict(actor.get_control()),raw=raw,
++                wheel_steer_rad=[-math.radians(actor.get_wheel_steer_angle(w)) for w in
++                    [carla.VehicleWheelLocation.FL_Wheel,carla.VehicleWheelLocation.FR_Wheel]]))
++            # Preserve exceptional numeric values as explicit string markers, never drop the failing tick.
++            records[-1]=json.loads(json.dumps(records[-1]),parse_constant=lambda token:token)
++            result=audit_initialization(records,geometry,complete=len(records)==30)
++            write_json(case_dir/'initialization.json',records)
++            write_json(case_dir/'initialization_check.json',result)
++            if result['failures']:return result
++    return result
+ 
+ 
+ def listener_owned_by_group(port, group):
+@@ -358,14 +381,14 @@
+         log.close()
+ 
+ 
+-def execute(out, port, carla_root):
++def execute(out, port, carla_root, initialization_only=False):
+     import carla
+     validate_versions('0.9.15',carla.Client('127.0.0.1',port).get_client_version(),sys.version_info)
+     with owned_server(carla_root,port,out) as client:
+-        return execute_connected(out,client)
+-
+-
+-def execute_connected(out, client):
++        return execute_connected(out,client,initialization_only)
++
++
++def execute_connected(out, client, initialization_only=False):
+     import carla
+     from planning.tracking_reference import CASES, case_spec
+     from evaluation.tracking_gate import audit_trial
+@@ -380,7 +403,7 @@
+         vertex_distance=1., max_road_length=50., wall_height=0., additional_width=0.,
+         smooth_junctions=False, enable_mesh_visibility=True, enable_pedestrian_navigation=False))
+     actors = []; sensors = []
+-    summary = dict(status='PREFLIGHT', physical_trials_started=0, completed_cases=[], outcomes=[],
++    summary = dict(status='PREFLIGHT', initialization_only=initialization_only, physical_trials_started=0, completed_cases=[], outcomes=[],
+                    server=client.get_server_version(), client=client.get_client_version(), controller=str(controller_module.__file__))
+     write_json(out / 'summary.json', summary)
+     recording_active=False
+@@ -410,7 +433,7 @@
+         if failures: raise ValueError('vehicle geometry preflight failed: '+','.join(failures))
+         refs, corridors=prepare_references(out,g['geometry'])
+         summary['reference_preflight_passed']=True
+-        for name in CASES:
++        for name in (CASES[:1] if initialization_only else CASES):
+             case_dir=out/name; case_dir.mkdir(); events=[]; rows=[]; initialization=[]
+             spec=case_spec(name); n=round(spec['duration']/DT); begun=False
+             actor = world.spawn_actor(blueprint, carla.Transform(carla.Location(
+@@ -421,28 +444,15 @@
+             sensor.listen(lambda e, sink=events: sink.append(dict(frame=e.frame, timestamp=e.timestamp, other_type=e.other_actor.type_id,
+                                                        impulse=float(e.normal_impulse.length()))))
+             try:
+-                for phase,count,throttle in [('settle',20,0.),('preload',10,.1)]:
+-                    actor.apply_control(carla.VehicleControl(throttle=throttle,brake=1.,steer=0.,manual_gear_shift=False))
+-                    for _ in range(count):
+-                        frame=world.tick(); raw=raw_vehicle(actor)
+-                        initialization.append(dict(phase=phase,frame=frame,raw=raw))
+-                write_json(case_dir/'initialization.json', initialization)
++                initialization=initialize_actor(actor,world,g,case_dir,carla)
++                summary['initialization_status']=initialization['status']
++                if not initialization['passed']:
++                    raise ValueError('initialization failed: '+','.join(initialization['failures']))
++                if initialization_only:
++                    summary['status']='INITIALIZATION_PASS'
++                    return summary
+                 initial=world.get_snapshot(); t0=initial.timestamp.elapsed_seconds; f0=initial.frame
+                 first=observe(actor,world,g,f0,t0,0,carla)
+-                pre=initialization[19]['raw']['pose_lh']; post=initialization[-1]['raw']['pose_lh']
+-                preload=preload_motion([rear_local_xy(item['raw']['pose_lh'],g).tolist() for item in initialization[19:]])
+-                init_fail=[]
+-                initial_values=first['rear_xy']+first['actor_velocity']+first['wheel_steer_rad']+[first['yaw'],first['actor_z'],first['roll'],first['pitch']]
+-                if not np.isfinite(initial_values).all(): init_fail.append('nonfinite_initial_state')
+-                last_z=[item['raw']['pose_lh'][2][3] for item in initialization[-5:]]
+-                if max(last_z)-min(last_z)>.01: init_fail.append('vertical_settling_incomplete')
+-                if first['gear']!=1: init_fail.append('gear_not_one')
+-                if np.linalg.norm(first['actor_velocity'])>.05: init_fail.append('not_stationary')
+-                if not preload['passed']: init_fail.append('preload_moved')
+-                if np.linalg.norm(first['rear_xy'])>.02 or abs(first['yaw'])>.005: init_fail.append('wrong_initial_pose')
+-                if max(abs(v) for v in first['wheel_steer_rad'])>.01: init_fail.append('nonzero_initial_steering')
+-                write_json(case_dir/'initialization_check.json',dict(passed=not init_fail,failures=init_fail,preload_motion=preload,state=first))
+-                if init_fail: raise ValueError('initialization failed: '+','.join(init_fail))
+                 controller=VehiclePIDController(actor,args_lateral=SPEC['lateral_pid'],args_longitudinal=SPEC['longitudinal_pid'],
+                                                 offset=0.,max_throttle=.75,max_brake=.3,max_steering=.8)
+                 write_json(case_dir/'controller_initial_state.json',dict(past_steering=controller.past_steering,errors_long=[],errors_lat=[]))
+@@ -512,7 +522,8 @@
+                 client.set_timeout(60.)
+         if len(summary['completed_cases'])==8 and all(x['passed'] for x in summary['outcomes']): summary['status']='TRACKING_COMPLETE_PENDING_AUDIT'
+     except Exception as exc:
+-        summary['status']='FAIL' if summary['physical_trials_started'] else 'PREFLIGHT_FAIL'
++        summary['status']=('INITIALIZATION_FAIL' if initialization_only else
++                           'FAIL' if summary['physical_trials_started'] else 'PREFLIGHT_FAIL')
+         summary['error']=str(exc)
+         write_json(out/'summary.json',summary)
+         raise
+@@ -536,22 +547,24 @@
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--output',required=True)
+     parser.add_argument('--execute',action='store_true',help='launch a dedicated 0.9.15 server process group; default is offline preparation')
++    parser.add_argument('--initialization-only',action='store_true',help='execute one startup check without constructing PID or running a tracking case')
+     parser.add_argument('--port',type=int,default=2015)
+     parser.add_argument('--carla-root',help='0.9.15 package directory; required only with --execute')
+     args=parser.parse_args()
+     if args.execute and not args.carla_root: parser.error('--execute requires --carla-root; existing servers are never reused')
++    if args.initialization_only and not args.execute: parser.error('--initialization-only requires --execute')
+     out=Path(args.output).resolve();out.mkdir(parents=True,exist_ok=False)
+     write_json(out/'spec.json',SPEC);(out/'fixture.xodr').write_text(fixture_opendrive());archive_sources(out)
+     try:
+         if args.execute:
+-            result=execute(out,args.port,args.carla_root)
++            result=execute(out,args.port,args.carla_root,args.initialization_only)
+         else:
+             prepare_references(out,NOMINAL)
+             result=dict(status='PREPARED_NOT_EXECUTED',nominal_geometry=NOMINAL,physical_trials_started=0,
+                         limitation='Nominal geometry only. Actual server/vehicle geometry/physics and tracking remain unverified.')
+             write_json(out/'summary.json',result)
+         print(json.dumps(result),flush=True)
+-        return 0 if result['status'] in ['PASS','PREPARED_NOT_EXECUTED','TRACKING_COMPLETE_PENDING_AUDIT'] else 1
++        return 0 if result['status'] in ['PASS','INITIALIZATION_PASS','PREPARED_NOT_EXECUTED','TRACKING_COMPLETE_PENDING_AUDIT'] else 1
+     except Exception as exc:
+         if not (out/'summary.json').exists():
+             write_json(out/'summary.json',dict(status='PREPARATION_OR_CONNECTION_FAIL',physical_trials_started=0,error=str(exc)))
+--- before/src/evaluation/tracking_gate.py
++++ after/src/evaluation/tracking_gate.py
+@@ -417,6 +417,67 @@
+     return result
+ 
+ 
++def audit_initialization(records, geometry, *, complete=True):
++    """Recompute the fixed v2 startup contract from requests AND actual readbacks."""
++    failures=[];motion=None
++    def fail(reason):
++        if reason not in failures:failures.append(reason)
++    try:
++        if not 1<=len(records)<=30 or (complete and len(records)!=30):fail('initialization_count')
++        offset=np.asarray(geometry['rear_offset_lh'],dtype=float)
++        if offset.shape!=(3,) or not np.isfinite(offset).all():raise ValueError('rear calibration')
++        phases=['settle']*20+['engage_drive']+['verify_automatic']*9
++        positions=[];heights=[]
++        for i,row in enumerate(records):
++            if i>=30:break
++            if row['phase']!=phases[i]:fail('initialization_phase')
++            if row['frame']!=records[0]['frame']+i:fail('initialization_frame')
++            if not np.isfinite(row['timestamp']) or abs(row['timestamp']-records[0]['timestamp']-i*DT)>1e-6:fail('initialization_time')
++            requested=row['requested_control'];readback=row['readback_control']
++            expected=dict(throttle=0.,brake=1.,steer=0.,hand_brake=False,reverse=False,
++                          manual_gear_shift=i==20,gear=1 if i==20 else 0)
++            for key,value in expected.items():
++                if requested[key]!=value:fail('requested_control')
++                if key!='gear' and readback[key]!=value:fail('readback_control')
++            if readback['gear']!=row['raw']['gear']:fail('gear_readback_mismatch')
++            if i>=20 and readback['gear']!=1:fail('gear_not_one')
++            pose=np.asarray(row['raw']['pose_lh'],dtype=float)
++            velocity=np.asarray(row['raw']['velocity_lh_mps'],dtype=float)
++            wheels=np.asarray(row['wheel_steer_rad'],dtype=float)
++            if (pose.shape!=(4,4) or velocity.shape!=(3,) or wheels.shape!=(2,)
++                    or not all(np.isfinite(v).all() for v in (pose,velocity,wheels))):
++                raise ValueError('nonfinite or malformed state')
++            point=pose[:3,3]+pose[:3,:3]@offset
++            positions.append(point[:2]);heights.append(pose[2,3])
++            if i>=20 and np.linalg.norm(velocity)>.05:fail('not_stationary')
++        if len(positions)>=20:
++            xy=np.asarray(positions[19:]);maximum=float(np.linalg.norm(xy-xy[0],axis=1).max())
++            motion=dict(net=float(np.linalg.norm(xy[-1]-xy[0])),max_from_start=maximum,
++                        cumulative=float(np.linalg.norm(np.diff(xy,axis=0),axis=1).sum()),passed=maximum<=.02)
++            if maximum>.02:fail('preload_moved')
++        if complete and len(records)==30:
++            if max(heights[-5:])-min(heights[-5:])>.01:fail('vertical_settling_incomplete')
++            if np.linalg.norm(positions[-1]-np.array([50.,0.]))>.02 or abs(math.atan2(pose[1,0],pose[0,0]))>.005:fail('wrong_initial_pose')
++            if np.max(np.abs(wheels))>.01:fail('nonzero_initial_steering')
++    except (KeyError,IndexError,TypeError,ValueError,OverflowError):fail('initialization_input_contract')
++    passed=complete and len(records)==30 and not failures
++    status='INITIALIZATION_PASS' if passed else ('INITIALIZATION_FAIL' if failures else 'INITIALIZATION_IN_PROGRESS')
++    return dict(version='toolv2x_backbone_initialization_v2',status=status,passed=passed,
++                failures=failures,record_count=len(records),preload_motion=motion)
++
++
++def audit_initialization_dir(case_dir):
++    case_dir=Path(case_dir)
++    result=audit_initialization(_read_json(case_dir/'initialization.json'),
++                                _read_json(case_dir.parent/'vehicle_geometry.json')['parsed'])
++    saved=_read_json(case_dir/'initialization_check.json')
++    if result!=saved:
++        result['failures'].append('initialization_saved_result_mismatch')
++        result['passed']=False;result['status']='INITIALIZATION_FAIL'
++    (case_dir/'independent_initialization_audit.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
++    return result
++
++
+ def audit_batch(output_dir):
+     """Re-read all frozen artifacts; this is the only final PASS authority."""
+     root = Path(output_dir).resolve()
+@@ -457,29 +518,34 @@
+             initialization, raw_initialization = _read_json(init_path), _read_json(raw_init_path)
+             if initialization.get('passed') is not True or initialization.get('failures') != []:
+                 fail('initialization_' + name)
+-            try:
+-                offset = np.asarray(geometry['parsed']['rear_offset_lh'], dtype=float)
+-                if len(raw_initialization) != 30 or [row.get('phase') for row in raw_initialization] != ['settle'] * 20 + ['preload'] * 10:
+-                    raise ValueError('initialization phase/count mismatch')
+-                positions = []
+-                for row in raw_initialization[19:]:
+-                    pose = np.asarray(row['raw']['pose_lh'], dtype=float)
+-                    if pose.shape != (4, 4) or not np.isfinite(pose).all():
+-                        raise ValueError('invalid initialization pose')
+-                    point = pose[:3, 3] + pose[:3, :3] @ offset
+-                    positions.append(point[:2])
+-                positions = np.asarray(positions)
+-                measured = dict(net=float(np.linalg.norm(positions[-1] - positions[0])),
+-                    max_from_start=float(np.linalg.norm(positions - positions[0], axis=1).max()),
+-                    cumulative=float(np.linalg.norm(np.diff(positions, axis=0), axis=1).sum()))
+-                measured['passed'] = measured['max_from_start'] <= .02 + 1e-12
+-                claimed = initialization.get('preload_motion')
+-                if (not isinstance(claimed, dict) or set(claimed) != set(measured) or
+-                        any(not np.isclose(claimed[key], measured[key], atol=1e-12) for key in ('net', 'max_from_start', 'cumulative')) or
+-                        claimed['passed'] is not measured['passed'] or not measured['passed']):
++            if initialization.get('version')=='toolv2x_backbone_initialization_v2':
++                recomputed=audit_initialization(raw_initialization,geometry['parsed'])
++                if not recomputed['passed'] or recomputed!=initialization:
++                    fail('initialization_recompute_'+name)
++            else:
++                try:
++                    offset = np.asarray(geometry['parsed']['rear_offset_lh'], dtype=float)
++                    if len(raw_initialization) != 30 or [row.get('phase') for row in raw_initialization] != ['settle'] * 20 + ['preload'] * 10:
++                        raise ValueError('initialization phase/count mismatch')
++                    positions = []
++                    for row in raw_initialization[19:]:
++                        pose = np.asarray(row['raw']['pose_lh'], dtype=float)
++                        if pose.shape != (4, 4) or not np.isfinite(pose).all():
++                            raise ValueError('invalid initialization pose')
++                        point = pose[:3, 3] + pose[:3, :3] @ offset
++                        positions.append(point[:2])
++                    positions = np.asarray(positions)
++                    measured = dict(net=float(np.linalg.norm(positions[-1] - positions[0])),
++                        max_from_start=float(np.linalg.norm(positions - positions[0], axis=1).max()),
++                        cumulative=float(np.linalg.norm(np.diff(positions, axis=0), axis=1).sum()))
++                    measured['passed'] = measured['max_from_start'] <= .02 + 1e-12
++                    claimed = initialization.get('preload_motion')
++                    if (not isinstance(claimed, dict) or set(claimed) != set(measured) or
++                            any(not np.isclose(claimed[key], measured[key], atol=1e-12) for key in ('net', 'max_from_start', 'cumulative')) or
++                            claimed['passed'] is not measured['passed'] or not measured['passed']):
++                        fail('initialization_recompute_' + name)
++                except (KeyError, TypeError, ValueError):
+                     fail('initialization_recompute_' + name)
+-            except (KeyError, TypeError, ValueError):
+-                fail('initialization_recompute_' + name)
+             bundle = _read_json(reference_path)
+             if bundle.get('case_spec') != _frozen_case_spec(name):
+                 fail('case_spec_' + name)
+@@ -510,9 +576,11 @@
+     source = parser.add_mutually_exclusive_group(required=True)
+     source.add_argument('--case-dir')
+     source.add_argument('--batch')
++    source.add_argument('--initialization-dir')
+     parser.add_argument('--output')
+     args = parser.parse_args()
+-    result = audit_batch(args.batch) if args.batch else audit_case_dir(args.case_dir)
++    result = (audit_initialization_dir(args.initialization_dir) if args.initialization_dir else
++              audit_batch(args.batch) if args.batch else audit_case_dir(args.case_dir))
+     if args.output:
+         Path(args.output).write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
+     print(json.dumps(result, allow_nan=False))
+--- before/tests/test_tracking_runtime_contract.py
++++ after/tests/test_tracking_runtime_contract.py
+@@ -141,5 +141,62 @@
+         self.assertAlmostEqual(target['speed_kmh'], 1.36*3.6)
+ 
+ 
++class InitializationRuntimeTests(unittest.TestCase):
++    def run_fake(self, directory, fail=False):
++        import types
++        from unittest.mock import patch
++        from test_tracking_gate import initialization_fixture
++        rows,g=initialization_fixture()
++        if fail=='nonfinite':rows[20]['raw']['velocity_lh_mps'][0]=float('nan')
++        elif fail:rows[20]['raw']['gear']=0;rows[20]['readback_control']['gear']=0
++        class World:
++            i=-1
++            def tick(self):self.i+=1;return 100+self.i
++            def get_snapshot(self):return types.SimpleNamespace(frame=100+self.i,timestamp=types.SimpleNamespace(elapsed_seconds=10.+self.i*.1))
++        world=World();commands=[]
++        actor=types.SimpleNamespace(apply_control=lambda c:commands.append(vars(c).copy()),
++            get_control=lambda:types.SimpleNamespace(**rows[world.i]['readback_control']),get_wheel_steer_angle=lambda w:0.)
++        carla=types.SimpleNamespace(VehicleControl=lambda **kw:types.SimpleNamespace(**kw),
++            VehicleWheelLocation=types.SimpleNamespace(FL_Wheel=0,FR_Wheel=1))
++        with patch.object(runtime,'raw_vehicle',side_effect=lambda a:rows[world.i]['raw']):
++            result=runtime.initialize_actor(actor,world,g,Path(directory),carla)
++        return result,world.i+1,commands
++
++    def test_fixed_three_phase_schedule_and_zero_throttle(self):
++        import tempfile,json
++        with tempfile.TemporaryDirectory() as directory:
++            result,ticks,commands=self.run_fake(directory)
++            self.assertTrue(result['passed'],result)
++            self.assertEqual(ticks,30)
++            self.assertEqual([c['manual_gear_shift'] for c in commands],[False,True,False])
++            self.assertTrue(all(c['throttle']==0 and c['brake']==1 for c in commands))
++            rows=json.loads((Path(directory)/'initialization.json').read_text())
++            self.assertEqual([r['phase'] for r in rows],['settle']*20+['engage_drive']+['verify_automatic']*9)
++
++    def test_failed_engagement_stops_and_preserves_partial_evidence(self):
++        import tempfile,json
++        with tempfile.TemporaryDirectory() as directory:
++            result,ticks,commands=self.run_fake(directory,fail=True)
++            self.assertFalse(result['passed'])
++            self.assertEqual(ticks,21)
++            self.assertEqual(len(commands),2)
++            rows=json.loads((Path(directory)/'initialization.json').read_text())
++            self.assertEqual(len(rows),21)
++            self.assertEqual(rows[-1]['requested_control']['gear'],1)
++            self.assertEqual(rows[-1]['readback_control']['gear'],0)
++
++    def test_nonfinite_failed_tick_is_preserved_as_invalid_json_safe_data(self):
++        import tempfile,json
++        with tempfile.TemporaryDirectory() as directory:
++            result,ticks,commands=self.run_fake(directory,fail='nonfinite')
++            self.assertFalse(result['passed'])
++            self.assertEqual(ticks,21)
++            rows=json.loads((Path(directory)/'initialization.json').read_text())
++            self.assertEqual(len(rows),21)
++            self.assertEqual(rows[-1]['raw']['velocity_lh_mps'][0],'NaN')
++            saved=json.loads((Path(directory)/'initialization_check.json').read_text())
++            self.assertEqual(saved,result)
++            self.assertEqual(saved['status'],'INITIALIZATION_FAIL')
++
+ if __name__ == '__main__':
+     unittest.main()
+--- before/tests/test_tracking_gate.py
++++ after/tests/test_tracking_gate.py
+@@ -260,6 +260,81 @@
+             self.assertFalse(failed['passed'])
+             self.assertIn('run_summary_status', failed['failures'])
+ 
++            # The same complete fixture must also be independently auditable with v2 startup.
++            from evaluation.tracking_gate import audit_initialization
++            summary['status']='TRACKING_COMPLETE_PENDING_AUDIT'
++            (root/'summary.json').write_text(json.dumps(summary))
++            for name in CASES:
++                initialization,g=initialization_fixture()
++                for row in initialization:row['raw']['pose_lh'][0][3]=50.
++                check=audit_initialization(initialization,{'rear_offset_lh':[0.,0.,0.]})
++                self.assertTrue(check['passed'])
++                (root/name/'initialization.json').write_text(json.dumps(initialization))
++                (root/name/'initialization_check.json').write_text(json.dumps(check))
++            self.assertTrue(audit_batch(root)['passed'])
++            # Keep the saved PASS intact while corrupting an actual automatic-gear readback.
++            init_path=root/'S2/initialization.json';bad=json.loads(init_path.read_text())
++            bad[25]['readback_control']['gear']=0;init_path.write_text(json.dumps(bad))
++            self.assertIn('initialization_recompute_S2',audit_batch(root)['failures'])
++
++
++def initialization_fixture():
++    import copy
++    geometry={'rear_offset_lh':[-1.4,0.,.3]}
++    rows=[]
++    for i in range(30):
++        phase='settle' if i<20 else ('engage_drive' if i==20 else 'verify_automatic')
++        command=dict(throttle=0.,brake=1.,steer=0.,reverse=False,hand_brake=False,
++                     manual_gear_shift=i==20,gear=1 if i==20 else 0)
++        actual=dict(command,gear=0 if i<20 else 1)
++        pose=np.eye(4);pose[:3,3]=[51.4,0.,.03]
++        rows.append(dict(phase=phase,frame=100+i,timestamp=10.+i*.1,
++            requested_control=command,readback_control=actual,wheel_steer_rad=[0.,0.],
++            raw=dict(pose_lh=pose.tolist(),velocity_lh_mps=[0.,0.,0.],gear=actual['gear'])))
++    return rows,geometry
++
++
++class InitializationV2Tests(unittest.TestCase):
++    def test_complete_initialization_requires_actual_gear_and_auto_handover(self):
++        from evaluation.tracking_gate import audit_initialization
++        rows,g=initialization_fixture()
++        result=audit_initialization(rows,g)
++        self.assertTrue(result['passed'],result)
++        self.assertEqual(result['status'],'INITIALIZATION_PASS')
++        self.assertEqual(result['version'],'toolv2x_backbone_initialization_v2')
++
++    def test_wrong_readback_does_not_pass_with_correct_request(self):
++        import copy
++        from evaluation.tracking_gate import audit_initialization
++        for index,field,value in [(20,'gear',0),(23,'gear',0),(29,'manual_gear_shift',True),(25,'brake',0.)]:
++            rows,g=initialization_fixture();rows[index]['readback_control'][field]=value
++            self.assertFalse(audit_initialization(rows,g)['passed'],(index,field))
++
++    def test_time_phase_and_partial_records_cannot_pass(self):
++        from evaluation.tracking_gate import audit_initialization
++        for change in ['partial','frame','timestamp','phase','command']:
++            rows,g=initialization_fixture()
++            if change=='partial':rows=rows[:21]
++            elif change=='frame':rows[22]['frame']+=1
++            elif change=='timestamp':rows[22]['timestamp']+=.1
++            elif change=='phase':rows[22]['phase']='engage_drive'
++            else:rows[20]['requested_control']['manual_gear_shift']=False
++            self.assertFalse(audit_initialization(rows,g)['passed'],change)
++        rows,g=initialization_fixture()
++        self.assertEqual(audit_initialization(rows[:21],g,complete=False)['status'],'INITIALIZATION_IN_PROGRESS')
++
++    def test_motion_and_final_pose_must_be_recomputed(self):
++        from evaluation.tracking_gate import audit_initialization
++        for change in ['excursion','speed','final_pose','wheel','vertical','nonfinite']:
++            rows,g=initialization_fixture()
++            if change=='excursion':rows[22]['raw']['pose_lh'][0][3]+=.03
++            elif change=='speed':rows[22]['raw']['velocity_lh_mps'][1]=.06
++            elif change=='final_pose':
++                for row in rows:row['raw']['pose_lh'][0][3]+=.03
++            elif change=='wheel':rows[-1]['wheel_steer_rad'][0]=.02
++            elif change=='vertical':rows[-2]['raw']['pose_lh'][2][3]+=.02
++            else:rows[-1]['raw']['velocity_lh_mps'][0]=float('nan')
++            self.assertFalse(audit_initialization(rows,g)['passed'],change)
+ 
+ if __name__ == '__main__':
+     unittest.main()

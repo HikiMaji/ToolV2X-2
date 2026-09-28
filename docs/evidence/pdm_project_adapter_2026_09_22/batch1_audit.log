@@ -1,0 +1,74 @@
+{
+  "empty": {
+    "acceptance_recomputed": false,
+    "steps": 160,
+    "detections": 169,
+    "progress_m": 1.670772872783849,
+    "final_speed_mps": 0.05344072244129112,
+    "max_abs_acceleration_mps2": 7.736982031199128,
+    "min_acceleration_mps2": -7.736982031199128,
+    "max_lateral_error_m": 0.04341323459205858,
+    "min_clearance_m": null,
+    "sustained_hold_pass": null,
+    "release_progress_m": null,
+    "release_peak_speed_mps": null,
+    "status_counts": {
+      "pdm_pid_v2": 154,
+      "hold_infeasible": 6
+    },
+    "candidate_switches": 35,
+    "max_steer_input_rad": 0.49598986238837167,
+    "detector_misses": 0,
+    "target_replay_pass": true,
+    "frame_time_checks_pass": true,
+    "collisions": 0
+  },
+  "lead": {
+    "acceptance_recomputed": false,
+    "steps": 400,
+    "detections": 411,
+    "progress_m": 2.526211763938753,
+    "final_speed_mps": 3.996023951260457e-05,
+    "max_abs_acceleration_mps2": 7.037386769864885,
+    "min_acceleration_mps2": -7.037386769864885,
+    "max_lateral_error_m": 0.09216466929634856,
+    "min_clearance_m": 7.5627344797296985,
+    "sustained_hold_pass": true,
+    "release_progress_m": null,
+    "release_peak_speed_mps": null,
+    "status_counts": {
+      "pdm_pid_v2": 314,
+      "hold_infeasible": 86
+    },
+    "candidate_switches": 197,
+    "max_steer_input_rad": 0.604681610858489,
+    "detector_misses": 0,
+    "target_replay_pass": true,
+    "frame_time_checks_pass": true,
+    "collisions": 0
+  },
+  "lead_release": {
+    "acceptance_recomputed": false,
+    "steps": 440,
+    "detections": 451,
+    "progress_m": 4.807872029996075,
+    "final_speed_mps": 2.6682624492744466e-05,
+    "max_abs_acceleration_mps2": 7.589710433921193,
+    "min_acceleration_mps2": -7.589710433921193,
+    "max_lateral_error_m": 0.09562072531851348,
+    "min_clearance_m": 6.035931532610505,
+    "sustained_hold_pass": false,
+    "release_progress_m": 1.194065809092256,
+    "release_peak_speed_mps": 0.43402579496357274,
+    "status_counts": {
+      "pdm_pid_v2": 411,
+      "hold_infeasible": 29
+    },
+    "candidate_switches": 113,
+    "max_steer_input_rad": 0.5634854537519826,
+    "detector_misses": 0,
+    "target_replay_pass": true,
+    "frame_time_checks_pass": true,
+    "collisions": 0
+  }
+}

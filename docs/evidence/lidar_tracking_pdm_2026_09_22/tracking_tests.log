@@ -1,0 +1,37 @@
+test_reflected_plan_frame_has_correct_heading_velocity (test_lidar_tracks.GeometryTests) ... ok
+test_self_filter_keeps_adjacent_vehicle (test_lidar_tracks.GeometryTests) ... ok
+test_tracker_box_roundtrip_and_camera_heading (test_lidar_tracks.GeometryTests) ... ok
+test_fixed_rate_prefix_and_velocity_units (test_lidar_tracks.TrackerTests) ... /root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/matplotlib/__init__.py:169: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/root/autodl-tmp/V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py:14: NumbaWarning: [1m
+Compilation is falling back to object mode WITH looplifting enabled because Function roty failed at nopython mode lowering due to: [0m
+  @jit
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:152: NumbaWarning: [1mFunction "roty" was compiled in object mode without forceobj=True.
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:162: NumbaDeprecationWarning: [1m
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+ok
+test_missed_frame_is_marked_as_prediction (test_lidar_tracks.TrackerTests) ... ok
+test_upstream_camera_corners_match_world_box (test_lidar_tracks.TrackerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.361s
+
+OK

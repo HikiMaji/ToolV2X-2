@@ -1,0 +1,86 @@
+{
+  "scope": "real pretrained independent local detection only; no tracking, GT metric, P/F or planning",
+  "checkpoint_parameter_entries": 194,
+  "strict_loading": true,
+  "source_root": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/detector/V2Xverse",
+  "config": {
+    "anchor_args": {
+      "D": 1,
+      "H": 192,
+      "W": 576,
+      "cav_lidar_range": [
+        -36,
+        -12,
+        -22,
+        36,
+        12,
+        14
+      ],
+      "feature_stride": 2,
+      "h": 1.56,
+      "l": 3.9,
+      "num": 1,
+      "r": [
+        0
+      ],
+      "vd": 36,
+      "vh": 0.125,
+      "vw": 0.125,
+      "w": 1.6
+    },
+    "core_method": "VoxelPostprocessor",
+    "dir_args": {
+      "anchor_yaw": [
+        0
+      ],
+      "dir_offset": 0.7853,
+      "num_bins": 1
+    },
+    "gt_range": [
+      -36,
+      -12,
+      -22,
+      36,
+      12,
+      14
+    ],
+    "max_num": 100,
+    "nms_thresh": 0,
+    "order": "hwl",
+    "target_args": {
+      "neg_threshold": 0.45,
+      "pos_threshold": 0.6,
+      "score_threshold": 0.2
+    }
+  },
+  "compiled_overlap_extension": "/root/autodl-tmp/CMP/opencood/utils/box_overlaps.cpython-37m-x86_64-linux-gnu.so",
+  "torch_version": "1.10.1+cu113",
+  "single_vehicle_only": true,
+  "frame_count": 10,
+  "capture_time_binding": "unknown; frame index not converted to time",
+  "vehicles": [
+    0,
+    1
+  ],
+  "frames": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "vehicle_detection_counts": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    4,
+    4,
+    4,
+    2
+  ],
+  "total_model_seconds": 0.1923374067991972,
+  "timing_scope": "forward only, includes cold first call; not end-to-end latency"
+}

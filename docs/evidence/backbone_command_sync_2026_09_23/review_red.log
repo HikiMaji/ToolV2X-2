@@ -1,0 +1,13 @@
+......F.........
+======================================================================
+FAIL: test_batch_pass_requires_complete_eight_case_replay (test_tracking_gate.TrackingGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-command-sync/tests/test_tracking_gate.py", line 294, in test_batch_pass_requires_complete_eight_case_replay
+    self.assertFalse(audit_case_dir(root/'S2')['passed'],evidence)
+AssertionError: True is not false : journal
+
+----------------------------------------------------------------------
+Ran 16 tests in 8.642s
+
+FAILED (failures=1)

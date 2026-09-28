@@ -1,0 +1,22 @@
+{
+  "scope": "fixed-time local perception-to-PDM sensitivity only; empty obstacle arm is diagnostic, not ego baseline",
+  "frames": 30,
+  "real_pdm_calls": 60,
+  "changed_frames": 26,
+  "mean_waypoint_difference_m": 1.9856298632876939,
+  "final_actual_waypoint": [
+    4.556411284473449,
+    8.269100897455255e-06
+  ],
+  "final_empty_waypoint": [
+    10.640427338667646,
+    2.5372531292872442e-05
+  ],
+  "excludes": [
+    "remote P/F",
+    "LLM",
+    "MTR",
+    "closed-loop execution",
+    "quality/safety claim"
+  ]
+}

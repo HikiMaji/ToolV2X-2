@@ -1,5 +1,9 @@
 # ToolV2X 开发日志
 
+2026-09-28（修复）：新增原生坐标/样本绑定、完整因果context及可复现离线准备入口，复用AB3DMOT；adapter v2使用空证据中心化残差并拒绝v1权重。22个真实保存检测decision完成重新准备，无数据集训练。独立复核发现的sample内部不一致和predictor裁剪输入均已修复并通过回归。详见[实施记录](codriving_native_fix_2026_09_28.md)。
+
+2026-09-28：完成已有 CoDriving P 探针审计。确认 sidecar 早于真实规划时刻四帧/0.8s；坐标误用使 route05_28 的 11 个 P anchors 实为 receiver 本车（平均距0.0784m）；冻结 adapter 的14个样本 evidence body全零，清零/换帧P输出精确不变。撤回旧P收益和纯泛化归因，保留原输出与来源快照。新增离线审计材料、修订说明，无生产代码修复/训练/新检测/MTR/完整planner运行。见[报告](codriving_input_audit_2026_09_28.md)。
+
 历史实现与实验见 `STATUS.md` 及各阶段报告。本文件从原 MTR 因果适配阶段开始记录。
 
 ## 2026-09-10 原 MTR 适配
@@ -311,3 +315,102 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /root/autodl-
 用户同意继续深化机制，并要求先判断 ToolV2X 主线能否保留。重新核对 start.md、已批准框架、真实查询/接收/驾驶代码与 DriveAgent-R1、EDDI、Select2Drive、MATE、BRiG-AFA 相关方法段；两位既有研究 agent 分别复核主线/近邻和可执行结构。核心机制 v0.1 收敛为任务请求＋实际 GoT 反馈＋一个本车价值模块，peer 先固定检索，额外学习排序/归因头后置。明确现有 GoT 尚在全部查询后一次生成，不能把候选当已实现；记录接收排序/截断与重复字段需同链处理。
 
 结论为主线保留、具体机制创新强度待证。普通 MLP 是首版价值实现本身，不能虚设同构弱对照；关系变化请求需在等候选数与实际成本下超过普通方案检索和一轮委托。报告 core_mechanism_v0_1_2026_09_12.md，用户要求、STATUS 与上一稿入口已同步。本轮未改模型/运行源码、未生成新标签或运行模型、未恢复训练，未推送此新增设计文档。
+
+### 2026-09-16：一次协作驾驶诊断实现
+
+用户确认先执行共同驾驶器定位。新增 `src/evaluation/structured_evidence.py` 和 `tests/test_structured_evidence_diagnostic.py`；规格先写入 `single_cooperation_diagnostic_plan_2026_09_16.md`。固定全部39开发帧与500/0/3200检查点，复用正式collator/模型/评价及真实归档，增加共同Ego prior、重复修订、直接证据干预和逐帧输出记录；生产驾驶器和P/F协议未改。先观察缺少诊断模块的失败，再实现并通过5项诊断契约测试。待实际冻结模型执行及独立复算，不能写成协作收益或修复完成。
+
+### 2026-09-16：冻结诊断执行与独立核验完成
+
+39帧×3检查点完成2460次完整前向、3042组六点输出，192.02秒，原156任务合法归档通过；117次同帧输入/特征配对相等。新增 `scripts/verify_structured_evidence.py` 从坐标独立复算；故意篡改一个坐标被拒绝。5项新增测试加原驾驶器/规划评价/协议/vehicle tools共62项通过。新脚本、报告、6.15MB证据及图表完成；生产驾驶器/编码器/训练器、P/F协议和原权重均未改。更新用户要求记录LLM请求主策略与小网络对照的后续安排，尚未接入LLM。
+
+主模型P/F/PF平均轨迹位移0.061/1.223/0.884毫米，各39帧ADE差都小于1厘米；真实P历史和同目标F最高分轨迹分别存在0.748/2.515米平均源间差异。后验原观测融合模块检查显示P远端注意力均值从初始化50.14%到最终4.21%，但这不是完整根因；step500仍46.90%且P输出响应很小。36个F任务包含近原点unresolved实体，未擅自删改。恒速基底代数干预在step500/3200均变差，排除把该修改直接当修复；没有按旧假设修改生产模型或新训练。详情见 `single_cooperation_diagnostic_2026_09_16.md`。
+
+### 2026-09-19：按新方案收敛到研究点一投稿
+
+用户指定9-19.md，只关注研究点一并以独立论文发表为目标。审读该方案并核对decision_state、controls、query_data/value、导航与已完成诊断，新增research_point_one_paper_scope_2026_09_19.md，更新用户要求和STATUS。当前自建driver不再默认是主实验必须保留的底座，下一项为可靠PLAN选型/接入设计；P/F、ledger和执行器复用。指出STOP应比较所有合法远端动作、首步完整continuation、GT事后oracle与可部署teacher分开、导航/MLLM尚缺实际输入、PF命名及frozen-feedback归因的规格问题。上述是设计审读，未改原9-19材料或生产代码。
+
+补记09-18被中断的工作：新增evidence_quality.py、test_evidence_quality.py与driver_evidence_revision_2026_09_18.md；先看到模块缺失失败，再通过2项单元测试。真实质量检查未形成quality.json，09-19检查输出目录为空且无相关运行进程，不计作已完成实验。相关文件保留未完成状态，本轮不恢复运行。没有训练、LLM生成、新方法实验或提交推送。
+
+### 2026-09-19：研究点一主实验底座选型
+
+按用户“调研确定底座”，对比PDM-Closed、CoDriving、DIPP、VAD/UniV2X、OmniV2X与CMP/V2XPnP的实际输入、生成链和资源。取得53个官方源码/说明/配置文件（757,820字节）及V2Xverse同路线双车4个LiDAR/measurement研究样本（737,376字节）；核对两车点云形状、有限性、位姿与导航字段，查询权重清单但未下载权重。旧CoDriving评价路径一次404，正确inference_e2e入口已取得，失败记录保留。
+
+推荐PDM-Closed＋V2Xverse纯车车作为主方案，CoDriving原规划器为学习式备选；此为选型建议，尚未实际迁移。报告明确PDM原版恒速占据、外部F/多模式接入、CARLA地图及实际采样周期、冻结MTR跨域有效性和同物理时刻重规划状态隔离的缺口。主评价保留ADE/FDE并建议独立环境的驾驶质量指标，内部PDM评分不能当真实收益。真实图像尚未读入或交付模型。
+
+新增backbone_selection_2026_09_19.md和轻量资料核验，更新README/STATUS/github_review。没有生产代码改动、检测/MTR/PLAN/LLM执行、CARLA运行、训练、方法实验或Git提交推送；09-18中断工作保持原状态。下一批限定为原实现适配和共同驾驶器小规模验收，不自动实施。
+
+## 2026-09-22 本车原PDM/PID闭环验收
+
+新增启动门控、持续本地检测/跟踪/PDM进程和原PID控制桥接；修复后轴/actor原点混用与上游未填充速度字段误读，三版源码与失败记录全部保留。最终空路PASS、前车停车FAIL（末速0.5033m/s，停走波动）；无训练、P/F或论文效果结论。轻量369项通过，最终受影响定向16项通过，检测10帧/跟踪60行重构逐项不变；主目录定向16项通过，diff检查通过。服务已停止。详见[pdm_closedloop_2026_09_22.md](pdm_closedloop_2026_09_22.md)。
+
+
+## 2026-09-22：v3诊断与v4有限复测
+
+读取交接与真实产物，完成320次精确重放及240次固定状态干预。只将闭环probe的纵向PID Kp从1.0改为0.2，保留原代码/产物与原验收。一轮两臂真实复测均通过原门槛，前车近零停走4→0、最大减速度10.553→1.459m/s²；起步峰值与末两秒持续低速仍未通过新增诊断。无训练/LLM/MTR/PF。失败初始化、v4原始记录、源码与对照均已归档；CARLA/worker已清理，未提交推送。详见[pdm_closedloop_diagnosis_2026_09_22.md](pdm_closedloop_diagnosis_2026_09_22.md)。
+
+## 2026-09-23 初始化v2与S2真实跟踪
+
+20/1/9零油门初始化已实施，真实单项及离线复算PASS；随后固定S2跟踪FAIL，150控制/151帧、无碰撞，沿程误差2.10m、加速度6.19m/s²。按规则停批，未调PID/阈值。近零目标距静止转向退化已定位，纵向原因尚未完全辨识。32定向、378资源独立通过；独立审查发现的异常值失败记录丢失已RED→GREEN修复。见[完整记录](backbone_initialization_v2_results_2026_09_23.md)。
+
+## 2026-09-23 控制时序修复A
+
+同步提交确认与单tick/回显绑定已实现；36定向、378资源独立通过。真实S2 150/150命令转换独立审计通过，错位8→0；驾驶仍FAIL（沿程2.0565m、加速度7.2294m/s²）。无PID/参考/阈值调参，无其他场景/RP/PF/训练。重要审计降级缺口RED→GREEN修复；一项损坏journal结构化报错细节后置。见[完整报告](backbone_command_sync_results_2026_09_23.md)。
+
+## 2026-09-24 横向修复B
+
+40项定向/378资源独立通过；S2/L2各一次真实诊断完成，横向边界通过、命令420/420一致。完整驾驶仍FAIL，纵向与L2速度口径待处理。详见[结果](backbone_lateral_b_results_2026_09_24.md)。无训练、RP/PF、提交或推送。
+
+## 2026-09-26 CoDriving P/F BEV表示准备
+
+新增codriving_pf_bev.py、11项测试和侧输入附加接口；原同网格几何对照通过，完整轻量389项通过。保持原planner；真实工具连接和消费训练未完成。名义weather-0时域2s需实采来源确认。详见[codriving_pf_bev_stage2_2026_09_26.md](codriving_pf_bev_stage2_2026_09_26.md)。
+
+
+## 2026-09-27 CoDriving已购证据接口
+
+新增ledger→P/F raster records；显式receipt/时空绑定校验，F-CV仅用已购因果历史。94项受影响回归通过，原planner未改。Town05-11时标核对支持0.2秒。原生wire与F运动锚点尚待接通，无训练或模型效果结论。详见 `codriving_ledger_bev_2026_09_27.md`。
+
+
+## 2026-09-27 原生v3时间协议
+
+沿用VehicleTools/ledger新增原生时轴及付费motion anchor，F可单独形成F-CV。修复独立审查发现的变时轴去重错误，并通过完整回归修复旧v2/control组合兼容性。最终406项通过，v1接口AST不变。未运行真实模型或训练；详细记录 `native_task_2026_09_27.md`。
+
+
+## 2026-09-27 最小有效规划通路
+
+在不重建官方CoDriving的前提下新增 `ToolEvidencePlanner` residual adapter：无sidecar精确保持base输出，P/F/F-CV通过独立小分支影响十点waypoint。route11两个ego连续五帧本地LiDAR detector probe成功，未使用对方GT/RSU/未来。模型环境adapter测试8/8，完整资源独立414项通过（8项torch跳过）；freeze_base默认冻结base并锁定eval。adapter尚未训练，不宣称效果。详见 `codriving_tool_effective_adapter_2026_09_27.md`。
+
+
+## 2026-09-27 真实 P/F 配对探针
+
+route11扩展到保存帧60–80，独立 detector 每车21帧；排除source/receiver ego后各保留连续第三方目标。用显式0.2→0.1秒因果插值适配冻结CMP MTR，真实F-MTR与同锚点F-CV receiver0差异1857像素，receiver1未来越界保留。只做输入通路诊断，未接官方planner batch、未训练adapter、无效果结论。
+
+
+## 2026-09-27 官方真实 planner batch 接入
+
+route11 frame80 的官方 Single perception/planner batch 已携带真实 P/F sidecar进入 `ToolEvidencePlanner`，输出形状[1,10,2]，零初始化残差与原输出L2 delta=0.0；单样本ADE/FDE=0.876213/2.867154m，仅为接线验收。base冻结测试新增，尚未训练adapter。
+
+
+## 2026-09-27 adapter 短训门
+
+route11真实planner batch上仅训练adapter 20步，base冻结且保持eval，L1从0.484042降到0.312683；仅证明真实梯度链连通，不是held-out效果。最终资源独立回归414项通过、8项torch跳过。
+
+
+## 2026-09-27 多窗口 adapter 诊断
+
+route11 frame70–80前8窗各训练8步、后3窗held-out；ToolEvidencePlanner ADE/FDE 0.1164/0.3218，冻结Ego base 0.1513/0.3836，相对下降23.1%/16.1%。同路线相邻窗口且未做P/F消融，不作为论文主结果。
+
+
+## 2026-09-27 P/F 同预算消融
+
+同一route11、8/3窗口、每窗8步adapter训练：Ego 0.1513/0.3836，P 0.1085/0.2958，F-CV 0.1174/0.3140，F-MTR 0.1151/0.3171，PF 0.1164/0.3218（ADE/FDE）。P-only最强，PF未叠加，保留全部变差结果；不能作为论文主结果，下一步跨route验证和F融合诊断。
+
+
+## 2026-09-27 跨路线数据边界
+
+本地只有route11解压目录，其他可用route为208MB–2.4GB压缩包，未擅自解压。route11另一ego的后段目标离开BEV，F coverage failure保留。跨recording验证待独立route准备。
+
+
+## 2026-09-28 route05_28 跨 recording 验证
+
+使用route11训练的P adapter冻结到route05_28 frame30–40，ADE/FDE 0.7277/1.7142，base 0.5108/1.1794，恶化42.5%/45.3%。单路线正向信号未泛化；停止长训，先查坐标、检测域和历史质量。

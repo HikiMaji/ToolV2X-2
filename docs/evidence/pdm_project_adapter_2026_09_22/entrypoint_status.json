@@ -1,0 +1,10 @@
+{
+  "default_probe": "scripts/probe_pdm_closedloop.py",
+  "default_state": "restored exact before snapshot v4; original finite criteria passed but stable-stop limitations remain",
+  "candidate_probe": "scripts/probe_pdm_project_adapter.py",
+  "candidate_state": "explicit experiment only; both batches failed engineering gate, not promoted",
+  "core_v1_default_preserved": true,
+  "core_v2_explicit": true,
+  "executed_batches": 2,
+  "more_runtime_authorized_this_batch": false
+}

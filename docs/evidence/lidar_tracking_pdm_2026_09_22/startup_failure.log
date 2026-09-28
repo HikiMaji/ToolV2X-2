@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "scripts/capture_native_lidar_probe.py", line 82, in <module>
+    a=p.parse_args();capture(a.output,a.port,a.frames)
+  File "scripts/capture_native_lidar_probe.py", line 16, in capture
+    world=client.load_world('Town03');original=world.get_settings()
+RuntimeError: time-out of 60000ms while waiting for the simulator, make sure the simulator is ready and connected to 127.0.0.1:2200

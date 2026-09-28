@@ -1,0 +1,42 @@
+{
+  "version": "toolv2x_backbone_tracking_gate_v4",
+  "command_submission_version": "toolv2x_control_submission_v1",
+  "carla_version": "0.9.15",
+  "python_version": "3.10",
+  "blueprint": "vehicle.lincoln.mkz_2017",
+  "dt": 0.1,
+  "lateral_pid": {
+    "K_P": 1.95,
+    "K_I": 0.05,
+    "K_D": 0.2,
+    "dt": 0.1
+  },
+  "longitudinal_pid": {
+    "K_P": 1.0,
+    "K_I": 0.05,
+    "K_D": 0.0,
+    "dt": 0.1
+  },
+  "max_throttle": 0.75,
+  "max_brake": 0.3,
+  "max_steering": 0.8,
+  "lateral_reference_version": "toolv2x_spatial_reference_v1",
+  "lateral_min_lookahead_m": 1.0,
+  "lateral_time_lookahead_s": 0.4,
+  "lateral_geometry_epsilon_m": 1e-09,
+  "speed_preview": 0.1,
+  "settling_ticks": 20,
+  "engage_drive_ticks": 1,
+  "verify_automatic_ticks": 9,
+  "initialization_version": "toolv2x_backbone_initialization_v2",
+  "initialization_throttle": 0.0,
+  "origin_xy": [
+    50.0,
+    0.0
+  ],
+  "seed": 0,
+  "max_effective_control_ticks": 2160,
+  "reference_contract": "RH rear axle; actor point position/derivative targets",
+  "scope": "Given-reference independent tracking only; no planner or P/F",
+  "execution_mode": "lateral_diagnostic_L2"
+}

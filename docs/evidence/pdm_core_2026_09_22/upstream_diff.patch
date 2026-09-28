@@ -1,0 +1,48 @@
+--- upstream/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py
++++ adapted/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py
+@@ -87,6 +87,10 @@
+         local_idx = self._global_to_local_idcs[time_idx]
+         return self._occupancy_maps[local_idx]
+ 
++    def object_at(self, token, time_idx):
++        """ToolV2X extension: original CV semantics unless an adapter overrides it."""
++        return self.unique_objects[token]
++
+     @property
+     def collided_track_ids(self) -> List[str]:
+         """
+--- upstream/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py
++++ adapted/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py
+@@ -340,7 +340,7 @@
+                             LeadingAgentIndex.VELOCITY
+                         ] = self._get_leading_agent_velocity(
+                             current_state_se2.heading,
+-                            self._observation.unique_objects[nearest_agent],
++                            self._observation.object_at(nearest_agent, time_idx),
+                         )
+ 
+                 else:  # nothing ahead, free driving
+--- upstream/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py
++++ adapted/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py
+@@ -349,7 +349,7 @@
+                     ]
+                 )
+ 
+-                tracked_object = self._observation.unique_objects[token]
++                tracked_object = self._observation.object_at(token, time_idx)
+ 
+                 # classify collision
+                 collision_type: CollisionType = get_collision_type(
+@@ -466,9 +466,9 @@
+                     )
+ 
+                     centroid = self._observation[current_time_idx][token].centroid
+-                    track_heading = self._observation.unique_objects[
+-                        token
+-                    ].box.center.heading
++                    track_heading = self._observation.object_at(
++                        token, current_time_idx
++                    ).box.center.heading
+                     track_state = StateSE2(centroid.x, centroid.y, track_heading)
+                     if is_agent_ahead(ego_rear_axle, track_state) or (
+                         (

@@ -1,0 +1,155 @@
+{
+  "spec": {
+    "version": "toolv2x_pdm_project_probe_v1",
+    "dt": 0.05,
+    "steps_by_case": {
+      "empty": 160,
+      "lead": 400,
+      "lead_release": 440
+    },
+    "settling_ticks": 30,
+    "release_step": 300,
+    "peer_release_throttle": 0.3,
+    "pdm_execution_spec": {
+      "version": "toolv2x_pdm_core_v2"
+    },
+    "min_stable_frames": 10,
+    "max_start_acceleration": 1.0,
+    "min_track_hits": 3,
+    "max_warmup_frames": 60,
+    "self_iou": 0.5,
+    "max_tilt_rad": 0.05,
+    "planning_speed_cap_mps": 4.0,
+    "lead_distance_m": 15.0,
+    "lateral_pid": {
+      "K_P": 1.95,
+      "K_D": 0.2,
+      "K_I": 0.07,
+      "dt": 0.05
+    },
+    "longitudinal_pid": {
+      "K_P": 0.2,
+      "K_D": 0.0,
+      "K_I": 0.0,
+      "dt": 0.05
+    },
+    "max_throttle": 0.75,
+    "max_brake": 0.3,
+    "max_steering": 0.8,
+    "velocity_proxy_min_speed": 0.2,
+    "target_forward_margin": 0.5,
+    "low_speed_throttle_cap": 0.25,
+    "low_speed_boundary_mps": 0.5,
+    "control_adapter": {
+      "speed_preview_s": 0.5,
+      "stop_speed_mps": 0.2,
+      "stop_distance_m": 0.3,
+      "release_speed_mps": 0.4,
+      "release_distance_m": 0.6
+    },
+    "controller_reference": "selected scored dynamic rollout; actor offset rotated at each heading; interpolated 0.5m path target",
+    "controller_speed": "explicit simulated speed at 0.5s; causal low-speed stop/hold with hysteresis",
+    "criteria": {
+      "min_empty_progress_m": 8.0,
+      "min_lead_progress_m": 2.0,
+      "min_clearance_m": 0.5,
+      "max_lateral_error_m": 0.5,
+      "collisions": 0,
+      "invalid_plans": 0,
+      "max_abs_longitudinal_acceleration_mps2": 4.0,
+      "hold_window_steps": 40,
+      "max_hold_speed_mps": 0.1,
+      "min_release_progress_m": 2.0,
+      "min_release_peak_speed_mps": 0.5
+    },
+    "scope": "controlled synchronous Ego-only chain; inference pauses simulation; not realtime or ToolV2X method evaluation"
+  },
+  "outcomes": [
+    {
+      "case": "empty",
+      "acceptance_pass": false,
+      "no_feasible_plans": 6,
+      "unconfirmed_track_holds": 0,
+      "sustained_hold_pass": null,
+      "release_progress_m": null,
+      "release_peak_speed_mps": null,
+      "driving_steps": 160,
+      "warmup_steps": 9,
+      "final_metrics": {
+        "speed_mps": 0.05344072244129112,
+        "lateral_error_m": 0.0429850546231038,
+        "progress_m": 1.670772872783849
+      },
+      "min_clearance_m": null,
+      "max_lateral_error_m": 0.04341323459205858,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 119406,
+      "invalid_plans": 0,
+      "wall_seconds": 25.47492562001571,
+      "max_driving_abs_acceleration": 7.736982031199128,
+      "max_horizontal_acceleration_mps2": 8.02422532276739,
+      "mean_loop_seconds": 0.07600852654722985,
+      "pdm_calls": 160,
+      "detections": 169
+    },
+    {
+      "case": "lead",
+      "acceptance_pass": false,
+      "no_feasible_plans": 86,
+      "unconfirmed_track_holds": 0,
+      "sustained_hold_pass": true,
+      "release_progress_m": null,
+      "release_peak_speed_mps": null,
+      "driving_steps": 400,
+      "warmup_steps": 11,
+      "final_metrics": {
+        "speed_mps": 3.996023951260457e-05,
+        "lateral_error_m": 0.07180163156111893,
+        "progress_m": 2.526211763938753,
+        "bumper_clearance_m": 7.5627344797296985
+      },
+      "min_clearance_m": 7.5627344797296985,
+      "max_lateral_error_m": 0.09216466929634856,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 119609,
+      "invalid_plans": 0,
+      "wall_seconds": 61.01521841622889,
+      "max_driving_abs_acceleration": 7.037386769864885,
+      "max_horizontal_acceleration_mps2": 7.3441134126200005,
+      "mean_loop_seconds": 0.08975486952345818,
+      "pdm_calls": 400,
+      "detections": 411
+    },
+    {
+      "case": "lead_release",
+      "acceptance_pass": false,
+      "no_feasible_plans": 29,
+      "unconfirmed_track_holds": 0,
+      "sustained_hold_pass": false,
+      "release_progress_m": 1.194065809092256,
+      "release_peak_speed_mps": 0.43402579496357274,
+      "driving_steps": 440,
+      "warmup_steps": 11,
+      "final_metrics": {
+        "speed_mps": 2.6682624492744466e-05,
+        "lateral_error_m": 0.04495244083426627,
+        "progress_m": 4.807872029996075,
+        "bumper_clearance_m": 11.871352027862486
+      },
+      "min_clearance_m": 6.035931532610505,
+      "max_lateral_error_m": 0.09562072531851348,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 120054,
+      "invalid_plans": 0,
+      "wall_seconds": 68.20862473594025,
+      "max_driving_abs_acceleration": 7.589710433921193,
+      "max_horizontal_acceleration_mps2": 7.932493748705175,
+      "mean_loop_seconds": 0.08977787260664627,
+      "pdm_calls": 440,
+      "detections": 451
+    }
+  ]
+}

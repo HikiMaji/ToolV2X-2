@@ -1,0 +1,77 @@
+{
+  "before": {
+    "run": "outputs/backbone_tracking_gate_v2_2026_09_23",
+    "samples": 151,
+    "echo_mismatch_indices": [
+      8,
+      9,
+      21,
+      47,
+      57,
+      87,
+      93,
+      95
+    ],
+    "delivery": null,
+    "status": "FAIL",
+    "failures": [
+      "illegal_control",
+      "steer_slew",
+      "longitudinal_max",
+      "longitudinal_rmse",
+      "moving_speed_max",
+      "longitudinal_acceleration",
+      "longitudinal_jerk_p99",
+      "start_midpoint_speed",
+      "stop_end_longitudinal"
+    ],
+    "metrics": {
+      "max_abs_e_long_m": 2.1002906362848286,
+      "rmse_e_long_m": 1.287495028182638,
+      "max_abs_moving_speed_error_mps": 0.9174021340937135,
+      "max_abs_a_long_mps2": 6.187060245178974,
+      "p99_abs_j_long_mps3": 65.68687514848058
+    },
+    "hold_max_abs_steer": 0.800000011920929,
+    "final_x": 13.90252873908178,
+    "gear_values": [
+      1
+    ]
+  },
+  "after": {
+    "run": "outputs/backbone_command_sync_s2_2026_09_23",
+    "samples": 151,
+    "echo_mismatch_indices": [],
+    "delivery": {
+      "version": "toolv2x_control_delivery_audit_v1",
+      "passed": true,
+      "failures": [],
+      "observed_transitions": 150,
+      "attempted_commands": 150
+    },
+    "status": "FAIL",
+    "failures": [
+      "illegal_control",
+      "steer_slew",
+      "longitudinal_max",
+      "longitudinal_rmse",
+      "moving_speed_max",
+      "longitudinal_acceleration",
+      "longitudinal_jerk_p99",
+      "start_midpoint_speed",
+      "stop_end_longitudinal"
+    ],
+    "metrics": {
+      "max_abs_e_long_m": 2.0565465222068013,
+      "rmse_e_long_m": 1.2456985386723811,
+      "max_abs_moving_speed_error_mps": 0.9773737387639767,
+      "max_abs_a_long_mps2": 7.22935044668986,
+      "p99_abs_j_long_mps3": 64.8695323196515
+    },
+    "hold_max_abs_steer": 0.800000011920929,
+    "final_x": 13.950548326478,
+    "gear_values": [
+      1
+    ]
+  }
+}

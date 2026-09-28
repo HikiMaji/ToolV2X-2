@@ -1,0 +1,8 @@
+{
+  "state": "verified",
+  "rows": 117,
+  "outputs_checked": 3042,
+  "metric_implementation": "stdlib hypot; independent of production trajectory_metrics",
+  "grouping_and_primary_evidence_pairs_verified": true,
+  "scope": "Verifies saved numeric results, not dataset completeness or new online calls."
+}

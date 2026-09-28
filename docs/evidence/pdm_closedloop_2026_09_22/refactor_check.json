@@ -1,0 +1,6 @@
+{
+  "detector_rows": 10,
+  "detector_exact_equal_except_timing": true,
+  "tracking_rows": 60,
+  "tracking_exact_equal": true
+}

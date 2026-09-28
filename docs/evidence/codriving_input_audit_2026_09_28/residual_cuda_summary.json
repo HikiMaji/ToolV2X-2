@@ -1,0 +1,31 @@
+{
+  "scope": "frozen adapter-only forward; no base-planner inference or ADE/FDE re-evaluation",
+  "device": "cuda",
+  "torch_version": "1.10.1+cu113",
+  "checkpoint": "/root/autodl-tmp/ToolV2X/outputs/codriving_route11_p_train_checkpoint/adapter.pt",
+  "checkpoint_sha256": "7e30fbb571a3abfc7cbf383f99a56f32add888dbe490f8b1074f5fc2821b1ce1",
+  "groups": [
+    {
+      "route": "routes_town05_11_w0_04_30_23_14_33",
+      "samples": 3,
+      "zero_body_samples": 3,
+      "zero_P_exact_equal_samples": 3,
+      "mean_correction_m": 0.11980276554822922,
+      "mean_correction_with_zero_P_m": 0.11980276554822922,
+      "mean_change_when_zeroing_P_m": 0.0,
+      "mean_change_when_shuffling_P_m": 0.0,
+      "zero_P_change_over_full_correction": 0.0
+    },
+    {
+      "route": "routes_town05_28_w0_05_01_11_18_29",
+      "samples": 11,
+      "zero_body_samples": 11,
+      "zero_P_exact_equal_samples": 11,
+      "mean_correction_m": 0.36554326523434033,
+      "mean_correction_with_zero_P_m": 0.36554326523434033,
+      "mean_change_when_zeroing_P_m": 0.0,
+      "mean_change_when_shuffling_P_m": 0.0,
+      "zero_P_change_over_full_correction": 0.0
+    }
+  ]
+}

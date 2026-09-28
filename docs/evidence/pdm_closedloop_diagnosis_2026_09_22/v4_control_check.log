@@ -1,0 +1,18 @@
+{
+  "empty": {
+    "max_abs_acceleration": 9.27457641335487,
+    "acceleration_below_4": false,
+    "tail40_max_speed": 2.7377222437117794,
+    "tail40_all_below_half_mps": false
+  },
+  "lead": {
+    "max_abs_acceleration": 9.27457641335487,
+    "acceleration_below_4": false,
+    "tail40_max_speed": 0.6875015732679758,
+    "tail40_all_below_half_mps": false
+  }
+}
+Traceback (most recent call last):
+  File "docs/evidence/pdm_closedloop_diagnosis_2026_09_22/verify_control.py", line 13, in <module>
+    assert all(r['acceleration_below_4'] for r in result.values()), 'excessive acceleration in fixed probe'
+AssertionError: excessive acceleration in fixed probe

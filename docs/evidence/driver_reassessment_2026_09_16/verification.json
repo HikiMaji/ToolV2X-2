@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-09-15T17:02:04.689497+00:00",
+  "scope": "Existing archive summary verification only; no new model inference, optimizer update or provider call",
+  "checks": {
+    "original_validation_checkpoints": 8,
+    "stage_values_and_differences_equal_original": true,
+    "report_table_rounding_verified": true,
+    "eligible_task_audits_recounted": 796,
+    "unique_frames": 199,
+    "cooperative_tasks_with_direct_remote_primary": 597,
+    "capacity_exclusion_total": 0,
+    "admission_totals_equal_original_audits": true,
+    "source_python_files_byte_equal_training_snapshot": 57,
+    "production_and_test_git_diff_empty": true
+  },
+  "model_tests_run_this_turn": 0,
+  "planned_frozen_checkpoint_diagnostic_executed": false
+}

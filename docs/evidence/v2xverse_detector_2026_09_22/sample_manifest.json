@@ -1,0 +1,102 @@
+[
+  {
+    "path": "ego_vehicle_0/lidar/0010.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0010.npy",
+    "bytes": 361648
+  },
+  {
+    "path": "ego_vehicle_0/measurements/0010.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0010.json",
+    "bytes": 9473
+  },
+  {
+    "path": "ego_vehicle_0/lidar/0011.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0011.npy",
+    "bytes": 357824
+  },
+  {
+    "path": "ego_vehicle_0/measurements/0011.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0011.json",
+    "bytes": 9482
+  },
+  {
+    "path": "ego_vehicle_0/lidar/0012.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0012.npy",
+    "bytes": 359648
+  },
+  {
+    "path": "ego_vehicle_0/measurements/0012.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0012.json",
+    "bytes": 9482
+  },
+  {
+    "path": "ego_vehicle_0/lidar/0013.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0013.npy",
+    "bytes": 358240
+  },
+  {
+    "path": "ego_vehicle_0/measurements/0013.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0013.json",
+    "bytes": 9500
+  },
+  {
+    "path": "ego_vehicle_0/lidar/0014.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0014.npy",
+    "bytes": 358464
+  },
+  {
+    "path": "ego_vehicle_0/measurements/0014.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0014.json",
+    "bytes": 9482
+  },
+  {
+    "path": "ego_vehicle_1/lidar/0010.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0010.npy",
+    "bytes": 356784
+  },
+  {
+    "path": "ego_vehicle_1/measurements/0010.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0010.json",
+    "bytes": 9471
+  },
+  {
+    "path": "ego_vehicle_1/lidar/0011.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0011.npy",
+    "bytes": 356000
+  },
+  {
+    "path": "ego_vehicle_1/measurements/0011.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0011.json",
+    "bytes": 9475
+  },
+  {
+    "path": "ego_vehicle_1/lidar/0012.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0012.npy",
+    "bytes": 354848
+  },
+  {
+    "path": "ego_vehicle_1/measurements/0012.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0012.json",
+    "bytes": 9471
+  },
+  {
+    "path": "ego_vehicle_1/lidar/0013.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0013.npy",
+    "bytes": 358000
+  },
+  {
+    "path": "ego_vehicle_1/measurements/0013.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0013.json",
+    "bytes": 9472
+  },
+  {
+    "path": "ego_vehicle_1/lidar/0014.npy",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0014.npy",
+    "bytes": 354720
+  },
+  {
+    "path": "ego_vehicle_1/measurements/0014.json",
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0014.json",
+    "bytes": 9465
+  }
+]

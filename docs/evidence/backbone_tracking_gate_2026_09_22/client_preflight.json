@@ -1,0 +1,73 @@
+{
+  "python": "3.10.19",
+  "carla": "0.9.15",
+  "client_version": "0.9.15",
+  "native_map_parse": true,
+  "map_points": [
+    {
+      "xy": [
+        50,
+        0
+      ],
+      "driving": true,
+      "lane_width": 120.0,
+      "z": 0.0
+    },
+    {
+      "xy": [
+        5,
+        -55
+      ],
+      "driving": true,
+      "lane_width": 120.0,
+      "z": 0.0
+    },
+    {
+      "xy": [
+        5,
+        55
+      ],
+      "driving": true,
+      "lane_width": 120.0,
+      "z": 0.0
+    },
+    {
+      "xy": [
+        595,
+        -55
+      ],
+      "driving": true,
+      "lane_width": 120.0,
+      "z": 0.0
+    },
+    {
+      "xy": [
+        595,
+        55
+      ],
+      "driving": true,
+      "lane_width": 120.0,
+      "z": 0.0
+    },
+    {
+      "xy": [
+        50,
+        61
+      ],
+      "driving": false,
+      "lane_width": null,
+      "z": null
+    },
+    {
+      "xy": [
+        50,
+        -61
+      ],
+      "driving": false,
+      "lane_width": null,
+      "z": null
+    }
+  ],
+  "server_started": false,
+  "physical_trials": 0
+}

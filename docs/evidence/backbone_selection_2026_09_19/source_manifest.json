@@ -1,0 +1,432 @@
+[
+  {
+    "project": "CoDriving",
+    "path": "codriving/models/planning_end2end.py",
+    "status": 200,
+    "bytes": 6848,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/models/planning_end2end.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/models/planning_end2end.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/data_utils/datasets/planning_with_gt_dataset.py",
+    "status": 200,
+    "bytes": 15431,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/data_utils/datasets/planning_with_gt_dataset.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/data_utils/datasets/planning_with_gt_dataset.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/hypes_yaml/codriving/end2end_single.yaml",
+    "status": 200,
+    "bytes": 2669,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/hypes_yaml/codriving/end2end_single.yaml",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/hypes_yaml/codriving/end2end_single.yaml"
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/hypes_yaml/codriving/end2end_codriving.yaml",
+    "status": 200,
+    "bytes": 2716,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/hypes_yaml/codriving/end2end_codriving.yaml",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/hypes_yaml/codriving/end2end_codriving.yaml"
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/tools/evaluate_end2end.py",
+    "status": 404,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/tools/evaluate_end2end.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "README.md",
+    "status": 200,
+    "bytes": 14595,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/README.md",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/README.md"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "README.md",
+    "status": 200,
+    "bytes": 7330,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/README.md",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/README.md"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "docs/CHECKPOINTS.md",
+    "status": 200,
+    "bytes": 3730,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/docs/CHECKPOINTS.md",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/docs/CHECKPOINTS.md"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "navsim/agents/omniv2x/core/infra_bbox_features.py",
+    "status": 200,
+    "bytes": 4667,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/navsim/agents/omniv2x/core/infra_bbox_features.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/navsim/agents/omniv2x/core/infra_bbox_features.py"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "navsim/agents/omniv2x/core/features.py",
+    "status": 200,
+    "bytes": 29833,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/navsim/agents/omniv2x/core/features.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/navsim/agents/omniv2x/core/features.py"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "navsim/agents/omniv2x/core/backbone.py",
+    "status": 200,
+    "bytes": 44632,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/navsim/agents/omniv2x/core/backbone.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/navsim/agents/omniv2x/core/backbone.py"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "navsim/agents/omniv2x/core/agent.py",
+    "status": 200,
+    "bytes": 54091,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/navsim/agents/omniv2x/core/agent.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/navsim/agents/omniv2x/core/agent.py"
+  },
+  {
+    "project": "OmniV2X",
+    "path": "navsim/agents/omniv2x/scripts/inference.py",
+    "status": 200,
+    "bytes": 133667,
+    "url": "https://raw.githubusercontent.com/JuntongPeng/OmniV2X/main/navsim/agents/omniv2x/scripts/inference.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/OmniV2X/navsim/agents/omniv2x/scripts/inference.py"
+  },
+  {
+    "project": "DIPP",
+    "path": "model/planner.py",
+    "status": 200,
+    "bytes": 9656,
+    "url": "https://raw.githubusercontent.com/MCZhi/DIPP/main/model/planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/DIPP/model/planner.py"
+  },
+  {
+    "project": "DIPP",
+    "path": "model/predictor.py",
+    "status": 200,
+    "bytes": 11231,
+    "url": "https://raw.githubusercontent.com/MCZhi/DIPP/main/model/predictor.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/DIPP/model/predictor.py"
+  },
+  {
+    "project": "DIPP",
+    "path": "open_loop_test.py",
+    "status": 200,
+    "bytes": 12003,
+    "url": "https://raw.githubusercontent.com/MCZhi/DIPP/main/open_loop_test.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/DIPP/open_loop_test.py"
+  },
+  {
+    "project": "DIPP",
+    "path": "README.md",
+    "status": 200,
+    "bytes": 3858,
+    "url": "https://raw.githubusercontent.com/MCZhi/DIPP/main/README.md",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/DIPP/README.md"
+  },
+  {
+    "project": "PDM",
+    "path": "README.md",
+    "bytes": 10563,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/README.md",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/README.md",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/script/config/simulation/planner/pdm_closed_planner.yaml",
+    "bytes": 1421,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/script/config/simulation/planner/pdm_closed_planner.yaml",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/script/config/simulation/planner/pdm_closed_planner.yaml",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+    "bytes": 7008,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+    "bytes": 7611,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+    "bytes": 8774,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+    "bytes": 10475,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation_utils.py",
+    "bytes": 1663,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation_utils.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+    "bytes": 3253,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+    "bytes": 3189,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/pdm_hybrid_planner.py",
+    "bytes": 6927,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_hybrid_planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_hybrid_planner.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/pdm_open_planner.py",
+    "bytes": 4316,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_open_planner.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/pdm_open_planner.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+    "bytes": 7621,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+    "bytes": 18578,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+    "bytes": 3129,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+    "bytes": 13240,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+    "bytes": 24249,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+    "bytes": 2365,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+    "bytes": 7685,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+    "bytes": 22236,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+    "bytes": 11817,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+    "bytes": 3499,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+    "bytes": 5413,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+    "bytes": 6122,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+    "bytes": 8129,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+    "bytes": 5607,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+    "bytes": 3528,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_feature_utils.py",
+    "bytes": 4650,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_feature_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_feature_utils.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+    "bytes": 3412,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+    "bytes": 3699,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+    "status": 200
+  },
+  {
+    "project": "PDM",
+    "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+    "bytes": 9936,
+    "url": "https://raw.githubusercontent.com/autonomousvision/tuplan_garage/main/tuplan_garage/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/PDM/tuplan_garage/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+    "status": 200
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/data_utils/datasets/pnp_dataset.py",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/data_utils/datasets/pnp_dataset.py",
+    "bytes": 18938,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/data_utils/datasets/pnp_dataset.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "scripts/train_planner_e2e.sh",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/scripts/train_planner_e2e.sh",
+    "bytes": 1111,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/scripts/train_planner_e2e.sh"
+  },
+  {
+    "project": "CoDriving",
+    "path": "scripts/eval_planner_e2e.sh",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/scripts/eval_planner_e2e.sh",
+    "bytes": 872,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/scripts/eval_planner_e2e.sh"
+  },
+  {
+    "project": "CoDriving",
+    "path": "simulation/leaderboard/team_code/base_agent.py",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/simulation/leaderboard/team_code/base_agent.py",
+    "bytes": 70588,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/simulation/leaderboard/team_code/base_agent.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "simulation/leaderboard/team_code/auto_pilot.py",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/simulation/leaderboard/team_code/auto_pilot.py",
+    "bytes": 46301,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/simulation/leaderboard/team_code/auto_pilot.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "simulation/leaderboard/team_code/pnp_agent_e2e.py",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/simulation/leaderboard/team_code/pnp_agent_e2e.py",
+    "bytes": 20702,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/simulation/leaderboard/team_code/pnp_agent_e2e.py"
+  },
+  {
+    "project": "CoDriving",
+    "path": "codriving/tools/inference_e2e.py",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/tools/inference_e2e.py",
+    "bytes": 12236,
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/CoDriving/codriving/tools/inference_e2e.py"
+  }
+]

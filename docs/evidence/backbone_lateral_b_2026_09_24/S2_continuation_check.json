@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "complete": true,
+    "no_abort": true,
+    "delivery": true,
+    "no_collision": true,
+    "lateral": true,
+    "yaw": true,
+    "geometry": true,
+    "command_bounds": true
+  },
+  "proceed_to_one_L2": true,
+  "initial_hold_max_abs_steer": 0.0001815877913031727,
+  "failures": [
+    "illegal_control",
+    "longitudinal_max",
+    "longitudinal_rmse",
+    "moving_speed_max",
+    "longitudinal_acceleration",
+    "longitudinal_jerk_p99",
+    "start_midpoint_speed",
+    "stop_end_longitudinal"
+  ]
+}

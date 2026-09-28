@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-19",
+  "verified_at_utc": "2026-09-19T09:56:32.627189+00:00",
+  "scope": "Research-point-one backbone selection; source and small-sample inspection only",
+  "recommendation": {
+    "planner": "PDM-Closed",
+    "environment": "V2Xverse, vehicle-only, two vehicles",
+    "learned_backup": "original CoDriving planner"
+  },
+  "migration_status": "recommended, not implemented",
+  "successful_source_files": 53,
+  "source_bytes": 757820,
+  "source_files_by_project": {
+    "CoDriving": 12,
+    "OmniV2X": 7,
+    "DIPP": 4,
+    "PDM": 30
+  },
+  "sample_files": 4,
+  "sample_bytes": 737376,
+  "sample_usage": "Research inspection; not a train/development/test split",
+  "source_failures": [
+    {
+      "project": "CoDriving",
+      "path": "codriving/tools/evaluate_end2end.py",
+      "status": 404,
+      "url": "https://raw.githubusercontent.com/CollaborativePerception/V2Xverse/main/codriving/tools/evaluate_end2end.py"
+    }
+  ],
+  "failure_resolution": "CoDriving actual evaluation entry codriving/tools/inference_e2e.py obtained successfully",
+  "verification": {
+    "file_presence_and_sizes_checked": 57,
+    "python_sources_ast_parsed": 43,
+    "errors": [],
+    "meaning": "File integrity and syntax inspection only; not import, runtime, model or method validation"
+  },
+  "executed": {
+    "training": false,
+    "model_inference": false,
+    "carla": false,
+    "new_method_experiments": false,
+    "production_code_modification": false,
+    "weight_download": false,
+    "rgb_image_delivery_to_model": false
+  },
+  "open_gates": [
+    "CARLA map/route adapter",
+    "actual data timebase and causal MTR history",
+    "cross-domain MTR forecast quality",
+    "multimodal external prediction adapter",
+    "same-physical-time planner state reset",
+    "independent downstream evaluation"
+  ],
+  "local_source_snapshot": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19",
+  "identity_note": "URLs, readable branch, retrieval date and file size are provenance. Local absolute paths locate artifacts; they are not semantic model or context identities."
+}

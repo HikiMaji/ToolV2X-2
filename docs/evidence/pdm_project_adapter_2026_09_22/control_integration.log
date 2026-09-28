@@ -1,0 +1,20 @@
+test_backward_or_nonfinite_plan_is_not_silently_clipped (test_pdm_control.ControlTests) ... ok
+test_controller_uses_ahead_of_body_waypoint_and_kmh (test_pdm_control.ControlTests) ... ok
+test_future_heading_rotates_rear_to_actor_offset (test_pdm_control.ControlTests) ... ok
+test_missing_nonfinite_or_nonincreasing_times_rejected (test_pdm_control.ControlTests) ... ok
+test_short_forward_rear_path_does_not_force_brake (test_pdm_control.ControlTests) ... ok
+test_startup_requires_stable_ego_and_observed_tracks (test_pdm_control.ControlTests) ... ok
+test_v2_infeasible_and_emergency_plans_hold_explicitly (test_pdm_control.ControlTests) ... ok
+test_v2_rejects_bad_dense_contract_and_no_forward_rollout (test_pdm_control.ControlTests) ... ok
+test_v2_rejects_preview_beyond_dense_horizon (test_pdm_control.ControlTests) ... ok
+test_v2_short_forward_rollout_tracks_endpoint_without_inventing_stop (test_pdm_control.ControlTests) ... ok
+test_v2_stationary_feasible_rollout_enters_stop_before_no_forward_check (test_pdm_control.ControlTests) ... ok
+test_v2_stop_distance_is_rear_path_progress_not_rotating_body_offset (test_pdm_control.ControlTests) ... ok
+test_v2_stop_latch_uses_three_entry_conditions_and_hysteretic_release (test_pdm_control.ControlTests) ... ok
+test_v2_uses_simulated_half_second_speed_and_spatial_lookahead (test_pdm_control.ControlTests) ... ok
+test_zero_path_holds_brake (test_pdm_control.ControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK

@@ -1,0 +1,13 @@
+E
+======================================================================
+ERROR: test_sidecar_preserves_original_planner_inputs (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/tests/test_codriving_pf_bev.py", line 82, in test_sidecar_preserves_original_planner_inputs
+    from planning.codriving_pf_bev import attach_pf_sidecar
+ImportError: cannot import name 'attach_pf_sidecar' from 'planning.codriving_pf_bev' (/root/autodl-tmp/ToolV2X/.worktrees/codriving-pf-bev/src/planning/codriving_pf_bev.py)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

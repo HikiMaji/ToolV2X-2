@@ -1,0 +1,3 @@
+Independent read-only review recomputed 60 capture rows: self IoU 0.9685-0.9697, retained target IoU=0, capture dt=0.050000000745s; AB3DMOT state replay exact. Upstream camera-corner check passed.
+One confirmed P2: tentative tracks lost detection parent references before first emitted state. Fixed after reproducing failing late-birth test; all 7 tracking tests then pass. Existing 60 rows exactly unchanged.
+Boundary retained: first unknown velocity is flagged in outer audit, but PDM receives zero initialization, not an explicit unknown-velocity model.

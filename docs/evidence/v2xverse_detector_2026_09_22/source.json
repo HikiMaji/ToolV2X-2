@@ -1,0 +1,13 @@
+{
+  "project": "CollaborativePerception/V2Xverse",
+  "date": "2026-09-22",
+  "source_url": "https://github.com/CollaborativePerception/V2Xverse",
+  "downloaded_code_files": 586,
+  "checkpoint": "https://huggingface.co/gjliu/v2xverse/resolve/main/no_collaboration/perception/net_epoch_bestval_at16.pth",
+  "checkpoint_bytes": 32817341,
+  "python_source_changes": 0,
+  "source_tree_snapshot": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/detector/source_tree.json",
+  "real_forward_calls": 12,
+  "sequence_forward_calls": 10,
+  "training_updates": 0
+}

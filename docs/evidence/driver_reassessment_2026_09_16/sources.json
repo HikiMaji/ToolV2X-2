@@ -1,0 +1,32 @@
+{
+  "retrieved_utc": "2026-09-15T16:55:13.567742+00:00",
+  "items": [
+    {
+      "file": "ego_status.html",
+      "url": "https://arxiv.org/html/2312.03031v2",
+      "bytes": 280621,
+      "status": "downloaded"
+    },
+    {
+      "file": "navsim.html",
+      "url": "https://arxiv.org/html/2406.15349v2",
+      "bytes": 191668,
+      "status": "downloaded"
+    },
+    {
+      "file": "v2xverse_model.py",
+      "url": "https://github.com/CollaborativePerception/V2Xverse/blob/main/codriving/models/planning_end2end.py",
+      "local_source": "/root/autodl-tmp/ToolV2X/outputs/navigation_research_2026_09_15_v1/sources/v2xverse_model.py",
+      "bytes": 6848,
+      "status": "existing_source_copy"
+    },
+    {
+      "file": "vad_head.py",
+      "url": "https://github.com/hustvl/VAD/blob/main/projects/mmdet3d_plugin/VAD/VAD_head.py",
+      "local_source": "/root/autodl-tmp/VAD/projects/mmdet3d_plugin/VAD/VAD_head.py",
+      "bytes": 91044,
+      "status": "existing_source_copy"
+    }
+  ],
+  "scope": "Targeted primary-source comparison, no external framework executed"
+}

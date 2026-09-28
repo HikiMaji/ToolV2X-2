@@ -1,0 +1,57 @@
+EEEEEE
+======================================================================
+ERROR: test_complete_initialization_requires_actual_gear_and_auto_handover (test_tracking_gate.InitializationV2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_gate.py", line 282, in test_complete_initialization_requires_actual_gear_and_auto_handover
+    from evaluation.tracking_gate import audit_initialization
+ImportError: cannot import name 'audit_initialization' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/src/evaluation/tracking_gate.py)
+
+======================================================================
+ERROR: test_motion_and_final_pose_must_be_recomputed (test_tracking_gate.InitializationV2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_gate.py", line 310, in test_motion_and_final_pose_must_be_recomputed
+    from evaluation.tracking_gate import audit_initialization
+ImportError: cannot import name 'audit_initialization' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/src/evaluation/tracking_gate.py)
+
+======================================================================
+ERROR: test_time_phase_and_partial_records_cannot_pass (test_tracking_gate.InitializationV2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_gate.py", line 297, in test_time_phase_and_partial_records_cannot_pass
+    from evaluation.tracking_gate import audit_initialization
+ImportError: cannot import name 'audit_initialization' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/src/evaluation/tracking_gate.py)
+
+======================================================================
+ERROR: test_wrong_readback_does_not_pass_with_correct_request (test_tracking_gate.InitializationV2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_gate.py", line 291, in test_wrong_readback_does_not_pass_with_correct_request
+    from evaluation.tracking_gate import audit_initialization
+ImportError: cannot import name 'audit_initialization' from 'evaluation.tracking_gate' (/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/src/evaluation/tracking_gate.py)
+
+======================================================================
+ERROR: test_failed_engagement_stops_and_preserves_partial_evidence (test_tracking_runtime_contract.InitializationRuntimeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_runtime_contract.py", line 178, in test_failed_engagement_stops_and_preserves_partial_evidence
+    result,ticks,commands=self.run_fake(directory,fail=True)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_runtime_contract.py", line 161, in run_fake
+    result=runtime.initialize_actor(actor,world,g,Path(directory),carla)
+AttributeError: module 'probe_backbone_tracking' has no attribute 'initialize_actor'
+
+======================================================================
+ERROR: test_fixed_three_phase_schedule_and_zero_throttle (test_tracking_runtime_contract.InitializationRuntimeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_runtime_contract.py", line 167, in test_fixed_three_phase_schedule_and_zero_throttle
+    result,ticks,commands=self.run_fake(directory)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/backbone-init-v2/tests/test_tracking_runtime_contract.py", line 161, in run_fake
+    result=runtime.initialize_actor(actor,world,g,Path(directory),carla)
+AttributeError: module 'probe_backbone_tracking' has no attribute 'initialize_actor'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.029s
+
+FAILED (errors=6)

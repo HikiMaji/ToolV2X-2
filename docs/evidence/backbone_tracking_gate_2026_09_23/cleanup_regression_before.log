@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_client_waits_for_listener_and_cleans_owned_group (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_tracking_runtime_contract.py", line 127, in test_client_waits_for_listener_and_cleans_owned_group
+    self.assertFalse(m.listener_owned_by_group(port, group), 'server child survived launcher exit')
+AssertionError: True is not false : server child survived launcher exit
+
+----------------------------------------------------------------------
+Ran 1 test in 2.845s
+
+FAILED (failures=1)

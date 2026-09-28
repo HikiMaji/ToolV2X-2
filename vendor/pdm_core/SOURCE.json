@@ -1,0 +1,138 @@
+{
+  "project": "tuplan_garage PDM-Closed",
+  "source": "https://github.com/autonomousvision/tuplan_garage",
+  "snapshot_date": "2026-09-19",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "tuplan_garage/planning/script/config/simulation/planner/pdm_closed_planner.yaml",
+      "bytes": 1421,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+      "bytes": 7008,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+      "bytes": 7611,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+      "bytes": 8774,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+      "bytes": 10647,
+      "modified": true
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_observation_utils.py",
+      "bytes": 1663,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+      "bytes": 3253,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+      "bytes": 3189,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+      "bytes": 7621,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+      "bytes": 18583,
+      "modified": true
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+      "bytes": 3129,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+      "bytes": 13240,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+      "bytes": 24267,
+      "modified": true
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+      "bytes": 2365,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+      "bytes": 7685,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+      "bytes": 22236,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+      "bytes": 11817,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+      "bytes": 3499,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+      "bytes": 5413,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+      "bytes": 6122,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+      "bytes": 8129,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+      "bytes": 5607,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+      "bytes": 3528,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+      "bytes": 3412,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+      "bytes": 3699,
+      "modified": false
+    },
+    {
+      "path": "tuplan_garage/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+      "bytes": 9936,
+      "modified": false
+    }
+  ]
+}

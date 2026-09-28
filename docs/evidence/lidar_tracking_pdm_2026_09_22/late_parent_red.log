@@ -1,0 +1,57 @@
+test_late_track_retains_pre_confirmation_detection_refs (test_lidar_tracks.TrackerTests) ... /root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/matplotlib/__init__.py:169: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/root/autodl-tmp/V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py:14: NumbaWarning: [1m
+Compilation is falling back to object mode WITH looplifting enabled because Function roty failed at nopython mode lowering due to: [0m
+  @jit
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:152: NumbaWarning: [1mFunction "roty" was compiled in object mode without forceobj=True.
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:162: NumbaDeprecationWarning: [1m
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+FAIL
+
+======================================================================
+FAIL: test_late_track_retains_pre_confirmation_detection_refs (test_lidar_tracks.TrackerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/.worktrees/pdm-core-9-22/tests/test_lidar_tracks.py", line 54, in test_late_track_retains_pre_confirmation_detection_refs
+    self.assertEqual(rows[0]['parent_refs'],['local_detection_frame:4','local_detection_frame:5','local_detection_frame:6'])
+AssertionError: Lists differ: ['loc[13 chars]frame:6'] != ['loc[13 chars]frame:4', 'local_detection_frame:5', 'local_detection_frame:6']
+
+First differing element 0:
+'local_detection_frame:6'
+'local_detection_frame:4'
+
+Second list contains 2 additional elements.
+First extra element 1:
+'local_detection_frame:5'
+
++ ['local_detection_frame:4',
++  'local_detection_frame:5',
+- ['local_detection_frame:6']
+? ^
+
++  'local_detection_frame:6']
+? ^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 1.315s
+
+FAILED (failures=1)

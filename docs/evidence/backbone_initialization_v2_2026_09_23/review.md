@@ -1,0 +1,1 @@
+Independent reviewer: initialization_v2_review. One P2: nonfinite failed tick was lost to strict JSON serialization. Reproduced in nonfinite_red.log. Fixed by explicit JSON-safe string markers; audit still rejects them. No other important findings. Reviewer ran 24 offline tests; no simulator. No re-review requested.

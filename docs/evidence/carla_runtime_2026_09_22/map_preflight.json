@@ -1,0 +1,15 @@
+{
+  "map": "Town03",
+  "source": "CARLA_0.9.10.1 packaged OpenDrive",
+  "road_count": 503,
+  "ego_sample_nearest_lane": {
+    "road_id": 19,
+    "lane_id": -1,
+    "section_id": 0,
+    "x": -34.87153244018555,
+    "y": -139.01939392089844,
+    "yaw": -178.77273559570312,
+    "lane_width": 3.5
+  },
+  "scope": "static map parse and localization check only; recorded route not resolved"
+}

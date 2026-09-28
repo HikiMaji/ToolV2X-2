@@ -1,0 +1,32 @@
+{
+  "status": "FAIL",
+  "effective_cases": 1,
+  "effective_controls": 150,
+  "record_count": 151,
+  "initial_target_distance_m": 9.32480947089769e-05,
+  "maximum_initial_hold_abs_steer": 0.800000011920929,
+  "final_x_reference_m": 16.0,
+  "final_x_actual_m": 13.90252873908178,
+  "independent_failures": [
+    "illegal_control",
+    "steer_slew",
+    "longitudinal_max",
+    "longitudinal_rmse",
+    "moving_speed_max",
+    "longitudinal_acceleration",
+    "longitudinal_jerk_p99",
+    "start_midpoint_speed",
+    "stop_end_longitudinal"
+  ],
+  "physical_failures_excluding_float_boundary_flags": [
+    "longitudinal_max",
+    "longitudinal_rmse",
+    "moving_speed_max",
+    "longitudinal_acceleration",
+    "longitudinal_jerk_p99",
+    "start_midpoint_speed",
+    "stop_end_longitudinal"
+  ],
+  "initialization_status": "INITIALIZATION_PASS",
+  "explanation": "Near-coincident waypoint direction causes stationary steering saturation. Longitudinal root cause not isolated. No criteria changed."
+}

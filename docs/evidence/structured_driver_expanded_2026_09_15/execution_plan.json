@@ -1,0 +1,33 @@
+{
+  "version": "toolv2x_expanded_training_execution_v1",
+  "status": "prepared",
+  "train_frames": 160,
+  "validation_frames": 40,
+  "frames_per_recording": 20,
+  "train_recordings": 8,
+  "validation_recordings": 2,
+  "sampling": "20 evenly spaced row indices within each original recording group, including endpoints; no labels or model results used",
+  "all_previous_20_frames_included": true,
+  "expected_tasks": 800,
+  "expected_train_rows": 1280,
+  "expected_validation_rows": 320,
+  "epochs": 5,
+  "expected_optimizer_steps": 3200,
+  "max_optimizer_steps": 3200,
+  "save_and_validation_interval": 500,
+  "collection_driver": "unchanged v2 seed7 initialization",
+  "training_initialization": "same seed7 initialization; changed data is a new training run, not exact resume",
+  "navigation": false,
+  "storage_reserve_bytes": 6442450944,
+  "minimum_complete_frame_fraction_per_role": 0.9,
+  "failure_handling": "Keep all collection failures; train only complete four-condition frames with all six offline labels; no substitution; require >=90 percent of selected frames per role and all original recording groups",
+  "validation_scope": "expanded existing development recording groups, not an independent test",
+  "pipeline": [
+    "collect real P/F tasks",
+    "export independent offline labels and rows",
+    "train existing numeric driver",
+    "reload and independently verify metrics including old development subset"
+  ],
+  "runtime_estimate": "roughly 2-4 hours total from prior per-frame collection and training timings, subject to scene density and I/O",
+  "method_claim": "driver data-scaling study, not sequential-policy superiority"
+}

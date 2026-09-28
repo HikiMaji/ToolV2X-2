@@ -1,0 +1,29 @@
+test_actor_target_uses_rigid_body_position_and_speed (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_case_contract_is_complete_and_json_shaped (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_corridor_body_and_signed_clearance_use_full_polygons (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_frozen_corridor_densifies_the_analytic_radius_twenty_curve (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_profiles_obey_frozen_bounds_and_left_right_are_mirrors (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_reference_uses_exact_ticks_and_static_extension (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_validator_accepts_nominal_cases_and_rejects_tampering (tests.test_tracking_reference.TrackingReferenceTests) ... ok
+test_control_targets_use_distinct_times_and_unit_conversion (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_fixture_is_explicit_flat_road_with_no_traffic (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_geometry_world_cm_and_actor_origin_are_distinct (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_managed_nonroot_listener_ownership_is_visible (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_owned_server_refuses_an_already_listening_port (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_preload_excursion_cannot_hide_in_zero_net_displacement (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_rejects_old_server_or_client_before_world_mutation (tests.test_tracking_runtime_contract.TrackingRuntimeContractTests) ... ok
+test_batch_pass_requires_complete_eight_case_replay (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_case_directory_requires_raw_recorder_info (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_delayed_start_is_not_time_shifted_to_pass (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_exact_straight_trial_passes (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_lateral_speed_and_steer_slew_cannot_hide_in_forward_speed (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_recorder_parser_rejects_truncated_positions_and_collision (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_stop_uses_accumulated_path_not_net_displacement (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_terminal_sample_is_evaluated_and_has_no_control (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_turn_native_velocity_point_mismatch_fails (tests.test_tracking_gate.TrackingGateTests) ... ok
+test_wrong_time_and_missing_terminal_sample_fail_closed (tests.test_tracking_gate.TrackingGateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 24.186s
+
+OK

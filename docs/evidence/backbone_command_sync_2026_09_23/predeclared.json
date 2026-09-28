@@ -1,0 +1,17 @@
+{
+  "scope": "repair A only: confirmed command before one tick",
+  "case": "S2",
+  "max_effective_controls": 150,
+  "initialization": "unchanged 20/1/9 zero throttle",
+  "geometry_calibration_ticks": 20,
+  "old_run": "outputs/backbone_tracking_gate_v2_2026_09_23",
+  "new_run": "outputs/backbone_command_sync_s2_2026_09_23",
+  "required_delivery_transitions": 150,
+  "required_mismatches": 0,
+  "physical_thresholds": "unchanged; retain independent tracking FAIL even if delivery PASS",
+  "other_cases": false,
+  "training": false,
+  "planner": false,
+  "prediction": false,
+  "pf": false
+}

@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "version": "toolv2x_pdm_closedloop_probe_v1",
+    "dt": 0.05,
+    "steps": 160,
+    "settling_ticks": 30,
+    "min_stable_frames": 10,
+    "max_start_acceleration": 1.0,
+    "min_track_hits": 3,
+    "max_warmup_frames": 60,
+    "self_iou": 0.5,
+    "max_tilt_rad": 0.05,
+    "planning_speed_cap_mps": 4.0,
+    "lead_distance_m": 15.0,
+    "lateral_pid": {
+      "K_P": 1.95,
+      "K_D": 0.2,
+      "K_I": 0.07,
+      "dt": 0.05
+    },
+    "longitudinal_pid": {
+      "K_P": 1.0,
+      "K_D": 0.0,
+      "K_I": 0.05,
+      "dt": 0.05
+    },
+    "max_throttle": 0.75,
+    "max_brake": 0.3,
+    "max_steering": 0.8,
+    "velocity_proxy_min_speed": 0.2,
+    "speed_sample_dt": 0.5,
+    "target_forward_margin": 0.5,
+    "criteria": {
+      "min_empty_progress_m": 8.0,
+      "min_lead_progress_m": 2.0,
+      "max_final_lead_speed_mps": 0.5,
+      "min_clearance_m": 0.0,
+      "max_lateral_error_m": 0.5,
+      "collisions": 0,
+      "invalid_plans": 0
+    },
+    "scope": "controlled synchronous Ego-only chain; inference pauses simulation; not realtime or ToolV2X method evaluation"
+  },
+  "outcomes": [
+    {
+      "case": "empty",
+      "acceptance_pass": true,
+      "driving_steps": 160,
+      "warmup_steps": 9,
+      "final_metrics": {
+        "speed_mps": 2.244685500905054,
+        "lateral_error_m": 2.7489534766667045e-05,
+        "progress_m": 21.200846673337676
+      },
+      "min_clearance_m": null,
+      "max_lateral_error_m": 2.8034392626108406e-05,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 39992,
+      "invalid_plans": 0,
+      "wall_seconds": 24.773956115357578,
+      "max_driving_abs_acceleration": 9.387928136906588,
+      "mean_loop_seconds": 0.0787284591322532,
+      "pdm_calls": 160,
+      "detections": 169
+    },
+    {
+      "case": "lead",
+      "acceptance_pass": true,
+      "driving_steps": 160,
+      "warmup_steps": 11,
+      "final_metrics": {
+        "speed_mps": 0.0,
+        "lateral_error_m": 0.04556286347277516,
+        "progress_m": 6.797148079208489,
+        "bumper_clearance_m": 3.2976520851223086
+      },
+      "min_clearance_m": 3.2976520851223086,
+      "max_lateral_error_m": 0.045563026880419494,
+      "collision_events": [],
+      "all_collision_events": [],
+      "settled_frame": 40195,
+      "invalid_plans": 0,
+      "wall_seconds": 29.202573019079864,
+      "max_driving_abs_acceleration": 9.387928136906588,
+      "mean_loop_seconds": 0.10167715870193206,
+      "pdm_calls": 160,
+      "detections": 171
+    }
+  ]
+}

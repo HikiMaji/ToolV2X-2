@@ -1,0 +1,14 @@
+{
+  "version": "toolv2x_execution_v1",
+  "profile": "real_smoke_v1",
+  "sigma_m": 5.0,
+  "max_targets": 4,
+  "max_request_bytes": 16384,
+  "max_response_bytes": 65536,
+  "max_episode_bytes": 196608,
+  "ego_geometry": "circumscribed_circle",
+  "ego_length_m": 4.8,
+  "ego_width_m": 2.0,
+  "max_plan_speed_mps": 80.0,
+  "max_plan_acceleration_mps2": 30.0
+}

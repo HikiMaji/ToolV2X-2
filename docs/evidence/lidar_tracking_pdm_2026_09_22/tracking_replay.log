@@ -1,0 +1,23 @@
+/root/autodl-tmp/V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py:14: NumbaWarning: [1m
+Compilation is falling back to object mode WITH looplifting enabled because Function roty failed at nopython mode lowering due to: [0m
+  @jit
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:152: NumbaWarning: [1mFunction "roty" was compiled in object mode without forceobj=True.
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+/root/autodl-tmp/conda-envs/dmstrack/lib/python3.7/site-packages/numba/core/object_mode_passes.py:162: NumbaDeprecationWarning: [1m
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+[1m
+File "../../../V2V-GoT/DMSTrack/AB3DMOT/AB3DMOT_libs/kitti_oxts.py", line 15:[0m
+[1m@jit
+[1mdef roty(t):
+[0m[1m^[0m[0m
+[0m
+  state.func_ir.loc))
+{"execution_spec": {"version": "toolv2x_local_tracking_probe_v1", "dt": 0.05, "self_iou": 0.5, "max_tilt_rad": 0.05, "tracker": "existing AB3DMOT Hungarian GIoU3D", "association_threshold": -0.2, "min_hits": 3, "max_age": 2, "planning_speed_cap_mps": 4.0, "forecast": "causal_tracking_state_motion_proxy", "scope": "controlled local chain only, no P/F/LLM/closed-loop"}, "rows": 60, "removed_self": 60, "retained_detections": 60, "emitted_track_states": 60, "detector_miss_states": 0, "causal_time_checked": true, "initial_velocity_semantics": "zero initialization, flagged unknown until at least two detector updates", "consumed_remote_fields": 0, "gt_actor_future_access": false}

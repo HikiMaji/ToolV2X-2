@@ -1,0 +1,35 @@
+{
+  "carla_processes": [],
+  "ports": {
+    "2015": "FREE",
+    "2016": "FREE",
+    "2017": "FREE"
+  },
+  "gpu": "13 MiB, 0 %, 595.71.05",
+  "summary": {
+    "status": "PREFLIGHT_FAIL",
+    "physical_trials_started": 0,
+    "completed_cases": [],
+    "outcomes": [],
+    "server": "0.9.15",
+    "client": "0.9.15",
+    "controller": "/root/autodl-tmp/ToolV2X/vendor/carla_agents_0_9_15/agents/navigation/controller.py",
+    "reference_preflight_passed": true,
+    "error": "initialization failed: gear_not_one"
+  },
+  "targeted_tests": {
+    "passed": 25,
+    "seconds": 28.414
+  },
+  "review_suite": {
+    "passed": 378,
+    "seconds": 221.55
+  },
+  "unchanged_frozen_files": {
+    "src/planning/tracking_reference.py": true,
+    "src/evaluation/tracking_gate.py": true,
+    "vendor/carla_agents_0_9_15/agents/navigation/controller.py": true,
+    "vendor/carla_agents_0_9_15/agents/tools/misc.py": true,
+    "docs/backbone_decision_and_tracking_spec_2026_09_22.md": true
+  }
+}

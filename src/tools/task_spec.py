@@ -161,28 +161,37 @@ def field_key(ref):
 
 def _request_spec(request):
     _check_json_native(request)
+    native = isinstance(request, dict) and request.get('version') == 'toolv2x_task_v3'
     control = isinstance(request, dict) and request.get('version') == CONTROL_TASK_VERSION
     roi = control and request.get('mode') == 'roi'
-    _keys(request, REQUEST_FIELDS | ({'roi'} if roi else set()), 'task request')
+    _keys(request, REQUEST_FIELDS | ({'roi'} if roi else set()) | ({'frame_binding'} if native else set()), 'task request')
     modes = ('current', 'change', 'old', 'union', 'roi') if control else ('current', 'change')
-    if (request['version'] not in (TASK_VERSION, CONTROL_TASK_VERSION) or request['coordinate_frame'] != 'ego_at_t' or
+    if (request['version'] not in (TASK_VERSION, CONTROL_TASK_VERSION, 'toolv2x_task_v3') or request['coordinate_frame'] != 'ego_at_t' or
             request['tool'] not in ('P', 'F') or request['mode'] not in modes):
         raise ValueError('invalid task protocol/time/coordinate contract')
     for key in ('request_id', 'provider', 'scene'):
         _text(request[key])
     _integer(request['g'])
-    if not np.array_equal(_array(request['times'], (6,)), TIMES):
+    if native:
+        from tools.native_time import time_axis, check_binding
+        time_axis(request['times']);check_binding(request['frame_binding'])
+    if not native and not np.array_equal(_array(request['times'], (6,)), TIMES):
         raise ValueError('invalid request time axis')
     spec = ExecutionSpec.from_dict(request['execution_spec'])
-    paths = [_array(request['tau_new'], (6, 2))]
+    paths = [_array(request['tau_new'], (len(request['times']), 2))]
     if request['mode'] in ('change', 'old', 'union'):
-        paths.append(_array(request['tau_old'], (6, 2)))
+        paths.append(_array(request['tau_old'], (len(request['times']), 2)))
         if request['mode'] == 'change' and np.array_equal(paths[0], paths[1]):
             raise ValueError('change requires different old/new plans')
     elif request['tau_old'] is not None:
         raise ValueError('current must not contain an old plan')
     for path in paths:
-        validate_plan(path, spec)
+        if native:
+            dt=np.diff(np.r_[0.,request['times']]);v=np.diff(np.vstack([np.zeros((1,2)),path]),axis=0)/dt[:,None]
+            if (np.linalg.norm(v,axis=1).max()>spec.max_plan_speed_mps or
+                (len(v)>1 and np.linalg.norm(np.diff(v,axis=0)/dt[1:,None],axis=1).max()>spec.max_plan_acceleration_mps2)):
+                raise ValueError('native plan exceeds admissibility bounds')
+        else:validate_plan(path, spec)
     if roi and request['roi'] is not None:
         bounds = _array(request['roi'], (4,))
         if not (bounds[0] < bounds[2] and bounds[1] < bounds[3]):
@@ -235,19 +244,25 @@ def validate_task_request(request, known_receipts):
         seen.add(key)
 
 
-def _check_window(window):
+def _check_window(window, native=False):
     required = {'source', 'scene', 'g', 'track_ids', 'states', 'valid', 'scores', 'time_seconds'}
     if (not isinstance(window, dict) or not required <= set(window) or
             set(window) - required - {'eligible'}):
         raise ValueError('unexpected or missing causal window fields')
-    history_packet(window)
+    if not native:history_packet(window)
+    else:
+        from tools.native_time import time_axis
+        time_axis(window['time_seconds'],history=True)
     _integer(window['g'])
     _text(window['source'])
     _text(window['scene'])
     ids = np.asarray(window['track_ids'])
-    states = _array(window['states'], (len(ids), 11, 7))
-    _array(window['scores'], (len(ids), 11))
-    _array(window['time_seconds'], (11,))
+    h=len(window['time_seconds']) if native else 11
+    states = _array(window['states'], (len(ids), h, 7))
+    scores=_array(window['scores'], (len(ids), h))
+    _array(window['time_seconds'], (h,))
+    if (np.asarray(window['valid']).shape!=(len(ids),h) or not np.asarray(window['valid'])[:,-1].all()
+        or len(set(ids.tolist()))!=len(ids) or (scores<0).any() or (scores>1).any()):raise ValueError('invalid native tracking state')
     if (ids.dtype.kind not in 'iu' or (ids < 0).any() or
             np.asarray(window['valid']).dtype != np.dtype(bool) or
             (np.asarray(window['time_seconds']) > 0).any()):
@@ -292,7 +307,7 @@ def relation_scores(rho_old, rho_new):
     return new.max(axis=(1, 2)), np.abs(new - old).max(axis=(1, 2))
 
 
-def validate_prediction(window, forecast):
+def validate_prediction(window, forecast, native=False):
     """Validate the complete CMP array output before caching or deriving evidence."""
     n = len(window['track_ids'])
     states = np.asarray(window['states'], dtype=float)
@@ -304,8 +319,14 @@ def validate_prediction(window, forecast):
             not np.array_equal(forecast['track_ids'], window['track_ids']) or
             not np.array_equal(forecast['states'], states[:, -1])):
         raise ValueError('F requires an aligned complete-context prediction')
-    means = _array(forecast['means'], (n, 6, 50, 2))
-    scores = _array(forecast['scores'], (n, 6))
+    if native:
+        from tools.native_time import time_axis
+        axis=time_axis(forecast['forecast_times']);m=np.shape(forecast['means'])[1]
+        if m<1:raise ValueError('at least one forecast mode required')
+        means=_array(forecast['means'],(n,m,len(axis),2));scores=_array(forecast['scores'],(n,m))
+    else:
+        means = _array(forecast['means'], (n, 6, 50, 2))
+        scores = _array(forecast['scores'], (n, 6))
     used = np.asarray(forecast['model_used'])
     if (used.shape != (n,) or used.dtype != np.dtype(bool) or (scores < 0).any() or
             (scores.sum(axis=1) > 1.0001).any()):
@@ -319,13 +340,23 @@ def validate_prediction(window, forecast):
 def rank_targets(window, request, forecast=None):
     """Pure provider-side scoring; callers authenticate receipts before private access."""
     spec = _request_spec(request)
-    _check_window(window)
+    native=request['version']=='toolv2x_task_v3'
+    _check_window(window,native=native)
     if (window.get('source'), window.get('scene'), window.get('g')) != (
             request['provider'], request['scene'], request['g']):
         raise ValueError('task and provider window differ')
     n = len(window['track_ids'])
     states = np.asarray(window['states'], dtype=float)
-    if request['tool'] == 'P':
+    if native:
+        from tools.native_time import motion, forecast_at
+        if request['tool']=='P':
+            motions=[motion(states[i],np.asarray(window['valid'])[i],np.asarray(window['time_seconds'])) for i in range(n)]
+            xy=states[:,None,-1:,:2]+np.asarray([m['velocity'] for m in motions]).reshape(n,1,1,2)*np.asarray(request['times'])[None,None,:,None]
+            status=['causal_tracking_state_motion_proxy' if m['valid'] else 'single_state_static_proxy' for m in motions]
+        else:
+            xy=forecast_at(window,forecast,request['times'])
+            status=['mtr' if u else 'stationary_short_history' for u in forecast['model_used']]
+    elif request['tool'] == 'P':
         xy, status = history_proxy(window)
     else:
         means, _, used = validate_prediction(window, forecast)

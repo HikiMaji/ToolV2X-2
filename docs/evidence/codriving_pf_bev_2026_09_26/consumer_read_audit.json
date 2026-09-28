@@ -1,0 +1,10 @@
+{
+  "source": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/V2Xverse_official/codriving/models/planning_end2end.py",
+  "input_reads": [
+    "input_data[\"occupancy\"]",
+    "input_data['feature_warpped_list']",
+    "input_data['target']"
+  ],
+  "sidecar_consumed": false,
+  "scope": "source read inspection only, not model forward"
+}

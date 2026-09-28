@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-22",
+  "scope": "raw sensor inspection only, no detector/planner experiment",
+  "observations": [
+    {
+      "version": "toolv2x_v2xverse_sensor_v1",
+      "vehicle": "ego_vehicle_0",
+      "frame_index": 10,
+      "measurement": {
+        "x": -34.871849060058594,
+        "y": -139.00466918945312,
+        "theta": 4.728553771972656,
+        "speed": 3.1642117492858253,
+        "lidar_pose_x": -36.1691780090332,
+        "lidar_pose_y": -139.0244140625,
+        "lidar_pose_z": 1.884508728981018,
+        "x_command": 139.67296823301749,
+        "y_command": -65.07928475667062,
+        "command": 4
+      },
+      "coordinate_frame": "lidar_sensor_native",
+      "timestamp_seconds": null,
+      "timebase_status": "not_bound",
+      "read_paths": [
+        "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_0/measurements/0010.json",
+        "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_0/lidar/0010.npy"
+      ],
+      "lidar_shape": [
+        22595,
+        4
+      ],
+      "lidar_dtype": "float32"
+    },
+    {
+      "version": "toolv2x_v2xverse_sensor_v1",
+      "vehicle": "ego_vehicle_1",
+      "frame_index": 10,
+      "measurement": {
+        "x": -47.78244400024414,
+        "y": -139.27244567871094,
+        "theta": 4.72380256652832,
+        "speed": 3.0505435238769363,
+        "lidar_pose_x": -49.07985305786133,
+        "lidar_pose_y": -139.28591918945312,
+        "lidar_pose_z": 1.884508490562439,
+        "x_command": 139.67296823301749,
+        "y_command": -65.07928475667062,
+        "command": 4
+      },
+      "coordinate_frame": "lidar_sensor_native",
+      "timestamp_seconds": null,
+      "timebase_status": "not_bound",
+      "read_paths": [
+        "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_1/measurements/0010.json",
+        "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_1/lidar/0010.npy"
+      ],
+      "lidar_shape": [
+        22291,
+        4
+      ],
+      "lidar_dtype": "float32"
+    }
+  ],
+  "route_log": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/v2xverse_runtime_sources/args.json",
+  "recorded_route": "leaderboard/data/training_routes/cop3_split_routes/routes_town03_21.xml",
+  "public_same_name_route": "leaderboard/data/training_routes/splitted_routes/routes_town03_21.xml",
+  "recorded_route_download_status": "404; same-name different-directory file NOT substituted",
+  "inferred_saved_interval_seconds": 0.2,
+  "timebase_status": "configuration inference, not capture-time validation",
+  "carla_client_present": true,
+  "carla_server_found": false,
+  "opendrive_map_found": false,
+  "resource": {
+    "url": "https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.10.1.tar.gz",
+    "bytes": 3956990664,
+    "status": "HEAD verified; not downloaded; exceeds direct-download authorization"
+  },
+  "acceptance_status": "not_executed",
+  "blockers": [
+    "CARLA server / matching Town03 map",
+    "recorded route reconstruction/binding",
+    "capture timing and calibrated ego rear axle",
+    "causal two-vehicle detection and tracking"
+  ]
+}

@@ -1,0 +1,1 @@
+{"version": "toolv2x_control_submission_v1", "stage": "calibration", "actor_id": 25, "source_frame": 15, "expected_next_frame": 16, "request": {"throttle": 0.0, "brake": 1.0, "steer": 0.0, "hand_brake": false, "manual_gear_shift": false, "reverse": false, "gear": 0}, "do_tick_cue": false, "accepted": true, "error": null}

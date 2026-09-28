@@ -1,0 +1,11 @@
+test_invalid_point_or_height_rejected (test_v2xverse_detector_probe.DetectorProbeTests) ... ok
+test_native_rotation_height_and_intensity (test_v2xverse_detector_probe.DetectorProbeTests) ... ok
+test_single_vehicle_reader_never_needs_peer_or_labels (test_v2xverse_detector_probe.DetectorProbeTests) ... ok
+test_module_exists (test_v2xverse_inputs.V2XverseInputTests) ... ok
+test_reader_excludes_expert_and_peer_fields_and_does_not_invent_time (test_v2xverse_inputs.V2XverseInputTests) ... ok
+test_sensor_to_rear_axle_and_handedness (test_v2xverse_inputs.V2XverseInputTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.024s
+
+OK

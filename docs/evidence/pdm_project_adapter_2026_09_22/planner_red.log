@@ -1,0 +1,109 @@
+test_forecast_state_geometry_velocity_are_time_consistent (test_pdm_core.PDMCoreTests) ... ok
+test_original_cv_equivalence_and_same_time_repeat (test_pdm_core.PDMCoreTests) ... ok
+test_pristine_upstream_modules_match_adapted_cv (test_pdm_core.PDMCoreTests) ... ok
+test_receipted_p_f_use_existing_association_and_no_private_bypass (test_pdm_core.PDMCoreTests) ... ok
+test_state_and_future_path_change_actual_plan (test_pdm_core.PDMCoreTests) ... ok
+test_stationary_clear_road_has_positive_control_speed (test_pdm_core.PDMCoreTests) ... ok
+test_turn_then_stop_keeps_last_motion_heading (test_pdm_core.PDMCoreTests) ... ok
+test_unknown_fields_and_insufficient_horizon_fail_closed (test_pdm_core.PDMCoreTests) ... ok
+test_v1_default_contract_excludes_project_v2_fields (test_pdm_core.PDMCoreTests) ... ok
+test_v2_all_zero_scores_fail_closed_without_selecting_index_zero (test_pdm_core.PDMCoreTests) ... ERROR
+test_v2_emergency_is_an_explicit_controller_brake_action (test_pdm_core.PDMCoreTests) ... ERROR
+test_v2_has_the_fixed_horizon_required_by_the_control_adapter (test_pdm_core.PDMCoreTests) ... test_v2_injects_actual_wheelbase_into_the_real_tracker (test_pdm_core.PDMCoreTests) ... ERROR
+test_v2_rejects_nonfinite_candidate_arrays_before_rpc_serialization (test_pdm_core.PDMCoreTests) ... FAIL
+test_v2_requires_every_hard_metric_and_forward_finite_states (test_pdm_core.PDMCoreTests) ... ERROR
+test_v2_returns_the_selected_scored_simulation (test_pdm_core.PDMCoreTests) ... ERROR
+test_core_exists (test_pdm_core.PDMModuleTests) ... ok
+
+======================================================================
+ERROR: test_v2_all_zero_scores_fail_closed_without_selecting_index_zero (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 91, in test_v2_all_zero_scores_fail_closed_without_selecting_index_zero
+    result=PDMCore(PDMExecutionSpec(version='toolv2x_pdm_core_v2')).plan(data)
+  File "<string>", line 16, in __init__
+  File "docs/evidence/pdm_project_adapter_2026_09_22/before/src/planning/pdm_core.py", line 62, in __post_init__
+    raise ValueError('v1 preserves original 0.1s TTC indexing')
+ValueError: v1 preserves original 0.1s TTC indexing
+
+======================================================================
+ERROR: test_v2_emergency_is_an_explicit_controller_brake_action (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 140, in test_v2_emergency_is_an_explicit_controller_brake_action
+    result=PDMCore(PDMExecutionSpec(version='toolv2x_pdm_core_v2')).plan(scene())
+  File "<string>", line 16, in __init__
+  File "docs/evidence/pdm_project_adapter_2026_09_22/before/src/planning/pdm_core.py", line 62, in __post_init__
+    raise ValueError('v1 preserves original 0.1s TTC indexing')
+ValueError: v1 preserves original 0.1s TTC indexing
+
+======================================================================
+ERROR: test_v2_injects_actual_wheelbase_into_the_real_tracker (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 133, in test_v2_injects_actual_wheelbase_into_the_real_tracker
+    PDMCore(PDMExecutionSpec(version='toolv2x_pdm_core_v2')).plan(data)
+  File "<string>", line 16, in __init__
+  File "docs/evidence/pdm_project_adapter_2026_09_22/before/src/planning/pdm_core.py", line 62, in __post_init__
+    raise ValueError('v1 preserves original 0.1s TTC indexing')
+ValueError: v1 preserves original 0.1s TTC indexing
+
+======================================================================
+ERROR: test_v2_requires_every_hard_metric_and_forward_finite_states (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 102, in test_v2_requires_every_hard_metric_and_forward_finite_states
+    from planning.pdm_core import _candidate_feasibility
+ImportError: cannot import name '_candidate_feasibility' from 'planning.pdm_core' (docs/evidence/pdm_project_adapter_2026_09_22/before/src/planning/pdm_core.py)
+
+======================================================================
+ERROR: test_v2_returns_the_selected_scored_simulation (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 70, in test_v2_returns_the_selected_scored_simulation
+    core=PDMCore(PDMExecutionSpec(version='toolv2x_pdm_core_v2'))
+  File "<string>", line 16, in __init__
+  File "docs/evidence/pdm_project_adapter_2026_09_22/before/src/planning/pdm_core.py", line 62, in __post_init__
+    raise ValueError('v1 preserves original 0.1s TTC indexing')
+ValueError: v1 preserves original 0.1s TTC indexing
+
+======================================================================
+FAIL: test_v2_has_the_fixed_horizon_required_by_the_control_adapter (test_pdm_core.PDMCoreTests) (kwargs={'proposal_steps': 22, 'output_steps': 32})
+----------------------------------------------------------------------
+ValueError: v1 preserves original 0.1s TTC indexing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 66, in test_v2_has_the_fixed_horizon_required_by_the_control_adapter
+    PDMExecutionSpec(version='toolv2x_pdm_core_v2',**kwargs)
+AssertionError: "fixed 2s scored and 3s observation horizons" does not match "v1 preserves original 0.1s TTC indexing"
+
+======================================================================
+FAIL: test_v2_has_the_fixed_horizon_required_by_the_control_adapter (test_pdm_core.PDMCoreTests) (kwargs={'output_steps': 32})
+----------------------------------------------------------------------
+ValueError: v1 preserves original 0.1s TTC indexing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 66, in test_v2_has_the_fixed_horizon_required_by_the_control_adapter
+    PDMExecutionSpec(version='toolv2x_pdm_core_v2',**kwargs)
+AssertionError: "fixed 2s scored and 3s observation horizons" does not match "v1 preserves original 0.1s TTC indexing"
+
+======================================================================
+FAIL: test_v2_rejects_nonfinite_candidate_arrays_before_rpc_serialization (test_pdm_core.PDMCoreTests)
+----------------------------------------------------------------------
+ValueError: v1 preserves original 0.1s TTC indexing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_pdm_core.py", line 121, in test_v2_rejects_nonfinite_candidate_arrays_before_rpc_serialization
+    PDMCore(PDMExecutionSpec(version='toolv2x_pdm_core_v2')).plan(scene())
+AssertionError: "nonfinite PDM candidate result" does not match "v1 preserves original 0.1s TTC indexing"
+
+----------------------------------------------------------------------
+Ran 17 tests in 2.523s
+
+FAILED (failures=3, errors=5)

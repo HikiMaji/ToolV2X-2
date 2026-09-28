@@ -1,0 +1,252 @@
+{
+  "scope": "offline diagnostic; neither new physical execution nor effect estimate for proposed fixes",
+  "source_run": "outputs/backbone_tracking_gate_v2_2026_09_23",
+  "samples": 151,
+  "controls": 150,
+  "pid_formula_max_abs_error": 2.9799486656045815e-08,
+  "command_echo_mismatch_counts": {
+    "0.0": 8,
+    "1e-07": 8,
+    "1e-06": 7,
+    "1e-05": 6
+  },
+  "command_echo_mismatches": [
+    {
+      "observed_index": 8,
+      "t": 0.8,
+      "expected_command_index": 7,
+      "matching_command_indices": [
+        6
+      ],
+      "max_abs_difference": 0.10000002384185791,
+      "issued": {
+        "throttle": 0.0,
+        "brake": 2.0096570096939104e-06,
+        "steer": 0.800000011920929,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.0,
+        "brake": 1.3145445336704142e-06,
+        "steer": 0.699999988079071,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 9,
+      "t": 0.9,
+      "expected_command_index": 8,
+      "matching_command_indices": [
+        7
+      ],
+      "max_abs_difference": 0.10000002384185791,
+      "issued": {
+        "throttle": 0.0,
+        "brake": 2.847492396540474e-06,
+        "steer": 0.699999988079071,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.0,
+        "brake": 2.0096570096939104e-06,
+        "steer": 0.800000011920929,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 21,
+      "t": 2.1,
+      "expected_command_index": 20,
+      "matching_command_indices": [
+        19
+      ],
+      "max_abs_difference": 0.18122297525405884,
+      "issued": {
+        "throttle": 0.7072342038154602,
+        "brake": 0.0,
+        "steer": -0.0021747183054685593,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.5260112285614014,
+        "brake": 0.0,
+        "steer": -0.0022088950499892235,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 47,
+      "t": 4.7,
+      "expected_command_index": 46,
+      "matching_command_indices": [
+        45
+      ],
+      "max_abs_difference": 0.28345221281051636,
+      "issued": {
+        "throttle": 0.75,
+        "brake": 0.0,
+        "steer": 6.810823106206954e-05,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.46654778718948364,
+        "brake": 0.0,
+        "steer": 7.463435031240806e-05,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 57,
+      "t": 5.7,
+      "expected_command_index": 56,
+      "matching_command_indices": [
+        55
+      ],
+      "max_abs_difference": 0.4697280526161194,
+      "issued": {
+        "throttle": 0.0,
+        "brake": 0.20687495172023773,
+        "steer": 2.8725371521431953e-05,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.4697280526161194,
+        "brake": 0.0,
+        "steer": 3.3821939723566175e-05,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 87,
+      "t": 8.7,
+      "expected_command_index": 86,
+      "matching_command_indices": [
+        85
+      ],
+      "max_abs_difference": 9.705370871415653e-07,
+      "issued": {
+        "throttle": 0.75,
+        "brake": 0.0,
+        "steer": 1.7886408159029088e-06,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.75,
+        "brake": 0.0,
+        "steer": 8.181037287613435e-07,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 93,
+      "t": 9.3,
+      "expected_command_index": 92,
+      "matching_command_indices": [
+        91
+      ],
+      "max_abs_difference": 2.204732425070688e-06,
+      "issued": {
+        "throttle": 0.75,
+        "brake": 0.0,
+        "steer": 9.461203376304184e-07,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.75,
+        "brake": 0.0,
+        "steer": -1.2586120874402695e-06,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    },
+    {
+      "observed_index": 95,
+      "t": 9.5,
+      "expected_command_index": 94,
+      "matching_command_indices": [
+        93
+      ],
+      "max_abs_difference": 0.43675005435943604,
+      "issued": {
+        "throttle": 0.0,
+        "brake": 0.22246626019477844,
+        "steer": 3.3718829399731476e-06,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 0
+      },
+      "readback": {
+        "throttle": 0.43675005435943604,
+        "brake": 0.0,
+        "steer": 2.771299023152096e-06,
+        "hand_brake": false,
+        "manual_gear_shift": false,
+        "reverse": false,
+        "gear": 1
+      }
+    }
+  ],
+  "initial_target_distance_m": 9.32480947089769e-05,
+  "initial_direction_error_deg": -76.87740205097813,
+  "initial_hold_max_steer": 0.800000011920929,
+  "cruise": {
+    "interval": "5.0 <= t < 9.0",
+    "samples": 40,
+    "sign_switches": 12,
+    "throttle_cap_count": 13,
+    "brake_cap_count": 4,
+    "speed_min_mps": 1.6910661458972205,
+    "speed_max_mps": 2.1927113533132236,
+    "added_longitudinal_error_m": -0.3864772558843441,
+    "max_integral_contribution": 0.027302981607543145
+  },
+  "final_reference_x_m": 16.0,
+  "final_actual_x_m": 13.90252873908178,
+  "native_vertical_speed_abs_max_mps": 6.9618222369172145e-06,
+  "gears": [
+    1
+  ],
+  "max_dt_error_s": 1.4901161138336505e-09
+}

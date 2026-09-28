@@ -1,0 +1,6 @@
+{
+  "worker_requests": 3,
+  "v1_default_and_repeat_match_saved_v4": true,
+  "v2_explicit_five_candidates": true,
+  "source": "actual persistent local_runtime_worker process"
+}

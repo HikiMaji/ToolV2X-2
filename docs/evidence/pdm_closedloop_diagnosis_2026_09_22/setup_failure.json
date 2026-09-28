@@ -1,0 +1,9 @@
+{
+  "stage": "detector initialization before world/client/workers created",
+  "cause": "launch omitted existing documented LD_LIBRARY_PATH; spconv v1 import fell back to missing v2 class",
+  "resolution": "reuse documented process-local library paths, no installs or upstream edits",
+  "lidar_frames": 0,
+  "detector_forwards": 0,
+  "pdm_calls": 0,
+  "retained_output": "outputs/pdm_closedloop_2026_09_22_v4_setup_failed"
+}

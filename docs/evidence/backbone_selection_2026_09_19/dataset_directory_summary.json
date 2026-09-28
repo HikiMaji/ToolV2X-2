@@ -1,0 +1,334 @@
+[
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16",
+    "entry_count": 25,
+    "directories": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/log",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_1000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_10000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_10001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_1001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_11000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_11001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_2000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_2001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_3000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_3001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_4000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_4001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_5000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_5001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_6000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_6001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_7000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_7001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_8000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_8001",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_9000",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/rsu_9001",
+        "type": "directory",
+        "bytes": 0
+      }
+    ],
+    "sample_0010_files": []
+  },
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0",
+    "entry_count": 15,
+    "directories": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/3d_bbs",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/actors_data",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/affordances",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/birdview",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/depth_front",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/depth_left",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/depth_right",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/env_actors_data",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/grad_cam",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/rgb_front",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/rgb_left",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/rgb_rear",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/rgb_right",
+        "type": "directory",
+        "bytes": 0
+      }
+    ],
+    "sample_0010_files": []
+  },
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1",
+    "entry_count": 15,
+    "directories": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/3d_bbs",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/actors_data",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/affordances",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/birdview",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/depth_front",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/depth_left",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/depth_right",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/env_actors_data",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/grad_cam",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/rgb_front",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/rgb_left",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/rgb_rear",
+        "type": "directory",
+        "bytes": 0
+      },
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/rgb_right",
+        "type": "directory",
+        "bytes": 0
+      }
+    ],
+    "sample_0010_files": []
+  },
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar",
+    "entry_count": 276,
+    "directories": [],
+    "sample_0010_files": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0010.npy",
+        "type": "file",
+        "bytes": 361648
+      }
+    ]
+  },
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar",
+    "entry_count": 276,
+    "directories": [],
+    "sample_0010_files": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0010.npy",
+        "type": "file",
+        "bytes": 356784
+      }
+    ]
+  },
+  {
+    "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements",
+    "entry_count": 276,
+    "directories": [],
+    "sample_0010_files": [
+      {
+        "path": "dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0010.json",
+        "type": "file",
+        "bytes": 9473
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "query": true,
+  "decode_response": true,
+  "history_window": true,
+  "make_evidence": true
+}

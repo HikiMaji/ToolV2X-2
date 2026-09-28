@@ -1,0 +1,30 @@
+[
+  {
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/measurements/0010.json",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_0/measurements/0010.json",
+    "bytes": 9473,
+    "scope": "research sample; not train or test",
+    "vehicle": "ego_vehicle_0"
+  },
+  {
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_0/lidar/0010.npy",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_0/lidar/0010.npy",
+    "bytes": 361648,
+    "scope": "research sample; not train or test",
+    "vehicle": "ego_vehicle_0"
+  },
+  {
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/measurements/0010.json",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_1/measurements/0010.json",
+    "bytes": 9471,
+    "scope": "research sample; not train or test",
+    "vehicle": "ego_vehicle_1"
+  },
+  {
+    "source": "https://huggingface.co/datasets/gjliu/V2Xverse/resolve/main/dataset/dataset_v2xverse/weather-0/data/routes_town03_21_w0_05_01_06_57_16/ego_vehicle_1/lidar/0010.npy",
+    "local": "/root/autodl-tmp/toolv2x_backbone_research_2026_09_19/samples/ego_vehicle_1/lidar/0010.npy",
+    "bytes": 356784,
+    "scope": "research sample; not train or test",
+    "vehicle": "ego_vehicle_1"
+  }
+]

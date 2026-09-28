@@ -1,0 +1,17 @@
+{
+  "change": "longitudinal PID K_P 1.0 to 0.2 only; same original controller implementation",
+  "rationale": "v3 reconstructed PID saturates brake at roughly 0.083 m/s overspeed; smaller proportional gain raises this scale to roughly 0.417 m/s, ignoring small integral term",
+  "runs": [
+    "empty",
+    "lead"
+  ],
+  "steps_each": 160,
+  "max_real_reruns": 1,
+  "original_acceptance_unchanged": true,
+  "secondary_diagnostics": {
+    "max_absolute_acceleration_both_mps2": 4.0,
+    "lead_final_40_speeds_each_below_mps": 0.5
+  },
+  "no_training": true,
+  "no_pf": true
+}

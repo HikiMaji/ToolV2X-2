@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_sidecar_preserves_original_planner_inputs (test_codriving_pf_bev.PFBEVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/ToolV2X/tests/test_codriving_pf_bev.py", line 87, in test_sidecar_preserves_original_planner_inputs
+    with self.assertRaises(ValueError):attach_pf_sidecar(batch,[self.build()])
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (failures=1)

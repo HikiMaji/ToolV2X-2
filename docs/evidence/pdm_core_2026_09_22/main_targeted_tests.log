@@ -1,0 +1,24 @@
+test_forecast_state_geometry_velocity_are_time_consistent (test_pdm_core.PDMCoreTests) ... /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:88: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /root/autodl-tmp/conda-envs/pdm39/lib/python3.9/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_original_cv_equivalence_and_same_time_repeat (test_pdm_core.PDMCoreTests) ... ok
+test_pristine_upstream_modules_match_adapted_cv (test_pdm_core.PDMCoreTests) ... ok
+test_receipted_p_f_use_existing_association_and_no_private_bypass (test_pdm_core.PDMCoreTests) ... ok
+test_state_and_future_path_change_actual_plan (test_pdm_core.PDMCoreTests) ... ok
+test_turn_then_stop_keeps_last_motion_heading (test_pdm_core.PDMCoreTests) ... ok
+test_unknown_fields_and_insufficient_horizon_fail_closed (test_pdm_core.PDMCoreTests) ... ok
+test_core_exists (test_pdm_core.PDMModuleTests) ... ok
+test_module_exists (test_v2xverse_inputs.V2XverseInputTests) ... ok
+test_reader_excludes_expert_and_peer_fields_and_does_not_invent_time (test_v2xverse_inputs.V2XverseInputTests) ... ok
+test_sensor_to_rear_axle_and_handedness (test_v2xverse_inputs.V2XverseInputTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.411s
+
+OK
