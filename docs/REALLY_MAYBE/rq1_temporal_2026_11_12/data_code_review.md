@@ -67,3 +67,25 @@ attach_labels只对最终query_truth=0计target_query_rows。complete保留这�
 沿用实施报告26项fixture和单独原生4/5源fixture证据，不重复执行。新增检查仅为上述三行校准反例、单行prediction对象大小估算及只读cgroup记录；没有使用真实数据拟合、构造攻击或启动批次。
 
 五项修复后只审核相关diff及定点证据。内存修复需要对真实预计行规模的紧凑report路径给峰值，校准修复需要正确质量平手对照，分层/覆盖统计用小fixture核对即可。其余已通过核心和原生接口不机械重跑。通过后按既定有界14父批次推进，不新增路线或设计审批。
+
+
+## 02bee7f定点复审及正式批次放行
+
+2026-11-12。复审范围为`f484358..02bee7f4ca9ee48faae47b9101889cc1d1756734`五项修复及其带入影响。已核读修复diff、相关调用、六项定点fixture证据和report_load_peak.json。核心/原生数学与跟踪接口未改，沿用先前批准；本次不重跑负载或全套测试。
+
+**最终结论为PASS。规格与代码质量均通过，五项全部ADDRESS。本轮全分支接口审核结束，允许按已批准方案运行真实14父6fit/5cal/3eval有界批次及最多27个新增攻击任务，无需另开设计审核。**
+
+| 原问题 | 状态 | 关闭依据 |
+| --- | --- | --- |
+| 1. report全量Python对象内存 | ADDRESS | SQLite流式接入，217字节标量记录；一次只载入一个variant的一个split。epoch明细落盘，main predictions/cases逐行处理，metrics不再持有轨迹完整行。15万合成评分行的完整main report实测总峰值243,908 KiB，基线57,408 KiB，保守增量约182.13 MiB，低于300 MiB要求。 |
+| 2. cal正确质量与保守平手 | ADDRESS | 累计正确类别分级权重，满足总体/各层错误约束后取最大正确质量，平手保留先访问的严格门限，零质量时关闭。候选仅来自主真假、合法且有资格记录；原三行反例变为A=3/R=-2，eval假分数0.5未知。 |
+| 3. family/k联合风险分层 | ADDRESS | evaluate增加family_k联合六格，保留父/epoch/时刻数量并标cal覆盖状态；原单独边际分层仍保留。 |
+| 4. 非批准的自动保留裁决 | ADDRESS | 去掉retain_increment和NLL强制保留门槛，仅报告同政策观察差异、可估性、联合风险及已采纳延迟摘要，明确pending_Task3_approved_criteria。 |
+| 5. target无query及标签歧义分母 | ADDRESS | 离线按所有scan遍历，包括无任何中央event的帧；逐target/occluder及pre/active/stopped记录query/output出现、明确假、GT相容、角色冲突、未知及无query。complete和report聚合任务尝试、UNREALIZABLE与覆盖。旧F0无实体覆盖时明确不可用，不填零。 |
+
+修复新增的数值列权重与原父/epoch/时刻、假侧先family/k的定义一致；policy向量应用保留同一资格、正负分支和缺失unknown。SQLite只原子发布完成缓存，标签覆盖不会读取防御分数，也没有把不存在的query插入六格。未发现本次修复带来的新阻塞。
+
+验证证据沿用实施者提供的六项定点检查通过及一次15万行容量验证。容量验证只覆盖完整main report，五variant不再同时加载数据的性质另由代码顺序及对象释放核对；不把该容量证据扩大为真实PCD/native或fit/score的实测峰值。实际执行保留峰值和阶段日志即可，不为启动批次重复负载测试。
+
+Task 3仍须在完整输出上按已批准标准裁决。仅已采纳者延迟中位数不能单独证明时效改善，须同时阅读未采纳轨迹及观察长度；稀疏攻击层和三个开发eval父不能给一般风险保证。这些是现有证据边界，不是新的执行阻塞。
+

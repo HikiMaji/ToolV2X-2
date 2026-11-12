@@ -36,9 +36,9 @@ Interfaces：fit_models(rows)->model_dict；predict_row(row,models)->pred；scor
 Files：data.py、native_adapter.py、run.py及同一test_temporal.py必要fixture。
 Interfaces：prepare(out)->manifest/per-job rows；fit(out)->models；score(out)->stream predictions；report(out)->metrics/summary/figures。
 
-- [ ] 按data_access和SDS接入旧39个特征，补fit Z及4个多车录制；普通原生缺依赖按已有runtime解决，不改检测模型。
-- [ ] 冻结F1/F2/F3构造及失败记录，生成新消息和当前查询。
-- [ ] 完成cal、同政策指标和最小fixture；独立代码审核后冻结。
+- [x] 按data_access和SDS接入旧39个特征，补fit Z及4个多车录制；普通原生缺依赖按已有runtime解决，不改检测模型。
+- [x] 冻结F1/F2/F3构造及失败记录，生成新消息和当前查询。
+- [x] 完成cal、同政策指标和最小fixture；独立代码审核后冻结。
 
 ## Task 3: 固定开发与方法决定
 
