@@ -13,7 +13,7 @@
 
 合计6fit/5cal/3eval。检测均有缓存；前两test录制FOV可复用，两个扩5录制的FOV与必要离线回波处理读取PCD时生成。已知重叠train/2021_08_21_22_21_37与未使用的train/2021_08_22_06_43_37仍保护。其他9段多车缺检测、当前无GPU，保留为后续接入候选，不从47段资源范围删除。
 
-新增攻击只对上述1个cal多车和2个eval多车录制，各生成F1/F2/F3、k=1/2/3、一个预声明seed=0，最多27任务，不按效果追加种子。每任务使用从头起80帧，前20正常，20..59为40帧攻击，后20停止；每个构造只一个假目标，F3额外一个假阻挡框。假目标物理上始终不存在，停止报告不是目标出生/消失标签。每任务冻结位置/轨迹后才运行核验。无法构造时保留失败原因及分母，不静默换成更容易攻击或剔除不利结果。F0复用既有29攻击任务，不重跑其前端。
+新增攻击只对上述1个cal多车和2个eval多车录制，各生成F1/F2/F3、k=1/2/3、一个预声明seed=0，最多27任务，不按效果追加种子。每任务使用从头起80帧。F1/F2为0..19正常、20..59注入target、60..79停止；F3为0..14正常、15..19仅注入occluder、20..59两者、60..79两者停止。每个构造只一个主假目标，F3额外一个辅助假阻挡框。假目标物理上始终不存在，停止报告不是目标出生/消失标签。每任务冻结位置/轨迹后才运行核验。无法构造时保留失败原因及分母，不静默换成更容易攻击或剔除不利结果。F0复用既有29攻击任务，不重跑其前端。
 
 只运行这套固定D/B/C/T/J/J-ind/G开发比较，主W=10、s=.9、rho候选0/.25/.5/.75/.9；开发敏感性按方案W5/20、s.5/.95仅重评分，不重新选主参数。结果必须回答代理状态是否优于直接D、时序是否优于C、联合是否优于T/G及多源假风险。若参数不可估或收益不足，记录具体结果并作保留/简化决定，不自动加模块或重选eval。
 
@@ -47,7 +47,7 @@
 
 `predict_row(row,models)`输出D[N]、hB/hC[N]、emit[N,2]、trans[N,2,2]和u[N]有效mask。h_C缺C退h_B，X缺失则h退pi、转移退T_base且u=-1；C缺失且X有效时emission仍可用、转移退T_base。不得用离线Z参与预测。
 
-`fit_rho_oof(fit_rows)`按fit父逐一留出，所有参数及标准化在折内重新拟合，对每个rho重新按完整窗口前向。目标为held clean真实当前query窗口NLL，按父/epoch/帧归一；过去窗口只使用在线字段，不用held Z滤波。未知标签不作监督目标但不因标签在窗口删除。保存每rho目标及共同有效组数量，平局容差1e-8选小rho，零信息或无增量取0并说明。主拟合后用全部fit重估模型，rho不看cal/eval。
+`fit_rho_oof(fit_rows)`按fit父逐一留出，所有参数及标准化在折内重新拟合，对每个rho重新按完整窗口前向。目标为held clean真实当前query所对应的完整窗口normal_loglik之负，绝非仅末帧条件NLL；按父/epoch/帧归一；过去窗口只使用在线字段，不用held Z滤波。未知标签不作监督目标但不因标签在窗口删除。保存每rho目标及共同有效组数量，平局容差1e-8选小rho，零信息或无增量取0并说明。主拟合后用全部fit重估模型，rho不看cal/eval。
 
 ## 5. kernel.py 正常与假侧
 
@@ -59,13 +59,13 @@ T取rho0；J用已拟rho。B/C每帧p=(1-h)*emit0+h*emit1，正常侧跨源跨�
 
 `false_window(U,s=.9)`：r=[.1,.2,.4,.2]，前三族每源二状态独立，第四族共享一状态。左端按r初始化，首帧直接发射；之后T_r=sI+(1-s)ones⊗[1-r,r]传播。log权重初始-log4；本帧先算族完整模式概率及混合边际q_i，得到全来源L_F，再更新族权重及状态。当前混合0/1使共同族概率0时其权重=-inf，本窗口不复活；跳过0/0归一。全未知时权重不变。不同几何组不拆假侧。
 
-`score_window(window,models,rho,W,s)`返回D/B/C/T/J/Jind/G总分、当前和窗口e/Delta_T/Delta_F摘要、机会/支持union、accept_eligible/reject_eligible及finite标记。Jind使用J同一预测边际与状态更新，计分去Delta_T；G同一e按当前组有效U成员平均、空组0，再减同一Delta_F。所有分数由窗口从头重算，不缓存窗前后验或再次加S_previous。
+`score_window(window,models,rho,W,s)`返回D/B/C/T/J/Jind/G总分、当前和窗口e/Delta_T/Delta_F摘要、机会/支持union、accept_eligible/reject_eligible及finite标记。返回normal_loglik各法整窗值、逐步logL与边际，供OOF不重造计算路径。模型数值失败不丢行，各方法同record输出unknown及失败原因；参数不可估方法标unestimable，不宣称模型已学得。Jind使用J同一预测边际与状态更新，计分去Delta_T；G同一e按当前组有效U成员平均、空组0，再减同一Delta_F。所有分数由窗口从头重算，不缓存窗前后验或再次加S_previous。
 
 ## 6. data.py和原生适配
 
 ### 旧39任务
 
-复用已存real_cue/features，每job一条feature迭代器；顺序扫描旧static labelled，按job逐条对应key/U/source_ids/time，补query_gt_id及全部必要离线标签。解码到EOF检查gzip及覆盖，原目录不写。顺序不符才用小sqlite按key连接。保存新的紧凑分job文件，禁止全部几何dict装内存。
+复用已存real_cue/features，每job一条feature迭代器；顺序扫描旧static labelled，按job逐条对应key/U/source_ids/time，补query_gt_id、native_mean及全部必要离线标签；native_mean缺失保留None，不能填0。解码到EOF检查gzip及覆盖，原目录不写。顺序不符才用小sqlite按key连接。保存新的紧凑分job文件，禁止全部几何dict装内存。
 
 ### 回波代理与新FOV
 
@@ -77,11 +77,11 @@ T取rho0；J用已拟rho。B/C每帧p=(1-h)*emit0+h*emit1，正常侧跨源跨�
 
 从冻结det NPZ boxes/scores/lidar_pose恢复原生BoxDetection，按任意N维护local trackers，再生成完整原生TrackEncoder消息、fresh计数和FOV。复用BasicBoxTracker3D/MeasurementBasedMultiTracker与原MATE hook；当前query在fused.update前生成。新生数组按len(source_ids)，不能直接沿用旧[-1]*3。现存FOV直接取native_corrected；缺FOV用原生FOVEstimator，公开计算不读GT。
 
-攻击生成在所有防御计分前执行。固定控制源为source_ids排序前k（角色偏差如实记录，本轮不以轮换制造样本数）。F1在受控来源FOV内从真实轨迹中心偏移候选中按seed顺序选不存在轨迹；F2沿某正常来源到真实GT阻挡框的方向，在阻挡框后以固定世界偏移生成跟随该框的假轨迹；F3在F1式目标与选定正常来源之间加入一个持续假框，提前5帧注入，使其可能进入预测遮挡集合。使用普通车辆尺寸[4.5,1.8,1.6]的声明攻击实例，主在线目标probe不读该尺寸，但历史阻挡尺寸的影响必须承认。
+攻击生成在所有防御计分前执行。固定控制源为source_ids排序前k（角色偏差如实记录，本轮不以轮换制造样本数）。F1在受控来源FOV内从真实轨迹中心偏移候选中按seed顺序选不存在轨迹；F2沿某正常来源到真实GT阻挡框的方向，在阻挡框后以固定世界偏移生成跟随该框的假轨迹；F3在F1式目标与选定正常来源之间加入一个持续假框，提前5帧注入，使其可能进入预测遮挡集合。使用长宽高[4.5,1.8,1.6]米的声明攻击实例；native hwl明确为[1.6,1.8,4.5]，主在线目标probe不读该尺寸，但历史阻挡尺寸的影响必须承认。
 
 候选数量上限64，位置偏移距离取6/10/14米及八方向的确定列表，seed只决定排列；有效性仅看预定义FOV、与GT/其他注入目标无3米相容及连续轨迹约束，不读任何防御分数。F2/F3要求选定正常来源在攻击40帧至少80%达到既有九射线阻挡比例>=1/3，未满足就记UNREALIZABLE，不强制报告成功攻击。F3阻挡采用普通车辆尺寸，若未形成遮挡必须保留失败。具体有效/无效数量进入manifest。
 
-注入在来源的对象/局部跟踪输入或独立完整fake track生成层完成，不改检测器，不改诚实来源报告；必须保留fresh计数连续性。新攻击的中央查询标签优先GT真匹配；与冻结注入轨迹相容且无GT相容者才标假，停止后可按已知注入轨迹与预测连续性保留假标签，模糊情况未知。在线函数不得读攻击spec。保留原MATE输出和更新均值。F3的被核验假目标标attack_role=target，辅助假阻挡框标occluder；两者全部保留，但主假风险针对预声明的target，occluder单列，避免增加辅助框后稀释目标攻击风险。F0/F1/F2假目标均为target。
+本轮唯一注入位置是在受控来源的局部跟踪输入中追加全局BoxDetection，之后通过同一原生局部tracker和编码生成消息，不混用手工fake-track输出。中央前端统一消费这些局部轨迹转换成的BoxDetection，与当前39任务接口一致，不把新任务改回raw detection直接中央融合。MATE agents位置按当前消息pose_xyz适配保持一致。GT几何不进入本在线步骤。离线真实标签严格沿recording_inputs.associate_gt：一对一真匹配需平面距离<=2米、相交且IoU>=.5；任一GT距离<=3米或框相交都算GT相容，未匹配相容者未知。query与output分别调用。假标签只在GT可用且无任何GT相容时，和冻结target/occluder轨迹做一对一匹配：中心平面距离<=2米、相交且IoU>=.5；同时与两个注入实体在3米内或相交的歧义者未知。注入前不能按未来假位置标假。停止后仅在本任务剩余20帧、冻结外推位置范围内且同中央epoch曾在注入有效期明确关联到该实体时延续假标签；中央ID单独不能保证标签。模糊/GT不可用/角色冲突均保留未知及原因。在线函数不得读攻击spec。保留原MATE输出和更新均值。F3的被核验假目标标attack_role=target，辅助假阻挡框标occluder；两者全部保留，但主假风险针对预声明的target，occluder单列，避免增加辅助框后稀释目标攻击风险。F0/F1/F2假目标均为target。
 
 ## 7. run.py与统计
 
@@ -89,9 +89,9 @@ CLI阶段`prepare`（新manifest、旧复用、标签/前端/攻击）、`fit`�
 
 数据缓存落新artifact目录`docs/evidence/rq1_temporal_2026_11_12/run_001`。按job加载紧凑行和构造epoch；拟合仅保留数值数组，评分逐epoch输出gz，最后统计可读小型预测字段；无需把大geometry装内存。保存code commit、input/source provenance、parent split、参数、未实现攻击及标签缺失。
 
-cal各方法独立选择A/R但共用相同资格。门限正负分支分开累计扫描，包含ties，允许关闭。风险分母是共同主真/主假query总体（包括资格不满足的unknown，不隐藏系统代价），同时另报可判资格分母。各非空family/k层使用同一经验5%预算；样本少只称开发点估计、保留轨迹/父分母，不能给零错误“保证”。缺某层报告not_calibrated，不复活旧k覆盖整组unknown政策。总体真假缺一类才关闭相关政策并标not_estimable。
+cal各方法独立选择A/R但共用相同资格。满足总体及所有非空family/k层各自5%经验错误约束，门限正负分支分开累计扫描，包含ties，允许关闭。风险分母是共同主真/主假query总体（包括资格不满足的unknown，不隐藏系统代价），同时另报可判资格分母。各非空family/k层使用同一经验5%预算；样本少只称开发点估计、保留轨迹/父分母，不能给零错误“保证”。缺某层报告not_calibrated，不复活旧k覆盖整组unknown政策。总体真假缺一类才关闭相关政策并标not_estimable。
 
-主真实为clean/query_truth1，主虚假attack/query_truth0且attack_role=target；攻击真背景单列。新生用output_truth给系统层单列，不能拿其标签训练query模型。MATE原生仅采用/未采用；共同政策版本可用mean-.5作为单调分数，门限按相同cal程序选取并明示不是原生输出。
+主真权重为clean父等权、父内epoch等权、epoch内时刻等权。主假先按非空family/k层等权，层内父/target epoch/时刻逐级等权。correct_definite=(真采纳率+主假拒绝率)/2，缺任一总体则null。主真实为clean/query_truth1，主虚假attack/query_truth0且attack_role=target；攻击真背景单列。新生用output_truth给系统层单列，不能拿其标签训练query模型。MATE原生仅采用/未采用；共同政策版本可用mean-.5作为单调分数，门限按相同cal程序选取并明示不是原生输出。
 
 报告D/B/C/T/J/Jind/G真假六格、原始/父等权比例、correct_definite、k/组条件/每父分层，正常概率NLL、rho目标、state delta/参数支持。轨迹指标按epoch报告首次采纳、曾假采纳、最长连续错误；未采纳轨迹单列，不能只在幸存采用者算延迟。3个开发eval父的配对bootstrap仅描述稳定性，不作一般风险认证。至少summary.md/metrics.json/predictions.gz/cases.json及六格PNG。案例预定按key最早的共同组及J/T不同决定各12条，保留不利方向。
 
@@ -102,3 +102,22 @@ cal各方法独立选择A/R但共用相同资格。门限正负分支分开累�
 数据：小OBB点数与手算一致含旋转/完整pose；GT标签改动不改变公开C；新生N4/5数组；fresh/coast/缺包语义；fit/cal父不交叉与已知overlap；元数据join一致。先用有限fixture全流程，不能把fixture当实测。
 
 代码独立审核通过后运行固定开发批次。结果由独立审核者从冻结小预测重计核心六格和门限，不重跑全部前端。明确D/C/T/J各自保留或简化的决定，真实恢复与假风险一起报告。
+
+
+## 9. 本轮审核后的确定裁决
+
+1. 旧十父角色由real_cue阶段规则覆盖旧static split：fit为train/2021_08_16_22_26_54、2021_08_22_10_10_40、2021_08_22_10_46_58、2021_08_23_11_22_46、2021_08_24_21_29_28；cal为train/2021_08_18_22_16_12、2021_08_20_20_39_00、2021_08_21_22_21_37、2021_08_22_22_30_58；eval为train/2021_08_23_23_08_17。每个日期均带train/前缀。新增四父角色按第1节。
+2. 固定攻击轨迹：候选锚点从第20帧GT可用车辆按gt_id排序，固定方向在native世界XY平面，偏移6/10/14米和8个等分方向。seed=0对确定候选列表作固定排列，只尝试前64个。F1 target为从锚点中心偏移后的静止轨迹，world yaw=0，底面高度沿锚点第20帧底面。F2 target跟随选定真实GT锚框的中心加一个固定世界偏移，yaw沿该GT框native平面角，底面按其中心z减GT高/2。普通target自身高1.6米，构造native Box3D时center减.8为bottom。选定正常来源为排序后第k个，GT锚框须在全40注入帧可用。
+3. F3 target采用F1轨迹；辅助框中心在选定正常来源第20帧sensor与target的世界XY连线中点，使用target底面高度、yaw=0，保持静止。两注入框和所有GT在各有效时刻必须无现有相容定义（距离<=3米或框相交）。受控源FOV/coverage约束、几何阻挡80%约束均在防御运行前由冻结轨迹检查，不读后续采用结果。若受控源对某注入实体不具既定报告机会，该候选不满足本轮构造，而不是强行改FOV。
+4. 任务停止后预测参考：静止轨迹继续静止；F2以第58到59帧的世界中心速度做20帧常速外推、yaw保持第59帧。该参考只用于离线已知注入实体标签，不能在online query或C里补框。
+5. F3几何预筛通过但经原生tracker没有形成对应公开遮挡，记实际构造不生效并保留输出；不得换位置追成功。UNREALIZABLE计入任务尝试分母，target未形成query、query标签未知、occluder结果分别报告，不能只看可标假样本。
+6. 跨方法非有限数值错误在同一record共同置unknown并记录，不改分母。某方法整体unestimable保留其unknown覆盖，不把它当已经拟合后性能低的模型。MATE均值不可用则其共同政策版本unknown，其他有效方法不因此失败。
+
+SDS独立审核见[sds_review.md](sds_review.md)。Task1数学契约已通过，以上是Task2进入编码前一次落实的边界，不改变研究路线或需要用户再次批准。
+
+
+## 10. Task1组件不可估的明确契约
+
+独立代码审核发现一个阻塞，实施时必须保留可估的简单对照。fit_models返回每个组件的ok/unestimable和原因，不因任一状态组件失败整体抛错。方法依赖为D仅需D；B需h_B与emission；C需h_B/h_C与emission；T需C依赖加transition/pi/T_base；J/Jind/G需T依赖及有效rho估计（rho=0且无增量是有效估计，不是失败）。整套状态OOF失败只关闭J相关方法，最终全fit T可估时仍保留T。
+
+predict_row不得强制读取不可用组件，score_window对结构不可估的方法给score=None/normal_loglik=None和明确method_status，其他方法及全来源假侧继续评分，finite保持正常。已支持方法出现非有限运算才触发共同数值失败unknown。所有方法的输入和统计分母仍相同，不能因结构不可估删行。两个必要fixture为Z只有一类而U有两类（D仍可用），及无足够相邻转移但静态监督完整（B/C/D可用）。

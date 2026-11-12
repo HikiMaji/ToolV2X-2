@@ -27,9 +27,9 @@ Spec：[SDS](SDS.md)及[完整方案](../时序条件联合核验_完整修订�
 Files：scripts/rq1_temporal/kernel.py、fit.py、test_temporal.py。
 Interfaces：fit_models(rows)->model_dict；predict_row(row,models)->pred；score_window(window,models,rho,W,s)->scores/资格/解释量。
 
-- [ ] 按SDS写最少有辨别力的前向枚举、缺失、顺序及窗口测试。
-- [ ] 实现核与fit，复用scipy优化器，保存必要诊断。
-- [ ] 运行相关测试，提交并接受独立spec/quality审核。
+- [x] 按SDS写最少有辨别力的前向枚举、缺失、顺序及窗口测试。
+- [x] 实现核与fit，复用scipy优化器，保存必要诊断。
+- [x] 运行相关测试，提交并接受独立spec/quality审核；155799e通过，组件不可估阻塞已修复。
 
 ## Task 2: 数据适配与运行评价
 
