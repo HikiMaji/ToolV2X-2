@@ -27,7 +27,7 @@
 
 ## 在另一环境运行
 
-推荐Python 3.11。依赖版本为本次打包环境实际版本，不要求GPU、AVstack或检测模型。
+本次验证使用Python 3.8.10。依赖版本为本次打包环境实际版本，不要求GPU、AVstack或检测模型。
 
 ```bash
 git clone --single-branch --branch research/rq1-current-2026-11-12 https://github.com/HikiMaji/ToolV2X-2.git
@@ -58,7 +58,7 @@ PYCODE
 受控实验已有完整结果。若需复现，显式使用新输出目录。
 
 ```bash
-python scripts/run_rq1_conditional_revision.py --out outputs/conditional-reproduction
+python scripts/run_rq1_conditional_revision.py --output outputs/conditional-reproduction
 ```
 
 完整真实缓存批次需要服务器上的39任务configs、events、sender和labelled数据，本分支没有上传这些大型依赖。历史manifest保留绝对路径以说明来源，不表示在异地可直接运行。`run.py`支持`--manifest`和`--out`；迁移时不仅要替换manifest参数，还须解析其中config路径及config内sender路径。当前run_001不完整，恢复说明见协作交接。
