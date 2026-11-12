@@ -116,66 +116,109 @@ def fit_models(rows):
                 tasks['transition'].append((r,i,np.r_[x,c,zp],z))
     signs = dict(D=[0]*5+[-1,0], h_B=[0]*5, h_C=[0]*5+[-1],
                  emission=[0]*5+[1], transition=[0]*5+[-1,1])
-    out, supports = {}, {}
+    out, supports, statuses = {}, {}, {}
     for name, sign in signs.items():
         samples = tasks[name]
-        if not samples:
-            raise ValueError(name+' not estimable: no usable supervision')
-        w = sample_weights([(r,i) for r,i,_,_ in samples])
-        try:
-            out[name] = fit_logistic([a[2] for a in samples], [a[3] for a in samples], w, sign)
-        except ValueError as error:
-            raise ValueError(name+' not estimable: '+str(error)) from error
-        out[name]['train_parents'] = sorted({r['parent'] for r,_,_,_ in samples})
         supports[name] = dict(n_sources=len(samples), n_rows=len({(r['parent'],_epoch(r),r['index']) for r,_,_,_ in samples}))
+        try:
+            if not samples:
+                raise ValueError('no usable supervision')
+            w = sample_weights([(r,i) for r,i,_,_ in samples])
+            fitted = fit_logistic([a[2] for a in samples], [a[3] for a in samples], w, sign)
+        except (ValueError, RuntimeError) as error:
+            statuses[name] = dict(status='unestimable', reason=name+': '+str(error))
+            continue
+        fitted['train_parents'] = sorted({r['parent'] for r,_,_,_ in samples})
+        out[name] = fitted
+        statuses[name] = dict(status='ok', reason=None)
     pi_samples = tasks['pi']
-    w = sample_weights([(r,i) for r,i,_,_ in pi_samples])
-    pi_raw = float(w @ np.array([a[3] for a in pi_samples]))
-    out['pi'] = float(np.clip(pi_raw,CLIP,1-CLIP))
+    pi_raw = None
+    if pi_samples:
+        w = sample_weights([(r,i) for r,i,_,_ in pi_samples])
+        pi_raw = float(w @ np.array([a[3] for a in pi_samples]))
+        out['pi'] = float(np.clip(pi_raw,CLIP,1-CLIP))
+        statuses['pi'] = dict(status='ok', reason=None)
+    else:
+        statuses['pi'] = dict(status='unestimable', reason='pi: no usable supervision')
     samples = tasks['T_base']
-    w = sample_weights([(r,i) for r,i,_,_ in samples])
     counts = np.zeros((2,2),int)
     mass = np.zeros((2,2))
-    for (_,_,x,z),weight in zip(samples,w):
-        counts[int(x[0]),z] += 1
-        mass[int(x[0]),z] += weight
+    if samples:
+        w = sample_weights([(r,i) for r,i,_,_ in samples])
+        for (_,_,x,z),weight in zip(samples,w):
+            counts[int(x[0]),z] += 1
+            mass[int(x[0]),z] += weight
+    raw = None
     if np.any(mass.sum(axis=1) == 0):
-        raise ValueError('T_base not estimable: a previous-state row has no supervision')
-    raw = mass/mass.sum(axis=1,keepdims=True)
-    p = np.clip(raw[:,1],CLIP,1-CLIP)
-    out['T_base'] = np.column_stack([1-p,p]).tolist()
+        statuses['T_base'] = dict(status='unestimable', reason='T_base: a previous-state row has no supervision')
+    else:
+        raw = mass/mass.sum(axis=1,keepdims=True)
+        p = np.clip(raw[:,1],CLIP,1-CLIP)
+        out['T_base'] = np.column_stack([1-p,p]).tolist()
+        statuses['T_base'] = dict(status='ok', reason=None)
+    out['component_status'] = statuses
     out['diagnostics'] = dict(train_parents=sorted({r['parent'] for r in rows}), supports=supports,
                               pi_raw=pi_raw, pi_n=len(pi_samples), T_base_counts=counts.tolist(),
-                              T_base_weighted_mass=mass.tolist(), T_base_raw=raw.tolist(),
-                              T_base_boundary=((raw==0)|(raw==1)).tolist(), clip=CLIP)
+                              T_base_weighted_mass=mass.tolist(), T_base_raw=None if raw is None else raw.tolist(),
+                              T_base_boundary=None if raw is None else ((raw==0)|(raw==1)).tolist(), clip=CLIP)
     return out
 
 
+def method_status(models, rho):
+    """Fixed dependencies distinguish unavailable parameters from numeric failures."""
+    dependencies = dict(D=('D',), B=('h_B','emission'), C=('h_B','h_C','emission'),
+                        T=('h_B','h_C','emission','transition','pi','T_base'))
+    statuses = {}
+    components = models.get('component_status',{})
+    for name, needed in dependencies.items():
+        missing = [c for c in needed if c not in models or components.get(c,{}).get('status','ok') != 'ok']
+        reasons = [components.get(c,{}).get('reason') or c+' unavailable' for c in missing]
+        statuses[name] = dict(status='unestimable' if missing else 'ok', reason='; '.join(reasons) or None)
+    valid_rho = isinstance(rho,(int,float,np.number)) and np.isfinite(rho) and 0 <= rho <= 1
+    joint_reason = statuses['T']['reason'] or (None if valid_rho else 'rho estimation unavailable')
+    for name in ('J','Jind','G'):
+        statuses[name] = dict(status='unestimable' if joint_reason else 'ok', reason=joint_reason)
+    return statuses
+
+
 def predict_row(row, models):
-    """All online predictions depend only on U/X/C/C_missing, never labels."""
+    """Predict only usable dependencies from online fields, without default models."""
     n = len(row['U'])
-    out = dict(D=np.full(n,.5), hB=np.full(n,models['pi']), hC=np.full(n,models['pi']),
-               emit=np.full((n,2),.5), trans=np.tile(np.asarray(models['T_base'],float),(n,1,1)),
-               u=np.full(n,-1,dtype=int))
+    status = method_status(models,0.)
+    active = {m for m,v in status.items() if v['status'] == 'ok'}
+    out = dict(u=np.full(n,-1,dtype=int))
+    if 'D' in active:
+        out['D'] = np.full(n,np.nan)
+    if active.intersection(('B','C','T')):
+        out['hB'] = np.full(n,models.get('pi',np.nan))
+        out['emit'] = np.full((n,2),.5)
+    if active.intersection(('C','T')):
+        out['hC'] = np.full(n,models.get('pi',np.nan))
+    if 'T' in active:
+        out['trans'] = np.tile(np.asarray(models['T_base'],float),(n,1,1))
     for i,u in enumerate(row['U']):
         x = _x(row,i)
         if x is None:
             continue
-        c = _cue(row,i)
-        out['D'][i] = _predict(models['D'],np.r_[x,0. if c is None else c,float(c is None)])
-        out['hB'][i] = _predict(models['h_B'],x)
-        out['hC'][i] = out['hB'][i] if c is None else _predict(models['h_C'],np.r_[x,c])
-        for z in (0,1):
-            out['emit'][i,z] = _predict(models['emission'],np.r_[x,z])
-            if c is not None:
-                p = _predict(models['transition'],np.r_[x,c,z])
-                out['trans'][i,z] = [1-p,p]
         if u in (0,1):
             out['u'][i] = u
+        c = _cue(row,i)
+        if 'D' in out:
+            out['D'][i] = _predict(models['D'],np.r_[x,0. if c is None else c,float(c is None)])
+        if 'hB' in out:
+            out['hB'][i] = _predict(models['h_B'],x)
+            for z in (0,1):
+                out['emit'][i,z] = _predict(models['emission'],np.r_[x,z])
+        if 'hC' in out:
+            out['hC'][i] = out['hB'][i] if c is None else _predict(models['h_C'],np.r_[x,c])
+        if 'trans' in out and c is not None:
+            for z in (0,1):
+                p = _predict(models['transition'],np.r_[x,c,z])
+                out['trans'][i,z] = [1-p,p]
     return out
 
 
-def fit_rho_oof(fit_rows, W=10):
+def _fit_rho_oof(fit_rows, W=10):
     """Refit every parent fold and rerun complete windows for each fixed rho."""
     from .kernel import normal_window, windows
     rows = [r for r in fit_rows if r.get('split') == 'fit' and r.get('kind') == 'clean']
@@ -186,6 +229,11 @@ def fit_rho_oof(fit_rows, W=10):
     folds, common_groups = [], 0
     for parent in parents:
         models = fit_models([r for r in rows if r['parent'] != parent])
+        temporal = method_status(models,0.)['T']
+        if temporal['status'] != 'ok':
+            raise ValueError('rho OOF fold '+str(parent)+': '+temporal['reason'])
+        # OOF does not consume D, so its prediction cannot disable state fitting.
+        models = {k:v for k,v in models.items() if k != 'D'}
         held = sorted([r for r in rows if r['parent'] == parent],
                       key=lambda r:(str(r['job_id']),str(r['id']),r['index']))
         targets = []
@@ -215,5 +263,14 @@ def fit_rho_oof(fit_rows, W=10):
         rho,reason = 0.,'no_common_group_information'
     elif objectives['0.0']-best <= 1e-8:
         rho,reason = 0.,'no_increment_over_rho_zero'
-    return dict(rho=rho, objectives=objectives, folds=folds,
+    return dict(status='ok', rho=rho, objectives=objectives, folds=folds,
                 common_valid_groups=common_groups, reason=reason, W=W)
+
+
+def fit_rho_oof(fit_rows, W=10):
+    """A failed OOF fit has no rho estimate; it never silently becomes rho zero."""
+    try:
+        return _fit_rho_oof(fit_rows,W)
+    except (ValueError, RuntimeError, FloatingPointError, OverflowError) as error:
+        return dict(status='unestimable', rho=None, reason=type(error).__name__+': '+str(error),
+                    objectives={str(r):None for r in RHO_GRID}, folds=[], common_valid_groups=0, W=W)

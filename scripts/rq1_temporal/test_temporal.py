@@ -155,6 +155,7 @@ class KernelTests(unittest.TestCase):
         self.assertFalse(failed['finite'])
         self.assertEqual(set(failed['scores'].values()),{None})
         self.assertTrue(failed['error'])
+        self.assertEqual(failed['method_status']['D']['status'],'numeric_failure')
 
     def test_empty_observation_is_exactly_unit_likelihood_and_keeps_slot(self):
         seq = [prediction([1,0,1]),prediction([-1,-1,-1])]
@@ -196,6 +197,47 @@ class FitTests(unittest.TestCase):
         oof = fit.fit_rho_oof(rs)
         self.assertEqual(set(oof['objectives']), {'0.0','0.25','0.5','0.75','0.9'})
         self.assertEqual(len(oof['folds']), 3)
+        self.assertEqual(oof['status'],'ok')
+
+    def test_single_proxy_class_keeps_estimable_direct_model(self):
+        rows = [row(t, ((t//2)%2, (t//3)%2), parent=p, Z=[1,1])
+                for p in ('a','b') for t in range(12)]
+        fitted = fit.fit_models(rows)
+        self.assertEqual(fitted['component_status']['D']['status'],'ok')
+        self.assertEqual(fitted['component_status']['h_B']['status'],'unestimable')
+        direct = fit.predict_row(rows[-1],{'D':fitted['D']})
+        self.assertTrue(np.isfinite(direct['D']).all())
+        out = kernel.score_window(rows[-2:],fitted,None)
+        self.assertTrue(out['finite'])
+        self.assertTrue(math.isfinite(out['scores']['D']))
+        for method in ('B','C','T','J','Jind','G'):
+            self.assertIsNone(out['scores'][method])
+            self.assertEqual(out['method_status'][method]['status'],'unestimable')
+            self.assertTrue(out['method_status'][method]['reason'])
+        oof = fit.fit_rho_oof(rows)
+        self.assertEqual(oof['status'],'unestimable')
+        self.assertIsNone(oof['rho'])
+
+    def test_no_adjacent_transitions_keeps_static_methods(self):
+        rows = [row(2*t, ((t//2)%2,(t//3)%2),parent=p,Z=[t%2,(t+1)%2])
+                for p in ('a','b') for t in range(12)]
+        fitted = fit.fit_models(rows)
+        self.assertEqual(fitted['component_status']['T_base']['status'],'unestimable')
+        out = kernel.score_window(rows[-1:],fitted,None)
+        for method in ('D','B','C'):
+            self.assertTrue(math.isfinite(out['scores'][method]))
+            self.assertEqual(out['method_status'][method]['status'],'ok')
+        for method in ('T','J','Jind','G'):
+            self.assertIsNone(out['scores'][method])
+        # OOF failure disables J even when final all-fit T is estimable.
+        complete = [row(t,(t%2,(t+1)%2),parent=p,Z=[(t+offset)%2]*2)
+                    for p,offset in (('a',0),('b',1)) for t in range(2)]
+        full = fit.fit_models(complete)
+        failed_oof = fit.fit_rho_oof(complete)
+        self.assertIsNone(failed_oof['rho'])
+        out = kernel.score_window(complete[-2:],full,failed_oof['rho'])
+        self.assertTrue(math.isfinite(out['scores']['T']))
+        self.assertEqual(out['method_status']['J']['status'],'unestimable')
 
     def test_oof_uses_full_window_loss_not_last_increment(self):
         rs = [row(t, (1,1), parent=p) for p in ('a','b') for t in range(2)]

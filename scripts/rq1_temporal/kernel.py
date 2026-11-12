@@ -183,63 +183,72 @@ def windows(rows, W=10):
 
 
 def _score_window(window, models, rho, W=10, s=.9):
-    """Recompute both sides from the current causal window, including eligibility."""
-    from .fit import predict_row
-    window = list(window)
-    if not window:
-        raise ValueError('cannot score empty window')
-    # Apply lifecycle rules even if the caller passed an untrimmed history.
+    """Recompute available methods on the same causal window and false side."""
+    from .fit import predict_row, method_status
     window = list(windows(window, W))[-1]
     current = window[-1]
+    status = method_status(models,rho)
+    active = {m for m,v in status.items() if v['status'] == 'ok'}
+    scores = {m:None for m in METHODS}
+    normal_logs = {m:None for m in METHODS}
     if not current.get('query_present', True) or current.get('newborn', False):
-        return dict(scores={m: 0. for m in METHODS}, current={}, window={},
+        return dict(scores={m:0. if m in active else None for m in METHODS}, current={}, window={},
                     opportunity_union=[], support_union=[], accept_eligible=False,
-                    reject_eligible=False, finite=True, n_frames=0,
-                    normal_loglik={m: (None if m in ('Jind','G') else 0.) for m in METHODS},
+                    reject_eligible=False, finite=True, n_frames=0, method_status=status,
+                    normal_loglik={m:0. if m in active and m not in ('Jind','G') else None for m in METHODS},
                     steps={'T':[], 'J':[], 'F':[]})
     preds = [predict_row(r, models) for r in window]
     U = np.asarray([p['u'] for p in preds])
     groups = [_groups(r['groups'], len(r['U'])) for r in window]
-    normal_t = normal_window(preds, groups, 0., 'T')
-    normal_j = normal_window(preds, groups, rho, 'J')
     false = false_window(U, s)
-    normal_logs = {m: 0. for m in ('D','B','C')}
-    static_steps = {m: [] for m in ('D','B','C')}
-    summaries = []
-    for pred, tj, fj, group in zip(preds, normal_j['steps'], false['steps'], groups):
-        u = np.asarray(pred['u'])
-        for m, h in (('D', None), ('B', 'hB'), ('C', 'hC')):
+    steps = dict(F=false['steps'])
+    for m,h in (('D',None),('B','hB'),('C','hC')):
+        if m not in active:
+            continue
+        steps[m] = []
+        for pred in preds:
             p = np.asarray(pred['D']) if h is None else (
                 (1-np.asarray(pred[h]))*np.asarray(pred['emit'])[:,0] +
                 np.asarray(pred[h])*np.asarray(pred['emit'])[:,1])
-            logs = _bern_logs(u,p)
-            normal_logs[m] += float(logs.sum())
-            static_steps[m].append(dict(loglik=float(logs.sum()), p=p.tolist(),
-                                        marginal_loglik=logs.tolist(), delta=0.))
-        e = np.asarray(tj['marginal_loglik'])-np.asarray(fj['marginal_loglik'])
-        group_e = sum(float(e[ix].mean()) for g in group
-                      for ix in [[i for i in g if u[i] >= 0]] if ix)
-        summaries.append(dict(e=e.tolist(), delta_T=tj['delta'], delta_F=fj['delta'],
-                              group_e=group_e, logL_T=tj['loglik'], logL_F=fj['loglik']))
-    scores = {m: float(ll-false['loglik']) for m,ll in normal_logs.items()}
-    scores.update(T=normal_t['loglik']-false['loglik'], J=normal_j['loglik']-false['loglik'],
-                  Jind=sum(sum(a['e'])-a['delta_F'] for a in summaries),
-                  G=sum(a['group_e']-a['delta_F'] for a in summaries))
+            logs = _bern_logs(pred['u'],p)
+            steps[m].append(dict(loglik=float(logs.sum()), p=p.tolist(),
+                                 marginal_loglik=logs.tolist(), delta=0.))
+        normal_logs[m] = sum(a['loglik'] for a in steps[m])
+        scores[m] = normal_logs[m]-false['loglik']
+    for m in ('T','J'):
+        if m not in active:
+            continue
+        result = normal_window(preds,groups,0. if m == 'T' else rho,m)
+        steps[m] = result['steps']
+        normal_logs[m] = result['loglik']
+        scores[m] = result['loglik']-false['loglik']
+    summaries = []
+    if 'J' in active:
+        for pred,tj,fj,group in zip(preds,steps['J'],false['steps'],groups):
+            u = np.asarray(pred['u'])
+            e = np.asarray(tj['marginal_loglik'])-np.asarray(fj['marginal_loglik'])
+            group_e = sum(float(e[ix].mean()) for g in group
+                          for ix in [[i for i in g if u[i] >= 0]] if ix)
+            summaries.append(dict(e=e.tolist(), delta_T=tj['delta'], delta_F=fj['delta'],
+                                  group_e=group_e, logL_T=tj['loglik'], logL_F=fj['loglik']))
+        scores['Jind'] = sum(sum(a['e'])-a['delta_F'] for a in summaries)
+        scores['G'] = sum(a['group_e']-a['delta_F'] for a in summaries)
     opportunity = np.flatnonzero(np.any(U >= 0, axis=0)).tolist()
     support = np.flatnonzero(np.any(U == 1, axis=0)).tolist()
     eligible = len(opportunity) >= 2
     accept = (eligible and len(support) >= 2 and current.get('query_present', True)
               and current.get('output_present', False) and current.get('identity_ok', False))
-    summary = dict(e=np.sum([a['e'] for a in summaries],axis=0).tolist(),
-                   delta_T=sum(a['delta_T'] for a in summaries),
-                   delta_F=sum(a['delta_F'] for a in summaries),
-                   normal_loglik=normal_j['loglik'], false_loglik=false['loglik'])
-    return dict(scores=scores, current=summaries[-1], window=summary,
+    summary = dict(e=None, delta_T=None, delta_F=None, normal_loglik=normal_logs['J'],
+                   false_loglik=false['loglik'])
+    if summaries:
+        summary.update(e=np.sum([a['e'] for a in summaries],axis=0).tolist(),
+                       delta_T=sum(a['delta_T'] for a in summaries),
+                       delta_F=sum(a['delta_F'] for a in summaries))
+    return dict(scores=scores, current=summaries[-1] if summaries else {}, window=summary,
                 opportunity_union=opportunity, support_union=support,
                 accept_eligible=bool(accept), reject_eligible=bool(eligible and np.any(U == 0)),
-                finite=bool(np.isfinite(list(scores.values())).all()), n_frames=len(window),
-                normal_loglik=dict(normal_logs, T=normal_t['loglik'], J=normal_j['loglik'], Jind=None, G=None),
-                steps=dict(static_steps, T=normal_t['steps'], J=normal_j['steps'], F=false['steps']))
+                finite=bool(np.isfinite([v for v in scores.values() if v is not None]).all()),
+                n_frames=len(window), method_status=status, normal_loglik=normal_logs, steps=steps)
 
 
 def score_window(window, models, rho, W=10, s=.9):
@@ -253,8 +262,13 @@ def score_window(window, models, rho, W=10, s=.9):
             raise FloatingPointError('nonfinite temporal score')
         return result
     except (ValueError, FloatingPointError, OverflowError) as error:
+        from .fit import method_status
+        status = method_status(models,rho)
+        for method,value in status.items():
+            if value['status'] == 'ok':
+                status[method] = dict(status='numeric_failure', reason=str(error))
         return dict(scores={m:None for m in METHODS}, current={}, window={},
                     normal_loglik={m:None for m in METHODS}, steps={},
                     opportunity_union=[], support_union=[], accept_eligible=False,
                     reject_eligible=False, finite=False, n_frames=min(W,len(window)),
-                    error=type(error).__name__+': '+str(error))
+                    error=type(error).__name__+': '+str(error), method_status=status)
