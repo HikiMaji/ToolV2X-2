@@ -85,7 +85,7 @@ class DataTests(unittest.TestCase):
         # Two of forty may be accepted, including 38 ineligible records in the denominator.
         rows[2]['scores']['J']=1.;rows[2]['accept_eligible']=False
         policy=run.calibrate(rows,'J',{('F1',1)})
-        self.assertEqual(policy['A'],0.)
+        self.assertEqual(policy['A'],1.)
         self.assertEqual(sum(run.decide(r,'J',policy)=='accept' for r in rows if run.primary(r,0)),2)
         for r in rows:r['decisions']={m:run.decide(r,m,policy) for m in run.METHODS}
         self.assertEqual(run.six_cells(rows,'J')['false']['n'],40)
@@ -99,13 +99,38 @@ class DataTests(unittest.TestCase):
         for branch,truth,positive in [('A',0,True),('R',1,False)]:
             subset=[r for r in rows if run.primary(r,truth)];groups=[subset]
             groups += [[r for r in subset if (r['family'],r['attack_k'])==layer] for layer in {(r['family'],r['attack_k']) for r in subset}]
-            candidates=sorted({0.}|{r['scores']['J'] for r in rows if r['scores']['J']>0 if positive}) if positive else sorted({0.}|{r['scores']['J'] for r in rows if r['scores']['J']<0},reverse=True)
-            best=None
+            eligible=[r for r in rows if run.primary(r,0) or run.primary(r,1)]
+            candidates=sorted({r['scores']['J'] for r in eligible if r['scores']['J']>0},reverse=True) if positive else sorted({r['scores']['J'] for r in eligible if r['scores']['J']<0})
+            best=None;best_quality=0.;goal=[r for r in rows if run.primary(r,1-truth)]
             for threshold in candidates:
                 trial={'A':threshold if positive else None,'R':None if positive else threshold};decision='accept' if positive else 'reject'
                 if all(sum(w for r,w in zip(g,run.weights(g,truth)) if run.decide(r,'J',trial)==decision)<=.05+1e-12 for g in groups):
-                    best=threshold;break
+                    quality=sum(w for r,w in zip(goal,run.weights(goal,1-truth)) if run.decide(r,'J',trial)==decision)
+                    if quality>best_quality+1e-12:best=threshold;best_quality=quality
             self.assertEqual(actual[branch],best)
+
+    def test_conservative_correct_quality_tie(self):
+        rows=[row(0,1,'true'),row(0,0,'false','F1',1),row(0,1,'unknown')]
+        rows[0]['scores']['J']=3.;rows[1]['scores']['J']=-2.;rows[2]['scores']['J']=.1;rows[2]['query_truth']=-1
+        policy=run.calibrate(rows,'J')
+        self.assertEqual((policy['A'],policy['R']),(3.,-2.))
+        evaluation=row(0,0,'eval','F1',1);evaluation['scores']['J']=.5
+        self.assertEqual(run.decide(evaluation,'J',policy),'unknown')
+        rows[0]['scores']['J']=-.5
+        self.assertIsNone(run.calibrate(rows,'J')['A'])
+
+    def test_family_k_joint_and_pending_decision(self):
+        rows=[row(0,0,'p1','F2',1),row(0,0,'p2','F2',3),row(0,1,'clean')]
+        for r in rows:r['decisions']={m:'accept' for m in run.METHODS}
+        metrics=run.evaluate(rows,{('F2',1),('clean',0)})
+        one=metrics['family_k']['F2/1'];three=metrics['family_k']['F2/3']
+        self.assertEqual(one['cal_status'],'observed');self.assertEqual(three['cal_status'],'not_calibrated')
+        self.assertEqual(three['methods']['J']['false']['n'],1)
+        self.assertEqual(three['methods']['J']['false']['parents'],1)
+        self.assertEqual(three['methods']['J']['false']['epochs'],1)
+        decision=run.method_decisions(metrics)
+        self.assertEqual(decision['retention_status'],'pending_Task3_approved_criteria')
+        self.assertNotIn('retain_increment',str(decision))
 
     def test_trajectory_keeps_unknown_history_and_nonadopters(self):
         rows=[row(i) for i in range(4)]
@@ -124,6 +149,52 @@ class DataTests(unittest.TestCase):
         p=run.prediction(r,result);self.assertTrue(p['finite']);self.assertEqual(p['method_status']['D']['status'],'unestimable')
         r['native_mean']=.7;result['finite']=False
         self.assertIsNone(run.prediction(r,result)['scores']['MATE_policy'])
+
+    def test_report_scalar_cache_stream(self):
+        self.report_fixture(48)
+
+    @unittest.skipUnless(__import__('os').environ.get('RQ1_REPORT_LOAD_ROWS'),'explicit report capacity fixture only')
+    def test_report_load_peak(self):
+        import os
+        self.report_fixture(int(os.environ['RQ1_REPORT_LOAD_ROWS']),os.environ.get('RQ1_REPORT_LOAD_EVIDENCE'))
+
+    def report_fixture(self,total,evidence=None):
+        import resource
+        import time
+        def rss_kib():
+            for line in Path('/proc/self/status').read_text().splitlines():
+                if line.startswith('VmRSS:'):return int(line.split()[1])
+        baseline=rss_kib();started=time.monotonic()
+        with tempfile.TemporaryDirectory() as d:
+            out=Path(d);jobs=[];n_written=0
+            # Three eval parents and both classes. Each split is loaded separately.
+            for split in ('cal','eval'):
+                for parent_index in range(3):
+                    for truth in (0,1):
+                        jid=split+str(parent_index)+str(truth);parent=split+str(parent_index)
+                        job=dict(job_id=jid,parent=parent,split=split,kind='clean' if truth else 'attack',family='clean' if truth else 'F1',attack_k=0 if truth else 1)
+                        jobs.append(job);n=total//12+(1 if len(jobs)<=total%12 else 0)
+                        with data.atomic_rows(out/'scores/main'/(jid+'.jsonl.gz')) as write:
+                            for i in range(n):
+                                r=row(i,truth,parent,job['family'],job['attack_k']);r.update(job_id=jid,key=[jid,i,i//80],id=i//80,epoch=0,split=split,common_group=False)
+                                r['scores']={m:float(2+i%3) if truth else float(-2-i%3) for m in run.METHODS};write(r)
+                        data.atomic_json(out/'jobs'/jid/'complete.json',dict(status='COMPLETE'))
+                        n_written+=n
+            data.atomic_json(out/'manifest.json',dict(jobs=jobs));data.atomic_json(out/'score.complete.json',dict(variants=[['main',10,.9]]))
+            data.atomic_json(out/'models.json',dict(models=dict(diagnostics={}),rho=0.,rho_fit={},method_status={}))
+            report_started=time.monotonic();run.report(out);report_seconds=time.monotonic()-report_started
+            self.assertEqual(sum(1 for _ in data.read_rows(out/'report/predictions.jsonl.gz')),total)
+            metrics=json.loads((out/'report/metrics.json').read_text());self.assertEqual(metrics['variants']['main']['metrics']['eval']['n_rows'],total//2)
+            self.assertNotIn('rows',metrics['variants']['main']['metrics']['eval']['trajectories']['J']['0'])
+            self.assertTrue((out/'report/epochs/main_eval.jsonl.gz').exists())
+        result=dict(rows=n_written,scalar_bytes_per_row=run._REPORT_DTYPE.itemsize,baseline_rss_kib=baseline,
+                    peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+                    peak_increment_mib=(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss-baseline)/1024,
+                    report_seconds=report_seconds,total_seconds=time.monotonic()-started,
+                    scope='synthetic full main report, SQLite ingest, independent calibration, split metrics, epoch details, bootstrap, streamed predictions/cases and PNG; no native/fit/score')
+        if evidence:data.atomic_json(Path(evidence),result)
+        print('report load evidence',json.dumps(result),flush=True)
+        self.assertLess(result['peak_increment_mib'],300)
 
     def test_small_pipeline(self):
         with tempfile.TemporaryDirectory() as d:
@@ -201,6 +272,42 @@ class LabelFixtureTests(unittest.TestCase):
             # An unseen central epoch in the stopped interval may not inherit false identity.
             stopped=list(native_adapter.attach_labels(events[40:60],scans,job,attack))
             self.assertTrue(all(r['query_truth']==-1 for r in stopped))
+
+    def test_entity_coverage_includes_absence_ambiguity_and_newborn(self):
+        import importlib.util
+        spec=importlib.util.spec_from_file_location('fixture_coverage_recording',native_adapter.OLD/'recording_inputs.py')
+        recording=importlib.util.module_from_spec(spec);spec.loader.exec_module(recording)
+        target=native_adapter.entity_box([12,0,.8]);near=native_adapter.entity_box([14,0,.8],role='occluder');far=native_adapter.entity_box([25,0,.8],role='occluder')
+        attack=dict(entities=[[target,near] if i==20 else [target,far] for i in range(80)],normal_source=2)
+        job=dict(job_id='fixture',parent='p',kind='attack',family='F3',attack_k=1,split='cal');events=[];scans=[]
+        for i in range(20,26):
+            ground=dict(available=True,boxes=[])
+            if i==23:ground['boxes']=[dict(target,gt_id=7)]
+            scans.append(dict(frame=i,index=i,gt=ground,echo={}))
+            if i==21:continue
+            r=row(i,0);r.update(job_id='fixture',key=['fixture',i,1],query_geometry=dict(target,id=1),output_geometry=dict(target,id=1))
+            if i in (22,25):r.update(query_present=False,newborn=True,query_geometry=None)
+            events.append(r)
+        coverage=[]
+        with mock.patch.object(native_adapter,'imports',return_value=(None,None,recording,None)):
+            labelled=list(native_adapter.attach_labels(events,scans,job,attack,coverage_writer=coverage.append))
+        target_records={r['index']:r for r in coverage if r['role']=='target'}
+        self.assertTrue(target_records[21]['no_query']);self.assertFalse(target_records[21]['output_present'])
+        self.assertTrue(target_records[20]['query_role_conflict']);self.assertTrue(target_records[20]['query_label_unknown'])
+        self.assertTrue(target_records[23]['query_gt_compatible']);self.assertTrue(target_records[23]['query_label_unknown'])
+        self.assertTrue(target_records[25]['output_definite_false']);self.assertTrue(target_records[25]['no_query'])
+        summary=native_adapter.coverage_summary(coverage)
+        self.assertEqual(summary['target']['active']['frames'],6)
+        self.assertEqual(summary['target']['active']['no_query'],3)
+        self.assertEqual(len(labelled),5)
+        with tempfile.TemporaryDirectory() as d:
+            out=Path(d);jobs=[dict(job_id='valid',family='F3',attack_k=1,kind='attack'),dict(job_id='failed',family='F3',attack_k=1,kind='attack')]
+            data.atomic_json(out/'jobs/valid/complete.json',dict(status='COMPLETE',attack_constructed=True,entity_coverage=summary))
+            data.atomic_json(out/'jobs/failed/complete.json',dict(status='UNREALIZABLE'))
+            combined=run.attack_coverage(out,dict(jobs=jobs))['F3/1']
+            self.assertEqual((combined['attempted'],combined['UNREALIZABLE'],combined['injected_tasks']),(2,1,1))
+            self.assertEqual(combined['entities']['target']['active']['no_query'],3)
+            self.assertEqual(combined['entities']['target']['active']['query_label_unknown'],2)
 
     def test_injection_schedule(self):
         target=native_adapter.entity_box([12,0,.8]);oc=native_adapter.entity_box([6,0,.8],role='occluder')

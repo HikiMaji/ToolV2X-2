@@ -1,0 +1,10 @@
+{
+  "rows": 150000,
+  "scalar_bytes_per_row": 217,
+  "baseline_rss_kib": 57408,
+  "peak_rss_kib": 243908,
+  "peak_increment_mib": 182.12890625,
+  "report_seconds": 123.58643567282706,
+  "total_seconds": 165.93779113143682,
+  "scope": "synthetic full main report, SQLite ingest, independent calibration, split metrics, epoch details, bootstrap, streamed predictions/cases and PNG; no native/fit/score"
+}

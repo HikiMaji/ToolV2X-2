@@ -56,3 +56,48 @@ prepare内部仅原生适配使用已存在的Python3.10 CPU runtime，主CLI与
 - 最终方法裁决自审另确认joint相对G的明确判断收益也须通过J的两类开发风险预算。
 
 代码提交待本报告同批提交。独立审核未执行，正式研究批次未执行。
+
+## 独立审核集中修复 round 1
+
+2026-11-12。根据独立审核`data_code_review.md`的五项阻塞/结果缺口集中修复。审核原文已复制到本工作树`docs/REALLY_MAYBE/rq1_temporal_2026_11_12/data_code_review.md`。未改kernel.py、fit.py、几何或原生跟踪/消息算法，没有正式prepare或新攻击运行。
+
+1. report改为SQLite保存磁盘payload和217字节的固定数值记录。仅一个variant的一个split加载到NumPy数组。cal门限、六格和权重使用数值列。主predictions和案例候选逐行读取磁盘，案例候选最多48条。每variant/split的epoch明细直接写`report/epochs/*.jsonl.gz`，metrics只保留轨迹汇总。敏感性不重复保留主结果全量Python对象。SQLite是标准库，不增加框架。
+2. cal同时累计正确类别的分级加权质量，在总体及非空family/k错误预算内最大化正确质量。平手保持更严格的A或R，关闭分支是零正确质量下的最保守候选。未知标签、辅助框和无资格行不提供门限放宽理由。ties整体、共同主类分母和0分未知保留。
+3. 增加family/k联合六格，各类保留父/epoch/时刻数量，同时标记该层在cal是否有主假标签。原family、k、每父等边际分层保留。
+4. 删除自动retain_increment及新加的NLL强制门槛。method_decisions现在只给同政策观察差异、方法可估状态和`pending_Task3_approved_criteria`，包括family/k假采纳差异、真采纳差异及已采纳延迟中位数差异。Task3仍须按批准标准结合未采纳轨迹和分层风险裁决。
+5. 离线标签阶段即使某帧没有任何中央事件，也对冻结target/occluder写紧凑实体覆盖行。逐实体、逐帧分别保存pre/active/stopped阶段的query/output出现、明确假、GT相容、角色冲突、标签未知及无query，另保留对应候选数量。主六格不插入不存在的query。每任务complete保存覆盖汇总，report按family/k报告尝试、UNREALIZABLE、成功注入、无target query及标签未知覆盖。旧F0未有该实体覆盖表，显式记录not_available_for_all_tasks和legacy_injection_unverified，不把缺测填零。
+
+正常首次标签写入与实体覆盖同次离线遍历。只有中断后的纯标签边界恢复会重读既有online产物，不重跑tracking。score增加每job/variant完成日志，保留既有每job汇总；核心OOF未改。
+
+### 新定点证据
+
+只运行本轮指定定点检查，没有重跑原生fixture或26项全套。
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest \
+  scripts.rq1_temporal.test_data.DataTests.test_conservative_correct_quality_tie \
+  scripts.rq1_temporal.test_data.DataTests.test_calibration_matches_bruteforce \
+  scripts.rq1_temporal.test_data.DataTests.test_calibration_ties_and_common_denominator \
+  scripts.rq1_temporal.test_data.DataTests.test_family_k_joint_and_pending_decision \
+  scripts.rq1_temporal.test_data.LabelFixtureTests.test_entity_coverage_includes_absence_ambiguity_and_newborn \
+  scripts.rq1_temporal.test_data.DataTests.test_report_scalar_cache_stream -v
+```
+
+6项通过，2.542秒。三行审查反例现在为A=3、R=-2，eval假分数0.5保持未知。穷举对照已改为同一正确质量最大和保守平手目标。联合分层核对了cal缺层、父/epoch/时刻分母。覆盖fixture核对了无query帧、仅output新生、GT相容及角色歧义，并核对尝试2、UNREALIZABLE 1、实际注入1的汇总。
+
+### 一次15万行report容量验证
+
+```bash
+RQ1_REPORT_LOAD_ROWS=150000 \
+RQ1_REPORT_LOAD_EVIDENCE=/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/docs/REALLY_MAYBE/rq1_temporal_2026_11_12/report_load_peak.json \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+python -m unittest scripts.rq1_temporal.test_data.DataTests.test_report_load_peak -v
+```
+
+1项通过，165.940秒。只执行了一次15万行容量验证。输入为合成评分记录，cal和eval各75,000行，有三个eval父。完整main report覆盖SQLite接入、cal、全部split统计、epoch明细、bootstrap、流式predictions/cases及PNG。固定标量记录每行217字节。进程基线RSS 57,408 KiB，`RUSAGE_SELF.ru_maxrss`为243,908 KiB，基线到进程总峰值的保守增量上界为182.129 MiB，低于300 MiB。原始证据在`report_load_peak.json`。此值包含导入和PNG，不把它解释为模型本身的内存峰值，也没有据此声称真实prepare/native资源峰值已测。
+
+大容量路径之后，身份分组键由保留整行stride的结构视图改为三个整数的紧凑数组，并补了方法分数可用量和覆盖候选数量。217字节布局及阶段结构保持；最终6个定点检查覆盖这些小改动，没有追加第二次15万行运行。
+
+### 运行时间边界
+
+当前CPU配额为0.5核。既有120行五variant评分fixture约16.19秒，若仅作线性外推，15万行评分约5.6小时。这不是实际批次耗时保证。4/5源前向状态数、窗口长度和缺失情况会改变速度，另有PCD/FOV、tracking和OOF拟合。主会话应根据首个真实job/variant速度更新耗时判断。此次完整15万行report约123.586秒，其余42秒用于合成输入和临时目录清理。没有开多进程或线程加速，没有把启动后台任务当完成。

@@ -323,12 +323,18 @@ def replay_online(job, spec, public_scans, attack=None):
         previous=list(central)
 
 
-def attach_labels(events, scans, job, attack=None, diagnostics=None):
-    _,_,recording,_=imports(); byframe={s['frame']:s for s in scans}; seen=defaultdict(set)
+def attach_labels(events, scans, job, attack=None, diagnostics=None, coverage_writer=None):
+    _,_,recording,_=imports(); seen=defaultdict(set)
     # Frame grouping retains one-to-one matches separately for query and output.
     import itertools
-    for frame,group in itertools.groupby(data.assign_epochs(events),key=lambda r:r['frame']):
-        rows=list(group); scan=byframe[frame]; ground=scan['gt']; index=scan['index']; values={}
+    grouped=iter(itertools.groupby(data.assign_epochs(events),key=lambda r:r['frame']));current=next(grouped,None)
+    for scan in scans:
+        frame=scan['frame'];rows=[]
+        if current is not None and current[0]<frame:
+            raise ValueError('event without matching scan')
+        if current is not None and current[0]==frame:
+            rows=list(current[1]);current=next(grouped,None)
+        ground=scan['gt']; index=scan['index']; values={}
         for side in ('query','output'):
             candidates=[r for r in rows if r.get(side+'_geometry') is not None]
             labels=recording.associate_gt([r[side+'_geometry'] for r in candidates],ground['boxes'],ground['available'])
@@ -376,7 +382,35 @@ def attach_labels(events, scans, job, attack=None, diagnostics=None):
                         diagnostics['public_occlusion_frames'].add(frame)
             gid=row['query_gt_id']; echo=scan['echo']
             row['Z']=[int(echo[str(sid)][str(gid)]>0) if gid is not None and str(sid) in echo and str(gid) in echo[str(sid)] else -1 for sid in row['source_ids']]
+        if coverage_writer is not None and attack is not None and index<80:
+            for entity in attack['entities'][index]:
+                role=entity['role'];start=15 if role=='occluder' else 20
+                phase='pre' if index<start else 'active' if index<60 else 'stopped'
+                record=dict(job_id=job['job_id'],frame=frame,index=index,role=role,phase=phase,injected=phase=='active',gt_available=ground['available'])
+                for side in ('query','output'):
+                    matching=[r for r in rows if r.get(side+'_geometry') is not None and compatible(r[side+'_geometry'],entity,recording)]
+                    explicit=[r for r in matching if r.get(side+'_truth')==0 and values.get((r['id'],side),{}).get('role')==role]
+                    conflict=[r for r in matching if 'ROLE' in r.get('query_label_reason','') or sum(compatible(r[side+'_geometry'],e,recording) for e in attack['entities'][index])>1]
+                    record.update({side+'_count':len(matching),side+'_present':bool(matching),side+'_definite_false':bool(explicit),
+                        side+'_gt_compatible':any(values.get((r['id'],side),{}).get('any_gt_compatible') is True for r in matching),
+                        side+'_role_conflict':bool(conflict),side+'_role_conflict_count':len(conflict),
+                        side+'_definite_false_count':len(explicit),side+'_label_unknown':len(matching)>len(explicit),side+'_label_unknown_count':len(matching)-len(explicit)})
+                record['no_query']=not record['query_present'];coverage_writer(record)
+        for row in rows:
             yield data.compact(row)
+    if current is not None:
+        raise ValueError('extra event frame')
+
+
+def coverage_summary(records):
+    summary={}
+    for record in records:
+        group=summary.setdefault(record['role'],{}).setdefault(record['phase'],Counter())
+        group['frames']+=1
+        for key,value in record.items():
+            if key not in ('job_id','frame','index','role','phase'):
+                group[key]+=int(value)
+    return {role:{phase:dict(counts) for phase,counts in phases.items()} for role,phases in summary.items()}
 
 
 def prepare(out):
@@ -433,22 +467,30 @@ def prepare(out):
                         for event in replay_online(job,parent_spec,public,attack):
                             write(event)
                 n=0;counts=Counter();diagnostics=Counter();diagnostics['public_occlusion_frames']=set()
+                coverage_path=dest/'entity_coverage.jsonl.gz';coverage={};coverage_written=False
                 if (dest/'rows.jsonl.gz').exists():
                     for row in data.read_rows(dest/'rows.jsonl.gz'):
                         n+=1;counts['query_truth_'+str(row['query_truth'])]+=1
                 else:
-                    with data.atomic_rows(dest/'rows.jsonl.gz') as write:
-                        for row in attach_labels(data.read_rows(online_path),used,job,attack,diagnostics):
+                    from contextlib import ExitStack
+                    with ExitStack() as stack:
+                        write=stack.enter_context(data.atomic_rows(dest/'rows.jsonl.gz'))
+                        coverage_write=stack.enter_context(data.atomic_rows(coverage_path)) if attack is not None and not coverage_path.exists() else None
+                        for row in attach_labels(data.read_rows(online_path),used,job,attack,diagnostics,coverage_write):
                             write(row);n+=1;counts['query_truth_'+str(row['query_truth'])]+=1
-                if job['family']=='F3':
-                    # Reconstruct bounded diagnostics after an interrupted pure label stage.
-                    if (dest/'rows.jsonl.gz').exists() and n and not diagnostics.get('target_query_rows'):
-                        for _ in attach_labels(data.read_rows(online_path),used,job,attack,diagnostics):
-                            pass
+                        coverage_written=coverage_write is not None
+                if attack is not None:
+                    if not coverage_path.exists():
+                        # Recover an interrupted pure label boundary, without replay.
+                        with data.atomic_rows(coverage_path) as coverage_write:
+                            for _ in attach_labels(data.read_rows(online_path),used,job,attack,diagnostics,coverage_write):pass
+                    elif not coverage_written and job['family']=='F3':
+                        for _ in attach_labels(data.read_rows(online_path),used,job,attack,diagnostics):pass
+                    coverage=coverage_summary(data.read_rows(coverage_path))
                 occlusion_frames=len(diagnostics.pop('public_occlusion_frames'))
                 diagnostics['public_occlusion_frames']=occlusion_frames
                 data.atomic_json(complete,dict(status='COMPLETE',rows=n,counts=dict(counts),origin='native',attack_constructed=attack is not None,
-                                 actual_construction=dict(diagnostics),
+                                 actual_construction=dict(diagnostics),entity_coverage=coverage,
                                  F3_public_blocking_effective=None if job['family']!='F3' else bool(occlusion_frames)))
                 print('prepared',job['job_id'],n,flush=True)
             except Exception as exc:
