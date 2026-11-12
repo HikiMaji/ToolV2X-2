@@ -1,0 +1,7006 @@
+{
+  "status": "PASS",
+  "mismatch_count": 0,
+  "first_mismatches": [],
+  "recounted": {
+    "cal": {
+      "system_query": {
+        "D": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 4640,
+              "unknown": 8684,
+              "reject": 636
+            },
+            "raw": {
+              "accept": 0.332378223495702,
+              "unknown": 0.6220630372492837,
+              "reject": 0.04555873925501433
+            },
+            "weighted": {
+              "accept": 0.3116516665111227,
+              "unknown": 0.6388168389520555,
+              "reject": 0.049531494536821735
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 194,
+              "reject": 1157
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.14349112426035504,
+              "reject": 0.8557692307692307
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.12230750487329434,
+              "reject": 0.87213693957115
+            }
+          },
+          "correct_definite": 0.5918943030411363
+        },
+        "B": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 4886,
+              "unknown": 8476,
+              "reject": 598
+            },
+            "raw": {
+              "accept": 0.35,
+              "unknown": 0.6071633237822349,
+              "reject": 0.042836676217765046
+            },
+            "weighted": {
+              "accept": 0.3378460569752918,
+              "unknown": 0.6122107018215388,
+              "reject": 0.04994324120316941
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 284,
+              "reject": 1067
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.21005917159763313,
+              "reject": 0.7892011834319527
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.16373419871226888,
+              "reject": 0.8307102457321756
+            }
+          },
+          "correct_definite": 0.5842781513537336
+        },
+        "C": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 4886,
+              "unknown": 8476,
+              "reject": 598
+            },
+            "raw": {
+              "accept": 0.35,
+              "unknown": 0.6071633237822349,
+              "reject": 0.042836676217765046
+            },
+            "weighted": {
+              "accept": 0.3378460569752918,
+              "unknown": 0.6122107018215388,
+              "reject": 0.04994324120316941
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 284,
+              "reject": 1067
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.21005917159763313,
+              "reject": 0.7892011834319527
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.16373419871226888,
+              "reject": 0.8307102457321756
+            }
+          },
+          "correct_definite": 0.5842781513537336
+        },
+        "T": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 6133,
+              "unknown": 7200,
+              "reject": 627
+            },
+            "raw": {
+              "accept": 0.43932664756446993,
+              "unknown": 0.5157593123209169,
+              "reject": 0.04491404011461318
+            },
+            "weighted": {
+              "accept": 0.423323547347653,
+              "unknown": 0.5272101919757739,
+              "reject": 0.04946626067657321
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 217,
+              "reject": 1134
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.16050295857988164,
+              "reject": 0.8387573964497042
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.11914540138224348,
+              "reject": 0.875299043062201
+            }
+          },
+          "correct_definite": 0.6493112952049269
+        },
+        "J": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 6176,
+              "unknown": 7147,
+              "reject": 637
+            },
+            "raw": {
+              "accept": 0.44240687679083096,
+              "unknown": 0.5119627507163323,
+              "reject": 0.04563037249283668
+            },
+            "weighted": {
+              "accept": 0.4258887372201385,
+              "unknown": 0.5242286785662541,
+              "reject": 0.049882584213607355
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 216,
+              "reject": 1135
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.15976331360946747,
+              "reject": 0.8394970414201184
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.11895250014767558,
+              "reject": 0.8754919442967688
+            }
+          },
+          "correct_definite": 0.6506903407584537
+        },
+        "Jind": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 6143,
+              "unknown": 7232,
+              "reject": 585
+            },
+            "raw": {
+              "accept": 0.4400429799426934,
+              "unknown": 0.5180515759312321,
+              "reject": 0.0419054441260745
+            },
+            "weighted": {
+              "accept": 0.4238688402149912,
+              "unknown": 0.5274526950219505,
+              "reject": 0.0486784647630583
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 219,
+              "reject": 1132
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.16198224852071005,
+              "reject": 0.8372781065088757
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.1195662768031189,
+              "reject": 0.8748781676413255
+            }
+          },
+          "correct_definite": 0.6493735039281584
+        },
+        "G": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 6064,
+              "unknown": 7250,
+              "reject": 646
+            },
+            "raw": {
+              "accept": 0.4343839541547278,
+              "unknown": 0.5193409742120344,
+              "reject": 0.046275071633237824
+            },
+            "weighted": {
+              "accept": 0.41889916212898637,
+              "unknown": 0.5311134029716079,
+              "reject": 0.04998743489940575
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 1,
+              "unknown": 201,
+              "reject": 1150
+            },
+            "raw": {
+              "accept": 0.0007396449704142012,
+              "unknown": 0.14866863905325445,
+              "reject": 0.8505917159763313
+            },
+            "weighted": {
+              "accept": 0.005555555555555556,
+              "unknown": 0.11594674818359028,
+              "reject": 0.8784976962608542
+            }
+          },
+          "correct_definite": 0.6486984291949203
+        },
+        "MATE_policy": {
+          "true": {
+            "n": 13960,
+            "parents": 5,
+            "epochs": 142,
+            "counts": {
+              "accept": 8813,
+              "unknown": 4977,
+              "reject": 170
+            },
+            "raw": {
+              "accept": 0.6313037249283667,
+              "unknown": 0.3565186246418338,
+              "reject": 0.012177650429799427
+            },
+            "weighted": {
+              "accept": 0.6031808022213132,
+              "unknown": 0.3782102090853263,
+              "reject": 0.018608988693360445
+            }
+          },
+          "false": {
+            "n": 1352,
+            "parents": 5,
+            "epochs": 26,
+            "counts": {
+              "accept": 0,
+              "unknown": 276,
+              "reject": 1076
+            },
+            "raw": {
+              "accept": 0.0,
+              "unknown": 0.20414201183431951,
+              "reject": 0.7958579881656804
+            },
+            "weighted": {
+              "accept": 0.0,
+              "unknown": 0.6126227553310887,
+              "reject": 0.3873772446689113
+            }
+          },
+          "correct_definite": 0.49527902344511227
+        }
+      },
+      "family_k": {
+        "F0/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 184,
+                "reject": 1060
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.14790996784565916,
+                "reject": 0.8520900321543409
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.14385521885521885,
+                "reject": 0.8561447811447811
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 271,
+                "reject": 973
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21784565916398713,
+                "reject": 0.7821543408360129
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21198092031425364,
+                "reject": 0.7880190796857464
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 271,
+                "reject": 973
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21784565916398713,
+                "reject": 0.7821543408360129
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21198092031425364,
+                "reject": 0.7880190796857464
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 207,
+                "reject": 1037
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.16639871382636656,
+                "reject": 0.8336012861736335
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1616161616161616,
+                "reject": 0.8383838383838383
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 206,
+                "reject": 1038
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.16559485530546625,
+                "reject": 0.8344051446945338
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.16084455667789,
+                "reject": 0.83915544332211
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 209,
+                "reject": 1035
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.1680064308681672,
+                "reject": 0.8319935691318328
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1632996632996633,
+                "reject": 0.8367003367003366
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 191,
+                "reject": 1053
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.1535369774919614,
+                "reject": 0.8464630225080386
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.14882154882154883,
+                "reject": 0.8511784511784513
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 1244,
+              "parents": 4,
+              "epochs": 23,
+              "counts": {
+                "accept": 0,
+                "unknown": 199,
+                "reject": 1045
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.159967845659164,
+                "reject": 0.840032154340836
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1550364758698092,
+                "reject": 0.8449635241301908
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/2": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09090909090909091,
+                "reject": 0.9090909090909091
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09090909090909091,
+                "reject": 0.9090909090909091
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09090909090909091,
+                "reject": 0.9090909090909091
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09090909090909091,
+                "reject": 0.9090909090909091
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 13,
+                "reject": 31
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.29545454545454547,
+                "reject": 0.7045454545454546
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.29545454545454547,
+                "reject": 0.7045454545454546
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/3": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.06666666666666667,
+                "reject": 0.9111111111111111
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.06666666666666667,
+                "reject": 0.9111111111111111
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 45,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F2/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F2/3": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 15
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.2631578947368421,
+                "reject": 0.7368421052631579
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.2631578947368421,
+                "reject": 0.7368421052631579
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.2631578947368421,
+                "reject": 0.7368421052631579
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.2631578947368421,
+                "reject": 0.7368421052631579
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.15789473684210525,
+                "reject": 0.8421052631578947
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 19,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "clean/0": {
+          "D": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 4640,
+                "unknown": 8684,
+                "reject": 636
+              },
+              "raw": {
+                "accept": 0.332378223495702,
+                "unknown": 0.6220630372492837,
+                "reject": 0.04555873925501433
+              },
+              "weighted": {
+                "accept": 0.3116516665111227,
+                "unknown": 0.6388168389520555,
+                "reject": 0.049531494536821735
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 4886,
+                "unknown": 8476,
+                "reject": 598
+              },
+              "raw": {
+                "accept": 0.35,
+                "unknown": 0.6071633237822349,
+                "reject": 0.042836676217765046
+              },
+              "weighted": {
+                "accept": 0.3378460569752918,
+                "unknown": 0.6122107018215388,
+                "reject": 0.04994324120316941
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 4886,
+                "unknown": 8476,
+                "reject": 598
+              },
+              "raw": {
+                "accept": 0.35,
+                "unknown": 0.6071633237822349,
+                "reject": 0.042836676217765046
+              },
+              "weighted": {
+                "accept": 0.3378460569752918,
+                "unknown": 0.6122107018215388,
+                "reject": 0.04994324120316941
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 6133,
+                "unknown": 7200,
+                "reject": 627
+              },
+              "raw": {
+                "accept": 0.43932664756446993,
+                "unknown": 0.5157593123209169,
+                "reject": 0.04491404011461318
+              },
+              "weighted": {
+                "accept": 0.423323547347653,
+                "unknown": 0.5272101919757739,
+                "reject": 0.04946626067657321
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 6176,
+                "unknown": 7147,
+                "reject": 637
+              },
+              "raw": {
+                "accept": 0.44240687679083096,
+                "unknown": 0.5119627507163323,
+                "reject": 0.04563037249283668
+              },
+              "weighted": {
+                "accept": 0.4258887372201385,
+                "unknown": 0.5242286785662541,
+                "reject": 0.049882584213607355
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 6143,
+                "unknown": 7232,
+                "reject": 585
+              },
+              "raw": {
+                "accept": 0.4400429799426934,
+                "unknown": 0.5180515759312321,
+                "reject": 0.0419054441260745
+              },
+              "weighted": {
+                "accept": 0.4238688402149912,
+                "unknown": 0.5274526950219505,
+                "reject": 0.0486784647630583
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 6064,
+                "unknown": 7250,
+                "reject": 646
+              },
+              "raw": {
+                "accept": 0.4343839541547278,
+                "unknown": 0.5193409742120344,
+                "reject": 0.046275071633237824
+              },
+              "weighted": {
+                "accept": 0.41889916212898637,
+                "unknown": 0.5311134029716079,
+                "reject": 0.04998743489940575
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8813,
+                "unknown": 4977,
+                "reject": 170
+              },
+              "raw": {
+                "accept": 0.6313037249283667,
+                "unknown": 0.3565186246418338,
+                "reject": 0.012177650429799427
+              },
+              "weighted": {
+                "accept": 0.6031808022213132,
+                "unknown": 0.3782102090853263,
+                "reject": 0.018608988693360445
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        }
+      },
+      "trajectories": {
+        "D": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "B": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "C": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "T": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "J": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "Jind": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "G": {
+          "0": {
+            "n": 26,
+            "n_accepted": 1,
+            "never_accepted": 25,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 110,
+            "never_accepted": 32,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "MATE_policy": {
+          "0": {
+            "n": 26,
+            "n_accepted": 0,
+            "never_accepted": 26,
+            "accepted_delay_median": null,
+            "ever_false_accept": 0
+          },
+          "1": {
+            "n": 142,
+            "n_accepted": 108,
+            "never_accepted": 34,
+            "accepted_delay_median": 0.04999999999999982,
+            "ever_false_accept": null
+          }
+        }
+      },
+      "diagnostics": {
+        "n_rows": 73553,
+        "numeric_failure": 0,
+        "unknown_labels": 12774,
+        "failure_reasons": {},
+        "n_finite": {
+          "D": 73553,
+          "B": 73553,
+          "C": 73553,
+          "T": 73553,
+          "J": 73553,
+          "Jind": 73553,
+          "G": 73553,
+          "MATE_policy": 73342
+        },
+        "statuses": {
+          "D": {
+            "ok": 73553
+          },
+          "B": {
+            "ok": 73553
+          },
+          "C": {
+            "ok": 73553
+          },
+          "T": {
+            "ok": 73553
+          },
+          "J": {
+            "ok": 73553
+          },
+          "Jind": {
+            "ok": 73553
+          },
+          "G": {
+            "ok": 73553
+          },
+          "MATE_policy": {
+            "ok": 73342,
+            "unavailable": 211
+          }
+        }
+      }
+    },
+    "eval": {
+      "system_query": {
+        "D": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 2366,
+              "unknown": 3829,
+              "reject": 324
+            },
+            "raw": {
+              "accept": 0.3629391010891241,
+              "unknown": 0.5873600245436417,
+              "reject": 0.049700874367234235
+            },
+            "weighted": {
+              "accept": 0.316248015014742,
+              "unknown": 0.6467618729459503,
+              "reject": 0.03699011203930767
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 67,
+              "reject": 463
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.12617702448210924,
+              "reject": 0.871939736346516
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.14852854013868225,
+              "reject": 0.847767756157614
+            }
+          },
+          "correct_definite": 0.582007885586178
+        },
+        "B": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 2658,
+              "unknown": 3534,
+              "reject": 327
+            },
+            "raw": {
+              "accept": 0.407731247123792,
+              "unknown": 0.5421076852277956,
+              "reject": 0.050161067648412334
+            },
+            "weighted": {
+              "accept": 0.34163076833246864,
+              "unknown": 0.6202701926703766,
+              "reject": 0.03809903899715463
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 135,
+              "reject": 395
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.2542372881355932,
+              "reject": 0.743879472693032
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.2503066572268769,
+              "reject": 0.7459896390694194
+            }
+          },
+          "correct_definite": 0.543810203700944
+        },
+        "C": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 2658,
+              "unknown": 3534,
+              "reject": 327
+            },
+            "raw": {
+              "accept": 0.407731247123792,
+              "unknown": 0.5421076852277956,
+              "reject": 0.050161067648412334
+            },
+            "weighted": {
+              "accept": 0.34163076833246864,
+              "unknown": 0.6202701926703766,
+              "reject": 0.03809903899715463
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 135,
+              "reject": 395
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.2542372881355932,
+              "reject": 0.743879472693032
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.2503066572268769,
+              "reject": 0.7459896390694194
+            }
+          },
+          "correct_definite": 0.543810203700944
+        },
+        "T": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 3149,
+              "unknown": 2966,
+              "reject": 404
+            },
+            "raw": {
+              "accept": 0.48304954747660683,
+              "unknown": 0.45497775732474305,
+              "reject": 0.0619726951986501
+            },
+            "weighted": {
+              "accept": 0.40185369591021775,
+              "unknown": 0.5508170443031801,
+              "reject": 0.047329259786602185
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 109,
+              "reject": 421
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.20527306967984935,
+              "reject": 0.7928436911487758
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.22241389998172945,
+              "reject": 0.7738823963145669
+            }
+          },
+          "correct_definite": 0.5878680461123923
+        },
+        "J": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 3167,
+              "unknown": 2935,
+              "reject": 417
+            },
+            "raw": {
+              "accept": 0.4858107071636754,
+              "unknown": 0.4502224267525694,
+              "reject": 0.06396686608375518
+            },
+            "weighted": {
+              "accept": 0.4043094781891689,
+              "unknown": 0.5467788087832716,
+              "reject": 0.048911713027559645
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 107,
+              "reject": 423
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.2015065913370998,
+              "reject": 0.7966101694915254
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.2119972333150628,
+              "reject": 0.7842990629812335
+            }
+          },
+          "correct_definite": 0.5943042705852012
+        },
+        "Jind": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 3150,
+              "unknown": 3000,
+              "reject": 369
+            },
+            "raw": {
+              "accept": 0.4832029452369995,
+              "unknown": 0.4601932811780948,
+              "reject": 0.05660377358490566
+            },
+            "weighted": {
+              "accept": 0.4019358786847082,
+              "unknown": 0.5546225503699053,
+              "reject": 0.0434415709453865
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 119,
+              "reject": 411
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.224105461393597,
+              "reject": 0.7740112994350282
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.23419297409930484,
+              "reject": 0.7621033221969915
+            }
+          },
+          "correct_definite": 0.5820196004408499
+        },
+        "G": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 3070,
+              "unknown": 3060,
+              "reject": 389
+            },
+            "raw": {
+              "accept": 0.47093112440558366,
+              "unknown": 0.4693971468016567,
+              "reject": 0.05967172879275963
+            },
+            "weighted": {
+              "accept": 0.39302612575359525,
+              "unknown": 0.5596501088041124,
+              "reject": 0.04732376544229234
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 1,
+              "unknown": 102,
+              "reject": 428
+            },
+            "raw": {
+              "accept": 0.0018832391713747645,
+              "unknown": 0.192090395480226,
+              "reject": 0.8060263653483992
+            },
+            "weighted": {
+              "accept": 0.003703703703703704,
+              "unknown": 0.21608703855958378,
+              "reject": 0.7802092577367126
+            }
+          },
+          "correct_definite": 0.5866176917451539
+        },
+        "MATE_policy": {
+          "true": {
+            "n": 6519,
+            "parents": 3,
+            "epochs": 99,
+            "counts": {
+              "accept": 4827,
+              "unknown": 1675,
+              "reject": 17
+            },
+            "raw": {
+              "accept": 0.7404509894155545,
+              "unknown": 0.25694124865776957,
+              "reject": 0.0026077619266758707
+            },
+            "weighted": {
+              "accept": 0.6060694335201862,
+              "unknown": 0.3900451558887028,
+              "reject": 0.0038854105911109884
+            }
+          },
+          "false": {
+            "n": 531,
+            "parents": 3,
+            "epochs": 11,
+            "counts": {
+              "accept": 0,
+              "unknown": 241,
+              "reject": 290
+            },
+            "raw": {
+              "accept": 0.0,
+              "unknown": 0.4538606403013183,
+              "reject": 0.5461393596986818
+            },
+            "weighted": {
+              "accept": 0.0,
+              "unknown": 0.6628254987428114,
+              "reject": 0.33717450125718856
+            }
+          },
+          "correct_definite": 0.47162196738868734
+        }
+      },
+      "family_k": {
+        "F0/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 34,
+                "reject": 290
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.10493827160493827,
+                "reject": 0.8950617283950617
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.10493827160493825,
+                "reject": 0.8950617283950617
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 82,
+                "reject": 242
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.25308641975308643,
+                "reject": 0.7469135802469136
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.2530864197530864,
+                "reject": 0.7469135802469137
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 82,
+                "reject": 242
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.25308641975308643,
+                "reject": 0.7469135802469136
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.2530864197530864,
+                "reject": 0.7469135802469137
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 60,
+                "reject": 264
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.18518518518518517,
+                "reject": 0.8148148148148148
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1851851851851852,
+                "reject": 0.8148148148148149
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 60,
+                "reject": 264
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.18518518518518517,
+                "reject": 0.8148148148148148
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1851851851851852,
+                "reject": 0.8148148148148149
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 68,
+                "reject": 256
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.20987654320987653,
+                "reject": 0.7901234567901234
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.20987654320987656,
+                "reject": 0.7901234567901234
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 55,
+                "reject": 269
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.1697530864197531,
+                "reject": 0.8302469135802469
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.16975308641975306,
+                "reject": 0.8302469135802469
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 324,
+              "parents": 1,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 91,
+                "reject": 233
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.2808641975308642,
+                "reject": 0.7191358024691358
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.28086419753086417,
+                "reject": 0.7191358024691358
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 19,
+                "reject": 24
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.4418604651162791,
+                "reject": 0.5581395348837209
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.4418604651162791,
+                "reject": 0.5581395348837209
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 36,
+                "reject": 7
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 36,
+                "reject": 7
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 35,
+                "reject": 8
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.813953488372093,
+                "reject": 0.18604651162790697
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.813953488372093,
+                "reject": 0.18604651162790697
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 35,
+                "reject": 8
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.813953488372093,
+                "reject": 0.18604651162790697
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.813953488372093,
+                "reject": 0.18604651162790697
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 36,
+                "reject": 7
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.8372093023255814,
+                "reject": 0.16279069767441862
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 31,
+                "reject": 12
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.7209302325581395,
+                "reject": 0.27906976744186046
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.7209302325581395,
+                "reject": 0.27906976744186046
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 41,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.9534883720930233,
+                "reject": 0.046511627906976744
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.9534883720930233,
+                "reject": 0.046511627906976744
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/2": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 42
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 42
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 42
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 42
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9545454545454546
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 44,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 41
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.06818181818181818,
+                "reject": 0.9318181818181818
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F1/3": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 4,
+                "reject": 40
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.08888888888888889,
+                "reject": 0.8888888888888888
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 6,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.13333333333333333,
+                "reject": 0.8444444444444444
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.13333333333333333,
+                "reject": 0.8444444444444444
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 6,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.13333333333333333,
+                "reject": 0.8444444444444444
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.13333333333333333,
+                "reject": 0.8444444444444444
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 5,
+                "reject": 39
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 5,
+                "reject": 39
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 5,
+                "reject": 39
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 1,
+                "unknown": 5,
+                "reject": 39
+              },
+              "raw": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              },
+              "weighted": {
+                "accept": 0.022222222222222223,
+                "unknown": 0.1111111111111111,
+                "reject": 0.8666666666666667
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 45,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 45,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F2/1": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F2/2": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 38
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.11627906976744186,
+                "reject": 0.8837209302325582
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 39
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09302325581395349,
+                "reject": 0.9069767441860465
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09302325581395349,
+                "reject": 0.9069767441860465
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 43,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 29,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.6744186046511628,
+                "reject": 0.32558139534883723
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.6744186046511628,
+                "reject": 0.32558139534883723
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "F2/3": {
+          "D": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 29
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 29
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 3,
+                "reject": 29
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.09375,
+                "reject": 0.90625
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 30
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0625,
+                "reject": 0.9375
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0625,
+                "reject": 0.9375
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 32
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 2,
+                "reject": 30
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0625,
+                "reject": 0.9375
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0625,
+                "reject": 0.9375
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 5,
+                "reject": 27
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15625,
+                "reject": 0.84375
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.15625,
+                "reject": 0.84375
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "false": {
+              "n": 32,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 32,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "clean/0": {
+          "D": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 2366,
+                "unknown": 3829,
+                "reject": 324
+              },
+              "raw": {
+                "accept": 0.3629391010891241,
+                "unknown": 0.5873600245436417,
+                "reject": 0.049700874367234235
+              },
+              "weighted": {
+                "accept": 0.316248015014742,
+                "unknown": 0.6467618729459503,
+                "reject": 0.03699011203930767
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "B": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 2658,
+                "unknown": 3534,
+                "reject": 327
+              },
+              "raw": {
+                "accept": 0.407731247123792,
+                "unknown": 0.5421076852277956,
+                "reject": 0.050161067648412334
+              },
+              "weighted": {
+                "accept": 0.34163076833246864,
+                "unknown": 0.6202701926703766,
+                "reject": 0.03809903899715463
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "C": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 2658,
+                "unknown": 3534,
+                "reject": 327
+              },
+              "raw": {
+                "accept": 0.407731247123792,
+                "unknown": 0.5421076852277956,
+                "reject": 0.050161067648412334
+              },
+              "weighted": {
+                "accept": 0.34163076833246864,
+                "unknown": 0.6202701926703766,
+                "reject": 0.03809903899715463
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "T": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 3149,
+                "unknown": 2966,
+                "reject": 404
+              },
+              "raw": {
+                "accept": 0.48304954747660683,
+                "unknown": 0.45497775732474305,
+                "reject": 0.0619726951986501
+              },
+              "weighted": {
+                "accept": 0.40185369591021775,
+                "unknown": 0.5508170443031801,
+                "reject": 0.047329259786602185
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "J": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 3167,
+                "unknown": 2935,
+                "reject": 417
+              },
+              "raw": {
+                "accept": 0.4858107071636754,
+                "unknown": 0.4502224267525694,
+                "reject": 0.06396686608375518
+              },
+              "weighted": {
+                "accept": 0.4043094781891689,
+                "unknown": 0.5467788087832716,
+                "reject": 0.048911713027559645
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Jind": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 3150,
+                "unknown": 3000,
+                "reject": 369
+              },
+              "raw": {
+                "accept": 0.4832029452369995,
+                "unknown": 0.4601932811780948,
+                "reject": 0.05660377358490566
+              },
+              "weighted": {
+                "accept": 0.4019358786847082,
+                "unknown": 0.5546225503699053,
+                "reject": 0.0434415709453865
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "G": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 3070,
+                "unknown": 3060,
+                "reject": 389
+              },
+              "raw": {
+                "accept": 0.47093112440558366,
+                "unknown": 0.4693971468016567,
+                "reject": 0.05967172879275963
+              },
+              "weighted": {
+                "accept": 0.39302612575359525,
+                "unknown": 0.5596501088041124,
+                "reject": 0.04732376544229234
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "MATE_policy": {
+            "true": {
+              "n": 6519,
+              "parents": 3,
+              "epochs": 99,
+              "counts": {
+                "accept": 4827,
+                "unknown": 1675,
+                "reject": 17
+              },
+              "raw": {
+                "accept": 0.7404509894155545,
+                "unknown": 0.25694124865776957,
+                "reject": 0.0026077619266758707
+              },
+              "weighted": {
+                "accept": 0.6060694335201862,
+                "unknown": 0.3900451558887028,
+                "reject": 0.0038854105911109884
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        }
+      },
+      "trajectories": {
+        "D": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 76,
+            "never_accepted": 23,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "B": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 76,
+            "never_accepted": 23,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "C": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 76,
+            "never_accepted": 23,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "T": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 77,
+            "never_accepted": 22,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "J": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 77,
+            "never_accepted": 22,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "Jind": {
+          "0": {
+            "n": 11,
+            "n_accepted": 1,
+            "never_accepted": 10,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 77,
+            "never_accepted": 22,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "G": {
+          "0": {
+            "n": 11,
+            "n_accepted": 2,
+            "never_accepted": 9,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": 1
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 77,
+            "never_accepted": 22,
+            "accepted_delay_median": 0.0,
+            "ever_false_accept": null
+          }
+        },
+        "MATE_policy": {
+          "0": {
+            "n": 11,
+            "n_accepted": 0,
+            "never_accepted": 11,
+            "accepted_delay_median": null,
+            "ever_false_accept": 0
+          },
+          "1": {
+            "n": 99,
+            "n_accepted": 77,
+            "never_accepted": 22,
+            "accepted_delay_median": 0.09999999999999998,
+            "ever_false_accept": null
+          }
+        }
+      },
+      "diagnostics": {
+        "n_rows": 39195,
+        "numeric_failure": 0,
+        "unknown_labels": 11767,
+        "failure_reasons": {},
+        "n_finite": {
+          "D": 39195,
+          "B": 39195,
+          "C": 39195,
+          "T": 39195,
+          "J": 39195,
+          "Jind": 39195,
+          "G": 39195,
+          "MATE_policy": 38941
+        },
+        "statuses": {
+          "D": {
+            "ok": 39195
+          },
+          "B": {
+            "ok": 39195
+          },
+          "C": {
+            "ok": 39195
+          },
+          "T": {
+            "ok": 39195
+          },
+          "J": {
+            "ok": 39195
+          },
+          "Jind": {
+            "ok": 39195
+          },
+          "G": {
+            "ok": 39195
+          },
+          "MATE_policy": {
+            "ok": 38941,
+            "unavailable": 254
+          }
+        }
+      }
+    }
+  },
+  "calibration": {
+    "D": {
+      "actual_risks": {
+        "true_reject": 0.049531494536821735,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.049531494536821735
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "B": {
+      "actual_risks": {
+        "true_reject": 0.04994324120316941,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.04994324120316941
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "C": {
+      "actual_risks": {
+        "true_reject": 0.04994324120316941,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.04994324120316941
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "T": {
+      "actual_risks": {
+        "true_reject": 0.04946626067657321,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.04946626067657321
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "J": {
+      "actual_risks": {
+        "true_reject": 0.049882584213607355,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.049882584213607355
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "Jind": {
+      "actual_risks": {
+        "true_reject": 0.0486784647630583,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.0486784647630583
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "G": {
+      "actual_risks": {
+        "true_reject": 0.04998743489940575,
+        "false_accept": 0.005555555555555556,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.022222222222222223,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.04998743489940575
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    },
+    "MATE_policy": {
+      "actual_risks": {
+        "true_reject": 0.018608988693360445,
+        "false_accept": 0.0,
+        "F0/1/false_accept": 0.0,
+        "F1/2/false_accept": 0.0,
+        "F1/3/false_accept": 0.0,
+        "F2/3/false_accept": 0.0,
+        "clean/0/true_reject": 0.018608988693360445
+      },
+      "above_five_percent": {},
+      "missing_cal_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ]
+    }
+  },
+  "differences": {
+    "J-T": {
+      "correct_definite_difference": 0.0064362244728088935,
+      "true_accept_difference": 0.0024557822789511574,
+      "false_accept_difference": 0.0,
+      "accepted_delay_median_difference": 0.0,
+      "family_k_false_accept_difference": {
+        "F0/1": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0,
+        "F1/3": 0.0,
+        "F2/1": null,
+        "F2/2": 0.0,
+        "F2/3": 0.0,
+        "clean/0": null
+      }
+    },
+    "J-G": {
+      "correct_definite_difference": 0.007686578840047309,
+      "true_accept_difference": 0.011283352435573657,
+      "false_accept_difference": 0.0,
+      "accepted_delay_median_difference": 0.0,
+      "family_k_false_accept_difference": {
+        "F0/1": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0,
+        "F1/3": 0.0,
+        "F2/1": null,
+        "F2/2": 0.0,
+        "F2/3": 0.0,
+        "clean/0": null
+      }
+    }
+  },
+  "model_status": {
+    "D": {
+      "status": "ok",
+      "reason": null
+    },
+    "B": {
+      "status": "ok",
+      "reason": null
+    },
+    "C": {
+      "status": "ok",
+      "reason": null
+    },
+    "T": {
+      "status": "ok",
+      "reason": null
+    },
+    "J": {
+      "status": "ok",
+      "reason": null
+    },
+    "Jind": {
+      "status": "ok",
+      "reason": null
+    },
+    "G": {
+      "status": "ok",
+      "reason": null
+    }
+  },
+  "policies": {
+    "D": {
+      "A": 1.2622057552983577,
+      "R": -11.730640046029151,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.31165166651111886,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8721369395711631,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "B": {
+      "A": 1.15298483874948,
+      "R": -15.212921895171156,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.33784605697528536,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8307102457321855,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "C": {
+      "A": 1.1529872585204757,
+      "R": -15.212928980290076,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.33784605697528536,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8307102457321855,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "T": {
+      "A": 1.152998149547252,
+      "R": -6.173479991133831,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.4233235473476433,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8752990430622132,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J": {
+      "A": 1.153125695375469,
+      "R": -6.1381329485941825,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.42588873722012927,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8754919442967811,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "Jind": {
+      "A": 1.1526921833826542,
+      "R": -6.369689762201841,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.4238688402149816,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8748781676413377,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "G": {
+      "A": 1.1531256953754694,
+      "R": -5.405469369927931,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.41889916212897743,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.8784976962608664,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "MATE_policy": {
+      "A": 0.27596114367702085,
+      "R": -0.002519793344571586,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ],
+        [
+          "F3",
+          1
+        ],
+        [
+          "F3",
+          2
+        ],
+        [
+          "F3",
+          3
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6031808022213262,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.38737724466890683,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    }
+  },
+  "sources": {
+    "run_out": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001",
+    "predictions_bytes": 21654895,
+    "metrics_bytes": 3922713,
+    "recount_sha256": "da11fc59703a7a3397185886e3453ba83ed27d439eb267d4892bfd648883641d"
+  },
+  "limits": "Main W10/s0.9 only. No refit, threshold search, replay or bootstrap. Calibration risks are development point estimates. Delay is conditional on adoption; never-adopted counts are reported. PASS certifies recount agreement, not method retention or risk guarantees."
+}

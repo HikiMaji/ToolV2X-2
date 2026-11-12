@@ -1,0 +1,1028 @@
+{
+  "schema": 1,
+  "code": {
+    "commit": "549e86fbc2b6fae0bf608cb6344253466f4f6e7c",
+    "files": [
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/data.py",
+        "bytes": 11249,
+        "sha256": "98962ba9eac554bc788465702d146c3ec2d5853cfd3ba1f035a1b112fbf9ba66"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/fit.py",
+        "bytes": 13373,
+        "sha256": "8ca9b7b6c2c77ce55146e28e8ec9730c2f23884ab2c1cf7892de74e7f2994493"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/kernel.py",
+        "bytes": 12637,
+        "sha256": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/native_adapter.py",
+        "bytes": 33071,
+        "sha256": "6637529dc1950a843255c014fe31319f27c4baa5c8f73e4525d06e6a103faa36"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/run.py",
+        "bytes": 34324,
+        "sha256": "8989514775ca6a43f284f60219b8f99d125f8d770341b9c2e25d08e680c3e813"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/test_data.py",
+        "bytes": 24209,
+        "sha256": "927afed8699f713da040ed3bd9293016aca5ad5df820b31041241b11115a1daa"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/test_temporal.py",
+        "bytes": 13083,
+        "sha256": "b8d2665e14fb63e7b9c125f370ec1d1300a3f59288d84b74d857ebcf53b32513"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_real_cue/geometry.py",
+        "bytes": 6861,
+        "sha256": "ef4b8069d570f6c759b4f02f8af6a15350f72b920f4788a3935f82329562362d"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_real_cue/run.py",
+        "bytes": 26124,
+        "sha256": "7ab263b4aab9c69326c88bb33c8799f771a831d550ab08c35f963e5fb511b980"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/mate_continuous_occurrence_2026_10_08/native_runtime.py",
+        "bytes": 1892,
+        "sha256": "6f892f76dae93f7bf78ef8cea7895a6a9db577aed27bf4ad8738379ebc756a7d"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/mate_continuous_occurrence_2026_10_08/run_native.py",
+        "bytes": 11535,
+        "sha256": "f978b26b67aef8e2ad095166f8eb6779901d560dd2bc9d1ceec094c2924e0a0c"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/recording_inputs.py",
+        "bytes": 48170,
+        "sha256": "d2e992441e2eadfb6cb19d198e478f80c624d96eb44d994f2a8c97396d317cc2"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/message_conditions.py",
+        "bytes": 5634,
+        "sha256": "a1fc0a42a881fa60185b65f285cbf6563496c7d1cbdefc9c3ee282cdc02b0b80"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/native_frontend.py",
+        "bytes": 5907,
+        "sha256": "00b40e60d24c98f3f754f9d302dd9fac6bb41fbca9fee5204b7138deb9e9e9db"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/cbm.py",
+        "bytes": 9549,
+        "sha256": "7993ba0e2ac59cdcd5debf7ccff3ad4d190cc72e0eefd8ea8c2e01e60516bfdf"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/extract.py",
+        "bytes": 11249,
+        "sha256": "04145f1d9f7e4eb991f018b6914776ca867472d0ad0c91e545d537025e581f79"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "job_id": "0f81dd578b050f3d",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/0f81dd578b050f3d.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "12f11cc8cf224461",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/12f11cc8cf224461.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "1582be3a0fbb3d9c",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/1582be3a0fbb3d9c.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "16959a877affaa9d",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/16959a877affaa9d.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "243d76d26dfc4ece",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/243d76d26dfc4ece.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "245997ce61af986f",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/245997ce61af986f.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "36a44880203cdef3",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/36a44880203cdef3.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "410fec48a6a1488e",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/410fec48a6a1488e.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "47112cf429e38922",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/47112cf429e38922.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "69fb3ef368620df9",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/69fb3ef368620df9.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "6abeb23cc2436098",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/6abeb23cc2436098.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "6df1ef17f6cca1ae",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/6df1ef17f6cca1ae.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/7f3083bc00e147fb.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "82781d5ee6af0df2",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/82781d5ee6af0df2.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "872252222519c7d7",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/872252222519c7d7.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "8a64c3fbe7215c46",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8a64c3fbe7215c46.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "8c929902aa5bf010",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8c929902aa5bf010.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "8d5f42c88af10379",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8d5f42c88af10379.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "8d87c21350a7bb56",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8d87c21350a7bb56.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "942b1dec65ca1b72",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/942b1dec65ca1b72.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/a07df9510c2cf7e9.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "b1fc85594ddb90f8",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b1fc85594ddb90f8.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "b20b54daa5bfdaa0",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b20b54daa5bfdaa0.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "b58fd2ac0d1687c1",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b58fd2ac0d1687c1.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "ba03ba6670565082",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/ba03ba6670565082.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/bb30e22f91b2202b.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/c26e6be8af43118d.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "d173dc7138429af6",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d173dc7138429af6.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "d2da45a730d0756c",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d2da45a730d0756c.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "d7ad3e46c350ed76",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d7ad3e46c350ed76.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "d92295b7b58fdfc5",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d92295b7b58fdfc5.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "de2106d309204cd3",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/de2106d309204cd3.json",
+      "split": "eval",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "de8f762eb83b97ea",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/de8f762eb83b97ea.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "df2cb388eb225100",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/df2cb388eb225100.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "e3998366b3838645",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/e3998366b3838645.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "e5df0b989788fea4",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/e5df0b989788fea4.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/f101ef178468aaf2.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "f9039996102ee124",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/f9039996102ee124.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "fc910f4d5a8e8f67",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/fc910f4d5a8e8f67.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "legacy"
+    },
+    {
+      "job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "60b528984765d9ec",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "13df4899473dbad7",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "343d46fc7b709925",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "f0282c7c0945698d",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "4c23cf38a32e4c03",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "9e76a1233ee15da2",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "605ff9c3ca7bf3a5",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "1e7f3ae0c670e66f",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "d32be51b30bf2b46",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "75a1b5df43048d2e",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "3d440fda9f28bd0c",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "081ab23c9af4df7b",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "d19198700cc149ab",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "713a52daa8bdee96",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "0fb1d83f1379ee38",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "e8272405d9c4febe",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "1294449cc1454711",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "80d8ea2f3dc4e25b",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "654310fbb6e3901e",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "e17140086ed7bcf9",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "6b5f48a473625f6a",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "7f9ecfcfb5121f3b",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "c9ffce8e6d774cc2",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "cf2ad1a17529d018",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "fe7756637d7d1e37",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "e6fb05ecdfdf7689",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "a268ceceb415d292",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "12d324e7a7bda825",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "b07f9828ff2caf8c",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "native"
+    },
+    {
+      "job_id": "55cae68a44a23db2",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "native"
+    }
+  ],
+  "parent_splits": {
+    "train/2021_08_16_22_26_54": "fit",
+    "train/2021_08_22_10_10_40": "fit",
+    "train/2021_08_22_10_46_58": "fit",
+    "train/2021_08_23_11_22_46": "fit",
+    "train/2021_08_24_21_29_28": "fit",
+    "train/2021_08_23_22_31_01": "fit",
+    "train/2021_08_18_22_16_12": "cal",
+    "train/2021_08_20_20_39_00": "cal",
+    "train/2021_08_21_22_21_37": "cal",
+    "train/2021_08_22_22_30_58": "cal",
+    "test/2021_08_22_07_52_02": "cal",
+    "train/2021_08_23_23_08_17": "eval",
+    "test/2021_08_24_07_45_41": "eval",
+    "validate/2021_08_20_21_48_35": "eval"
+  },
+  "input_sources": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/manifest.json",
+      "bytes": 74663,
+      "sha256": "7ba69628b42ce4da1858412fa7249ada8584cfb10c1eebc89100e364f7bc530f"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/labelled.jsonl.gz",
+      "bytes": 68929282,
+      "sha256": "a13f3900901126ed0bd53a11bc571207fb42d667bd6155d903a6870089289682"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/dataset_inventory_2026_11_04/inventory.json",
+      "bytes": 49632,
+      "sha256": "66ea63ddbc95ded7b47dd7d5e80a68bd888a8144c88fa8b4ea0c6e1d341cc145"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+      "bytes": 74348080,
+      "sha256": "450f76eca5842f30ef19343fe7d388dc3df6f1b57caaf2aba1e037f94696ca54"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/0f81dd578b050f3d.jsonl.gz",
+      "bytes": 226119,
+      "sha256": "5c91d4b905d3fa159e7555fa6bc723f9236bfd2b894f3b8cfc1030c22dc3e73e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/12f11cc8cf224461.jsonl.gz",
+      "bytes": 218862,
+      "sha256": "cf81de45b6b1cbb22b1e8e88ff46b3623136b809ab6d0f81f540fa31357a4f8d"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/1582be3a0fbb3d9c.jsonl.gz",
+      "bytes": 227816,
+      "sha256": "749be4e1c14e526cea4910346ca91a0242ef164cd072dc17a79db41e9fee7465"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/16959a877affaa9d.jsonl.gz",
+      "bytes": 225554,
+      "sha256": "cffbe01867fc90f470fd70328e498d48db791546f1953408c1eaefe0a0e455ff"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/243d76d26dfc4ece.jsonl.gz",
+      "bytes": 225491,
+      "sha256": "1408f34f5fe965d1d51e7030d087792638727f28dce5b2e32e66e20abfa7b0da"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/245997ce61af986f.jsonl.gz",
+      "bytes": 258356,
+      "sha256": "c3eba52991ab45dcf0aebb57c8f824b540a24f62416b1b42af32dc6d4cc2ed41"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/36a44880203cdef3.jsonl.gz",
+      "bytes": 227956,
+      "sha256": "bb498adbe983a47479c83a4236169717345285a75532e4cdb1ffd01dd6722987"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/410fec48a6a1488e.jsonl.gz",
+      "bytes": 216445,
+      "sha256": "61f85802d47bbb4089e3bd311af30c671031cc701206be2c7c9369ee59461640"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/47112cf429e38922.jsonl.gz",
+      "bytes": 224390,
+      "sha256": "9d9b75ff697df953388aef1b4a2820062d9ad0e2bc2491206f5a7dc3aa79f26d"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/69fb3ef368620df9.jsonl.gz",
+      "bytes": 227729,
+      "sha256": "fa844aed6d701fc06fedb5e0c283f1ffddf4af2f7e2a0baecbf1a3f20b4fd728"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/6abeb23cc2436098.jsonl.gz",
+      "bytes": 352556,
+      "sha256": "56c6d6ed41e4d77fd50df119d7026e70128cde0cb8d5963efe58d6507ca38566"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/6df1ef17f6cca1ae.jsonl.gz",
+      "bytes": 258404,
+      "sha256": "7ab68db8fd2062312e91709220195a52b5ec5a9255175782dcb349eaddc1f62e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/7f3083bc00e147fb.jsonl.gz",
+      "bytes": 1053678,
+      "sha256": "1fac82863ecbc6866a4ffe5c8d4a3ba8a99a983b990765bf0dc1fd7c38707f73"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/82781d5ee6af0df2.jsonl.gz",
+      "bytes": 160822,
+      "sha256": "edd4675b0b59db4661e3b151f5417cbfdef4664a5611dae6f19b92844cf496cb"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/872252222519c7d7.jsonl.gz",
+      "bytes": 157744,
+      "sha256": "2f82e625429a31f166e3d07f558d5747784a021e8bf889f543fce53afe5fda9b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/8a64c3fbe7215c46.jsonl.gz",
+      "bytes": 218883,
+      "sha256": "6517a91abb011723deb5897341f24f75da572bb45fe389077cb48f5a7fa9c9c1"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/8c929902aa5bf010.jsonl.gz",
+      "bytes": 159275,
+      "sha256": "495f4d65a288c5e27512bd29906af8a365e2d3615b6956fcc6f2d9425ae0314c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/8d5f42c88af10379.jsonl.gz",
+      "bytes": 218796,
+      "sha256": "d158adb531e4cc9ba433c7976eb7b4f9c88fe617ac6aa350e8d275c34163af53"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/8d87c21350a7bb56.jsonl.gz",
+      "bytes": 570944,
+      "sha256": "990178dd72cd23f54c67d8c40dff486cf94bf00288a2eb1b31f2719277cfad1b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/942b1dec65ca1b72.jsonl.gz",
+      "bytes": 226277,
+      "sha256": "fefe6106e5303d202a000c401ba1ba4e885a0a7a31d5b21c212c55f6cd1de406"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/a07df9510c2cf7e9.jsonl.gz",
+      "bytes": 265453,
+      "sha256": "717c6914cdfd2d93426a74ec2ce9ba23cbbf7875ccc54617beb862362eedbb20"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/b1fc85594ddb90f8.jsonl.gz",
+      "bytes": 160085,
+      "sha256": "59dd95188aec9a6c975b7d8225d46e984e1fdce31595d5faee297d72ebca286b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/b20b54daa5bfdaa0.jsonl.gz",
+      "bytes": 218667,
+      "sha256": "92537206562b1743e775d1c1b69b8c1657e3fc8ede6cd29279804640d682f68b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/b58fd2ac0d1687c1.jsonl.gz",
+      "bytes": 258248,
+      "sha256": "c174e3559bd9de0407f3f924c19f5aa6b18ea4cbaaec352039b4c0443d2dd901"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/ba03ba6670565082.jsonl.gz",
+      "bytes": 258421,
+      "sha256": "33941acaf84693c1d537df878ee5b45e29b8bc3608e64e428e78164da3be3123"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/bb30e22f91b2202b.jsonl.gz",
+      "bytes": 276755,
+      "sha256": "161353f07f0fc2c4bfc32085167896a2fa35e36aed73941c8fedc7be49533206"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/c26e6be8af43118d.jsonl.gz",
+      "bytes": 395683,
+      "sha256": "8c434c9aaeb08a6143b83f44aeceded2bbffecd780293ad73484b2765fd4ff0a"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/d173dc7138429af6.jsonl.gz",
+      "bytes": 216448,
+      "sha256": "a8bdaf718067c456612c77a1244a6e13ca2a1b16e24d9d5240934ac89febc67f"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/d2da45a730d0756c.jsonl.gz",
+      "bytes": 227693,
+      "sha256": "24a0d8f1311b2b8bd670c04f5a42db510a5d1a251cfe8614260c89702a5f49c1"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/d7ad3e46c350ed76.jsonl.gz",
+      "bytes": 302069,
+      "sha256": "e49c5b5faa8246af9d79e5caa63fc80c3f6f0479ec1b9c719a1381caf51955f6"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/d92295b7b58fdfc5.jsonl.gz",
+      "bytes": 225288,
+      "sha256": "fee70412979cf7d90a52bc218158095fad61a15aada5f377e715c237ddcde0b8"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/de2106d309204cd3.jsonl.gz",
+      "bytes": 275178,
+      "sha256": "08f498c978441c0da885c666ac5c8ed08e72df4e63044e27f9fff90f74fd2609"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/de8f762eb83b97ea.jsonl.gz",
+      "bytes": 155822,
+      "sha256": "24ce99e14acf7fddaf0149d7a6f0d3856e3f0a812770c6c11973914c31da67f3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/df2cb388eb225100.jsonl.gz",
+      "bytes": 161046,
+      "sha256": "be2236b9a68d2d22b6ea7a45dd6bb031e35fe93981bd8d78a573bf40ec69245b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/e3998366b3838645.jsonl.gz",
+      "bytes": 257065,
+      "sha256": "2c49c7879c326056652ead40b69b9b926a130083d55246d0c065eb0547fe88b1"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/e5df0b989788fea4.jsonl.gz",
+      "bytes": 225461,
+      "sha256": "aeda81a960d82928bc693742b90ab004bff0f5bce5c37782f4e622e8c5df58f9"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/f101ef178468aaf2.jsonl.gz",
+      "bytes": 97028,
+      "sha256": "1b3a29c120dc96526d39c39d0983d08713fff5ebee80f62716689a40b3346f41"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/f9039996102ee124.jsonl.gz",
+      "bytes": 258259,
+      "sha256": "82543498223d7f4e3e2375a4a4bf960f3549588b21f73b8550dd477104671349"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_real_cue_2026_11_11/run_001/features/fc910f4d5a8e8f67.jsonl.gz",
+      "bytes": 225504,
+      "sha256": "962776cbce64139b0be0956bc69f95fa1ebea40b69742bee2bcc3b13ac27e271"
+    }
+  ],
+  "specifications": {
+    "W": 10,
+    "s": 0.9,
+    "seed": 0,
+    "alpha": 0.05,
+    "obb_tolerance": 1e-06,
+    "attack_max": 27
+  },
+  "scope": "used development recordings; not independent unseen evaluation"
+}

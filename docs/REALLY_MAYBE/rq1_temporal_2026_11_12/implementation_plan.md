@@ -42,6 +42,6 @@ Interfaces：prepare(out)->manifest/per-job rows；fit(out)->models；score(out)
 
 ## Task 3: 固定开发与方法决定
 
-- [ ] 运行prepare/fit/score/report，阶段断点、日志及峰值内存保留。
-- [ ] 有界独立重计冻结预测的六格、风险和核心比较。
-- [ ] 将结果及保留/简化决定写入REALLY、当前方案及STATUS；保留代码/工作树/失败产物。
+- [x] 运行prepare/fit/score/report，阶段断点、日志及峰值内存保留。
+- [x] 有界独立重计冻结预测的六格、风险和核心比较。
+- [x] 将结果及保留/简化决定写入REALLY、当前方案及STATUS；保留代码/工作树/失败产物。

@@ -1,0 +1,20 @@
+{
+  "parent": 4884,
+  "cmd": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python -u /root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/execution_2026_11_13/parallel_prepare.py --out /root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001 ",
+  "children": [
+    {
+      "pid": 4890,
+      "cmd": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=13) --multiprocessing-fork "
+    },
+    {
+      "pid": 4893,
+      "cmd": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=15) --multiprocessing-fork "
+    },
+    {
+      "pid": 4894,
+      "cmd": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=17) --multiprocessing-fork "
+    }
+  ],
+  "time_unix": 1794505899.9975946,
+  "reason": "Switch10remaining independent jobs to8workers; preserve all completed and partial artifacts"
+}

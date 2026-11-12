@@ -1,0 +1,169 @@
+{
+  "variants": [
+    [
+      "main",
+      10,
+      0.9
+    ],
+    [
+      "W5",
+      5,
+      0.9
+    ],
+    [
+      "W20",
+      20,
+      0.9
+    ],
+    [
+      "s05",
+      10,
+      0.5
+    ],
+    [
+      "s095",
+      10,
+      0.95
+    ]
+  ],
+  "method_status": {
+    "D": {
+      "status": "ok",
+      "reason": null
+    },
+    "B": {
+      "status": "ok",
+      "reason": null
+    },
+    "C": {
+      "status": "ok",
+      "reason": null
+    },
+    "T": {
+      "status": "ok",
+      "reason": null
+    },
+    "J": {
+      "status": "ok",
+      "reason": null
+    },
+    "Jind": {
+      "status": "ok",
+      "reason": null
+    },
+    "G": {
+      "status": "ok",
+      "reason": null
+    }
+  },
+  "code": {
+    "commit": "549e86fbc2b6fae0bf608cb6344253466f4f6e7c",
+    "files": [
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/data.py",
+        "bytes": 11249,
+        "sha256": "98962ba9eac554bc788465702d146c3ec2d5853cfd3ba1f035a1b112fbf9ba66"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/fit.py",
+        "bytes": 13373,
+        "sha256": "8ca9b7b6c2c77ce55146e28e8ec9730c2f23884ab2c1cf7892de74e7f2994493"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/kernel.py",
+        "bytes": 12637,
+        "sha256": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/native_adapter.py",
+        "bytes": 33071,
+        "sha256": "6637529dc1950a843255c014fe31319f27c4baa5c8f73e4525d06e6a103faa36"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/run.py",
+        "bytes": 34324,
+        "sha256": "8989514775ca6a43f284f60219b8f99d125f8d770341b9c2e25d08e680c3e813"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/test_data.py",
+        "bytes": 24209,
+        "sha256": "927afed8699f713da040ed3bd9293016aca5ad5df820b31041241b11115a1daa"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/test_temporal.py",
+        "bytes": 13083,
+        "sha256": "b8d2665e14fb63e7b9c125f370ec1d1300a3f59288d84b74d857ebcf53b32513"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_real_cue/geometry.py",
+        "bytes": 6861,
+        "sha256": "ef4b8069d570f6c759b4f02f8af6a15350f72b920f4788a3935f82329562362d"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_real_cue/run.py",
+        "bytes": 26124,
+        "sha256": "7ab263b4aab9c69326c88bb33c8799f771a831d550ab08c35f963e5fb511b980"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/mate_continuous_occurrence_2026_10_08/native_runtime.py",
+        "bytes": 1892,
+        "sha256": "6f892f76dae93f7bf78ef8cea7895a6a9db577aed27bf4ad8738379ebc756a7d"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/mate_continuous_occurrence_2026_10_08/run_native.py",
+        "bytes": 11535,
+        "sha256": "f978b26b67aef8e2ad095166f8eb6779901d560dd2bc9d1ceec094c2924e0a0c"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/recording_inputs.py",
+        "bytes": 48170,
+        "sha256": "d2e992441e2eadfb6cb19d198e478f80c624d96eb44d994f2a8c97396d317cc2"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/message_conditions.py",
+        "bytes": 5634,
+        "sha256": "a1fc0a42a881fa60185b65f285cbf6563496c7d1cbdefc9c3ee282cdc02b0b80"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/native_frontend.py",
+        "bytes": 5907,
+        "sha256": "00b40e60d24c98f3f754f9d302dd9fac6bb41fbca9fee5204b7138deb9e9e9db"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/oqea-h1-2026-10-30/scripts/oqea_joint/cbm.py",
+        "bytes": 9549,
+        "sha256": "7993ba0e2ac59cdcd5debf7ccff3ad4d190cc72e0eefd8ea8c2e01e60516bfdf"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/extract.py",
+        "bytes": 11249,
+        "sha256": "04145f1d9f7e4eb991f018b6914776ca867472d0ad0c91e545d537025e581f79"
+      }
+    ]
+  },
+  "runner": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/execution_2026_11_13/parallel_score.py",
+    "bytes": 4224,
+    "sha256": "ad272d864727246db391116ce693e4ea00002b917168ceae8e3fbfcff64dee25",
+    "workers": 8,
+    "started_utc": "2026-11-12T17:55:16.340652+00:00",
+    "elapsed_seconds": 1145.245464364998,
+    "runtime": {
+      "python": "3.8.10 (default, Jun  4 2021, 15:09:15) \n[GCC 7.5.0]",
+      "executable": "/root/miniconda3/bin/python",
+      "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.17",
+      "pid": 6675,
+      "start_method": "spawn",
+      "numpy": "1.24.2",
+      "scipy": "1.10.1",
+      "thread_env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  }
+}

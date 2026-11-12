@@ -1,0 +1,25 @@
+{
+  "scope": "Frozen main eval descriptive adoption decomposition; no new decisions or parameter changes",
+  "true_MATE_accept_J_other_weight": 0.21647873915940477,
+  "true_J_accept_MATE_other_weight": 0.014718783828387384,
+  "lost_to_J_unknown_weight": 0.19943041587320992,
+  "lost_to_J_reject_weight": 0.01704832328619484,
+  "lost_with_J_score_nonpositive_weight": 0.11054301941268552,
+  "lost_with_positive_score_below_A_weight": 0.10593571974671923,
+  "lost_with_window_support_from_all_sources_weight": 0.03136801158459042,
+  "lost_raw_rows": 1743,
+  "false_accepted_J": [
+    {
+      "job_id": "cf2ad1a17529d018",
+      "frame": 117,
+      "id": 185,
+      "family": "F1",
+      "k": 3,
+      "window_supports": 3,
+      "window_effective_sources": 4,
+      "frames_in_window": 1,
+      "J_score": 2.2103069029505846,
+      "native_mean_score": 0.2640552072336061
+    }
+  ]
+}

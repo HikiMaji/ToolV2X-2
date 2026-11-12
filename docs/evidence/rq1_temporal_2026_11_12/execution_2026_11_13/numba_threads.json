@@ -1,0 +1,10 @@
+{
+  "128": {
+    "eight_calls_seconds": 0.747467958368361,
+    "all_bit_equal": true
+  },
+  "1": {
+    "eight_calls_seconds": 0.0001856628805398941,
+    "all_bit_equal": true
+  }
+}

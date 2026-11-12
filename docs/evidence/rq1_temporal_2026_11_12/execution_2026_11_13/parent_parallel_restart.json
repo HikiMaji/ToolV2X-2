@@ -1,0 +1,6 @@
+{
+  "pid": 4047,
+  "cmd": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python -m scripts.rq1_temporal.native_adapter --out /root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001 ",
+  "time_unix": 1794503420.436122,
+  "reason": "Own serial prepare transitions to reviewed independent parent workers; finished artifacts retained"
+}

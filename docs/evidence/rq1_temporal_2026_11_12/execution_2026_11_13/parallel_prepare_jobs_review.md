@@ -1,0 +1,21 @@
+# job级prepare调度独立审核
+
+2026-11-13。核查本目录`parallel_prepare_jobs.py`及唯一mock测试，对照冻结549e86f的native_adapter.prepare、preprocess_new、replay_online和原run.prepare。已补读正确文件名`parallel_prepare_jobs_report.md`，报告与先前源码核查一致。本次继承已通过核心、数据入口及父helper审核，没有重审算法、重跑mock或启动真实操作。
+
+**结论为PASS，无阻塞。允许主会话根据剩余pending数量决定切换到8job并行。切换前必须确认旧父helper、其parent及全部worker均已停止，保持唯一写入者。** 放行不要求切换，也不要求重跑已完成任务。
+
+确认的范围如下。
+
+- 单job视图保留正式manifest的metadata，只将jobs设为本job，并增加执行用途、正式manifest路径及hash。正式完整manifest不变，仍为研究总体入口。视图只实现调度筛选，没有改变split、样本、攻击预算或标签选择。
+- native_adapter实际直接读取视图manifest。视图中的jobs、parents、native_runtime符号链接指向真实out。逐处追踪其路径后，本次会写的attack、online、rows、coverage、complete及error均落当前job自己的真实目录；原native函数没有额外共享写路径。
+- 全部四父scans及provenance、runtime、legacy及join缓存、全部fit任务完成是分派前置条件。由此同父多个worker只读共同扫描缓存，不重复点云处理或创建runtime。单job视图不含legacy job，原legacy循环不会写入。
+- job_id去重，每个pending job只提交一次。spawn隔离进程内NEW_PARENTS；复用父helper的try/finally恢复。原replay_online逐job重置TrackBase.ID_counter，攻击候选使用局部固定随机状态，父/job调度顺序不替代研究随机化。
+- 两个外部prepare helper共用持久fcntl锁。它不能约束未用锁的原prepare，也不能允许旧worker在父helper退出后继续写，所以停止全部旧writer的前提必须保持。
+- 任何future.result异常均阻止汇总。只有全部future成功且所有真实job完成标记存在，才在真实out调用原run.prepare，沿用全70任务及UNREALIZABLE汇总。恢复只提交仍pending的job，已完成分片及未完成partial按原规则保留。
+- 来源记录含新runner和父helper的路径/hash、正式manifest hash、pending名单、worker数、spawn、解释器和线程环境。视图有冲突则拒绝，现有视图保留用于追溯。
+
+沿用一次mock结果，1项测试0.232秒。测试覆盖同父双job唯一owner、真实输出路径、正式manifest字节不变、worker失败不汇总及恢复只提交余项。已核读断言，不重复执行。mock不证明真实数值逐位等价、8worker峰值内存或实际加速比；源码审核支持本次只是执行筛选与并行粒度变化，未改变冻结计算函数和输入语义。
+
+送审runner SHA256为`d37d967e0774bd316d205b98b459a18dd3dd724d1ec19be380d2322505b19da7`，复用父helperSHA256为`94cf623b70f3f00a1e80ce21f0b2dcecdda686334b24f4ca397ef1fad025e06c`。冻结工作树HEAD为549e86f，相关源码无修改。
+
+本次只放行调度代码。真实批次的判决收益及是否保留联合机制，仍由最终冻结结果的独立核对和Task3评审裁定。
