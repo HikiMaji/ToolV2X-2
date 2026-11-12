@@ -1,0 +1,1184 @@
+{
+  "Ic_to_Jc": {
+    "all_report": {
+      "denominators": {
+        "true": 0.33372796296296303,
+        "Q_F": 0.21508333333333324
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.008640740740740742,
+            "Q_F": 0.0033779629629629637
+          },
+          "rates": {
+            "true": 0.02589156948079801,
+            "Q_F": 0.015705368289637964
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.022996087407407415,
+            "Q_F": 0.014382015111111117
+          },
+          "rates": {
+            "true": 0.06890668436423324,
+            "Q_F": 0.0668671760299626
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.033625925925925934,
+            "Q_F": 0.01333240740740741
+          },
+          "rates": {
+            "true": 0.10075849091991648,
+            "Q_F": 0.06198717120840332
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.26842804148148147,
+            "Q_F": 0.1838281697777777
+          },
+          "rates": {
+            "true": 0.8043318848629759,
+            "Q_F": 0.8546834704894744
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 3.716740740740736e-05,
+            "Q_F": 0.0001627780740740738
+          },
+          "rates": {
+            "true": 0.00011137037207616967,
+            "Q_F": 0.0007568139825218468
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        }
+      }
+    },
+    "all_unreported": {
+      "denominators": {
+        "true": 0.14393685185185187,
+        "Q_F": 0.3007500000000001
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.1162622637037037,
+            "Q_F": 0.14042323970370363
+          },
+          "rates": {
+            "true": 0.8077310446067526,
+            "Q_F": 0.4669101902035032
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0016452622222222209,
+            "Q_F": 0.007186730666666664
+          },
+          "rates": {
+            "true": 0.011430444678028806,
+            "Q_F": 0.023896028816846757
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.026029325925925915,
+            "Q_F": 0.15314002962962958
+          },
+          "rates": {
+            "true": 0.18083851071521836,
+            "Q_F": 0.5091937809796494
+          }
+        }
+      }
+    },
+    "mixed": {
+      "denominators": {
+        "true": 0.13344629629629634,
+        "Q_F": 0.09527777777777788
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.05550903703703703,
+            "Q_F": 0.01326828177777778
+          },
+          "rates": {
+            "true": 0.4159653626788413,
+            "Q_F": 0.13925893411078705
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.07356471111111103,
+            "Q_F": 0.06561229333333335
+          },
+          "rates": {
+            "true": 0.5512682865905266,
+            "Q_F": 0.6886421457725942
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.00019205925925925915,
+            "Q_F": 0.0010668444444444439
+          },
+          "rates": {
+            "true": 0.0014392251009561331,
+            "Q_F": 0.01119720116618074
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0018885111111111115,
+            "Q_F": 0.004044922074074074
+          },
+          "rates": {
+            "true": 0.01415184357696951,
+            "Q_F": 0.042453992614188495
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.002291977777777778,
+            "Q_F": 0.011285436148148153
+          },
+          "rates": {
+            "true": 0.017175282052705344,
+            "Q_F": 0.11844772633624871
+          }
+        }
+      }
+    },
+    "no_peer": {
+      "denominators": {
+        "true": 0.3888888888888892,
+        "Q_F": 0.3888888888888892
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.3888888888888892,
+            "Q_F": 0.3888888888888892
+          },
+          "rates": {
+            "true": 1.0,
+            "Q_F": 1.0
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        }
+      }
+    }
+  },
+  "JcF_to_Jc": {
+    "all_report": {
+      "denominators": {
+        "true": 0.33372796296296303,
+        "Q_F": 0.21508333333333324
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.04226666666666667,
+            "Q_F": 0.016710370370370375
+          },
+          "rates": {
+            "true": 0.12665006040071447,
+            "Q_F": 0.0776925394980413
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.29010092888888883,
+            "Q_F": 0.1961118737777777
+          },
+          "rates": {
+            "true": 0.8692736632353583,
+            "Q_F": 0.9117948412759912
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0013231999999999992,
+            "Q_F": 0.0020983111111111097
+          },
+          "rates": {
+            "true": 0.0039649059918507555,
+            "Q_F": 0.00975580524344569
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 3.716740740740736e-05,
+            "Q_F": 0.0001627780740740738
+          },
+          "rates": {
+            "true": 0.00011137037207616967,
+            "Q_F": 0.0007568139825218468
+          }
+        }
+      }
+    },
+    "all_unreported": {
+      "denominators": {
+        "true": 0.14393685185185187,
+        "Q_F": 0.3007500000000001
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.1162622637037037,
+            "Q_F": 0.14042323970370363
+          },
+          "rates": {
+            "true": 0.8077310446067526,
+            "Q_F": 0.4669101902035032
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.00039879111111111056,
+            "Q_F": 0.0011604195555555547
+          },
+          "rates": {
+            "true": 0.00277059770295358,
+            "Q_F": 0.003858419137341827
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.027275797037037027,
+            "Q_F": 0.1591663407407407
+          },
+          "rates": {
+            "true": 0.1894983576902936,
+            "Q_F": 0.5292313906591544
+          }
+        }
+      }
+    },
+    "mixed": {
+      "denominators": {
+        "true": 0.13344629629629634,
+        "Q_F": 0.09527777777777788
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.053948740740740735,
+            "Q_F": 0.012774652148148147
+          },
+          "rates": {
+            "true": 0.4042730464467602,
+            "Q_F": 0.13407798172983465
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.02952412148148147,
+            "Q_F": 0.013452759703703705
+          },
+          "rates": {
+            "true": 0.22124346872788317,
+            "Q_F": 0.14119514557823115
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0015602962962962957,
+            "Q_F": 0.0004936296296296295
+          },
+          "rates": {
+            "true": 0.011692316232081145,
+            "Q_F": 0.005180952380952374
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.04551235999999994,
+            "Q_F": 0.05544877422222223
+          },
+          "rates": {
+            "true": 0.34105375168260166,
+            "Q_F": 0.5819696419825068
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.001005222222222222,
+            "Q_F": 0.004045118518518519
+          },
+          "rates": {
+            "true": 0.007532784724053229,
+            "Q_F": 0.04245605442176867
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.00041674074074074107,
+            "Q_F": 0.0007556814814814819
+          },
+          "rates": {
+            "true": 0.0031229097570114224,
+            "Q_F": 0.0079313508260447
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0014788148148148152,
+            "Q_F": 0.008307162074074077
+          },
+          "rates": {
+            "true": 0.011081722429608247,
+            "Q_F": 0.08718887308066077
+          }
+        }
+      }
+    },
+    "no_peer": {
+      "denominators": {
+        "true": 0.3888888888888892,
+        "Q_F": 0.3888888888888892
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.3888888888888892,
+            "Q_F": 0.3888888888888892
+          },
+          "rates": {
+            "true": 1.0,
+            "Q_F": 1.0
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        }
+      }
+    }
+  },
+  "J0_to_Jc": {
+    "all_report": {
+      "denominators": {
+        "true": 0.33372796296296303,
+        "Q_F": 0.21508333333333324
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.008640740740740742,
+            "Q_F": 0.0033779629629629637
+          },
+          "rates": {
+            "true": 0.02589156948079801,
+            "Q_F": 0.015705368289637964
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.002162962962962962,
+            "Q_F": 0.0015896296296296288
+          },
+          "rates": {
+            "true": 0.00648121584945822,
+            "Q_F": 0.007390761548064918
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.033625925925925934,
+            "Q_F": 0.01333240740740741
+          },
+          "rates": {
+            "true": 0.10075849091991648,
+            "Q_F": 0.06198717120840332
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.289261165925926,
+            "Q_F": 0.19662055525925917
+          },
+          "rates": {
+            "true": 0.8667573533777512,
+            "Q_F": 0.914159884971372
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 3.716740740740736e-05,
+            "Q_F": 0.0001627780740740738
+          },
+          "rates": {
+            "true": 0.00011137037207616967,
+            "Q_F": 0.0007568139825218468
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        }
+      }
+    },
+    "all_unreported": {
+      "denominators": {
+        "true": 0.14393685185185187,
+        "Q_F": 0.3007500000000001
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.09917259259259258,
+            "Q_F": 0.11696037037037034
+          },
+          "rates": {
+            "true": 0.6890007063282636,
+            "Q_F": 0.38889566207936926
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.01830425925925926,
+            "Q_F": 0.07883592592592595
+          },
+          "rates": {
+            "true": 0.12716867865151768,
+            "Q_F": 0.26213109202302887
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0170896711111111,
+            "Q_F": 0.023462869333333324
+          },
+          "rates": {
+            "true": 0.1187303382784888,
+            "Q_F": 0.07801452812413406
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.009370328888888887,
+            "Q_F": 0.08149083437037043
+          },
+          "rates": {
+            "true": 0.06510027674172957,
+            "Q_F": 0.2709587177734677
+          }
+        }
+      }
+    },
+    "mixed": {
+      "denominators": {
+        "true": 0.13344629629629634,
+        "Q_F": 0.09527777777777788
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.043145161481481474,
+            "Q_F": 0.009792927703703706
+          },
+          "rates": {
+            "true": 0.32331479163486476,
+            "Q_F": 0.10278291467444113
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.02123180148148148,
+            "Q_F": 0.010160776
+          },
+          "rates": {
+            "true": 0.15910371490820271,
+            "Q_F": 0.10664371311953341
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.012363875555555548,
+            "Q_F": 0.0034753540740740728
+          },
+          "rates": {
+            "true": 0.09265057104397655,
+            "Q_F": 0.036476019436345916
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.05226497629629623,
+            "Q_F": 0.05531273570370367
+          },
+          "rates": {
+            "true": 0.39165550297664414,
+            "Q_F": 0.5805418324586967
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0007521481481481482,
+            "Q_F": 0.003461910222222223
+          },
+          "rates": {
+            "true": 0.0056363358820998855,
+            "Q_F": 0.03633491778425653
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0019564444444444434,
+            "Q_F": 0.0041837037037037025
+          },
+          "rates": {
+            "true": 0.014660912282649409,
+            "Q_F": 0.04391059280855193
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.001731888888888889,
+            "Q_F": 0.008890370370370371
+          },
+          "rates": {
+            "true": 0.01297817127156159,
+            "Q_F": 0.0933100097181729
+          }
+        }
+      }
+    },
+    "no_peer": {
+      "denominators": {
+        "true": 0.3888888888888892,
+        "Q_F": 0.3888888888888892
+      },
+      "cells": {
+        "adopt_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "adopt_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "unknown_to_unknown": {
+          "masses": {
+            "true": 0.3888888888888892,
+            "Q_F": 0.3888888888888892
+          },
+          "rates": {
+            "true": 1.0,
+            "Q_F": 1.0
+          }
+        },
+        "unknown_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_adopt": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_unknown": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        },
+        "reject_to_reject": {
+          "masses": {
+            "true": 0.0,
+            "Q_F": 0.0
+          },
+          "rates": {
+            "true": 0.0,
+            "Q_F": 0.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "command": [
+    "scripts/rq1_static_trial/run.py",
+    "--stage",
+    "report",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001"
+  ],
+  "interpreter": "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+  "manifest_sha256": "7ba69628b42ce4da1858412fa7249ada8584cfb10c1eebc89100e364f7bc530f",
+  "code_hashes": {
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/extract.py": "04145f1d9f7e4eb991f018b6914776ca867472d0ad0c91e545d537025e581f79",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/model.py": "eea24a85c6849fb3f065b47b7d2cf900c61108983982e4fec19af04bba78ccdd",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/run.py": "32d95a42edb57310ad0a9fc1e4c371a4d24d1ab000f2a1604c99ea7f824b816d",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-static-2026-11-10/scripts/rq1_static_trial/test_trial.py": "1f3907cc1d648e57f23f8ae24971365502b85c70af57aa45a1ca1c8e363ac6d2"
+  },
+  "outputs": {
+    "models.json": "9c9c0f2ab33e54bbc9222ca6bb886e4bedba5e53631f2ad2da3a48c4a5bf859e",
+    "predictions.jsonl.gz": "0afac7b077e337a761ce1e1ab02d9e667696e9be924a1f37e7ac6e43bde6f31f",
+    "results.json": "711e212000430a78ee064ca30740d375cc6e3eed18bada3949fe8ac4bffc7a08",
+    "results.md": "5053ad4cd2447de2c7f9d47373c581d6749b59059f145672dc9116f5990bad5b",
+    "verification.json": "8dd829e1bde08a9da7fe2fb1704e2ed91e680ce767bd2269f6546bef3f554509"
+  },
+  "wall_seconds": 2808.5373787879944,
+  "scope": "single-parent development evaluation; no frame-independent confidence interval"
+}

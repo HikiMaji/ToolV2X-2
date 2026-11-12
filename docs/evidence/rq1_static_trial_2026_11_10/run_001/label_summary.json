@@ -1,0 +1,346 @@
+{
+  "counts": {
+    "label_conflict": 0,
+    "gt_identity_conflict": 0,
+    "query_truth_-1": 19256,
+    "output_truth_1": 75088,
+    "output_truth_-1": 16354,
+    "query_truth_1": 71333,
+    "output_truth_None": 0,
+    "output_truth_0": 1597,
+    "query_truth_0": 1568
+  },
+  "by_job": {
+    "0f81dd578b050f3d": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "12f11cc8cf224461": {
+      "query_-1": 249,
+      "output_1": 1634,
+      "query_1": 1530,
+      "output_-1": 168,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "1582be3a0fbb3d9c": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "16959a877affaa9d": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "243d76d26dfc4ece": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "245997ce61af986f": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "36a44880203cdef3": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "410fec48a6a1488e": {
+      "query_-1": 313,
+      "output_1": 1373,
+      "query_1": 1275,
+      "output_-1": 231,
+      "output_None": 0
+    },
+    "47112cf429e38922": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "69fb3ef368620df9": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "6abeb23cc2436098": {
+      "query_-1": 353,
+      "output_1": 2796,
+      "query_1": 2677,
+      "output_-1": 258,
+      "output_None": 0
+    },
+    "6df1ef17f6cca1ae": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "7f3083bc00e147fb": {
+      "query_-1": 588,
+      "output_1": 9433,
+      "query_1": 9310,
+      "output_-1": 488,
+      "output_None": 0
+    },
+    "82781d5ee6af0df2": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "872252222519c7d7": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "8a64c3fbe7215c46": {
+      "query_-1": 249,
+      "output_1": 1634,
+      "query_1": 1530,
+      "output_-1": 168,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "8c929902aa5bf010": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "8d5f42c88af10379": {
+      "query_-1": 249,
+      "output_1": 1634,
+      "query_1": 1530,
+      "output_-1": 168,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "8d87c21350a7bb56": {
+      "query_-1": 1331,
+      "output_1": 4528,
+      "query_1": 4385,
+      "output_-1": 1209,
+      "output_None": 0
+    },
+    "942b1dec65ca1b72": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "a07df9510c2cf7e9": {
+      "query_-1": 1345,
+      "output_1": 1156,
+      "query_1": 981,
+      "output_-1": 1196,
+      "output_None": 0
+    },
+    "b1fc85594ddb90f8": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 56,
+      "query_0": 55
+    },
+    "b20b54daa5bfdaa0": {
+      "query_-1": 249,
+      "output_1": 1634,
+      "query_1": 1530,
+      "output_-1": 168,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "b58fd2ac0d1687c1": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "ba03ba6670565082": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "bb30e22f91b2202b": {
+      "query_-1": 789,
+      "output_1": 1915,
+      "query_1": 1820,
+      "output_-1": 706,
+      "output_None": 0
+    },
+    "c26e6be8af43118d": {
+      "query_-1": 409,
+      "output_1": 2648,
+      "query_1": 2586,
+      "output_-1": 364,
+      "output_None": 0
+    },
+    "d173dc7138429af6": {
+      "query_-1": 249,
+      "output_1": 1634,
+      "query_1": 1530,
+      "output_-1": 168,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "d2da45a730d0756c": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    },
+    "d7ad3e46c350ed76": {
+      "query_-1": 380,
+      "output_1": 2869,
+      "query_1": 2742,
+      "output_-1": 280,
+      "output_None": 0
+    },
+    "d92295b7b58fdfc5": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "de2106d309204cd3": {
+      "query_-1": 1207,
+      "output_1": 1539,
+      "output_-1": 1111,
+      "query_1": 1419,
+      "output_None": 0
+    },
+    "de8f762eb83b97ea": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 56,
+      "query_0": 55
+    },
+    "df2cb388eb225100": {
+      "query_-1": 227,
+      "output_1": 994,
+      "query_1": 902,
+      "output_-1": 150,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "e3998366b3838645": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "e5df0b989788fea4": {
+      "query_-1": 892,
+      "output_1": 1299,
+      "output_-1": 814,
+      "query_1": 1200,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "f101ef178468aaf2": {
+      "query_-1": 1024,
+      "output_1": 915,
+      "query_1": 896,
+      "output_-1": 1019,
+      "output_None": 0
+    },
+    "f9039996102ee124": {
+      "query_-1": 317,
+      "output_1": 2454,
+      "query_1": 2347,
+      "output_-1": 240,
+      "output_None": 0,
+      "output_0": 55,
+      "query_0": 54
+    },
+    "fc910f4d5a8e8f67": {
+      "query_-1": 276,
+      "output_1": 1544,
+      "query_1": 1483,
+      "output_-1": 238,
+      "output_0": 55,
+      "query_0": 54,
+      "output_None": 0
+    }
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "status": "COMPLETE",
+  "jobs": [
+    {
+      "job_id": "0f81dd578b050f3d",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 60.90606056060642
+    },
+    {
+      "job_id": "12f11cc8cf224461",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3714,
+        "frames": 80,
+        "events": 1858,
+        "newborn": 25,
+        "deleted_queries": 1,
+        "stale_time": 0,
+        "coast": 97,
+        "repeat_or_regressed_count": 97
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 49.71152609214187
+    },
+    {
+      "job_id": "1582be3a0fbb3d9c",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 53.76316404808313
+    },
+    {
+      "job_id": "16959a877affaa9d",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 52.77217161562294
+    },
+    {
+      "job_id": "243d76d26dfc4ece",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 60.71336592361331
+    },
+    {
+      "job_id": "245997ce61af986f",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 75.22833663690835
+    },
+    {
+      "job_id": "36a44880203cdef3",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 54.27130971290171
+    },
+    {
+      "job_id": "410fec48a6a1488e",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3923,
+        "frames": 110,
+        "events": 1606,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 164,
+        "repeat_or_regressed_count": 164
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 57.97064032871276
+    },
+    {
+      "job_id": "47112cf429e38922",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 60.60317868646234
+    },
+    {
+      "job_id": "69fb3ef368620df9",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 52.58427648898214
+    },
+    {
+      "job_id": "6abeb23cc2436098",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 6170,
+        "frames": 134,
+        "events": 3057,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 229,
+        "repeat_or_regressed_count": 229
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 129.27494346816093
+    },
+    {
+      "job_id": "6df1ef17f6cca1ae",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 75.54971055407077
+    },
+    {
+      "job_id": "7f3083bc00e147fb",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 18838,
+        "frames": 419,
+        "events": 9945,
+        "newborn": 47,
+        "deleted_queries": 24,
+        "stale_time": 0,
+        "coast": 662,
+        "repeat_or_regressed_count": 662
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 1415.2704605348408
+    },
+    {
+      "job_id": "82781d5ee6af0df2",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1201,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 36.50221452023834
+    },
+    {
+      "job_id": "872252222519c7d7",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1201,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 34.703543656505644
+    },
+    {
+      "job_id": "8a64c3fbe7215c46",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3714,
+        "frames": 80,
+        "events": 1858,
+        "newborn": 25,
+        "deleted_queries": 1,
+        "stale_time": 0,
+        "coast": 97,
+        "repeat_or_regressed_count": 97
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 52.64160762820393
+    },
+    {
+      "job_id": "8c929902aa5bf010",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1201,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 36.63493786100298
+    },
+    {
+      "job_id": "8d5f42c88af10379",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3714,
+        "frames": 80,
+        "events": 1858,
+        "newborn": 25,
+        "deleted_queries": 1,
+        "stale_time": 0,
+        "coast": 97,
+        "repeat_or_regressed_count": 97
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 52.127274384722114
+    },
+    {
+      "job_id": "8d87c21350a7bb56",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 9846,
+        "frames": 267,
+        "events": 5745,
+        "newborn": 29,
+        "deleted_queries": 8,
+        "stale_time": 0,
+        "coast": 486,
+        "repeat_or_regressed_count": 486
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 477.9608772788197
+    },
+    {
+      "job_id": "942b1dec65ca1b72",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 63.392957360483706
+    },
+    {
+      "job_id": "a07df9510c2cf7e9",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4482,
+        "frames": 131,
+        "events": 2366,
+        "newborn": 40,
+        "deleted_queries": 14,
+        "stale_time": 0,
+        "coast": 499,
+        "repeat_or_regressed_count": 499
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 91.47133697662503
+    },
+    {
+      "job_id": "b1fc85594ddb90f8",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1202,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 35.70229927636683
+    },
+    {
+      "job_id": "b20b54daa5bfdaa0",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3714,
+        "frames": 80,
+        "events": 1858,
+        "newborn": 25,
+        "deleted_queries": 1,
+        "stale_time": 0,
+        "coast": 97,
+        "repeat_or_regressed_count": 97
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 53.35983097460121
+    },
+    {
+      "job_id": "b58fd2ac0d1687c1",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 79.11656860820949
+    },
+    {
+      "job_id": "ba03ba6670565082",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 79.0737220691517
+    },
+    {
+      "job_id": "bb30e22f91b2202b",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4652,
+        "frames": 156,
+        "events": 2634,
+        "newborn": 25,
+        "deleted_queries": 13,
+        "stale_time": 0,
+        "coast": 330,
+        "repeat_or_regressed_count": 330
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 131.8947446513921
+    },
+    {
+      "job_id": "c26e6be8af43118d",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 7122,
+        "frames": 127,
+        "events": 3033,
+        "newborn": 38,
+        "deleted_queries": 21,
+        "stale_time": 0,
+        "coast": 479,
+        "repeat_or_regressed_count": 479
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 142.93995032086968
+    },
+    {
+      "job_id": "d173dc7138429af6",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3714,
+        "frames": 80,
+        "events": 1858,
+        "newborn": 25,
+        "deleted_queries": 1,
+        "stale_time": 0,
+        "coast": 97,
+        "repeat_or_regressed_count": 97
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 53.868096760474145
+    },
+    {
+      "job_id": "d2da45a730d0756c",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 55.59087817929685
+    },
+    {
+      "job_id": "d7ad3e46c350ed76",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4935,
+        "frames": 96,
+        "events": 3169,
+        "newborn": 47,
+        "deleted_queries": 20,
+        "stale_time": 0,
+        "coast": 436,
+        "repeat_or_regressed_count": 436
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 103.11124954558909
+    },
+    {
+      "job_id": "d92295b7b58fdfc5",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 64.01068278029561
+    },
+    {
+      "job_id": "de2106d309204cd3",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4248,
+        "frames": 103,
+        "events": 2677,
+        "newborn": 51,
+        "deleted_queries": 27,
+        "stale_time": 0,
+        "coast": 514,
+        "repeat_or_regressed_count": 514
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 93.6890329439193
+    },
+    {
+      "job_id": "de8f762eb83b97ea",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1202,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 34.9133867751807
+    },
+    {
+      "job_id": "df2cb388eb225100",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2818,
+        "frames": 80,
+        "events": 1201,
+        "newborn": 18,
+        "deleted_queries": 2,
+        "stale_time": 0,
+        "coast": 103,
+        "repeat_or_regressed_count": 103
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 37.079363911412656
+    },
+    {
+      "job_id": "e3998366b3838645",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 77.2432337878272
+    },
+    {
+      "job_id": "e5df0b989788fea4",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3486,
+        "frames": 80,
+        "events": 2190,
+        "newborn": 44,
+        "deleted_queries": 22,
+        "stale_time": 0,
+        "coast": 364,
+        "repeat_or_regressed_count": 364
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 65.68787425477058
+    },
+    {
+      "job_id": "f101ef178468aaf2",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 2076,
+        "frames": 102,
+        "events": 1972,
+        "newborn": 52,
+        "deleted_queries": 38,
+        "stale_time": 0,
+        "coast": 427,
+        "repeat_or_regressed_count": 427
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 61.02571759279817
+    },
+    {
+      "job_id": "f9039996102ee124",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 4186,
+        "frames": 80,
+        "events": 2765,
+        "newborn": 47,
+        "deleted_queries": 16,
+        "stale_time": 0,
+        "coast": 348,
+        "repeat_or_regressed_count": 348
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 80.48291304893792
+    },
+    {
+      "job_id": "fc910f4d5a8e8f67",
+      "status": "COMPLETE",
+      "counts": {
+        "fresh": 3994,
+        "frames": 80,
+        "events": 1840,
+        "newborn": 27,
+        "deleted_queries": 3,
+        "stale_time": 0,
+        "coast": 241,
+        "repeat_or_regressed_count": 241
+      },
+      "max_xyz_error": 0.0,
+      "seconds": 54.60255472175777
+    }
+  ],
+  "technical_only": false
+}

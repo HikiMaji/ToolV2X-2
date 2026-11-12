@@ -1,0 +1,586 @@
+{
+  "date": "2026-11-12",
+  "branch": "research/rq1-current-2026-11-12",
+  "real_code_commit": "817aa470b33e0facf7423383be45b7a22133ce4d",
+  "synthetic_code_commit": "d3c29ae80ab0e55c661812e0ff41691dfcd6a7a4",
+  "history": "independent root snapshot; historical local branches retained",
+  "files": [
+    {
+      "path": "scripts/rq1_real_cue/geometry.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_real_cue/geometry.py",
+      "source_sha256": "ef4b8069d570f6c759b4f02f8af6a15350f72b920f4788a3935f82329562362d",
+      "role": "current implementation, unchanged from 817aa47",
+      "export_sha256": "ef4b8069d570f6c759b4f02f8af6a15350f72b920f4788a3935f82329562362d"
+    },
+    {
+      "path": "scripts/rq1_real_cue/model.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_real_cue/model.py",
+      "source_sha256": "d0749e71ed74cfd37d9119ec0d40e1fc30bb272f92718d955679aecc4bfd2f1f",
+      "role": "current implementation, unchanged from 817aa47",
+      "export_sha256": "d0749e71ed74cfd37d9119ec0d40e1fc30bb272f92718d955679aecc4bfd2f1f"
+    },
+    {
+      "path": "scripts/rq1_real_cue/run.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_real_cue/run.py",
+      "source_sha256": "7ab263b4aab9c69326c88bb33c8799f771a831d550ab08c35f963e5fb511b980",
+      "role": "current implementation, unchanged from 817aa47",
+      "export_sha256": "7ab263b4aab9c69326c88bb33c8799f771a831d550ab08c35f963e5fb511b980"
+    },
+    {
+      "path": "scripts/rq1_real_cue/test_real_cue.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_real_cue/test_real_cue.py",
+      "source_sha256": "e0be0bd7613681d3366d0a1e579df0cb7e5904c843166986bb584a71b17d3eb7",
+      "role": "current implementation, unchanged from 817aa47",
+      "export_sha256": "e0be0bd7613681d3366d0a1e579df0cb7e5904c843166986bb584a71b17d3eb7"
+    },
+    {
+      "path": "scripts/rq1_common_factor.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_common_factor.py",
+      "source_sha256": "421532c9ac210d45ace949ebff82e179b06ad50b9522ce7162a8b473f8be7d2e",
+      "role": "controlled mechanism / dependency, not real-cache effect",
+      "export_sha256": "421532c9ac210d45ace949ebff82e179b06ad50b9522ce7162a8b473f8be7d2e"
+    },
+    {
+      "path": "scripts/rq1_conditional_revision.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/rq1_conditional_revision.py",
+      "source_sha256": "b1a332ca81f41dcaa93ccc93f47d99031233d99a27f1ef442a0fb5e422a0ad15",
+      "role": "controlled mechanism / dependency, not real-cache effect",
+      "export_sha256": "b1a332ca81f41dcaa93ccc93f47d99031233d99a27f1ef442a0fb5e422a0ad15"
+    },
+    {
+      "path": "scripts/run_rq1_conditional_revision.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/scripts/run_rq1_conditional_revision.py",
+      "source_sha256": "e7f025822a320f989e377dfd827ad9ab41b1cd4d0ba4f4323c73b7e332297386",
+      "role": "controlled mechanism / dependency, not real-cache effect",
+      "export_sha256": "e7f025822a320f989e377dfd827ad9ab41b1cd4d0ba4f4323c73b7e332297386"
+    },
+    {
+      "path": "tests/test_rq1_conditional_revision.py",
+      "source": ".worktrees/rq1-real-cue-2026-11-11/tests/test_rq1_conditional_revision.py",
+      "source_sha256": "c5a05cf22afde306983d451b7c0368131acc9110b553816753e21f4442879be0",
+      "role": "controlled kernel checks",
+      "export_sha256": "c5a05cf22afde306983d451b7c0368131acc9110b553816753e21f4442879be0"
+    },
+    {
+      "path": "docs/research_lessons_2026_10_08.md",
+      "source": "docs/research_lessons_2026_10_08.md",
+      "source_sha256": "d06b50d2bedda18e29f522479d380e22568ff5f041104d1bf26eb79ac57a014d",
+      "role": "selected research record",
+      "export_sha256": "ed3f0d40e844c5e3b70181f907ad73e82e5a705f017bb1cc231b341f894dd8a2"
+    },
+    {
+      "path": "docs/REALLY/条件联合核验_修订结果与方法决定_2026-11-11.md",
+      "source": "docs/REALLY/条件联合核验_修订结果与方法决定_2026-11-11.md",
+      "source_sha256": "96f3ca6d1e8120771250dd07998ca5aa7e74f599a9465c2bbd552622fb22670b",
+      "role": "selected research record",
+      "export_sha256": "96f3ca6d1e8120771250dd07998ca5aa7e74f599a9465c2bbd552622fb22670b"
+    },
+    {
+      "path": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "source": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "source_sha256": "aa3b24e34e86fd0e14493df52568f5afaf729c6b352d62c899bbc23793433373",
+      "role": "selected research record",
+      "export_sha256": "17986fe05104e55cb04d89f1012f0c24144172b60fc0ff1d0767c88c2972883c"
+    },
+    {
+      "path": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "source": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "source_sha256": "61c5928f7e277939ff21fbb199c7ba434d1a6e30205219ba9b9866ac2b94cd26",
+      "role": "selected research record",
+      "export_sha256": "2b9fc3dbf3010d9edabfe3e01a5b0c25e5958aa4ee3c5047da1d8eb8791c5cfe"
+    },
+    {
+      "path": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "source": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "source_sha256": "11578e8d6cc5b0877bd5e78dcc4c1c591de35649d230830a50635cfce6b70556",
+      "role": "selected research record",
+      "export_sha256": "369457e85a8de1bf206fa330a1bb0e1295b4a005abc85c6c4dc3fa8131cd8a39"
+    },
+    {
+      "path": "docs/REALLY/核验模块与完整系统_文献及代码边界_2026-11-10.md",
+      "source": "docs/REALLY/核验模块与完整系统_文献及代码边界_2026-11-10.md",
+      "source_sha256": "bfbc9a5363290f38c2f3573fd16307279cb692482611b249cb3afa66c7aa82ec",
+      "role": "selected research record",
+      "export_sha256": "3bd2ae768847e3d4a8272e3cd2e4813ecc262041ba0b0a0f92e368edc0c49052"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/真实观测条件接入_实施计划_2026-11-11.md",
+      "source": "docs/REALLY_MAYBE/真实观测条件接入_实施计划_2026-11-11.md",
+      "source_sha256": "6fe9ed02fd1cc4d673b153f90d428d17c3243333858fc2dece5ce7e3a99a3e55",
+      "role": "selected research record",
+      "export_sha256": "6fe9ed02fd1cc4d673b153f90d428d17c3243333858fc2dece5ce7e3a99a3e55"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/条件联合核验_修订实施计划_2026-11-11.md",
+      "source": "docs/REALLY_MAYBE/条件联合核验_修订实施计划_2026-11-11.md",
+      "source_sha256": "ecabeb8bad5db0b5dc01affe164b390f9b35994d7ab8ea878ab9c4ec122abafa",
+      "role": "selected research record",
+      "export_sha256": "ecabeb8bad5db0b5dc01affe164b390f9b35994d7ab8ea878ab9c4ec122abafa"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/SDS.md",
+      "source": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/SDS.md",
+      "source_sha256": "adb81ce47e987cff7dd3616c831860122b88948b7fe16cd9b4c2548fa5f55325",
+      "role": "selected research record",
+      "export_sha256": "adb81ce47e987cff7dd3616c831860122b88948b7fe16cd9b4c2548fa5f55325"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/code_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/code_review.md",
+      "source_sha256": "005f2ce3e7570689e7c706f099c249b7dbb9fccee666a8c2c1ea039674eaee18",
+      "role": "selected research record",
+      "export_sha256": "005f2ce3e7570689e7c706f099c249b7dbb9fccee666a8c2c1ea039674eaee18"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/plan_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/plan_review.md",
+      "source_sha256": "8bbbe8c3aa387a80fe116189c0b18519793ce8b1e62761f6c79216ddf078fbde",
+      "role": "selected research record",
+      "export_sha256": "8bbbe8c3aa387a80fe116189c0b18519793ce8b1e62761f6c79216ddf078fbde"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/sds_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_real_cue_2026_11_11/sds_review.md",
+      "source_sha256": "9ef17afc87315fb27a19dffb93f9acead777d76d31de4f45eb6cd997bcd332a5",
+      "role": "selected research record",
+      "export_sha256": "9ef17afc87315fb27a19dffb93f9acead777d76d31de4f45eb6cd997bcd332a5"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/SDS.md",
+      "source": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/SDS.md",
+      "source_sha256": "c6c8213a8c471c44a3adf4b4d96ed87993bbb37b6892f9d746cf427808907d31",
+      "role": "selected research record",
+      "export_sha256": "c6c8213a8c471c44a3adf4b4d96ed87993bbb37b6892f9d746cf427808907d31"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/code_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/code_review.md",
+      "source_sha256": "5e2eb706ab68b331a694e0849940578173748c360b9dfc13c8a94a3a56572720",
+      "role": "selected research record",
+      "export_sha256": "5e2eb706ab68b331a694e0849940578173748c360b9dfc13c8a94a3a56572720"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/plan_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/plan_review.md",
+      "source_sha256": "7a560bfb3b863211039ac281ffe32b620b69d219a96b72e8dce657da633ddfeb",
+      "role": "selected research record",
+      "export_sha256": "7a560bfb3b863211039ac281ffe32b620b69d219a96b72e8dce657da633ddfeb"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/result_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/result_review.md",
+      "source_sha256": "348d06016a5fb997caf98eb458a6a0e4b439799d0a4763bea5774704f2e8ff32",
+      "role": "selected research record",
+      "export_sha256": "d69cd9688f7d4e0e06e6a3fbf2f191622faa2730f023d32f77972bbbdb129bd4"
+    },
+    {
+      "path": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/sds_review.md",
+      "source": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/sds_review.md",
+      "source_sha256": "1492e92d28733541aacacf8c302bee209c9feadaa3870fbf55a4d7ec91a0c8ac",
+      "role": "selected research record",
+      "export_sha256": "1492e92d28733541aacacf8c302bee209c9feadaa3870fbf55a4d7ec91a0c8ac"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/config.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/config.json",
+      "source_sha256": "c487b2c0a44f23962b3f04a89397de5956f6a8d9f6f4cad841cdd651715f78bb",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "c487b2c0a44f23962b3f04a89397de5956f6a8d9f6f4cad841cdd651715f78bb"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/examples.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/examples.json",
+      "source_sha256": "d52f47d87cbf18885d98df9d79a8cf2a9ab70d166cfe253cc5d47234a4c21f3e",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "d52f47d87cbf18885d98df9d79a8cf2a9ab70d166cfe253cc5d47234a4c21f3e"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.json",
+      "source_sha256": "e0097eacb88943ef2c4e70644ade3fab50cc660daa25b6c997baa009c9553794",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "e0097eacb88943ef2c4e70644ade3fab50cc660daa25b6c997baa009c9553794"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.png",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.png",
+      "source_sha256": "9b301f8119cbdc0251a6ee7cb45574007a68237967ad33f7745a099f4faef85c",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "9b301f8119cbdc0251a6ee7cb45574007a68237967ad33f7745a099f4faef85c"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.svg",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_frontier.svg",
+      "source_sha256": "3edad56afb1d9d3ad21b71911675245e0a8f42451b3f071d77f17edd490d2c96",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "3edad56afb1d9d3ad21b71911675245e0a8f42451b3f071d77f17edd490d2c96"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_rows.jsonl",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_rows.jsonl",
+      "source_sha256": "2286823772d59ae496773f45e0dbdc42b981065c87ec543f0e9aa5c1ee654d66",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "2286823772d59ae496773f45e0dbdc42b981065c87ec543f0e9aa5c1ee654d66"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_strata.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/main_strata.json",
+      "source_sha256": "d9d3882a6b11b3fb2bbd8e4a716ec8899dd18481dc5fe977c878eacd47a78720",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "d9d3882a6b11b3fb2bbd8e4a716ec8899dd18481dc5fe977c878eacd47a78720"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_risk.png",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_risk.png",
+      "source_sha256": "8b345bfdc6efca23ce19350da71f832f805ba402e69bce98387a9e75c2b7390d",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "8b345bfdc6efca23ce19350da71f832f805ba402e69bce98387a9e75c2b7390d"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_risk.svg",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_risk.svg",
+      "source_sha256": "317cbbece13787cc74cab28c2d57f17904cf9a10a60bbd6139abe891a783a16c",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "317cbbece13787cc74cab28c2d57f17904cf9a10a60bbd6139abe891a783a16c"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_summary.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/stress_summary.json",
+      "source_sha256": "24f576b9917851b4c65712b16b9ac3630ed60d877e0adcc9168c299bfc96be96",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "24f576b9917851b4c65712b16b9ac3630ed60d877e0adcc9168c299bfc96be96"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/summary.md",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/summary.md",
+      "source_sha256": "1883d8ebf005039abdffdf689d282f9f84adf95930b273561b5f40b7a68959a5",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "1883d8ebf005039abdffdf689d282f9f84adf95930b273561b5f40b7a68959a5"
+    },
+    {
+      "path": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/transitions.json",
+      "source": "docs/evidence/rq1_conditional_revision_2026_11_11/run_001/transitions.json",
+      "source_sha256": "04a662b6c0b8c2a32d6b6b39d22bf07dc3627e3ab5bc144070349abfcc9721d8",
+      "role": "completed controlled experiment; not vehicle evidence",
+      "export_sha256": "04a662b6c0b8c2a32d6b6b39d22bf07dc3627e3ab5bc144070349abfcc9721d8"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/manifest.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/manifest.json",
+      "source_sha256": "7ba69628b42ce4da1858412fa7249ada8584cfb10c1eebc89100e364f7bc530f",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "7ba69628b42ce4da1858412fa7249ada8584cfb10c1eebc89100e364f7bc530f"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/results.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/results.json",
+      "source_sha256": "711e212000430a78ee064ca30740d375cc6e3eed18bada3949fe8ac4bffc7a08",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "711e212000430a78ee064ca30740d375cc6e3eed18bada3949fe8ac4bffc7a08"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/results.md",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/results.md",
+      "source_sha256": "5053ad4cd2447de2c7f9d47373c581d6749b59059f145672dc9116f5990bad5b",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "5053ad4cd2447de2c7f9d47373c581d6749b59059f145672dc9116f5990bad5b"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/interpretation_metrics.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/interpretation_metrics.json",
+      "source_sha256": "3e59508a7fb8b3381e78cc4a3a4fc043e116778a618247beb05d2ef9c70e19ae",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "3e59508a7fb8b3381e78cc4a3a4fc043e116778a618247beb05d2ef9c70e19ae"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/verification.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/verification.json",
+      "source_sha256": "8dd829e1bde08a9da7fe2fb1704e2ed91e680ce767bd2269f6546bef3f554509",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "8dd829e1bde08a9da7fe2fb1704e2ed91e680ce767bd2269f6546bef3f554509"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/extraction_summary.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/extraction_summary.json",
+      "source_sha256": "894a82058ade3fe323a8dabd35f2ca68343ee57fe321e8e2330b2749330aa82a",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "894a82058ade3fe323a8dabd35f2ca68343ee57fe321e8e2330b2749330aa82a"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/label_summary.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/label_summary.json",
+      "source_sha256": "41038a0f710d51d51c8f3fedbe170751cf864635a78c6c9beb1891d426d866aa",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "41038a0f710d51d51c8f3fedbe170751cf864635a78c6c9beb1891d426d866aa"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/run_manifest.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/run_manifest.json",
+      "source_sha256": "9734cb2d5c199f0c775a618f650043d980cbd09bc2f91396c1bac7415d315b7d",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "9734cb2d5c199f0c775a618f650043d980cbd09bc2f91396c1bac7415d315b7d"
+    },
+    {
+      "path": "docs/evidence/rq1_static_trial_2026_11_10/run_001/event_support_summary.json",
+      "source": "docs/evidence/rq1_static_trial_2026_11_10/run_001/event_support_summary.json",
+      "source_sha256": "c8c8ee3cfc87cf90a42396a3b37770a46a3a68189cadd943f7eaa834bbd443fc",
+      "role": "historical failed static trial; reference only",
+      "export_sha256": "c8c8ee3cfc87cf90a42396a3b37770a46a3a68189cadd943f7eaa834bbd443fc"
+    },
+    {
+      "path": "docs/研究点一_当前方案.md",
+      "source": "docs/研究点一_当前方案.md",
+      "source_sha256": "c0a1c3c689fda27b356966eeb48115116a78e1f84bce3a3901a4a5876a86bb23",
+      "role": "current authoritative method updated to implemented real-cache interface",
+      "export_sha256": "c0a1c3c689fda27b356966eeb48115116a78e1f84bce3a3901a4a5876a86bb23"
+    }
+  ],
+  "omitted_historical_links": [
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "冻结计划",
+      "original_target": "../REALLY_MAYBE/共同因素联合核验_机制试验计划_2026-11-10.md"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "SDS",
+      "original_target": "../REALLY_MAYBE/rq1_common_factor_2026_11_10/SDS.md"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "政策分解",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/policy_analysis_2026_11_11/analysis.json"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "问题分解与优化建议",
+      "original_target": "../REALLY_MAYBE/共同因素方案_问题分解与优化建议_2026-11-11.md"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "冻结运行摘要",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/summary.md"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "参数与政策",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/config.json"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "主模式",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/main_rows.jsonl"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "全部压力",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/stress_summary.json"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "状态转移",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/transitions.json"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "主工作点图",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/main_risk_frontier.png"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "压力图",
+      "original_target": "../evidence/rq1_common_factor_2026_11_10/run_001/stress_risk.png"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "独立代码审核",
+      "original_target": "../REALLY_MAYBE/rq1_common_factor_2026_11_10/code_review.md"
+    },
+    {
+      "document": "docs/REALLY/共同因素联合核验_首轮机制结果_2026-11-11.md",
+      "label": "独立结果复核",
+      "original_target": "../REALLY_MAYBE/rq1_common_factor_2026_11_10/result_review.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "固定质量原代码复现",
+      "original_target": "MATE固定质量依赖_原代码复现_2026-11-05.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "四车报告级持续运行",
+      "original_target": "四车报告依赖场景_原生MATE持续运行_2026-11-05.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "十段缓存的几何分析",
+      "original_target": "实际观测几何与共同漏报_缓存实验_2026-11-05.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "GT3674点云诊断",
+      "original_target": "真实目标3674共同漏报_点云诊断_2026-11-05.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "质量条件化后的残余诊断",
+      "original_target": "单车质量条件化后的残余依赖_单目标诊断_2026-11-05.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "同因反证数量及实际目标回放",
+      "original_target": "同因多份反证对目标判断的累积影响_2026-11-06.md"
+    },
+    {
+      "document": "docs/REALLY/多车共同原因与反证累积_阶段结论汇总_2026-11-06.md",
+      "label": "最新测试独立审核",
+      "original_target": "../evidence/mate_shared_evidence_impact_2026_11_06/review.md"
+    },
+    {
+      "document": "docs/REALLY/核验模块与完整系统_文献及代码边界_2026-11-10.md",
+      "label": "MATE接入核读",
+      "original_target": "MATE实验框架接入边界_代码核读_2026-11-06.md"
+    },
+    {
+      "document": "docs/REALLY/核验模块与完整系统_文献及代码边界_2026-11-10.md",
+      "label": "系统范围审核",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/system_scope_review.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "计划",
+      "original_target": "../REALLY_MAYBE/静态评分开发试验_实施计划_2026-11-10.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "SDS",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/SDS.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "实现报告",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/implementation_report.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "代码审核",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/code_review.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "结果独立复核",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/result_review.md"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "冻结分数诊断",
+      "original_target": "../evidence/rq1_static_trial_2026_11_10/diagnosis_2026_11_10/fixed_output_diagnosis.json"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "按可计分来源数的错误分层",
+      "original_target": "../evidence/rq1_static_trial_2026_11_10/diagnosis_2026_11_10/error_by_available_sources.json"
+    },
+    {
+      "document": "docs/REALLY/静态评分_首轮开发比较_2026-11-10.md",
+      "label": "有限审核",
+      "original_target": "../REALLY_MAYBE/rq1_static_trial_2026_11_10/incremental_temporal_mechanism_review.md"
+    },
+    {
+      "document": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/result_review.md",
+      "label": "独立重计脚本",
+      "original_target": "independent_recount.py"
+    },
+    {
+      "document": "docs/REALLY_MAYBE/rq1_conditional_revision_2026_11_11/result_review.md",
+      "label": "独立重计JSON",
+      "original_target": "independent_recount.json"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "共同底座设计评审",
+      "original_target": "common_backbone_design_2026_09_22.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "CoDriving融合设计复核",
+      "original_target": "codriving_effective_fusion_decision_2026_09_28.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "固定判别对照结果",
+      "original_target": "observation_discriminative_controls_results_2026_10_08.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "有效核验范围比较",
+      "original_target": "REALLY/有效核验范围内的模型比较_2026-10-31.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "G0门控原因",
+      "original_target": "REALLY/G0_FOV内未生成反证的原因_2026-10-31.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "外部建议审查",
+      "original_target": "REALLY/argon-re_审查_2026-10-30.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "实际数据总览",
+      "original_target": "evidence/dataset_inventory_2026_11_04/overview.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "已核实结论R27、R33",
+      "original_target": "REALLY/研究点一_已核实结论.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "K1/K2代码语义",
+      "original_target": "REALLY/K1_K2_当前实现与区别.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "re-113审查",
+      "original_target": "REALLY_MAYBE/re-113_审查与方案修正_2026-11-03.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "消息字段与转换",
+      "original_target": "REALLY/消息轨迹不确定性字段与中央转换_2026-11-02.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "K1/K2实现",
+      "original_target": "REALLY/K1_K2_当前实现与区别.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "九点协变反例",
+      "original_target": "REALLY/九点协变与缺失回退_数学反例_2026-11-03.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "有效范围比较",
+      "original_target": "REALLY/有效核验范围内的模型比较_2026-10-31.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "无GPU数学检查",
+      "original_target": "REALLY/无GPU数学检查_概率范围与简单规则_2026-11-03.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "数据总览",
+      "original_target": "evidence/dataset_inventory_2026_11_04/overview.md"
+    },
+    {
+      "document": "docs/research_lessons_2026_10_08.md",
+      "label": "已核实结论R24",
+      "original_target": "REALLY/研究点一_已核实结论.md"
+    }
+  ],
+  "adaptation": "Code copied byte-identically. Selected markdown links relocated to included code or explicitly marked as omitted historical material. New README/current scheme/status/collaboration describe current state."
+}

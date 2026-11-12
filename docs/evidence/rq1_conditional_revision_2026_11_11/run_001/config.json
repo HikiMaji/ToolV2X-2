@@ -1,0 +1,113 @@
+{
+  "source_commit": "d3c29ae80ab0e55c661812e0ff41691dfcd6a7a4",
+  "code_root": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-conditional-revision-2026-11-11",
+  "reference_params": {
+    "theta": 0.8,
+    "accuracy": 0.8
+  },
+  "generation_params": {
+    "theta": 0.8,
+    "accuracy": 0.8
+  },
+  "false_rates": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "false_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "F4": "all registered peers always report conditional on anchor report",
+  "budgets": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "score_decimals": 12,
+  "counts": {
+    "base": 34,
+    "contexts": 128,
+    "rows": 460
+  },
+  "stress_configs": [
+    {
+      "name": "a_0.6",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.6
+      }
+    },
+    {
+      "name": "a_0.95",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.95
+      }
+    },
+    {
+      "name": "theta_0.6",
+      "generation": {
+        "theta": 0.6,
+        "accuracy": 0.8
+      }
+    },
+    {
+      "name": "theta_0.95",
+      "generation": {
+        "theta": 0.95,
+        "accuracy": 0.8
+      }
+    },
+    {
+      "name": "r_0.05",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.8
+      },
+      "attack": {
+        "kind": "independent",
+        "r": 0.05
+      }
+    },
+    {
+      "name": "r_0.3",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.8
+      },
+      "attack": {
+        "kind": "independent",
+        "r": 0.3
+      }
+    },
+    {
+      "name": "r_0.6",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.8
+      },
+      "attack": {
+        "kind": "independent",
+        "r": 0.6
+      }
+    },
+    {
+      "name": "partial",
+      "generation": {
+        "theta": 0.8,
+        "accuracy": 0.8
+      },
+      "attack": {
+        "kind": "partial"
+      },
+      "note": "Choose one registered peer before mask; N2 reduces to full coordination."
+    }
+  ],
+  "eligibility": "at least one observed non-anchor event",
+  "parameters_are_declared": true,
+  "source_dirty": false,
+  "elapsed_seconds": 15.715191878378391
+}

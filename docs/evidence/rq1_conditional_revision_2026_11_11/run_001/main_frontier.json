@@ -1,0 +1,2553 @@
+{
+  "frontiers": {
+    "I0": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": false,
+          "reject_enabled": true,
+          "tau_A": "+inf",
+          "tau_R": -2.381065229345
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.0,
+              "unknown": 0.6072522962962966,
+              "reject": 0.0038588148148148136
+            },
+            "rates": {
+              "adopt": 0.0,
+              "unknown": 0.9936855757575755,
+              "reject": 0.006314424242424235
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.5706111111111102,
+                "reject": 0.0405
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9337272727272725,
+                "reject": 0.06627272727272737
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.5826666666666661,
+                "reject": 0.028444444444444446
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9534545454545453,
+                "reject": 0.046545454545454584
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.599111111111112,
+                "reject": 0.012
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9803636363636362,
+                "reject": 0.019636363636363605
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6111111111111116,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.0,
+              "unknown": 0.5908750000000009,
+              "reject": 0.020236111111111114
+            },
+            "rates": {
+              "adopt": 0.0,
+              "unknown": 0.9668863636363638,
+              "reject": 0.033113636363636324
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.0,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 0.0,
+          "correct_clear": 0.016556818181818162,
+          "conservative_correct_clear": 0.0,
+          "max_error": 0.006314424242424235
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.663683051821,
+          "tau_R": -1.196963101968
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.02721525925925926,
+              "unknown": 0.5599034444444448,
+              "reject": 0.023992407407407396
+            },
+            "rates": {
+              "adopt": 0.04453406060606057,
+              "unknown": 0.9162056363636363,
+              "reject": 0.03926030303030298
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 5.555555555555556e-05,
+                "unknown": 0.4400555555555557,
+                "reject": 0.1710000000000001
+              },
+              "rates": {
+                "adopt": 9.090909090909104e-05,
+                "unknown": 0.7200909090909103,
+                "reject": 0.27981818181818235
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.00044444444444444447,
+                "unknown": 0.48266666666666636,
+                "reject": 0.12800000000000009
+              },
+              "rates": {
+                "adopt": 0.0007272727272727279,
+                "unknown": 0.789818181818182,
+                "reject": 0.20945454545454578
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.0035555555555555557,
+                "unknown": 0.5435555555555555,
+                "reject": 0.06399999999999997
+              },
+              "rates": {
+                "adopt": 0.005818181818181808,
+                "unknown": 0.8894545454545437,
+                "reject": 0.1047272727272725
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.055555555555555546,
+                "unknown": 0.555555555555556,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.09090909090909081,
+                "unknown": 0.9090909090909092,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.014902777777777779,
+              "unknown": 0.5054583333333343,
+              "reject": 0.09075000000000004
+            },
+            "rates": {
+              "adopt": 0.024386363636363605,
+              "unknown": 0.8271136363636369,
+              "reject": 0.14849999999999985
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.09090909090909077,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.09651703030303022,
+          "conservative_correct_clear": 0.022267030303030285,
+          "max_error": 0.03926030303030298
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.109122034548,
+          "tau_R": -0.995325755875
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.09469674074074075,
+              "unknown": 0.46659100000000037,
+              "reject": 0.04982337037037031
+            },
+            "rates": {
+              "adopt": 0.15495830303030292,
+              "unknown": 0.7635125454545454,
+              "reject": 0.08152915151515135
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0011666666666666668,
+                "unknown": 0.3354444444444446,
+                "reject": 0.27449999999999986
+              },
+              "rates": {
+                "adopt": 0.001909090909090912,
+                "unknown": 0.5489090909090919,
+                "reject": 0.44918181818181857
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0048888888888888905,
+                "unknown": 0.38577777777777744,
+                "reject": 0.22044444444444447
+              },
+              "rates": {
+                "adopt": 0.008000000000000009,
+                "unknown": 0.6312727272727272,
+                "reject": 0.36072727272727306
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.021333333333333343,
+                "unknown": 0.46177777777777645,
+                "reject": 0.12799999999999992
+              },
+              "rates": {
+                "adopt": 0.03490909090909086,
+                "unknown": 0.7556363636363602,
+                "reject": 0.20945454545454498
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.16666666666666663,
+                "unknown": 0.44444444444444475,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.27272727272727243,
+                "unknown": 0.7272727272727272,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.04851388888888889,
+              "unknown": 0.4068611111111123,
+              "reject": 0.15573611111111088
+            },
+            "rates": {
+              "adopt": 0.07938636363636353,
+              "unknown": 0.6657727272727283,
+              "reject": 0.2548409090909084
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.2727272727272723,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.20489960606060564,
+          "conservative_correct_clear": 0.07747915151515146,
+          "max_error": 0.08152915151515135
+        }
+      }
+    ],
+    "J0": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.433553983735,
+          "tau_R": -1.847203982616
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.02280051851851851,
+              "unknown": 0.5829733703703708,
+              "reject": 0.005337222222222219
+            },
+            "rates": {
+              "adopt": 0.037309939393939354,
+              "unknown": 0.9539564242424241,
+              "reject": 0.008733636363636351
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0011666666666666665,
+                "unknown": 0.5319444444444439,
+                "reject": 0.078
+              },
+              "rates": {
+                "adopt": 0.0019090909090909115,
+                "unknown": 0.8704545454545457,
+                "reject": 0.1276363636363638
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.004148148148148148,
+                "unknown": 0.5488888888888888,
+                "reject": 0.05807407407407408
+              },
+              "rates": {
+                "adopt": 0.006787878787878793,
+                "unknown": 0.8981818181818187,
+                "reject": 0.09503030303030312
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.012444444444444444,
+                "unknown": 0.5700000000000005,
+                "reject": 0.02866666666666666
+              },
+              "rates": {
+                "adopt": 0.020363636363636327,
+                "unknown": 0.932727272727272,
+                "reject": 0.04690909090909082
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6111111111111116,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.004439814814814815,
+              "unknown": 0.565486111111112,
+              "reject": 0.041185185185185186
+            },
+            "rates": {
+              "adopt": 0.007265151515151506,
+              "unknown": 0.9253409090909094,
+              "reject": 0.0673939393939393
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.020363636363636334,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 0.19200000000000003,
+          "correct_clear": 0.052351939393939326,
+          "conservative_correct_clear": 0.018654969696969677,
+          "max_error": 0.008733636363636351
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.776953675923,
+          "tau_R": -0.910132655623
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.07518066666666666,
+              "unknown": 0.5057821111111113,
+              "reject": 0.0301483333333333
+            },
+            "rates": {
+              "adopt": 0.12302290909090897,
+              "unknown": 0.8276434545454542,
+              "reject": 0.049333636363636274
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.011685185185185196,
+                "unknown": 0.39242592592592596,
+                "reject": 0.2070000000000001
+              },
+              "rates": {
+                "adopt": 0.019121212121212164,
+                "unknown": 0.642151515151516,
+                "reject": 0.3387272727272734
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.02385185185185186,
+                "unknown": 0.4201481481481483,
+                "reject": 0.1671111111111112
+              },
+              "rates": {
+                "adopt": 0.039030303030303075,
+                "unknown": 0.6875151515151524,
+                "reject": 0.27345454545454584
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.04562962962962963,
+                "unknown": 0.46748148148148094,
+                "reject": 0.09799999999999993
+              },
+              "rates": {
+                "adopt": 0.07466666666666653,
+                "unknown": 0.7649696969696947,
+                "reject": 0.160363636363636
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.018518518518518517,
+                "unknown": 0.5925925925925931,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.030303030303030276,
+                "unknown": 0.9696969696969697,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.024921296296296313,
+              "unknown": 0.4681620370370376,
+              "reject": 0.11802777777777777
+            },
+            "rates": {
+              "adopt": 0.040780303030303,
+              "unknown": 0.7660833333333332,
+              "reject": 0.19313636363636336
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.10303030303030287,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.15807963636363617,
+          "conservative_correct_clear": 0.06151145454545449,
+          "max_error": 0.049333636363636274
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.616431321829,
+          "tau_R": -0.821482938415
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.12785659259259263,
+              "unknown": 0.4402080370370371,
+              "reject": 0.04304648148148144
+            },
+            "rates": {
+              "adopt": 0.20921987878787868,
+              "unknown": 0.7203404242424237,
+              "reject": 0.07043969696969685
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.014833333333333342,
+                "unknown": 0.33677777777777773,
+                "reject": 0.25950000000000006
+              },
+              "rates": {
+                "adopt": 0.02427272727272732,
+                "unknown": 0.5510909090909097,
+                "reject": 0.4246363636363643
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.032370370370370376,
+                "unknown": 0.37014814814814845,
+                "reject": 0.2085925925925927
+              },
+              "rates": {
+                "adopt": 0.05296969696969702,
+                "unknown": 0.6056969696969707,
+                "reject": 0.34133333333333377
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.06933333333333336,
+                "unknown": 0.4204444444444442,
+                "reject": 0.12133333333333328
+              },
+              "rates": {
+                "adopt": 0.1134545454545453,
+                "unknown": 0.6879999999999984,
+                "reject": 0.1985454545454541
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.08333333333333334,
+                "unknown": 0.5277777777777783,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.13636363636363627,
+                "unknown": 0.8636363636363639,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.04996759259259255,
+              "unknown": 0.4137870370370375,
+              "reject": 0.14735648148148137
+            },
+            "rates": {
+              "adopt": 0.08176515151515133,
+              "unknown": 0.6771060606060605,
+              "reject": 0.24112878787878736
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.222181818181818,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.22517433333333303,
+          "conservative_correct_clear": 0.10460993939393934,
+          "max_error": 0.08176515151515133
+        }
+      }
+    ],
+    "Ic": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": false,
+          "reject_enabled": true,
+          "tau_A": "+inf",
+          "tau_R": -2.164263486446
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.0,
+              "unknown": 0.6059348222222223,
+              "reject": 0.00517628888888889
+            },
+            "rates": {
+              "adopt": 0.0,
+              "unknown": 0.9915297090909084,
+              "reject": 0.008470290909090903
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.5088140871111114,
+                "reject": 0.10229702400000006
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.8326048698181835,
+                "reject": 0.1673951301818185
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.5337370642962957,
+                "reject": 0.07737404681481486
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.8733879233939392,
+                "reject": 0.12661207660606077
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.571473095111112,
+                "reject": 0.039638016000000005
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9351377919999998,
+                "reject": 0.0648622079999999
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6111111111111116,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.0,
+              "unknown": 0.5562838394074082,
+              "reject": 0.05482727170370373
+            },
+            "rates": {
+              "adopt": 0.0,
+              "unknown": 0.9102826463030304,
+              "reject": 0.08971735369696962
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.0,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 0.0,
+          "correct_clear": 0.04485867684848481,
+          "conservative_correct_clear": 0.0,
+          "max_error": 0.008470290909090903
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.434710904253,
+          "tau_R": -1.363537373997
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.03163682814814815,
+              "unknown": 0.5492644681481484,
+              "reject": 0.0302098148148148
+            },
+            "rates": {
+              "adopt": 0.051769355151515116,
+              "unknown": 0.8987964024242422,
+              "reject": 0.04943424242424236
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 6.620681481481485e-05,
+                "unknown": 0.3288737362962965,
+                "reject": 0.282171168
+              },
+              "rates": {
+                "adopt": 0.00010833842424242444,
+                "unknown": 0.5381570230303041,
+                "reject": 0.4617346385454552
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0005296545185185188,
+                "unknown": 0.3734693451851846,
+                "reject": 0.23711211140740762
+              },
+              "rates": {
+                "adopt": 0.0008667073939393951,
+                "unknown": 0.6111316557575753,
+                "reject": 0.38800163684848554
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.00423723614814815,
+                "unknown": 0.4522756029629617,
+                "reject": 0.154598272
+              },
+              "rates": {
+                "adopt": 0.0069336591515151424,
+                "unknown": 0.740087350303027,
+                "reject": 0.25297899054545414
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.06620681481481483,
+                "unknown": 0.5449042962962968,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.10833842424242418,
+                "unknown": 0.8916615757575759,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.01775997807407408,
+              "unknown": 0.4248807451851862,
+              "reject": 0.16847038785185173
+            },
+            "rates": {
+              "adopt": 0.029061782303030272,
+              "unknown": 0.6952594012121219,
+              "reject": 0.27567881648484793
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.10833842424242413,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.16372408581818151,
+          "conservative_correct_clear": 0.025884677575757558,
+          "max_error": 0.04943424242424236
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.900628418322,
+          "tau_R": -0.432000141167
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.12739499111111113,
+              "unknown": 0.4240072962962965,
+              "reject": 0.0597088237037037
+            },
+            "rates": {
+              "adopt": 0.20846453090909078,
+              "unknown": 0.6938301212121211,
+              "reject": 0.09770534787878779
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0016867626666666675,
+                "unknown": 0.2829553777777779,
+                "reject": 0.3264689706666669
+              },
+              "rates": {
+                "adopt": 0.002760157090909096,
+                "unknown": 0.46301789090909173,
+                "reject": 0.5342219520000011
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.006714652444444447,
+                "unknown": 0.30741413925925865,
+                "reject": 0.2969823194074076
+              },
+              "rates": {
+                "adopt": 0.010987613090909105,
+                "unknown": 0.5030413187878782,
+                "reject": 0.4859710681212128
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.02814680177777779,
+                "unknown": 0.3516850488888881,
+                "reject": 0.23127926044444463
+              },
+              "rates": {
+                "adopt": 0.04605840290909085,
+                "unknown": 0.5754846254545432,
+                "reject": 0.37845697163636327
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.20780800000000005,
+                "unknown": 0.4033031111111114,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.3400494545454544,
+                "unknown": 0.6599505454545453,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.061089054222222224,
+              "unknown": 0.33633941925925986,
+              "reject": 0.21368263762962958
+            },
+            "rates": {
+              "adopt": 0.09996390690909078,
+              "unknown": 0.5503735951515154,
+              "reject": 0.34966249793939336
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.34184722618181784,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.27906351442424204,
+          "conservative_correct_clear": 0.10423226545454539,
+          "max_error": 0.09996390690909078
+        }
+      }
+    ],
+    "Jc": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.294627172594,
+          "tau_R": -1.906951895147
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.030588281481481468,
+              "unknown": 0.5744333185185191,
+              "reject": 0.006089511111111112
+            },
+            "rates": {
+              "adopt": 0.05005355151515145,
+              "unknown": 0.9399817939393941,
+              "reject": 0.009964654545454539
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0022464639999999992,
+                "unknown": 0.48898119111111116,
+                "reject": 0.11988345600000004
+              },
+              "rates": {
+                "adopt": 0.003676032000000004,
+                "unknown": 0.8001510400000011,
+                "reject": 0.19617292800000033
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.005524517925925928,
+                "unknown": 0.5146252799999997,
+                "reject": 0.09096131318518523
+              },
+              "rates": {
+                "adopt": 0.009040120242424253,
+                "unknown": 0.8421140945454548,
+                "reject": 0.1488457852121214
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.01287918933333333,
+                "unknown": 0.5512977777777781,
+                "reject": 0.04693414400000001
+              },
+              "rates": {
+                "adopt": 0.02107503709090905,
+                "unknown": 0.9021236363636354,
+                "reject": 0.07680132654545443
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6111111111111116,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.005162542814814815,
+              "unknown": 0.5415038400000006,
+              "reject": 0.06444472829629633
+            },
+            "rates": {
+              "adopt": 0.008447797333333321,
+              "unknown": 0.8860971927272725,
+              "reject": 0.10545500993939384
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.02107503709090906,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 0.336,
+          "correct_clear": 0.07775428072727264,
+          "conservative_correct_clear": 0.025026775757575725,
+          "max_error": 0.009964654545454539
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.925099655783,
+          "tau_R": -1.067763557155
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.09777570370370367,
+              "unknown": 0.4831396148148151,
+              "reject": 0.030195792592592575
+            },
+            "rates": {
+              "adopt": 0.15999660606060587,
+              "unknown": 0.7905920969696968,
+              "reject": 0.0494112969696969
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.007739125333333338,
+                "unknown": 0.310258642962963,
+                "reject": 0.2931133428148148
+              },
+              "rates": {
+                "adopt": 0.012664023272727297,
+                "unknown": 0.507695961212122,
+                "reject": 0.4796400155151522
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.01725368414814815,
+                "unknown": 0.35071736888888855,
+                "reject": 0.24314005807407438
+              },
+              "rates": {
+                "adopt": 0.028233301333333356,
+                "unknown": 0.5739011490909091,
+                "reject": 0.3978655495757584
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.038255132444444444,
+                "unknown": 0.41834891851851785,
+                "reject": 0.15450706014814813
+              },
+              "rates": {
+                "adopt": 0.06259930763636352,
+                "unknown": 0.6845709575757554,
+                "reject": 0.25282973478787835
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.05666666666666667,
+                "unknown": 0.5538376296296302,
+                "reject": 0.0006068148148148138
+              },
+              "rates": {
+                "adopt": 0.09272727272727266,
+                "unknown": 0.9062797575757578,
+                "reject": 0.0009929696969696946
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.02997865214814817,
+              "unknown": 0.4082906400000005,
+              "reject": 0.17284181896296283
+            },
+            "rates": {
+              "adopt": 0.04905597624242421,
+              "unknown": 0.6681119563636363,
+              "reject": 0.2828320673939388
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.14246839854545437,
+          "context_worst_false_reject": 9.929696969696942e-07,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.22141433672727234,
+          "conservative_correct_clear": 0.07999879951515142,
+          "max_error": 0.0494112969696969
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.713349887877,
+          "tau_R": -0.406735310751
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.15010314962962962,
+              "unknown": 0.4148200044444448,
+              "reject": 0.04618795703703703
+            },
+            "rates": {
+              "adopt": 0.24562333575757553,
+              "unknown": 0.678796370909091,
+              "reject": 0.07558029333333326
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.015773281185185176,
+                "unknown": 0.26928675081481485,
+                "reject": 0.3260510791111112
+              },
+              "rates": {
+                "adopt": 0.02581082375757578,
+                "unknown": 0.4406510467878794,
+                "reject": 0.5335381294545464
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.03284424059259259,
+                "unknown": 0.2946607028148146,
+                "reject": 0.2836061677037039
+              },
+              "rates": {
+                "adopt": 0.05374512096969701,
+                "unknown": 0.4821720591515152,
+                "reject": 0.4640828198787886
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.06675691140740747,
+                "unknown": 0.3446215632592589,
+                "reject": 0.19973263644444444
+              },
+              "rates": {
+                "adopt": 0.10923858230303021,
+                "unknown": 0.5639261944242409,
+                "reject": 0.32683522327272674
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.09245985185185188,
+                "unknown": 0.5069321481481485,
+                "reject": 0.011719111111111097
+              },
+              "rates": {
+                "adopt": 0.15129793939393932,
+                "unknown": 0.8295253333333332,
+                "reject": 0.019176727272727234
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.05195857125925925,
+              "unknown": 0.35387529125925943,
+              "reject": 0.20527724859259253
+            },
+            "rates": {
+              "adopt": 0.08502311660606048,
+              "unknown": 0.5790686584242419,
+              "reject": 0.3359082249696964
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.22785273793939365,
+          "context_worst_false_reject": 0.0034987287272727186,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.290765780363636,
+          "conservative_correct_clear": 0.12456103224242412,
+          "max_error": 0.08502311660606048
+        }
+      }
+    ],
+    "Gc": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.434710904253,
+          "tau_R": -1.394845685809
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.008480072592592595,
+              "unknown": 0.596685164444445,
+              "reject": 0.005945874074074072
+            },
+            "rates": {
+              "adopt": 0.013876482424242416,
+              "unknown": 0.9763939054545455,
+              "reject": 0.00972961212121211
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 1.9866074074074083e-05,
+                "unknown": 0.5206936770370371,
+                "reject": 0.09039756800000004
+              },
+              "rates": {
+                "adopt": 3.2508121212121274e-05,
+                "unknown": 0.85204419878788,
+                "reject": 0.14792329309090935
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.00015892859259259267,
+                "unknown": 0.5375316859259255,
+                "reject": 0.07342049659259262
+              },
+              "rates": {
+                "adopt": 0.00026006496969697003,
+                "unknown": 0.8795973042424242,
+                "reject": 0.12014263078787893
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.0012714287407407413,
+                "unknown": 0.5657278103703707,
+                "reject": 0.044111872
+              },
+              "rates": {
+                "adopt": 0.002080519757575755,
+                "unknown": 0.9257364169696959,
+                "reject": 0.07218306327272715
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.01986607407407408,
+                "unknown": 0.5912450370370376,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0325081212121212,
+                "unknown": 0.9674918787878789,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.005329074370370372,
+              "unknown": 0.5537995525925935,
+              "reject": 0.051982484148148156
+            },
+            "rates": {
+              "adopt": 0.008720303515151505,
+              "unknown": 0.9062174496969699,
+              "reject": 0.08506224678787869
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.03250812121212118,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.04946936460606055,
+          "conservative_correct_clear": 0.006938241212121208,
+          "max_error": 0.00972961212121211
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.871500145399,
+          "tau_R": -0.897604371017
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.05142106074074075,
+              "unknown": 0.5304582533333336,
+              "reject": 0.029231797037037013
+            },
+            "rates": {
+              "adopt": 0.08414355393939389,
+              "unknown": 0.8680225963636361,
+              "reject": 0.04783384969696962
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.000704983703703704,
+                "unknown": 0.36630226607407435,
+                "reject": 0.24410386133333348
+              },
+              "rates": {
+                "adopt": 0.001153609696969699,
+                "unknown": 0.5994037081212134,
+                "reject": 0.39944268218181894
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0027087170370370377,
+                "unknown": 0.4006501641481475,
+                "reject": 0.20775222992592604
+              },
+              "rates": {
+                "adopt": 0.004432446060606066,
+                "unknown": 0.6556093595151511,
+                "reject": 0.3399581944242429
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.011492503703703706,
+                "unknown": 0.45798083318518396,
+                "reject": 0.14163777422222223
+              },
+              "rates": {
+                "adopt": 0.018805915151515123,
+                "unknown": 0.7494231815757543,
+                "reject": 0.2317709032727269
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.09189570370370373,
+                "unknown": 0.5192154074074077,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.1503747878787878,
+                "unknown": 0.8496252121212119,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.026700477037037047,
+              "unknown": 0.4360371677037045,
+              "reject": 0.14837346637037027
+            },
+            "rates": {
+              "adopt": 0.043691689696969654,
+              "unknown": 0.7135153653333336,
+              "reject": 0.24279294496969647
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.15067863660606043,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.1634682494545452,
+          "conservative_correct_clear": 0.042071776969696946,
+          "max_error": 0.04783384969696962
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.707979908989,
+          "tau_R": -0.408942866366
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.07081365333333335,
+              "unknown": 0.4880080800000002,
+              "reject": 0.05228937777777775
+            },
+            "rates": {
+              "adopt": 0.11587688727272721,
+              "unknown": 0.798558676363636,
+              "reject": 0.08556443636363625
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.001963356444444445,
+                "unknown": 0.2859347520000002,
+                "reject": 0.3232130026666669
+              },
+              "rates": {
+                "adopt": 0.0032127650909090965,
+                "unknown": 0.4678932305454555,
+                "reject": 0.5288940043636375
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.005696445629629631,
+                "unknown": 0.32026872414814767,
+                "reject": 0.28514594133333365
+              },
+              "rates": {
+                "adopt": 0.009321456484848495,
+                "unknown": 0.5240760940606057,
+                "reject": 0.4666024494545464
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.019166208,
+                "unknown": 0.38357644799999907,
+                "reject": 0.20836845511111124
+              },
+              "rates": {
+                "adopt": 0.031362885818181765,
+                "unknown": 0.6276705512727246,
+                "reject": 0.34096656290909055
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.12010311111111113,
+                "unknown": 0.4910080000000002,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.1965323636363635,
+                "unknown": 0.803467636363636,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.03673228029629629,
+              "unknown": 0.3701969810370376,
+              "reject": 0.20418184977777767
+            },
+            "rates": {
+              "adopt": 0.06010736775757567,
+              "unknown": 0.6057768780606061,
+              "reject": 0.33411575418181755
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.20079257599999975,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.22499632072727238,
+          "conservative_correct_clear": 0.05793844363636361,
+          "max_error": 0.08556443636363625
+        }
+      }
+    ],
+    "JcF": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 1.294627172594,
+          "tau_R": -2.099410821755
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.030404814814814794,
+              "unknown": 0.5747249703703706,
+              "reject": 0.005981325925925927
+            },
+            "rates": {
+              "adopt": 0.04975333333333326,
+              "unknown": 0.940459042424242,
+              "reject": 0.009787624242424237
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.0021696639999999987,
+                "unknown": 0.4939539911111111,
+                "reject": 0.11498745600000004
+              },
+              "rates": {
+                "adopt": 0.0035503592727272756,
+                "unknown": 0.8082883490909102,
+                "reject": 0.18816129163636397
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.005896192000000002,
+                "unknown": 0.5189279762962961,
+                "reject": 0.08628694281481486
+              },
+              "rates": {
+                "adopt": 0.009648314181818194,
+                "unknown": 0.8491548703030306,
+                "reject": 0.1411968155151517
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.014961322666666664,
+                "unknown": 0.5527516444444449,
+                "reject": 0.04339814400000001
+              },
+              "rates": {
+                "adopt": 0.024482164363636316,
+                "unknown": 0.9045026909090901,
+                "reject": 0.07101514472727262
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6111111111111116,
+                "reject": 0.0
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.005756794666666667,
+              "unknown": 0.5441861807407413,
+              "reject": 0.06116813570370373
+            },
+            "rates": {
+              "adopt": 0.009420209454545442,
+              "unknown": 0.8904864775757573,
+              "reject": 0.10009331296969688
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.024482164363636327,
+          "context_worst_false_reject": 0.0,
+          "max_context_false_adopt": 0.336,
+          "correct_clear": 0.07492332315151506,
+          "conservative_correct_clear": 0.02487666666666663,
+          "max_error": 0.009787624242424237
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.882222527419,
+          "tau_R": -1.363537373997
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.08347286222222217,
+              "unknown": 0.4971065288888891,
+              "reject": 0.030531719999999984
+            },
+            "rates": {
+              "adopt": 0.13659195636363616,
+              "unknown": 0.813447047272727,
+              "reject": 0.049960996363636295
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.015560906666666667,
+                "unknown": 0.3077706714074074,
+                "reject": 0.2877795330370371
+              },
+              "rates": {
+                "adopt": 0.025463301818181853,
+                "unknown": 0.5036247350303037,
+                "reject": 0.47091196315151596
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.03133458962962964,
+                "unknown": 0.3429760853333331,
+                "reject": 0.2368004361481484
+              },
+              "rates": {
+                "adopt": 0.0512747830303031,
+                "unknown": 0.5612335941818183,
+                "reject": 0.3874916227878795
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.05801415111111115,
+                "unknown": 0.4041448722962959,
+                "reject": 0.1489520877037037
+              },
+              "rates": {
+                "adopt": 0.09493224727272717,
+                "unknown": 0.6613279728484831,
+                "reject": 0.24373977987878745
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6026820740740746,
+                "reject": 0.00842903703703703
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9862070303030304,
+                "reject": 0.013792969696969675
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.02622741185185187,
+              "unknown": 0.41439342577777827,
+              "reject": 0.17049027348148138
+            },
+            "rates": {
+              "adopt": 0.042917583030303,
+              "unknown": 0.678098333090909,
+              "reject": 0.2789840838787873
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.09493224727272716,
+          "context_worst_false_reject": 1.379296969696967e-05,
+          "max_context_false_adopt": 0.336,
+          "correct_clear": 0.20778802012121173,
+          "conservative_correct_clear": 0.06830287466666657,
+          "max_error": 0.049960996363636295
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.713349887877,
+          "tau_R": -0.547295303547
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.15919523851851858,
+              "unknown": 0.39271849037037065,
+              "reject": 0.05919738222222219
+            },
+            "rates": {
+              "adopt": 0.2605012993939393,
+              "unknown": 0.6426302569696969,
+              "reject": 0.0968684436363635
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.022047414518518507,
+                "unknown": 0.25447343762962993,
+                "reject": 0.33459025896296307
+              },
+              "rates": {
+                "adopt": 0.036077587393939424,
+                "unknown": 0.4164110797575768,
+                "reject": 0.5475113328484857
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.04424856651851851,
+                "unknown": 0.28754581807407403,
+                "reject": 0.27931672651851874
+              },
+              "rates": {
+                "adopt": 0.07240674521212126,
+                "unknown": 0.4705295204848488,
+                "reject": 0.45706373430303104
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.08461433362962975,
+                "unknown": 0.3434172349629625,
+                "reject": 0.18307954251851852
+              },
+              "rates": {
+                "adopt": 0.13845981866666662,
+                "unknown": 0.5619554753939376,
+                "reject": 0.2995847059393934
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.09245985185185188,
+                "unknown": 0.46841362962962996,
+                "reject": 0.05023762962962959
+              },
+              "rates": {
+                "adopt": 0.15129793939393932,
+                "unknown": 0.7664950303030302,
+                "reject": 0.08220703030303017
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.0608425416296296,
+              "unknown": 0.33846253007407456,
+              "reject": 0.21180603940740736
+            },
+            "rates": {
+              "adopt": 0.09956052266666648,
+              "unknown": 0.5538477764848485,
+              "reject": 0.3465917008484843
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.25707397430302986,
+          "context_worst_false_reject": 0.008721811393939375,
+          "max_context_false_adopt": 1.0,
+          "correct_clear": 0.30354650012121176,
+          "conservative_correct_clear": 0.13461155539393932,
+          "max_error": 0.09956052266666648
+        }
+      }
+    ],
+    "Ec": [
+      {
+        "status": "ok",
+        "epsilon": 0.01,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.798048031765,
+          "tau_R": -2.60078518208
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.016946832592592585,
+              "unknown": 0.5881264888888894,
+              "reject": 0.006037789629629631
+            },
+            "rates": {
+              "adopt": 0.02773118060606057,
+              "unknown": 0.9623888,
+              "reject": 0.009880019393939388
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.001602986666666666,
+                "unknown": 0.49028991762962987,
+                "reject": 0.11921820681481486
+              },
+              "rates": {
+                "adopt": 0.002623069090909093,
+                "unknown": 0.80229259248485,
+                "reject": 0.19508433842424278
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.0032365985185185174,
+                "unknown": 0.5179605617777775,
+                "reject": 0.08991395081481486
+              },
+              "rates": {
+                "adopt": 0.005296252121212124,
+                "unknown": 0.8475718283636366,
+                "reject": 0.1471319195151517
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.0060154311111111115,
+                "unknown": 0.5593064438518521,
+                "reject": 0.04578923614814815
+              },
+              "rates": {
+                "adopt": 0.009843432727272712,
+                "unknown": 0.9152287263030292,
+                "reject": 0.07492784096969685
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6105042962962968,
+                "reject": 0.0006068148148148138
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9990070303030303,
+                "reject": 0.0009929696969696946
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.002713754074074073,
+              "unknown": 0.5445153048888896,
+              "reject": 0.06388205214814818
+            },
+            "rates": {
+              "adopt": 0.004440688484848477,
+              "unknown": 0.8910250443636363,
+              "reject": 0.10453426715151506
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.009843432727272713,
+          "context_worst_false_reject": 9.929696969696942e-07,
+          "max_context_false_adopt": 0.24000000000000002,
+          "correct_clear": 0.06613272387878782,
+          "conservative_correct_clear": 0.01386608678787877,
+          "max_error": 0.009880019393939388
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.05,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.247357809435,
+          "tau_R": -1.763359994706
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.05577424592592589,
+              "unknown": 0.5250125629629633,
+              "reject": 0.030324302222222203
+            },
+            "rates": {
+              "adopt": 0.09126694787878775,
+              "unknown": 0.8591114666666665,
+              "reject": 0.04962158545454538
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.009141493333333335,
+                "unknown": 0.3113827674074076,
+                "reject": 0.2905868503703704
+              },
+              "rates": {
+                "adopt": 0.014958807272727297,
+                "unknown": 0.5095354375757586,
+                "reject": 0.4755057551515159
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.017422506666666667,
+                "unknown": 0.3528495881481477,
+                "reject": 0.2408390162962966
+              },
+              "rates": {
+                "adopt": 0.028509556363636387,
+                "unknown": 0.5773902351515149,
+                "reject": 0.3941002084848493
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.029646648888888873,
+                "unknown": 0.4282672118518512,
+                "reject": 0.15319725037037035
+              },
+              "rates": {
+                "adopt": 0.048512698181818074,
+                "unknown": 0.7008008921212098,
+                "reject": 0.25068640969696926
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.6041327407407412,
+                "reject": 0.006978370370370363
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.9885808484848484,
+                "reject": 0.011419151515151493
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.014052662222222224,
+              "unknown": 0.42415807703703745,
+              "reject": 0.17290037185185173
+            },
+            "rates": {
+              "adopt": 0.022995265454545426,
+              "unknown": 0.694076853333333,
+              "reject": 0.28292788121212065
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.04851269818181811,
+          "context_worst_false_reject": 0.000877164606060604,
+          "max_context_false_adopt": 0.336,
+          "correct_clear": 0.1870974145454542,
+          "conservative_correct_clear": 0.04607205624242418,
+          "max_error": 0.04962158545454538
+        }
+      },
+      {
+        "status": "ok",
+        "epsilon": 0.1,
+        "policy": {
+          "adopt_enabled": true,
+          "reject_enabled": true,
+          "tau_A": 0.04082199452,
+          "tau_R": -1.182953437102
+        },
+        "metrics": {
+          "true": {
+            "denominator": 0.6111111111111116,
+            "masses": {
+              "adopt": 0.0784028829629629,
+              "unknown": 0.47453247111111135,
+              "reject": 0.05817575703703701
+            },
+            "rates": {
+              "adopt": 0.12829562666666647,
+              "unknown": 0.7765076799999998,
+              "reject": 0.09519669333333321
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "Fk": [
+            {
+              "denominator": 0.6111111111111103,
+              "masses": {
+                "adopt": 0.014661354666666666,
+                "unknown": 0.27808625540740745,
+                "reject": 0.3183635010370372
+              },
+              "rates": {
+                "adopt": 0.023991307636363667,
+                "unknown": 0.4550502361212128,
+                "reject": 0.5209584562424252
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111106,
+              "masses": {
+                "adopt": 0.028176384000000016,
+                "unknown": 0.30740283733333323,
+                "reject": 0.27553188977777787
+              },
+              "rates": {
+                "adopt": 0.046106810181818246,
+                "unknown": 0.503022824727273,
+                "reject": 0.4508703650909096
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111122,
+              "masses": {
+                "adopt": 0.04859983644444448,
+                "unknown": 0.36452827496296236,
+                "reject": 0.1979829997037037
+              },
+              "rates": {
+                "adopt": 0.07952700509090901,
+                "unknown": 0.5965008135757556,
+                "reject": 0.3239721813333328
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            },
+            {
+              "denominator": 0.6111111111111116,
+              "masses": {
+                "adopt": 0.0,
+                "unknown": 0.5358660740740744,
+                "reject": 0.07524503703703703
+              },
+              "rates": {
+                "adopt": 0.0,
+                "unknown": 0.8768717575757574,
+                "reject": 0.1231282424242423
+              },
+              "unsupported": 0.0,
+              "undefined_reason": null
+            }
+          ],
+          "Q_F": {
+            "denominator": 0.6111111111111119,
+            "masses": {
+              "adopt": 0.022859393777777785,
+              "unknown": 0.3714708604444446,
+              "reject": 0.2167808568888888
+            },
+            "rates": {
+              "adopt": 0.03740628072727269,
+              "unknown": 0.6078614079999994,
+              "reject": 0.35473231127272664
+            },
+            "unsupported": 0.0,
+            "undefined_reason": null
+          },
+          "context_extrema_undefined_reason": null,
+          "context_worst_false_adopt": 0.079527005090909,
+          "context_worst_false_reject": 0.03786302060606053,
+          "max_context_false_adopt": 0.48000000000000004,
+          "correct_clear": 0.24151396896969657,
+          "conservative_correct_clear": 0.0830793236363635,
+          "max_error": 0.09519669333333321
+        }
+      }
+    ]
+  },
+  "common_Ic_policy": {
+    "Ic": {
+      "true": {
+        "denominator": 0.6111111111111116,
+        "masses": {
+          "adopt": 0.03163682814814815,
+          "unknown": 0.5492644681481484,
+          "reject": 0.0302098148148148
+        },
+        "rates": {
+          "adopt": 0.051769355151515116,
+          "unknown": 0.8987964024242422,
+          "reject": 0.04943424242424236
+        },
+        "unsupported": 0.0,
+        "undefined_reason": null
+      },
+      "Fk": [
+        {
+          "denominator": 0.6111111111111103,
+          "masses": {
+            "adopt": 6.620681481481485e-05,
+            "unknown": 0.3288737362962965,
+            "reject": 0.282171168
+          },
+          "rates": {
+            "adopt": 0.00010833842424242444,
+            "unknown": 0.5381570230303041,
+            "reject": 0.4617346385454552
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111106,
+          "masses": {
+            "adopt": 0.0005296545185185188,
+            "unknown": 0.3734693451851846,
+            "reject": 0.23711211140740762
+          },
+          "rates": {
+            "adopt": 0.0008667073939393951,
+            "unknown": 0.6111316557575753,
+            "reject": 0.38800163684848554
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111122,
+          "masses": {
+            "adopt": 0.00423723614814815,
+            "unknown": 0.4522756029629617,
+            "reject": 0.154598272
+          },
+          "rates": {
+            "adopt": 0.0069336591515151424,
+            "unknown": 0.740087350303027,
+            "reject": 0.25297899054545414
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111116,
+          "masses": {
+            "adopt": 0.06620681481481483,
+            "unknown": 0.5449042962962968,
+            "reject": 0.0
+          },
+          "rates": {
+            "adopt": 0.10833842424242418,
+            "unknown": 0.8916615757575759,
+            "reject": 0.0
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        }
+      ],
+      "Q_F": {
+        "denominator": 0.6111111111111119,
+        "masses": {
+          "adopt": 0.01775997807407408,
+          "unknown": 0.4248807451851862,
+          "reject": 0.16847038785185173
+        },
+        "rates": {
+          "adopt": 0.029061782303030272,
+          "unknown": 0.6952594012121219,
+          "reject": 0.27567881648484793
+        },
+        "unsupported": 0.0,
+        "undefined_reason": null
+      },
+      "context_extrema_undefined_reason": null,
+      "context_worst_false_adopt": 0.10833842424242413,
+      "context_worst_false_reject": 0.0,
+      "max_context_false_adopt": 1.0,
+      "correct_clear": 0.16372408581818151,
+      "conservative_correct_clear": 0.025884677575757558,
+      "max_error": 0.04943424242424236
+    },
+    "Jc": {
+      "true": {
+        "denominator": 0.6111111111111116,
+        "masses": {
+          "adopt": 0.02797906074074073,
+          "unknown": 0.5543805674074076,
+          "reject": 0.028751482962962944
+        },
+        "rates": {
+          "adopt": 0.04578391757575752,
+          "unknown": 0.9071682012121208,
+          "reject": 0.04704788121212114
+        },
+        "unsupported": 0.0,
+        "undefined_reason": null
+      },
+      "Fk": [
+        {
+          "denominator": 0.6111111111111103,
+          "masses": {
+            "adopt": 0.0017629653333333325,
+            "unknown": 0.3219436349629633,
+            "reject": 0.28740451081481483
+          },
+          "rates": {
+            "adopt": 0.002884852363636366,
+            "unknown": 0.5268168572121225,
+            "reject": 0.4702982904242431
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111106,
+          "masses": {
+            "adopt": 0.004656469333333334,
+            "unknown": 0.3702970500740739,
+            "reject": 0.23615759170370396
+          },
+          "rates": {
+            "adopt": 0.007619677090909098,
+            "unknown": 0.6059406273939396,
+            "reject": 0.3864396955151522
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111122,
+          "masses": {
+            "adopt": 0.011551630222222222,
+            "unknown": 0.4517608154074066,
+            "reject": 0.14779866548148146
+          },
+          "rates": {
+            "adopt": 0.018902667636363602,
+            "unknown": 0.7392449706666641,
+            "reject": 0.24185236169696925
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        },
+        {
+          "denominator": 0.6111111111111116,
+          "masses": {
+            "adopt": 0.0,
+            "unknown": 0.6105042962962968,
+            "reject": 0.0006068148148148138
+          },
+          "rates": {
+            "adopt": 0.0,
+            "unknown": 0.9990070303030303,
+            "reject": 0.0009929696969696946
+          },
+          "unsupported": 0.0,
+          "undefined_reason": null
+        }
+      ],
+      "Q_F": {
+        "denominator": 0.6111111111111119,
+        "masses": {
+          "adopt": 0.004492766222222222,
+          "unknown": 0.4386264491851859,
+          "reject": 0.1679918957037036
+        },
+        "rates": {
+          "adopt": 0.007351799272727263,
+          "unknown": 0.7177523713939395,
+          "reject": 0.2748958293333328
+        },
+        "unsupported": 0.0,
+        "undefined_reason": null
+      },
+      "context_extrema_undefined_reason": null,
+      "context_worst_false_adopt": 0.01890266763636361,
+      "context_worst_false_reject": 9.929696969696942e-07,
+      "max_context_false_adopt": 0.24000000000000002,
+      "correct_clear": 0.16033987345454515,
+      "conservative_correct_clear": 0.022892455272727243,
+      "max_error": 0.04704788121212114
+    }
+  }
+}
