@@ -105,6 +105,43 @@ class Contracts(unittest.TestCase):
         missing=self.module.metrics(only_true,set(),['F1'])
         self.assertEqual(self.module.judge('mixed',missing,state,True,config,True)['main']['status'],'evidence_insufficient')
 
+    def test_primary_unavailable_blocks_candidate_and_required_comparisons(self):
+        config=self.module.read_config();state={m:dict(status='ok') for m in self.module.METHODS};rows=[]
+        for parent in ('a','b','c'):
+            clean=copy.deepcopy(self.rows[0]);clean.update(parent=parent,job_id=parent+'clean',split='eval',w=10,d=3,m=2)
+            clean.update(scores={m:1. for m in self.module.METHODS},method_status=copy.deepcopy(state),decisions={m:'accept' for m in self.module.METHODS})
+            rows.append(clean)
+            for family in ('F1','F2'):
+                for k in (1,2):
+                    for index in range(20):
+                        row=copy.deepcopy(self.rows[4]);row.update(parent=parent,job_id=parent+family+str(k),family=family,attack_k=k,index=index,timestamp=.1*index,split='eval',w=10,d=3,m=2)
+                        row.update(scores={m:-1. for m in self.module.METHODS},method_status=copy.deepcopy(state),decisions={m:'reject' for m in self.module.METHODS})
+                        for m in ('Count','CountQ','I_zero','G_zero','Q_zero'): row['decisions'][m]='unknown'
+                        rows.append(row)
+        measurement=self.module.metrics(rows,set(),['F1','F2'])
+        original_verdict=self.module.judge('mixed',measurement,state,True,config,True)
+        self.assertTrue(all(v['status']=='retained' and v['risk_utility_status']=='retained' for v in original_verdict.values()))
+        for method,label in [('D_zero','main'),('J_zero','joint'),('D_old','main'),('MATE_policy','main'),('MATE_policy','joint'),('I_zero','joint'),('Count','main'),('CountQ','main'),('G_zero','joint'),('Q_zero','joint')]:
+            with self.subTest(method=method,label=label):
+                altered=copy.deepcopy(rows);altered[1]['scores'][method]=None
+                altered[1]['method_status'][method]=dict(status='unavailable',reason='feature unavailable')
+                altered[1]['decisions'][method]='unknown'
+                metrics=self.module.metrics(altered,set(),['F1','F2'])
+                verdict=self.module.judge('mixed',metrics,state,True,config,True)[label]
+                self.assertNotEqual(verdict['risk_utility_status'],'retained')
+                self.assertNotEqual(verdict['status'],'retained')
+                self.assertEqual(metrics['system_query'][method]['false']['n'],240)
+                self.assertGreater(metrics['system_query'][method]['false']['counts']['unknown'],0)
+                primary=metrics['method_score_coverage'][method]['primary']
+                self.assertEqual(primary['n_missing_score'],1)
+                self.assertEqual(primary['n_failed'],1)
+        only_true=[r for r in rows if original.primary(r,1)]
+        absent=self.module.metrics(only_true,set(),['F1','F2'])
+        verdict=self.module.judge('mixed',absent,state,True,config,True)
+        for value in verdict.values():
+            self.assertEqual(value['risk_utility_status'],'evidence_insufficient')
+            self.assertEqual(value['status'],'evidence_insufficient')
+
     def test_config_tasks_and_parent_roles_are_frozen(self):
         config = self.module.read_config()
         self.assertEqual(len(config['jobs']), 30)

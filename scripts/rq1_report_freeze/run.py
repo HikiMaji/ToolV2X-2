@@ -247,6 +247,19 @@ def fit(config,out):
         result=dict(status='complete',artifacts=artifacts);save(marker,result);return result
 
 
+def score_coverage(rows,method):
+    primary=[r for r in rows if original.primary(r,0) or original.primary(r,1)]
+    def missing(row):
+        score=row['scores'].get(method)
+        return score is None or not np.isfinite(score)
+    return dict(n_total=len(rows),n_finite=sum(not missing(r) for r in rows),
+                states=dict(Counter(r['method_status'].get(method,{}).get('status','unavailable') for r in rows)),
+                numeric_failures=sum(r['method_status'].get(method,{}).get('status')=='numeric_failure' for r in rows),
+                primary=dict(n_total=len(primary),n_missing_score=sum(missing(r) for r in primary),
+                    n_failed=sum(not r.get('finite',False) or r['method_status'].get(method,{}).get('status','unavailable') not in ('ok','reference') for r in primary),
+                    states=dict(Counter(r['method_status'].get(method,{}).get('status','unavailable') for r in primary))))
+
+
 def metrics(rows,cal_layers,families):
     tables={m:table(rows,m) for m in METHODS}
     def cells(subset):
@@ -255,7 +268,7 @@ def metrics(rows,cal_layers,families):
     result=dict(system_query={m:original.six_cells(t,'D') for m,t in tables.items()},coverage=legacy._coverage(rows),
                 first_windows={name:cells(mask) for name,mask in [('length_1',windows==1),('length_2_to_9',(windows>=2)&(windows<=9)),('length_10',windows==10)]},
                 by_parent={p:cells(parents==p) for p in sorted(set(parents))},family_k={},
-                method_score_coverage={m:dict(n_total=len(rows),n_finite=sum(r['scores'].get(m) is not None for r in rows),states=dict(Counter(r['method_status'].get(m,{}).get('status','unavailable') for r in rows)),numeric_failures=sum(r['method_status'].get(m,{}).get('status')=='numeric_failure' for r in rows)) for m in METHODS},
+                method_score_coverage={m:score_coverage(rows,m) for m in METHODS},
                 paired_timeliness={'D_zero':zero._paired(rows,'D_zero','D_old'),'J_zero':zero._paired(rows,'J_zero','I_zero')},
                 transitions={'D_zero':zero._transitions(rows,'D_zero','D_old'),'J_zero':zero._transitions(rows,'J_zero','I_zero')})
     for f in families:
@@ -298,6 +311,16 @@ def judge(regime,measurement,states,calibration_sufficient,config,tasks_complete
         else:
             check('TA_drop_vs_I_zero',difference(rate('I_zero','true','accept'),rate(candidate,'true','accept')),gates['joint_true_accept_drop_vs_I_zero_max'])
         if regime=='mixed': check('TA_gap_to_MATE',difference(rate('MATE_policy','true','accept'),rate(candidate,'true','accept')),gates['mixed_true_accept_gap_to_MATE_max'])
+        required=[candidate,'D_old'] if label=='main' else [candidate,'I_zero','G_zero','Q_zero']
+        if regime=='mixed':
+            required.append('MATE_policy')
+            if label=='main': required.extend(('Count','CountQ'))
+        for method in required:
+            primary=measurement['method_score_coverage'][method]['primary']
+            complete_classes=both and calibration_sufficient and tasks_complete
+            check('primary_missing_score/'+method,primary['n_missing_score'],0.,usable=complete_classes,denom=primary)
+            check('primary_failed/'+method,primary['n_failed'],0.,usable=complete_classes,denom=primary)
+            check('required_model/'+method,float(states[method]['status'] in ('ok','reference')),1.,'min',usable=complete_classes,denom=primary)
         utility=copy.deepcopy(checks)
         baselines=('Count','CountQ') if label=='main' else ('I_zero','G_zero','Q_zero')
         if label=='joint' or regime=='mixed':
