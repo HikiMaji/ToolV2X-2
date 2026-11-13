@@ -296,7 +296,8 @@ def _inputs(source,config):
             if regime in supported or (source/name).exists():
                 small.append(name);objects[name]=_read(source/name)
     for stage in ('prepare','features','fit','score','report'):
-        if objects[stage+'.complete.json']['status'] not in ('complete','not_tested_data_support'):raise ValueError('source stage incomplete: '+stage)
+        completed=('COMPLETE',) if stage=='prepare' else ('complete','not_tested_data_support')
+        if objects[stage+'.complete.json']['status'] not in completed:raise ValueError('source stage incomplete: '+stage)
     manifest=objects['manifest.json'];splits=manifest['config']['parent_splits']
     expected=sorted(p for p,s in splits.items() if s=='fit');folds=objects['features.complete.json'].get('folds',[])
     if supported and (len(expected)!=6 or sorted(f['parent'] for f in folds)!=expected):raise ValueError('six completed source folds required')

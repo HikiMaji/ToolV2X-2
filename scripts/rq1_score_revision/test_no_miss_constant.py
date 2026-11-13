@@ -50,7 +50,7 @@ def source_fixture(root, config):
     manifest=dict(config=dict(parent_splits={**{p:'fit' for p in sorted({r['parent'] for r in fitrows})},'cal':'cal','eval':'eval'}),jobs=jobs)
     data.atomic_json(source/'manifest.json',manifest)
     for stage in ('prepare','fit','score','report'):
-        data.atomic_json(source/(stage+'.complete.json'),dict(status='complete',jobs={j['job_id']:dict(status='COMPLETE',rows=4) for j in jobs}) if stage=='prepare' else dict(status='complete'))
+        data.atomic_json(source/(stage+'.complete.json'),dict(status='COMPLETE',jobs={j['job_id']:dict(status='COMPLETE',rows=4,origin=j['origin']) for j in jobs}) if stage=='prepare' else dict(status='complete'))
     data.atomic_json(source/'features.complete.json',dict(status='complete',folds=folds))
     data.atomic_json(source/'support.json',dict(regimes={r:dict(data_support_met=True) for r in config['regimes']}))
     for regime,spec in config['regimes'].items():
@@ -197,6 +197,23 @@ class NoMissConstantContracts(unittest.TestCase):
         self.assertEqual(metrics['first_windows']['length_2_to_9']['D_zero']['true']['n'],4)
         self.assertEqual(metrics['transitions']['D_zero']['1']['cells']['unknown/accept']['n'],1)
         self.assertIn('I_cut_old_policy',metrics)
+
+    def test_source_stage_status_matches_prepare_protocol(self):
+        n=self.module
+        with tempfile.TemporaryDirectory() as temp:
+            source=source_fixture(Path(temp),n.read_config())
+            objects,paths,_=n._inputs(source,n.read_config())
+            self.assertEqual(objects['prepare.complete.json']['status'],'COMPLETE')
+            self.assertEqual({split:len(files) for split,files in paths.items()},dict(fit=6,cal=3,eval=3))
+            for stage in ('prepare','features','fit','score','report'):
+                path=source/(stage+'.complete.json');saved=json.loads(path.read_text())
+                invalid=['pending','PARTIAL','FAILED','complete','not_tested_data_support'] if stage=='prepare' else ['pending','PARTIAL','FAILED','COMPLETE']
+                for status in invalid:
+                    with self.subTest(stage=stage,status=status):
+                        path.write_text(json.dumps(dict(saved,status=status)))
+                        with self.assertRaisesRegex(ValueError,'source stage incomplete: '+stage):
+                            n._inputs(source,n.read_config())
+                path.write_text(json.dumps(saved))
 
     def test_temporary_runner_resume_binding_and_protected_paths(self):
         n=self.module
