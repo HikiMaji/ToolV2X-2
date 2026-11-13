@@ -1,0 +1,88 @@
+{
+  "status": "read_only_mechanism_audit_no_new_fitting_or_experiment",
+  "numerical_source": "563b1d057d713f9219b2c6ac762bf1a030307a58",
+  "regime": "F2_only",
+  "evaluation_job": "cf2ad1a17529d018",
+  "id": 185,
+  "epoch": 1,
+  "error_indices": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "error_frames": [
+    117,
+    119,
+    121,
+    123,
+    125,
+    127
+  ],
+  "false_accepts": 6,
+  "F1_k3_false_query_denominator": 45,
+  "events_at_each_error": [
+    1,
+    1,
+    1,
+    0,
+    -1
+  ],
+  "delta_T": [
+    0.0,
+    -2.220446049250313e-16,
+    -4.440892098500626e-16,
+    -4.440892098500626e-16,
+    -8.881784197001252e-16,
+    -8.881784197001252e-16
+  ],
+  "Delta00_is_exact_zero": true,
+  "calibration_false_support": {
+    "rows": 19,
+    "parents": 1,
+    "entities": 1,
+    "query_epochs": 1,
+    "m": 3,
+    "d": 5,
+    "all_accept_eligible": true,
+    "window_lengths": "1..9 each once;10 ten times"
+  },
+  "first_pair": {
+    "cal": {
+      "job": "605ff9c3ca7bf3a5",
+      "id": 212,
+      "epoch": 1,
+      "index": 23,
+      "w": 1,
+      "d": 5,
+      "m": 3,
+      "I": -0.8221691203469225,
+      "global": -0.535253231887475
+    },
+    "eval": {
+      "job": "cf2ad1a17529d018",
+      "id": 185,
+      "epoch": 1,
+      "index": 23,
+      "w": 1,
+      "d": 4,
+      "m": 3,
+      "I": 0.29255615854937245,
+      "global": 0.5067408470529142
+    },
+    "I_difference": 1.114725278896295,
+    "global_difference": 1.0419940789403892,
+    "source_difference": 0.07273119995590571
+  },
+  "raw_I_coefficients": {
+    "L_plus": 0.0,
+    "L_minus": 0.09154787266492491,
+    "n_plus": -0.01505766383329743,
+    "w": 0.13186328684600193,
+    "d": -1.041994078940389,
+    "m": 1.8504507248538071
+  },
+  "scope": "Exact saved-score decomposition, not causal identification or improvement estimate. No new threshold or model fitted. Delta00 cannot directly change the six errors; changing calibration could affect decisions indirectly."
+}
