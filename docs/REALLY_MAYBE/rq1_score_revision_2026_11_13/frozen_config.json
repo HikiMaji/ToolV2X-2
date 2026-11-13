@@ -1,0 +1,851 @@
+{
+  "schema": "rq1_score_revision_frozen_v1",
+  "date": "2026-11-13",
+  "status": "design_frozen_before_new_generation_and_fitting; implementation_not_started",
+  "previous_data_and_results_seen": true,
+  "scope": "development; no unseen-test or deployment-risk guarantee",
+  "source_algorithm_commit": "549e86fbc2b6fae0bf608cb6344253466f4f6e7c",
+  "source_manifest": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/manifest.json",
+    "sha256": "99ce9913bf1e02c11ff7c2b3853b92f246c024b07d7522b208e60e9b8a6a6d80"
+  },
+  "source_models": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/models.json",
+    "sha256": "df9eaad26cc878cb1c22f4af2df1067d7f8f929d2a57c9b1e4ee3633b2ca7f05"
+  },
+  "frozen_normal_code": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/kernel.py",
+      "sha256": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/fit.py",
+      "sha256": "8ca9b7b6c2c77ce55146e28e8ec9730c2f23884ab2c1cf7892de74e7f2994493"
+    }
+  ],
+  "construction_code": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/native_adapter.py",
+    "sha256": "6637529dc1950a843255c014fe31319f27c4baa5c8f73e4525d06e6a103faa36"
+  },
+  "protocol": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/REALLY_MAYBE/rq1_score_revision_2026_11_13/frozen_protocol.md",
+    "sha256": "6ee4f2a926d8d9191ad79c6e4e253758cb578fbe0671d3915aae55955b956a94"
+  },
+  "parent_splits": {
+    "train/2021_08_16_22_26_54": "fit",
+    "train/2021_08_22_10_10_40": "fit",
+    "train/2021_08_22_10_46_58": "fit",
+    "train/2021_08_23_11_22_46": "fit",
+    "train/2021_08_24_21_29_28": "fit",
+    "train/2021_08_23_22_31_01": "fit",
+    "train/2021_08_18_22_16_12": "cal",
+    "train/2021_08_20_20_39_00": "cal",
+    "train/2021_08_21_22_21_37": "cal",
+    "train/2021_08_22_22_30_58": "cal",
+    "test/2021_08_22_07_52_02": "cal",
+    "train/2021_08_23_23_08_17": "eval",
+    "test/2021_08_24_07_45_41": "eval",
+    "validate/2021_08_20_21_48_35": "eval"
+  },
+  "fixed_cal_eval_job_ids": [
+    "0f81dd578b050f3d",
+    "12f11cc8cf224461",
+    "1582be3a0fbb3d9c",
+    "16959a877affaa9d",
+    "243d76d26dfc4ece",
+    "245997ce61af986f",
+    "36a44880203cdef3",
+    "410fec48a6a1488e",
+    "47112cf429e38922",
+    "69fb3ef368620df9",
+    "6abeb23cc2436098",
+    "6df1ef17f6cca1ae",
+    "82781d5ee6af0df2",
+    "872252222519c7d7",
+    "8a64c3fbe7215c46",
+    "8c929902aa5bf010",
+    "8d5f42c88af10379",
+    "8d87c21350a7bb56",
+    "942b1dec65ca1b72",
+    "b1fc85594ddb90f8",
+    "b20b54daa5bfdaa0",
+    "b58fd2ac0d1687c1",
+    "ba03ba6670565082",
+    "d173dc7138429af6",
+    "d2da45a730d0756c",
+    "d7ad3e46c350ed76",
+    "d92295b7b58fdfc5",
+    "de2106d309204cd3",
+    "de8f762eb83b97ea",
+    "df2cb388eb225100",
+    "e3998366b3838645",
+    "e5df0b989788fea4",
+    "f9039996102ee124",
+    "fc910f4d5a8e8f67",
+    "60b528984765d9ec",
+    "13df4899473dbad7",
+    "343d46fc7b709925",
+    "f0282c7c0945698d",
+    "4c23cf38a32e4c03",
+    "9e76a1233ee15da2",
+    "605ff9c3ca7bf3a5",
+    "1e7f3ae0c670e66f",
+    "d32be51b30bf2b46",
+    "75a1b5df43048d2e",
+    "3d440fda9f28bd0c",
+    "081ab23c9af4df7b",
+    "d19198700cc149ab",
+    "713a52daa8bdee96",
+    "0fb1d83f1379ee38",
+    "e8272405d9c4febe",
+    "1294449cc1454711",
+    "80d8ea2f3dc4e25b",
+    "654310fbb6e3901e",
+    "e17140086ed7bcf9",
+    "6b5f48a473625f6a",
+    "7f9ecfcfb5121f3b",
+    "c9ffce8e6d774cc2",
+    "cf2ad1a17529d018",
+    "fe7756637d7d1e37",
+    "e6fb05ecdfdf7689",
+    "a268ceceb415d292",
+    "12d324e7a7bda825",
+    "b07f9828ff2caf8c",
+    "55cae68a44a23db2"
+  ],
+  "planned_fit_attacks": [
+    {
+      "job_id": "481c713555593f77",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641
+      ],
+      "normal_probe_source": 650
+    },
+    {
+      "job_id": "9f1328bb94ae18d5",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641,
+        650
+      ],
+      "normal_probe_source": 659
+    },
+    {
+      "job_id": "8735a1e4a96e4c0c",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641
+      ],
+      "normal_probe_source": 650
+    },
+    {
+      "job_id": "0d0038f15944e8a5",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641,
+        650
+      ],
+      "normal_probe_source": 659
+    },
+    {
+      "job_id": "88d0c4cf9eb9c85e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655
+      ],
+      "normal_probe_source": 7664
+    },
+    {
+      "job_id": "12ee7eb996db954e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655,
+        7664
+      ],
+      "normal_probe_source": 7673
+    },
+    {
+      "job_id": "9ea31a51fd2ff89e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655
+      ],
+      "normal_probe_source": 7664
+    },
+    {
+      "job_id": "100c9e4c1b7e0549",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655,
+        7664
+      ],
+      "normal_probe_source": 7673
+    },
+    {
+      "job_id": "12100a8e629230f8",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643
+      ],
+      "normal_probe_source": 3652
+    },
+    {
+      "job_id": "c5b15abd00b90d22",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643,
+        3652
+      ],
+      "normal_probe_source": 3661
+    },
+    {
+      "job_id": "9252f34347332dc7",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643
+      ],
+      "normal_probe_source": 3652
+    },
+    {
+      "job_id": "fd0e5c98b34c4de0",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643,
+        3652
+      ],
+      "normal_probe_source": 3661
+    },
+    {
+      "job_id": "2e5a49c3458d458c",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712
+      ],
+      "normal_probe_source": 6721
+    },
+    {
+      "job_id": "d34f70fdf5af19f5",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712,
+        6721
+      ],
+      "normal_probe_source": 6730
+    },
+    {
+      "job_id": "c57ddf71d32d0690",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712
+      ],
+      "normal_probe_source": 6721
+    },
+    {
+      "job_id": "e65b7aeb19b73462",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712,
+        6721
+      ],
+      "normal_probe_source": 6730
+    },
+    {
+      "job_id": "e93dadfff40e24a6",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939
+      ],
+      "normal_probe_source": 948
+    },
+    {
+      "job_id": "dd77b57428cf84c6",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948
+      ],
+      "normal_probe_source": 957
+    },
+    {
+      "job_id": "1f7ac4ab1bbe873e",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948,
+        957
+      ],
+      "normal_probe_source": 966
+    },
+    {
+      "job_id": "30b6c80aa46e4514",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939
+      ],
+      "normal_probe_source": 948
+    },
+    {
+      "job_id": "4632927235f23ea4",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948
+      ],
+      "normal_probe_source": 957
+    },
+    {
+      "job_id": "6276e7d77ab57bfd",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948,
+        957
+      ],
+      "normal_probe_source": 966
+    },
+    {
+      "job_id": "a56a9c018048a5b5",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796
+      ],
+      "normal_probe_source": 4805
+    },
+    {
+      "job_id": "de25bf70de76f55f",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796,
+        4805
+      ],
+      "normal_probe_source": 4814
+    },
+    {
+      "job_id": "39b831ffa2004921",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796
+      ],
+      "normal_probe_source": 4805
+    },
+    {
+      "job_id": "d019e6e52711de0b",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796,
+        4805
+      ],
+      "normal_probe_source": 4814
+    }
+  ],
+  "construction": {
+    "rng": "numpy.random.RandomState",
+    "seed": 0,
+    "proposal_limit": 64,
+    "anchor_scan_index": 20,
+    "offset_m": [
+      6,
+      10,
+      14
+    ],
+    "angles": "arange(8)*pi/4",
+    "scans": 80,
+    "active_indices": [
+      20,
+      59
+    ],
+    "stopped_indices": [
+      60,
+      79
+    ],
+    "hwl": [
+      1.6,
+      1.8,
+      4.5
+    ],
+    "controlled_selection": "ordered source_ids prefix k",
+    "normal_probe": "source_ids[k]",
+    "F2_blockage_fraction_min": 0.3333333333333333,
+    "F2_blocked_active_frames_min": 32,
+    "proposal_choice": "first valid in seeded order, before scoring",
+    "failure_action": "record UNREALIZABLE; no new seed, parent or policy"
+  },
+  "regimes": {
+    "mixed": {
+      "fit_false": [
+        "F1",
+        "F2"
+      ],
+      "cal_false": [
+        "F0",
+        "F1",
+        "F2"
+      ],
+      "eval_false": [
+        "F0",
+        "F1",
+        "F2"
+      ]
+    },
+    "F1_only": {
+      "fit_false": [
+        "F1"
+      ],
+      "cal_false": [
+        "F1"
+      ],
+      "eval_false": [
+        "F2"
+      ]
+    },
+    "F2_only": {
+      "fit_false": [
+        "F2"
+      ],
+      "cal_false": [
+        "F2"
+      ],
+      "eval_false": [
+        "F1"
+      ]
+    }
+  },
+  "regime_isolation": "clean by split shared; head/scaler/increment/calibration fitted separately; no target-family or F0 use in source-only fitting or calibration",
+  "data_support": {
+    "per_fit_family_min_injected_entities": 6,
+    "per_fit_family_min_parents": 3,
+    "min_distinct_labelled_fake_query_scans_for_counted_entity": 10,
+    "required_attack_k_support": [
+      "1",
+      "at_least_2"
+    ],
+    "entity_unit": "one injected target per attempt; tracker fragmentation does not add entities",
+    "keep_short_trajectories_in_fit_and_eval": true,
+    "gate_meaning": "minimum prototype support, not statistical identifiability or sample-size theorem",
+    "delta_varying_parent_min": 3,
+    "delta_rms_min": 1e-06,
+    "delta_std_min": 1e-06
+  },
+  "normal_features": {
+    "outer_fold": "leave-one-fit-parent-out",
+    "rho_selection": "within remaining parents only",
+    "cal_eval_normal_models": "reuse original full six-parent models",
+    "W": 10,
+    "probability_clip": 1e-06
+  },
+  "head": {
+    "features": [
+      "L_plus",
+      "L_minus",
+      "n_plus",
+      "w",
+      "d",
+      "m"
+    ],
+    "n_coefficients": 7,
+    "coefficient_signs": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "intercept": "free",
+    "n_minus_coefficient": 0,
+    "loss": "weighted logaddexp(0,S)-y*S",
+    "l2": 0.005,
+    "penalize_intercept": false,
+    "class_weight": [
+      0.5,
+      0.5
+    ],
+    "true_weight_hierarchy": [
+      "parent",
+      "query_epoch",
+      "scan"
+    ],
+    "false_weight_hierarchy": [
+      "family_attack_k",
+      "parent",
+      "query_epoch",
+      "scan"
+    ],
+    "constant_feature_std_cutoff": 1e-06,
+    "constant_feature_coefficient": 0,
+    "optimizer": "L-BFGS-B",
+    "init": "zeros",
+    "maxiter": 500,
+    "ftol": 1e-10,
+    "gtol": 1e-06
+  },
+  "increment": {
+    "offset": "frozen J-marginal base score",
+    "features": {
+      "J": "Delta_T",
+      "Q": "base_score_squared"
+    },
+    "scaling": "weighted RMS, no centering",
+    "intercept": false,
+    "coefficient_sign": "free",
+    "l2": 0.005,
+    "reported_coefficient": "standardized coefficient / feature RMS"
+  },
+  "methods": [
+    "D_head",
+    "T_head",
+    "I_Jmargin",
+    "J",
+    "G",
+    "Q",
+    "MATE_policy"
+  ],
+  "policy": {
+    "source": "original temporal shared eligibility",
+    "W": 10,
+    "minimum_support_frames_new_gate": false,
+    "accept_score_positive": true,
+    "reject_score_negative": true,
+    "calibration": {
+      "budget": 0.05,
+      "family_k_constraints": "each nonempty calibration cell",
+      "objective": "maximize corresponding correct class decision within budget",
+      "tie": "more conservative threshold",
+      "no_false_calibration_labels": "disable accept branch and mark insufficient calibration"
+    },
+    "evaluation_weights": "original parent/query_epoch/scan, false family/k first"
+  },
+  "coefficient_interval": {
+    "method": "parent pairs bootstrap, fixed original nonempty family/k cells",
+    "repetitions": 1000,
+    "seed": 20261113,
+    "draw_n_parents": 6,
+    "preserve_multiplicity": true,
+    "hold_fixed": [
+      "normal OOF features"
+    ],
+    "refit": [
+      "scaler",
+      "base head",
+      "RMS",
+      "offset coefficient"
+    ],
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "invalid": [
+      "original cell absent",
+      "class absent",
+      "delta uninformative",
+      "optimizer failure"
+    ],
+    "max_invalid_fraction": 0.05,
+    "do_not_reweight_missing_cells": true,
+    "interpretation": "conditional stability interval, not full-model 95-percent coverage guarantee",
+    "known_single_parent_k3_omission_probability": 0.3348979766803842,
+    "invalid_interval_decision": "joint retention evidence insufficient",
+    "coverage_precheck": {
+      "per_original_cell_parent_count": "m",
+      "missing_probability_lower_bound": "(1-m/6)**6",
+      "skip_bootstrap_if_any_bound_exceeds": 0.05,
+      "decision": "interval_support_insufficient"
+    }
+  },
+  "main_retention": {
+    "coefficient_interval_excludes_zero": true,
+    "CD_gain_min_each_I_G_Q": 0.01,
+    "CD_gain_min_each_D_T": 0.0,
+    "TA_MATE_minus_TA_J_max": 0.05,
+    "true_reject_rate_max": 0.05,
+    "false_accept_rate_max": 0.05,
+    "each_nonempty_eval_family_k_false_accept_max": 0.05,
+    "FA_J_minus_FA_T_max_per_cell": 0.02,
+    "FA_J_minus_FA_MATE_max_per_cell": 0.02,
+    "never_adopted_J_minus_MATE_max": 0.05,
+    "paired_first_adoption_delay_weighted_median_max_seconds": 0.5,
+    "never_adopted_weight": "parent/epoch equal over all primary-true epochs",
+    "delay_weight": "parent/epoch equal over shared ever-adopted primary-true epochs",
+    "delay_origin": "first legal primary-true query in the common epoch",
+    "numeric_tolerance": 1e-12
+  },
+  "transfer_retention_per_direction": {
+    "false_accept_max_global_and_each_nonempty_k": 0.05,
+    "true_reject_max": 0.05,
+    "CD_J_minus_CD_I_min": 0.0,
+    "CD_J_strictly_positive": true,
+    "CD_mixed_minus_CD_transfer_max_same_target_family": 0.05,
+    "TA_mixed_minus_TA_transfer_max": 0.05,
+    "recalibrate_on_target": false,
+    "overall_claim_requires_mixed_retention": true
+  },
+  "missing_coverage": "record untested/not calibrated; never count absent samples as successes",
+  "new_output_root": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001"
+}

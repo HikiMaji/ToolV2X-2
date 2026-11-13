@@ -1,0 +1,130 @@
+{
+  "scope": "Finite formula/case audit; not MCS effectiveness experiment",
+  "re5_sha256": "46a421b8fce08e5d92f4a4793b3654a1b8484cf3c0424e26244906495a87bf9e",
+  "kernel_sha256": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49",
+  "normalization": {
+    "q0": 0.999,
+    "q1": 0.02250000000000001,
+    "total": 1.0215
+  },
+  "all_silent": {
+    "p": 0.0001,
+    "eps": 0.001,
+    "pi": 0.1,
+    "sources": 2,
+    "frames": 10,
+    "normal_loglik": -0.0020001000066671667,
+    "false": {
+      "S": [],
+      "m": 0,
+      "selected_loglik": -0.02001000667167067,
+      "loglik": -0.02001000667167067
+    },
+    "score": 0.018009906665003503
+  },
+  "frozen_first_window": {
+    "key": [
+      "cf2ad1a17529d018",
+      117,
+      185
+    ],
+    "U": [
+      [
+        1,
+        1,
+        1,
+        0,
+        -1
+      ]
+    ],
+    "old_false_loglik": -4.471951342201868,
+    "old_J": 2.2103069029505846,
+    "normal_loglik": -2.261644439251284,
+    "mcs": {
+      "S": [
+        0,
+        1,
+        2
+      ],
+      "m": 3,
+      "selected_loglik": -2.685578345250651,
+      "loglik": -9.593333624232788
+    },
+    "new_uncalibrated_J": 7.331689184981504,
+    "shift": 5.121382282030919,
+    "interpretation": "Same frozen normal likelihood; new thresholds not calibrated. Two-support-frame gate blocks this first frame by definition."
+  },
+  "pi_axis_same_window": [
+    {
+      "pi": 0.3,
+      "m_star": 3,
+      "score": 4.0358523189771764
+    },
+    {
+      "pi": 0.1,
+      "m_star": 3,
+      "score": 7.331689184981504
+    },
+    {
+      "pi": 0.03,
+      "m_star": 3,
+      "score": 10.94360759795931
+    }
+  ],
+  "retrospective_selection": {
+    "prefix": [
+      [
+        1,
+        0
+      ]
+    ],
+    "full": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "prefix_S": [
+      0
+    ],
+    "full_S": [
+      0,
+      1
+    ],
+    "source_1_first_q_prefix": 0.001,
+    "source_1_first_q_full": 0.225,
+    "explanation": "At the later decision this uses only available history, but reconstructed past q is selected using the whole window; it is not the original causal predictive marginal."
+  },
+  "omitted_penalty": {
+    "selected_likelihood_sum": -2.685578345250651,
+    "declared_total": -9.593333624232788,
+    "difference": -6.907755278982137
+  },
+  "mstar_depends_on_prior": [
+    {
+      "pi": 0.03,
+      "S": [],
+      "m": 0,
+      "selected_loglik": -4.605170185988091,
+      "loglik": -4.605170185988091
+    },
+    {
+      "pi": 0.3,
+      "S": [
+        0
+      ],
+      "m": 1,
+      "selected_loglik": -1.4916548767777167,
+      "loglik": -2.6956276811036526
+    }
+  ],
+  "fit_task_counts": {
+    "clean": 6,
+    "attack": 0
+  },
+  "audit_status": "Specified re5 universal properties and unchanged probability decomposition do not hold"
+}
