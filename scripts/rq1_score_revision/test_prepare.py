@@ -59,6 +59,43 @@ class PrepareContracts(unittest.TestCase):
         self.assertFalse(result['regimes']['F1_only']['data_support_met'])
         self.assertFalse(result['regimes']['F2_only']['data_support_met'])
 
+    def test_public_null_fov_becomes_empty_without_changing_raw_scan(self):
+        valid=[[0,0],[2,0],[0,2]]
+        messages=[dict(source_id=s,frame=10,timestamp=0.,pose_xyz=[0,0,0],yaw=0.,
+                       tracks=[],fov_boundary=fov,gt={'private':True})
+                  for s,fov in enumerate((None,valid,[]),1)]
+        scan=dict(frame=10,index=0,timestamp=0.,messages=messages,gt={'private':True},echo={})
+        original=copy.deepcopy(scan)
+        public=next(prepare._public([scan]))
+        self.assertEqual(public['messages'][0]['fov_boundary'],[])
+        self.assertEqual(public['messages'][1]['fov_boundary'],valid)
+        self.assertEqual(public['messages'][2]['fov_boundary'],[])
+        self.assertEqual(scan,original)
+        self.assertNotIn('gt',public)
+        self.assertNotIn('gt',public['messages'][0])
+
+    def test_complete_marker_recovery_recounts_target_queries_from_rows(self):
+        with tempfile.TemporaryDirectory() as temp:
+            out=Path(temp);dest=out/'jobs/new';dest.mkdir(parents=True)
+            scan_path=out/'scans.jsonl.gz'
+            with data.atomic_rows(scan_path) as write:
+                write(dict(frame=0))
+            data.atomic_json(out/'manifest.json',dict(jobs=[job()],parents={'p':dict(scan_path=str(scan_path),spec={})}))
+            data.atomic_json(dest/'attack.json',dict(status='VALID',controlled_sources=[1],normal_source=2))
+            for name in ('online','entity_coverage'):
+                with data.atomic_rows(dest/(name+'.jsonl.gz')) as write:
+                    if name=='entity_coverage':
+                        write(dict(role='target',phase='active',frame=0,job_id='new',index=0,query_present=True))
+            with data.atomic_rows(dest/'rows.jsonl.gz') as write:
+                write(row(job(),0))
+                write(row(job(),1,query_truth=1))
+                write(row(job(),2,query_truth=-1))
+            with patch.object(native,'replay_online',side_effect=AssertionError('must reuse online')), patch.object(native,'attach_labels',side_effect=AssertionError('must reuse labels')):
+                prepare._worker(out,'new')
+            status=json.loads((dest/'complete.json').read_text())
+            self.assertEqual(status['actual_construction']['target_query_rows'],1)
+            self.assertEqual(status['rows'],3)
+
     def test_legacy_frame_join_strips_private_message_fields(self):
         packets=[]; ground=[]
         for index in range(2):

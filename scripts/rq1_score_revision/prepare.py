@@ -157,8 +157,12 @@ def _legacy_scans(packets, gt_frames, source_ids, expected_frames):
 
 def _public(scans):
     for scan in scans:
-        yield dict(frame=scan['frame'], index=scan['index'], timestamp=scan['timestamp'],
-                   messages=[{k: msg[k] for k in MESSAGE_FIELDS} for msg in scan['messages']])
+        messages = [{k: msg[k] for k in MESSAGE_FIELDS} for msg in scan['messages']]
+        for message in messages:
+            if message['fov_boundary'] is None:
+                # Empty FOV keeps both native containment and source eligibility false.
+                message['fov_boundary'] = []
+        yield dict(frame=scan['frame'], index=scan['index'], timestamp=scan['timestamp'], messages=messages)
 
 
 @contextmanager
@@ -338,10 +342,15 @@ def _worker(out, job_id):
                         if write is not None:
                             write(row)
             counts = Counter()
+            role_counts = Counter(target_query_rows=0)
             n = 0
             for row in data.read_rows(rows_path):
                 n += 1
                 counts['query_truth_'+str(row['query_truth'])] += 1
+                if row['query_truth'] == 0:
+                    role_counts[str(row.get('attack_role'))+'_query_rows'] += 1
+            for key, value in role_counts.items():
+                diagnostics[key] = value
             diagnostics['public_occlusion_frames'] = len(diagnostics['public_occlusion_frames'])
             coverage = native.coverage_summary(data.read_rows(coverage_path))
             data.atomic_json(dest/'complete.json', dict(status='COMPLETE', rows=n, counts=dict(counts),
