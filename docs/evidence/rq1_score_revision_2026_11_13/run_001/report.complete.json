@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "supported_regimes": [
+    "mixed",
+    "F1_only",
+    "F2_only"
+  ],
+  "metrics": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/report/metrics.json",
+  "report": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/report/summary.md"
+}

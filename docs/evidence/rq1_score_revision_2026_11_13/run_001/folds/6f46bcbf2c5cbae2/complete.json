@@ -1,0 +1,12 @@
+{
+  "parent": "train/2021_08_22_10_10_40",
+  "train_parents": [
+    "train/2021_08_16_22_26_54",
+    "train/2021_08_22_10_46_58",
+    "train/2021_08_23_11_22_46",
+    "train/2021_08_23_22_31_01",
+    "train/2021_08_24_21_29_28"
+  ],
+  "normal": "folds/6f46bcbf2c5cbae2/normal.json",
+  "features": "features/fit/6f46bcbf2c5cbae2.jsonl.gz"
+}

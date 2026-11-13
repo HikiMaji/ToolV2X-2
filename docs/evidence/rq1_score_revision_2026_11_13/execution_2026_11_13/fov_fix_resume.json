@@ -1,0 +1,21 @@
+{
+  "reason": "Represent missing FOV as empty public boundary, preserving source_features unknown and legacy no-coverage behavior; no attack rule/seed/data changes",
+  "before_manifest_sha256": "bc570cec3bf40b2a438efa7fd24e75a8015aabca82adb9572b743c081026b108",
+  "before_code": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+    "bytes": 23267,
+    "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+  },
+  "after_code": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+    "bytes": 23761,
+    "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+  },
+  "resumed_jobs": [
+    "88d0c4cf9eb9c85e",
+    "9ea31a51fd2ff89e"
+  ],
+  "retained_terminal_jobs": 24,
+  "attack_files_reused": true,
+  "source_data_mutated": false
+}

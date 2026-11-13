@@ -1,0 +1,3939 @@
+{
+  "schema": "rq1_score_revision_prepare_v1",
+  "config": {
+    "schema": "rq1_score_revision_frozen_v1",
+    "date": "2026-11-13",
+    "status": "design_frozen_before_new_generation_and_fitting; implementation_not_started",
+    "previous_data_and_results_seen": true,
+    "scope": "development; no unseen-test or deployment-risk guarantee",
+    "source_algorithm_commit": "549e86fbc2b6fae0bf608cb6344253466f4f6e7c",
+    "source_manifest": {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/manifest.json",
+      "sha256": "99ce9913bf1e02c11ff7c2b3853b92f246c024b07d7522b208e60e9b8a6a6d80"
+    },
+    "source_models": {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/models.json",
+      "sha256": "df9eaad26cc878cb1c22f4af2df1067d7f8f929d2a57c9b1e4ee3633b2ca7f05"
+    },
+    "frozen_normal_code": [
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/kernel.py",
+        "sha256": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49"
+      },
+      {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/fit.py",
+        "sha256": "8ca9b7b6c2c77ce55146e28e8ec9730c2f23884ab2c1cf7892de74e7f2994493"
+      }
+    ],
+    "construction_code": {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-temporal-2026-11-12/scripts/rq1_temporal/native_adapter.py",
+      "sha256": "6637529dc1950a843255c014fe31319f27c4baa5c8f73e4525d06e6a103faa36"
+    },
+    "protocol": {
+      "path": "/root/autodl-tmp/ToolV2X/docs/REALLY_MAYBE/rq1_score_revision_2026_11_13/frozen_protocol.md",
+      "sha256": "6ee4f2a926d8d9191ad79c6e4e253758cb578fbe0671d3915aae55955b956a94"
+    },
+    "parent_splits": {
+      "train/2021_08_16_22_26_54": "fit",
+      "train/2021_08_22_10_10_40": "fit",
+      "train/2021_08_22_10_46_58": "fit",
+      "train/2021_08_23_11_22_46": "fit",
+      "train/2021_08_24_21_29_28": "fit",
+      "train/2021_08_23_22_31_01": "fit",
+      "train/2021_08_18_22_16_12": "cal",
+      "train/2021_08_20_20_39_00": "cal",
+      "train/2021_08_21_22_21_37": "cal",
+      "train/2021_08_22_22_30_58": "cal",
+      "test/2021_08_22_07_52_02": "cal",
+      "train/2021_08_23_23_08_17": "eval",
+      "test/2021_08_24_07_45_41": "eval",
+      "validate/2021_08_20_21_48_35": "eval"
+    },
+    "fixed_cal_eval_job_ids": [
+      "0f81dd578b050f3d",
+      "12f11cc8cf224461",
+      "1582be3a0fbb3d9c",
+      "16959a877affaa9d",
+      "243d76d26dfc4ece",
+      "245997ce61af986f",
+      "36a44880203cdef3",
+      "410fec48a6a1488e",
+      "47112cf429e38922",
+      "69fb3ef368620df9",
+      "6abeb23cc2436098",
+      "6df1ef17f6cca1ae",
+      "82781d5ee6af0df2",
+      "872252222519c7d7",
+      "8a64c3fbe7215c46",
+      "8c929902aa5bf010",
+      "8d5f42c88af10379",
+      "8d87c21350a7bb56",
+      "942b1dec65ca1b72",
+      "b1fc85594ddb90f8",
+      "b20b54daa5bfdaa0",
+      "b58fd2ac0d1687c1",
+      "ba03ba6670565082",
+      "d173dc7138429af6",
+      "d2da45a730d0756c",
+      "d7ad3e46c350ed76",
+      "d92295b7b58fdfc5",
+      "de2106d309204cd3",
+      "de8f762eb83b97ea",
+      "df2cb388eb225100",
+      "e3998366b3838645",
+      "e5df0b989788fea4",
+      "f9039996102ee124",
+      "fc910f4d5a8e8f67",
+      "60b528984765d9ec",
+      "13df4899473dbad7",
+      "343d46fc7b709925",
+      "f0282c7c0945698d",
+      "4c23cf38a32e4c03",
+      "9e76a1233ee15da2",
+      "605ff9c3ca7bf3a5",
+      "1e7f3ae0c670e66f",
+      "d32be51b30bf2b46",
+      "75a1b5df43048d2e",
+      "3d440fda9f28bd0c",
+      "081ab23c9af4df7b",
+      "d19198700cc149ab",
+      "713a52daa8bdee96",
+      "0fb1d83f1379ee38",
+      "e8272405d9c4febe",
+      "1294449cc1454711",
+      "80d8ea2f3dc4e25b",
+      "654310fbb6e3901e",
+      "e17140086ed7bcf9",
+      "6b5f48a473625f6a",
+      "7f9ecfcfb5121f3b",
+      "c9ffce8e6d774cc2",
+      "cf2ad1a17529d018",
+      "fe7756637d7d1e37",
+      "e6fb05ecdfdf7689",
+      "a268ceceb415d292",
+      "12d324e7a7bda825",
+      "b07f9828ff2caf8c",
+      "55cae68a44a23db2"
+    ],
+    "planned_fit_attacks": [
+      {
+        "job_id": "481c713555593f77",
+        "source_clean_job_id": "7f3083bc00e147fb",
+        "parent": "train/2021_08_16_22_26_54",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          641,
+          650,
+          659
+        ],
+        "controlled_sources": [
+          641
+        ],
+        "normal_probe_source": 650
+      },
+      {
+        "job_id": "9f1328bb94ae18d5",
+        "source_clean_job_id": "7f3083bc00e147fb",
+        "parent": "train/2021_08_16_22_26_54",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          641,
+          650,
+          659
+        ],
+        "controlled_sources": [
+          641,
+          650
+        ],
+        "normal_probe_source": 659
+      },
+      {
+        "job_id": "8735a1e4a96e4c0c",
+        "source_clean_job_id": "7f3083bc00e147fb",
+        "parent": "train/2021_08_16_22_26_54",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          641,
+          650,
+          659
+        ],
+        "controlled_sources": [
+          641
+        ],
+        "normal_probe_source": 650
+      },
+      {
+        "job_id": "0d0038f15944e8a5",
+        "source_clean_job_id": "7f3083bc00e147fb",
+        "parent": "train/2021_08_16_22_26_54",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          641,
+          650,
+          659
+        ],
+        "controlled_sources": [
+          641,
+          650
+        ],
+        "normal_probe_source": 659
+      },
+      {
+        "job_id": "88d0c4cf9eb9c85e",
+        "source_clean_job_id": "f101ef178468aaf2",
+        "parent": "train/2021_08_22_10_10_40",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          7655,
+          7664,
+          7673
+        ],
+        "controlled_sources": [
+          7655
+        ],
+        "normal_probe_source": 7664
+      },
+      {
+        "job_id": "12ee7eb996db954e",
+        "source_clean_job_id": "f101ef178468aaf2",
+        "parent": "train/2021_08_22_10_10_40",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          7655,
+          7664,
+          7673
+        ],
+        "controlled_sources": [
+          7655,
+          7664
+        ],
+        "normal_probe_source": 7673
+      },
+      {
+        "job_id": "9ea31a51fd2ff89e",
+        "source_clean_job_id": "f101ef178468aaf2",
+        "parent": "train/2021_08_22_10_10_40",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          7655,
+          7664,
+          7673
+        ],
+        "controlled_sources": [
+          7655
+        ],
+        "normal_probe_source": 7664
+      },
+      {
+        "job_id": "100c9e4c1b7e0549",
+        "source_clean_job_id": "f101ef178468aaf2",
+        "parent": "train/2021_08_22_10_10_40",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          7655,
+          7664,
+          7673
+        ],
+        "controlled_sources": [
+          7655,
+          7664
+        ],
+        "normal_probe_source": 7673
+      },
+      {
+        "job_id": "12100a8e629230f8",
+        "source_clean_job_id": "c26e6be8af43118d",
+        "parent": "train/2021_08_22_10_46_58",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          3643,
+          3652,
+          3661
+        ],
+        "controlled_sources": [
+          3643
+        ],
+        "normal_probe_source": 3652
+      },
+      {
+        "job_id": "c5b15abd00b90d22",
+        "source_clean_job_id": "c26e6be8af43118d",
+        "parent": "train/2021_08_22_10_46_58",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          3643,
+          3652,
+          3661
+        ],
+        "controlled_sources": [
+          3643,
+          3652
+        ],
+        "normal_probe_source": 3661
+      },
+      {
+        "job_id": "9252f34347332dc7",
+        "source_clean_job_id": "c26e6be8af43118d",
+        "parent": "train/2021_08_22_10_46_58",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          3643,
+          3652,
+          3661
+        ],
+        "controlled_sources": [
+          3643
+        ],
+        "normal_probe_source": 3652
+      },
+      {
+        "job_id": "fd0e5c98b34c4de0",
+        "source_clean_job_id": "c26e6be8af43118d",
+        "parent": "train/2021_08_22_10_46_58",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          3643,
+          3652,
+          3661
+        ],
+        "controlled_sources": [
+          3643,
+          3652
+        ],
+        "normal_probe_source": 3661
+      },
+      {
+        "job_id": "2e5a49c3458d458c",
+        "source_clean_job_id": "bb30e22f91b2202b",
+        "parent": "train/2021_08_23_11_22_46",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          6712,
+          6721,
+          6730
+        ],
+        "controlled_sources": [
+          6712
+        ],
+        "normal_probe_source": 6721
+      },
+      {
+        "job_id": "d34f70fdf5af19f5",
+        "source_clean_job_id": "bb30e22f91b2202b",
+        "parent": "train/2021_08_23_11_22_46",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          6712,
+          6721,
+          6730
+        ],
+        "controlled_sources": [
+          6712,
+          6721
+        ],
+        "normal_probe_source": 6730
+      },
+      {
+        "job_id": "c57ddf71d32d0690",
+        "source_clean_job_id": "bb30e22f91b2202b",
+        "parent": "train/2021_08_23_11_22_46",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          6712,
+          6721,
+          6730
+        ],
+        "controlled_sources": [
+          6712
+        ],
+        "normal_probe_source": 6721
+      },
+      {
+        "job_id": "e65b7aeb19b73462",
+        "source_clean_job_id": "bb30e22f91b2202b",
+        "parent": "train/2021_08_23_11_22_46",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          6712,
+          6721,
+          6730
+        ],
+        "controlled_sources": [
+          6712,
+          6721
+        ],
+        "normal_probe_source": 6730
+      },
+      {
+        "job_id": "e93dadfff40e24a6",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939
+        ],
+        "normal_probe_source": 948
+      },
+      {
+        "job_id": "dd77b57428cf84c6",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939,
+          948
+        ],
+        "normal_probe_source": 957
+      },
+      {
+        "job_id": "1f7ac4ab1bbe873e",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 3,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939,
+          948,
+          957
+        ],
+        "normal_probe_source": 966
+      },
+      {
+        "job_id": "30b6c80aa46e4514",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939
+        ],
+        "normal_probe_source": 948
+      },
+      {
+        "job_id": "4632927235f23ea4",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939,
+          948
+        ],
+        "normal_probe_source": 957
+      },
+      {
+        "job_id": "6276e7d77ab57bfd",
+        "source_clean_job_id": "866e3aba5f4dff86",
+        "parent": "train/2021_08_23_22_31_01",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 3,
+        "seed": 0,
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "controlled_sources": [
+          939,
+          948,
+          957
+        ],
+        "normal_probe_source": 966
+      },
+      {
+        "job_id": "a56a9c018048a5b5",
+        "source_clean_job_id": "a07df9510c2cf7e9",
+        "parent": "train/2021_08_24_21_29_28",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          4796,
+          4805,
+          4814
+        ],
+        "controlled_sources": [
+          4796
+        ],
+        "normal_probe_source": 4805
+      },
+      {
+        "job_id": "de25bf70de76f55f",
+        "source_clean_job_id": "a07df9510c2cf7e9",
+        "parent": "train/2021_08_24_21_29_28",
+        "split": "fit",
+        "family": "F1",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          4796,
+          4805,
+          4814
+        ],
+        "controlled_sources": [
+          4796,
+          4805
+        ],
+        "normal_probe_source": 4814
+      },
+      {
+        "job_id": "39b831ffa2004921",
+        "source_clean_job_id": "a07df9510c2cf7e9",
+        "parent": "train/2021_08_24_21_29_28",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 1,
+        "seed": 0,
+        "source_ids": [
+          4796,
+          4805,
+          4814
+        ],
+        "controlled_sources": [
+          4796
+        ],
+        "normal_probe_source": 4805
+      },
+      {
+        "job_id": "d019e6e52711de0b",
+        "source_clean_job_id": "a07df9510c2cf7e9",
+        "parent": "train/2021_08_24_21_29_28",
+        "split": "fit",
+        "family": "F2",
+        "attack_k": 2,
+        "seed": 0,
+        "source_ids": [
+          4796,
+          4805,
+          4814
+        ],
+        "controlled_sources": [
+          4796,
+          4805
+        ],
+        "normal_probe_source": 4814
+      }
+    ],
+    "construction": {
+      "rng": "numpy.random.RandomState",
+      "seed": 0,
+      "proposal_limit": 64,
+      "anchor_scan_index": 20,
+      "offset_m": [
+        6,
+        10,
+        14
+      ],
+      "angles": "arange(8)*pi/4",
+      "scans": 80,
+      "active_indices": [
+        20,
+        59
+      ],
+      "stopped_indices": [
+        60,
+        79
+      ],
+      "hwl": [
+        1.6,
+        1.8,
+        4.5
+      ],
+      "controlled_selection": "ordered source_ids prefix k",
+      "normal_probe": "source_ids[k]",
+      "F2_blockage_fraction_min": 0.3333333333333333,
+      "F2_blocked_active_frames_min": 32,
+      "proposal_choice": "first valid in seeded order, before scoring",
+      "failure_action": "record UNREALIZABLE; no new seed, parent or policy"
+    },
+    "regimes": {
+      "mixed": {
+        "fit_false": [
+          "F1",
+          "F2"
+        ],
+        "cal_false": [
+          "F0",
+          "F1",
+          "F2"
+        ],
+        "eval_false": [
+          "F0",
+          "F1",
+          "F2"
+        ]
+      },
+      "F1_only": {
+        "fit_false": [
+          "F1"
+        ],
+        "cal_false": [
+          "F1"
+        ],
+        "eval_false": [
+          "F2"
+        ]
+      },
+      "F2_only": {
+        "fit_false": [
+          "F2"
+        ],
+        "cal_false": [
+          "F2"
+        ],
+        "eval_false": [
+          "F1"
+        ]
+      }
+    },
+    "regime_isolation": "clean by split shared; head/scaler/increment/calibration fitted separately; no target-family or F0 use in source-only fitting or calibration",
+    "data_support": {
+      "per_fit_family_min_injected_entities": 6,
+      "per_fit_family_min_parents": 3,
+      "min_distinct_labelled_fake_query_scans_for_counted_entity": 10,
+      "required_attack_k_support": [
+        "1",
+        "at_least_2"
+      ],
+      "entity_unit": "one injected target per attempt; tracker fragmentation does not add entities",
+      "keep_short_trajectories_in_fit_and_eval": true,
+      "gate_meaning": "minimum prototype support, not statistical identifiability or sample-size theorem",
+      "delta_varying_parent_min": 3,
+      "delta_rms_min": 1e-06,
+      "delta_std_min": 1e-06
+    },
+    "normal_features": {
+      "outer_fold": "leave-one-fit-parent-out",
+      "rho_selection": "within remaining parents only",
+      "cal_eval_normal_models": "reuse original full six-parent models",
+      "W": 10,
+      "probability_clip": 1e-06
+    },
+    "head": {
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "n_coefficients": 7,
+      "coefficient_signs": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "intercept": "free",
+      "n_minus_coefficient": 0,
+      "loss": "weighted logaddexp(0,S)-y*S",
+      "l2": 0.005,
+      "penalize_intercept": false,
+      "class_weight": [
+        0.5,
+        0.5
+      ],
+      "true_weight_hierarchy": [
+        "parent",
+        "query_epoch",
+        "scan"
+      ],
+      "false_weight_hierarchy": [
+        "family_attack_k",
+        "parent",
+        "query_epoch",
+        "scan"
+      ],
+      "constant_feature_std_cutoff": 1e-06,
+      "constant_feature_coefficient": 0,
+      "optimizer": "L-BFGS-B",
+      "init": "zeros",
+      "maxiter": 500,
+      "ftol": 1e-10,
+      "gtol": 1e-06
+    },
+    "increment": {
+      "offset": "frozen J-marginal base score",
+      "features": {
+        "J": "Delta_T",
+        "Q": "base_score_squared"
+      },
+      "scaling": "weighted RMS, no centering",
+      "intercept": false,
+      "coefficient_sign": "free",
+      "l2": 0.005,
+      "reported_coefficient": "standardized coefficient / feature RMS"
+    },
+    "methods": [
+      "D_head",
+      "T_head",
+      "I_Jmargin",
+      "J",
+      "G",
+      "Q",
+      "MATE_policy"
+    ],
+    "policy": {
+      "source": "original temporal shared eligibility",
+      "W": 10,
+      "minimum_support_frames_new_gate": false,
+      "accept_score_positive": true,
+      "reject_score_negative": true,
+      "calibration": {
+        "budget": 0.05,
+        "family_k_constraints": "each nonempty calibration cell",
+        "objective": "maximize corresponding correct class decision within budget",
+        "tie": "more conservative threshold",
+        "no_false_calibration_labels": "disable accept branch and mark insufficient calibration"
+      },
+      "evaluation_weights": "original parent/query_epoch/scan, false family/k first"
+    },
+    "coefficient_interval": {
+      "method": "parent pairs bootstrap, fixed original nonempty family/k cells",
+      "repetitions": 1000,
+      "seed": 20261113,
+      "draw_n_parents": 6,
+      "preserve_multiplicity": true,
+      "hold_fixed": [
+        "normal OOF features"
+      ],
+      "refit": [
+        "scaler",
+        "base head",
+        "RMS",
+        "offset coefficient"
+      ],
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "invalid": [
+        "original cell absent",
+        "class absent",
+        "delta uninformative",
+        "optimizer failure"
+      ],
+      "max_invalid_fraction": 0.05,
+      "do_not_reweight_missing_cells": true,
+      "interpretation": "conditional stability interval, not full-model 95-percent coverage guarantee",
+      "known_single_parent_k3_omission_probability": 0.3348979766803842,
+      "invalid_interval_decision": "joint retention evidence insufficient",
+      "coverage_precheck": {
+        "per_original_cell_parent_count": "m",
+        "missing_probability_lower_bound": "(1-m/6)**6",
+        "skip_bootstrap_if_any_bound_exceeds": 0.05,
+        "decision": "interval_support_insufficient"
+      }
+    },
+    "main_retention": {
+      "coefficient_interval_excludes_zero": true,
+      "CD_gain_min_each_I_G_Q": 0.01,
+      "CD_gain_min_each_D_T": 0.0,
+      "TA_MATE_minus_TA_J_max": 0.05,
+      "true_reject_rate_max": 0.05,
+      "false_accept_rate_max": 0.05,
+      "each_nonempty_eval_family_k_false_accept_max": 0.05,
+      "FA_J_minus_FA_T_max_per_cell": 0.02,
+      "FA_J_minus_FA_MATE_max_per_cell": 0.02,
+      "never_adopted_J_minus_MATE_max": 0.05,
+      "paired_first_adoption_delay_weighted_median_max_seconds": 0.5,
+      "never_adopted_weight": "parent/epoch equal over all primary-true epochs",
+      "delay_weight": "parent/epoch equal over shared ever-adopted primary-true epochs",
+      "delay_origin": "first legal primary-true query in the common epoch",
+      "numeric_tolerance": 1e-12
+    },
+    "transfer_retention_per_direction": {
+      "false_accept_max_global_and_each_nonempty_k": 0.05,
+      "true_reject_max": 0.05,
+      "CD_J_minus_CD_I_min": 0.0,
+      "CD_J_strictly_positive": true,
+      "CD_mixed_minus_CD_transfer_max_same_target_family": 0.05,
+      "TA_mixed_minus_TA_transfer_max": 0.05,
+      "recalibrate_on_target": false,
+      "overall_claim_requires_mixed_retention": true
+    },
+    "missing_coverage": "record untested/not calibrated; never count absent samples as successes",
+    "new_output_root": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001"
+  },
+  "prepare_code": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+    "bytes": 23761,
+    "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+  },
+  "source_manifest": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/manifest.json",
+    "sha256": "99ce9913bf1e02c11ff7c2b3853b92f246c024b07d7522b208e60e9b8a6a6d80"
+  },
+  "source_models": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/models.json",
+    "sha256": "df9eaad26cc878cb1c22f4af2df1067d7f8f929d2a57c9b1e4ee3633b2ca7f05"
+  },
+  "parent_splits": {
+    "train/2021_08_16_22_26_54": "fit",
+    "train/2021_08_22_10_10_40": "fit",
+    "train/2021_08_22_10_46_58": "fit",
+    "train/2021_08_23_11_22_46": "fit",
+    "train/2021_08_24_21_29_28": "fit",
+    "train/2021_08_23_22_31_01": "fit",
+    "train/2021_08_18_22_16_12": "cal",
+    "train/2021_08_20_20_39_00": "cal",
+    "train/2021_08_21_22_21_37": "cal",
+    "train/2021_08_22_22_30_58": "cal",
+    "test/2021_08_22_07_52_02": "cal",
+    "train/2021_08_23_23_08_17": "eval",
+    "test/2021_08_24_07_45_41": "eval",
+    "validate/2021_08_20_21_48_35": "eval"
+  },
+  "parents": {
+    "train/2021_08_16_22_26_54": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_16_22_26_54/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_16_22_26_54/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_16_22_26_54",
+        "source_ids": [
+          641,
+          650,
+          659
+        ],
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_16_22_26_54",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "binding": {
+        "origin": "legacy_sender_frame_join",
+        "spec": {
+          "parent": "train/2021_08_16_22_26_54",
+          "source_ids": [
+            641,
+            650,
+            659
+          ],
+          "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_16_22_26_54",
+          "frames": [
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91,
+            93,
+            95,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109,
+            111,
+            113,
+            115,
+            117,
+            119,
+            121,
+            123,
+            125,
+            127,
+            129,
+            131,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            167,
+            169,
+            171,
+            173,
+            175,
+            177,
+            179,
+            181,
+            183,
+            185,
+            187,
+            189,
+            191,
+            193,
+            195,
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209,
+            211,
+            213,
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227
+          ]
+        },
+        "sender": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/7f3083bc00e147fb/messages.jsonl.gz",
+          "bytes": 7196095,
+          "sha256": "35c1aac71e15ceb268d3cacaf7a38ee4d228855f3875179f694c991aa282627d"
+        },
+        "clean_config": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/7f3083bc00e147fb.json",
+          "bytes": 34484,
+          "sha256": "5cd0a51d0101b0b287393bc1853b99155321d445664bbad5ac7b3e332331aea8"
+        },
+        "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+        "echo_supervision": "empty; old clean rows and Z remain the normal training source"
+      }
+    },
+    "train/2021_08_22_10_10_40": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_22_10_10_40/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_22_10_10_40/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_22_10_10_40",
+        "source_ids": [
+          7655,
+          7664,
+          7673
+        ],
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_22_10_10_40",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "f101ef178468aaf2",
+      "binding": {
+        "origin": "legacy_sender_frame_join",
+        "spec": {
+          "parent": "train/2021_08_22_10_10_40",
+          "source_ids": [
+            7655,
+            7664,
+            7673
+          ],
+          "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_22_10_10_40",
+          "frames": [
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91,
+            93,
+            95,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109,
+            111,
+            113,
+            115,
+            117,
+            119,
+            121,
+            123,
+            125,
+            127,
+            129,
+            131,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            167,
+            169,
+            171,
+            173,
+            175,
+            177,
+            179,
+            181,
+            183,
+            185,
+            187,
+            189,
+            191,
+            193,
+            195,
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209,
+            211,
+            213,
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227
+          ]
+        },
+        "sender": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/f101ef178468aaf2/messages.jsonl.gz",
+          "bytes": 979685,
+          "sha256": "96a2659b90c4bec998528bf311a6ecdaab6117939e664c56c63749c5cb14bd6b"
+        },
+        "clean_config": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/f101ef178468aaf2.json",
+          "bytes": 8566,
+          "sha256": "bd07e9ee784c8d7e6c0b8a2e83c916471c24510eced5ee51c396938f2af256f5"
+        },
+        "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+        "echo_supervision": "empty; old clean rows and Z remain the normal training source"
+      }
+    },
+    "train/2021_08_22_10_46_58": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_22_10_46_58/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_22_10_46_58/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_22_10_46_58",
+        "source_ids": [
+          3643,
+          3652,
+          3661
+        ],
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_22_10_46_58",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "c26e6be8af43118d",
+      "binding": {
+        "origin": "legacy_sender_frame_join",
+        "spec": {
+          "parent": "train/2021_08_22_10_46_58",
+          "source_ids": [
+            3643,
+            3652,
+            3661
+          ],
+          "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_22_10_46_58",
+          "frames": [
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91,
+            93,
+            95,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109,
+            111,
+            113,
+            115,
+            117,
+            119,
+            121,
+            123,
+            125,
+            127,
+            129,
+            131,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            167,
+            169,
+            171,
+            173,
+            175,
+            177,
+            179,
+            181,
+            183,
+            185,
+            187,
+            189,
+            191,
+            193,
+            195,
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209,
+            211,
+            213,
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227
+          ]
+        },
+        "sender": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/c26e6be8af43118d/messages.jsonl.gz",
+          "bytes": 2635219,
+          "sha256": "fac3a8861ad28bab49dc9c7e0a394e20ba78b7f48a52f75d40a4f23553bb867d"
+        },
+        "clean_config": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/c26e6be8af43118d.json",
+          "bytes": 10631,
+          "sha256": "bbd7d1afb13dccb5ae4d66b8852eefc757cd9c7d03afecd1a2426276836c94dd"
+        },
+        "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+        "echo_supervision": "empty; old clean rows and Z remain the normal training source"
+      }
+    },
+    "train/2021_08_23_11_22_46": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_23_11_22_46/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_23_11_22_46/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_23_11_22_46",
+        "source_ids": [
+          6712,
+          6721,
+          6730
+        ],
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_23_11_22_46",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "binding": {
+        "origin": "legacy_sender_frame_join",
+        "spec": {
+          "parent": "train/2021_08_23_11_22_46",
+          "source_ids": [
+            6712,
+            6721,
+            6730
+          ],
+          "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_23_11_22_46",
+          "frames": [
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91,
+            93,
+            95,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109,
+            111,
+            113,
+            115,
+            117,
+            119,
+            121,
+            123,
+            125,
+            127,
+            129,
+            131,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            167,
+            169,
+            171,
+            173,
+            175,
+            177,
+            179,
+            181,
+            183,
+            185,
+            187,
+            189,
+            191,
+            193,
+            195,
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209,
+            211,
+            213,
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227
+          ]
+        },
+        "sender": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/bb30e22f91b2202b/messages.jsonl.gz",
+          "bytes": 2173022,
+          "sha256": "4c3f14993bca29d65bd6bbe943e4f507b55dd9c42dbe1902cd9ae07d316a4959"
+        },
+        "clean_config": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/bb30e22f91b2202b.json",
+          "bytes": 13018,
+          "sha256": "21d6c5222773f58122e2eb4a86cd148b72eb28d04b919216a217baf514176c1b"
+        },
+        "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+        "echo_supervision": "empty; old clean rows and Z remain the normal training source"
+      }
+    },
+    "train/2021_08_23_22_31_01": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/parents/train__2021_08_23_22_31_01/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/parents/train__2021_08_23_22_31_01/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_23_22_31_01",
+        "source_ids": [
+          939,
+          948,
+          957,
+          966
+        ],
+        "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_22_31_01",
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_22_31_01",
+        "frames": [
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          82,
+          84,
+          86,
+          88,
+          90,
+          92,
+          94,
+          96,
+          98,
+          100,
+          102,
+          104,
+          106,
+          108,
+          110,
+          112,
+          114,
+          116,
+          118,
+          120,
+          122,
+          124,
+          126,
+          128,
+          130,
+          132,
+          134,
+          136,
+          138,
+          140,
+          142,
+          144,
+          146,
+          148,
+          150,
+          152,
+          154,
+          156,
+          158,
+          160,
+          162,
+          164,
+          166,
+          168,
+          170,
+          172,
+          174,
+          176,
+          178,
+          180,
+          182,
+          184,
+          186,
+          188,
+          190,
+          192,
+          194,
+          196,
+          198,
+          200,
+          202,
+          204,
+          206,
+          208,
+          210,
+          212,
+          214,
+          216,
+          218,
+          220,
+          222,
+          224,
+          226,
+          228,
+          230,
+          232,
+          234,
+          236,
+          238,
+          240,
+          242,
+          244,
+          246,
+          248,
+          250,
+          252,
+          254,
+          256,
+          258,
+          260,
+          262,
+          264,
+          266,
+          268,
+          270,
+          272,
+          274,
+          276,
+          278,
+          280,
+          282,
+          284,
+          286,
+          288,
+          290,
+          292,
+          294
+        ]
+      },
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "binding": {
+        "origin": "old_native_scan_reference",
+        "source": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/parents/train__2021_08_23_22_31_01/provenance.json",
+          "bytes": 321662,
+          "sha256": "c2bb4204fd2608857485b16e544fdf223b1216f65d80ae8a54ad15b02baa75c5"
+        }
+      }
+    },
+    "train/2021_08_24_21_29_28": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_24_21_29_28/scans.jsonl.gz",
+      "provenance_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/parents/train__2021_08_24_21_29_28/provenance.json",
+      "spec": {
+        "parent": "train/2021_08_24_21_29_28",
+        "source_ids": [
+          4796,
+          4805,
+          4814
+        ],
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_24_21_29_28",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "binding": {
+        "origin": "legacy_sender_frame_join",
+        "spec": {
+          "parent": "train/2021_08_24_21_29_28",
+          "source_ids": [
+            4796,
+            4805,
+            4814
+          ],
+          "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_24_21_29_28",
+          "frames": [
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            81,
+            83,
+            85,
+            87,
+            89,
+            91,
+            93,
+            95,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109,
+            111,
+            113,
+            115,
+            117,
+            119,
+            121,
+            123,
+            125,
+            127,
+            129,
+            131,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            167,
+            169,
+            171,
+            173,
+            175,
+            177,
+            179,
+            181,
+            183,
+            185,
+            187,
+            189,
+            191,
+            193,
+            195,
+            197,
+            199,
+            201,
+            203,
+            205,
+            207,
+            209,
+            211,
+            213,
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227
+          ]
+        },
+        "sender": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/a07df9510c2cf7e9/messages.jsonl.gz",
+          "bytes": 2141384,
+          "sha256": "e273df9123890b1393be25f493a0da1a301116313e4ee29c6d881f72f1ce2aeb"
+        },
+        "clean_config": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/a07df9510c2cf7e9.json",
+          "bytes": 10953,
+          "sha256": "d37d9c3747538ff9f97873717cba73d15c2c9a1986478e77f6cc08030927b6eb"
+        },
+        "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json",
+        "echo_supervision": "empty; old clean rows and Z remain the normal training source"
+      }
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "0f81dd578b050f3d",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/0f81dd578b050f3d.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/0f81dd578b050f3d/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/0f81dd578b050f3d/complete.json"
+    },
+    {
+      "job_id": "12f11cc8cf224461",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/12f11cc8cf224461.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/12f11cc8cf224461/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/12f11cc8cf224461/complete.json"
+    },
+    {
+      "job_id": "1582be3a0fbb3d9c",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/1582be3a0fbb3d9c.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1582be3a0fbb3d9c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1582be3a0fbb3d9c/complete.json"
+    },
+    {
+      "job_id": "16959a877affaa9d",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/16959a877affaa9d.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/16959a877affaa9d/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/16959a877affaa9d/complete.json"
+    },
+    {
+      "job_id": "243d76d26dfc4ece",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/243d76d26dfc4ece.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/243d76d26dfc4ece/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/243d76d26dfc4ece/complete.json"
+    },
+    {
+      "job_id": "245997ce61af986f",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/245997ce61af986f.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/245997ce61af986f/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/245997ce61af986f/complete.json"
+    },
+    {
+      "job_id": "36a44880203cdef3",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/36a44880203cdef3.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/36a44880203cdef3/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/36a44880203cdef3/complete.json"
+    },
+    {
+      "job_id": "410fec48a6a1488e",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/410fec48a6a1488e.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/410fec48a6a1488e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/410fec48a6a1488e/complete.json"
+    },
+    {
+      "job_id": "47112cf429e38922",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/47112cf429e38922.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/47112cf429e38922/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/47112cf429e38922/complete.json"
+    },
+    {
+      "job_id": "69fb3ef368620df9",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/69fb3ef368620df9.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/69fb3ef368620df9/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/69fb3ef368620df9/complete.json"
+    },
+    {
+      "job_id": "6abeb23cc2436098",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/6abeb23cc2436098.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6abeb23cc2436098/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6abeb23cc2436098/complete.json"
+    },
+    {
+      "job_id": "6df1ef17f6cca1ae",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/6df1ef17f6cca1ae.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6df1ef17f6cca1ae/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6df1ef17f6cca1ae/complete.json"
+    },
+    {
+      "job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/7f3083bc00e147fb.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f3083bc00e147fb/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f3083bc00e147fb/complete.json"
+    },
+    {
+      "job_id": "82781d5ee6af0df2",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/82781d5ee6af0df2.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/82781d5ee6af0df2/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/82781d5ee6af0df2/complete.json"
+    },
+    {
+      "job_id": "872252222519c7d7",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/872252222519c7d7.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/872252222519c7d7/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/872252222519c7d7/complete.json"
+    },
+    {
+      "job_id": "8a64c3fbe7215c46",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8a64c3fbe7215c46.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8a64c3fbe7215c46/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8a64c3fbe7215c46/complete.json"
+    },
+    {
+      "job_id": "8c929902aa5bf010",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8c929902aa5bf010.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8c929902aa5bf010/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8c929902aa5bf010/complete.json"
+    },
+    {
+      "job_id": "8d5f42c88af10379",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8d5f42c88af10379.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d5f42c88af10379/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d5f42c88af10379/complete.json"
+    },
+    {
+      "job_id": "8d87c21350a7bb56",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8d87c21350a7bb56.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d87c21350a7bb56/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d87c21350a7bb56/complete.json"
+    },
+    {
+      "job_id": "942b1dec65ca1b72",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/942b1dec65ca1b72.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/942b1dec65ca1b72/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/942b1dec65ca1b72/complete.json"
+    },
+    {
+      "job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/a07df9510c2cf7e9.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a07df9510c2cf7e9/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a07df9510c2cf7e9/complete.json"
+    },
+    {
+      "job_id": "b1fc85594ddb90f8",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b1fc85594ddb90f8.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b1fc85594ddb90f8/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b1fc85594ddb90f8/complete.json"
+    },
+    {
+      "job_id": "b20b54daa5bfdaa0",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b20b54daa5bfdaa0.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b20b54daa5bfdaa0/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b20b54daa5bfdaa0/complete.json"
+    },
+    {
+      "job_id": "b58fd2ac0d1687c1",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/b58fd2ac0d1687c1.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b58fd2ac0d1687c1/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b58fd2ac0d1687c1/complete.json"
+    },
+    {
+      "job_id": "ba03ba6670565082",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/ba03ba6670565082.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/ba03ba6670565082/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/ba03ba6670565082/complete.json"
+    },
+    {
+      "job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/bb30e22f91b2202b.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/bb30e22f91b2202b/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/bb30e22f91b2202b/complete.json"
+    },
+    {
+      "job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/c26e6be8af43118d.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c26e6be8af43118d/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c26e6be8af43118d/complete.json"
+    },
+    {
+      "job_id": "d173dc7138429af6",
+      "parent": "train/2021_08_21_22_21_37",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d173dc7138429af6.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d173dc7138429af6/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d173dc7138429af6/complete.json"
+    },
+    {
+      "job_id": "d2da45a730d0756c",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d2da45a730d0756c.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d2da45a730d0756c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d2da45a730d0756c/complete.json"
+    },
+    {
+      "job_id": "d7ad3e46c350ed76",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d7ad3e46c350ed76.json",
+      "split": "cal",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d7ad3e46c350ed76/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d7ad3e46c350ed76/complete.json"
+    },
+    {
+      "job_id": "d92295b7b58fdfc5",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d92295b7b58fdfc5.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d92295b7b58fdfc5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d92295b7b58fdfc5/complete.json"
+    },
+    {
+      "job_id": "de2106d309204cd3",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/de2106d309204cd3.json",
+      "split": "eval",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/de2106d309204cd3/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/de2106d309204cd3/complete.json"
+    },
+    {
+      "job_id": "de8f762eb83b97ea",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/de8f762eb83b97ea.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/de8f762eb83b97ea/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/de8f762eb83b97ea/complete.json"
+    },
+    {
+      "job_id": "df2cb388eb225100",
+      "parent": "train/2021_08_20_20_39_00",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/df2cb388eb225100.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/df2cb388eb225100/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/df2cb388eb225100/complete.json"
+    },
+    {
+      "job_id": "e3998366b3838645",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/e3998366b3838645.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e3998366b3838645/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e3998366b3838645/complete.json"
+    },
+    {
+      "job_id": "e5df0b989788fea4",
+      "parent": "train/2021_08_23_23_08_17",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/e5df0b989788fea4.json",
+      "split": "eval",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e5df0b989788fea4/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e5df0b989788fea4/complete.json"
+    },
+    {
+      "job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "kind": "clean",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/f101ef178468aaf2.json",
+      "split": "fit",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f101ef178468aaf2/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f101ef178468aaf2/complete.json"
+    },
+    {
+      "job_id": "f9039996102ee124",
+      "parent": "train/2021_08_22_22_30_58",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/f9039996102ee124.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f9039996102ee124/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f9039996102ee124/complete.json"
+    },
+    {
+      "job_id": "fc910f4d5a8e8f67",
+      "parent": "train/2021_08_18_22_16_12",
+      "kind": "attack",
+      "config": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/fc910f4d5a8e8f67.json",
+      "split": "cal",
+      "family": "F0",
+      "attack_k": 1,
+      "origin": "reference",
+      "source_origin": "legacy",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/fc910f4d5a8e8f67/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/fc910f4d5a8e8f67/complete.json"
+    },
+    {
+      "job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/866e3aba5f4dff86/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/866e3aba5f4dff86/complete.json"
+    },
+    {
+      "job_id": "60b528984765d9ec",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/60b528984765d9ec/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/60b528984765d9ec/complete.json"
+    },
+    {
+      "job_id": "13df4899473dbad7",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/13df4899473dbad7/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/13df4899473dbad7/complete.json"
+    },
+    {
+      "job_id": "343d46fc7b709925",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/343d46fc7b709925/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/343d46fc7b709925/complete.json"
+    },
+    {
+      "job_id": "f0282c7c0945698d",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f0282c7c0945698d/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f0282c7c0945698d/complete.json"
+    },
+    {
+      "job_id": "4c23cf38a32e4c03",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/4c23cf38a32e4c03/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/4c23cf38a32e4c03/complete.json"
+    },
+    {
+      "job_id": "9e76a1233ee15da2",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/9e76a1233ee15da2/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/9e76a1233ee15da2/complete.json"
+    },
+    {
+      "job_id": "605ff9c3ca7bf3a5",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/605ff9c3ca7bf3a5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/605ff9c3ca7bf3a5/complete.json"
+    },
+    {
+      "job_id": "1e7f3ae0c670e66f",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1e7f3ae0c670e66f/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1e7f3ae0c670e66f/complete.json"
+    },
+    {
+      "job_id": "d32be51b30bf2b46",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d32be51b30bf2b46/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d32be51b30bf2b46/complete.json"
+    },
+    {
+      "job_id": "75a1b5df43048d2e",
+      "parent": "test/2021_08_22_07_52_02",
+      "split": "cal",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/75a1b5df43048d2e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/75a1b5df43048d2e/complete.json"
+    },
+    {
+      "job_id": "3d440fda9f28bd0c",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/3d440fda9f28bd0c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/3d440fda9f28bd0c/complete.json"
+    },
+    {
+      "job_id": "081ab23c9af4df7b",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/081ab23c9af4df7b/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/081ab23c9af4df7b/complete.json"
+    },
+    {
+      "job_id": "d19198700cc149ab",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d19198700cc149ab/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d19198700cc149ab/complete.json"
+    },
+    {
+      "job_id": "713a52daa8bdee96",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/713a52daa8bdee96/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/713a52daa8bdee96/complete.json"
+    },
+    {
+      "job_id": "0fb1d83f1379ee38",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/0fb1d83f1379ee38/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/0fb1d83f1379ee38/complete.json"
+    },
+    {
+      "job_id": "e8272405d9c4febe",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e8272405d9c4febe/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e8272405d9c4febe/complete.json"
+    },
+    {
+      "job_id": "1294449cc1454711",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1294449cc1454711/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1294449cc1454711/complete.json"
+    },
+    {
+      "job_id": "80d8ea2f3dc4e25b",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/80d8ea2f3dc4e25b/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/80d8ea2f3dc4e25b/complete.json"
+    },
+    {
+      "job_id": "654310fbb6e3901e",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/654310fbb6e3901e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/654310fbb6e3901e/complete.json"
+    },
+    {
+      "job_id": "e17140086ed7bcf9",
+      "parent": "test/2021_08_24_07_45_41",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e17140086ed7bcf9/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e17140086ed7bcf9/complete.json"
+    },
+    {
+      "job_id": "6b5f48a473625f6a",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "clean",
+      "family": "clean",
+      "attack_k": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6b5f48a473625f6a/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6b5f48a473625f6a/complete.json"
+    },
+    {
+      "job_id": "7f9ecfcfb5121f3b",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f9ecfcfb5121f3b/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f9ecfcfb5121f3b/complete.json"
+    },
+    {
+      "job_id": "c9ffce8e6d774cc2",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c9ffce8e6d774cc2/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c9ffce8e6d774cc2/complete.json"
+    },
+    {
+      "job_id": "cf2ad1a17529d018",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/cf2ad1a17529d018/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/cf2ad1a17529d018/complete.json"
+    },
+    {
+      "job_id": "fe7756637d7d1e37",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/fe7756637d7d1e37/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/fe7756637d7d1e37/complete.json"
+    },
+    {
+      "job_id": "e6fb05ecdfdf7689",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e6fb05ecdfdf7689/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e6fb05ecdfdf7689/complete.json"
+    },
+    {
+      "job_id": "a268ceceb415d292",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a268ceceb415d292/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a268ceceb415d292/complete.json"
+    },
+    {
+      "job_id": "12d324e7a7bda825",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 1,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/12d324e7a7bda825/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/12d324e7a7bda825/complete.json"
+    },
+    {
+      "job_id": "b07f9828ff2caf8c",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 2,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b07f9828ff2caf8c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b07f9828ff2caf8c/complete.json"
+    },
+    {
+      "job_id": "55cae68a44a23db2",
+      "parent": "validate/2021_08_20_21_48_35",
+      "split": "eval",
+      "kind": "attack",
+      "family": "F3",
+      "attack_k": 3,
+      "seed": 0,
+      "origin": "reference",
+      "source_origin": "native",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/55cae68a44a23db2/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/55cae68a44a23db2/complete.json"
+    },
+    {
+      "job_id": "481c713555593f77",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641
+      ],
+      "normal_probe_source": 650,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/481c713555593f77/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/481c713555593f77/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "9f1328bb94ae18d5",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641,
+        650
+      ],
+      "normal_probe_source": 659,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9f1328bb94ae18d5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9f1328bb94ae18d5/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "8735a1e4a96e4c0c",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641
+      ],
+      "normal_probe_source": 650,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/8735a1e4a96e4c0c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/8735a1e4a96e4c0c/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "0d0038f15944e8a5",
+      "source_clean_job_id": "7f3083bc00e147fb",
+      "parent": "train/2021_08_16_22_26_54",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        641,
+        650,
+        659
+      ],
+      "controlled_sources": [
+        641,
+        650
+      ],
+      "normal_probe_source": 659,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/0d0038f15944e8a5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/0d0038f15944e8a5/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "88d0c4cf9eb9c85e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655
+      ],
+      "normal_probe_source": 7664,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/88d0c4cf9eb9c85e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/88d0c4cf9eb9c85e/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23761,
+          "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23761,
+          "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+        }
+      },
+      "attack_reused_from_before_fov_fix": true
+    },
+    {
+      "job_id": "12ee7eb996db954e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655,
+        7664
+      ],
+      "normal_probe_source": 7673,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/12ee7eb996db954e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/12ee7eb996db954e/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "9ea31a51fd2ff89e",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655
+      ],
+      "normal_probe_source": 7664,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9ea31a51fd2ff89e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9ea31a51fd2ff89e/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23761,
+          "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23761,
+          "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+        }
+      },
+      "attack_reused_from_before_fov_fix": true
+    },
+    {
+      "job_id": "100c9e4c1b7e0549",
+      "source_clean_job_id": "f101ef178468aaf2",
+      "parent": "train/2021_08_22_10_10_40",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        7655,
+        7664,
+        7673
+      ],
+      "controlled_sources": [
+        7655,
+        7664
+      ],
+      "normal_probe_source": 7673,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/100c9e4c1b7e0549/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/100c9e4c1b7e0549/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "12100a8e629230f8",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643
+      ],
+      "normal_probe_source": 3652,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/12100a8e629230f8/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/12100a8e629230f8/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "c5b15abd00b90d22",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643,
+        3652
+      ],
+      "normal_probe_source": 3661,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/c5b15abd00b90d22/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/c5b15abd00b90d22/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "9252f34347332dc7",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643
+      ],
+      "normal_probe_source": 3652,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9252f34347332dc7/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/9252f34347332dc7/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "fd0e5c98b34c4de0",
+      "source_clean_job_id": "c26e6be8af43118d",
+      "parent": "train/2021_08_22_10_46_58",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        3643,
+        3652,
+        3661
+      ],
+      "controlled_sources": [
+        3643,
+        3652
+      ],
+      "normal_probe_source": 3661,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/fd0e5c98b34c4de0/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/fd0e5c98b34c4de0/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "2e5a49c3458d458c",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712
+      ],
+      "normal_probe_source": 6721,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/2e5a49c3458d458c/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/2e5a49c3458d458c/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "d34f70fdf5af19f5",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712,
+        6721
+      ],
+      "normal_probe_source": 6730,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/d34f70fdf5af19f5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/d34f70fdf5af19f5/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "c57ddf71d32d0690",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712
+      ],
+      "normal_probe_source": 6721,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/c57ddf71d32d0690/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/c57ddf71d32d0690/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "e65b7aeb19b73462",
+      "source_clean_job_id": "bb30e22f91b2202b",
+      "parent": "train/2021_08_23_11_22_46",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        6712,
+        6721,
+        6730
+      ],
+      "controlled_sources": [
+        6712,
+        6721
+      ],
+      "normal_probe_source": 6730,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/e65b7aeb19b73462/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/e65b7aeb19b73462/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "e93dadfff40e24a6",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939
+      ],
+      "normal_probe_source": 948,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/e93dadfff40e24a6/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/e93dadfff40e24a6/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "dd77b57428cf84c6",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948
+      ],
+      "normal_probe_source": 957,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/dd77b57428cf84c6/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/dd77b57428cf84c6/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "1f7ac4ab1bbe873e",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 3,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948,
+        957
+      ],
+      "normal_probe_source": 966,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/1f7ac4ab1bbe873e/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/1f7ac4ab1bbe873e/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "30b6c80aa46e4514",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939
+      ],
+      "normal_probe_source": 948,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/30b6c80aa46e4514/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/30b6c80aa46e4514/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "4632927235f23ea4",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948
+      ],
+      "normal_probe_source": 957,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/4632927235f23ea4/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/4632927235f23ea4/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "6276e7d77ab57bfd",
+      "source_clean_job_id": "866e3aba5f4dff86",
+      "parent": "train/2021_08_23_22_31_01",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 3,
+      "seed": 0,
+      "source_ids": [
+        939,
+        948,
+        957,
+        966
+      ],
+      "controlled_sources": [
+        939,
+        948,
+        957
+      ],
+      "normal_probe_source": 966,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/6276e7d77ab57bfd/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/6276e7d77ab57bfd/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "a56a9c018048a5b5",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796
+      ],
+      "normal_probe_source": 4805,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/a56a9c018048a5b5/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/a56a9c018048a5b5/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "de25bf70de76f55f",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F1",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796,
+        4805
+      ],
+      "normal_probe_source": 4814,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/de25bf70de76f55f/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/de25bf70de76f55f/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    },
+    {
+      "job_id": "39b831ffa2004921",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 1,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796
+      ],
+      "normal_probe_source": 4805,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/39b831ffa2004921/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/39b831ffa2004921/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": null,
+        "labels": null
+      }
+    },
+    {
+      "job_id": "d019e6e52711de0b",
+      "source_clean_job_id": "a07df9510c2cf7e9",
+      "parent": "train/2021_08_24_21_29_28",
+      "split": "fit",
+      "family": "F2",
+      "attack_k": 2,
+      "seed": 0,
+      "source_ids": [
+        4796,
+        4805,
+        4814
+      ],
+      "controlled_sources": [
+        4796,
+        4805
+      ],
+      "normal_probe_source": 4814,
+      "kind": "attack",
+      "origin": "score_revision",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/d019e6e52711de0b/rows.jsonl.gz",
+      "status_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/jobs/d019e6e52711de0b/complete.json",
+      "stage_prepare_code": {
+        "attack": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "online": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        },
+        "labels": {
+          "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+          "bytes": 23267,
+          "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+        }
+      }
+    }
+  ],
+  "execution_revisions": [
+    {
+      "reason": "Represent missing FOV as empty public boundary, preserving source_features unknown and legacy no-coverage behavior; no attack rule/seed/data changes",
+      "before_manifest_sha256": "bc570cec3bf40b2a438efa7fd24e75a8015aabca82adb9572b743c081026b108",
+      "before_code": {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+        "bytes": 23267,
+        "sha256": "de3878491762e5148615aa808508e2c01f41f7da815e9e7458f1fdc2645aed70"
+      },
+      "after_code": {
+        "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/prepare.py",
+        "bytes": 23761,
+        "sha256": "549d0e40b182530a66a82af1630cefaecc2d10651faf57a9928775f4d0e5ebcf"
+      },
+      "resumed_jobs": [
+        "88d0c4cf9eb9c85e",
+        "9ea31a51fd2ff89e"
+      ],
+      "retained_terminal_jobs": 24,
+      "attack_files_reused": true,
+      "source_data_mutated": false
+    }
+  ]
+}

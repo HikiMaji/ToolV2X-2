@@ -1,0 +1,25 @@
+{
+  "scope": "Pre-injection first20 scans; multiset excluding arbitrary central ID, numeric values rounded6; groups order normalized",
+  "results": [
+    {
+      "job_id": "481c713555593f77",
+      "parent": "train/2021_08_16_22_26_54",
+      "new_rows": 512,
+      "old_rows": 512,
+      "extra": 0,
+      "missing": 0,
+      "sample_new": [],
+      "sample_old": []
+    },
+    {
+      "job_id": "e93dadfff40e24a6",
+      "parent": "train/2021_08_23_22_31_01",
+      "new_rows": 578,
+      "old_rows": 578,
+      "extra": 0,
+      "missing": 0,
+      "sample_new": [],
+      "sample_old": []
+    }
+  ]
+}

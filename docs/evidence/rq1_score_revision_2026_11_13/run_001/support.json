@@ -1,0 +1,283 @@
+{
+  "entities": {
+    "481c713555593f77": {
+      "parent": "train/2021_08_16_22_26_54",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "9f1328bb94ae18d5": {
+      "parent": "train/2021_08_16_22_26_54",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "8735a1e4a96e4c0c": {
+      "parent": "train/2021_08_16_22_26_54",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "0d0038f15944e8a5": {
+      "parent": "train/2021_08_16_22_26_54",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "88d0c4cf9eb9c85e": {
+      "parent": "train/2021_08_22_10_10_40",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "12ee7eb996db954e": {
+      "parent": "train/2021_08_22_10_10_40",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "9ea31a51fd2ff89e": {
+      "parent": "train/2021_08_22_10_10_40",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "100c9e4c1b7e0549": {
+      "parent": "train/2021_08_22_10_10_40",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "12100a8e629230f8": {
+      "parent": "train/2021_08_22_10_46_58",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 43,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "c5b15abd00b90d22": {
+      "parent": "train/2021_08_22_10_46_58",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "9252f34347332dc7": {
+      "parent": "train/2021_08_22_10_46_58",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "fd0e5c98b34c4de0": {
+      "parent": "train/2021_08_22_10_46_58",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "2e5a49c3458d458c": {
+      "parent": "train/2021_08_23_11_22_46",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "d34f70fdf5af19f5": {
+      "parent": "train/2021_08_23_11_22_46",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "c57ddf71d32d0690": {
+      "parent": "train/2021_08_23_11_22_46",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "e65b7aeb19b73462": {
+      "parent": "train/2021_08_23_11_22_46",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "e93dadfff40e24a6": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "dd77b57428cf84c6": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "1f7ac4ab1bbe873e": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F1",
+      "attack_k": 3,
+      "distinct_false_query_scans": 45,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "30b6c80aa46e4514": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "4632927235f23ea4": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 20,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "6276e7d77ab57bfd": {
+      "parent": "train/2021_08_23_22_31_01",
+      "family": "F2",
+      "attack_k": 3,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "a56a9c018048a5b5": {
+      "parent": "train/2021_08_24_21_29_28",
+      "family": "F1",
+      "attack_k": 1,
+      "distinct_false_query_scans": 42,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "de25bf70de76f55f": {
+      "parent": "train/2021_08_24_21_29_28",
+      "family": "F1",
+      "attack_k": 2,
+      "distinct_false_query_scans": 44,
+      "query_fragments": 1,
+      "counted": true
+    },
+    "39b831ffa2004921": {
+      "parent": "train/2021_08_24_21_29_28",
+      "family": "F2",
+      "attack_k": 1,
+      "distinct_false_query_scans": 0,
+      "query_fragments": 0,
+      "counted": false
+    },
+    "d019e6e52711de0b": {
+      "parent": "train/2021_08_24_21_29_28",
+      "family": "F2",
+      "attack_k": 2,
+      "distinct_false_query_scans": 19,
+      "query_fragments": 1,
+      "counted": true
+    }
+  },
+  "families": {
+    "F1": {
+      "attempts": 13,
+      "nonempty_entities": 11,
+      "counted_entities": 11,
+      "counted_parents": 6,
+      "counted_parent_ids": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "attack_k_support": {
+        "1": true,
+        "at_least_2": true
+      },
+      "data_support_met": true,
+      "reasons": []
+    },
+    "F2": {
+      "attempts": 13,
+      "nonempty_entities": 6,
+      "counted_entities": 6,
+      "counted_parents": 5,
+      "counted_parent_ids": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "attack_k_support": {
+        "1": true,
+        "at_least_2": true
+      },
+      "data_support_met": true,
+      "reasons": []
+    }
+  },
+  "regimes": {
+    "mixed": {
+      "fit_false": [
+        "F1",
+        "F2"
+      ],
+      "data_support_met": true,
+      "unsupported_families": []
+    },
+    "F1_only": {
+      "fit_false": [
+        "F1"
+      ],
+      "data_support_met": true,
+      "unsupported_families": []
+    },
+    "F2_only": {
+      "fit_false": [
+        "F2"
+      ],
+      "data_support_met": true,
+      "unsupported_families": []
+    }
+  },
+  "planned_attempts": 26,
+  "short_nonempty_entities": 0,
+  "empty_entities": 9,
+  "any_regime_supported": true,
+  "keep_short_trajectories_in_fit_and_eval": true,
+  "gate_meaning": "minimum prototype support, not statistical identifiability or sample-size theorem"
+}

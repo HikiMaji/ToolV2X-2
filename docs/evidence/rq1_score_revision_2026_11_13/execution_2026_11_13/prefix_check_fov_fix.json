@@ -1,0 +1,10 @@
+{
+  "scope": "Same observational multiset contract as prefix_check_initial; repaired legacy missing-FOV case",
+  "job_id": "88d0c4cf9eb9c85e",
+  "new_rows": 194,
+  "old_rows": 194,
+  "extra": 0,
+  "missing": 0,
+  "sample_new": [],
+  "sample_old": []
+}

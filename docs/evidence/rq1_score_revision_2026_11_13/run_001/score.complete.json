@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "supported_regimes": [
+    "mixed",
+    "F1_only",
+    "F2_only"
+  ]
+}

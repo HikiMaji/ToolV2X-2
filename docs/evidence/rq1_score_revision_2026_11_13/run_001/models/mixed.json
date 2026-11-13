@@ -1,0 +1,829 @@
+{
+  "models": {
+    "D_head": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.7947998877372149,
+        -16.673117218710438,
+        16.07588488630582,
+        8.949325882514188,
+        2.6668327850837343,
+        1.944581032872164
+      ],
+      "std": [
+        1.4159256193444523,
+        19.911201377000502,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "scale": [
+        1.4159256193444523,
+        19.911201377000502,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.3740586005425979,
+        -0.16338877452635278,
+        0.3622737492800224,
+        -1.4447032279206389,
+        1.3928383370729847
+      ],
+      "intercept": -0.24639986098865674,
+      "n_samples": 18700,
+      "class_weight": [
+        0.5,
+        0.5
+      ],
+      "feature_min": [
+        -12.189770576018837,
+        -86.41782600283159,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        4.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 15,
+        "loss": 0.3774684019487846,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "false_cells": [
+        "F1/1",
+        "F1/2",
+        "F1/3",
+        "F2/1",
+        "F2/2"
+      ],
+      "fit_false": [
+        "F1",
+        "F2"
+      ]
+    },
+    "T_head": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.5433062852026291,
+        -11.267615834728716,
+        16.07588488630582,
+        8.949325882514188,
+        2.6668327850837343,
+        1.944581032872164
+      ],
+      "std": [
+        1.110432649534058,
+        13.645145543272148,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "scale": [
+        1.110432649534058,
+        13.645145543272148,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.4582435989336013,
+        -0.14676514625304676,
+        0.3333684293923499,
+        -1.4433121593190188,
+        1.403662750398253
+      ],
+      "intercept": -0.30782922821747916,
+      "n_samples": 18700,
+      "class_weight": [
+        0.5,
+        0.5
+      ],
+      "feature_min": [
+        -8.65918542372643,
+        -59.90127151418099,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        4.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 15,
+        "loss": 0.3760553309902778,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "false_cells": [
+        "F1/1",
+        "F1/2",
+        "F1/3",
+        "F2/1",
+        "F2/2"
+      ],
+      "fit_false": [
+        "F1",
+        "F2"
+      ]
+    },
+    "I_Jmargin": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.5420772875119961,
+        -11.335158048875062,
+        16.07588488630582,
+        8.949325882514188,
+        2.6668327850837343,
+        1.944581032872164
+      ],
+      "std": [
+        1.1123492456041926,
+        13.804734240654332,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "scale": [
+        1.1123492456041926,
+        13.804734240654332,
+        9.734898216241653,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.4434907935679648,
+        -0.14045125309712592,
+        0.3260702041358769,
+        -1.4580362474240554,
+        1.4102905679412951
+      ],
+      "intercept": -0.30893411840081647,
+      "n_samples": 18700,
+      "class_weight": [
+        0.5,
+        0.5
+      ],
+      "feature_min": [
+        -8.659185423726433,
+        -59.90127151418099,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        4.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 18,
+        "loss": 0.3771729245976285,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "false_cells": [
+        "F1/1",
+        "F1/2",
+        "F1/3",
+        "F2/1",
+        "F2/2"
+      ],
+      "fit_false": [
+        "F1",
+        "F2"
+      ]
+    },
+    "G": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.4729889922679298,
+        -10.293480718778955,
+        15.230274886135254,
+        8.949325882514188,
+        2.6668327850837343,
+        1.944581032872164
+      ],
+      "std": [
+        1.0930174937638095,
+        12.706299217754147,
+        9.62373355992039,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "scale": [
+        1.0930174937638095,
+        12.706299217754147,
+        9.62373355992039,
+        2.3295816406463654,
+        1.0075479508309844,
+        0.9082856791440153
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.4147564395068095,
+        -0.10751804847589946,
+        0.2942164077654305,
+        -1.5016947589760403,
+        1.4329837468944655
+      ],
+      "intercept": -0.292437061052782,
+      "n_samples": 18700,
+      "class_weight": [
+        0.5,
+        0.5
+      ],
+      "feature_min": [
+        -8.543322221536432,
+        -59.90127151418099,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        4.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 16,
+        "loss": 0.37633775680688913,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "false_cells": [
+        "F1/1",
+        "F1/2",
+        "F1/3",
+        "F2/1",
+        "F2/2"
+      ],
+      "fit_false": [
+        "F1",
+        "F2"
+      ]
+    },
+    "J": {
+      "rms": 1.79067336163977,
+      "std": 1.7647013738905557,
+      "varying_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "delta_informative": true,
+      "scaling": "weighted_RMS_no_centering",
+      "n_samples": 18700,
+      "status": "ok",
+      "optimizer_ok": true,
+      "coef_std": 0.2743840436147537,
+      "coefficient": 0.15322953336586886,
+      "optimizer": {
+        "success": true,
+        "nit": 5,
+        "loss": 0.34420580998821504,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      }
+    },
+    "Q": {
+      "rms": 9.539143053041768,
+      "std": 7.762700479570244,
+      "varying_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "delta_informative": null,
+      "scaling": "weighted_RMS_no_centering",
+      "n_samples": 18700,
+      "status": "ok",
+      "optimizer_ok": true,
+      "coef_std": 0.01123449197546229,
+      "coefficient": 0.0011777254951512571,
+      "optimizer": {
+        "success": true,
+        "nit": 2,
+        "loss": 0.3455486929627604,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      }
+    }
+  },
+  "method_status": {
+    "D_head": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "coverage": {
+        "n_supervision": 18700,
+        "n_usable": 18700,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9440,
+            "n_usable": 9440,
+            "normal_states": {
+              "ok": 9440
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 980,
+            "n_usable": 980,
+            "normal_states": {
+              "ok": 980
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2673,
+            "n_usable": 2673,
+            "normal_states": {
+              "ok": 2673
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1992,
+            "n_usable": 1992,
+            "normal_states": {
+              "ok": 1992
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2529,
+            "n_usable": 2529,
+            "normal_states": {
+              "ok": 2529
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1086,
+            "n_usable": 1086,
+            "normal_states": {
+              "ok": 1086
+            }
+          }
+        }
+      }
+    },
+    "T_head": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "coverage": {
+        "n_supervision": 18700,
+        "n_usable": 18700,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9440,
+            "n_usable": 9440,
+            "normal_states": {
+              "ok": 9440
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 980,
+            "n_usable": 980,
+            "normal_states": {
+              "ok": 980
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2673,
+            "n_usable": 2673,
+            "normal_states": {
+              "ok": 2673
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1992,
+            "n_usable": 1992,
+            "normal_states": {
+              "ok": 1992
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2529,
+            "n_usable": 2529,
+            "normal_states": {
+              "ok": 2529
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1086,
+            "n_usable": 1086,
+            "normal_states": {
+              "ok": 1086
+            }
+          }
+        }
+      }
+    },
+    "I_Jmargin": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "coverage": {
+        "n_supervision": 18700,
+        "n_usable": 18700,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9440,
+            "n_usable": 9440,
+            "normal_states": {
+              "ok": 9440
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 980,
+            "n_usable": 980,
+            "normal_states": {
+              "ok": 980
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2673,
+            "n_usable": 2673,
+            "normal_states": {
+              "ok": 2673
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1992,
+            "n_usable": 1992,
+            "normal_states": {
+              "ok": 1992
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2529,
+            "n_usable": 2529,
+            "normal_states": {
+              "ok": 2529
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1086,
+            "n_usable": 1086,
+            "normal_states": {
+              "ok": 1086
+            }
+          }
+        }
+      }
+    },
+    "G": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "coverage": {
+        "n_supervision": 18700,
+        "n_usable": 18700,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9440,
+            "n_usable": 9440,
+            "normal_states": {
+              "ok": 9440
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 980,
+            "n_usable": 980,
+            "normal_states": {
+              "ok": 980
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2673,
+            "n_usable": 2673,
+            "normal_states": {
+              "ok": 2673
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1992,
+            "n_usable": 1992,
+            "normal_states": {
+              "ok": 1992
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2529,
+            "n_usable": 2529,
+            "normal_states": {
+              "ok": 2529
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1086,
+            "n_usable": 1086,
+            "normal_states": {
+              "ok": 1086
+            }
+          }
+        }
+      }
+    },
+    "J": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "increment_status": "ok",
+      "delta_informative": true,
+      "n_usable": 18700
+    },
+    "Q": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "increment_status": "ok",
+      "delta_informative": null,
+      "n_usable": 18700
+    },
+    "MATE_policy": {
+      "status": "reference",
+      "reason": "native mean minus .5; same regime calibration"
+    }
+  },
+  "fit_false": [
+    "F1",
+    "F2"
+  ],
+  "n_supervision": 18700,
+  "status": "fitted",
+  "data_support_met": true,
+  "coefficient_interval": {
+    "precheck": {
+      "status": "interval_support_insufficient",
+      "cells": {
+        "F1/1": {
+          "n_parents": 5,
+          "parent_ids": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_probability_lower_bound": 2.1433470507544553e-05
+        },
+        "F1/2": {
+          "n_parents": 5,
+          "parent_ids": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_probability_lower_bound": 2.1433470507544553e-05
+        },
+        "F1/3": {
+          "n_parents": 1,
+          "parent_ids": [
+            "train/2021_08_23_22_31_01"
+          ],
+          "missing_probability_lower_bound": 0.3348979766803842
+        },
+        "F2/1": {
+          "n_parents": 2,
+          "parent_ids": [
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_23_11_22_46"
+          ],
+          "missing_probability_lower_bound": 0.08779149519890267
+        },
+        "F2/2": {
+          "n_parents": 4,
+          "parent_ids": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_probability_lower_bound": 0.0013717421124828542
+        }
+      },
+      "unsupported_cells": [
+        "F1/3",
+        "F2/1"
+      ],
+      "draw_n_parents": 6,
+      "reason": "original cell parent coverage precheck"
+    },
+    "requested_repetitions": 1000,
+    "seed": 20261113,
+    "interpretation": "conditional stability interval, not full-model 95-percent coverage guarantee",
+    "interval": null,
+    "interval_excludes_zero": null,
+    "status": "interval_support_insufficient",
+    "performed_repetitions": 0
+  }
+}

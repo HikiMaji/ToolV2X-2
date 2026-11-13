@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "supported_regimes": [
+    "mixed",
+    "F1_only",
+    "F2_only"
+  ],
+  "folds": [
+    {
+      "parent": "train/2021_08_16_22_26_54",
+      "train_parents": [
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "normal": "folds/f890b6f95d3bc10a/normal.json",
+      "features": "features/fit/f890b6f95d3bc10a.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_22_10_10_40",
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "normal": "folds/6f46bcbf2c5cbae2/normal.json",
+      "features": "features/fit/6f46bcbf2c5cbae2.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_22_10_46_58",
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "normal": "folds/634aa433941ce5e0/normal.json",
+      "features": "features/fit/634aa433941ce5e0.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_23_11_22_46",
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "normal": "folds/237efaecef94d3e7/normal.json",
+      "features": "features/fit/237efaecef94d3e7.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_23_22_31_01",
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_24_21_29_28"
+      ],
+      "normal": "folds/f63b35776d2754fe/normal.json",
+      "features": "features/fit/f63b35776d2754fe.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_24_21_29_28",
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01"
+      ],
+      "normal": "folds/a25ac47ca85b7da0/normal.json",
+      "features": "features/fit/a25ac47ca85b7da0.jsonl.gz"
+    }
+  ],
+  "normal_model_source": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/models.json",
+    "sha256": "df9eaad26cc878cb1c22f4af2df1067d7f8f929d2a57c9b1e4ee3633b2ca7f05"
+  }
+}
