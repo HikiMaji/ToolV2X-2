@@ -1,0 +1,94 @@
+{
+  "report_revision": "rq1_expected_unknown_v1",
+  "numerical_code_commit": "4b90295c48abdf73c5e42855e05f930fc2fbdc2a",
+  "source_files": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/run.complete.json",
+      "bytes": 1042,
+      "sha256": "1c9104beefae02a548601f8d692d05ecaaf930fde6507122ee877c60d28c3278"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/binding.json",
+      "bytes": 17734,
+      "sha256": "c0801b6428713bca2ca4d72045287792130dfcaa28bba7de0f359d89d626ea25"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report/metrics.json",
+      "bytes": 2162693,
+      "sha256": "4a8af608ebe214db67da9b343d8ba57e7fa5d763c1da43dff5fbf099760abbc1"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report/summary.md",
+      "bytes": 9600,
+      "sha256": "8961ed333eafa2235f2b3d243fb4758348e2673271c101ba6290de2f242bf340"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report/mixed.json",
+      "bytes": 650328,
+      "sha256": "4371e3ca2a41435650d337ebf5dce22a180643dea1587504a4862d665d02950d"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/cal.jsonl.gz",
+      "bytes": 15389048,
+      "sha256": "159470041cfe2cf35b42b758372c2721d619795bb6b065e46a6b6604361d3923"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/eval.jsonl.gz",
+      "bytes": 10951743,
+      "sha256": "1813e5c04b7ab536e0b5d3979f6bc07366a5fef3aa4b2887e61230098b9ee13a"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report/F1_only.json",
+      "bytes": 564095,
+      "sha256": "4ad7d1dcebdc346252ad107dba8a068275d1ad11d8be2e5e7e20d3479b079bff"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F1_only/cal.jsonl.gz",
+      "bytes": 5516569,
+      "sha256": "e6cb77761b38f86c040ecf53fe0552f952c73817cf6457a8f215d488b8d955e3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F1_only/eval.jsonl.gz",
+      "bytes": 6909505,
+      "sha256": "ce8451eeae6bf50cd9e241e30895997aaa52cc861ad38e31bf1f2e983b488774"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report/F2_only.json",
+      "bytes": 562204,
+      "sha256": "76f08332f26737368f030652d5e1d124f969c21a290b6985beacef103975a097"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F2_only/cal.jsonl.gz",
+      "bytes": 4823696,
+      "sha256": "b14884055ab91f989cab6cb5cc48d24258e52eeb1540d640a0b579ed912efaf2"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F2_only/eval.jsonl.gz",
+      "bytes": 7258075,
+      "sha256": "106e0b41342d1e3a97f44793ea306ea9283cc8433430b1b2360f63a223db96ad"
+    }
+  ],
+  "correction_code": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_report_freeze/report_integrity.py",
+    "bytes": 9006,
+    "sha256": "59ebdfb550e36f038c826e27f4ec6bb52a72e79270bce7db6dc821eaf10341ad"
+  },
+  "correction_spec": {
+    "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_report_freeze_2026_11_13/report_integrity_revision.md",
+    "bytes": 2913,
+    "sha256": "2821a27d94fede9e04a7fe2404d98877fbc468fcce5d76a94722c54b55342b05"
+  },
+  "numerical_code": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_report_freeze/run.py",
+      "bytes": 33702,
+      "sha256": "d3ea12b5fbc31d7c89f3edd5665d5b4c460839831f70a503255f25e1d1768cdd"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_report_freeze/prepare.py",
+      "bytes": 7451,
+      "sha256": "0803d571f20d9ecc32858613861a0b9e686392d17863c88e6de5bc741257d4a7"
+    }
+  ],
+  "changes": "only primary integrity coverage and guard-derived verdicts; saved scores and scientific statistics unchanged"
+}

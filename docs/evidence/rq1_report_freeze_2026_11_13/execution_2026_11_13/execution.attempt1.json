@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "attempt": 1,
+  "started_at": "2026-11-13T19:27:39.644963+08:00",
+  "command": [
+    "/root/miniconda3/bin/python",
+    "-u",
+    "-m",
+    "scripts.rq1_report_freeze.run",
+    "--stage",
+    "all",
+    "--config",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_report_freeze_2026_11_13/config.json",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001",
+    "--workers",
+    "4"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "log": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/execution_2026_11_13/run.attempt1.log",
+  "code_commit": "4b90295c48abdf73c5e42855e05f930fc2fbdc2a",
+  "pid": 48559,
+  "exit_code": 0,
+  "finished_at": "2026-11-13T20:29:03.333388+08:00",
+  "wall_seconds": 3683.6841016486287
+}

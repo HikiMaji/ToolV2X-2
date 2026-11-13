@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "job_id": "51a1d02ed3123dab",
+  "origin": "report_freeze",
+  "rows": 2276,
+  "scans": 102,
+  "counts": {
+    "query_truth_-1": 230,
+    "query_truth_1": 2046
+  },
+  "attack_constructed": false,
+  "actual_construction": {
+    "public_occlusion_frames": 0
+  },
+  "entity_coverage": {}
+}

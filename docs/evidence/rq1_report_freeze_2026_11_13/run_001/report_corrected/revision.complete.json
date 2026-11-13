@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "report_revision": "rq1_expected_unknown_v1",
+  "numerical_code_commit": "4b90295c48abdf73c5e42855e05f930fc2fbdc2a",
+  "meaning": "saved_report_integrity_revision_only",
+  "artifacts": [
+    "source_manifest.json",
+    "metrics.json",
+    "summary.md",
+    "mixed.json",
+    "F1_only.json",
+    "F2_only.json"
+  ],
+  "retention": {
+    "mixed": {
+      "main": "not_retained",
+      "joint": "not_retained"
+    },
+    "F1_only": {
+      "main": "not_retained",
+      "joint": "not_retained"
+    },
+    "F2_only": {
+      "main": "not_retained",
+      "joint": "not_retained"
+    }
+  }
+}

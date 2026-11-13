@@ -1,0 +1,1942 @@
+{
+  "status": "fitted",
+  "models": {
+    "Count": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "n_plus",
+        "n_minus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        14.745909227020206,
+        6.555591138799199,
+        8.847633507416703,
+        2.4787375469882083,
+        1.7945810328723177
+      ],
+      "std": [
+        9.185600886041028,
+        7.627819309465824,
+        2.418050846717803,
+        0.9893050266146057,
+        0.8578211846299056
+      ],
+      "scale": [
+        9.185600886041028,
+        7.627819309465824,
+        2.418050846717803,
+        0.9893050266146057,
+        0.8578211846299056
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        -0.14227063315303215,
+        -1.061624599835054,
+        0.33169674764510837,
+        -0.9443713253041587,
+        1.5495924844922235
+      ],
+      "intercept": -0.15905034655178488,
+      "n_samples": 18224,
+      "class_weight": [
+        0.4999999999999999,
+        0.5
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 15,
+        "loss": 0.4327622469169098,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "fit_false": [
+        "F2"
+      ],
+      "false_cells": [
+        "F2/1",
+        "F2/2"
+      ]
+    },
+    "CountQ": {
+      "rms": 6.1106766542442505,
+      "std": 4.694781340492407,
+      "varying_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "delta_informative": null,
+      "scaling": "weighted_RMS_no_centering",
+      "n_samples": 18224,
+      "status": "ok",
+      "optimizer_ok": true,
+      "coef_std": 0.3206313383046014,
+      "coefficient": 0.05247067656278338,
+      "optimizer": {
+        "success": true,
+        "nit": 4,
+        "loss": 0.4071671188195481,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      }
+    },
+    "D_old": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.5584491978741206,
+        -13.34648949947988,
+        14.74590922702019,
+        8.84763350741671,
+        2.478737546988535,
+        1.794581032872181
+      ],
+      "std": [
+        1.366357038214317,
+        16.459631115841972,
+        9.185600886041067,
+        2.4180508467177946,
+        0.9893050266146006,
+        0.857821184629915
+      ],
+      "scale": [
+        1.366357038214317,
+        16.459631115841972,
+        9.185600886041067,
+        2.4180508467177946,
+        0.9893050266146006,
+        0.857821184629915
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "coef": [
+        0.0,
+        0.8523380019449415,
+        -0.12270405778862799,
+        0.29254164720615,
+        -1.1755050113245544,
+        1.6583530345634931
+      ],
+      "intercept": -0.15702481048359776,
+      "n_samples": 18224,
+      "class_weight": [
+        0.4999999999999998,
+        0.5
+      ],
+      "feature_min": [
+        -12.189770576018837,
+        -77.86336499142851,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        4.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 16,
+        "loss": 0.4367618354333468,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "false_cells": [
+        "F2/1",
+        "F2/2"
+      ],
+      "fit_false": [
+        "F2"
+      ]
+    },
+    "D_zero": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.558449197874127,
+        -13.346489499479905,
+        14.745909227020206,
+        8.847633507416703,
+        0.0,
+        1.7945810328723177
+      ],
+      "std": [
+        1.3663570382143178,
+        16.45963111584192,
+        9.185600886041028,
+        2.418050846717803,
+        0.0,
+        0.8578211846299056
+      ],
+      "scale": [
+        1.3663570382143178,
+        16.45963111584192,
+        9.185600886041028,
+        2.418050846717803,
+        1.0,
+        0.8578211846299056
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.584415162966472,
+        -0.5658073451431306,
+        0.6651453197374839,
+        0.0,
+        1.032511999798026
+      ],
+      "intercept": -0.14804618891375113,
+      "n_samples": 18224,
+      "class_weight": [
+        0.4999999999999999,
+        0.5
+      ],
+      "feature_min": [
+        -12.189770576018837,
+        -77.86336499142851,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        0.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 13,
+        "loss": 0.46867290028767605,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "structurally_fixed": [
+        "d"
+      ],
+      "original_d_mean": 2.478737546988231,
+      "original_d_std": 0.9893050266146256,
+      "original_d_variance": 0.978724435684965,
+      "free_parameters": 6,
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "fit_false": [
+        "F2"
+      ],
+      "weight_sum": 1.0,
+      "false_cells": [
+        "F2/1",
+        "F2/2"
+      ],
+      "miss_condition_active": true
+    },
+    "I_zero": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.3981892101099813,
+        -9.972819559086,
+        14.745909227020206,
+        8.847633507416703,
+        0.0,
+        1.7945810328723177
+      ],
+      "std": [
+        1.082421802998199,
+        12.759305670526603,
+        9.185600886041028,
+        2.418050846717803,
+        0.0,
+        0.8578211846299056
+      ],
+      "scale": [
+        1.082421802998199,
+        12.759305670526603,
+        9.185600886041028,
+        2.418050846717803,
+        1.0,
+        0.8578211846299056
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.8686094094340027,
+        -0.491534616613121,
+        0.6174941072866587,
+        0.0,
+        1.0161320600181072
+      ],
+      "intercept": -0.26306650414456084,
+      "n_samples": 18224,
+      "class_weight": [
+        0.4999999999999999,
+        0.5
+      ],
+      "feature_min": [
+        -8.659185423726433,
+        -51.57853411915056,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        0.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 13,
+        "loss": 0.451463883154793,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "structurally_fixed": [
+        "d"
+      ],
+      "original_d_mean": 2.478737546988231,
+      "original_d_std": 0.9893050266146256,
+      "original_d_variance": 0.978724435684965,
+      "free_parameters": 6,
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "fit_false": [
+        "F2"
+      ],
+      "weight_sum": 1.0,
+      "false_cells": [
+        "F2/1",
+        "F2/2"
+      ],
+      "miss_condition_active": true
+    },
+    "J_zero": {
+      "rms": 2.702302696528159,
+      "std": 2.603263767691478,
+      "varying_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "delta_informative": true,
+      "scaling": "weighted_RMS_no_centering",
+      "n_samples": 18224,
+      "status": "ok",
+      "optimizer_ok": true,
+      "coef_std": 0.22780984308154958,
+      "coefficient": 0.08430211884635763,
+      "optimizer": {
+        "success": true,
+        "nit": 4,
+        "loss": 0.4250548494814544,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      }
+    },
+    "G_zero": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "features": [
+        "L_plus",
+        "L_minus",
+        "n_plus",
+        "w",
+        "d",
+        "m"
+      ],
+      "mean": [
+        -1.3456819997464857,
+        -8.383366181530915,
+        14.070031306785243,
+        8.847633507416703,
+        0.0,
+        1.7945810328723177
+      ],
+      "std": [
+        1.0457927104887965,
+        10.202982241010734,
+        8.833917120944687,
+        2.418050846717803,
+        0.0,
+        0.8578211846299056
+      ],
+      "scale": [
+        1.0457927104887965,
+        10.202982241010734,
+        8.833917120944687,
+        2.418050846717803,
+        1.0,
+        0.8578211846299056
+      ],
+      "constant": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "coef": [
+        0.0,
+        1.6650815154605336,
+        -0.3382512676028372,
+        0.5296105355715649,
+        0.0,
+        0.903335113876231
+      ],
+      "intercept": -0.17115980017301877,
+      "n_samples": 18224,
+      "class_weight": [
+        0.4999999999999999,
+        0.5
+      ],
+      "feature_min": [
+        -8.543322221536432,
+        -37.95044481511226,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "feature_max": [
+        0.0,
+        0.0,
+        40.0,
+        10.0,
+        0.0,
+        4.0
+      ],
+      "optimizer": {
+        "success": true,
+        "nit": 13,
+        "loss": 0.4572775256835683,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      },
+      "train_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "fit_false": [
+        "F2"
+      ],
+      "false_cells": [
+        "F2/1",
+        "F2/2"
+      ],
+      "structurally_fixed": [
+        "d"
+      ]
+    },
+    "Q_zero": {
+      "rms": 8.0109315957512,
+      "std": 6.811484650630395,
+      "varying_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_10_40",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "delta_informative": null,
+      "scaling": "weighted_RMS_no_centering",
+      "n_samples": 18224,
+      "status": "ok",
+      "optimizer_ok": true,
+      "coef_std": 0.33915721254092085,
+      "coefficient": 0.04233680046909918,
+      "optimizer": {
+        "success": true,
+        "nit": 4,
+        "loss": 0.4237528177999609,
+        "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+      }
+    },
+    "MATE_policy": null
+  },
+  "method_status": {
+    "Count": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true
+    },
+    "CountQ": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true
+    },
+    "D_old": {
+      "status": "ok",
+      "optimizer_ok": true,
+      "reason": null,
+      "coverage": {
+        "n_supervision": 18224,
+        "n_usable": 18224,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9354,
+            "n_usable": 9354,
+            "normal_states": {
+              "ok": 9354
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 938,
+            "n_usable": 938,
+            "normal_states": {
+              "ok": 938
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2586,
+            "n_usable": 2586,
+            "normal_states": {
+              "ok": 2586
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1906,
+            "n_usable": 1906,
+            "normal_states": {
+              "ok": 1906
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2440,
+            "n_usable": 2440,
+            "normal_states": {
+              "ok": 2440
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1000,
+            "n_usable": 1000,
+            "normal_states": {
+              "ok": 1000
+            }
+          }
+        }
+      }
+    },
+    "D_zero": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true,
+      "coverage": {
+        "n_supervision": 18224,
+        "n_usable": 18224,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9354,
+            "n_usable": 9354,
+            "normal_states": {
+              "ok": 9354
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 938,
+            "n_usable": 938,
+            "normal_states": {
+              "ok": 938
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2586,
+            "n_usable": 2586,
+            "normal_states": {
+              "ok": 2586
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1906,
+            "n_usable": 1906,
+            "normal_states": {
+              "ok": 1906
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2440,
+            "n_usable": 2440,
+            "normal_states": {
+              "ok": 2440
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1000,
+            "n_usable": 1000,
+            "normal_states": {
+              "ok": 1000
+            }
+          }
+        }
+      }
+    },
+    "I_zero": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true,
+      "coverage": {
+        "n_supervision": 18224,
+        "n_usable": 18224,
+        "n_excluded": 0,
+        "expected_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "usable_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "missing_usable_parents": [],
+        "by_parent": {
+          "train/2021_08_16_22_26_54": {
+            "n_supervision": 9354,
+            "n_usable": 9354,
+            "normal_states": {
+              "ok": 9354
+            }
+          },
+          "train/2021_08_22_10_10_40": {
+            "n_supervision": 938,
+            "n_usable": 938,
+            "normal_states": {
+              "ok": 938
+            }
+          },
+          "train/2021_08_22_10_46_58": {
+            "n_supervision": 2586,
+            "n_usable": 2586,
+            "normal_states": {
+              "ok": 2586
+            }
+          },
+          "train/2021_08_23_11_22_46": {
+            "n_supervision": 1906,
+            "n_usable": 1906,
+            "normal_states": {
+              "ok": 1906
+            }
+          },
+          "train/2021_08_23_22_31_01": {
+            "n_supervision": 2440,
+            "n_usable": 2440,
+            "normal_states": {
+              "ok": 2440
+            }
+          },
+          "train/2021_08_24_21_29_28": {
+            "n_supervision": 1000,
+            "n_usable": 1000,
+            "normal_states": {
+              "ok": 1000
+            }
+          }
+        }
+      }
+    },
+    "J_zero": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true,
+      "increment_status": "ok",
+      "delta_informative": true,
+      "n_usable": 18224
+    },
+    "G_zero": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true
+    },
+    "Q_zero": {
+      "status": "ok",
+      "reason": null,
+      "optimizer_ok": true
+    },
+    "MATE_policy": {
+      "status": "reference",
+      "reason": "native mean minus .5; same regime calibration"
+    }
+  },
+  "old_fitted": {
+    "models": {
+      "D_head": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.5584491978741206,
+          -13.34648949947988,
+          14.74590922702019,
+          8.84763350741671,
+          2.478737546988535,
+          1.794581032872181
+        ],
+        "std": [
+          1.366357038214317,
+          16.459631115841972,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "scale": [
+          1.366357038214317,
+          16.459631115841972,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "coef": [
+          0.0,
+          0.8523380019449415,
+          -0.12270405778862799,
+          0.29254164720615,
+          -1.1755050113245544,
+          1.6583530345634931
+        ],
+        "intercept": -0.15702481048359776,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999998,
+          0.5
+        ],
+        "feature_min": [
+          -12.189770576018837,
+          -77.86336499142851,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          4.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 16,
+          "loss": 0.4367618354333468,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "fit_false": [
+          "F2"
+        ]
+      },
+      "T_head": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.3988093511782518,
+          -9.807371443814656,
+          14.74590922702019,
+          8.84763350741671,
+          2.478737546988535,
+          1.794581032872181
+        ],
+        "std": [
+          1.0806300652137337,
+          12.358435176437865,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "scale": [
+          1.0806300652137337,
+          12.358435176437865,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "coef": [
+          0.0,
+          1.1745705387348784,
+          -0.14733071003188405,
+          0.32812860330028454,
+          -1.009291461240703,
+          1.5806450097341538
+        ],
+        "intercept": -0.23185825007303434,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999998,
+          0.5
+        ],
+        "feature_min": [
+          -8.65918542372643,
+          -48.18035655857438,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          4.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 16,
+          "loss": 0.42619211412690045,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "fit_false": [
+          "F2"
+        ]
+      },
+      "I_Jmargin": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.398189210109981,
+          -9.97281955908601,
+          14.74590922702019,
+          8.84763350741671,
+          2.478737546988535,
+          1.794581032872181
+        ],
+        "std": [
+          1.0824218029982025,
+          12.759305670526622,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "scale": [
+          1.0824218029982025,
+          12.759305670526622,
+          9.185600886041067,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "coef": [
+          0.0,
+          1.1680872908182256,
+          -0.1383136902488454,
+          0.31885213240896637,
+          -1.0308499799983777,
+          1.5873558328933777
+        ],
+        "intercept": -0.23889569678048983,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999998,
+          0.5
+        ],
+        "feature_min": [
+          -8.659185423726433,
+          -51.57853411915056,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          4.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 16,
+          "loss": 0.42732294612349964,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "fit_false": [
+          "F2"
+        ]
+      },
+      "G": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.3456819997464835,
+          -8.38336618153092,
+          14.070031306785157,
+          8.84763350741671,
+          2.478737546988535,
+          1.794581032872181
+        ],
+        "std": [
+          1.0457927104887947,
+          10.202982241010728,
+          8.833917120944724,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "scale": [
+          1.0457927104887947,
+          10.202982241010728,
+          8.833917120944724,
+          2.4180508467177946,
+          0.9893050266146006,
+          0.857821184629915
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "coef": [
+          0.0,
+          1.000496298316038,
+          -0.06713204599602841,
+          0.27051974900952114,
+          -1.0867199730566002,
+          1.5779323264376386
+        ],
+        "intercept": -0.17983777943150495,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999998,
+          0.5
+        ],
+        "feature_min": [
+          -8.543322221536432,
+          -37.95044481511226,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          4.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 15,
+          "loss": 0.4290799128559567,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "fit_false": [
+          "F2"
+        ]
+      },
+      "J": {
+        "rms": 2.702302696528159,
+        "std": 2.603263767691476,
+        "varying_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "delta_informative": true,
+        "scaling": "weighted_RMS_no_centering",
+        "n_samples": 18224,
+        "status": "ok",
+        "optimizer_ok": true,
+        "coef_std": 0.16864332538785928,
+        "coefficient": 0.06240726681157051,
+        "optimizer": {
+          "success": true,
+          "nit": 3,
+          "loss": 0.40160408826649213,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      },
+      "Q": {
+        "rms": 7.725773042660773,
+        "std": 6.297032799424804,
+        "varying_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "delta_informative": null,
+        "scaling": "weighted_RMS_no_centering",
+        "n_samples": 18224,
+        "status": "ok",
+        "optimizer_ok": true,
+        "coef_std": 0.29192515135169705,
+        "coefficient": 0.03778588236280332,
+        "optimizer": {
+          "success": true,
+          "nit": 4,
+          "loss": 0.4003731220607391,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      }
+    },
+    "method_status": {
+      "D_head": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "T_head": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "I_Jmargin": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "G": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "J": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "increment_status": "ok",
+        "delta_informative": true,
+        "n_usable": 18224
+      },
+      "Q": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "reason": null,
+        "increment_status": "ok",
+        "delta_informative": null,
+        "n_usable": 18224
+      },
+      "MATE_policy": {
+        "status": "reference",
+        "reason": "native mean minus .5; same regime calibration"
+      }
+    },
+    "fit_false": [
+      "F2"
+    ],
+    "n_supervision": 18224,
+    "status": "fitted",
+    "data_support_met": true
+  },
+  "zero_fitted": {
+    "status": "fitted",
+    "models": {
+      "D_zero": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.558449197874127,
+          -13.346489499479905,
+          14.745909227020206,
+          8.847633507416703,
+          0.0,
+          1.7945810328723177
+        ],
+        "std": [
+          1.3663570382143178,
+          16.45963111584192,
+          9.185600886041028,
+          2.418050846717803,
+          0.0,
+          0.8578211846299056
+        ],
+        "scale": [
+          1.3663570382143178,
+          16.45963111584192,
+          9.185600886041028,
+          2.418050846717803,
+          1.0,
+          0.8578211846299056
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "coef": [
+          0.0,
+          1.584415162966472,
+          -0.5658073451431306,
+          0.6651453197374839,
+          0.0,
+          1.032511999798026
+        ],
+        "intercept": -0.14804618891375113,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999999,
+          0.5
+        ],
+        "feature_min": [
+          -12.189770576018837,
+          -77.86336499142851,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          0.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 13,
+          "loss": 0.46867290028767605,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "structurally_fixed": [
+          "d"
+        ],
+        "original_d_mean": 2.478737546988231,
+        "original_d_std": 0.9893050266146256,
+        "original_d_variance": 0.978724435684965,
+        "free_parameters": 6,
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "fit_false": [
+          "F2"
+        ],
+        "weight_sum": 1.0,
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "miss_condition_active": true
+      },
+      "I_zero": {
+        "status": "ok",
+        "optimizer_ok": true,
+        "features": [
+          "L_plus",
+          "L_minus",
+          "n_plus",
+          "w",
+          "d",
+          "m"
+        ],
+        "mean": [
+          -1.3981892101099813,
+          -9.972819559086,
+          14.745909227020206,
+          8.847633507416703,
+          0.0,
+          1.7945810328723177
+        ],
+        "std": [
+          1.082421802998199,
+          12.759305670526603,
+          9.185600886041028,
+          2.418050846717803,
+          0.0,
+          0.8578211846299056
+        ],
+        "scale": [
+          1.082421802998199,
+          12.759305670526603,
+          9.185600886041028,
+          2.418050846717803,
+          1.0,
+          0.8578211846299056
+        ],
+        "constant": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "coef": [
+          0.0,
+          1.8686094094340027,
+          -0.491534616613121,
+          0.6174941072866587,
+          0.0,
+          1.0161320600181072
+        ],
+        "intercept": -0.26306650414456084,
+        "n_samples": 18224,
+        "class_weight": [
+          0.4999999999999999,
+          0.5
+        ],
+        "feature_min": [
+          -8.659185423726433,
+          -51.57853411915056,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "feature_max": [
+          0.0,
+          0.0,
+          40.0,
+          10.0,
+          0.0,
+          4.0
+        ],
+        "optimizer": {
+          "success": true,
+          "nit": 13,
+          "loss": 0.451463883154793,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        },
+        "structurally_fixed": [
+          "d"
+        ],
+        "original_d_mean": 2.478737546988231,
+        "original_d_std": 0.9893050266146256,
+        "original_d_variance": 0.978724435684965,
+        "free_parameters": 6,
+        "train_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_10_40",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "fit_false": [
+          "F2"
+        ],
+        "weight_sum": 1.0,
+        "false_cells": [
+          "F2/1",
+          "F2/2"
+        ],
+        "miss_condition_active": true
+      },
+      "J_zero": {
+        "rms": 2.702302696528159,
+        "std": 2.603263767691478,
+        "varying_parents": [
+          "train/2021_08_16_22_26_54",
+          "train/2021_08_22_10_46_58",
+          "train/2021_08_23_11_22_46",
+          "train/2021_08_23_22_31_01",
+          "train/2021_08_24_21_29_28"
+        ],
+        "delta_informative": true,
+        "scaling": "weighted_RMS_no_centering",
+        "n_samples": 18224,
+        "status": "ok",
+        "optimizer_ok": true,
+        "coef_std": 0.22780984308154958,
+        "coefficient": 0.08430211884635763,
+        "optimizer": {
+          "success": true,
+          "nit": 4,
+          "loss": 0.4250548494814544,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL"
+        }
+      }
+    },
+    "method_status": {
+      "D_zero": {
+        "status": "ok",
+        "reason": null,
+        "optimizer_ok": true,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "I_zero": {
+        "status": "ok",
+        "reason": null,
+        "optimizer_ok": true,
+        "coverage": {
+          "n_supervision": 18224,
+          "n_usable": 18224,
+          "n_excluded": 0,
+          "expected_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "usable_parents": [
+            "train/2021_08_16_22_26_54",
+            "train/2021_08_22_10_10_40",
+            "train/2021_08_22_10_46_58",
+            "train/2021_08_23_11_22_46",
+            "train/2021_08_23_22_31_01",
+            "train/2021_08_24_21_29_28"
+          ],
+          "missing_usable_parents": [],
+          "by_parent": {
+            "train/2021_08_16_22_26_54": {
+              "n_supervision": 9354,
+              "n_usable": 9354,
+              "normal_states": {
+                "ok": 9354
+              }
+            },
+            "train/2021_08_22_10_10_40": {
+              "n_supervision": 938,
+              "n_usable": 938,
+              "normal_states": {
+                "ok": 938
+              }
+            },
+            "train/2021_08_22_10_46_58": {
+              "n_supervision": 2586,
+              "n_usable": 2586,
+              "normal_states": {
+                "ok": 2586
+              }
+            },
+            "train/2021_08_23_11_22_46": {
+              "n_supervision": 1906,
+              "n_usable": 1906,
+              "normal_states": {
+                "ok": 1906
+              }
+            },
+            "train/2021_08_23_22_31_01": {
+              "n_supervision": 2440,
+              "n_usable": 2440,
+              "normal_states": {
+                "ok": 2440
+              }
+            },
+            "train/2021_08_24_21_29_28": {
+              "n_supervision": 1000,
+              "n_usable": 1000,
+              "normal_states": {
+                "ok": 1000
+              }
+            }
+          }
+        }
+      },
+      "J_zero": {
+        "status": "ok",
+        "reason": null,
+        "optimizer_ok": true,
+        "increment_status": "ok",
+        "delta_informative": true,
+        "n_usable": 18224
+      }
+    },
+    "fit_false": [
+      "F2"
+    ],
+    "n_supervision": 18224
+  },
+  "fit_false": [
+    "F2"
+  ]
+}

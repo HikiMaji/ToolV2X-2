@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "artifacts": [
+    "models/mixed.json",
+    "calibration/mixed.json",
+    "predictions/mixed/cal.jsonl.gz",
+    "models/F1_only.json",
+    "calibration/F1_only.json",
+    "predictions/F1_only/cal.jsonl.gz",
+    "models/F2_only.json",
+    "calibration/F2_only.json",
+    "predictions/F2_only/cal.jsonl.gz"
+  ]
+}

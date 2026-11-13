@@ -1,0 +1,12 @@
+{
+  "status": "UNREALIZABLE",
+  "reason": "64-or-fewer frozen candidates exhausted",
+  "attempted": 64,
+  "failure_counts": {
+    "no_report_opportunity": 37,
+    "GT_compatible": 15,
+    "blockage_under_80pct": 12
+  },
+  "origin": "report_freeze",
+  "job_id": "d06f9cf7714148b7"
+}

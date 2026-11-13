@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "artifacts": [
+    "binding.json",
+    "manifest.json",
+    "prepare.complete.json",
+    "fit.complete.json",
+    "models/mixed.json",
+    "calibration/mixed.json",
+    "predictions/mixed/cal.jsonl.gz",
+    "models/F1_only.json",
+    "calibration/F1_only.json",
+    "predictions/F1_only/cal.jsonl.gz",
+    "models/F2_only.json",
+    "calibration/F2_only.json",
+    "predictions/F2_only/cal.jsonl.gz",
+    "report/mixed.json",
+    "predictions/mixed/eval.jsonl.gz",
+    "report/F1_only.json",
+    "predictions/F1_only/eval.jsonl.gz",
+    "report/F2_only.json",
+    "predictions/F2_only/eval.jsonl.gz",
+    "report/metrics.json",
+    "report/summary.md"
+  ]
+}
