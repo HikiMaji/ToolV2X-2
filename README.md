@@ -6,6 +6,8 @@
 
 ## 当前入口
 
+[上次GitHub推送后改动汇总](docs/REALLY/上次GitHub推送后改动汇总_2026-11-13.md)说明两轮修改、14个提交及当前未推送状态。
+
 1. [当前方案](docs/研究点一_当前方案.md)
 2. [最新结果与方法决定](docs/REALLY/只未报来源常数约束_开发结果与方法决定_2026-11-13.md)
 3. [冻结规程](docs/REALLY_MAYBE/rq1_no_miss_constant_2026_11_13/protocol.md)及[SDS](docs/REALLY_MAYBE/rq1_no_miss_constant_2026_11_13/SDS.md)
