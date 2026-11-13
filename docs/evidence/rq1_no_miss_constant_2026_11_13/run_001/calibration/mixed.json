@@ -1,0 +1,369 @@
+{
+  "policies": {
+    "D_old": {
+      "A": 0.001651961130937074,
+      "R": -0.5367639162118232,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5982442241936758,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9791456228956363,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_old": {
+      "A": 0.0012009984343288038,
+      "R": -0.5704218796155924,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5952741933131044,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9743230920314431,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_old": {
+      "A": 0.0012009984343287273,
+      "R": -0.5459999594381146,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.594698349347562,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.974898288439973,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "D_zero": {
+      "A": 0.31471373949882475,
+      "R": -0.07199242080999549,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6065017427637089,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9411645696733566,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_zero": {
+      "A": 0.2738181665993722,
+      "R": -0.2204790408381389,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5917918294141524,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9085362026699865,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_zero": {
+      "A": 0.27385436806566726,
+      "R": -0.1969710534508152,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5892634243111041,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9102582846004021,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_cut": {
+      "A": 0.8340139553511348,
+      "R": -0.0001227516757906777,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.614296892103599,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.6951302129481944,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "MATE_policy": {
+      "A": 0.27596114367702085,
+      "R": -0.002519793344571586,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6031808022213262,
+          "n": 1352,
+          "n_parents": 5,
+          "n_epochs": 26
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.38737724466890683,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    }
+  },
+  "cal_false": [
+    "F0",
+    "F1",
+    "F2"
+  ],
+  "cal_parents": [
+    "test/2021_08_22_07_52_02",
+    "train/2021_08_18_22_16_12",
+    "train/2021_08_20_20_39_00",
+    "train/2021_08_21_22_21_37",
+    "train/2021_08_22_22_30_58"
+  ],
+  "cal_job_ids": [
+    "12f11cc8cf224461",
+    "13df4899473dbad7",
+    "1582be3a0fbb3d9c",
+    "16959a877affaa9d",
+    "245997ce61af986f",
+    "343d46fc7b709925",
+    "36a44880203cdef3",
+    "410fec48a6a1488e",
+    "4c23cf38a32e4c03",
+    "605ff9c3ca7bf3a5",
+    "60b528984765d9ec",
+    "69fb3ef368620df9",
+    "6abeb23cc2436098",
+    "6df1ef17f6cca1ae",
+    "82781d5ee6af0df2",
+    "872252222519c7d7",
+    "8a64c3fbe7215c46",
+    "8c929902aa5bf010",
+    "8d5f42c88af10379",
+    "8d87c21350a7bb56",
+    "b1fc85594ddb90f8",
+    "b20b54daa5bfdaa0",
+    "b58fd2ac0d1687c1",
+    "ba03ba6670565082",
+    "d173dc7138429af6",
+    "d2da45a730d0756c",
+    "d7ad3e46c350ed76",
+    "de8f762eb83b97ea",
+    "df2cb388eb225100",
+    "e3998366b3838645",
+    "f0282c7c0945698d",
+    "f9039996102ee124",
+    "fc910f4d5a8e8f67"
+  ],
+  "expected_layers": [
+    [
+      "F0",
+      1
+    ],
+    [
+      "F1",
+      1
+    ],
+    [
+      "F1",
+      2
+    ],
+    [
+      "F1",
+      3
+    ],
+    [
+      "F2",
+      1
+    ],
+    [
+      "F2",
+      2
+    ],
+    [
+      "F2",
+      3
+    ]
+  ]
+}

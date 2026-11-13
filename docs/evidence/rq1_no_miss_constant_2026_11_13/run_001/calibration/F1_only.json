@@ -1,0 +1,262 @@
+{
+  "policies": {
+    "D_old": {
+      "A": 0.0018982270626959619,
+      "R": -3.140079516960635,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5984229020884114,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999983,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_old": {
+      "A": 0.0030330911673253635,
+      "R": -3.2021344682787056,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5890550012418285,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999983,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_old": {
+      "A": 0.0006497335845171426,
+      "R": -3.2021344682787056,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5880163281249271,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999983,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "D_zero": {
+      "A": 0.0009682828767515472,
+      "R": -0.048893165391059756,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6154756617618499,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999989,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_zero": {
+      "A": 0.000332220732618127,
+      "R": -0.2178287957979012,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.602603681445273,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9777777777777763,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_zero": {
+      "A": 0.0008987494178548383,
+      "R": -0.3658013791326495,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5994983248029598,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9666666666666652,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_cut": {
+      "A": 1.2067970424573768,
+      "R": -0.014800576945989796,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5529064240742754,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.7530303030303022,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "MATE_policy": {
+      "A": 0.22360080425291562,
+      "R": -0.006541670569799929,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6231207030308156,
+          "n": 89,
+          "n_parents": 1,
+          "n_epochs": 2
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.3522727272727271,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    }
+  },
+  "cal_false": [
+    "F1"
+  ],
+  "cal_parents": [
+    "test/2021_08_22_07_52_02",
+    "train/2021_08_18_22_16_12",
+    "train/2021_08_20_20_39_00",
+    "train/2021_08_21_22_21_37",
+    "train/2021_08_22_22_30_58"
+  ],
+  "cal_job_ids": [
+    "13df4899473dbad7",
+    "343d46fc7b709925",
+    "410fec48a6a1488e",
+    "60b528984765d9ec",
+    "6abeb23cc2436098",
+    "8d87c21350a7bb56",
+    "d7ad3e46c350ed76",
+    "f0282c7c0945698d"
+  ],
+  "expected_layers": [
+    [
+      "F1",
+      1
+    ],
+    [
+      "F1",
+      2
+    ],
+    [
+      "F1",
+      3
+    ]
+  ]
+}

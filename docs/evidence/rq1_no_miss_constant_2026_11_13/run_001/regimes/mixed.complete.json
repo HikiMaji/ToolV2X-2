@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "artifacts": [
+    "report/mixed.json",
+    "models/mixed.json",
+    "models/mixed.complete.json",
+    "calibration/mixed.json",
+    "predictions/mixed/cal.jsonl.gz",
+    "predictions/mixed/eval.jsonl.gz"
+  ],
+  "times": {
+    "fit_or_resume_seconds": 5.029920413158834,
+    "total_seconds": 123.80980903748423
+  }
+}

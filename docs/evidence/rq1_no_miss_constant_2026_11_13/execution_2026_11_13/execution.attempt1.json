@@ -1,0 +1,9 @@
+{
+  "implementation_commit": "2cfbca4cb26d5b4cccbd6e09eb32d5a54e0472f1",
+  "started_utc": "2026-11-13T07:29:09.302888+00:00",
+  "status": "failed",
+  "source": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001",
+  "output": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_no_miss_constant_2026_11_13/run_001",
+  "exit_code": 1,
+  "elapsed_seconds": 0.29718987736850977
+}

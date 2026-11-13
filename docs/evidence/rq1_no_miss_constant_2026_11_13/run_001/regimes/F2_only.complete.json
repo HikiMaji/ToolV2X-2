@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "artifacts": [
+    "report/F2_only.json",
+    "models/F2_only.json",
+    "models/F2_only.complete.json",
+    "calibration/F2_only.json",
+    "predictions/F2_only/cal.jsonl.gz",
+    "predictions/F2_only/eval.jsonl.gz"
+  ],
+  "times": {
+    "fit_or_resume_seconds": 0.737632617354393,
+    "total_seconds": 42.52694056276232
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "numerical_commit": "b0572cd40d0fa83ecded41954e6d0f42e9e7db69",
+  "scope": "selected small source/model/statistical evidence; full features and predictions remain on server",
+  "files": [
+    {
+      "path": "run_001/binding.json",
+      "bytes": 12455,
+      "sha256": "11290793a80d20c5ec52e739480e9ac877975bf0df1f69af35de710685b12446"
+    },
+    {
+      "path": "run_001/run.complete.json",
+      "bytes": 994,
+      "sha256": "f412e9fdcd113c738a4fb5779b0a068fc002f3addd57e11a4e21317c0e871dc6"
+    },
+    {
+      "path": "run_001/stage_times.json",
+      "bytes": 411,
+      "sha256": "2dcadf345f85989807e000829fd9c14f563c541480a56a0232fc5579412bcc17"
+    },
+    {
+      "path": "run_001/error.json",
+      "bytes": 694,
+      "sha256": "249ff12de0a5b6eaa19ed489757e80257f7925f24659f018ea69142ddb983dba"
+    },
+    {
+      "path": "run_001/models/mixed.json",
+      "bytes": 9461,
+      "sha256": "08152f239a9b34e396b149d2b7b0486c8381b9af21f403e665d550f03f9678f5"
+    },
+    {
+      "path": "run_001/models/mixed.complete.json",
+      "bytes": 27,
+      "sha256": "c53e9111a25e1bc7a3e3d99467432279ee5267848114b84deb069d59b0f8429d"
+    },
+    {
+      "path": "run_001/models/F1_only.json",
+      "bytes": 9455,
+      "sha256": "b09e0b66665eea24109ba6469e4639977067b64c56cfe75b320025b7cb8d764b"
+    },
+    {
+      "path": "run_001/models/F1_only.complete.json",
+      "bytes": 27,
+      "sha256": "c53e9111a25e1bc7a3e3d99467432279ee5267848114b84deb069d59b0f8429d"
+    },
+    {
+      "path": "run_001/models/F2_only.json",
+      "bytes": 9347,
+      "sha256": "c0723a79faf0ad2a7b3f9fb54eafade4fdd141a3b9d2fd0683ebd2edf17954cf"
+    },
+    {
+      "path": "run_001/models/F2_only.complete.json",
+      "bytes": 27,
+      "sha256": "c53e9111a25e1bc7a3e3d99467432279ee5267848114b84deb069d59b0f8429d"
+    },
+    {
+      "path": "run_001/calibration/mixed.json",
+      "bytes": 7046,
+      "sha256": "8db64f341bba0e85f45d825003232826ca36624f00e6c642348bd1ac7dfc312f"
+    },
+    {
+      "path": "run_001/calibration/F1_only.json",
+      "bytes": 5493,
+      "sha256": "5e199a54b077ddfa8499720e9c55468fcac384f6cf7b44406d69deabaee32568"
+    },
+    {
+      "path": "run_001/calibration/F2_only.json",
+      "bytes": 5826,
+      "sha256": "f0ac853b6a4c2f030fea0f3c7f123d76a6a0c351ffc77fdc6e4e4dd21813b679"
+    },
+    {
+      "path": "run_001/regimes/mixed.complete.json",
+      "bytes": 345,
+      "sha256": "b0f6d4d8eba47fd112680bed3223c1ca350d40deeac1a1d742093daaa9c867e5"
+    },
+    {
+      "path": "run_001/regimes/F1_only.complete.json",
+      "bytes": 358,
+      "sha256": "c1b37dfc35d513d1b5b5fce741685332c021c8ab7b343faaf2a5debb593a1ffd"
+    },
+    {
+      "path": "run_001/regimes/F2_only.complete.json",
+      "bytes": 356,
+      "sha256": "df5b49e1d9201c426562b166a2be018d07bedf28d3905b94acb726dd6dc6233f"
+    },
+    {
+      "path": "run_001/report/metrics.json",
+      "bytes": 4360732,
+      "sha256": "d0fa8e19b06b3e5e1074e4998b1d43bd4b17e50067eb85e79b3245143cb97e66"
+    },
+    {
+      "path": "run_001/report/summary.md",
+      "bytes": 2899,
+      "sha256": "aeb009f7142d52b54ea82a920109ebe2b1c0ad06560a84a30d5596d9f186e2da"
+    },
+    {
+      "path": "execution_2026_11_13/execution.json",
+      "bytes": 489,
+      "sha256": "ff6b9e6d5cb05c7d7a6ceb0837d05307f967d6593f84531f6b130676f208f29b"
+    },
+    {
+      "path": "execution_2026_11_13/execution.attempt1.json",
+      "bytes": 395,
+      "sha256": "54588b46b733616d8779ce157ad88bd53656fedf925334bf8278f9b8963732f6"
+    },
+    {
+      "path": "execution_2026_11_13/run.attempt1.log",
+      "bytes": 1170,
+      "sha256": "b143c237c8424d7030c08a0b74b24c40d93ab8251e89d3712f06218a853c7efe"
+    },
+    {
+      "path": "execution_2026_11_13/run.attempt2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "execution_2026_11_13/recount.py",
+      "bytes": 50161,
+      "sha256": "eab20292acb802343db47ecca94390cc275f55999d4fdddad5230be5d865dc6b"
+    },
+    {
+      "path": "execution_2026_11_13/recount.json",
+      "bytes": 4236274,
+      "sha256": "b2f1fa975b45993d11fc86b5ef6818469520a8c713fb76b9ccfbffd6eefcae03"
+    },
+    {
+      "path": "execution_2026_11_13/result_review.md",
+      "bytes": 8221,
+      "sha256": "61c85809405cdf5b966367de6bab43ef0e30c1e09feb93e7556ebd14a8b0e6cc"
+    }
+  ]
+}

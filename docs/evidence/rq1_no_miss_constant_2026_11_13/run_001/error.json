@@ -1,0 +1,5 @@
+{
+  "error": "ValueError: source stage incomplete: prepare",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py\", line 354, in run\n    objects,paths,binding=_inputs(source,config)\n  File \"/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py\", line 299, in _inputs\n    if objects[stage+'.complete.json']['status'] not in ('complete','not_tested_data_support'):raise ValueError('source stage incomplete: '+stage)\nValueError: source stage incomplete: prepare\n",
+  "elapsed_seconds": 0.004507969133555889
+}

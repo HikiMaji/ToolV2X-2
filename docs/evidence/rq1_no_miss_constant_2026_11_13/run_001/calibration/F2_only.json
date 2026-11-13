@@ -1,0 +1,293 @@
+{
+  "policies": {
+    "D_old": {
+      "A": 0.001841607035756615,
+      "R": -1.0513714281125366,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6134603014932373,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999996,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_old": {
+      "A": 0.00034887252385715217,
+      "R": -0.8221691203469221,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6153219928547633,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9999999999999996,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_old": {
+      "A": 0.00034887252385719375,
+      "R": -0.9377314986688702,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6151853035636617,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.9473684210526312,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "D_zero": {
+      "A": 0.9155151573842136,
+      "R": -0.6516026314291236,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5717336022065168,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.6842105263157894,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_zero": {
+      "A": 0.8634149774489461,
+      "R": -0.617693205988264,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5577068792778699,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.6842105263157894,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "J_zero": {
+      "A": 0.8634149774489457,
+      "R": -0.617693205988264,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5559925286691769,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.6842105263157894,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "I_cut": {
+      "A": 1.2620341913826385,
+      "R": -0.05652714988505059,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.5532673700362222,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "ok",
+          "correct_weight": 0.47368421052631576,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    },
+    "MATE_policy": {
+      "A": 0.27596114367702085,
+      "R": null,
+      "alpha": 0.05,
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ],
+      "status": "not_calibrated_for_missing_layers",
+      "branch": {
+        "A": {
+          "status": "ok",
+          "correct_weight": 0.6031808022213262,
+          "n": 19,
+          "n_parents": 1,
+          "n_epochs": 1
+        },
+        "R": {
+          "status": "disabled",
+          "correct_weight": 0.0,
+          "n": 13960,
+          "n_parents": 5,
+          "n_epochs": 142
+        }
+      }
+    }
+  },
+  "cal_false": [
+    "F2"
+  ],
+  "cal_parents": [
+    "test/2021_08_22_07_52_02",
+    "train/2021_08_18_22_16_12",
+    "train/2021_08_20_20_39_00",
+    "train/2021_08_21_22_21_37",
+    "train/2021_08_22_22_30_58"
+  ],
+  "cal_job_ids": [
+    "410fec48a6a1488e",
+    "4c23cf38a32e4c03",
+    "605ff9c3ca7bf3a5",
+    "60b528984765d9ec",
+    "6abeb23cc2436098",
+    "8d87c21350a7bb56",
+    "d7ad3e46c350ed76"
+  ],
+  "expected_layers": [
+    [
+      "F2",
+      1
+    ],
+    [
+      "F2",
+      2
+    ],
+    [
+      "F2",
+      3
+    ]
+  ]
+}

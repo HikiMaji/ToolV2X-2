@@ -1,0 +1,17 @@
+{
+  "regimes": {
+    "mixed": {
+      "fit_or_resume_seconds": 5.029920413158834,
+      "total_seconds": 123.80980903748423
+    },
+    "F1_only": {
+      "fit_or_resume_seconds": 0.7696192683652043,
+      "total_seconds": 39.951909323222935
+    },
+    "F2_only": {
+      "fit_or_resume_seconds": 0.737632617354393,
+      "total_seconds": 42.52694056276232
+    }
+  },
+  "invocation_seconds": 206.9022034611553
+}

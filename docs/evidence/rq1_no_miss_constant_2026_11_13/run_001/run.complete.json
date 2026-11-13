@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "artifacts": [
+    "binding.json",
+    "report/metrics.json",
+    "report/summary.md",
+    "stage_times.json",
+    "regimes/mixed.complete.json",
+    "report/mixed.json",
+    "models/mixed.json",
+    "models/mixed.complete.json",
+    "calibration/mixed.json",
+    "predictions/mixed/cal.jsonl.gz",
+    "predictions/mixed/eval.jsonl.gz",
+    "regimes/F1_only.complete.json",
+    "report/F1_only.json",
+    "models/F1_only.json",
+    "models/F1_only.complete.json",
+    "calibration/F1_only.json",
+    "predictions/F1_only/cal.jsonl.gz",
+    "predictions/F1_only/eval.jsonl.gz",
+    "regimes/F2_only.complete.json",
+    "report/F2_only.json",
+    "models/F2_only.json",
+    "models/F2_only.complete.json",
+    "calibration/F2_only.json",
+    "predictions/F2_only/cal.jsonl.gz",
+    "predictions/F2_only/eval.jsonl.gz"
+  ],
+  "primary_candidate": "D_zero",
+  "retention": {
+    "D_zero": "not_retained",
+    "I_zero": "not_retained",
+    "J_zero": "not_retained"
+  }
+}

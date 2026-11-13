@@ -30,15 +30,15 @@
 **Consumes:** 冻结source run、config/SDS、heads和旧run统计接口。
 **Produces:** fit_zero、score_feature、evaluate、run以及上述持久化文件。
 
-- [ ] 写新增行为fixture，先运行确认预期缺实现失败。
-- [ ] 实现SDS接口；结构约束通过d输入副本置0复用fit_base，不改旧源。
-- [ ] 测试gamma严格0、增加低p只未报来源贡献近0且在a_minus>0时高p更负；I_cut精确保留beta；源族权重/scaler；八列六格与延迟；不利/缺失数据及恢复。
-- [ ] 运行`python -m unittest scripts.rq1_score_revision.test_no_miss_constant -v`及必要定点测试，记录命令结果。
-- [ ] 自查差异并提交两新增文件，写任务报告。
-- [ ] 独立规格与质量/整项接口审核，必要修复后定点复审。
+- [x] 写新增行为fixture，先运行确认预期缺实现失败。
+- [x] 实现SDS接口；结构约束通过d输入副本置0复用fit_base，不改旧源。
+- [x] 测试gamma严格0、增加低p只未报来源贡献近0且在a_minus>0时高p更负；I_cut精确保留beta；源族权重/scaler；八列六格与延迟；不利/缺失数据及恢复。
+- [x] 运行`python -m unittest scripts.rq1_score_revision.test_no_miss_constant -v`及必要定点测试，记录命令结果。
+- [x] 自查差异并提交两新增文件，写任务报告。
+- [x] 独立规格与质量/整项接口审核，必要修复后定点复审。
 
 ### Task 2: Authorized run and independent result audit
 
-- [ ] 主会话记录最终代码与配置来源，运行CLI新out一次，记录时长。
-- [ ] 独立结果审核者从保存预测/原参数重新计算六格、风险、时效、约束和逐项裁决；不再拟合或选门限。
-- [ ] 按主/次候选分别保留或撤下，更新当前方案、REALLY、STATUS，归档小型证据并本地提交。保留旧产物和本批ledger。
+- [x] 主会话记录最终代码与配置来源，运行CLI新out一次，记录时长。
+- [x] 独立结果审核者从保存预测/原参数重新计算六格、风险、时效、约束和逐项裁决；不再拟合或选门限。
+- [x] 按主/次候选分别保留或撤下，更新当前方案、REALLY、STATUS，归档小型证据并本地提交。保留旧产物和本批ledger。

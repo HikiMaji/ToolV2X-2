@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/miniconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py", line 441, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py", line 438, in main
+    args=parser.parse_args(argv);run(args.source,args.out)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py", line 354, in run
+    objects,paths,binding=_inputs(source,config)
+  File "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py", line 299, in _inputs
+    if objects[stage+'.complete.json']['status'] not in ('complete','not_tested_data_support'):raise ValueError('source stage incomplete: '+stage)
+ValueError: source stage incomplete: prepare
