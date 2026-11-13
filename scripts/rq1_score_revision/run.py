@@ -39,7 +39,18 @@ def _context(out):
 
 
 def _provenance(out,config):
-    record=dict(config=config,code=[data.source_record(p) for p in (__file__,heads.__file__)])
+    paths=dict(run=__file__,heads=heads.__file__,prepare=prepare.__file__,
+               temporal_fit=fitting.__file__,temporal_kernel=kernel.__file__,
+               temporal_run=original.__file__,temporal_data=data.__file__)
+    try:
+        sources={name:data.source_record(path) for name,path in paths.items()}
+    except OSError as error:
+        raise ValueError('pipeline dependency source unavailable: '+str(error)) from error
+    frozen={Path(r['path']).name:r['sha256'] for r in config['frozen_normal_code']}
+    for name,filename in [('temporal_fit','fit.py'),('temporal_kernel','kernel.py')]:
+        if sources[name]['sha256']!=frozen.get(filename):
+            raise ValueError('frozen imported normal code changed: '+sources[name]['path'])
+    record=dict(config=config,code=list(sources.values()))
     path=Path(out)/'pipeline.json'
     if path.exists():
         if _read(path)!=record:
@@ -99,6 +110,30 @@ def _fold(arguments):
     return result
 
 
+def _feature_job(arguments):
+    path,rows,models,rho=arguments;path=Path(path)
+    if not path.exists():
+        with data.atomic_rows(path) as write:
+            for row in _feature_rows(rows,models,rho):
+                write(row)
+
+
+def _cal_eval_features(out,fitted,workers):
+    tasks=[]
+    # Group once in the parent; each worker receives just one complete job.
+    for split in ('cal','eval'):
+        for jid,group in itertools.groupby(prepare.iter_rows(out,split),key=lambda r:r['job_id']):
+            path=Path(out)/'features'/split/(jid+'.jsonl.gz')
+            if not path.exists():
+                tasks.append((str(path),list(group),fitted['models'],fitted['rho']))
+    if workers==1:
+        for task in tasks:
+            _feature_job(task)
+    elif tasks:
+        with ProcessPoolExecutor(max_workers=min(workers,len(tasks))) as pool:
+            list(pool.map(_feature_job,tasks))
+
+
 def features(out,workers=1):
     out=Path(out)
     if not 1<=workers<=8:
@@ -124,14 +159,7 @@ def features(out,workers=1):
         if data.source_record(config['source_models']['path'])['sha256']!=config['source_models']['sha256']:
             raise ValueError('frozen full-fit normal model changed')
         fitted=_read(config['source_models']['path'])
-        for split in ('cal','eval'):
-            for jid,group in itertools.groupby(prepare.iter_rows(out,split),key=lambda r:r['job_id']):
-                path=out/'features'/split/(jid+'.jsonl.gz')
-                if path.exists():
-                    continue
-                with data.atomic_rows(path) as write:
-                    for row in _feature_rows(group,fitted['models'],fitted['rho']):
-                        write(row)
+        _cal_eval_features(out,fitted,workers)
         return _finish(out,'features',support,folds=folds,normal_model_source=config['source_models'])
 
 

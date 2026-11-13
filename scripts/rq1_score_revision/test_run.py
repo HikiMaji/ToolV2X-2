@@ -26,6 +26,78 @@ def feature_rows():
 
 
 class PipelineContracts(unittest.TestCase):
+    def test_parallel_cal_eval_features_match_serial_and_resume_per_job(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);serial=root/'serial';parallel=root/'parallel';jobs=[]
+            for split,family in [('cal','clean'),('cal','F1'),('eval','clean'),('eval','F2')]:
+                jid=split+family;source=root/'source'/jid
+                j=dict(job_id=jid,parent=split,split=split,kind='clean' if family=='clean' else 'attack',
+                       family=family,attack_k=0 if family=='clean' else 1,origin='reference',
+                       rows_path=str(source/'rows.jsonl.gz'),status_path=str(source/'complete.json'))
+                jobs.append(j)
+                with data.atomic_rows(source/'rows.jsonl.gz') as write:
+                    for i in range(4):
+                        write(row(i,job_id=jid,key=[jid,i,1],parent=split,split=split,kind=j['kind'],
+                                  family=family,attack_k=j['attack_k'],origin=j['origin'],
+                                  query_truth=1 if family=='clean' else 0,
+                                  attack_role=None if family=='clean' else 'target',U=[i%2,1,0]))
+                data.atomic_json(source/'complete.json',dict(status='COMPLETE'))
+            for out in (serial,parallel):
+                data.atomic_json(out/'manifest.json',dict(jobs=jobs))
+            partial=parallel/'features/cal/calclean.jsonl.gz.partial'
+            partial.parent.mkdir(parents=True);partial.write_text('interrupted')
+            fitted=dict(models=normal_models(),rho=.5)
+            run._cal_eval_features(serial,fitted,1)
+            with patch.object(prepare,'iter_rows',wraps=prepare.iter_rows) as read:
+                run._cal_eval_features(parallel,fitted,2)
+                self.assertEqual(read.call_count,2)
+            snapshots={}
+            for j in jobs:
+                relative=Path('features')/j['split']/(j['job_id']+'.jsonl.gz')
+                expected=list(data.read_rows(serial/relative));actual=list(data.read_rows(parallel/relative))
+                self.assertEqual(actual,expected)
+                self.assertEqual([r['n_frames'] for r in actual],[1,2,3,4])
+                self.assertEqual([r['index'] for r in actual],[0,1,2,3])
+                self.assertTrue(all(r['job_id']==j['job_id'] and r['origin']=='reference' for r in actual))
+                snapshots[relative]=(parallel/relative).read_bytes()
+            self.assertFalse(partial.exists())
+            with patch.object(run.heads,'window_features',side_effect=AssertionError('completed job reran')):
+                run._cal_eval_features(parallel,fitted,1)
+            self.assertTrue(all((parallel/p).read_bytes()==b for p,b in snapshots.items()))
+
+    def test_dependency_change_or_missing_source_refuses_stage_resume(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);out=root/'out';config=prepare.read_config()
+            config['source_manifest']['path']='/fixture_read_only_source/manifest.json'
+            data.atomic_json(out/'manifest.json',dict(config=config,jobs=[]))
+            data.atomic_json(out/'prepare.complete.json',{})
+            data.atomic_json(out/'support.json',prepare.support_summary([],config))
+            dependency=root/'old_run.py';dependency.write_bytes(Path(run.original.__file__).read_bytes())
+            with patch.object(run.original,'__file__',str(dependency)):
+                run.features(out)
+                snapshot=(out/'pipeline.json').read_bytes();marker=(out/'features.complete.json').read_bytes()
+                record=json.loads(snapshot)
+                paths={r['path'] for r in record['code']}
+                self.assertTrue({str(Path(m.__file__).resolve()) for m in (run.heads,run.prepare,run.fitting,run.kernel,run.original,run.data)}<=paths)
+                dependency.write_text(dependency.read_text()+'\n# fixture dependency change\n')
+                with self.assertRaisesRegex(ValueError,'code/config changed'):
+                    run.features(out)
+                self.assertEqual((out/'pipeline.json').read_bytes(),snapshot)
+                self.assertEqual((out/'features.complete.json').read_bytes(),marker)
+                dependency.unlink()
+                with self.assertRaisesRegex(ValueError,'dependency source unavailable'):
+                    run.fit(out)
+                self.assertFalse((out/'fit.complete.json').exists())
+
+    def test_imported_normal_code_must_match_frozen_hash_before_binding(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);source=root/'fit.py'
+            source.write_text(Path(run.fitting.__file__).read_text()+'\n# changed frozen implementation\n')
+            with patch.object(run.fitting,'__file__',str(source)):
+                with self.assertRaisesRegex(ValueError,'frozen imported normal code changed'):
+                    run._provenance(root/'out',prepare.read_config())
+            self.assertFalse((root/'out/pipeline.json').exists())
+
     def test_source_only_selection_precedes_scaler_and_balanced_weights(self):
         rows=[]
         for parent in ('a','b','c'):
