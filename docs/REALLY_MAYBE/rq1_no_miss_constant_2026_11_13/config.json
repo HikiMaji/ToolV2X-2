@@ -1,0 +1,86 @@
+{
+  "schema": "rq1_no_miss_constant_v1",
+  "source": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001",
+  "output": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_no_miss_constant_2026_11_13/run_001",
+  "base_commit": "25e908ed3b7b1e428177360ff919fcd7e9298a3b",
+  "regimes": {
+    "mixed": {
+      "fit_false": [
+        "F1",
+        "F2"
+      ],
+      "cal_false": [
+        "F0",
+        "F1",
+        "F2"
+      ],
+      "eval_false": [
+        "F0",
+        "F1",
+        "F2"
+      ]
+    },
+    "F1_only": {
+      "fit_false": [
+        "F1"
+      ],
+      "cal_false": [
+        "F1"
+      ],
+      "eval_false": [
+        "F2"
+      ]
+    },
+    "F2_only": {
+      "fit_false": [
+        "F2"
+      ],
+      "cal_false": [
+        "F2"
+      ],
+      "eval_false": [
+        "F1"
+      ]
+    }
+  },
+  "primary_candidate": "D_zero",
+  "candidate_baselines": {
+    "D_zero": "D_old",
+    "I_zero": "I_old",
+    "J_zero": "J_old"
+  },
+  "methods": [
+    "D_old",
+    "I_old",
+    "J_old",
+    "D_zero",
+    "I_zero",
+    "J_zero",
+    "I_cut",
+    "MATE_policy"
+  ],
+  "fixed_feature": "d",
+  "fixed_raw_coefficient": 0.0,
+  "loss": {
+    "l2": 0.005,
+    "constant_std": 1e-06,
+    "maxiter": 500,
+    "ftol": 1e-10,
+    "gtol": 1e-06
+  },
+  "thresholds": {
+    "risk": 0.05,
+    "max_TA_drop": 0.02,
+    "max_CD_drop": 0.02,
+    "max_mixed_MATE_TA_deficit": 0.05,
+    "max_never_adopted_increase": 0.05,
+    "max_paired_delay_seconds": 0.5,
+    "min_mixed_CD_gain": 0.01,
+    "min_reverse_F1_k3_FA_reduction": 0.02
+  },
+  "comparison_tolerances": {
+    "old_policy": 1e-10,
+    "old_score": 1e-09
+  },
+  "scope": "seen development; no deployment or joint-novelty claim"
+}
