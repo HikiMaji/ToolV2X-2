@@ -57,6 +57,8 @@ def fit_zero(rows,old_fitted,families):
                 raise ValueError('original support or base model unavailable')
             if len(expected)!=6 or actual!=expected or sorted({r['parent'] for r in selected})!=expected:
                 raise ValueError('all six original fit parents required; coverage incomplete')
+            if len(available)!=len(selected):
+                raise ValueError(base+': '+str(len(selected)-len(available))+' nonfinite or missing-feature records; supervision cannot be dropped')
             if any(r.get('method_status',{}).get(base,{}).get('status')=='unestimable' for r in selected):
                 raise ValueError('normal OOF component unavailable')
             w=legacy.training_weights(available);X=np.array([r['features'][base] for r in available],float)

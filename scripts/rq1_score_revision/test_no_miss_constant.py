@@ -117,6 +117,47 @@ class NoMissConstantContracts(unittest.TestCase):
         for method in ('D_zero','I_zero'):
             self.assertAlmostEqual(out['contributions'][method]['score'],out['scores'][method])
 
+    def test_single_unusable_supervision_disables_only_affected_heads(self):
+        n=self.module
+        for missing,failed_methods in [('finite',{'D_zero','I_zero','J_zero'}),
+                ('D_head',{'D_zero'}),('I_Jmargin',{'I_zero','J_zero'})]:
+            with self.subTest(missing=missing):
+                rows=copy.deepcopy(self.rows)
+                if missing=='finite':
+                    rows[0]['finite']=False
+                    for state in rows[0]['method_status'].values():state['status']='numeric_failure'
+                else:
+                    rows[0]['features'][missing]=None
+                    rows[0]['method_status'][missing]=dict(status='numeric_failure')
+                fitted=n.fit_zero(rows,self.old,['F1','F2'])
+                for method in ('D_zero','I_zero','J_zero'):
+                    if method in failed_methods:
+                        self.assertIsNone(fitted['models'][method])
+                        self.assertEqual(fitted['method_status'][method]['status'],'unestimable')
+                        if method!='J_zero':
+                            coverage=fitted['method_status'][method]['coverage']
+                            self.assertEqual(coverage['n_supervision'],72)
+                            self.assertEqual(coverage['n_usable'],71)
+                            self.assertEqual(coverage['expected_parents'],coverage['usable_parents'])
+                            self.assertEqual(len(coverage['usable_parents']),6)
+                            self.assertIn('supervision cannot be dropped',fitted['method_status'][method]['reason'])
+                    else:
+                        self.assertEqual(fitted['method_status'][method]['status'],'ok')
+                        self.assertEqual(fitted['models'][method]['n_samples'],72)
+                scored=[n.score_feature(r,self.old,fitted) for r in features('eval',['e'])]
+                policies={m:dict(A=.1,R=-.1) for m in n.METHODS}
+                metrics=n.evaluate(scored,policies,set())
+                report=dict(status='evaluated',calibration_sufficient=True,
+                    method_status=fitted['method_status'],metrics=dict(eval=metrics))
+                verdict=n.retention({regime:report for regime in n.read_config()['regimes']},n.read_config())
+                for method in failed_methods:
+                    self.assertEqual(metrics['system_query'][method]['true']['counts']['unknown'],4)
+                    self.assertEqual(metrics['system_query'][method]['false']['counts']['unknown'],8)
+                    self.assertEqual(verdict[method]['checks']['mixed/false_accept']['status'],'insufficient')
+                    self.assertNotEqual(verdict[method]['status'],'retained')
+                self.assertEqual(metrics['coverage']['n_rows'],12)
+                self.assertTrue(all(r['scores']['D_old'] is not None for r in scored))
+
     def test_missing_parent_and_missing_delta_preserve_unknown_denominator(self):
         n=self.module
         failed=n.fit_zero([r for r in self.rows if r['parent']!='p0'],self.old,['F1'])
