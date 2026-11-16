@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "elapsed_seconds": 86.30466177221388,
+  "checks": {
+    "primary_keys": 25974,
+    "max_R_reconstruction_error": 2.1316282072803006e-14
+  }
+}

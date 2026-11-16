@@ -1,0 +1,20 @@
+{
+  "scope": "mixed_eval_original_saved_predictions",
+  "source_prediction": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/eval.jsonl.gz",
+  "total_rows": 50696,
+  "mutually_exclusive_priority": [
+    "no_query_or_newborn",
+    "unknown_query_label",
+    "primary_true_or_primary_false",
+    "remaining_non_primary_domains"
+  ],
+  "counts": {
+    "no_query_or_newborn": 875,
+    "primary_true": 9878,
+    "unknown_query_label": 13353,
+    "attack_true_background": 25806,
+    "primary_false": 784
+  },
+  "primary_rows": 10662,
+  "note": "raw coverage counts only; primary class weights are computed separately over complete primary true/false populations; this is not a physical entity denominator"
+}

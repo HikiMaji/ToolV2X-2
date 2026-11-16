@@ -1,0 +1,189 @@
+{
+  "scope": "same-p_D group conditional-score derivative signs; not estimated dependency or effect",
+  "splits": {
+    "cal": {
+      "true": {
+        "multiple_misses": {
+          "n": 39,
+          "mass": 0.0023710939637310853,
+          "parents": 2,
+          "entities": null
+        },
+        "mixed_multiple_misses": {
+          "n": 2,
+          "mass": 0.0001352265043948614,
+          "parents": 1,
+          "entities": null
+        },
+        "strengthening": {
+          "n": 626,
+          "mass": 0.03879838496594451,
+          "parents": 4,
+          "entities": null
+        },
+        "weakening": {
+          "n": 39,
+          "mass": 0.0023710939637310853,
+          "parents": 2,
+          "entities": null
+        }
+      },
+      "false": {
+        "multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "mixed_multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "strengthening": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "weakening": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "by_family_k": {
+          "F0/1": {
+            "multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "mixed_multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "strengthening": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "weakening": {
+              "n": 0,
+              "mass": 0.0
+            }
+          }
+        }
+      }
+    },
+    "eval": {
+      "true": {
+        "multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": null
+        },
+        "mixed_multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": null
+        },
+        "strengthening": {
+          "n": 281,
+          "mass": 0.018808904231179008,
+          "parents": 5,
+          "entities": null
+        },
+        "weakening": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": null
+        }
+      },
+      "false": {
+        "multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "mixed_multiple_misses": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "strengthening": {
+          "n": 72,
+          "mass": 0.09204545454545454,
+          "parents": 1,
+          "entities": 2
+        },
+        "weakening": {
+          "n": 0,
+          "mass": 0.0,
+          "parents": 0,
+          "entities": 0
+        },
+        "by_family_k": {
+          "F1/1": {
+            "multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "mixed_multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "strengthening": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "weakening": {
+              "n": 0,
+              "mass": 0.0
+            }
+          },
+          "F1/2": {
+            "multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "mixed_multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "strengthening": {
+              "n": 36,
+              "mass": 0.04090909090909091
+            },
+            "weakening": {
+              "n": 0,
+              "mass": 0.0
+            }
+          },
+          "F2/2": {
+            "multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "mixed_multiple_misses": {
+              "n": 0,
+              "mass": 0.0
+            },
+            "strengthening": {
+              "n": 36,
+              "mass": 0.05113636363636364
+            },
+            "weakening": {
+              "n": 0,
+              "mass": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

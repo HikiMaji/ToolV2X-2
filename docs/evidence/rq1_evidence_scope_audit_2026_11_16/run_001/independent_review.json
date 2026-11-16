@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "independent_read_only_source_mixed_eval_join_weights_main_matched_auc",
+  "source_prediction": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/eval.jsonl.gz",
+  "primary_n": 10662,
+  "feature_join_keys": 10662,
+  "joined_output_keys": 10662,
+  "auc_comparison": "direct_weighted_true_false_pair_enumeration_within_exact_strata_then_min_class_mass_aggregation",
+  "tolerance": 1e-12,
+  "matched_remaining_eligible": {
+    "cells": 27,
+    "overlap_mass": 0.04477311755500348,
+    "auc": 0.8233662291235821,
+    "true_mass": 0.04477311755500348,
+    "false_mass": 0.3429505813953489
+  },
+  "Count_six_cells": {
+    "true": {
+      "accept": {
+        "n": 7091,
+        "mass": 0.5904278603354833
+      },
+      "unknown": {
+        "n": 2692,
+        "mass": 0.40358898119053455
+      },
+      "reject": {
+        "n": 95,
+        "mass": 0.005983158473982056
+      }
+    },
+    "false": {
+      "accept": {
+        "n": 3,
+        "mass": 0.004261363636363636
+      },
+      "unknown": {
+        "n": 324,
+        "mass": 0.4085755813953489
+      },
+      "reject": {
+        "n": 457,
+        "mass": 0.5871630549682876
+      }
+    }
+  },
+  "checks": [
+    "all_primary_keys_match_source_features_and_joined_output",
+    "metadata_and_five_count_inputs_match_features",
+    "original_complete_class_weights_sum_to_one_and_match_joined_output",
+    "cached_R_equals_joined_output",
+    "main_AUC_cell_count_overlap_and_retained_class_masses_match_audit_json"
+  ],
+  "limits": [
+    "no_new_model_or_rho_or_threshold",
+    "not_independent_test_or_causal_effect",
+    "true_entities_not_identified_epochs_are_query_lifecycles"
+  ],
+  "group_semantics_correction": {
+    "date": "2026-11-16",
+    "prior_statement_corrected": "No pure-00 or both windows in an evaluation subset does not imply that all multiple-miss common-group events are absent; mixed groups must not be described uniformly as strengthening report disagreement.",
+    "reason": "A mixed group with three or more valid sources may contain one report and at least two misses. Under heterogeneous marginals, dependence can reduce or increase the current conditional negative score R=-log(q_all/q_plus).",
+    "necessary_followup_scope": "Count mixed groups with at least two valid misses separately; existing pure-00 coverage alone cannot resolve this question.",
+    "numerical_review_unchanged": "This semantic correction does not change the independently verified source joins, weights, Count decisions, or matched R_ind AUC; no data was rescanned for this note."
+  }
+}

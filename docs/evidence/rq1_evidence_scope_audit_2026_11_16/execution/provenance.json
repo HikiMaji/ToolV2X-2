@@ -1,0 +1,20 @@
+{
+  "scope": "read_only_existing_evidence_audit",
+  "base_commit": "a0e14abec0841463bc56bd04e8d36028dde09413",
+  "worktree": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "code_sha256": {
+    "scripts/rq1_evidence_scope_audit.py": "79c8da70218e2a5ad43d72a6510ea7bb05f57de4364b34f8105f7c20fe3e10a5",
+    "docs/evidence/rq1_evidence_scope_audit_2026_11_16/execution/joint_scope.py": "2e57babc1b09f0822d47cf5d8bdc59ee0b5b5f600e74f72acbcc5cc375850735",
+    "scripts/rq1_temporal/kernel.py": "1cca2f85b46f4d7f844b35550e4be696d5b24a3a426376ff26f51ac46940ac49"
+  },
+  "commands": [
+    "python scripts/rq1_evidence_scope_audit.py --out /root/autodl-tmp/ToolV2X/docs/evidence/rq1_evidence_scope_audit_2026_11_16/run_001",
+    "python docs/evidence/rq1_evidence_scope_audit_2026_11_16/execution/joint_scope.py"
+  ],
+  "source_results_unchanged": true,
+  "new_model_fit": false,
+  "rho_selected": false,
+  "threshold_calibrated": false,
+  "new_policy_evaluated": false,
+  "local_row_artifacts": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_evidence_scope_audit_2026_11_16/run_001/{regime}_{split}_joined.jsonl.gz"
+}
