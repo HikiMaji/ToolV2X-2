@@ -31,6 +31,8 @@
 
 对每个补充分支，在 Base 正常可读且非拒绝、query 合法且有 reject_eligible 的 clean 记录上形成评分候选。Cond/MissCount 只取正值，BaseTail 取全部有限值。选择新增真实误拒全局质量不超过 delta 的最小候选 tau，严格 R>tau 拒绝，平分不拒。没有候选或 delta=0 时关闭并记录原因。必要候选评分数值失败时关闭该校准分支，不删失败样本。
 
+正常可读要求公共 error 为空。预算求和与复现检查允许 1e-12 浮点容差，评分门限比较不加 epsilon。正式基线六格以源 report_corrected/{regime}.json 为准。
+
 在线顺序：Base 拒绝保持；Base 故障未知保持；模块关闭或评分失败保持 Base（记录关闭/degraded）；其他满足原拒绝资格且 R>tau 才改拒绝；其余保持。新判决不反馈前端。在线函数不读取标签、family、k、parent。
 
 预期同输入下采纳集合缩小，拒绝集合扩大，FA 不增加。此相对性质不证明净收益。新域真实误拒仍实测，不把 clean cal 约束称总体风险保证。
