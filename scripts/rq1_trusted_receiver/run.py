@@ -495,20 +495,71 @@ def _encode_thresholds(value):
     return 'Infinity' if isinstance(value, float) and value == float('inf') else value
 
 
-def evaluation_rows(job, out, normal_models):
+def _event_counts(window):
+    """Same valid U/X events and causal W10 as legacy, independent of D prediction."""
+    current = window[-1]
+    if not current.get('query_present') or current.get('newborn'):
+        return dict(Count_inputs=[0.]*5, context=[0, 0, 0], n_minus=[], n_frames=0,
+                    accept_eligible=False, reject_eligible=False, finite=True, error=None)
+    try:
+        effective = []
+        n = len(current['source_ids'])
+        for row in window:
+            u = np.asarray(row['U'])
+            if u.shape != (n,) or not np.isin(u, [-1, 0, 1]).all() or len(row['X']) != n:
+                raise ValueError('invalid source events')
+            valid = []
+            for x in row['X']:
+                array = None if x is None else np.asarray(x, float)
+                valid.append(array is not None and array.shape == (5,) and np.isfinite(array).all())
+            effective.append(np.where(valid, u, -1))
+        events = np.asarray(effective)
+        opportunity, support = np.any(events >= 0, axis=0), np.any(events == 1, axis=0)
+        context = [len(window), int(opportunity.sum()), int(support.sum())]
+        minus = (events == 0).sum(0).tolist()
+        return dict(Count_inputs=[float((events == 1).sum()), float(sum(minus)), *map(float, context)],
+            context=context, n_minus=minus, n_frames=len(window), finite=True, error=None,
+            accept_eligible=bool(opportunity.sum() >= 2 and support.sum() >= 2
+                and current.get('output_present') and current.get('identity_ok')),
+            reject_eligible=bool(opportunity.sum() >= 2 and np.any(events == 0)))
+    except (TypeError, ValueError, KeyError) as exc:
+        return dict(Count_inputs=None, context=[0, 0, 0], n_minus=None, n_frames=0,
+            accept_eligible=False, reject_eligible=False, finite=False, error=str(exc))
+
+
+def _d_only(normal_models):
+    model = normal_models.get('D')
+    try:
+        valid = (isinstance(model, dict) and _finite(model.get('intercept'))
+            and all(np.asarray(model.get(k), float).shape == (7,)
+                and np.isfinite(np.asarray(model[k], float)).all() for k in ('mean', 'scale', 'coef'))
+            and np.all(np.asarray(model['scale'], float) > 0)
+            and normal_models.get('component_status', {}).get('D', {}).get('status', 'ok') == 'ok')
+    except (TypeError, ValueError, KeyError):
+        valid = False
+    return {'D': model} if valid else {}
+
+
+def evaluation_rows(job, out, normal_models, receiver_id):
     """One keyed candidate join; offline metadata is attached after feature extraction."""
     from scripts.rq1_score_revision import heads, run as legacy
     from scripts.rq1_temporal import kernel
+    from scripts.rq1_report_freeze import run as freeze
     rows = list(data.read_rows(job['rows_path']))
-    local_path = Path(job.get('local_path') or Path(out)/'jobs'/job['job_id']/'local.jsonl.gz')
+    expected_local = Path(out)/'jobs'/job['job_id']/'local.jsonl.gz'
+    local_path = Path(job.get('local_path') or expected_local)
+    if local_path.resolve() != expected_local.resolve():
+        raise ValueError('local_path is not the bound prepare product')
     local = list(data.read_rows(local_path))
+    public = [{k: r[k] for k in WINDOW_FIELDS if k in r} for r in rows]
+    windows = list(kernel.windows(public, 10))
+    counts = {tuple(w[-1]['key']): _event_counts(w) for w in windows}
     if job.get('features_path'):
         features = list(data.read_rows(job['features_path']))
     else:
-        public = [{k: r[k] for k in WINDOW_FIELDS if k in r} for r in rows]
+        models = _d_only(normal_models)
         features = [dict({k: w[-1].get(k) for k in WINDOW_FIELDS},
-                    **heads.window_features(w, normal_models, 0., W=10))
-                    for w in kernel.windows(public, 10)]
+                    **heads.window_features(w, models, 0., W=10)) for w in windows]
     def keyed(records):
         result = {tuple(r['key']): r for r in records}
         if len(result) != len(records):
@@ -525,25 +576,37 @@ def evaluation_rows(job, out, normal_models):
             if row[field] != job[field]:
                 raise ValueError('frozen role mismatch '+field)
         feature, sidecar = by_feature[key], by_local[key]
+        if sidecar.get('receiver_id') != receiver_id or receiver_id not in row['source_ids']:
+            raise ValueError('sidecar receiver identity mismatch '+str(key))
+        if not sidecar.get('input_fault') and (not _finite(sidecar.get('receiver_timestamp'))
+                or not _finite(row['timestamp']) or abs(sidecar['receiver_timestamp']-row['timestamp']) > 1e-8):
+            raise ValueError('sidecar receiver timestamp mismatch '+str(key))
         if job.get('features_path') and any(feature.get(k) != row.get(k) for k in
                 ('parent', 'split', 'kind', 'family', 'attack_k', 'query_truth', 'attack_role')):
             raise ValueError('feature offline identity mismatch '+str(key))
-        for other, fields in ((sidecar, ('job_id', 'id', 'frame', 'index', 'timestamp')),
+        for other, fields in ((sidecar, ('job_id', 'id', 'frame', 'index', 'timestamp',
+                'parent', 'query_present', 'newborn')),
                 (feature, ('job_id', 'id', 'frame', 'index', 'timestamp', 'epoch',
                  'source_ids', 'query_present', 'newborn', 'output_present', 'identity_ok'))):
             if any(other.get(k) != row.get(k) for k in fields):
                 raise ValueError('sidecar/feature metadata mismatch '+str(key))
         # The output row keeps only evaluation metadata, local evidence and score inputs.
         merged = {k: row.get(k) for k in legacy.METADATA}
-        merged.update({k: feature.get(k) for k in ('finite', 'error', 'context',
-            'n_minus', 'n_frames', 'accept_eligible', 'reject_eligible', 'features')})
+        merged['features'] = feature.get('features', {})
+        merged.update(counts[key])
         merged.update({k: sidecar.get(k) for k in ('I', 'F', 'I_eligible', 'F_eligible', 'input_fault')})
-        context = feature.get('context') or [0, 0, 0]
+        context = merged['context']
         merged.update(w=context[0], d=context[1], m=context[2])
         x = feature.get('features', {}).get('D_head')
-        merged['R'] = -float(x[1]) if x is not None and len(x) == 6 and _finite(x[1]) and x[1] <= 0 else None
-        minus = feature.get('n_minus')
-        merged['MissCount'] = float(sum(minus)) if minus is not None and all(_finite(v) and v >= 0 for v in minus) else None
+        readable = (feature.get('finite', False) and feature.get('method_status', {}).get(
+            'D_head', {}).get('status', 'ok') == 'ok')
+        merged['R'] = -float(x[1]) if readable and x is not None and len(x) == 6 and _finite(x[1]) and x[1] <= 0 else None
+        merged['R_error'] = feature.get('error') if merged['R'] is None else None
+        if readable and x is not None and merged['finite']:
+            if freeze.count_inputs(feature) != merged['Count_inputs']:
+                raise ValueError('public event counts differ from legacy Count inputs '+str(key))
+        minus = merged['n_minus']
+        merged['MissCount'] = float(sum(minus)) if minus is not None else None
         result.append(merged)
     return result
 
@@ -656,11 +719,11 @@ def evaluate(config, out):
             raise ValueError('cal/eval cannot consume SHAPE_ONLY')
         jobs.append(job)
     sources = config['model_sources']
-    paths = [Path(sources['p_D'])]+[Path(p) for p in sources['Count_models'].values()]
+    paths = [out/'prepare.config.json', out/'prepare.complete.json', Path(sources['p_D'])]+[Path(p) for p in sources['Count_models'].values()]
     if config.get('batch_path'):
         paths.append(Path(config['batch_path']))
     for job in jobs:
-        paths.extend([Path(job['rows_path']), Path(job.get('local_path') or out/'jobs'/job['job_id']/'local.jsonl.gz')])
+        paths.extend([Path(job['rows_path']), Path(job['online_path']), Path(job.get('local_path') or out/'jobs'/job['job_id']/'local.jsonl.gz')])
         if job.get('features_path'):
             paths.append(Path(job['features_path']))
     binding = dict(config=config, sources=[data.source_record(p) for p in sorted(set(paths))],
@@ -674,8 +737,9 @@ def evaluate(config, out):
     started = time.monotonic()
     normal = freeze.read(sources['p_D'])['models']
     # Omit every other model so the existing extractor executes only D.
-    normal = {'D': normal['D']}
-    shared = {job['job_id']: evaluation_rows(job, out, normal) for job in jobs}
+    normal = _d_only(normal)
+    shared = {job['job_id']: evaluation_rows(job, out, normal,
+        receiver_id=parents[job['parent']]['receiver_id']) for job in jobs}
     feature_seconds = time.monotonic()-started
     reports = dict(schema='rq1_trusted_receiver_evaluation_v1', regimes={},
         scope='fixed development comparison; empirical budgets are not population guarantees',
@@ -694,7 +758,7 @@ def evaluate(config, out):
             for row in group:
                 row['C'] = None
                 try:
-                    row['C'] = heads.base_score(model, freeze.count_inputs(row)) if model is not None else None
+                    row['C'] = heads.base_score(model, row['Count_inputs']) if model is not None and row['Count_inputs'] is not None else None
                 except (ValueError, FloatingPointError, OverflowError):
                     pass
         required = [(f, k) for f in spec['cal_families'] for k in config['required_k']]

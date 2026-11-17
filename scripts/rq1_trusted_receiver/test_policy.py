@@ -1,5 +1,6 @@
 """Hand-computed calibration and public-policy regressions."""
 import math
+import numpy as np
 import unittest
 from scripts.rq1_trusted_receiver import run
 
@@ -157,10 +158,10 @@ class EvaluationTests(unittest.TestCase):
             job = dict(job_id=row['job_id'], parent='P', split='cal', kind='clean',
                 family='clean', attack_k=0, rows_path=str(out/'rows.gz'), features_path=None)
             with data.atomic_rows(job['rows_path']) as write: write(row)
-            local = dict(public(), key=row['key'], job_id=row['job_id'], id=1,
-                frame=0, index=0, timestamp=0.)
+            local = dict(public(), parent='P', receiver_id=3, key=row['key'],
+                job_id=row['job_id'], id=1, frame=0, index=0, timestamp=0., receiver_timestamp=0.)
             with data.atomic_rows(out/'jobs'/job['job_id']/'local.jsonl.gz') as write: write(local)
-            first = run.evaluation_rows(job, out, {'D': model})
+            first = run.evaluation_rows(job, out, {'D': model}, receiver_id=3)
             self.assertAlmostEqual(first[0]['R'], -math.log(.5))
             self.assertEqual(first[0]['MissCount'], 1.)
             self.assertEqual(first[0]['context'], [1, 3, 2])
@@ -168,7 +169,7 @@ class EvaluationTests(unittest.TestCase):
             # A sidecar may not silently drop a candidate from the common denominator.
             job['job_id'] = 'absent'
             with data.atomic_rows(out/'jobs'/'absent'/'local.jsonl.gz') as write: write(dict(local, key=['bad', 0, 1]))
-            with self.assertRaises(ValueError): run.evaluation_rows(job, out, {'D': model})
+            with self.assertRaises(ValueError): run.evaluation_rows(job, out, {'D': model}, receiver_id=3)
 
     def test_evaluate_entry_freezes_roles_layers_and_all_unknown_denominators(self):
         from scripts.rq1_temporal import data
@@ -182,12 +183,13 @@ class EvaluationTests(unittest.TestCase):
             data.atomic_json(out/'normal.json', dict(models=dict(D={})))
             jobs, parents, complete = [], [], {}
             for split in ('fit', 'cal', 'eval'):
-                parents.append(dict(parent=split, split=split))
+                parents.append(dict(parent=split, split=split, receiver_id=3))
                 for truth, family in ((1, 'clean'), (0, 'F1'), (0, 'F2')):
                     jid = split+family
                     job = dict(job_id=jid, parent=split, kind='clean' if truth else 'attack',
                         family=family, attack_k=0 if truth else 1, split=split,
-                        rows_path=str(out/(jid+'.rows.gz')), features_path=str(out/(jid+'.features.gz')))
+                        rows_path=str(out/(jid+'.rows.gz')), features_path=str(out/(jid+'.features.gz')),
+                        online_path=str(out/(jid+'.online.gz')))
                     jobs.append(job)
                     if split == 'fit':
                         complete[jid] = dict(status='SHAPE_ONLY', rows=0)
@@ -195,13 +197,15 @@ class EvaluationTests(unittest.TestCase):
                     row = sample(0, truth, family, job_id=jid, parent=split, split=split,
                         key=[jid, 0, 1], input_fault=split=='eval')
                     feature = dict(row, features=dict(D_head=[0., 0., 2., 1., 3., 2.]),
-                        finite=True, context=[1, 3, 2], n_minus=[0, 0, 0], source_ids=[1, 2, 3])
-                    row['source_ids'] = [1, 2, 3]
+                        finite=True, context=[1, 3, 2], n_minus=[0, 0, 1], source_ids=[1, 2, 3])
+                    row.update(source_ids=[1, 2, 3], U=[1, 1, 0], X=[[0.]*5]*3)
+                    with data.atomic_rows(job['online_path']) as write: write({'key': row['key']})
                     with data.atomic_rows(job['rows_path']) as write: write(row)
                     with data.atomic_rows(job['features_path']) as write: write(feature)
                     with data.atomic_rows(out/'jobs'/jid/'local.jsonl.gz') as write: write(dict(
                         _pub=0, **{k: row[k] for k in run.PUBLIC_FIELDS},
-                        key=row['key'], job_id=jid, id=1, frame=0, index=0, timestamp=0.))
+                        key=row['key'], parent=split, receiver_id=3, job_id=jid,
+                        id=1, frame=0, index=0, timestamp=0., receiver_timestamp=0.))
                     complete[jid] = dict(rows=1)
             data.atomic_json(out/'prepare.complete.json', dict(status='COMPLETE', jobs=complete))
             config = dict(parents=parents, jobs=jobs, model_sources=dict(p_D=str(out/'normal.json'),
@@ -223,6 +227,101 @@ class EvaluationTests(unittest.TestCase):
             changed = dict(config, parents=[dict(p, receiver_id=99) for p in parents])
             with self.assertRaisesRegex(ValueError, 'prepared parent'):
                 run.evaluate(changed, out)
+
+
+class ReviewRegressionTests(unittest.TestCase):
+    def fixture(self, out, change=None, saved_feature=None):
+        from scripts.rq1_temporal import data
+        row = sample(0)
+        row.update(source_ids=[1, 2, 3], U=[1, 1, 0], X=[[0.]*5]*3,
+            C=[0.]*3, C_missing=[False]*3, groups=[[0, 1, 2]])
+        job = dict(job_id=row['job_id'], parent='P', split='cal', kind='clean',
+            family='clean', attack_k=0, rows_path=str(out/'rows.gz'), features_path=None)
+        with data.atomic_rows(job['rows_path']) as write: write(row)
+        local = dict(public(I=.9, I_eligible=True), key=row['key'],
+            parent='P', receiver_id=3, job_id=row['job_id'], id=1,
+            frame=0, index=0, timestamp=0., receiver_timestamp=0.)
+        local.update(change or {})
+        with data.atomic_rows(out/'jobs'/job['job_id']/'local.jsonl.gz') as write: write(local)
+        if saved_feature is not None:
+            job['features_path'] = str(out/'features.gz')
+            feature = dict(row, **saved_feature)
+            with data.atomic_rows(job['features_path']) as write: write(feature)
+        model = dict(mean=[0.]*7, scale=[1.]*7, coef=[0.]*7, intercept=0.)
+        return job, model
+
+    def test_same_key_wrong_sidecar_identity_or_query_flags_rejected(self):
+        import tempfile
+        from pathlib import Path
+        for field, value in (('parent', 'WRONG'), ('receiver_id', 999),
+                ('query_present', False), ('newborn', True), ('receiver_timestamp', .01)):
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
+                out = Path(tmp)
+                job, model = self.fixture(out, {field: value})
+                with self.assertRaisesRegex(ValueError, 'sidecar'):
+                    run.evaluation_rows(job, out, {'D': model}, receiver_id=3)
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            job, model = self.fixture(out)
+            job['local_path'] = str(out/'other_receiver.gz')
+            with self.assertRaisesRegex(ValueError, 'prepare product'):
+                run.evaluation_rows(job, out, {'D': model}, receiver_id=3)
+
+    def test_public_counts_match_legacy_ten_scan_windows_and_resets(self):
+        from scripts.rq1_temporal import kernel
+        from scripts.rq1_score_revision import heads
+        from scripts.rq1_report_freeze import run as freeze
+        model = dict(mean=[0.]*7, scale=[1.]*7, coef=[0.]*7, intercept=0.)
+        rows = []
+        for i in range(13):
+            row = sample(i, timestamp=i*.1 if i < 12 else 2., source_ids=[1, 2, 3],
+                U=[1, i % 2, 0], X=[[0.]*5, [0.]*5, None if i % 2 else [0.]*5],
+                C=[0.]*3, C_missing=[False]*3, groups=[[0, 1, 2]])
+            row['index'] = i if i < 12 else 20
+            rows.append({k: row[k] for k in run.WINDOW_FIELDS if k in row})
+        windows = list(kernel.windows(rows, 10))
+        self.assertEqual([len(windows[-2]), len(windows[-1])], [10, 1])
+        for window in windows:
+            legacy = heads.window_features(window, {'D': model}, 0., W=10)
+            counts = run._event_counts(window)
+            self.assertEqual(counts['Count_inputs'], freeze.count_inputs(legacy))
+            for field in ('context', 'n_minus', 'n_frames', 'accept_eligible', 'reject_eligible'):
+                self.assertEqual(counts[field], legacy[field])
+
+    def test_d_failure_retains_count_inputs_misses_and_message_decisions(self):
+        import tempfile
+        from pathlib import Path
+        from scripts.rq1_report_freeze import run as freeze
+        from scripts.rq1_score_revision import heads
+        good_model = dict(mean=[0.]*7, scale=[1.]*7, coef=[0.]*7, intercept=0.)
+        bad_model = dict(good_model, mean=[1.e308]*7, scale=[1.e-308]*7)
+        count = dict(mean=[0.]*5, scale=[1.]*5, coef=[1., 0., 0., 0., 0.], intercept=0.)
+        saved_bad = dict(features={'D_head': None}, finite=False, error='D numeric failure',
+            context=[0, 0, 0], n_minus=[], n_frames=0,
+            accept_eligible=False, reject_eligible=False)
+        for d_model, saved in ((good_model, None), (None, None), ({}, None),
+                              (bad_model, None), (good_model, saved_bad)):
+            with self.subTest(model=d_model, saved=saved is not None), tempfile.TemporaryDirectory() as tmp:
+                out = Path(tmp)
+                job, _ = self.fixture(out, saved_feature=saved)
+                with np.errstate(over='ignore', invalid='ignore'):
+                    rows = run.evaluation_rows(job, out, {'D': d_model}, receiver_id=3)
+                row = rows[0]
+                self.assertEqual(row['Count_inputs'], [2., 1., 1., 3., 2.])
+                self.assertEqual(row['MissCount'], 1.)
+                self.assertTrue(row['accept_eligible'])
+                self.assertTrue(row['reject_eligible'])
+                if d_model is good_model and saved is None:
+                    self.assertEqual(row['Count_inputs'], freeze.count_inputs(row))
+                    self.assertAlmostEqual(row['R'], -math.log(.5))
+                else:
+                    self.assertIsNone(row['R'])
+                public_row = {k: row.get(k) for k in run.PUBLIC_FIELDS}
+                public_row.update(I=None, I_eligible=False, C=heads.base_score(count, row['Count_inputs']))
+                policy = dict(tauF=.5, tauP=.7, tauR=2., tauC=1.)
+                self.assertEqual(run.decide(public_row, policy, 'LocalCount')['decision'], 'accept')
+                self.assertEqual(run.decide(public_row, policy, 'LocalCond')['decision'], 'accept')
+                self.assertEqual(run.decide(public_row, dict(policy, tauR=0.), 'LocalCount')['decision'], 'reject')
 
 
 if __name__ == '__main__':
