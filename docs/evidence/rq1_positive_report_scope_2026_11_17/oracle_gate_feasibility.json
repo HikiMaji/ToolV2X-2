@@ -1,0 +1,41 @@
+{
+  "scope": "posthoc optimistic threshold feasibility only; additional mixed; not calibration, new policy, or confirmatory effectiveness",
+  "score": "Splus=-sum(U=1)log(p_D)/n_plus; Cond accepts with Splus>cutoff would become unknown",
+  "TA_budget": 0.02,
+  "FA_budget": 0.05,
+  "base": {
+    "TA": 0.4486970881909684,
+    "FA": 0.11647727272727273,
+    "true_rows": 5362,
+    "false_rows": 235,
+    "accepted_true": 3168,
+    "accepted_false": 41
+  },
+  "best_FA_at_TA_budget": {
+    "oracle_cutoff": 0.5821128963002643,
+    "TA_loss": 0.012136069169007923,
+    "TA": 0.43656101902196043,
+    "FA": 0.10511363636363637,
+    "FA_layers": {
+      "F1/1": 0.0,
+      "F1/2": 0.4204545454545456,
+      "F2/1": 0.0,
+      "F2/2": 0.0
+    },
+    "remaining_false_times": 37
+  },
+  "minimum_TA_loss_at_global_and_layer_FA_budget": {
+    "oracle_cutoff": 0.16666349780554102,
+    "TA_loss": 0.15227661299544434,
+    "TA": 0.29642047519552406,
+    "FA": 0.011363636363636364,
+    "FA_layers": {
+      "F1/1": 0.0,
+      "F1/2": 0.04545454545454546,
+      "F2/1": 0.0,
+      "F2/2": 0.0
+    },
+    "remaining_false_times": 4
+  },
+  "feasible": false
+}
