@@ -141,9 +141,10 @@ def load_raw_points(path):
                 break
         if header['DATA'] != ['ascii'] or header.get('FIELDS', [])[:3] != ['x', 'y', 'z']:
             raise ValueError('expected native ASCII xyz PCD')
-        declared = int(header['POINTS'][0])
-        if declared < 0:
-            raise ValueError('negative PCD count')
+        counts = header.get('POINTS', [])
+        if len(counts) != 1 or not counts[0].isdigit():
+            raise ValueError('POINTS must contain exactly one nonnegative integer')
+        declared = int(counts[0])
         if declared == 0:
             if stream.read().strip():
                 raise ValueError('nonempty zero-return PCD')

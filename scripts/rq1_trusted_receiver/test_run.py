@@ -135,6 +135,46 @@ class SidecarTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     run.load_scan(spec, 8, 0., pose)
 
+    def test_points_header_requires_one_nonnegative_integer(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/'malformed.pcd'
+            for field in ['', 'POINTS\n', 'POINTS 0 1\n', 'POINTS invalid\n',
+                          'POINTS -1\n', 'POINTS 1.0\n']:
+                with self.subTest(field=field):
+                    path.write_text('FIELDS x y z\n'+field+'DATA ascii\n')
+                    with self.assertRaises(ValueError):
+                        run.load_raw_points(path)
+
+    def test_bad_points_header_preserves_prepare_fault_key(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            (tmp/'7').mkdir()
+            (tmp/'7/000002.pcd').write_text('FIELDS x y z\nPOINTS\nDATA ascii\n')
+            path = tmp/'online.jsonl.gz'
+            with data.atomic_rows(path) as write:
+                write(dict(frame=2, index=0, timestamp=0., id=1, source_ids=[7],
+                    key=['a', 2, 1], job_id='a', newborn=False,
+                    query_geometry=dict(xyz=[0, 0, 0], yaw=0)))
+            spec = dict(parent='A', split='cal', receiver_id=7, root=str(tmp),
+                        detections=str(tmp), frames=[2])
+            config = dict(parents=[spec, dict(spec, parent='FIT', split='fit')], jobs=[
+                dict(job_id='a', parent='A', kind='clean', online_path=str(path)),
+                dict(job_id='fit', parent='FIT', kind='clean', online_path=str(path))])
+            packet = dict(frame=2, index=0, timestamp=0., pose=[0]*6,
+                boxes=[dict(id=100, xyz=[0, 0, 0], yaw=0., hwl=[1, 1, 1],
+                            fresh=True, obj_type='car', timestamp=0.)])
+            with patch.object(run, 'receiver_frames', side_effect=lambda spec: iter([packet])):
+                result = run.prepare(config, tmp/'out')
+            rows = list(data.read_rows(tmp/'out/jobs/a/local.jsonl.gz'))
+            self.assertEqual(result['status'], 'COMPLETE')
+            self.assertEqual([row['key'] for row in rows], [['a', 2, 1]])
+            self.assertTrue(rows[0]['input_fault'])
+            self.assertEqual(rows[0]['status'], 'input_fault')
+            self.assertIsNone(rows[0]['I'])
+            self.assertIsNone(rows[0]['F'])
+            self.assertFalse(rows[0]['I_eligible'])
+            self.assertFalse(rows[0]['F_eligible'])
+
     def test_native_receiver_only_uses_declared_frozen_ego(self):
         with tempfile.TemporaryDirectory() as tmp:
             for frame in [2, 4, 6]:
