@@ -1,0 +1,73 @@
+{
+  "branches": {
+    "Cond": {
+      "status": "active",
+      "reason": null,
+      "tau": 22.302099285235826,
+      "base_true_reject": 0.043475672703693055,
+      "delta": 0.006524327296306948,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4205,
+      "n_candidates": 4205,
+      "added_true_reject_weight": 0.006473800639577186
+    },
+    "MissCount": {
+      "status": "active",
+      "reason": null,
+      "tau": 11.0,
+      "base_true_reject": 0.043475672703693055,
+      "delta": 0.006524327296306948,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4205,
+      "n_candidates": 4205,
+      "added_true_reject_weight": 0.005472339125046881
+    },
+    "BaseTail": {
+      "status": "active",
+      "reason": null,
+      "tau": 0.9593012468823272,
+      "base_true_reject": 0.043475672703693055,
+      "delta": 0.006524327296306948,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4205,
+      "n_candidates": 4205,
+      "added_true_reject_weight": 0.0011370389269712879
+    }
+  },
+  "source_calibration_sufficient": true,
+  "observed_layers": [
+    [
+      "F0",
+      1
+    ],
+    [
+      "F1",
+      2
+    ],
+    [
+      "F1",
+      3
+    ],
+    [
+      "F2",
+      3
+    ]
+  ],
+  "missing_layers": [
+    [
+      "F1",
+      1
+    ],
+    [
+      "F2",
+      1
+    ],
+    [
+      "F2",
+      2
+    ]
+  ]
+}

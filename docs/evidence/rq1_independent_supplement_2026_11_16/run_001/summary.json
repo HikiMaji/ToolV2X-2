@@ -1,0 +1,2655 @@
+{
+  "status": "complete",
+  "meaning": "development_comparison_not_blind_test",
+  "regimes": {
+    "mixed": {
+      "retention": {
+        "branches": {
+          "Cond": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.013139627108704467,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0009504033843998894,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.10080320739870907,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 266,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.013139627108704467,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0009504033843998894,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.10080320739870907,
+            "n_changed_primary": 266
+          },
+          "MissCount": {
+            "status": "not_retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.006913511017843794,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0008126933230513389,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "fail",
+                "value": -0.00040634666152572496,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 15,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.006913511017843794,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0008126933230513389,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": -0.00040634666152572496,
+            "n_changed_primary": 15
+          },
+          "BaseTail": {
+            "status": "not_retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.007499014303868837,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "fail",
+                "value": 0.0007102272727272929,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 25,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.007499014303868837,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.004261363636363636,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.017045454545454544,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.0007102272727272929,
+            "n_changed_primary": 25
+          }
+        },
+        "conditional_increment": {
+          "status": "established",
+          "comparisons": {
+            "MissCount": {
+              "cd_difference": 0.1012095540602348,
+              "control_risk_status": "retained",
+              "status": "established"
+            },
+            "BaseTail": {
+              "cd_difference": 0.10009298012598178,
+              "control_risk_status": "retained",
+              "status": "established"
+            }
+          }
+        }
+      },
+      "calibration": {
+        "Cond": {
+          "status": "active",
+          "reason": null,
+          "tau": 22.302099285235826,
+          "base_true_reject": 0.043475672703693055,
+          "delta": 0.006524327296306948,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4205,
+          "n_candidates": 4205,
+          "added_true_reject_weight": 0.006473800639577186
+        },
+        "MissCount": {
+          "status": "active",
+          "reason": null,
+          "tau": 11.0,
+          "base_true_reject": 0.043475672703693055,
+          "delta": 0.006524327296306948,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4205,
+          "n_candidates": 4205,
+          "added_true_reject_weight": 0.005472339125046881
+        },
+        "BaseTail": {
+          "status": "active",
+          "reason": null,
+          "tau": 0.9593012468823272,
+          "base_true_reject": 0.043475672703693055,
+          "delta": 0.006524327296306948,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4205,
+          "n_candidates": 4205,
+          "added_true_reject_weight": 0.0011370389269712879
+        }
+      },
+      "baseline_reproduction": {
+        "cal": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        },
+        "eval": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        }
+      },
+      "system_query": {
+        "cal": {
+          "Count": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8589,
+                "unknown": 4889,
+                "reject": 482
+              },
+              "raw": {
+                "accept": 0.6152578796561604,
+                "unknown": 0.35021489971346703,
+                "reject": 0.034527220630372495
+              },
+              "weighted": {
+                "accept": 0.5898780071241039,
+                "unknown": 0.36664632017220283,
+                "reject": 0.04347567270369319
+              }
+            },
+            "false": {
+              "n": 1352,
+              "parents": 5,
+              "epochs": 26,
+              "counts": {
+                "accept": 0,
+                "unknown": 213,
+                "reject": 1139
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15754437869822485,
+                "reject": 0.8424556213017751
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.04090909090909091,
+                "reject": 0.9590909090909092
+              }
+            },
+            "correct_definite": 0.7744844581075065
+          },
+          "D_zero": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8817,
+                "unknown": 4482,
+                "reject": 661
+              },
+              "raw": {
+                "accept": 0.6315902578796562,
+                "unknown": 0.32106017191977076,
+                "reject": 0.047349570200573066
+              },
+              "weighted": {
+                "accept": 0.6065017427637044,
+                "unknown": 0.3436382525905432,
+                "reject": 0.049860004645752395
+              }
+            },
+            "false": {
+              "n": 1352,
+              "parents": 5,
+              "epochs": 26,
+              "counts": {
+                "accept": 1,
+                "unknown": 115,
+                "reject": 1236
+              },
+              "raw": {
+                "accept": 0.0007396449704142012,
+                "unknown": 0.08505917159763314,
+                "reject": 0.9142011834319527
+              },
+              "weighted": {
+                "accept": 0.005555555555555556,
+                "unknown": 0.05327987477110284,
+                "reject": 0.9411645696733417
+              }
+            },
+            "correct_definite": 0.773833156218523
+          },
+          "Cond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8568,
+                "unknown": 4801,
+                "reject": 591
+              },
+              "raw": {
+                "accept": 0.6137535816618911,
+                "unknown": 0.3439111747851003,
+                "reject": 0.0423352435530086
+              },
+              "weighted": {
+                "accept": 0.5889115148105528,
+                "unknown": 0.3611390118461789,
+                "reject": 0.04994947334326823
+              }
+            },
+            "false": {
+              "n": 1352,
+              "parents": 5,
+              "epochs": 26,
+              "counts": {
+                "accept": 0,
+                "unknown": 144,
+                "reject": 1208
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.10650887573964497,
+                "reject": 0.893491124260355
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.02759890572390572,
+                "reject": 0.9724010942760943
+              }
+            },
+            "correct_definite": 0.7806563045433236
+          },
+          "MissCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8547,
+                "unknown": 4851,
+                "reject": 562
+              },
+              "raw": {
+                "accept": 0.6122492836676218,
+                "unknown": 0.3474928366762178,
+                "reject": 0.040257879656160456
+              },
+              "weighted": {
+                "accept": 0.5868684687600937,
+                "unknown": 0.36418351941116633,
+                "reject": 0.04894801182873998
+              }
+            },
+            "false": {
+              "n": 1352,
+              "parents": 5,
+              "epochs": 26,
+              "counts": {
+                "accept": 0,
+                "unknown": 213,
+                "reject": 1139
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15754437869822485,
+                "reject": 0.8424556213017751
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.04090909090909091,
+                "reject": 0.9590909090909092
+              }
+            },
+            "correct_definite": 0.7729796889255014
+          },
+          "BaseTail": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8589,
+                "unknown": 4875,
+                "reject": 496
+              },
+              "raw": {
+                "accept": 0.6152578796561604,
+                "unknown": 0.34921203438395415,
+                "reject": 0.03553008595988539
+              },
+              "weighted": {
+                "accept": 0.5898780071241039,
+                "unknown": 0.36550928124523147,
+                "reject": 0.044612711630664596
+              }
+            },
+            "false": {
+              "n": 1352,
+              "parents": 5,
+              "epochs": 26,
+              "counts": {
+                "accept": 0,
+                "unknown": 213,
+                "reject": 1139
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.15754437869822485,
+                "reject": 0.8424556213017751
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.04090909090909091,
+                "reject": 0.9590909090909092
+              }
+            },
+            "correct_definite": 0.7744844581075065
+          }
+        },
+        "eval": {
+          "Count": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7091,
+                "unknown": 2692,
+                "reject": 95
+              },
+              "raw": {
+                "accept": 0.7178578659647702,
+                "unknown": 0.2725248025916177,
+                "reject": 0.009617331443612067
+              },
+              "weighted": {
+                "accept": 0.5904278603354833,
+                "unknown": 0.4035889811905346,
+                "reject": 0.005983158473982055
+              }
+            },
+            "false": {
+              "n": 784,
+              "parents": 5,
+              "epochs": 19,
+              "counts": {
+                "accept": 3,
+                "unknown": 324,
+                "reject": 457
+              },
+              "raw": {
+                "accept": 0.003826530612244898,
+                "unknown": 0.413265306122449,
+                "reject": 0.5829081632653061
+              },
+              "weighted": {
+                "accept": 0.004261363636363636,
+                "unknown": 0.4085755813953489,
+                "reject": 0.5871630549682875
+              }
+            },
+            "correct_definite": 0.5887954576518855
+          },
+          "D_zero": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7244,
+                "unknown": 2111,
+                "reject": 523
+              },
+              "raw": {
+                "accept": 0.733346831342377,
+                "unknown": 0.21370722818384288,
+                "reject": 0.052945940473780116
+              },
+              "weighted": {
+                "accept": 0.6001708284903848,
+                "unknown": 0.360695092135764,
+                "reject": 0.03913407937385126
+              }
+            },
+            "false": {
+              "n": 784,
+              "parents": 5,
+              "epochs": 19,
+              "counts": {
+                "accept": 38,
+                "unknown": 12,
+                "reject": 734
+              },
+              "raw": {
+                "accept": 0.04846938775510204,
+                "unknown": 0.015306122448979591,
+                "reject": 0.9362244897959183
+              },
+              "weighted": {
+                "accept": 0.05397727272727272,
+                "unknown": 0.017045454545454544,
+                "reject": 0.9289772727272728
+              }
+            },
+            "correct_definite": 0.7645740506088288
+          },
+          "Cond": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7079,
+                "unknown": 2609,
+                "reject": 190
+              },
+              "raw": {
+                "accept": 0.7166430451508402,
+                "unknown": 0.2641222919619356,
+                "reject": 0.019234662887224134
+              },
+              "weighted": {
+                "accept": 0.5894774569510834,
+                "unknown": 0.39738291594021213,
+                "reject": 0.013139627108704467
+              }
+            },
+            "false": {
+              "n": 784,
+              "parents": 5,
+              "epochs": 19,
+              "counts": {
+                "accept": 3,
+                "unknown": 153,
+                "reject": 628
+              },
+              "raw": {
+                "accept": 0.003826530612244898,
+                "unknown": 0.1951530612244898,
+                "reject": 0.8010204081632653
+              },
+              "weighted": {
+                "accept": 0.004261363636363636,
+                "unknown": 0.2060187632135307,
+                "reject": 0.7897198731501057
+              }
+            },
+            "correct_definite": 0.6895986650505945
+          },
+          "MissCount": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7078,
+                "unknown": 2690,
+                "reject": 110
+              },
+              "raw": {
+                "accept": 0.7165418100830128,
+                "unknown": 0.27232233245596277,
+                "reject": 0.011135857461024499
+              },
+              "weighted": {
+                "accept": 0.589615167012432,
+                "unknown": 0.40347132196972424,
+                "reject": 0.006913511017843794
+              }
+            },
+            "false": {
+              "n": 784,
+              "parents": 5,
+              "epochs": 19,
+              "counts": {
+                "accept": 3,
+                "unknown": 324,
+                "reject": 457
+              },
+              "raw": {
+                "accept": 0.003826530612244898,
+                "unknown": 0.413265306122449,
+                "reject": 0.5829081632653061
+              },
+              "weighted": {
+                "accept": 0.004261363636363636,
+                "unknown": 0.4085755813953489,
+                "reject": 0.5871630549682875
+              }
+            },
+            "correct_definite": 0.5883891109903597
+          },
+          "BaseTail": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7091,
+                "unknown": 2668,
+                "reject": 119
+              },
+              "raw": {
+                "accept": 0.7178578659647702,
+                "unknown": 0.27009516096375785,
+                "reject": 0.012046973071471958
+              },
+              "weighted": {
+                "accept": 0.5904278603354833,
+                "unknown": 0.40207312536064777,
+                "reject": 0.007499014303868837
+              }
+            },
+            "false": {
+              "n": 784,
+              "parents": 5,
+              "epochs": 19,
+              "counts": {
+                "accept": 3,
+                "unknown": 323,
+                "reject": 458
+              },
+              "raw": {
+                "accept": 0.003826530612244898,
+                "unknown": 0.4119897959183674,
+                "reject": 0.5841836734693877
+              },
+              "weighted": {
+                "accept": 0.004261363636363636,
+                "unknown": 0.4071551268498944,
+                "reject": 0.588583509513742
+              }
+            },
+            "correct_definite": 0.5895056849246127
+          }
+        }
+      },
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ],
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ]
+    },
+    "F1_only": {
+      "retention": {
+        "branches": {
+          "Cond": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.01734230778418993,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.002693652179863726,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.08388044663734096,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 300,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.01734230778418993,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.002693652179863726,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.08388044663734096,
+            "n_changed_primary": 300
+          },
+          "MissCount": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.002932946879355221,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.02130681818181812,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 49,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.002932946879355221,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.02130681818181812,
+            "n_changed_primary": 49
+          },
+          "BaseTail": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.0029777974663792992,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.05620921761165665,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 66,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.0029777974663792992,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.011363636363636364,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F2/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F2/2": {
+                "status": "pass",
+                "value": 0.022727272727272728,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.05620921761165665,
+            "n_changed_primary": 66
+          }
+        },
+        "conditional_increment": {
+          "status": "established",
+          "comparisons": {
+            "MissCount": {
+              "cd_difference": 0.06257362845552283,
+              "control_risk_status": "retained",
+              "status": "established"
+            },
+            "BaseTail": {
+              "cd_difference": 0.027671229025684307,
+              "control_risk_status": "retained",
+              "status": "established"
+            }
+          }
+        }
+      },
+      "calibration": {
+        "Cond": {
+          "status": "active",
+          "reason": null,
+          "tau": 19.833773200008995,
+          "base_true_reject": 0.013113279072767667,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4488,
+          "n_candidates": 4488,
+          "added_true_reject_weight": 0.019893878797124707
+        },
+        "MissCount": {
+          "status": "active",
+          "reason": null,
+          "tau": 13.0,
+          "base_true_reject": 0.013113279072767667,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4488,
+          "n_candidates": 4488,
+          "added_true_reject_weight": 0.015631700209511892
+        },
+        "BaseTail": {
+          "status": "active",
+          "reason": null,
+          "tau": 1.7021037109225914,
+          "base_true_reject": 0.013113279072767667,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4488,
+          "n_candidates": 4488,
+          "added_true_reject_weight": 0.019645280243144134
+        }
+      },
+      "baseline_reproduction": {
+        "cal": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        },
+        "eval": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        }
+      },
+      "system_query": {
+        "cal": {
+          "Count": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8476,
+                "unknown": 5285,
+                "reject": 199
+              },
+              "raw": {
+                "accept": 0.6071633237822349,
+                "unknown": 0.37858166189111747,
+                "reject": 0.014255014326647565
+              },
+              "weighted": {
+                "accept": 0.583713536275981,
+                "unknown": 0.40317318465125124,
+                "reject": 0.01311327907276767
+              }
+            },
+            "false": {
+              "n": 89,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 89
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0000000000000002
+              }
+            },
+            "correct_definite": 0.7918567681379907
+          },
+          "D_zero": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8932,
+                "unknown": 4411,
+                "reject": 617
+              },
+              "raw": {
+                "accept": 0.6398280802292263,
+                "unknown": 0.31597421203438397,
+                "reject": 0.04419770773638969
+              },
+              "weighted": {
+                "accept": 0.6154756617618494,
+                "unknown": 0.34145330799649654,
+                "reject": 0.043071030241654054
+              }
+            },
+            "false": {
+              "n": 89,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 89
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0000000000000002
+              }
+            },
+            "correct_definite": 0.8077378308809249
+          },
+          "Cond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8446,
+                "unknown": 5052,
+                "reject": 462
+              },
+              "raw": {
+                "accept": 0.6050143266475645,
+                "unknown": 0.36189111747851005,
+                "reject": 0.0330945558739255
+              },
+              "weighted": {
+                "accept": 0.5822992889634624,
+                "unknown": 0.38469355316664877,
+                "reject": 0.033007157869888795
+              }
+            },
+            "false": {
+              "n": 89,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 89
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0000000000000002
+              }
+            },
+            "correct_definite": 0.7911496444817313
+          },
+          "MissCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8472,
+                "unknown": 5169,
+                "reject": 319
+              },
+              "raw": {
+                "accept": 0.6068767908309456,
+                "unknown": 0.3702722063037249,
+                "reject": 0.02285100286532951
+              },
+              "weighted": {
+                "accept": 0.5834817381303663,
+                "unknown": 0.3877732825873541,
+                "reject": 0.028744979282279655
+              }
+            },
+            "false": {
+              "n": 89,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 89
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0000000000000002
+              }
+            },
+            "correct_definite": 0.7917408690651833
+          },
+          "BaseTail": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8476,
+                "unknown": 5081,
+                "reject": 403
+              },
+              "raw": {
+                "accept": 0.6071633237822349,
+                "unknown": 0.36396848137535814,
+                "reject": 0.028868194842406877
+              },
+              "weighted": {
+                "accept": 0.583713536275981,
+                "unknown": 0.38352790440810686,
+                "reject": 0.03275855931591205
+              }
+            },
+            "false": {
+              "n": 89,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 89
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.0,
+                "reject": 1.0000000000000002
+              }
+            },
+            "correct_definite": 0.7918567681379907
+          }
+        },
+        "eval": {
+          "Count": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7142,
+                "unknown": 2723,
+                "reject": 13
+              },
+              "raw": {
+                "accept": 0.7230208544239725,
+                "unknown": 0.2756630896942701,
+                "reject": 0.0013160558817574407
+              },
+              "weighted": {
+                "accept": 0.5950133512696654,
+                "unknown": 0.4041749640642065,
+                "reject": 0.0008116846661282267
+              }
+            },
+            "false": {
+              "n": 353,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 4,
+                "unknown": 180,
+                "reject": 169
+              },
+              "raw": {
+                "accept": 0.0113314447592068,
+                "unknown": 0.509915014164306,
+                "reject": 0.47875354107648727
+              },
+              "weighted": {
+                "accept": 0.011363636363636364,
+                "unknown": 0.5328729806778588,
+                "reject": 0.4557633829585048
+              }
+            },
+            "correct_definite": 0.5253883671140851
+          },
+          "D_zero": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7596,
+                "unknown": 1930,
+                "reject": 352
+              },
+              "raw": {
+                "accept": 0.7689815752176554,
+                "unknown": 0.1953836809070662,
+                "reject": 0.035634743875278395
+              },
+              "weighted": {
+                "accept": 0.6391578368418143,
+                "unknown": 0.3365405773267329,
+                "reject": 0.024301585831452824
+              }
+            },
+            "false": {
+              "n": 353,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 70,
+                "unknown": 8,
+                "reject": 275
+              },
+              "raw": {
+                "accept": 0.19830028328611898,
+                "unknown": 0.0226628895184136,
+                "reject": 0.7790368271954674
+              },
+              "weighted": {
+                "accept": 0.19886363636363638,
+                "unknown": 0.022727272727272728,
+                "reject": 0.7784090909090909
+              }
+            },
+            "correct_definite": 0.7087834638754527
+          },
+          "Cond": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7110,
+                "unknown": 2515,
+                "reject": 253
+              },
+              "raw": {
+                "accept": 0.7197813322534926,
+                "unknown": 0.25460619558615105,
+                "reject": 0.025612472160356347
+              },
+              "weighted": {
+                "accept": 0.5923196990898016,
+                "unknown": 0.3903379931260085,
+                "reject": 0.01734230778418993
+              }
+            },
+            "false": {
+              "n": 353,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 4,
+                "unknown": 120,
+                "reject": 229
+              },
+              "raw": {
+                "accept": 0.0113314447592068,
+                "unknown": 0.33994334277620397,
+                "reject": 0.6487252124645893
+              },
+              "weighted": {
+                "accept": 0.011363636363636364,
+                "unknown": 0.36241843522331324,
+                "reject": 0.6262179284130505
+              }
+            },
+            "correct_definite": 0.609268813751426
+          },
+          "MissCount": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7142,
+                "unknown": 2689,
+                "reject": 47
+              },
+              "raw": {
+                "accept": 0.7230208544239725,
+                "unknown": 0.27222109738813527,
+                "reject": 0.004758048187892286
+              },
+              "weighted": {
+                "accept": 0.5950133512696654,
+                "unknown": 0.40205370185097955,
+                "reject": 0.002932946879355221
+              }
+            },
+            "false": {
+              "n": 353,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 4,
+                "unknown": 165,
+                "reject": 184
+              },
+              "raw": {
+                "accept": 0.0113314447592068,
+                "unknown": 0.46742209631728043,
+                "reject": 0.5212464589235127
+              },
+              "weighted": {
+                "accept": 0.011363636363636364,
+                "unknown": 0.49025934431422236,
+                "reject": 0.4983770193221412
+              }
+            },
+            "correct_definite": 0.5466951852959032
+          },
+          "BaseTail": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7142,
+                "unknown": 2689,
+                "reject": 47
+              },
+              "raw": {
+                "accept": 0.7230208544239725,
+                "unknown": 0.27222109738813527,
+                "reject": 0.004758048187892286
+              },
+              "weighted": {
+                "accept": 0.5950133512696654,
+                "unknown": 0.4020088512639554,
+                "reject": 0.0029777974663792992
+              }
+            },
+            "false": {
+              "n": 353,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 4,
+                "unknown": 148,
+                "reject": 201
+              },
+              "raw": {
+                "accept": 0.0113314447592068,
+                "unknown": 0.4192634560906516,
+                "reject": 0.5694050991501416
+              },
+              "weighted": {
+                "accept": 0.011363636363636364,
+                "unknown": 0.4204545454545455,
+                "reject": 0.5681818181818181
+              }
+            },
+            "correct_definite": 0.5815975847257417
+          }
+        }
+      },
+      "missing_layers": [
+        [
+          "F1",
+          1
+        ]
+      ]
+    },
+    "F2_only": {
+      "retention": {
+        "branches": {
+          "Cond": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.018222454734692802,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0028184098741491637,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.18046183100372892,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 383,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.018222454734692802,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0028184098741491637,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.18046183100372892,
+            "n_changed_primary": 383
+          },
+          "MissCount": {
+            "status": "retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.005719115759076621,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0009303525438616456,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "pass",
+                "value": 0.013171187364432901,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 59,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.005719115759076621,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0009303525438616456,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.013171187364432901,
+            "n_changed_primary": 59
+          },
+          "BaseTail": {
+            "status": "not_retained",
+            "checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.0028858053690399483,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "cd_gain": {
+                "status": "fail",
+                "value": 0.001136363636363713,
+                "limit": 0.01,
+                "direction": "min"
+              },
+              "active": {
+                "status": "pass",
+                "value": 1,
+                "limit": 1,
+                "direction": "min"
+              },
+              "changed_primary": {
+                "status": "pass",
+                "value": 3,
+                "limit": 1,
+                "direction": "min"
+              }
+            },
+            "risk_checks": {
+              "true_reject": {
+                "status": "pass",
+                "value": 0.0028858053690399483,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "true_accept_loss": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "never_accept_increase": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.02,
+                "direction": "max"
+              },
+              "paired_delay": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.5,
+                "direction": "max"
+              },
+              "false_accept_F1/1": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              },
+              "false_accept_F1/2": {
+                "status": "pass",
+                "value": 0.0,
+                "limit": 0.05,
+                "direction": "max"
+              }
+            },
+            "risk_status": "retained",
+            "cd_gain": 0.001136363636363713,
+            "n_changed_primary": 3
+          }
+        },
+        "conditional_increment": {
+          "status": "established",
+          "comparisons": {
+            "MissCount": {
+              "cd_difference": 0.16729064363929602,
+              "control_risk_status": "retained",
+              "status": "established"
+            },
+            "BaseTail": {
+              "cd_difference": 0.1793254673673652,
+              "control_risk_status": "retained",
+              "status": "established"
+            }
+          }
+        }
+      },
+      "calibration": {
+        "Cond": {
+          "status": "active",
+          "reason": null,
+          "tau": 19.761596949333658,
+          "base_true_reject": 0.025091355115513903,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4438,
+          "n_candidates": 4438,
+          "added_true_reject_weight": 0.01979365887665231
+        },
+        "MissCount": {
+          "status": "active",
+          "reason": null,
+          "tau": 11.0,
+          "base_true_reject": 0.025091355115513903,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4438,
+          "n_candidates": 4438,
+          "added_true_reject_weight": 0.019456884259581995
+        },
+        "BaseTail": {
+          "status": "active",
+          "reason": null,
+          "tau": 1.3852135011369309,
+          "base_true_reject": 0.025091355115513903,
+          "delta": 0.02,
+          "n_clean_primary": 13960,
+          "clean_weight_sum": 1.0,
+          "n_eligible": 4438,
+          "n_candidates": 4438,
+          "added_true_reject_weight": 0.00014347202295411296
+        }
+      },
+      "baseline_reproduction": {
+        "cal": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        },
+        "eval": {
+          "Count": {
+            "status": "pass"
+          },
+          "D_zero": {
+            "status": "pass"
+          }
+        }
+      },
+      "system_query": {
+        "cal": {
+          "Count": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8896,
+                "unknown": 4815,
+                "reject": 249
+              },
+              "raw": {
+                "accept": 0.6372492836676218,
+                "unknown": 0.3449140401146132,
+                "reject": 0.01783667621776504
+              },
+              "weighted": {
+                "accept": 0.6102959340852662,
+                "unknown": 0.3646127107992199,
+                "reject": 0.025091355115513927
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 15
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105261
+              }
+            },
+            "correct_definite": 0.6998848091478962
+          },
+          "D_zero": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8373,
+                "unknown": 5209,
+                "reject": 378
+              },
+              "raw": {
+                "accept": 0.599785100286533,
+                "unknown": 0.3731375358166189,
+                "reject": 0.027077363896848138
+              },
+              "weighted": {
+                "accept": 0.5717336022065174,
+                "unknown": 0.39936932026660565,
+                "reject": 0.028897077526876994
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 6,
+                "reject": 13
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.3157894736842105,
+                "reject": 0.6842105263157895
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.3157894736842105,
+                "reject": 0.6842105263157894
+              }
+            },
+            "correct_definite": 0.6279720642611534
+          },
+          "Cond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8824,
+                "unknown": 4606,
+                "reject": 530
+              },
+              "raw": {
+                "accept": 0.6320916905444126,
+                "unknown": 0.32994269340974214,
+                "reject": 0.03796561604584527
+              },
+              "weighted": {
+                "accept": 0.6057767332410144,
+                "unknown": 0.34933825276682223,
+                "reject": 0.04488501399216331
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 15
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105261
+              }
+            },
+            "correct_definite": 0.6976252087257703
+          },
+          "MissCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8772,
+                "unknown": 4689,
+                "reject": 499
+              },
+              "raw": {
+                "accept": 0.6283667621776504,
+                "unknown": 0.33588825214899715,
+                "reject": 0.035744985673352436
+              },
+              "weighted": {
+                "accept": 0.6017626459566325,
+                "unknown": 0.3536891146682717,
+                "reject": 0.04454823937509579
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 15
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105261
+              }
+            },
+            "correct_definite": 0.6956181650835793
+          },
+          "BaseTail": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 8896,
+                "unknown": 4814,
+                "reject": 250
+              },
+              "raw": {
+                "accept": 0.6372492836676218,
+                "unknown": 0.34484240687679085,
+                "reject": 0.01790830945558739
+              },
+              "weighted": {
+                "accept": 0.6102959340852662,
+                "unknown": 0.3644692387762644,
+                "reject": 0.025234827138469453
+              }
+            },
+            "false": {
+              "n": 19,
+              "parents": 1,
+              "epochs": 1,
+              "counts": {
+                "accept": 0,
+                "unknown": 4,
+                "reject": 15
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105263
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.21052631578947367,
+                "reject": 0.7894736842105261
+              }
+            },
+            "correct_definite": 0.6998848091478962
+          }
+        },
+        "eval": {
+          "Count": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7141,
+                "unknown": 2694,
+                "reject": 43
+              },
+              "raw": {
+                "accept": 0.722919619356145,
+                "unknown": 0.2727272727272727,
+                "reject": 0.004353107916582304
+              },
+              "weighted": {
+                "accept": 0.5948003488487289,
+                "unknown": 0.4024488552841657,
+                "reject": 0.0027507958671053817
+              }
+            },
+            "false": {
+              "n": 431,
+              "parents": 5,
+              "epochs": 10,
+              "counts": {
+                "accept": 0,
+                "unknown": 194,
+                "reject": 237
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.45011600928074247,
+                "reject": 0.5498839907192575
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.44101479915433406,
+                "reject": 0.5589852008456657
+              }
+            },
+            "correct_definite": 0.5768927748471973
+          },
+          "D_zero": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 6668,
+                "unknown": 2991,
+                "reject": 219
+              },
+              "raw": {
+                "accept": 0.6750354322737396,
+                "unknown": 0.3027940878720389,
+                "reject": 0.022170479854221502
+              },
+              "weighted": {
+                "accept": 0.5423615288627037,
+                "unknown": 0.43978076448081804,
+                "reject": 0.017857706656478352
+              }
+            },
+            "false": {
+              "n": 431,
+              "parents": 5,
+              "epochs": 10,
+              "counts": {
+                "accept": 0,
+                "unknown": 25,
+                "reject": 406
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.058004640371229696,
+                "reject": 0.9419953596287703
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.056818181818181816,
+                "reject": 0.9431818181818181
+              }
+            },
+            "correct_definite": 0.7427716735222609
+          },
+          "Cond": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7107,
+                "unknown": 2505,
+                "reject": 266
+              },
+              "raw": {
+                "accept": 0.7194776270500102,
+                "unknown": 0.25359384490787606,
+                "reject": 0.02692852804211379
+              },
+              "weighted": {
+                "accept": 0.5919819389745797,
+                "unknown": 0.3897956062907275,
+                "reject": 0.018222454734692802
+              }
+            },
+            "false": {
+              "n": 431,
+              "parents": 5,
+              "epochs": 10,
+              "counts": {
+                "accept": 0,
+                "unknown": 34,
+                "reject": 397
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.07888631090487239,
+                "reject": 0.9211136890951276
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.07727272727272727,
+                "reject": 0.9227272727272726
+              }
+            },
+            "correct_definite": 0.7573546058509262
+          },
+          "MissCount": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7126,
+                "unknown": 2662,
+                "reject": 90
+              },
+              "raw": {
+                "accept": 0.7214010933387326,
+                "unknown": 0.26948775055679286,
+                "reject": 0.00911115610447459
+              },
+              "weighted": {
+                "accept": 0.5938699963048673,
+                "unknown": 0.40041088793605617,
+                "reject": 0.005719115759076621
+              }
+            },
+            "false": {
+              "n": 431,
+              "parents": 5,
+              "epochs": 10,
+              "counts": {
+                "accept": 0,
+                "unknown": 182,
+                "reject": 249
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.4222737819025522,
+                "reject": 0.5777262180974478
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.4137420718816067,
+                "reject": 0.5862579281183931
+              }
+            },
+            "correct_definite": 0.5900639622116302
+          },
+          "BaseTail": {
+            "true": {
+              "n": 9878,
+              "parents": 6,
+              "epochs": 147,
+              "counts": {
+                "accept": 7141,
+                "unknown": 2692,
+                "reject": 45
+              },
+              "raw": {
+                "accept": 0.722919619356145,
+                "unknown": 0.2725248025916177,
+                "reject": 0.004555578052237295
+              },
+              "weighted": {
+                "accept": 0.5948003488487289,
+                "unknown": 0.40231384578223117,
+                "reject": 0.0028858053690399483
+              }
+            },
+            "false": {
+              "n": 431,
+              "parents": 5,
+              "epochs": 10,
+              "counts": {
+                "accept": 0,
+                "unknown": 193,
+                "reject": 238
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.44779582366589327,
+                "reject": 0.5522041763341067
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.43874207188160685,
+                "reject": 0.561257928118393
+              }
+            },
+            "correct_definite": 0.578029138483561
+          }
+        }
+      },
+      "missing_layers": [
+        [
+          "F2",
+          1
+        ],
+        [
+          "F2",
+          2
+        ]
+      ]
+    }
+  }
+}

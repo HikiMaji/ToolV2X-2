@@ -1,0 +1,6 @@
+{
+  "status": "interrupted_before_completion",
+  "reason": "conversation execution interrupted; no matching process and only binding/spec artifacts present on resume",
+  "exit_code": null,
+  "rule_changes": false
+}

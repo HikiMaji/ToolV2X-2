@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "meaning": "execution_complete_not_scientific_pass",
+  "regimes": {
+    "mixed": {
+      "Cond": "retained",
+      "MissCount": "not_retained",
+      "BaseTail": "not_retained"
+    },
+    "F1_only": {
+      "Cond": "retained",
+      "MissCount": "retained",
+      "BaseTail": "retained"
+    },
+    "F2_only": {
+      "Cond": "retained",
+      "MissCount": "retained",
+      "BaseTail": "not_retained"
+    }
+  }
+}

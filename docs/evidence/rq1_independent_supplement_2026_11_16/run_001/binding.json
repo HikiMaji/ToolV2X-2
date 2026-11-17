@@ -1,0 +1,119 @@
+{
+  "schema": "rq1_independent_supplement_v1",
+  "methods": [
+    "Count",
+    "D_zero",
+    "Cond",
+    "MissCount",
+    "BaseTail"
+  ],
+  "regimes": [
+    "mixed",
+    "F1_only",
+    "F2_only"
+  ],
+  "sources": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/manifest.json",
+      "bytes": 34546,
+      "sha256": "b67a69dbca28c3de46ab9b7c9c1578f0d4a8d5848adaa658cb41debe33d56361"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_independent_supplement_2026_11_16/SDS.md",
+      "bytes": 6782,
+      "sha256": "be40eccece0311f8b91941f5d7f8d37d1b8263fd5f8af1a44814ec5e12496862"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/cal.jsonl.gz",
+      "bytes": 15389048,
+      "sha256": "159470041cfe2cf35b42b758372c2721d619795bb6b065e46a6b6604361d3923"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/mixed/eval.jsonl.gz",
+      "bytes": 10951743,
+      "sha256": "1813e5c04b7ab536e0b5d3979f6bc07366a5fef3aa4b2887e61230098b9ee13a"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F1_only/cal.jsonl.gz",
+      "bytes": 5516569,
+      "sha256": "e6cb77761b38f86c040ecf53fe0552f952c73817cf6457a8f215d488b8d955e3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F1_only/eval.jsonl.gz",
+      "bytes": 6909505,
+      "sha256": "ce8451eeae6bf50cd9e241e30895997aaa52cc861ad38e31bf1f2e983b488774"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F2_only/cal.jsonl.gz",
+      "bytes": 4823696,
+      "sha256": "b14884055ab91f989cab6cb5cc48d24258e52eeb1540d640a0b579ed912efaf2"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/predictions/F2_only/eval.jsonl.gz",
+      "bytes": 7258075,
+      "sha256": "106e0b41342d1e3a97f44793ea306ea9283cc8433430b1b2360f63a223db96ad"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/calibration/mixed.json",
+      "bytes": 7418,
+      "sha256": "4c3f06c085019cf9d9cf26a49f70285a38d4b3ad2a333d7caf21af2a79ec2c9d"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report_corrected/mixed.json",
+      "bytes": 652801,
+      "sha256": "f95926236c09026ada88e64aec597546f67e83ed722e08bb22c84879302ef6a5"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/calibration/F1_only.json",
+      "bytes": 6234,
+      "sha256": "45351f1b1b4fdd71f786ed6565d1228d034d743fb994f192cb67dfde05e820ce"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report_corrected/F1_only.json",
+      "bytes": 566571,
+      "sha256": "a91163175909f633d2f05a90881f6c5f30293b14e711095861b0928aa2fc80d8"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/calibration/F2_only.json",
+      "bytes": 6636,
+      "sha256": "16636374586ec2fde78ed50b391e21f6a87e8b3e8cb7d545cd55e1e34727f373"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/report_corrected/F2_only.json",
+      "bytes": 564681,
+      "sha256": "dc7e1557c24700c2d328088ad8aac152ae3ba86aad6317689a85cf6457f8f08a"
+    }
+  ],
+  "code": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_independent_supplement.py",
+      "bytes": 16926,
+      "sha256": "a300d6ffc4459a3a036a8640459aadb554014b03dae109d55354722e598bc9c9"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/run.py",
+      "bytes": 34324,
+      "sha256": "8989514775ca6a43f284f60219b8f99d125f8d770341b9c2e25d08e680c3e813"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/run.py",
+      "bytes": 43457,
+      "sha256": "8b7e736893b92e73ed2e1261a52b4d02b4b6db812f13641bd19355969a91c8c7"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/no_miss_constant.py",
+      "bytes": 31352,
+      "sha256": "663cc6d9d6755b21a243afd1bdc2bebfab43eae80070df562fc13afabce926fe"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_report_freeze/run.py",
+      "bytes": 33702,
+      "sha256": "d3ea12b5fbc31d7c89f3edd5665d5b4c460839831f70a503255f25e1d1768cdd"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/data.py",
+      "bytes": 11249,
+      "sha256": "98962ba9eac554bc788465702d146c3ec2d5853cfd3ba1f035a1b112fbf9ba66"
+    }
+  ]
+}

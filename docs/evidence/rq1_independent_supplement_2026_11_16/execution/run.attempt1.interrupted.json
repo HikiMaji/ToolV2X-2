@@ -1,0 +1,7 @@
+{
+  "status": "interrupted_before_completion",
+  "reason": "conversation turn aborted; unified execution session no longer exists and no matching running process found",
+  "exit_code": null,
+  "command_commit": "9eb2c7c",
+  "recovery": "same frozen code/spec via --resume; no effect-driven change"
+}

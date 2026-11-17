@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "scripts.rq1_independent_supplement",
+    "--source",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_independent_supplement_2026_11_16/run_001",
+    "--spec",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_independent_supplement_2026_11_16/SDS.md",
+    "--resume"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "commit": "9eb2c7c70be22d29fc35d2c464cb8d696e6d8783",
+  "started_utc": "2026-11-16T15:51:57.442389+00:00",
+  "recovery_of": "attempt2_interrupted",
+  "rule_changes": false,
+  "memory_limit_gib": 120,
+  "cpu_quota": 16,
+  "gpu": "RTX 4090; not required for cached-score evaluation",
+  "exit_code": 0,
+  "elapsed_seconds": 167.91389268357307,
+  "finished_utc": "2026-11-16T15:54:45.356322+00:00"
+}

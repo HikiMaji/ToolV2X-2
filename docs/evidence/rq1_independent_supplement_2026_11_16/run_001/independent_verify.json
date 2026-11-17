@@ -1,0 +1,1289 @@
+{
+  "status": "passed",
+  "scope": "independent_complete_source_verification",
+  "regimes": {
+    "mixed": {
+      "calibration": {
+        "Cond": {
+          "base_true_reject": 0.04347567270369319,
+          "delta": 0.006524327296306816,
+          "tau": 22.302099285235826,
+          "added_true_reject_weight": 0.006473800639575036,
+          "enabled": true
+        },
+        "MissCount": {
+          "base_true_reject": 0.04347567270369319,
+          "delta": 0.006524327296306816,
+          "tau": 11,
+          "added_true_reject_weight": 0.005472339125046788,
+          "enabled": true
+        },
+        "BaseTail": {
+          "base_true_reject": 0.04347567270369319,
+          "delta": 0.006524327296306816,
+          "tau": 0.9593012468823272,
+          "added_true_reject_weight": 0.001137038926971407,
+          "enabled": true
+        }
+      },
+      "splits": {
+        "cal": {
+          "n_all_records": 73553,
+          "n_true_primary": 13960,
+          "n_false_primary": 1352,
+          "changed_all_records": {
+            "Cond": 634,
+            "MissCount": 486,
+            "BaseTail": 108
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8589,
+                  "unknown": 4889,
+                  "reject": 482
+                },
+                "weighted": {
+                  "accept": 0.589878007124104,
+                  "unknown": 0.3666463201722029,
+                  "reject": 0.04347567270369319
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 213,
+                  "reject": 1139
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.04090909090909091,
+                  "reject": 0.9590909090909091
+                }
+              },
+              "correct_definite": 0.7744844581075065
+            },
+            "D_zero": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8817,
+                  "unknown": 4482,
+                  "reject": 661
+                },
+                "weighted": {
+                  "accept": 0.6065017427637045,
+                  "unknown": 0.3436382525905432,
+                  "reject": 0.049860004645752395
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 1,
+                  "unknown": 115,
+                  "reject": 1236
+                },
+                "weighted": {
+                  "accept": 0.005555555555555556,
+                  "unknown": 0.05327987477110284,
+                  "reject": 0.9411645696733416
+                }
+              },
+              "correct_definite": 0.773833156218523
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8568,
+                  "unknown": 4801,
+                  "reject": 591
+                },
+                "weighted": {
+                  "accept": 0.5889115148105528,
+                  "unknown": 0.36113901184617897,
+                  "reject": 0.04994947334326823
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 144,
+                  "reject": 1208
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.027598905723905724,
+                  "reject": 0.9724010942760942
+                }
+              },
+              "correct_definite": 0.7806563045433235
+            },
+            "MissCount": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8547,
+                  "unknown": 4851,
+                  "reject": 562
+                },
+                "weighted": {
+                  "accept": 0.5868684687600938,
+                  "unknown": 0.36418351941116633,
+                  "reject": 0.04894801182873998
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 213,
+                  "reject": 1139
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.04090909090909091,
+                  "reject": 0.9590909090909091
+                }
+              },
+              "correct_definite": 0.7729796889255014
+            },
+            "BaseTail": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8589,
+                  "unknown": 4875,
+                  "reject": 496
+                },
+                "weighted": {
+                  "accept": 0.589878007124104,
+                  "unknown": 0.36550928124523147,
+                  "reject": 0.044612711630664596
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 213,
+                  "reject": 1139
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.04090909090909091,
+                  "reject": 0.9590909090909091
+                }
+              },
+              "correct_definite": 0.7744844581075065
+            }
+          }
+        },
+        "eval": {
+          "n_all_records": 50696,
+          "n_true_primary": 9878,
+          "n_false_primary": 784,
+          "changed_all_records": {
+            "Cond": 848,
+            "MissCount": 69,
+            "BaseTail": 137
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7091,
+                  "unknown": 2692,
+                  "reject": 95
+                },
+                "weighted": {
+                  "accept": 0.5904278603354833,
+                  "unknown": 0.40358898119053455,
+                  "reject": 0.005983158473982056
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 324,
+                  "reject": 457
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.4085755813953489,
+                  "reject": 0.5871630549682876
+                }
+              },
+              "correct_definite": 0.5887954576518855
+            },
+            "D_zero": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7244,
+                  "unknown": 2111,
+                  "reject": 523
+                },
+                "weighted": {
+                  "accept": 0.6001708284903847,
+                  "unknown": 0.36069509213576395,
+                  "reject": 0.03913407937385126
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 38,
+                  "unknown": 12,
+                  "reject": 734
+                },
+                "weighted": {
+                  "accept": 0.05397727272727273,
+                  "unknown": 0.017045454545454544,
+                  "reject": 0.9289772727272728
+                }
+              },
+              "correct_definite": 0.7645740506088288
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7079,
+                  "unknown": 2609,
+                  "reject": 190
+                },
+                "weighted": {
+                  "accept": 0.5894774569510833,
+                  "unknown": 0.39738291594021213,
+                  "reject": 0.013139627108704467
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 153,
+                  "reject": 628
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.20601876321353066,
+                  "reject": 0.7897198731501057
+                }
+              },
+              "correct_definite": 0.6895986650505945
+            },
+            "MissCount": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7078,
+                  "unknown": 2690,
+                  "reject": 110
+                },
+                "weighted": {
+                  "accept": 0.5896151670124319,
+                  "unknown": 0.40347132196972424,
+                  "reject": 0.006913511017843795
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 324,
+                  "reject": 457
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.4085755813953489,
+                  "reject": 0.5871630549682876
+                }
+              },
+              "correct_definite": 0.5883891109903597
+            },
+            "BaseTail": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7091,
+                  "unknown": 2668,
+                  "reject": 119
+                },
+                "weighted": {
+                  "accept": 0.5904278603354833,
+                  "unknown": 0.40207312536064777,
+                  "reject": 0.007499014303868837
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 323,
+                  "reject": 458
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.4071551268498943,
+                  "reject": 0.5885835095137422
+                }
+              },
+              "correct_definite": 0.5895056849246127
+            }
+          }
+        }
+      },
+      "retention": {
+        "Cond": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "MissCount": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": false,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": false,
+          "risk_eligible": true
+        },
+        "BaseTail": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": false,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": false,
+          "risk_eligible": true
+        },
+        "condition_attribution": true
+      }
+    },
+    "F1_only": {
+      "calibration": {
+        "Cond": {
+          "base_true_reject": 0.01311327907276767,
+          "delta": 0.02,
+          "tau": 19.833773200008995,
+          "added_true_reject_weight": 0.019893878797121126,
+          "enabled": true
+        },
+        "MissCount": {
+          "base_true_reject": 0.01311327907276767,
+          "delta": 0.02,
+          "tau": 13,
+          "added_true_reject_weight": 0.015631700209511986,
+          "enabled": true
+        },
+        "BaseTail": {
+          "base_true_reject": 0.01311327907276767,
+          "delta": 0.02,
+          "tau": 1.7021037109225914,
+          "added_true_reject_weight": 0.019645280243144388,
+          "enabled": true
+        }
+      },
+      "splits": {
+        "cal": {
+          "n_all_records": 24900,
+          "n_true_primary": 13960,
+          "n_false_primary": 89,
+          "changed_all_records": {
+            "Cond": 496,
+            "MissCount": 366,
+            "BaseTail": 833
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8476,
+                  "unknown": 5285,
+                  "reject": 199
+                },
+                "weighted": {
+                  "accept": 0.5837135362759811,
+                  "unknown": 0.4031731846512513,
+                  "reject": 0.01311327907276767
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7918567681379906
+            },
+            "D_zero": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8932,
+                  "unknown": 4411,
+                  "reject": 617
+                },
+                "weighted": {
+                  "accept": 0.6154756617618494,
+                  "unknown": 0.34145330799649654,
+                  "reject": 0.043071030241654054
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.8077378308809247
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8446,
+                  "unknown": 5052,
+                  "reject": 462
+                },
+                "weighted": {
+                  "accept": 0.5822992889634625,
+                  "unknown": 0.38469355316664877,
+                  "reject": 0.033007157869888795
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7911496444817312
+            },
+            "MissCount": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8472,
+                  "unknown": 5169,
+                  "reject": 319
+                },
+                "weighted": {
+                  "accept": 0.5834817381303663,
+                  "unknown": 0.38777328258735416,
+                  "reject": 0.02874497928227966
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7917408690651832
+            },
+            "BaseTail": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8476,
+                  "unknown": 5081,
+                  "reject": 403
+                },
+                "weighted": {
+                  "accept": 0.5837135362759811,
+                  "unknown": 0.3835279044081069,
+                  "reject": 0.03275855931591206
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7918567681379906
+            }
+          }
+        },
+        "eval": {
+          "n_all_records": 32019,
+          "n_true_primary": 9878,
+          "n_false_primary": 353,
+          "changed_all_records": {
+            "Cond": 1011,
+            "MissCount": 227,
+            "BaseTail": 399
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7142,
+                  "unknown": 2723,
+                  "reject": 13
+                },
+                "weighted": {
+                  "accept": 0.5950133512696653,
+                  "unknown": 0.40417496406420644,
+                  "reject": 0.0008116846661282269
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 180,
+                  "reject": 169
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.5328729806778587,
+                  "reject": 0.45576338295850494
+                }
+              },
+              "correct_definite": 0.5253883671140851
+            },
+            "D_zero": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7596,
+                  "unknown": 1930,
+                  "reject": 352
+                },
+                "weighted": {
+                  "accept": 0.6391578368418142,
+                  "unknown": 0.3365405773267329,
+                  "reject": 0.024301585831452827
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 70,
+                  "unknown": 8,
+                  "reject": 275
+                },
+                "weighted": {
+                  "accept": 0.19886363636363638,
+                  "unknown": 0.022727272727272728,
+                  "reject": 0.7784090909090909
+                }
+              },
+              "correct_definite": 0.7087834638754525
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7110,
+                  "unknown": 2515,
+                  "reject": 253
+                },
+                "weighted": {
+                  "accept": 0.5923196990898016,
+                  "unknown": 0.3903379931260084,
+                  "reject": 0.017342307784189923
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 120,
+                  "reject": 229
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.3624184352233133,
+                  "reject": 0.6262179284130504
+                }
+              },
+              "correct_definite": 0.6092688137514259
+            },
+            "MissCount": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7142,
+                  "unknown": 2689,
+                  "reject": 47
+                },
+                "weighted": {
+                  "accept": 0.5950133512696653,
+                  "unknown": 0.40205370185097944,
+                  "reject": 0.0029329468793552202
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 165,
+                  "reject": 184
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.49025934431422236,
+                  "reject": 0.4983770193221413
+                }
+              },
+              "correct_definite": 0.5466951852959032
+            },
+            "BaseTail": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7142,
+                  "unknown": 2689,
+                  "reject": 47
+                },
+                "weighted": {
+                  "accept": 0.5950133512696653,
+                  "unknown": 0.40200885126395536,
+                  "reject": 0.0029777974663792984
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 148,
+                  "reject": 201
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.42045454545454547,
+                  "reject": 0.5681818181818182
+                }
+              },
+              "correct_definite": 0.5815975847257417
+            }
+          }
+        }
+      },
+      "retention": {
+        "Cond": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "MissCount": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "BaseTail": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "condition_attribution": true
+      }
+    },
+    "F2_only": {
+      "calibration": {
+        "Cond": {
+          "base_true_reject": 0.025091355115513927,
+          "delta": 0.02,
+          "tau": 19.761596949333658,
+          "added_true_reject_weight": 0.019793658876649384,
+          "enabled": true
+        },
+        "MissCount": {
+          "base_true_reject": 0.025091355115513927,
+          "delta": 0.02,
+          "tau": 11,
+          "added_true_reject_weight": 0.019456884259581867,
+          "enabled": true
+        },
+        "BaseTail": {
+          "base_true_reject": 0.025091355115513927,
+          "delta": 0.02,
+          "tau": 1.3852135011369309,
+          "added_true_reject_weight": 0.00014347202295552367,
+          "enabled": true
+        }
+      },
+      "splits": {
+        "cal": {
+          "n_all_records": 22606,
+          "n_true_primary": 13960,
+          "n_false_primary": 19,
+          "changed_all_records": {
+            "Cond": 533,
+            "MissCount": 638,
+            "BaseTail": 3
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8896,
+                  "unknown": 4815,
+                  "reject": 249
+                },
+                "weighted": {
+                  "accept": 0.6102959340852662,
+                  "unknown": 0.36461271079922,
+                  "reject": 0.025091355115513927
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6998848091478962
+            },
+            "D_zero": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8373,
+                  "unknown": 5209,
+                  "reject": 378
+                },
+                "weighted": {
+                  "accept": 0.5717336022065174,
+                  "unknown": 0.3993693202666057,
+                  "reject": 0.028897077526876994
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 6,
+                  "reject": 13
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.3157894736842105,
+                  "reject": 0.6842105263157894
+                }
+              },
+              "correct_definite": 0.6279720642611534
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8824,
+                  "unknown": 4606,
+                  "reject": 530
+                },
+                "weighted": {
+                  "accept": 0.6057767332410146,
+                  "unknown": 0.34933825276682223,
+                  "reject": 0.04488501399216331
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6976252087257704
+            },
+            "MissCount": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8772,
+                  "unknown": 4689,
+                  "reject": 499
+                },
+                "weighted": {
+                  "accept": 0.6017626459566325,
+                  "unknown": 0.3536891146682717,
+                  "reject": 0.0445482393750958
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6956181650835794
+            },
+            "BaseTail": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8896,
+                  "unknown": 4814,
+                  "reject": 250
+                },
+                "weighted": {
+                  "accept": 0.6102959340852662,
+                  "unknown": 0.3644692387762644,
+                  "reject": 0.025234827138469453
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6998848091478962
+            }
+          }
+        },
+        "eval": {
+          "n_all_records": 33836,
+          "n_true_primary": 9878,
+          "n_false_primary": 431,
+          "changed_all_records": {
+            "Cond": 1006,
+            "MissCount": 178,
+            "BaseTail": 17
+          },
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7141,
+                  "unknown": 2694,
+                  "reject": 43
+                },
+                "weighted": {
+                  "accept": 0.5948003488487289,
+                  "unknown": 0.4024488552841657,
+                  "reject": 0.002750795867105381
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 194,
+                  "reject": 237
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.4410147991543341,
+                  "reject": 0.558985200845666
+                }
+              },
+              "correct_definite": 0.5768927748471975
+            },
+            "D_zero": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 6668,
+                  "unknown": 2991,
+                  "reject": 219
+                },
+                "weighted": {
+                  "accept": 0.5423615288627036,
+                  "unknown": 0.43978076448081793,
+                  "reject": 0.017857706656478345
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 25,
+                  "reject": 406
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.05681818181818182,
+                  "reject": 0.9431818181818182
+                }
+              },
+              "correct_definite": 0.7427716735222609
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7107,
+                  "unknown": 2505,
+                  "reject": 266
+                },
+                "weighted": {
+                  "accept": 0.5919819389745796,
+                  "unknown": 0.38979560629072746,
+                  "reject": 0.0182224547346928
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 34,
+                  "reject": 397
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.07727272727272728,
+                  "reject": 0.9227272727272728
+                }
+              },
+              "correct_definite": 0.7573546058509262
+            },
+            "MissCount": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7126,
+                  "unknown": 2662,
+                  "reject": 90
+                },
+                "weighted": {
+                  "accept": 0.5938699963048671,
+                  "unknown": 0.40041088793605617,
+                  "reject": 0.005719115759076622
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 182,
+                  "reject": 249
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.41374207188160683,
+                  "reject": 0.5862579281183933
+                }
+              },
+              "correct_definite": 0.5900639622116302
+            },
+            "BaseTail": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7141,
+                  "unknown": 2692,
+                  "reject": 45
+                },
+                "weighted": {
+                  "accept": 0.5948003488487289,
+                  "unknown": 0.4023138457822311,
+                  "reject": 0.0028858053690399474
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 193,
+                  "reject": 238
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.43874207188160685,
+                  "reject": 0.5612579281183933
+                }
+              },
+              "correct_definite": 0.5780291384835611
+            }
+          }
+        }
+      },
+      "retention": {
+        "Cond": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "MissCount": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": true,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": true,
+          "risk_eligible": true
+        },
+        "BaseTail": {
+          "gates": {
+            "true_reject": true,
+            "false_accept": true,
+            "family_false_accept": true,
+            "true_accept_loss": true,
+            "CD_gain": false,
+            "never_increase": true,
+            "paired_delay": true,
+            "active_and_changed": true
+          },
+          "retained": false,
+          "risk_eligible": true
+        },
+        "condition_attribution": true
+      }
+    }
+  },
+  "implementation": "standard_library_only_no_production_calibration_or_metrics_imports",
+  "limits": [
+    "development_evidence_not_independent_test",
+    "p_D_reconstruction_not_repeated"
+  ]
+}
