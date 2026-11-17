@@ -21,6 +21,19 @@ MODEL=dict(mean=[0.]*7,scale=[1.]*7,coef=[0.]*7,intercept=math.log(4.))
 
 
 class JointTest(unittest.TestCase):
+    def test_external_unrealizable_status_is_used_without_hiding_missing_complete_rows(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);source=root/'scores';external=root/'external'
+            job=dict(job_id='external',split='cal',rows_path=str(external/'rows.jsonl.gz'),
+                     status_path=str(external/'complete.json'))
+            module.freeze.save(source/'manifest.json',dict(jobs=[job]))
+            module.data.atomic_json(external/'complete.json',dict(status='UNREALIZABLE'))
+            config=dict(source_scores=str(source))
+            self.assertEqual(list(module.raw_jobs(config,'cal')),[])
+            (external/'complete.json').write_text('{"status":"COMPLETE"}')
+            with self.assertRaises(FileNotFoundError):
+                module.source_records(config,'cal',MODEL,.25)
+
     def test_distribution_and_unknown_marginalization(self):
         p=[.3,.8,.6];groups=[[0,1,2]]
         mass=sum(math.exp(module.log_probability(u,p,groups,.75))

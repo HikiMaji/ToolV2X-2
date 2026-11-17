@@ -312,8 +312,60 @@ def verify_rho(config, run):
             expected = math.fsum(-ww[i]*emission(*predictions[i],rho) for i in indices) / math.fsum(ww[i] for i in indices)
             got = next(v for k,v in actual['by_parent'][parent]['objectives'].items() if float(k)==rho)
             close(got,expected,('rho parent loss',parent,rho))
+    assert actual['n_rows']==len(records)
+    close(actual['weight_sum'],math.fsum(ww),'rho weight sum')
+    patterns=Counter();informative_parents=set();informative_epochs=set();n_informative=0
+    for parent in fit_parents:
+        pp=Counter();count=0
+        for r,(u,p,groups) in zip(records,predictions):
+            if r['parent']!=parent:continue
+            current=Counter()
+            for group in groups:
+                values=[u[i] for i in group if u[i]>=0]
+                if len(values)>1:
+                    current['common_00' if all(v==0 for v in values) else 'common_11' if all(v==1 for v in values) else 'common_mixed']+=1
+            pp.update(current)
+            if current:
+                count+=1;informative_parents.add(parent);informative_epochs.add((parent,)+ep(r))
+        assert actual['by_parent'][parent]['informative_frames']==count
+        assert actual['by_parent'][parent]['patterns']==dict(pp)
+        n_informative+=count;patterns.update(pp)
+    subset(actual['coverage'],dict(patterns=dict(patterns),informative_frames=n_informative,
+        informative_parents=sorted(informative_parents),informative_epochs=len(informative_epochs)),'rho coverage')
+    for expected,got in zip(source_records,actual['source_folds']):
+        assert got['parent']==expected['parent']
+        assert got['normal']['path']==expected['normal']
+        assert got['rows_path']['path']==expected['rows_path']
     return dict(rho=selected,n_supervision=len(records),informative=informative,objectives=losses,
                 source_folds=source_records), manifest
+
+
+def source_inventory(config,run):
+    """One manifest-level status check; explicit external paths take precedence."""
+    result={}
+    for split,name in (('cal','source_scores'),('eval','source_report')):
+        source=Path(config[name]);manifest=read(source/'manifest.json');counts=Counter()
+        for job in manifest['jobs']:
+            if job['split']!=split:continue
+            path=Path(job.get('rows_path',source/'jobs'/job['job_id']/'rows.jsonl.gz'))
+            if path.exists():counts['rows_available']+=1;continue
+            status=Path(job.get('status_path',source/'jobs'/job['job_id']/'complete.json'))
+            assert read(status)['status']=='UNREALIZABLE',(job['job_id'],'missing rows without unrealizable status',str(status))
+            counts['UNREALIZABLE']+=1
+        result[split]=dict(counts)
+    if (run/'confirmation').exists():
+        root=run/'confirmation';manifest=read(root/'manifest.json');complete=read(root/'prepare.complete.json')
+        assert manifest['jobs']==config['jobs']
+        assert set(complete['jobs'])=={j['job_id'] for j in config['jobs']}
+        statuses={}
+        for job in manifest['jobs']:
+            marker=read(root/'jobs'/job['job_id']/'complete.json')
+            assert marker==complete['jobs'][job['job_id']]
+            assert marker['status'] in ('COMPLETE','UNREALIZABLE')
+            statuses[job['job_id']]=marker['status']
+        result['confirmation']=dict(counts=dict(Counter(statuses.values())),tasks=statuses,
+                                    resolved_source=str(root.resolve()))
+    return result
 
 
 def transitions(rs,method):
@@ -494,6 +546,8 @@ def self_check():
 def verify(config_path,run):
     config=read(config_path);run=Path(run)
     proof,manifest=verify_rho(config,run)
+    proof['source_inventory']=source_inventory(config,run)
+    proof['rho_artifact_source']=str((run/'rho.json').resolve())
     if proof['rho'] is None:
         assert not (run/'confirmation').exists()
         proof.update(status='unestimable_verified',meaning='not_a_successful_joint_experiment')
@@ -513,6 +567,12 @@ def verify(config_path,run):
             print('independently verified',domain,regime,flush=True)
     summary=read(run/'summary.json')
     assert summary['rho']==read(run/'rho.json')
+    if rho>0:
+        actual=summary['additional_task_statuses']
+        expected=proof['source_inventory']['confirmation']['tasks']
+        # Production stores complete terminal records to retain constructability details.
+        assert set(actual)==set(expected)
+        assert {k:(v['status'] if isinstance(v,dict) else v) for k,v in actual.items()}==expected
     statuses=[]
     for domain in domains:
         for regime in REGIMES:

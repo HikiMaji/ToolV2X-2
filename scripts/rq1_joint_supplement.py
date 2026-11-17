@@ -251,7 +251,7 @@ def raw_jobs(config,split):
         if job['split']!=split:continue
         path=Path(job.get('rows_path',source/'jobs'/job['job_id']/'rows.jsonl.gz'))
         if not path.exists():
-            status=freeze.read(source/'jobs'/job['job_id']/'complete.json')
+            status=freeze.read(Path(job.get('status_path',source/'jobs'/job['job_id']/'complete.json')))
             if status['status']=='UNREALIZABLE':continue
         yield job,path
 
