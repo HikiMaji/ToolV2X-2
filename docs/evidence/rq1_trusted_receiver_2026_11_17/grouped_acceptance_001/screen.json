@@ -1,0 +1,1124 @@
+{
+  "status": "COMPLETE",
+  "regimes": {
+    "mixed": {
+      "go": true,
+      "methods": {
+        "LocalCount": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.4656071974660786,
+          "new_tauC": 1.0103941954295956,
+          "old": {
+            "true_accept": 0.7108054728195543,
+            "remote_true_accept": 0.09479626572773404,
+            "false_accept": {
+              "overall": 0.012500000000000002,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.05000000000000001,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.25000000000000006,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.0,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "new": {
+            "true_accept": 0.6962139980237084,
+            "remote_true_accept": 0.08020479093188818,
+            "false_accept": {
+              "overall": 0.0022727272727272726,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.00909090909090909,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.045454545454545456,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.0,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "true_accept_loss": 0.014591474795845882,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F1/1": 0.0,
+            "F1/1/train/2021_08_18_22_16_12": 0.0,
+            "F1/1/train/2021_08_20_20_39_00": 0.0,
+            "F1/1/train/2021_08_21_22_21_37": 0.0,
+            "F1/1/train/2021_08_22_22_30_58": 0.0,
+            "F1/2": 0.0,
+            "F1/2/test/2021_08_22_07_52_02": 0.0,
+            "F1/2/train/2021_08_18_22_16_12": 0.0,
+            "F1/2/train/2021_08_20_20_39_00": 0.0,
+            "F1/2/train/2021_08_21_22_21_37": 0.0,
+            "F1/2/train/2021_08_22_22_30_58": 0.0,
+            "F2/1": 0.0,
+            "F2/1/train/2021_08_20_20_39_00": 0.0,
+            "F2/1/train/2021_08_22_22_30_58": 0.0,
+            "F2/2": 0.0,
+            "F2/2/train/2021_08_20_20_39_00": 0.0,
+            "F2/2/train/2021_08_21_22_21_37": 0.0,
+            "F2/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 586,
+              "parents": 5,
+              "entities": 14,
+              "epochs": 14,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_18_22_16_12": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_21_22_21_37": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_22_22_30_58": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/test/2021_08_22_07_52_02": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_18_22_16_12": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_21_22_21_37": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_22_22_30_58": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_21_22_21_37": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 32682,
+            "accept/unknown": 791,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 14221,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 2136
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        },
+        "LocalCond": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.4656071974660786,
+          "new_tauC": 1.0103941954295956,
+          "old": {
+            "true_accept": 0.7067978103714327,
+            "remote_true_accept": 0.09078860327961241,
+            "false_accept": {
+              "overall": 0.012500000000000002,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.05000000000000001,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.25000000000000006,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.0,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "new": {
+            "true_accept": 0.6935882412381921,
+            "remote_true_accept": 0.07757903414637182,
+            "false_accept": {
+              "overall": 0.0022727272727272726,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.00909090909090909,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.045454545454545456,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.0,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "true_accept_loss": 0.013209569133240673,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F1/1": 0.0,
+            "F1/1/train/2021_08_18_22_16_12": 0.0,
+            "F1/1/train/2021_08_20_20_39_00": 0.0,
+            "F1/1/train/2021_08_21_22_21_37": 0.0,
+            "F1/1/train/2021_08_22_22_30_58": 0.0,
+            "F1/2": 0.0,
+            "F1/2/test/2021_08_22_07_52_02": 0.0,
+            "F1/2/train/2021_08_18_22_16_12": 0.0,
+            "F1/2/train/2021_08_20_20_39_00": 0.0,
+            "F1/2/train/2021_08_21_22_21_37": 0.0,
+            "F1/2/train/2021_08_22_22_30_58": 0.0,
+            "F2/1": 0.0,
+            "F2/1/train/2021_08_20_20_39_00": 0.0,
+            "F2/1/train/2021_08_22_22_30_58": 0.0,
+            "F2/2": 0.0,
+            "F2/2/train/2021_08_20_20_39_00": 0.0,
+            "F2/2/train/2021_08_21_22_21_37": 0.0,
+            "F2/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 586,
+              "parents": 5,
+              "entities": 14,
+              "epochs": 14,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_18_22_16_12": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_21_22_21_37": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_22_22_30_58": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/test/2021_08_22_07_52_02": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_18_22_16_12": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_21_22_21_37": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_22_22_30_58": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_21_22_21_37": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 32556,
+            "accept/unknown": 655,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 13414,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 3205
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        }
+      }
+    },
+    "F1_only": {
+      "go": true,
+      "methods": {
+        "LocalCount": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.31286820953213657,
+          "new_tauC": 1.6729450801188084,
+          "old": {
+            "true_accept": 0.7089861735856646,
+            "remote_true_accept": 0.09297696649384435,
+            "false_accept": {
+              "overall": 0.025000000000000005,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.05000000000000001,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.25000000000000006,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "new": {
+            "true_accept": 0.6892214229428151,
+            "remote_true_accept": 0.07321221585099483,
+            "false_accept": {
+              "overall": 0.004545454545454545,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.00909090909090909,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.045454545454545456,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "true_accept_loss": 0.01976475064284955,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F1/1": 0.0,
+            "F1/1/train/2021_08_18_22_16_12": 0.0,
+            "F1/1/train/2021_08_20_20_39_00": 0.0,
+            "F1/1/train/2021_08_21_22_21_37": 0.0,
+            "F1/1/train/2021_08_22_22_30_58": 0.0,
+            "F1/2": 0.0,
+            "F1/2/test/2021_08_22_07_52_02": 0.0,
+            "F1/2/train/2021_08_18_22_16_12": 0.0,
+            "F1/2/train/2021_08_20_20_39_00": 0.0,
+            "F1/2/train/2021_08_21_22_21_37": 0.0,
+            "F1/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 388,
+              "parents": 5,
+              "entities": 9,
+              "epochs": 9,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_18_22_16_12": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_21_22_21_37": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_22_22_30_58": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/test/2021_08_22_07_52_02": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_18_22_16_12": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_21_22_21_37": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 25259,
+            "accept/unknown": 883,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 10112,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 1600
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        },
+        "LocalCond": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.31286820953213657,
+          "new_tauC": 1.6729450801188084,
+          "old": {
+            "true_accept": 0.7049785111375431,
+            "remote_true_accept": 0.08896930404572277,
+            "false_accept": {
+              "overall": 0.025000000000000005,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.05000000000000001,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.25000000000000006,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "new": {
+            "true_accept": 0.6872496884688929,
+            "remote_true_accept": 0.0712404813770726,
+            "false_accept": {
+              "overall": 0.004545454545454545,
+              "F1/1": 0.0,
+              "F1/1/train/2021_08_18_22_16_12": 0.0,
+              "F1/1/train/2021_08_20_20_39_00": 0.0,
+              "F1/1/train/2021_08_21_22_21_37": 0.0,
+              "F1/1/train/2021_08_22_22_30_58": 0.0,
+              "F1/2": 0.00909090909090909,
+              "F1/2/test/2021_08_22_07_52_02": 0.0,
+              "F1/2/train/2021_08_18_22_16_12": 0.0,
+              "F1/2/train/2021_08_20_20_39_00": 0.045454545454545456,
+              "F1/2/train/2021_08_21_22_21_37": 0.0,
+              "F1/2/train/2021_08_22_22_30_58": 0.0
+            }
+          },
+          "true_accept_loss": 0.017728822668650168,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F1/1": 0.0,
+            "F1/1/train/2021_08_18_22_16_12": 0.0,
+            "F1/1/train/2021_08_20_20_39_00": 0.0,
+            "F1/1/train/2021_08_21_22_21_37": 0.0,
+            "F1/1/train/2021_08_22_22_30_58": 0.0,
+            "F1/2": 0.0,
+            "F1/2/test/2021_08_22_07_52_02": 0.0,
+            "F1/2/train/2021_08_18_22_16_12": 0.0,
+            "F1/2/train/2021_08_20_20_39_00": 0.0,
+            "F1/2/train/2021_08_21_22_21_37": 0.0,
+            "F1/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 388,
+              "parents": 5,
+              "entities": 9,
+              "epochs": 9,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_18_22_16_12": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_21_22_21_37": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/1/train/2021_08_22_22_30_58": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/test/2021_08_22_07_52_02": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_18_22_16_12": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_21_22_21_37": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F1/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 25192,
+            "accept/unknown": 747,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 9495,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 2420
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        }
+      }
+    },
+    "F2_only": {
+      "go": true,
+      "methods": {
+        "LocalCount": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.5488541568464971,
+          "new_tauC": -0.42441317116343535,
+          "old": {
+            "true_accept": 0.7143354145098132,
+            "remote_true_accept": 0.09832620741799288,
+            "false_accept": {
+              "overall": 0.01893939393939394,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.03787878787878788,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.11363636363636365
+            }
+          },
+          "new": {
+            "true_accept": 0.7132750774314288,
+            "remote_true_accept": 0.09726587033960857,
+            "false_accept": {
+              "overall": 0.007575757575757576,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.015151515151515152,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.045454545454545456
+            }
+          },
+          "true_accept_loss": 0.0010603370783843769,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F2/1": 0.0,
+            "F2/1/train/2021_08_20_20_39_00": 0.0,
+            "F2/1/train/2021_08_22_22_30_58": 0.0,
+            "F2/2": 0.0,
+            "F2/2/train/2021_08_20_20_39_00": 0.0,
+            "F2/2/train/2021_08_21_22_21_37": 0.0,
+            "F2/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 198,
+              "parents": 3,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_22_22_30_58": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_21_22_21_37": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 20558,
+            "accept/unknown": 57,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 8379,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 1063
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        },
+        "LocalCond": {
+          "status": "candidate",
+          "go": true,
+          "checks": {
+            "risk": true,
+            "true_accept_loss": true,
+            "remote_true_accept": true,
+            "local_feasible": true,
+            "false_coverage": true
+          },
+          "old_tauC": -0.5563316464376187,
+          "new_tauC": -0.42441317116343535,
+          "old": {
+            "true_accept": 0.7102978205441527,
+            "remote_true_accept": 0.09428861345233239,
+            "false_accept": {
+              "overall": 0.022727272727272728,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.045454545454545456,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.13636363636363638
+            }
+          },
+          "new": {
+            "true_accept": 0.7092917913169696,
+            "remote_true_accept": 0.09328258422514932,
+            "false_accept": {
+              "overall": 0.007575757575757576,
+              "F2/1": 0.0,
+              "F2/1/train/2021_08_20_20_39_00": 0.0,
+              "F2/1/train/2021_08_22_22_30_58": 0.0,
+              "F2/2": 0.015151515151515152,
+              "F2/2/train/2021_08_20_20_39_00": 0.0,
+              "F2/2/train/2021_08_21_22_21_37": 0.0,
+              "F2/2/train/2021_08_22_22_30_58": 0.045454545454545456
+            }
+          },
+          "true_accept_loss": 0.0010060292271830695,
+          "missing_layers": [],
+          "local_false_accept": {
+            "overall": 0.0,
+            "F2/1": 0.0,
+            "F2/1/train/2021_08_20_20_39_00": 0.0,
+            "F2/1/train/2021_08_22_22_30_58": 0.0,
+            "F2/2": 0.0,
+            "F2/2/train/2021_08_20_20_39_00": 0.0,
+            "F2/2/train/2021_08_21_22_21_37": 0.0,
+            "F2/2/train/2021_08_22_22_30_58": 0.0
+          },
+          "group_support": {
+            "overall": {
+              "rows": 198,
+              "parents": 3,
+              "entities": 5,
+              "epochs": 5,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_20_20_39_00": {
+              "rows": 42,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/1/train/2021_08_22_22_30_58": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_20_20_39_00": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_21_22_21_37": {
+              "rows": 34,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            },
+            "F2/2/train/2021_08_22_22_30_58": {
+              "rows": 44,
+              "parents": 1,
+              "entities": 1,
+              "epochs": 1,
+              "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+            }
+          },
+          "true_support": {
+            "rows": 13960,
+            "parents": 5,
+            "entities": 132,
+            "epochs": 142,
+            "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+          },
+          "transitions": {
+            "accept/accept": 20378,
+            "accept/unknown": 40,
+            "accept/reject": 0,
+            "unknown/accept": 0,
+            "unknown/unknown": 7984,
+            "unknown/reject": 0,
+            "reject/accept": 0,
+            "reject/unknown": 0,
+            "reject/reject": 1655
+          },
+          "limits": {
+            "false_accept": 0.05,
+            "true_accept_loss": 0.02
+          }
+        }
+      }
+    }
+  },
+  "go_regimes": [
+    "mixed",
+    "F1_only",
+    "F2_only"
+  ],
+  "scope": "empirical cal screen, not eval evidence or population risk guarantee"
+}

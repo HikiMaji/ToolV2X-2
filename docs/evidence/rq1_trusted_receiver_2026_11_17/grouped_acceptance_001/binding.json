@@ -1,0 +1,63 @@
+{
+  "schema": "rq1_grouped_acceptance_cal_screen_v1",
+  "source_run": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002",
+  "sources": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/mixed/cal.jsonl.gz",
+      "bytes": 3046581,
+      "sha256": "8728922452a5538ac45a03c7582dcde922231c70fe1d66b7f81d387c155e7c49"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F1_only/cal.jsonl.gz",
+      "bytes": 2289291,
+      "sha256": "30c517a01f02945c527ea8fefd0d3904e98f3cc069a4a620a3c911560dff5fea"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F2_only/cal.jsonl.gz",
+      "bytes": 1814289,
+      "sha256": "c55c843788bfd54be38920c3da76a7ff1772facbe90a47f6db35a78076922c95"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/mixed.json",
+      "bytes": 9070,
+      "sha256": "5ae3c449eff01a7ea26a149c26c3b0271c480be477c31edb1438776b00ff6430"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/F1_only.json",
+      "bytes": 7005,
+      "sha256": "b207ea21bb1d790b5c7b822a6481f7ce291699f97fc423ca5cd9b36dcccce55e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/F2_only.json",
+      "bytes": 7000,
+      "sha256": "2dbf66ec48ae751a11704ab07d51503eea307968f7c317e3fe5c3a1142353864"
+    }
+  ],
+  "code": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_trusted_receiver/grouped_acceptance.py",
+      "bytes": 7785,
+      "sha256": "00c52bc672b5cb311cd9732f2148425b2ab802abd7ca8a945e3ec0a932b83f82"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_trusted_receiver/run.py",
+      "bytes": 44169,
+      "sha256": "1cc00d40e829abd1f0067c6082d7a5bee60b8b9918590dec7bfbb578bbc3d829"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/run.py",
+      "bytes": 34324,
+      "sha256": "8989514775ca6a43f284f60219b8f99d125f8d770341b9c2e25d08e680c3e813"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/data.py",
+      "bytes": 11249,
+      "sha256": "98962ba9eac554bc788465702d146c3ec2d5853cfd3ba1f035a1b112fbf9ba66"
+    }
+  ],
+  "limits": {
+    "false_accept": 0.05,
+    "true_accept_loss": 0.02
+  },
+  "scope": "cal only; source scores and tauF/tauP/tauR fixed; no eval read or predictions written"
+}

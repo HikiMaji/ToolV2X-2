@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "-m",
+    "scripts.rq1_trusted_receiver.run",
+    "--stage",
+    "evaluate",
+    "--config",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/method_inputs.json",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "commit": "d5f81baa71d349239df60372f9e8f32bbae849a9",
+  "started_utc": "2026-11-17T09:46:50.177845+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 196.74755163304508,
+  "finished_utc": "2026-11-17T09:50:06.926960+00:00"
+}

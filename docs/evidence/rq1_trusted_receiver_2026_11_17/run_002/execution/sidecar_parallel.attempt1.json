@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "docs/REALLY_MAYBE/rq1_trusted_receiver_2026_11_17/parallel_sidecars.py",
+    "--source",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002",
+    "--workers",
+    "12"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "code_snapshot": "b5aa3ca",
+  "started_utc": "2026-11-17T09:37:23.158961+00:00",
+  "reuse": "same frozen inputs, shape and receiver caches from run_001; independent parents in parallel",
+  "exit_code": 0,
+  "elapsed_seconds": 437.87607244960964,
+  "finished_utc": "2026-11-17T09:44:41.035187+00:00"
+}

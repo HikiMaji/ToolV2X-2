@@ -1,0 +1,21 @@
+{
+  "commit": "b5aa3ca",
+  "reason": "run reviewed Task1 snapshot while Task2 extends the live runner",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/execution/trusted_receiver_prepare_snapshot/__init__.py",
+      "bytes": 80,
+      "sha256": "b3b8d731a0ad420a8a3147e92859413425e36a69f2af2605b20173740a67e3ae"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/execution/trusted_receiver_prepare_snapshot/local.py",
+      "bytes": 8453,
+      "sha256": "89b05995f996aa4c1bef34d4e4eac84726a84d326c9a14b4d82c62645822c7e5"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/execution/trusted_receiver_prepare_snapshot/run.py",
+      "bytes": 15153,
+      "sha256": "273ef7946b95d5965d0bae8d09e66584e43a8052d07b2d2b36b520c0b6ede616"
+    }
+  ]
+}

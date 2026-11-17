@@ -1,0 +1,13 @@
+{
+  "shape_hwl": [
+    1.5313823384235639,
+    1.9904686586233127,
+    4.546405334748792
+  ],
+  "parents": 6,
+  "tracks": 198,
+  "observations": 14391,
+  "weighting": "equal parent, local track within parent, time within track",
+  "anchor": "native bottom xyz",
+  "voxel_m": 0.25
+}

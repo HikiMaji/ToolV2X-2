@@ -1,0 +1,4898 @@
+{
+  "schema": "trusted_receiver_independent_audit_v1",
+  "tolerance": 1e-10,
+  "implementation": "stdlib only; no project imports; no threshold selection",
+  "input_resolution": {
+    "planned": 87,
+    "statuses": {
+      "COMPLETE": 69,
+      "UNREALIZABLE": 18
+    },
+    "cal_completed_parent_counts": {
+      "F1/k1": 5,
+      "F1/k2": 5,
+      "F2/k1": 3,
+      "F2/k2": 3
+    },
+    "all_statuses": {
+      "410fec48a6a1488e": "COMPLETE",
+      "6abeb23cc2436098": "COMPLETE",
+      "7f3083bc00e147fb": "COMPLETE",
+      "8d87c21350a7bb56": "COMPLETE",
+      "a07df9510c2cf7e9": "COMPLETE",
+      "bb30e22f91b2202b": "COMPLETE",
+      "c26e6be8af43118d": "COMPLETE",
+      "d7ad3e46c350ed76": "COMPLETE",
+      "de2106d309204cd3": "COMPLETE",
+      "f101ef178468aaf2": "COMPLETE",
+      "866e3aba5f4dff86": "COMPLETE",
+      "60b528984765d9ec": "COMPLETE",
+      "13df4899473dbad7": "COMPLETE",
+      "343d46fc7b709925": "COMPLETE",
+      "4c23cf38a32e4c03": "COMPLETE",
+      "9e76a1233ee15da2": "UNREALIZABLE",
+      "3d440fda9f28bd0c": "COMPLETE",
+      "081ab23c9af4df7b": "COMPLETE",
+      "d19198700cc149ab": "UNREALIZABLE",
+      "0fb1d83f1379ee38": "UNREALIZABLE",
+      "e8272405d9c4febe": "UNREALIZABLE",
+      "6b5f48a473625f6a": "COMPLETE",
+      "7f9ecfcfb5121f3b": "COMPLETE",
+      "c9ffce8e6d774cc2": "COMPLETE",
+      "fe7756637d7d1e37": "COMPLETE",
+      "e6fb05ecdfdf7689": "COMPLETE",
+      "610c6969cbff68f1": "COMPLETE",
+      "867e622dd7109055": "COMPLETE",
+      "56e4a4c33d630705": "COMPLETE",
+      "4e9e5385cb7b3c42": "COMPLETE",
+      "ac63c0dbafec70c8": "COMPLETE",
+      "9977adc395615b5f": "COMPLETE",
+      "d28783906a6491ed": "COMPLETE",
+      "0456f0317d17e637": "COMPLETE",
+      "472b36aad14a9034": "COMPLETE",
+      "e3b06bea6b587ea5": "COMPLETE",
+      "ee0edf9ae0ad9a0b": "COMPLETE",
+      "b296d72cbe8ecf5b": "COMPLETE",
+      "bb07ed9d46669fc1": "COMPLETE",
+      "7dc2142cdafcc57c": "COMPLETE",
+      "ae08703103d4e897": "COMPLETE",
+      "51a1d02ed3123dab": "COMPLETE",
+      "f71360786334d837": "COMPLETE",
+      "2c92f6c77f619bb5": "COMPLETE",
+      "291116beda3a91d4": "COMPLETE",
+      "d06f9cf7714148b7": "UNREALIZABLE",
+      "0d3d5e544df2809b": "COMPLETE",
+      "e30cb370fd82c41d": "COMPLETE",
+      "e64b44b3a5da639d": "COMPLETE",
+      "16492d5459b299e2": "COMPLETE",
+      "168f49cfa73fa87d": "COMPLETE",
+      "8ad1faacc6213976": "COMPLETE",
+      "96f2a9d4db3c1abc": "UNREALIZABLE",
+      "d056b3c9bb7083aa": "UNREALIZABLE",
+      "bafbf36b53a27e3a": "UNREALIZABLE",
+      "f08aca469bdddac5": "UNREALIZABLE",
+      "d1699f5ab6dafcdc": "COMPLETE",
+      "a9b3a10f6a97eed1": "UNREALIZABLE",
+      "d14371a69054b6c6": "UNREALIZABLE",
+      "b5c410b66a3125f2": "UNREALIZABLE",
+      "06b0901b84d689b0": "UNREALIZABLE",
+      "b09efa93b2594a26": "COMPLETE",
+      "09d9c1da704f13c4": "COMPLETE",
+      "534aa0bfa79ac178": "COMPLETE",
+      "b32b261500f50f2d": "COMPLETE",
+      "411f1a9418d5a5bd": "COMPLETE",
+      "49dc7286fc074b8d": "COMPLETE",
+      "2cd8d07e71a97123": "COMPLETE",
+      "748caf659d7d990e": "COMPLETE",
+      "b07c3e91729e3a15": "UNREALIZABLE",
+      "eac9b8aa8352ab47": "UNREALIZABLE",
+      "c25237f3d0007d29": "COMPLETE",
+      "8f7f6ec5299db5b7": "COMPLETE",
+      "97379e5bea016628": "UNREALIZABLE",
+      "4d4c7f62e89fd7cc": "UNREALIZABLE",
+      "7f288e0257162d72": "COMPLETE",
+      "896404da8e0fcf4d": "COMPLETE",
+      "a886759f061a022e": "COMPLETE",
+      "177435ec2fb25031": "COMPLETE",
+      "adff3a19e2bc2882": "COMPLETE",
+      "e3c94a4ea8009fad": "COMPLETE",
+      "8b74cddfdc304557": "UNREALIZABLE",
+      "358e153e87249c60": "COMPLETE",
+      "57a3b5a5aca6397a": "COMPLETE",
+      "8b7c40966764b36b": "COMPLETE",
+      "56c22989a3367809": "COMPLETE",
+      "b87fb1c4f19e6efe": "COMPLETE"
+    },
+    "source_batch": {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_trusted_receiver_2026_11_17/batch.json",
+      "bytes": 140418,
+      "sha256": "f733a7f251846c4fa549022df3cb68f6a75b60bd1c912420b0c43798538ba450"
+    },
+    "method_inputs": {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/method_inputs.json",
+      "bytes": 106678,
+      "sha256": "444c527344eff5ea165061ebc46e3114ca90a078e7150a3691669b87e65849cb"
+    }
+  },
+  "regimes": {
+    "mixed": {
+      "cal": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 9204,
+                "unknown": 4752,
+                "reject": 4
+              },
+              "raw": {
+                "accept": 0.6593123209169054,
+                "unknown": 0.34040114613180517,
+                "reject": 0.00028653295128939826
+              },
+              "weighted": {
+                "accept": 0.6160092070918252,
+                "unknown": 0.3837461565921099,
+                "reject": 0.0002446363160648875
+              }
+            },
+            "false": {
+              "n": 586,
+              "parents": 5,
+              "epochs": 14,
+              "counts": {
+                "accept": 0,
+                "unknown": 118,
+                "reject": 468
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.20136518771331058,
+                "reject": 0.7986348122866894
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.2175627069009422,
+                "reject": 0.7824372930990577
+              }
+            },
+            "correct_definite": 0.6992232500954414
+          },
+          "LocalCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10647,
+                "unknown": 3001,
+                "reject": 312
+              },
+              "raw": {
+                "accept": 0.7626790830945559,
+                "unknown": 0.21497134670487106,
+                "reject": 0.022349570200573064
+              },
+              "weighted": {
+                "accept": 0.7108054728195582,
+                "unknown": 0.25707805589301136,
+                "reject": 0.032116471287430455
+              }
+            },
+            "false": {
+              "n": 586,
+              "parents": 5,
+              "epochs": 14,
+              "counts": {
+                "accept": 11,
+                "unknown": 65,
+                "reject": 510
+              },
+              "raw": {
+                "accept": 0.01877133105802048,
+                "unknown": 0.11092150170648464,
+                "reject": 0.8703071672354948
+              },
+              "weighted": {
+                "accept": 0.012499999999999999,
+                "unknown": 0.1177600585688821,
+                "reject": 0.8697399414311179
+              }
+            },
+            "correct_definite": 0.790272707125338
+          },
+          "LocalCond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10566,
+                "unknown": 2812,
+                "reject": 582
+              },
+              "raw": {
+                "accept": 0.7568767908309456,
+                "unknown": 0.201432664756447,
+                "reject": 0.04169054441260745
+              },
+              "weighted": {
+                "accept": 0.7067978103714367,
+                "unknown": 0.24325042345934816,
+                "reject": 0.04995176616921505
+              }
+            },
+            "false": {
+              "n": 586,
+              "parents": 5,
+              "epochs": 14,
+              "counts": {
+                "accept": 11,
+                "unknown": 26,
+                "reject": 549
+              },
+              "raw": {
+                "accept": 0.01877133105802048,
+                "unknown": 0.04436860068259386,
+                "reject": 0.9368600682593856
+              },
+              "weighted": {
+                "accept": 0.012499999999999999,
+                "unknown": 0.05549719887955182,
+                "reject": 0.9320028011204482
+              }
+            },
+            "correct_definite": 0.8194003057459425
+          }
+        },
+        "family_k": {
+          "F1/1": {
+            "status": "observed",
+            "support": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 27,
+                    "reject": 141
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.16071428571428573,
+                    "reject": 0.8392857142857143
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.1607142857142857,
+                    "reject": 0.8392857142857142
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 9,
+                    "reject": 159
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.05357142857142857,
+                    "reject": 0.9464285714285714
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.05357142857142857,
+                    "reject": 0.9464285714285714
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 6,
+                    "reject": 162
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.03571428571428571,
+                    "reject": 0.9642857142857143
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.03571428571428571,
+                    "reject": 0.9642857142857142
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F1/2": {
+            "status": "observed",
+            "support": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 31,
+                    "reject": 189
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.1409090909090909,
+                    "reject": 0.8590909090909091
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.1409090909090909,
+                    "reject": 0.859090909090909
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 11,
+                    "unknown": 14,
+                    "reject": 195
+                  },
+                  "raw": {
+                    "accept": 0.05,
+                    "unknown": 0.06363636363636363,
+                    "reject": 0.8863636363636364
+                  },
+                  "weighted": {
+                    "accept": 0.049999999999999996,
+                    "unknown": 0.06363636363636363,
+                    "reject": 0.8863636363636364
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 11,
+                    "unknown": 5,
+                    "reject": 204
+                  },
+                  "raw": {
+                    "accept": 0.05,
+                    "unknown": 0.022727272727272728,
+                    "reject": 0.9272727272727272
+                  },
+                  "weighted": {
+                    "accept": 0.049999999999999996,
+                    "unknown": 0.022727272727272728,
+                    "reject": 0.9272727272727272
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/1": {
+            "status": "observed",
+            "support": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 16,
+                    "reject": 60
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.21052631578947367,
+                    "reject": 0.7894736842105263
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.23529411764705882,
+                    "reject": 0.7647058823529411
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 5,
+                    "reject": 71
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.06578947368421052,
+                    "reject": 0.9342105263157895
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.07352941176470588,
+                    "reject": 0.926470588235294
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 7,
+                    "reject": 69
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.09210526315789473,
+                    "reject": 0.9078947368421053
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10294117647058823,
+                    "reject": 0.8970588235294117
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/2": {
+            "status": "observed",
+            "support": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 44,
+                    "reject": 78
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.36065573770491804,
+                    "reject": 0.639344262295082
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.33333333333333337,
+                    "reject": 0.6666666666666666
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 37,
+                    "reject": 85
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.30327868852459017,
+                    "reject": 0.6967213114754098
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.28030303030303033,
+                    "reject": 0.7196969696969697
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 8,
+                    "reject": 114
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.06557377049180328,
+                    "reject": 0.9344262295081968
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.06060606060606061,
+                    "reject": 0.9393939393939394
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.2173316095669037,
+            "baseline_never": 0.1494936436112907,
+            "never_difference": 0.067837965955613,
+            "shared_ever_epochs": 106,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.1494936436112907,
+            "baseline_never": 0.1494936436112907,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 116,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 0,
+                "unknown": 4518,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 118,
+              "parents": 3,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 118,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1443,
+                "unknown": 2767,
+                "reject": 308
+              },
+              "raw": {
+                "accept": 0.3193891102257636,
+                "unknown": 0.6124391323594511,
+                "reject": 0.0681717574147853
+              },
+              "weighted": {
+                "accept": 0.44137482438762893,
+                "unknown": 0.47235960468046256,
+                "reject": 0.08626557093190854
+              }
+            },
+            "false": {
+              "n": 118,
+              "parents": 3,
+              "epochs": 6,
+              "counts": {
+                "accept": 11,
+                "unknown": 65,
+                "reject": 42
+              },
+              "raw": {
+                "accept": 0.09322033898305085,
+                "unknown": 0.5508474576271186,
+                "reject": 0.3559322033898305
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.4800189393939394,
+                "reject": 0.3949810606060606
+              }
+            },
+            "correct_definite": 0.41817794249684476
+          },
+          "LocalCond": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1362,
+                "unknown": 2578,
+                "reject": 578
+              },
+              "raw": {
+                "accept": 0.301460823373174,
+                "unknown": 0.5706064630367419,
+                "reject": 0.1279327135900841
+              },
+              "weighted": {
+                "accept": 0.4299003381755297,
+                "unknown": 0.43575924462589305,
+                "reject": 0.13434041719857728
+              }
+            },
+            "false": {
+              "n": 118,
+              "parents": 3,
+              "epochs": 6,
+              "counts": {
+                "accept": 11,
+                "unknown": 26,
+                "reject": 81
+              },
+              "raw": {
+                "accept": 0.09322033898305085,
+                "unknown": 0.22033898305084745,
+                "reject": 0.6864406779661016
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.2555239898989899,
+                "reject": 0.61947601010101
+              }
+            },
+            "correct_definite": 0.5246881741382698
+          }
+        },
+        "primary_true_support": {
+          "rows": 13960,
+          "parents": 5,
+          "entities": 132,
+          "epochs": 142
+        },
+        "primary_false_support": {
+          "rows": 586,
+          "parents": 5,
+          "entities": 14,
+          "epochs": 14
+        },
+        "non_primary_accounting": {
+          "total": 49830,
+          "primary_true": 13960,
+          "primary_false": 586,
+          "unknown_labels": 9077,
+          "attack_true_background": 26207,
+          "no_query": 649,
+          "newborn": 649,
+          "input_fault": 0
+        },
+        "calibration_actual_TR": {
+          "Local": 0.0002446363160648875,
+          "LocalCount": 0.032116471287430455,
+          "LocalCond": 0.04995176616921505
+        },
+        "same_budget_is_not_same_actual_rate": {
+          "total_limit": 0.05,
+          "LocalCount": 0.03211647128743045,
+          "LocalCond": 0.049951766169214935
+        }
+      },
+      "eval": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 13379,
+                "unknown": 8267,
+                "reject": 113
+              },
+              "raw": {
+                "accept": 0.6148720069856152,
+                "unknown": 0.37993473964796176,
+                "reject": 0.005193253366423089
+              },
+              "weighted": {
+                "accept": 0.5057267438100692,
+                "unknown": 0.4803071694501399,
+                "reject": 0.01396608673979085
+              }
+            },
+            "false": {
+              "n": 1149,
+              "parents": 9,
+              "epochs": 28,
+              "counts": {
+                "accept": 0,
+                "unknown": 335,
+                "reject": 814
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.2915578764142733,
+                "reject": 0.7084421235857267
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.31568668936038125,
+                "reject": 0.6843133106396188
+              }
+            },
+            "correct_definite": 0.595020027224844
+          },
+          "LocalCount": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17217,
+                "unknown": 4122,
+                "reject": 420
+              },
+              "raw": {
+                "accept": 0.7912587894664277,
+                "unknown": 0.18943885288845994,
+                "reject": 0.01930235764511237
+              },
+              "weighted": {
+                "accept": 0.6490515857564011,
+                "unknown": 0.32696238071385336,
+                "reject": 0.02398603352974556
+              }
+            },
+            "false": {
+              "n": 1149,
+              "parents": 9,
+              "epochs": 28,
+              "counts": {
+                "accept": 41,
+                "unknown": 167,
+                "reject": 941
+              },
+              "raw": {
+                "accept": 0.03568320278503046,
+                "unknown": 0.1453437771975631,
+                "reject": 0.8189730200174065
+              },
+              "weighted": {
+                "accept": 0.03290719696969697,
+                "unknown": 0.15899125704721634,
+                "reject": 0.8081015459830867
+              }
+            },
+            "correct_definite": 0.7285765658697438
+          },
+          "LocalCond": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17104,
+                "unknown": 3755,
+                "reject": 900
+              },
+              "raw": {
+                "accept": 0.7860655361000046,
+                "unknown": 0.1725722689461832,
+                "reject": 0.041362194953812215
+              },
+              "weighted": {
+                "accept": 0.6447421076178204,
+                "unknown": 0.31146762661871497,
+                "reject": 0.04379026576346469
+              }
+            },
+            "false": {
+              "n": 1149,
+              "parents": 9,
+              "epochs": 28,
+              "counts": {
+                "accept": 40,
+                "unknown": 89,
+                "reject": 1020
+              },
+              "raw": {
+                "accept": 0.034812880765883375,
+                "unknown": 0.07745865970409051,
+                "reject": 0.8877284595300261
+              },
+              "weighted": {
+                "accept": 0.032196969696969696,
+                "unknown": 0.09082823668579483,
+                "reject": 0.8769747936172355
+              }
+            },
+            "correct_definite": 0.760858450617528
+          }
+        },
+        "family_k": {
+          "F1/1": {
+            "status": "observed",
+            "support": {
+              "rows": 339,
+              "parents": 8,
+              "entities": 8,
+              "epochs": 8
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 72,
+                    "reject": 267
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.21238938053097345,
+                    "reject": 0.7876106194690266
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.21006367663344408,
+                    "reject": 0.7899363233665558
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 52,
+                    "reject": 287
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.15339233038348082,
+                    "reject": 0.8466076696165191
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.15150885935769656,
+                    "reject": 0.8484911406423034
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 29,
+                    "reject": 310
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.0855457227138643,
+                    "reject": 0.9144542772861357
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.08457918050941307,
+                    "reject": 0.9154208194905868
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F1/2": {
+            "status": "observed",
+            "support": {
+              "rows": 353,
+              "parents": 8,
+              "entities": 8,
+              "epochs": 8
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 85,
+                    "reject": 268
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.24079320113314448,
+                    "reject": 0.7592067988668555
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.24065656565656565,
+                    "reject": 0.7593434343434343
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 25,
+                    "unknown": 18,
+                    "reject": 310
+                  },
+                  "raw": {
+                    "accept": 0.0708215297450425,
+                    "unknown": 0.05099150141643059,
+                    "reject": 0.8781869688385269
+                  },
+                  "weighted": {
+                    "accept": 0.07102272727272728,
+                    "unknown": 0.05031565656565657,
+                    "reject": 0.8786616161616162
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 24,
+                    "unknown": 14,
+                    "reject": 315
+                  },
+                  "raw": {
+                    "accept": 0.0679886685552408,
+                    "unknown": 0.039660056657223795,
+                    "reject": 0.8923512747875354
+                  },
+                  "weighted": {
+                    "accept": 0.06818181818181818,
+                    "unknown": 0.03901515151515152,
+                    "reject": 0.8928030303030303
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/1": {
+            "status": "observed",
+            "support": {
+              "rows": 206,
+              "parents": 6,
+              "entities": 6,
+              "epochs": 6
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 52,
+                    "reject": 154
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.2524271844660194,
+                    "reject": 0.7475728155339806
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.3333333333333333,
+                    "reject": 0.6666666666666666
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 10,
+                    "reject": 196
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.04854368932038835,
+                    "reject": 0.9514563106796117
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10317460317460317,
+                    "reject": 0.8968253968253969
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 11,
+                    "reject": 195
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.05339805825242718,
+                    "reject": 0.9466019417475728
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10714285714285714,
+                    "reject": 0.8928571428571428
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/2": {
+            "status": "observed",
+            "support": {
+              "rows": 251,
+              "parents": 6,
+              "entities": 6,
+              "epochs": 6
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 126,
+                    "reject": 125
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.50199203187251,
+                    "reject": 0.49800796812749004
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.4786931818181818,
+                    "reject": 0.5213068181818181
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 16,
+                    "unknown": 87,
+                    "reject": 148
+                  },
+                  "raw": {
+                    "accept": 0.06374501992031872,
+                    "unknown": 0.3466135458167331,
+                    "reject": 0.5896414342629482
+                  },
+                  "weighted": {
+                    "accept": 0.06060606060606061,
+                    "unknown": 0.3309659090909091,
+                    "reject": 0.6084280303030303
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 16,
+                    "unknown": 35,
+                    "reject": 200
+                  },
+                  "raw": {
+                    "accept": 0.06374501992031872,
+                    "unknown": 0.1394422310756972,
+                    "reject": 0.796812749003984
+                  },
+                  "weighted": {
+                    "accept": 0.06060606060606061,
+                    "unknown": 0.13257575757575757,
+                    "reject": 0.8068181818181818
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.3361767748586436,
+            "baseline_never": 0.22975297886310123,
+            "never_difference": 0.10642379599554239,
+            "shared_ever_epochs": 216,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.22975297886310123,
+            "baseline_never": 0.22975297886310123,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 251,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 0,
+                "unknown": 7877,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 335,
+              "parents": 8,
+              "epochs": 15,
+              "counts": {
+                "accept": 0,
+                "unknown": 335,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3838,
+                "unknown": 3732,
+                "reject": 307
+              },
+              "raw": {
+                "accept": 0.4872413355338327,
+                "unknown": 0.47378443569887013,
+                "reject": 0.0389742287672972
+              },
+              "weighted": {
+                "accept": 0.4081122098371838,
+                "unknown": 0.5496385828748869,
+                "reject": 0.04224920728792934
+              }
+            },
+            "false": {
+              "n": 335,
+              "parents": 8,
+              "epochs": 15,
+              "counts": {
+                "accept": 41,
+                "unknown": 167,
+                "reject": 127
+              },
+              "raw": {
+                "accept": 0.12238805970149254,
+                "unknown": 0.49850746268656715,
+                "reject": 0.37910447761194027
+              },
+              "weighted": {
+                "accept": 0.0805976430976431,
+                "unknown": 0.45423923905028557,
+                "reject": 0.4651631178520713
+              }
+            },
+            "correct_definite": 0.43663766384462754
+          },
+          "LocalCond": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3725,
+                "unknown": 3365,
+                "reject": 787
+              },
+              "raw": {
+                "accept": 0.47289577250222165,
+                "unknown": 0.4271930938174432,
+                "reject": 0.09991113368033515
+              },
+              "weighted": {
+                "accept": 0.3932596085195417,
+                "unknown": 0.5180551496295229,
+                "reject": 0.08868524185093542
+              }
+            },
+            "false": {
+              "n": 335,
+              "parents": 8,
+              "epochs": 15,
+              "counts": {
+                "accept": 40,
+                "unknown": 89,
+                "reject": 206
+              },
+              "raw": {
+                "accept": 0.11940298507462686,
+                "unknown": 0.2656716417910448,
+                "reject": 0.6149253731343284
+              },
+              "weighted": {
+                "accept": 0.07828282828282829,
+                "unknown": 0.25685115363894434,
+                "reject": 0.6648660180782274
+              }
+            },
+            "correct_definite": 0.5290628132988846
+          }
+        },
+        "primary_true_support": {
+          "rows": 21759,
+          "parents": 12,
+          "entities": 277,
+          "epochs": 332
+        },
+        "primary_false_support": {
+          "rows": 1149,
+          "parents": 9,
+          "entities": 28,
+          "epochs": 28
+        },
+        "non_primary_accounting": {
+          "total": 90752,
+          "primary_true": 21759,
+          "primary_false": 1149,
+          "unknown_labels": 23542,
+          "attack_true_background": 44302,
+          "no_query": 1503,
+          "newborn": 1503,
+          "input_fault": 0
+        }
+      },
+      "verdict": {
+        "Local": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.01396608673979085,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "fail",
+              "value": 0.14332484194633188,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "fail",
+              "value": -0.1335565386448998,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "fail",
+              "value": 0.10642379599554239,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F1/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F1/2": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/2": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        },
+        "LocalCond": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.04379026576346469,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.032196969696969696,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "pass",
+              "value": 0.004309478138580736,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "pass",
+              "value": 0.03228188474778415,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F1/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F1/2": {
+              "status": "fail",
+              "value": 0.06818181818181818,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/2": {
+              "status": "fail",
+              "value": 0.06060606060606061,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        }
+      },
+      "summary": {
+        "CD_gain_pp": 3.228188474778415,
+        "true_accept_loss_pp": 0.43094781385807357,
+        "true_reject_percent": 4.379026576346469,
+        "false_accept_percent": 3.2196969696969697,
+        "failed_checks": [
+          "false_accept_F1/2",
+          "false_accept_F2/2"
+        ]
+      }
+    },
+    "F1_only": {
+      "cal": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 9204,
+                "unknown": 4752,
+                "reject": 4
+              },
+              "raw": {
+                "accept": 0.6593123209169054,
+                "unknown": 0.34040114613180517,
+                "reject": 0.00028653295128939826
+              },
+              "weighted": {
+                "accept": 0.6160092070918252,
+                "unknown": 0.3837461565921099,
+                "reject": 0.0002446363160648875
+              }
+            },
+            "false": {
+              "n": 388,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 0,
+                "unknown": 58,
+                "reject": 330
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.14948453608247422,
+                "reject": 0.8505154639175257
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.1508116883116883,
+                "reject": 0.8491883116883117
+              }
+            },
+            "correct_definite": 0.7325987593900685
+          },
+          "LocalCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10620,
+                "unknown": 3028,
+                "reject": 312
+              },
+              "raw": {
+                "accept": 0.7607449856733525,
+                "unknown": 0.2169054441260745,
+                "reject": 0.022349570200573064
+              },
+              "weighted": {
+                "accept": 0.7089861735856688,
+                "unknown": 0.2588973551269007,
+                "reject": 0.032116471287430455
+              }
+            },
+            "false": {
+              "n": 388,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 11,
+                "unknown": 23,
+                "reject": 354
+              },
+              "raw": {
+                "accept": 0.028350515463917526,
+                "unknown": 0.059278350515463915,
+                "reject": 0.9123711340206185
+              },
+              "weighted": {
+                "accept": 0.024999999999999998,
+                "unknown": 0.0586038961038961,
+                "reject": 0.9163961038961038
+              }
+            },
+            "correct_definite": 0.8126911387408864
+          },
+          "LocalCond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10539,
+                "unknown": 2839,
+                "reject": 582
+              },
+              "raw": {
+                "accept": 0.7549426934097421,
+                "unknown": 0.20336676217765043,
+                "reject": 0.04169054441260745
+              },
+              "weighted": {
+                "accept": 0.7049785111375474,
+                "unknown": 0.2450697226932375,
+                "reject": 0.04995176616921505
+              }
+            },
+            "false": {
+              "n": 388,
+              "parents": 5,
+              "epochs": 9,
+              "counts": {
+                "accept": 11,
+                "unknown": 11,
+                "reject": 366
+              },
+              "raw": {
+                "accept": 0.028350515463917526,
+                "unknown": 0.028350515463917526,
+                "reject": 0.9432989690721649
+              },
+              "weighted": {
+                "accept": 0.024999999999999998,
+                "unknown": 0.02922077922077922,
+                "reject": 0.9457792207792207
+              }
+            },
+            "correct_definite": 0.8253788659583841
+          }
+        },
+        "family_k": {
+          "F1/1": {
+            "status": "observed",
+            "support": {
+              "rows": 168,
+              "parents": 4,
+              "entities": 4,
+              "epochs": 4
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 27,
+                    "reject": 141
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.16071428571428573,
+                    "reject": 0.8392857142857143
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.1607142857142857,
+                    "reject": 0.8392857142857142
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 9,
+                    "reject": 159
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.05357142857142857,
+                    "reject": 0.9464285714285714
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.05357142857142857,
+                    "reject": 0.9464285714285714
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 168,
+                  "parents": 4,
+                  "epochs": 4,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 6,
+                    "reject": 162
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.03571428571428571,
+                    "reject": 0.9642857142857143
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.03571428571428571,
+                    "reject": 0.9642857142857142
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F1/2": {
+            "status": "observed",
+            "support": {
+              "rows": 220,
+              "parents": 5,
+              "entities": 5,
+              "epochs": 5
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 31,
+                    "reject": 189
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.1409090909090909,
+                    "reject": 0.8590909090909091
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.1409090909090909,
+                    "reject": 0.859090909090909
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 11,
+                    "unknown": 14,
+                    "reject": 195
+                  },
+                  "raw": {
+                    "accept": 0.05,
+                    "unknown": 0.06363636363636363,
+                    "reject": 0.8863636363636364
+                  },
+                  "weighted": {
+                    "accept": 0.049999999999999996,
+                    "unknown": 0.06363636363636363,
+                    "reject": 0.8863636363636364
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 220,
+                  "parents": 5,
+                  "epochs": 5,
+                  "counts": {
+                    "accept": 11,
+                    "unknown": 5,
+                    "reject": 204
+                  },
+                  "raw": {
+                    "accept": 0.05,
+                    "unknown": 0.022727272727272728,
+                    "reject": 0.9272727272727272
+                  },
+                  "weighted": {
+                    "accept": 0.049999999999999996,
+                    "unknown": 0.022727272727272728,
+                    "reject": 0.9272727272727272
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.2173316095669037,
+            "baseline_never": 0.1494936436112907,
+            "never_difference": 0.067837965955613,
+            "shared_ever_epochs": 106,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.1494936436112907,
+            "baseline_never": 0.1494936436112907,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 116,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 0,
+                "unknown": 4518,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 58,
+              "parents": 2,
+              "epochs": 4,
+              "counts": {
+                "accept": 0,
+                "unknown": 58,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1416,
+                "unknown": 2794,
+                "reject": 308
+              },
+              "raw": {
+                "accept": 0.31341301460823373,
+                "unknown": 0.618415227976981,
+                "reject": 0.0681717574147853
+              },
+              "weighted": {
+                "accept": 0.4365265376826258,
+                "unknown": 0.4772078913854657,
+                "reject": 0.08626557093190854
+              }
+            },
+            "false": {
+              "n": 58,
+              "parents": 2,
+              "epochs": 4,
+              "counts": {
+                "accept": 11,
+                "unknown": 23,
+                "reject": 24
+              },
+              "raw": {
+                "accept": 0.1896551724137931,
+                "unknown": 0.39655172413793105,
+                "reject": 0.41379310344827586
+              },
+              "weighted": {
+                "accept": 0.25,
+                "unknown": 0.3833333333333333,
+                "reject": 0.36666666666666664
+              }
+            },
+            "correct_definite": 0.4015966021746462
+          },
+          "LocalCond": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1335,
+                "unknown": 2605,
+                "reject": 578
+              },
+              "raw": {
+                "accept": 0.2954847277556441,
+                "unknown": 0.5765825586542718,
+                "reject": 0.1279327135900841
+              },
+              "weighted": {
+                "accept": 0.42505205147052655,
+                "unknown": 0.44060753133089614,
+                "reject": 0.13434041719857728
+              }
+            },
+            "false": {
+              "n": 58,
+              "parents": 2,
+              "epochs": 4,
+              "counts": {
+                "accept": 11,
+                "unknown": 11,
+                "reject": 36
+              },
+              "raw": {
+                "accept": 0.1896551724137931,
+                "unknown": 0.1896551724137931,
+                "reject": 0.6206896551724138
+              },
+              "weighted": {
+                "accept": 0.25,
+                "unknown": 0.2013888888888889,
+                "reject": 0.548611111111111
+              }
+            },
+            "correct_definite": 0.4868315812908188
+          }
+        },
+        "primary_true_support": {
+          "rows": 13960,
+          "parents": 5,
+          "entities": 132,
+          "epochs": 142
+        },
+        "primary_false_support": {
+          "rows": 388,
+          "parents": 5,
+          "entities": 9,
+          "epochs": 9
+        },
+        "non_primary_accounting": {
+          "total": 37854,
+          "primary_true": 13960,
+          "primary_false": 388,
+          "unknown_labels": 7212,
+          "attack_true_background": 16294,
+          "no_query": 461,
+          "newborn": 461,
+          "input_fault": 0
+        },
+        "calibration_actual_TR": {
+          "Local": 0.0002446363160648875,
+          "LocalCount": 0.032116471287430455,
+          "LocalCond": 0.04995176616921505
+        },
+        "same_budget_is_not_same_actual_rate": {
+          "total_limit": 0.05,
+          "LocalCount": 0.03211647128743045,
+          "LocalCond": 0.049951766169214935
+        }
+      },
+      "eval": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 13379,
+                "unknown": 8267,
+                "reject": 113
+              },
+              "raw": {
+                "accept": 0.6148720069856152,
+                "unknown": 0.37993473964796176,
+                "reject": 0.005193253366423089
+              },
+              "weighted": {
+                "accept": 0.5057267438100692,
+                "unknown": 0.4803071694501399,
+                "reject": 0.01396608673979085
+              }
+            },
+            "false": {
+              "n": 457,
+              "parents": 7,
+              "epochs": 12,
+              "counts": {
+                "accept": 0,
+                "unknown": 178,
+                "reject": 279
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.38949671772428884,
+                "reject": 0.6105032822757112
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.40601325757575757,
+                "reject": 0.5939867424242424
+              }
+            },
+            "correct_definite": 0.5498567431171558
+          },
+          "LocalCount": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17177,
+                "unknown": 4162,
+                "reject": 420
+              },
+              "raw": {
+                "accept": 0.7894204696907027,
+                "unknown": 0.19127717266418492,
+                "reject": 0.01930235764511237
+              },
+              "weighted": {
+                "accept": 0.6479148900487588,
+                "unknown": 0.3280990764214956,
+                "reject": 0.02398603352974556
+              }
+            },
+            "false": {
+              "n": 457,
+              "parents": 7,
+              "epochs": 12,
+              "counts": {
+                "accept": 16,
+                "unknown": 97,
+                "reject": 344
+              },
+              "raw": {
+                "accept": 0.0350109409190372,
+                "unknown": 0.212253829321663,
+                "reject": 0.7527352297592997
+              },
+              "weighted": {
+                "accept": 0.030303030303030304,
+                "unknown": 0.21707025613275613,
+                "reject": 0.7526267135642135
+              }
+            },
+            "correct_definite": 0.7002708018064862
+          },
+          "LocalCond": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17066,
+                "unknown": 3793,
+                "reject": 900
+              },
+              "raw": {
+                "accept": 0.7843191323130658,
+                "unknown": 0.17431867273312193,
+                "reject": 0.041362194953812215
+              },
+              "weighted": {
+                "accept": 0.6437490900710977,
+                "unknown": 0.3124606441654376,
+                "reject": 0.04379026576346469
+              }
+            },
+            "false": {
+              "n": 457,
+              "parents": 7,
+              "epochs": 12,
+              "counts": {
+                "accept": 16,
+                "unknown": 46,
+                "reject": 395
+              },
+              "raw": {
+                "accept": 0.0350109409190372,
+                "unknown": 0.10065645514223195,
+                "reject": 0.8643326039387309
+              },
+              "weighted": {
+                "accept": 0.030303030303030304,
+                "unknown": 0.11985930735930736,
+                "reject": 0.8498376623376623
+              }
+            },
+            "correct_definite": 0.74679337620438
+          }
+        },
+        "family_k": {
+          "F2/1": {
+            "status": "observed",
+            "support": {
+              "rows": 206,
+              "parents": 6,
+              "entities": 6,
+              "epochs": 6
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 52,
+                    "reject": 154
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.2524271844660194,
+                    "reject": 0.7475728155339806
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.3333333333333333,
+                    "reject": 0.6666666666666666
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 10,
+                    "reject": 196
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.04854368932038835,
+                    "reject": 0.9514563106796117
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10317460317460317,
+                    "reject": 0.8968253968253969
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 206,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 11,
+                    "reject": 195
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.05339805825242718,
+                    "reject": 0.9466019417475728
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10714285714285714,
+                    "reject": 0.8928571428571428
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/2": {
+            "status": "observed",
+            "support": {
+              "rows": 251,
+              "parents": 6,
+              "entities": 6,
+              "epochs": 6
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 126,
+                    "reject": 125
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.50199203187251,
+                    "reject": 0.49800796812749004
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.4786931818181818,
+                    "reject": 0.5213068181818181
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 16,
+                    "unknown": 87,
+                    "reject": 148
+                  },
+                  "raw": {
+                    "accept": 0.06374501992031872,
+                    "unknown": 0.3466135458167331,
+                    "reject": 0.5896414342629482
+                  },
+                  "weighted": {
+                    "accept": 0.06060606060606061,
+                    "unknown": 0.3309659090909091,
+                    "reject": 0.6084280303030303
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 251,
+                  "parents": 6,
+                  "epochs": 6,
+                  "counts": {
+                    "accept": 16,
+                    "unknown": 35,
+                    "reject": 200
+                  },
+                  "raw": {
+                    "accept": 0.06374501992031872,
+                    "unknown": 0.1394422310756972,
+                    "reject": 0.796812749003984
+                  },
+                  "weighted": {
+                    "accept": 0.06060606060606061,
+                    "unknown": 0.13257575757575757,
+                    "reject": 0.8068181818181818
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.3361767748586436,
+            "baseline_never": 0.22975297886310123,
+            "never_difference": 0.10642379599554239,
+            "shared_ever_epochs": 216,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.22975297886310123,
+            "baseline_never": 0.22975297886310123,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 251,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 0,
+                "unknown": 7877,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 178,
+              "parents": 4,
+              "epochs": 6,
+              "counts": {
+                "accept": 0,
+                "unknown": 178,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3798,
+                "unknown": 3772,
+                "reject": 307
+              },
+              "raw": {
+                "accept": 0.48216326012441285,
+                "unknown": 0.47886251110829,
+                "reject": 0.0389742287672972
+              },
+              "weighted": {
+                "accept": 0.4031089671196485,
+                "unknown": 0.5546418255924221,
+                "reject": 0.04224920728792934
+              }
+            },
+            "false": {
+              "n": 178,
+              "parents": 4,
+              "epochs": 6,
+              "counts": {
+                "accept": 16,
+                "unknown": 97,
+                "reject": 65
+              },
+              "raw": {
+                "accept": 0.0898876404494382,
+                "unknown": 0.5449438202247191,
+                "reject": 0.3651685393258427
+              },
+              "weighted": {
+                "accept": 0.045454545454545456,
+                "unknown": 0.5402041652041653,
+                "reject": 0.41434128934128933
+              }
+            },
+            "correct_definite": 0.4087251282304689
+          },
+          "LocalCond": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3687,
+                "unknown": 3403,
+                "reject": 787
+              },
+              "raw": {
+                "accept": 0.4680716008632728,
+                "unknown": 0.432017265456392,
+                "reject": 0.09991113368033515
+              },
+              "weighted": {
+                "accept": 0.38842997691311754,
+                "unknown": 0.5228847812359471,
+                "reject": 0.08868524185093542
+              }
+            },
+            "false": {
+              "n": 178,
+              "parents": 4,
+              "epochs": 6,
+              "counts": {
+                "accept": 16,
+                "unknown": 46,
+                "reject": 116
+              },
+              "raw": {
+                "accept": 0.0898876404494382,
+                "unknown": 0.25842696629213485,
+                "reject": 0.651685393258427
+              },
+              "weighted": {
+                "accept": 0.045454545454545456,
+                "unknown": 0.26229598104598106,
+                "reject": 0.6922494734994735
+              }
+            },
+            "correct_definite": 0.5403397252062956
+          }
+        },
+        "primary_true_support": {
+          "rows": 21759,
+          "parents": 12,
+          "entities": 277,
+          "epochs": 332
+        },
+        "primary_false_support": {
+          "rows": 457,
+          "parents": 7,
+          "entities": 12,
+          "epochs": 12
+        },
+        "non_primary_accounting": {
+          "total": 57186,
+          "primary_true": 21759,
+          "primary_false": 457,
+          "unknown_labels": 16206,
+          "attack_true_background": 18764,
+          "no_query": 937,
+          "newborn": 937,
+          "input_fault": 0
+        }
+      },
+      "verdict": {
+        "Local": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.01396608673979085,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "fail",
+              "value": 0.14218814623868958,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "fail",
+              "value": -0.15041405868933033,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "fail",
+              "value": 0.10642379599554239,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F2/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/2": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        },
+        "LocalCond": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.04379026576346469,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.030303030303030304,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "pass",
+              "value": 0.004165799977661089,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "pass",
+              "value": 0.04652257439789387,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F2/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/1": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F2/2": {
+              "status": "fail",
+              "value": 0.06060606060606061,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F2/2": {
+              "status": "pass",
+              "value": 6,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        }
+      },
+      "summary": {
+        "CD_gain_pp": 4.652257439789387,
+        "true_accept_loss_pp": 0.4165799977661089,
+        "true_reject_percent": 4.379026576346469,
+        "false_accept_percent": 3.0303030303030303,
+        "failed_checks": [
+          "false_accept_F2/2"
+        ]
+      }
+    },
+    "F2_only": {
+      "cal": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 9204,
+                "unknown": 4752,
+                "reject": 4
+              },
+              "raw": {
+                "accept": 0.6593123209169054,
+                "unknown": 0.34040114613180517,
+                "reject": 0.00028653295128939826
+              },
+              "weighted": {
+                "accept": 0.6160092070918252,
+                "unknown": 0.3837461565921099,
+                "reject": 0.0002446363160648875
+              }
+            },
+            "false": {
+              "n": 198,
+              "parents": 3,
+              "epochs": 5,
+              "counts": {
+                "accept": 0,
+                "unknown": 60,
+                "reject": 138
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.30303030303030304,
+                "reject": 0.696969696969697
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.28431372549019607,
+                "reject": 0.7156862745098039
+              }
+            },
+            "correct_definite": 0.6658477408008145
+          },
+          "LocalCount": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10701,
+                "unknown": 2947,
+                "reject": 312
+              },
+              "raw": {
+                "accept": 0.7665472779369628,
+                "unknown": 0.21110315186246417,
+                "reject": 0.022349570200573064
+              },
+              "weighted": {
+                "accept": 0.7143354145098169,
+                "unknown": 0.2535481142027527,
+                "reject": 0.032116471287430455
+              }
+            },
+            "false": {
+              "n": 198,
+              "parents": 3,
+              "epochs": 5,
+              "counts": {
+                "accept": 5,
+                "unknown": 37,
+                "reject": 156
+              },
+              "raw": {
+                "accept": 0.025252525252525252,
+                "unknown": 0.18686868686868688,
+                "reject": 0.7878787878787878
+              },
+              "weighted": {
+                "accept": 0.01893939393939394,
+                "unknown": 0.15797682709447416,
+                "reject": 0.8230837789661319
+              }
+            },
+            "correct_definite": 0.7687095967379745
+          },
+          "LocalCond": {
+            "true": {
+              "n": 13960,
+              "parents": 5,
+              "epochs": 142,
+              "counts": {
+                "accept": 10621,
+                "unknown": 2757,
+                "reject": 582
+              },
+              "raw": {
+                "accept": 0.7608166189111748,
+                "unknown": 0.19749283667621775,
+                "reject": 0.04169054441260745
+              },
+              "weighted": {
+                "accept": 0.7102978205441567,
+                "unknown": 0.2397504132866283,
+                "reject": 0.04995176616921505
+              }
+            },
+            "false": {
+              "n": 198,
+              "parents": 3,
+              "epochs": 5,
+              "counts": {
+                "accept": 6,
+                "unknown": 9,
+                "reject": 183
+              },
+              "raw": {
+                "accept": 0.030303030303030304,
+                "unknown": 0.045454545454545456,
+                "reject": 0.9242424242424242
+              },
+              "weighted": {
+                "accept": 0.022727272727272728,
+                "unknown": 0.05904634581105169,
+                "reject": 0.9182263814616756
+              }
+            },
+            "correct_definite": 0.8142621010029161
+          }
+        },
+        "family_k": {
+          "F2/1": {
+            "status": "observed",
+            "support": {
+              "rows": 76,
+              "parents": 2,
+              "entities": 2,
+              "epochs": 2
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 16,
+                    "reject": 60
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.21052631578947367,
+                    "reject": 0.7894736842105263
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.23529411764705882,
+                    "reject": 0.7647058823529411
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 5,
+                    "reject": 71
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.06578947368421052,
+                    "reject": 0.9342105263157895
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.07352941176470588,
+                    "reject": 0.926470588235294
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 76,
+                  "parents": 2,
+                  "epochs": 2,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 7,
+                    "reject": 69
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.09210526315789473,
+                    "reject": 0.9078947368421053
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.10294117647058823,
+                    "reject": 0.8970588235294117
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F2/2": {
+            "status": "observed",
+            "support": {
+              "rows": 122,
+              "parents": 3,
+              "entities": 3,
+              "epochs": 3
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 44,
+                    "reject": 78
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.36065573770491804,
+                    "reject": 0.639344262295082
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.33333333333333337,
+                    "reject": 0.6666666666666666
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 5,
+                    "unknown": 32,
+                    "reject": 85
+                  },
+                  "raw": {
+                    "accept": 0.040983606557377046,
+                    "unknown": 0.26229508196721313,
+                    "reject": 0.6967213114754098
+                  },
+                  "weighted": {
+                    "accept": 0.03787878787878788,
+                    "unknown": 0.24242424242424243,
+                    "reject": 0.7196969696969697
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 122,
+                  "parents": 3,
+                  "epochs": 3,
+                  "counts": {
+                    "accept": 6,
+                    "unknown": 2,
+                    "reject": 114
+                  },
+                  "raw": {
+                    "accept": 0.04918032786885246,
+                    "unknown": 0.01639344262295082,
+                    "reject": 0.9344262295081968
+                  },
+                  "weighted": {
+                    "accept": 0.045454545454545456,
+                    "unknown": 0.015151515151515152,
+                    "reject": 0.9393939393939394
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.2173316095669037,
+            "baseline_never": 0.1341090282266753,
+            "never_difference": 0.08322258134022839,
+            "shared_ever_epochs": 106,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 142,
+            "n_parents": 5,
+            "candidate_never": 0.1341090282266753,
+            "baseline_never": 0.1341090282266753,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 118,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 0,
+                "unknown": 4518,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 60,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 0,
+                "unknown": 60,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1497,
+                "unknown": 2713,
+                "reject": 308
+              },
+              "raw": {
+                "accept": 0.33134130146082336,
+                "unknown": 0.6004869411243913,
+                "reject": 0.0681717574147853
+              },
+              "weighted": {
+                "accept": 0.4638036569949362,
+                "unknown": 0.4499307720731553,
+                "reject": 0.08626557093190854
+              }
+            },
+            "false": {
+              "n": 60,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 5,
+                "unknown": 37,
+                "reject": 18
+              },
+              "raw": {
+                "accept": 0.08333333333333333,
+                "unknown": 0.6166666666666667,
+                "reject": 0.3
+              },
+              "weighted": {
+                "accept": 0.05681818181818182,
+                "unknown": 0.5198863636363636,
+                "reject": 0.42329545454545453
+              }
+            },
+            "correct_definite": 0.4435495557701954
+          },
+          "LocalCond": {
+            "true": {
+              "n": 4518,
+              "parents": 5,
+              "epochs": 106,
+              "counts": {
+                "accept": 1417,
+                "unknown": 2523,
+                "reject": 578
+              },
+              "raw": {
+                "accept": 0.31363435148295704,
+                "unknown": 0.5584329349269588,
+                "reject": 0.1279327135900841
+              },
+              "weighted": {
+                "accept": 0.45284131958129203,
+                "unknown": 0.4128182632201307,
+                "reject": 0.13434041719857728
+              }
+            },
+            "false": {
+              "n": 60,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 6,
+                "unknown": 9,
+                "reject": 45
+              },
+              "raw": {
+                "accept": 0.1,
+                "unknown": 0.15,
+                "reject": 0.75
+              },
+              "weighted": {
+                "accept": 0.06818181818181818,
+                "unknown": 0.24147727272727273,
+                "reject": 0.6903409090909091
+              }
+            },
+            "correct_definite": 0.5715911143361005
+          }
+        },
+        "primary_true_support": {
+          "rows": 13960,
+          "parents": 5,
+          "entities": 132,
+          "epochs": 142
+        },
+        "primary_false_support": {
+          "rows": 198,
+          "parents": 3,
+          "entities": 5,
+          "epochs": 5
+        },
+        "non_primary_accounting": {
+          "total": 30057,
+          "primary_true": 13960,
+          "primary_false": 198,
+          "unknown_labels": 5986,
+          "attack_true_background": 9913,
+          "no_query": 347,
+          "newborn": 347,
+          "input_fault": 0
+        },
+        "calibration_actual_TR": {
+          "Local": 0.0002446363160648875,
+          "LocalCount": 0.032116471287430455,
+          "LocalCond": 0.04995176616921505
+        },
+        "same_budget_is_not_same_actual_rate": {
+          "total_limit": 0.05,
+          "LocalCount": 0.03211647128743045,
+          "LocalCond": 0.049951766169214935
+        }
+      },
+      "eval": {
+        "system_query": {
+          "Local": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 13379,
+                "unknown": 8267,
+                "reject": 113
+              },
+              "raw": {
+                "accept": 0.6148720069856152,
+                "unknown": 0.37993473964796176,
+                "reject": 0.005193253366423089
+              },
+              "weighted": {
+                "accept": 0.5057267438100692,
+                "unknown": 0.4803071694501399,
+                "reject": 0.01396608673979085
+              }
+            },
+            "false": {
+              "n": 692,
+              "parents": 9,
+              "epochs": 16,
+              "counts": {
+                "accept": 0,
+                "unknown": 157,
+                "reject": 535
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.22687861271676302,
+                "reject": 0.773121387283237
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.22536012114500487,
+                "reject": 0.7746398788549951
+              }
+            },
+            "correct_definite": 0.6401833113325321
+          },
+          "LocalCount": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17349,
+                "unknown": 3990,
+                "reject": 420
+              },
+              "raw": {
+                "accept": 0.7973252447263202,
+                "unknown": 0.1833723976285675,
+                "reject": 0.01930235764511237
+              },
+              "weighted": {
+                "accept": 0.6557679922334773,
+                "unknown": 0.32024597423677714,
+                "reject": 0.02398603352974556
+              }
+            },
+            "false": {
+              "n": 692,
+              "parents": 9,
+              "epochs": 16,
+              "counts": {
+                "accept": 30,
+                "unknown": 65,
+                "reject": 597
+              },
+              "raw": {
+                "accept": 0.04335260115606936,
+                "unknown": 0.09393063583815028,
+                "reject": 0.8627167630057804
+              },
+              "weighted": {
+                "accept": 0.04245580808080808,
+                "unknown": 0.09396781351723212,
+                "reject": 0.8635763784019598
+              }
+            },
+            "correct_definite": 0.7596721853177185
+          },
+          "LocalCond": {
+            "true": {
+              "n": 21759,
+              "parents": 12,
+              "epochs": 332,
+              "counts": {
+                "accept": 17204,
+                "unknown": 3655,
+                "reject": 900
+              },
+              "raw": {
+                "accept": 0.7906613355393171,
+                "unknown": 0.16797646950687073,
+                "reject": 0.041362194953812215
+              },
+              "weighted": {
+                "accept": 0.6503686078444252,
+                "unknown": 0.3058411263921102,
+                "reject": 0.04379026576346469
+              }
+            },
+            "false": {
+              "n": 692,
+              "parents": 9,
+              "epochs": 16,
+              "counts": {
+                "accept": 30,
+                "unknown": 37,
+                "reject": 625
+              },
+              "raw": {
+                "accept": 0.04335260115606936,
+                "unknown": 0.05346820809248555,
+                "reject": 0.903179190751445
+              },
+              "weighted": {
+                "accept": 0.04242424242424243,
+                "unknown": 0.053463832678948955,
+                "reject": 0.9041119248968086
+              }
+            },
+            "correct_definite": 0.7772402663706168
+          }
+        },
+        "family_k": {
+          "F1/1": {
+            "status": "observed",
+            "support": {
+              "rows": 339,
+              "parents": 8,
+              "entities": 8,
+              "epochs": 8
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 72,
+                    "reject": 267
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.21238938053097345,
+                    "reject": 0.7876106194690266
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.21006367663344408,
+                    "reject": 0.7899363233665558
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 52,
+                    "reject": 287
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.15339233038348082,
+                    "reject": 0.8466076696165191
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.15150885935769656,
+                    "reject": 0.8484911406423034
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 339,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 29,
+                    "reject": 310
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.0855457227138643,
+                    "reject": 0.9144542772861357
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.08457918050941307,
+                    "reject": 0.9154208194905868
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          },
+          "F1/2": {
+            "status": "observed",
+            "support": {
+              "rows": 353,
+              "parents": 8,
+              "entities": 8,
+              "epochs": 8
+            },
+            "metrics": {
+              "Local": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 85,
+                    "reject": 268
+                  },
+                  "raw": {
+                    "accept": 0.0,
+                    "unknown": 0.24079320113314448,
+                    "reject": 0.7592067988668555
+                  },
+                  "weighted": {
+                    "accept": 0.0,
+                    "unknown": 0.24065656565656565,
+                    "reject": 0.7593434343434343
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCount": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 30,
+                    "unknown": 13,
+                    "reject": 310
+                  },
+                  "raw": {
+                    "accept": 0.08498583569405099,
+                    "unknown": 0.036827195467422094,
+                    "reject": 0.8781869688385269
+                  },
+                  "weighted": {
+                    "accept": 0.08491161616161616,
+                    "unknown": 0.036426767676767675,
+                    "reject": 0.8786616161616162
+                  }
+                },
+                "correct_definite": null
+              },
+              "LocalCond": {
+                "true": {
+                  "n": 0,
+                  "parents": 0,
+                  "epochs": 0,
+                  "counts": {
+                    "accept": 0,
+                    "unknown": 0,
+                    "reject": 0
+                  },
+                  "raw": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  },
+                  "weighted": {
+                    "accept": null,
+                    "unknown": null,
+                    "reject": null
+                  }
+                },
+                "false": {
+                  "n": 353,
+                  "parents": 8,
+                  "epochs": 8,
+                  "counts": {
+                    "accept": 30,
+                    "unknown": 8,
+                    "reject": 315
+                  },
+                  "raw": {
+                    "accept": 0.08498583569405099,
+                    "unknown": 0.0226628895184136,
+                    "reject": 0.8923512747875354
+                  },
+                  "weighted": {
+                    "accept": 0.08484848484848485,
+                    "unknown": 0.02234848484848485,
+                    "reject": 0.8928030303030303
+                  }
+                },
+                "correct_definite": null
+              }
+            }
+          }
+        },
+        "paired_timeliness": {
+          "Local": {
+            "status": "ok",
+            "candidate": "Local",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.3361767748586436,
+            "baseline_never": 0.22419742330754566,
+            "never_difference": 0.11197935155109795,
+            "shared_ever_epochs": 216,
+            "weighted_median_delay_difference_seconds": 0.0
+          },
+          "LocalCond": {
+            "status": "ok",
+            "candidate": "LocalCond",
+            "baseline": "LocalCount",
+            "n_primary_true_epochs": 332,
+            "n_parents": 12,
+            "candidate_never": 0.22419742330754566,
+            "baseline_never": 0.22419742330754566,
+            "never_difference": 0.0,
+            "shared_ever_epochs": 252,
+            "weighted_median_delay_difference_seconds": 0.0
+          }
+        },
+        "local_unknown": {
+          "Local": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 0,
+                "unknown": 7877,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "false": {
+              "n": 157,
+              "parents": 6,
+              "epochs": 9,
+              "counts": {
+                "accept": 0,
+                "unknown": 157,
+                "reject": 0
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 1.0,
+                "reject": 0.0
+              }
+            },
+            "correct_definite": 0.0
+          },
+          "LocalCount": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3970,
+                "unknown": 3600,
+                "reject": 307
+              },
+              "raw": {
+                "accept": 0.5039989843849181,
+                "unknown": 0.4570267868477847,
+                "reject": 0.0389742287672972
+              },
+              "weighted": {
+                "accept": 0.4275743421615275,
+                "unknown": 0.5301764505505432,
+                "reject": 0.04224920728792934
+              }
+            },
+            "false": {
+              "n": 157,
+              "parents": 6,
+              "epochs": 9,
+              "counts": {
+                "accept": 30,
+                "unknown": 65,
+                "reject": 62
+              },
+              "raw": {
+                "accept": 0.1910828025477707,
+                "unknown": 0.4140127388535032,
+                "reject": 0.39490445859872614
+              },
+              "weighted": {
+                "accept": 0.16381766381766383,
+                "unknown": 0.32019738981948287,
+                "reject": 0.5159849463628533
+              }
+            },
+            "correct_definite": 0.47177964426219043
+          },
+          "LocalCond": {
+            "true": {
+              "n": 7877,
+              "parents": 12,
+              "epochs": 243,
+              "counts": {
+                "accept": 3825,
+                "unknown": 3265,
+                "reject": 787
+              },
+              "raw": {
+                "accept": 0.4855909610257712,
+                "unknown": 0.41449790529389363,
+                "reject": 0.09991113368033515
+              },
+              "weighted": {
+                "accept": 0.4082547627800532,
+                "unknown": 0.5030599953690114,
+                "reject": 0.08868524185093542
+              }
+            },
+            "false": {
+              "n": 157,
+              "parents": 6,
+              "epochs": 9,
+              "counts": {
+                "accept": 30,
+                "unknown": 37,
+                "reject": 90
+              },
+              "raw": {
+                "accept": 0.1910828025477707,
+                "unknown": 0.2356687898089172,
+                "reject": 0.5732484076433121
+              },
+              "weighted": {
+                "accept": 0.16880341880341881,
+                "unknown": 0.19371401853959994,
+                "reject": 0.6374825626569812
+              }
+            },
+            "correct_definite": 0.5228686627185172
+          }
+        },
+        "primary_true_support": {
+          "rows": 21759,
+          "parents": 12,
+          "entities": 277,
+          "epochs": 332
+        },
+        "primary_false_support": {
+          "rows": 692,
+          "parents": 9,
+          "entities": 16,
+          "epochs": 16
+        },
+        "non_primary_accounting": {
+          "total": 66197,
+          "primary_true": 21759,
+          "primary_false": 692,
+          "unknown_labels": 18208,
+          "attack_true_background": 25538,
+          "no_query": 1085,
+          "newborn": 1085,
+          "input_fault": 0
+        }
+      },
+      "verdict": {
+        "Local": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.01396608673979085,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "fail",
+              "value": 0.15004124842340805,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "fail",
+              "value": -0.11948887398518637,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "fail",
+              "value": 0.11197935155109795,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F1/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F1/2": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        },
+        "LocalCond": {
+          "status": "not_retained",
+          "checks": {
+            "true_reject": {
+              "status": "pass",
+              "value": 0.04379026576346469,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "false_accept": {
+              "status": "pass",
+              "value": 0.04242424242424243,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "true_accept_loss": {
+              "status": "pass",
+              "value": 0.005399384389052075,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "CD_gain": {
+              "status": "pass",
+              "value": 0.01756808105289831,
+              "limit": 0.01,
+              "direction": "min"
+            },
+            "never_adopt_increase": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.02,
+              "direction": "max"
+            },
+            "paired_median_delay": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.5,
+              "direction": "max"
+            },
+            "calibration": {
+              "status": "pass",
+              "value": 1,
+              "limit": 1,
+              "direction": "min"
+            },
+            "false_accept_F1/1": {
+              "status": "pass",
+              "value": 0.0,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/1": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "false_accept_F1/2": {
+              "status": "fail",
+              "value": 0.08484848484848485,
+              "limit": 0.05,
+              "direction": "max"
+            },
+            "parents_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            },
+            "entities_F1/2": {
+              "status": "pass",
+              "value": 8,
+              "limit": 3,
+              "direction": "min"
+            }
+          }
+        }
+      },
+      "summary": {
+        "CD_gain_pp": 1.756808105289831,
+        "true_accept_loss_pp": 0.5399384389052075,
+        "true_reject_percent": 4.379026576346469,
+        "false_accept_percent": 4.242424242424243,
+        "failed_checks": [
+          "false_accept_F1/2"
+        ]
+      }
+    }
+  },
+  "total_prediction_rows": 331876,
+  "decision_checks": 995628,
+  "status": "PASS",
+  "errors": [],
+  "compared_scalar_fields": 2989628,
+  "max_absolute_numeric_difference": 5.551115123125783e-16,
+  "source_report_sha256": "5b38a3f96bc53b0ba4cf01bce20530e9493ba8119c0da3b12aee6eac195e67c8",
+  "audit_script_sha256": "6742043b56fd9788e5011ce1b64602d2bc36a2dfb71ba6e4817b3555090334e5",
+  "not_checked": [
+    "raw PCD/pose geometry",
+    "original labels",
+    "upstream C/R recomputation",
+    "threshold optimality or recalibration",
+    "population guarantees and causal attribution"
+  ]
+}

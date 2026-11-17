@@ -1,0 +1,98 @@
+{
+  "source": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002",
+  "screen": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/grouped_acceptance_001",
+  "sources": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/grouped_acceptance_001/screen.json",
+      "bytes": 41808,
+      "sha256": "799308d7b6f24a6e8baca889298335818c52879e4138047d8733ea2685e1a41b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/grouped_acceptance_001/binding.json",
+      "bytes": 2766,
+      "sha256": "e016f8e247cf10c2e2006f2c049e859fd8499672072b550c15d8d610241f0b63"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/grouped_acceptance_001/candidate_policies.json",
+      "bytes": 16777,
+      "sha256": "9bbca0c78043e491112b4ca8bd9dcf0ffc2edd1d84aebb92ce4cf03a3f0f4ee3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/evaluate.binding.json",
+      "bytes": 180022,
+      "sha256": "ac531287ac4cd0370d5a22a8735c6a6c89b28e54d8b3e456f9104aaa66020839"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/mixed.json",
+      "bytes": 9070,
+      "sha256": "5ae3c449eff01a7ea26a149c26c3b0271c480be477c31edb1438776b00ff6430"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/F1_only.json",
+      "bytes": 7005,
+      "sha256": "b207ea21bb1d790b5c7b822a6481f7ce291699f97fc423ca5cd9b36dcccce55e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/calibration/F2_only.json",
+      "bytes": 7000,
+      "sha256": "2dbf66ec48ae751a11704ab07d51503eea307968f7c317e3fe5c3a1142353864"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/mixed/cal.jsonl.gz",
+      "bytes": 3046581,
+      "sha256": "8728922452a5538ac45a03c7582dcde922231c70fe1d66b7f81d387c155e7c49"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/mixed/eval.jsonl.gz",
+      "bytes": 5724184,
+      "sha256": "9d819516fa1b3ee6086a934823b32f8810315530cc6bdd83f956e77f9689e6e8"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F1_only/cal.jsonl.gz",
+      "bytes": 2289291,
+      "sha256": "30c517a01f02945c527ea8fefd0d3904e98f3cc069a4a620a3c911560dff5fea"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F1_only/eval.jsonl.gz",
+      "bytes": 3563760,
+      "sha256": "d1f7e9491ad2821aaeb4b39755f934096d8928a9bcc040480388db1f66728875"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F2_only/cal.jsonl.gz",
+      "bytes": 1814289,
+      "sha256": "c55c843788bfd54be38920c3da76a7ff1772facbe90a47f6db35a78076922c95"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002/predictions/F2_only/eval.jsonl.gz",
+      "bytes": 4173626,
+      "sha256": "10cb2d964100b2b04ab3d7fedfa8f63dfa4411eb3335fcd81ff33b0d52145948"
+    }
+  ],
+  "code": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/evidence/rq1_trusted_receiver_2026_11_17/execution/evaluate_grouped_acceptance.py",
+      "bytes": 10051,
+      "sha256": "1fbdfbcfb67499a628bd44c3170b4157c20be8b13463b52e207bf070325bb28a"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_trusted_receiver/run.py",
+      "bytes": 44169,
+      "sha256": "1cc00d40e829abd1f0067c6082d7a5bee60b8b9918590dec7bfbb578bbc3d829"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/run.py",
+      "bytes": 34324,
+      "sha256": "8989514775ca6a43f284f60219b8f99d125f8d770341b9c2e25d08e680c3e813"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_score_revision/run.py",
+      "bytes": 43457,
+      "sha256": "8b7e736893b92e73ed2e1261a52b4d02b4b6db812f13641bd19355969a91c8c7"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_temporal/data.py",
+      "bytes": 11249,
+      "sha256": "98962ba9eac554bc788465702d146c3ec2d5853cfd3ba1f035a1b112fbf9ba66"
+    }
+  ]
+}

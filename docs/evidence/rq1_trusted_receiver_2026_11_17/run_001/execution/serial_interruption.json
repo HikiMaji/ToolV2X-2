@@ -1,0 +1,11 @@
+{
+  "time_utc": "2026-11-17T09:36:37.125425+00:00",
+  "pid": 22006,
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/execution/run_sidecar_snapshot.py"
+  ],
+  "signal": "SIGINT",
+  "reason": "replace own serial sidecar attempt with reviewed per-parent parallel execution of identical snapshot",
+  "preserved": "all caches, shape, completed and partial serial outputs; no user service touched"
+}

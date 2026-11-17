@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/execution/run_sidecar_snapshot.py"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "code_snapshot": "b5aa3ca",
+  "started_utc": "2026-11-17T09:24:10.240993+00:00",
+  "exit_code": -2,
+  "elapsed_seconds": 747.9886347306892,
+  "finished_utc": "2026-11-17T09:36:37.821638+00:00"
+}

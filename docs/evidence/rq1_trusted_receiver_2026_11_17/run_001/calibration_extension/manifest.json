@@ -1,0 +1,875 @@
+{
+  "schema": "trusted_receiver_calibration_extension_v1",
+  "jobs": [
+    {
+      "parent": "train/2021_08_18_22_16_12",
+      "job_id": "c25237f3d0007d29",
+      "family": "F1",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1331,
+      "source_ids": [
+        1313,
+        1322,
+        1331
+      ],
+      "controlled_sources": [
+        1313
+      ],
+      "normal_probe_source": 1322,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_18_22_16_12",
+      "job_id": "8f7f6ec5299db5b7",
+      "family": "F1",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1331,
+      "source_ids": [
+        1313,
+        1322,
+        1331
+      ],
+      "controlled_sources": [
+        1313,
+        1322
+      ],
+      "normal_probe_source": 1331,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_18_22_16_12",
+      "job_id": "97379e5bea016628",
+      "family": "F2",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1331,
+      "source_ids": [
+        1313,
+        1322,
+        1331
+      ],
+      "controlled_sources": [
+        1313
+      ],
+      "normal_probe_source": 1322,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_18_22_16_12",
+      "job_id": "4d4c7f62e89fd7cc",
+      "family": "F2",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1331,
+      "source_ids": [
+        1313,
+        1322,
+        1331
+      ],
+      "controlled_sources": [
+        1313,
+        1322
+      ],
+      "normal_probe_source": 1331,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_20_20_39_00",
+      "job_id": "7f288e0257162d72",
+      "family": "F1",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1252,
+      "source_ids": [
+        1234,
+        1243,
+        1252
+      ],
+      "controlled_sources": [
+        1234
+      ],
+      "normal_probe_source": 1243,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_20_20_39_00",
+      "job_id": "896404da8e0fcf4d",
+      "family": "F1",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1252,
+      "source_ids": [
+        1234,
+        1243,
+        1252
+      ],
+      "controlled_sources": [
+        1234,
+        1243
+      ],
+      "normal_probe_source": 1252,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_20_20_39_00",
+      "job_id": "a886759f061a022e",
+      "family": "F2",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1252,
+      "source_ids": [
+        1234,
+        1243,
+        1252
+      ],
+      "controlled_sources": [
+        1234
+      ],
+      "normal_probe_source": 1243,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_20_20_39_00",
+      "job_id": "177435ec2fb25031",
+      "family": "F2",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1252,
+      "source_ids": [
+        1234,
+        1243,
+        1252
+      ],
+      "controlled_sources": [
+        1234,
+        1243
+      ],
+      "normal_probe_source": 1252,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_21_22_21_37",
+      "job_id": "adff3a19e2bc2882",
+      "family": "F1",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 3005,
+      "source_ids": [
+        2987,
+        2996,
+        3005
+      ],
+      "controlled_sources": [
+        2987
+      ],
+      "normal_probe_source": 2996,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_21_22_21_37",
+      "job_id": "e3c94a4ea8009fad",
+      "family": "F1",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 3005,
+      "source_ids": [
+        2987,
+        2996,
+        3005
+      ],
+      "controlled_sources": [
+        2987,
+        2996
+      ],
+      "normal_probe_source": 3005,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_21_22_21_37",
+      "job_id": "8b74cddfdc304557",
+      "family": "F2",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 3005,
+      "source_ids": [
+        2987,
+        2996,
+        3005
+      ],
+      "controlled_sources": [
+        2987
+      ],
+      "normal_probe_source": 2996,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_21_22_21_37",
+      "job_id": "358e153e87249c60",
+      "family": "F2",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 3005,
+      "source_ids": [
+        2987,
+        2996,
+        3005
+      ],
+      "controlled_sources": [
+        2987,
+        2996
+      ],
+      "normal_probe_source": 3005,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_22_22_30_58",
+      "job_id": "57a3b5a5aca6397a",
+      "family": "F1",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1259,
+      "source_ids": [
+        1241,
+        1250,
+        1259
+      ],
+      "controlled_sources": [
+        1241
+      ],
+      "normal_probe_source": 1250,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_22_22_30_58",
+      "job_id": "8b7c40966764b36b",
+      "family": "F1",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1259,
+      "source_ids": [
+        1241,
+        1250,
+        1259
+      ],
+      "controlled_sources": [
+        1241,
+        1250
+      ],
+      "normal_probe_source": 1259,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_22_22_30_58",
+      "job_id": "56c22989a3367809",
+      "family": "F2",
+      "attack_k": 1,
+      "action": "missing_plan_once",
+      "receiver_id": 1259,
+      "source_ids": [
+        1241,
+        1250,
+        1259
+      ],
+      "controlled_sources": [
+        1241
+      ],
+      "normal_probe_source": 1250,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    },
+    {
+      "parent": "train/2021_08_22_22_30_58",
+      "job_id": "b87fb1c4f19e6efe",
+      "family": "F2",
+      "attack_k": 2,
+      "action": "missing_plan_once",
+      "receiver_id": 1259,
+      "source_ids": [
+        1241,
+        1250,
+        1259
+      ],
+      "controlled_sources": [
+        1241,
+        1250
+      ],
+      "normal_probe_source": 1259,
+      "scans": 80,
+      "seed": 0,
+      "max_proposals": 64,
+      "active_indices": [
+        20,
+        60
+      ],
+      "kind": "attack",
+      "split": "cal",
+      "origin": "score_revision"
+    }
+  ],
+  "parents": {
+    "train/2021_08_18_22_16_12": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/calibration_extension/parents/train__2021_08_18_22_16_12/scans.jsonl.gz",
+      "spec": {
+        "parent": "train/2021_08_18_22_16_12",
+        "source_ids": [
+          1313,
+          1322,
+          1331
+        ],
+        "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_29/OPV2V/train/2021_08_18_22_16_12",
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_18_22_16_12",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "8d87c21350a7bb56",
+      "sender": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/8d87c21350a7bb56/messages.jsonl.gz",
+        "bytes": 4242956,
+        "sha256": "89c05f484ce3421798d9a6d7d2e54df31c181cc3cf0c588fa5c5ba24b3d63945"
+      },
+      "clean_config": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/8d87c21350a7bb56.json",
+        "bytes": 22097,
+        "sha256": "fb6320db01bf7fa794d1aef37559b76ab8236a58d0bee9b7a2b25509bf76d4b5"
+      },
+      "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json"
+    },
+    "train/2021_08_20_20_39_00": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/calibration_extension/parents/train__2021_08_20_20_39_00/scans.jsonl.gz",
+      "spec": {
+        "parent": "train/2021_08_20_20_39_00",
+        "source_ids": [
+          1234,
+          1243,
+          1252
+        ],
+        "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_29/OPV2V/train/2021_08_20_20_39_00",
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_20_20_39_00",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "410fec48a6a1488e",
+      "sender": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/410fec48a6a1488e/messages.jsonl.gz",
+        "bytes": 1715736,
+        "sha256": "1f2200c031dfdab2f8ef11abd9db0f63624f26f16fb7232e2c6cecd9d63775f5"
+      },
+      "clean_config": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/410fec48a6a1488e.json",
+        "bytes": 9224,
+        "sha256": "d563c783fbe8082a50414947561c431da4f95c26cb1380b18b9fa1b6d9ab9a09"
+      },
+      "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json"
+    },
+    "train/2021_08_21_22_21_37": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/calibration_extension/parents/train__2021_08_21_22_21_37/scans.jsonl.gz",
+      "spec": {
+        "parent": "train/2021_08_21_22_21_37",
+        "source_ids": [
+          2987,
+          2996,
+          3005
+        ],
+        "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_29/OPV2V/train/2021_08_21_22_21_37",
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_21_22_21_37",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "6abeb23cc2436098",
+      "sender": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/6abeb23cc2436098/messages.jsonl.gz",
+        "bytes": 2448741,
+        "sha256": "24ab32f224bbb2a2aa6d33527f5d1428aeebd48d9238648977c99efc49629240"
+      },
+      "clean_config": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/6abeb23cc2436098.json",
+        "bytes": 11212,
+        "sha256": "bc12a0aefdee0329addfa48bf09e0ba27ffebd1e449a0bf779ffdeb1e08a2c84"
+      },
+      "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json"
+    },
+    "train/2021_08_22_22_30_58": {
+      "scan_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_001/calibration_extension/parents/train__2021_08_22_22_30_58/scans.jsonl.gz",
+      "spec": {
+        "parent": "train/2021_08_22_22_30_58",
+        "source_ids": [
+          1241,
+          1250,
+          1259
+        ],
+        "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_29/OPV2V/train/2021_08_22_22_30_58",
+        "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/detections/train/2021_08_22_22_30_58",
+        "frames": [
+          69,
+          71,
+          73,
+          75,
+          77,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          117,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          133,
+          135,
+          137,
+          139,
+          141,
+          143,
+          145,
+          147,
+          149,
+          151,
+          153,
+          155,
+          157,
+          159,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
+          175,
+          177,
+          179,
+          181,
+          183,
+          185,
+          187,
+          189,
+          191,
+          193,
+          195,
+          197,
+          199,
+          201,
+          203,
+          205,
+          207,
+          209,
+          211,
+          213,
+          215,
+          217,
+          219,
+          221,
+          223,
+          225,
+          227
+        ]
+      },
+      "source_clean_job_id": "d7ad3e46c350ed76",
+      "sender": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/senders/d7ad3e46c350ed76/messages.jsonl.gz",
+        "bytes": 1968506,
+        "sha256": "f374bf9ca0f70dad42e84c3e13ffb9fdb16b7d80ee6b0686ac14d6338cd4534b"
+      },
+      "clean_config": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_static_trial_2026_11_10/run_001/configs/d7ad3e46c350ed76.json",
+        "bytes": 8070,
+        "sha256": "4c1f9fcf8b774eed9b8244c5c3330ffca4ba61c0b6913e7a629f4461ef968ab8"
+      },
+      "offline_gt": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_h1_retrain_2026_10_30_envfix1/run_001/offline_gt/offline_gt.json"
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "status": "COMPLETE",
+  "jobs": {
+    "7f3083bc00e147fb": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "a07df9510c2cf7e9": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "bb30e22f91b2202b": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "c26e6be8af43118d": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "f101ef178468aaf2": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "866e3aba5f4dff86": {
+      "rows": 0,
+      "status": "SHAPE_ONLY"
+    },
+    "6b5f48a473625f6a": {
+      "rows": 3060,
+      "no_query": 33,
+      "ok": 3027
+    },
+    "7f9ecfcfb5121f3b": {
+      "rows": 2173,
+      "no_query": 33,
+      "ok": 2140
+    },
+    "c9ffce8e6d774cc2": {
+      "rows": 2218,
+      "no_query": 34,
+      "ok": 2184
+    },
+    "fe7756637d7d1e37": {
+      "rows": 2173,
+      "no_query": 33,
+      "ok": 2140
+    },
+    "e6fb05ecdfdf7689": {
+      "rows": 2217,
+      "no_query": 34,
+      "ok": 2183
+    },
+    "de2106d309204cd3": {
+      "rows": 2677,
+      "no_query": 51,
+      "ok": 2626
+    },
+    "9977adc395615b5f": {
+      "rows": 2014,
+      "no_query": 17,
+      "ok": 1997
+    },
+    "d28783906a6491ed": {
+      "rows": 1184,
+      "no_query": 17,
+      "ok": 1167
+    },
+    "0456f0317d17e637": {
+      "rows": 1186,
+      "no_query": 17,
+      "ok": 1169
+    },
+    "472b36aad14a9034": {
+      "rows": 1183,
+      "no_query": 17,
+      "ok": 1166
+    },
+    "e3b06bea6b587ea5": {
+      "rows": 1186,
+      "no_query": 17,
+      "ok": 1169
+    },
+    "ee0edf9ae0ad9a0b": {
+      "rows": 2480,
+      "no_query": 34,
+      "ok": 2446
+    },
+    "b296d72cbe8ecf5b": {
+      "rows": 1598,
+      "no_query": 30,
+      "ok": 1568
+    },
+    "bb07ed9d46669fc1": {
+      "rows": 1600,
+      "no_query": 30,
+      "ok": 1570
+    },
+    "7dc2142cdafcc57c": {
+      "rows": 1598,
+      "no_query": 30,
+      "ok": 1568
+    },
+    "ae08703103d4e897": {
+      "rows": 1600,
+      "no_query": 30,
+      "ok": 1570
+    },
+    "3d440fda9f28bd0c": {
+      "rows": 4387,
+      "no_query": 66,
+      "ok": 4321
+    },
+    "081ab23c9af4df7b": {
+      "rows": 2712,
+      "no_query": 51,
+      "ok": 2661
+    },
+    "51a1d02ed3123dab": {
+      "rows": 2276,
+      "no_query": 32,
+      "ok": 2244
+    },
+    "f71360786334d837": {
+      "rows": 1812,
+      "no_query": 33,
+      "ok": 1779
+    },
+    "2c92f6c77f619bb5": {
+      "rows": 1814,
+      "no_query": 33,
+      "ok": 1781
+    },
+    "291116beda3a91d4": {
+      "rows": 1811,
+      "no_query": 33,
+      "ok": 1778
+    },
+    "610c6969cbff68f1": {
+      "rows": 3195,
+      "no_query": 44,
+      "ok": 3151
+    },
+    "867e622dd7109055": {
+      "rows": 2622,
+      "no_query": 41,
+      "ok": 2581
+    },
+    "56e4a4c33d630705": {
+      "rows": 2623,
+      "no_query": 41,
+      "ok": 2582
+    },
+    "4e9e5385cb7b3c42": {
+      "rows": 2621,
+      "no_query": 41,
+      "ok": 2580
+    },
+    "ac63c0dbafec70c8": {
+      "rows": 2623,
+      "no_query": 41,
+      "ok": 2582
+    },
+    "d7ad3e46c350ed76": {
+      "rows": 3169,
+      "no_query": 47,
+      "ok": 3122
+    },
+    "57a3b5a5aca6397a": {
+      "rows": 2753,
+      "no_query": 47,
+      "ok": 2706
+    },
+    "8b7c40966764b36b": {
+      "rows": 2755,
+      "no_query": 47,
+      "ok": 2708
+    },
+    "56c22989a3367809": {
+      "rows": 2753,
+      "no_query": 47,
+      "ok": 2706
+    },
+    "b87fb1c4f19e6efe": {
+      "rows": 2755,
+      "no_query": 47,
+      "ok": 2708
+    },
+    "d1699f5ab6dafcdc": {
+      "rows": 1612,
+      "no_query": 63,
+      "ok": 1549
+    },
+    "410fec48a6a1488e": {
+      "rows": 1606,
+      "no_query": 18,
+      "ok": 1588
+    },
+    "7f288e0257162d72": {
+      "rows": 1189,
+      "no_query": 18,
+      "ok": 1171
+    },
+    "896404da8e0fcf4d": {
+      "rows": 1191,
+      "no_query": 18,
+      "ok": 1173
+    },
+    "a886759f061a022e": {
+      "rows": 1189,
+      "no_query": 18,
+      "ok": 1171
+    },
+    "177435ec2fb25031": {
+      "rows": 1191,
+      "no_query": 18,
+      "ok": 1173
+    },
+    "8ad1faacc6213976": {
+      "rows": 1878,
+      "no_query": 51,
+      "ok": 1827
+    },
+    "60b528984765d9ec": {
+      "rows": 4504,
+      "no_query": 38,
+      "ok": 4466
+    },
+    "13df4899473dbad7": {
+      "rows": 2248,
+      "no_query": 34,
+      "ok": 2214
+    },
+    "343d46fc7b709925": {
+      "rows": 2285,
+      "no_query": 34,
+      "ok": 2251
+    },
+    "4c23cf38a32e4c03": {
+      "rows": 2240,
+      "no_query": 33,
+      "ok": 2207
+    },
+    "b09efa93b2594a26": {
+      "rows": 1723,
+      "no_query": 25,
+      "ok": 1698
+    },
+    "09d9c1da704f13c4": {
+      "rows": 1652,
+      "no_query": 26,
+      "ok": 1626
+    },
+    "534aa0bfa79ac178": {
+      "rows": 1655,
+      "no_query": 26,
+      "ok": 1629
+    },
+    "b32b261500f50f2d": {
+      "rows": 1651,
+      "no_query": 26,
+      "ok": 1625
+    },
+    "411f1a9418d5a5bd": {
+      "rows": 1654,
+      "no_query": 26,
+      "ok": 1628
+    },
+    "6abeb23cc2436098": {
+      "rows": 3057,
+      "no_query": 27,
+      "ok": 3030
+    },
+    "adff3a19e2bc2882": {
+      "rows": 1846,
+      "no_query": 25,
+      "ok": 1821
+    },
+    "e3c94a4ea8009fad": {
+      "rows": 1848,
+      "no_query": 25,
+      "ok": 1823
+    },
+    "358e153e87249c60": {
+      "rows": 1848,
+      "no_query": 25,
+      "ok": 1823
+    },
+    "0d3d5e544df2809b": {
+      "rows": 3316,
+      "no_query": 66,
+      "ok": 3250
+    },
+    "e30cb370fd82c41d": {
+      "rows": 2118,
+      "no_query": 45,
+      "ok": 2073
+    },
+    "e64b44b3a5da639d": {
+      "rows": 2120,
+      "no_query": 45,
+      "ok": 2075
+    },
+    "16492d5459b299e2": {
+      "rows": 2118,
+      "no_query": 45,
+      "ok": 2073
+    },
+    "168f49cfa73fa87d": {
+      "rows": 2120,
+      "no_query": 45,
+      "ok": 2075
+    },
+    "8d87c21350a7bb56": {
+      "rows": 5745,
+      "no_query": 29,
+      "ok": 5716
+    },
+    "c25237f3d0007d29": {
+      "rows": 1828,
+      "no_query": 27,
+      "ok": 1801
+    },
+    "8f7f6ec5299db5b7": {
+      "rows": 1830,
+      "no_query": 27,
+      "ok": 1803
+    },
+    "49dc7286fc074b8d": {
+      "rows": 4013,
+      "no_query": 37,
+      "ok": 3976
+    },
+    "2cd8d07e71a97123": {
+      "rows": 2239,
+      "no_query": 32,
+      "ok": 2207
+    },
+    "748caf659d7d990e": {
+      "rows": 2240,
+      "no_query": 32,
+      "ok": 2208
+    }
+  },
+  "shape_hwl": [
+    1.5313823384235639,
+    1.9904686586233127,
+    4.546405334748792
+  ],
+  "schema": "rq1_trusted_receiver_local_v1"
+}

@@ -1,0 +1,293 @@
+{
+  "Local": {
+    "status": "active",
+    "mode": "Local",
+    "tauF": 0.4405678091037661,
+    "tauP": 0.28212174765838693,
+    "tauR": "Infinity",
+    "tauC": "Infinity",
+    "required_layers": [
+      [
+        "F1",
+        1
+      ],
+      [
+        "F1",
+        2
+      ]
+    ],
+    "missing_layers": [],
+    "coverage": {
+      "true": {
+        "rows": 13960,
+        "parents": 5,
+        "entities": 132,
+        "epochs": 142,
+        "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+      },
+      "false": {
+        "overall": {
+          "rows": 388,
+          "parents": 5,
+          "entities": 9,
+          "epochs": 9,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/1": {
+          "rows": 168,
+          "parents": 4,
+          "entities": 4,
+          "epochs": 4,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/2": {
+          "rows": 220,
+          "parents": 5,
+          "entities": 5,
+          "epochs": 5,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        }
+      }
+    },
+    "branches": {
+      "local_reject": {
+        "status": "active",
+        "reason": null
+      },
+      "local_accept": {
+        "status": "active",
+        "reason": null
+      },
+      "remote_reject": {
+        "status": "disabled",
+        "reason": "local_only"
+      },
+      "remote_accept": {
+        "status": "disabled",
+        "reason": "local_only"
+      }
+    },
+    "budget": {
+      "local_limit": 0.02,
+      "total_limit": 0.05,
+      "raw_F_true_reject": 0.019949370931721545,
+      "raw_I_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "local_true_reject": 0.0002446363160648875,
+      "local_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "remaining_true_reject": 0.049755363683935114,
+      "remaining_false_accept": {
+        "overall": 0.05,
+        "F1/1": 0.05,
+        "F1/2": 0.05
+      },
+      "final_true_reject": 0.0002446363160648875,
+      "final_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      }
+    }
+  },
+  "LocalCount": {
+    "status": "active",
+    "mode": "LocalCount",
+    "tauF": 0.4405678091037661,
+    "tauP": 0.28212174765838693,
+    "tauR": 10.0,
+    "tauC": -0.31286820953213657,
+    "required_layers": [
+      [
+        "F1",
+        1
+      ],
+      [
+        "F1",
+        2
+      ]
+    ],
+    "missing_layers": [],
+    "coverage": {
+      "true": {
+        "rows": 13960,
+        "parents": 5,
+        "entities": 132,
+        "epochs": 142,
+        "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+      },
+      "false": {
+        "overall": {
+          "rows": 388,
+          "parents": 5,
+          "entities": 9,
+          "epochs": 9,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/1": {
+          "rows": 168,
+          "parents": 4,
+          "entities": 4,
+          "epochs": 4,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/2": {
+          "rows": 220,
+          "parents": 5,
+          "entities": 5,
+          "epochs": 5,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        }
+      }
+    },
+    "branches": {
+      "local_reject": {
+        "status": "active",
+        "reason": null
+      },
+      "local_accept": {
+        "status": "active",
+        "reason": null
+      },
+      "remote_reject": {
+        "status": "active",
+        "reason": null
+      },
+      "remote_accept": {
+        "status": "active",
+        "reason": null
+      }
+    },
+    "budget": {
+      "local_limit": 0.02,
+      "total_limit": 0.05,
+      "raw_F_true_reject": 0.019949370931721545,
+      "raw_I_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "local_true_reject": 0.0002446363160648875,
+      "local_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "remaining_true_reject": 0.049755363683935114,
+      "remaining_false_accept": {
+        "overall": 0.05,
+        "F1/1": 0.05,
+        "F1/2": 0.05
+      },
+      "final_true_reject": 0.03211647128743045,
+      "final_false_accept": {
+        "overall": 0.025000000000000005,
+        "F1/1": 0.0,
+        "F1/2": 0.05000000000000001
+      }
+    }
+  },
+  "LocalCond": {
+    "status": "active",
+    "mode": "LocalCond",
+    "tauF": 0.4405678091037661,
+    "tauP": 0.28212174765838693,
+    "tauR": 12.961172821372376,
+    "tauC": -0.31286820953213657,
+    "required_layers": [
+      [
+        "F1",
+        1
+      ],
+      [
+        "F1",
+        2
+      ]
+    ],
+    "missing_layers": [],
+    "coverage": {
+      "true": {
+        "rows": 13960,
+        "parents": 5,
+        "entities": 132,
+        "epochs": 142,
+        "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+      },
+      "false": {
+        "overall": {
+          "rows": 388,
+          "parents": 5,
+          "entities": 9,
+          "epochs": 9,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/1": {
+          "rows": 168,
+          "parents": 4,
+          "entities": 4,
+          "epochs": 4,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        },
+        "F1/2": {
+          "rows": 220,
+          "parents": 5,
+          "entities": 5,
+          "epochs": 5,
+          "entity_unit": "injected job; true GT within parent, query epoch if GT unavailable"
+        }
+      }
+    },
+    "branches": {
+      "local_reject": {
+        "status": "active",
+        "reason": null
+      },
+      "local_accept": {
+        "status": "active",
+        "reason": null
+      },
+      "remote_reject": {
+        "status": "active",
+        "reason": null
+      },
+      "remote_accept": {
+        "status": "active",
+        "reason": null
+      }
+    },
+    "budget": {
+      "local_limit": 0.02,
+      "total_limit": 0.05,
+      "raw_F_true_reject": 0.019949370931721545,
+      "raw_I_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "local_true_reject": 0.0002446363160648875,
+      "local_false_accept": {
+        "overall": 0.0,
+        "F1/1": 0.0,
+        "F1/2": 0.0
+      },
+      "remaining_true_reject": 0.049755363683935114,
+      "remaining_false_accept": {
+        "overall": 0.05,
+        "F1/1": 0.05,
+        "F1/2": 0.05
+      },
+      "final_true_reject": 0.049951766169214935,
+      "final_false_accept": {
+        "overall": 0.025000000000000005,
+        "F1/1": 0.0,
+        "F1/2": 0.05000000000000001
+      }
+    }
+  }
+}

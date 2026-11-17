@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "-m",
+    "scripts.rq1_trusted_receiver.grouped_acceptance",
+    "--source",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/run_002",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_trusted_receiver_2026_11_17/grouped_acceptance_001"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "commit": "64d956abbef743ddf89492a63e3639315c16135a",
+  "started_utc": "2026-11-17T10:31:58.944679+00:00",
+  "scope": "cal_only_screen_no_eval_access",
+  "exit_code": 0,
+  "elapsed_seconds": 8.996143514290452,
+  "finished_utc": "2026-11-17T10:32:07.941332+00:00"
+}

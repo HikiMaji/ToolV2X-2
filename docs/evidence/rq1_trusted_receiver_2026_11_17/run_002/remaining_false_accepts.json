@@ -1,0 +1,127 @@
+{
+  "mixed": {
+    "false_accept_times": 40,
+    "false_accept_mass": 0.032196969696969696,
+    "entities": {
+      "ac63c0dbafec70c8": {
+        "n": 16,
+        "mass": 0.015151515151515145,
+        "states": {
+          "unknown": 16
+        },
+        "reasons": {
+          "message_support": 16
+        },
+        "zeroR": 3,
+        "F_range": [
+          0.0,
+          0.0
+        ],
+        "I_range": null,
+        "parent": "test/2021_08_20_21_10_24",
+        "family": "F2",
+        "k": 2
+      },
+      "748caf659d7d990e": {
+        "n": 24,
+        "mass": 0.01704545454545454,
+        "states": {
+          "unknown": 24
+        },
+        "reasons": {
+          "message_support": 24
+        },
+        "zeroR": 23,
+        "F_range": [
+          0.0,
+          0.43935334413713106
+        ],
+        "I_range": null,
+        "parent": "validate/2021_08_21_17_30_41",
+        "family": "F1",
+        "k": 2
+      }
+    },
+    "true_accept_mass": 0.6447421076178204,
+    "true_remote_support_mass": 0.13901536380775112,
+    "local_only_accept_if_remote_accept_closed": 0.5057267438100692,
+    "scope": "saved-output decomposition; closing remote acceptance is an algebraic cost description, not a tested new policy"
+  },
+  "F1_only": {
+    "false_accept_times": 16,
+    "false_accept_mass": 0.030303030303030304,
+    "entities": {
+      "ac63c0dbafec70c8": {
+        "n": 16,
+        "mass": 0.03030303030303029,
+        "states": {
+          "unknown": 16
+        },
+        "reasons": {
+          "message_support": 16
+        },
+        "zeroR": 3,
+        "F_range": [
+          0.0,
+          0.0
+        ],
+        "I_range": null,
+        "parent": "test/2021_08_20_21_10_24",
+        "family": "F2",
+        "k": 2
+      }
+    },
+    "true_accept_mass": 0.6437490900710977,
+    "true_remote_support_mass": 0.13802234626102844,
+    "local_only_accept_if_remote_accept_closed": 0.5057267438100692,
+    "scope": "saved-output decomposition; closing remote acceptance is an algebraic cost description, not a tested new policy"
+  },
+  "F2_only": {
+    "false_accept_times": 30,
+    "false_accept_mass": 0.04242424242424243,
+    "entities": {
+      "534aa0bfa79ac178": {
+        "n": 6,
+        "mass": 0.008333333333333333,
+        "states": {
+          "unknown": 6
+        },
+        "reasons": {
+          "message_support": 6
+        },
+        "zeroR": 0,
+        "F_range": [
+          0.1944834178625242,
+          0.32993398408733615
+        ],
+        "I_range": null,
+        "parent": "train/2021_08_23_17_07_55",
+        "family": "F1",
+        "k": 2
+      },
+      "748caf659d7d990e": {
+        "n": 24,
+        "mass": 0.03409090909090908,
+        "states": {
+          "unknown": 24
+        },
+        "reasons": {
+          "message_support": 24
+        },
+        "zeroR": 23,
+        "F_range": [
+          0.0,
+          0.43935334413713106
+        ],
+        "I_range": null,
+        "parent": "validate/2021_08_21_17_30_41",
+        "family": "F1",
+        "k": 2
+      }
+    },
+    "true_accept_mass": 0.6503686078444252,
+    "true_remote_support_mass": 0.1446418640343559,
+    "local_only_accept_if_remote_accept_closed": 0.5057267438100693,
+    "scope": "saved-output decomposition; closing remote acceptance is an algebraic cost description, not a tested new policy"
+  }
+}

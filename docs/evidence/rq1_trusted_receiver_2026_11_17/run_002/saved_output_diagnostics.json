@@ -1,0 +1,199 @@
+{
+  "scope": "descriptive saved-output analysis; old policies are context references without the new local channel",
+  "regimes": {
+    "mixed": {
+      "old_reference": {
+        "old_Count": {
+          "false": {
+            "accept": 0.032670454545454544,
+            "unknown": 0.38196426474042755,
+            "reject": 0.5853652807141179
+          },
+          "true": {
+            "accept": 0.5494592570833914,
+            "unknown": 0.43588897148060507,
+            "reject": 0.014651771436003538
+          },
+          "CD": 0.5674122688987546
+        },
+        "old_Cond": {
+          "false": {
+            "accept": 0.03196022727272727,
+            "unknown": 0.23094388653981676,
+            "reject": 0.7370958861874559
+          },
+          "true": {
+            "accept": 0.5486343195635576,
+            "unknown": 0.43231148359277516,
+            "reject": 0.019054196843667198
+          },
+          "CD": 0.6428651028755068
+        }
+      },
+      "false_accept_entities": {
+        "ac63c0dbafec70c8": {
+          "n": 16,
+          "mass": 0.015151515151515145,
+          "zero_R": 3,
+          "states": {
+            "unknown": 16
+          },
+          "reasons": {
+            "message_support": 16
+          },
+          "F": [
+            0.0,
+            0.0
+          ],
+          "I": null,
+          "parent": "test/2021_08_20_21_10_24",
+          "family": "F2",
+          "k": 2
+        },
+        "748caf659d7d990e": {
+          "n": 24,
+          "mass": 0.01704545454545454,
+          "zero_R": 23,
+          "states": {
+            "unknown": 24
+          },
+          "reasons": {
+            "message_support": 24
+          },
+          "F": [
+            0.0,
+            0.43935334413713106
+          ],
+          "I": null,
+          "parent": "validate/2021_08_21_17_30_41",
+          "family": "F1",
+          "k": 2
+        }
+      },
+      "true_message_accept_mass": 0.13901536380775112
+    },
+    "F1_only": {
+      "old_reference": {
+        "old_Count": {
+          "false": {
+            "accept": 0.007575757575757576,
+            "unknown": 0.4670067966731178,
+            "reject": 0.5254174457511246
+          },
+          "true": {
+            "accept": 0.5509002372055979,
+            "unknown": 0.4450470967173798,
+            "reject": 0.0040526660770222895
+          },
+          "CD": 0.5381588414783612
+        },
+        "old_Cond": {
+          "false": {
+            "accept": 0.007575757575757576,
+            "unknown": 0.32212043303675414,
+            "reject": 0.6703038093874882
+          },
+          "true": {
+            "accept": 0.5491164792417987,
+            "unknown": 0.4344908766397234,
+            "reject": 0.016392644118477847
+          },
+          "CD": 0.6097101443146435
+        }
+      },
+      "false_accept_entities": {
+        "ac63c0dbafec70c8": {
+          "n": 16,
+          "mass": 0.03030303030303029,
+          "zero_R": 3,
+          "states": {
+            "unknown": 16
+          },
+          "reasons": {
+            "message_support": 16
+          },
+          "F": [
+            0.0,
+            0.0
+          ],
+          "I": null,
+          "parent": "test/2021_08_20_21_10_24",
+          "family": "F2",
+          "k": 2
+        }
+      },
+      "true_message_accept_mass": 0.13802234626102844
+    },
+    "F2_only": {
+      "old_reference": {
+        "old_Count": {
+          "false": {
+            "accept": 0.05965909090909091,
+            "unknown": 0.4314790345313601,
+            "reject": 0.508861874559549
+          },
+          "true": {
+            "accept": 0.5579544420955741,
+            "unknown": 0.4337780125360006,
+            "reject": 0.008267545368425284
+          },
+          "CD": 0.5334081583275616
+        },
+        "old_Cond": {
+          "false": {
+            "accept": 0.05681818181818182,
+            "unknown": 0.14299829692271554,
+            "reject": 0.8001835212591026
+          },
+          "true": {
+            "accept": 0.5546971395196459,
+            "unknown": 0.42569993799278427,
+            "reject": 0.019602922487569806
+          },
+          "CD": 0.6774403303893743
+        }
+      },
+      "false_accept_entities": {
+        "534aa0bfa79ac178": {
+          "n": 6,
+          "mass": 0.008333333333333333,
+          "zero_R": 0,
+          "states": {
+            "unknown": 6
+          },
+          "reasons": {
+            "message_support": 6
+          },
+          "F": [
+            0.1944834178625242,
+            0.32993398408733615
+          ],
+          "I": null,
+          "parent": "train/2021_08_23_17_07_55",
+          "family": "F1",
+          "k": 2
+        },
+        "748caf659d7d990e": {
+          "n": 24,
+          "mass": 0.03409090909090908,
+          "zero_R": 23,
+          "states": {
+            "unknown": 24
+          },
+          "reasons": {
+            "message_support": 24
+          },
+          "F": [
+            0.0,
+            0.43935334413713106
+          ],
+          "I": null,
+          "parent": "validate/2021_08_21_17_30_41",
+          "family": "F1",
+          "k": 2
+        }
+      },
+      "true_message_accept_mass": 0.1446418640343559
+    }
+  }
+}

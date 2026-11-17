@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/root/autodl-tmp/ToolV2X_resources/mate_continuous_2026_10_08/runtime/bin/python",
+    "docs/REALLY_MAYBE/rq1_trusted_receiver_2026_11_17/prepare_calibration.py",
+    "--batch",
+    "docs/REALLY_MAYBE/rq1_trusted_receiver_2026_11_17/batch.json",
+    "--workers",
+    "4"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "started_utc": "2026-11-17T09:08:39.886557+00:00",
+  "scope": "16_fixed_missing_cal_attempts_no_method_score",
+  "exit_code": 0,
+  "elapsed_seconds": 770.5134347071871,
+  "finished_utc": "2026-11-17T09:21:30.400138+00:00"
+}
