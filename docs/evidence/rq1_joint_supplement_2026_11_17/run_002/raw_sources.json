@@ -1,0 +1,296 @@
+{
+  "cal": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/12f11cc8cf224461/rows.jsonl.gz",
+      "bytes": 231372,
+      "sha256": "658ef292897c5c5839c1f45c8bc9956abc72cfb9f89d6a64f6b0c6918c87792e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/1582be3a0fbb3d9c/rows.jsonl.gz",
+      "bytes": 241254,
+      "sha256": "501da74f324ba25bf92c5bf7017aa8475d0ad1ab5fc2846211f98d86315e3a6c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/16959a877affaa9d/rows.jsonl.gz",
+      "bytes": 238965,
+      "sha256": "cc7ebd3fde7d1aabec2b6a6ca3dfe593378d9d1f3cba32314f66d5e4390e3c72"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/245997ce61af986f/rows.jsonl.gz",
+      "bytes": 295483,
+      "sha256": "003f8b5df9f54b8ac6593e5090113f5ff6c9d8152464b6223a8680b69b20c2fb"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/36a44880203cdef3/rows.jsonl.gz",
+      "bytes": 241313,
+      "sha256": "d26feabf6c97a77c3f10f00eedc967180266a8ba54a79f408659f32166e84a11"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/410fec48a6a1488e/rows.jsonl.gz",
+      "bytes": 231139,
+      "sha256": "25b0aa16bb0c5ccfe6628f06612dd6b0ebc754fc36975667807744113101fd2b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/69fb3ef368620df9/rows.jsonl.gz",
+      "bytes": 241248,
+      "sha256": "0ffb75c2a570f0f15875c33290643837a204c473e6edfbce79c7cb0fec3e2fa3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6abeb23cc2436098/rows.jsonl.gz",
+      "bytes": 373671,
+      "sha256": "811c33a119f6dbcc1e11abfb8875f6465155cc4ed824952d8852ff2f25d10a20"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/6df1ef17f6cca1ae/rows.jsonl.gz",
+      "bytes": 295469,
+      "sha256": "3a5c44181be4dd3b73ae20afdb1891c42af1844ddfd512e0c7c2f7ba83886901"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/82781d5ee6af0df2/rows.jsonl.gz",
+      "bytes": 172398,
+      "sha256": "5300c84d112c2946e5cc11f205043ca752c6c779f5e00b2b94b1ed6ec1c68fc3"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/872252222519c7d7/rows.jsonl.gz",
+      "bytes": 169379,
+      "sha256": "74d348386257257f6381337eae51d42304c084c538c8c1e9b84b231be7beba2e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8a64c3fbe7215c46/rows.jsonl.gz",
+      "bytes": 231355,
+      "sha256": "6ab61b8c643be58aba0be506b89ca15a808a8d213cc1038f8b3fcc689f9d94d6"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8c929902aa5bf010/rows.jsonl.gz",
+      "bytes": 170813,
+      "sha256": "b0da47410fafe2f5e8bea04b75f2a61a9a31b1ae7dfeb7559b223e3143339af2"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d5f42c88af10379/rows.jsonl.gz",
+      "bytes": 231254,
+      "sha256": "2993135a911e3c7f49ef9791e48084d174d7eb8e7d14c3072fc4ee4d84c6ba7d"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/8d87c21350a7bb56/rows.jsonl.gz",
+      "bytes": 612975,
+      "sha256": "ce8693e52610f03e938c0615e894cb5ec54fb1a9491dcd905e4394773c8bb5f2"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b1fc85594ddb90f8/rows.jsonl.gz",
+      "bytes": 171623,
+      "sha256": "79045cb46ca96d4e5f14918539af499dea0efbfd11eb8b757bd5893a0952389c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b20b54daa5bfdaa0/rows.jsonl.gz",
+      "bytes": 231324,
+      "sha256": "47c8a42064e3f6b5ea276127cd308c647b8f485ab1a8cc5f1937abf727d7a19e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/b58fd2ac0d1687c1/rows.jsonl.gz",
+      "bytes": 295399,
+      "sha256": "8446fa81c11d4aff621340fd65d12136581ad1324e09f7fb98880622f726c933"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/ba03ba6670565082/rows.jsonl.gz",
+      "bytes": 295153,
+      "sha256": "31b820c47f63db87131e4913c0215226a8f0fca9e4e50d852c651e127124b720"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d173dc7138429af6/rows.jsonl.gz",
+      "bytes": 229058,
+      "sha256": "a93d1ae2bd99afb441b53c337f8ee809a1b6d3937cd76395e9214d3a3a9e51da"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d2da45a730d0756c/rows.jsonl.gz",
+      "bytes": 241182,
+      "sha256": "883398fe58ac68e5785da218cf0e7296b5d6d3a5a27fbe9b81a56808c65ab2ea"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/d7ad3e46c350ed76/rows.jsonl.gz",
+      "bytes": 336089,
+      "sha256": "3225c9f65274a573301f1a0c769cfcc6e09392fe5f3fbdb06a801bd49e18cce7"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/de8f762eb83b97ea/rows.jsonl.gz",
+      "bytes": 167041,
+      "sha256": "e0db684e8f6eb0bf244a8e423c892bbd626d20d1b79a1fc849416c5b0e60d259"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/df2cb388eb225100/rows.jsonl.gz",
+      "bytes": 172401,
+      "sha256": "90d89c7f3b6bc0aa56e20a94994cb73a811b3574642212f5e324c9e7c4a67d95"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/e3998366b3838645/rows.jsonl.gz",
+      "bytes": 293538,
+      "sha256": "6fb2f7c9fd4bb7de37a434e3d0fd4c2f8bc9362767ec5c7d69e563870b72e840"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f9039996102ee124/rows.jsonl.gz",
+      "bytes": 295506,
+      "sha256": "994326e7d93413de3093c59a1e7497e09cce11d79e8ec7cddb4589604394388e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/fc910f4d5a8e8f67/rows.jsonl.gz",
+      "bytes": 238910,
+      "sha256": "9ef9d38d7a1389ab4b8b12ebdd648b1cadcef1bf08fec30bc5d36929c5bb5a16"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/60b528984765d9ec/rows.jsonl.gz",
+      "bytes": 842839,
+      "sha256": "c3dd645561883121c5c49c4525332145639c76e6b44e4a94e5cc90bef5b516cc"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/13df4899473dbad7/rows.jsonl.gz",
+      "bytes": 452402,
+      "sha256": "094d43f5b14496096bbc9662953aedd37e010313c8c1311322cb1ab28a2a5550"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/343d46fc7b709925/rows.jsonl.gz",
+      "bytes": 464449,
+      "sha256": "db524f0e0635d17e55596d12591d9fc3d59d0bb53c1dd801a4ee41894cee25c0"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f0282c7c0945698d/rows.jsonl.gz",
+      "bytes": 465680,
+      "sha256": "cd7d9400eb50dd38bfb03a0c2da050d6285501cd4cc8228a0e5512326c753aa8"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/4c23cf38a32e4c03/rows.jsonl.gz",
+      "bytes": 451386,
+      "sha256": "c26c2c4bbe7169f81a97f6e016122453e779aff9dfa002a8299d919235e75ff0"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/605ff9c3ca7bf3a5/rows.jsonl.gz",
+      "bytes": 464076,
+      "sha256": "e6b38575db4c1d731ad8a4d2a3759fb76a13d5b8c52ea7f86c45d30f6c61800f"
+    }
+  ],
+  "eval": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/610c6969cbff68f1/rows.jsonl.gz",
+      "bytes": 442829,
+      "sha256": "c7922a7779eb47e2c2fc00cf8016a728b2343d4cce8f91d7468acebf0c6689e0"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/867e622dd7109055/rows.jsonl.gz",
+      "bytes": 363368,
+      "sha256": "3d9795869b8f29eb2e31c4f537039b23afbbf1c336c77e42f259d2d1cb29ad49"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/56e4a4c33d630705/rows.jsonl.gz",
+      "bytes": 363996,
+      "sha256": "cc47a45665e45c8441950d53ad05c7000255249d85eec1aa6209dbfb84ac0372"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/4e9e5385cb7b3c42/rows.jsonl.gz",
+      "bytes": 363775,
+      "sha256": "af5c77127e68038d6a21be9e1aec8de5f7cccb4013aab9a9ecdae3e318e332a1"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/ac63c0dbafec70c8/rows.jsonl.gz",
+      "bytes": 363589,
+      "sha256": "4cfebf6285b586dcccadf483df70a8cd0a10c24f3b196f0ce56e4c38c0c4056b"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/9977adc395615b5f/rows.jsonl.gz",
+      "bytes": 257970,
+      "sha256": "f1e7008358491469c4c56db9b551ee6b5979817d4eb8b0bb5ea36f1064b5d280"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/d28783906a6491ed/rows.jsonl.gz",
+      "bytes": 151295,
+      "sha256": "4523c3ac0c3b324ea449b72215ae5cfc07d4d7436b8cf2a7c030c651ade69c08"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/0456f0317d17e637/rows.jsonl.gz",
+      "bytes": 151509,
+      "sha256": "bc7b582a94d7b5a6924cf5aa3aa7cd7e495c3ee28da6fa83c3fd28a993605f2f"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/472b36aad14a9034/rows.jsonl.gz",
+      "bytes": 151327,
+      "sha256": "29ebc1842f1f2e40d6938f3bd0d1701b5fc78b0781cd87a4ec948409f9744f8c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/e3b06bea6b587ea5/rows.jsonl.gz",
+      "bytes": 151611,
+      "sha256": "df77aa267aa409f6977eefd7f2968b462c921ee3474289da501390cbf6b4131f"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/ee0edf9ae0ad9a0b/rows.jsonl.gz",
+      "bytes": 286625,
+      "sha256": "93203703a016f89871461aa013c1a21c60248ba5a2aac526331c869ad8e5597c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/b296d72cbe8ecf5b/rows.jsonl.gz",
+      "bytes": 187293,
+      "sha256": "6d8ae73708c6f543b72b45cd2eaebfa5dbffa7b1973f84d6a7769b476adfeb24"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/bb07ed9d46669fc1/rows.jsonl.gz",
+      "bytes": 187610,
+      "sha256": "334d8adea2a90d2e09b91f0ca3c9ff37c70485bbbe074e72a15a41833a9a7fb2"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/7dc2142cdafcc57c/rows.jsonl.gz",
+      "bytes": 188992,
+      "sha256": "7b6cc027cbd8b1bc9f4ce4fec3c94fe5d0dddb12c2c4cbe59974dacda7d9c27c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/ae08703103d4e897/rows.jsonl.gz",
+      "bytes": 189326,
+      "sha256": "5bbb3db5bca4e31fe5caeba83a6767116b012b99afbb44e02ae3719c1911cc54"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/51a1d02ed3123dab/rows.jsonl.gz",
+      "bytes": 314186,
+      "sha256": "8a8f66d085818464647ab1cde5e3cd6f7f857092d0b377ce1e2d250c62a0e2ed"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/f71360786334d837/rows.jsonl.gz",
+      "bytes": 251899,
+      "sha256": "98a4c944be74be33610064d9bab19ba2265553d1cf9b01a3d3d5601ccb05b7d0"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/2c92f6c77f619bb5/rows.jsonl.gz",
+      "bytes": 252084,
+      "sha256": "b3baf8356a82063e6f42c0fea56ae58c81a566d303ff25d2367a10520652ee9c"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/291116beda3a91d4/rows.jsonl.gz",
+      "bytes": 251752,
+      "sha256": "7f3b5fb95b84afe31776f8c8b0e4b4e2979a7fec86aae9f6c78376abfcfc53bd"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/0d3d5e544df2809b/rows.jsonl.gz",
+      "bytes": 417531,
+      "sha256": "0035fef1b11426ae341279a548ac56e2c4aa72d2a19de86e8d16a769297d959e"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/e30cb370fd82c41d/rows.jsonl.gz",
+      "bytes": 262777,
+      "sha256": "9ff5c36511bce161c9aaa8956137851f551e6d515c6c4febdc4767966e19e2eb"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/e64b44b3a5da639d/rows.jsonl.gz",
+      "bytes": 263085,
+      "sha256": "4e04234cd92fe898784ecc4882ba15f76404d0f39a0d4a9d0db3cbeec0388776"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/16492d5459b299e2/rows.jsonl.gz",
+      "bytes": 263734,
+      "sha256": "78b3d470919946b643ee52d16a137c24808371f1a20d3dbab99441e0d5247e66"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/168f49cfa73fa87d/rows.jsonl.gz",
+      "bytes": 263036,
+      "sha256": "19d3d295b1c5830d0892eb3073deab22234796bc0a8f5a2907ba6eaa85d91ec5"
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_report_freeze_2026_11_13/run_001/jobs/8ad1faacc6213976/rows.jsonl.gz",
+      "bytes": 62330,
+      "sha256": "150051a0bda98b3602cdeffd5befb0ff7029ee18ddf7dd35e6741387fa6bfc62"
+    }
+  ]
+}

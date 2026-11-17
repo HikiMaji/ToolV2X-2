@@ -1,0 +1,1541 @@
+{
+  "rho": 0.25,
+  "n_supervision": 17601,
+  "informative": true,
+  "objectives": {
+    "0.0": 0.7675055478111524,
+    "0.25": 0.7651405565923833,
+    "0.5": 0.7655906931712487,
+    "0.75": 0.7691695700449163,
+    "0.9": 0.7750367225987067
+  },
+  "source_folds": [
+    {
+      "parent": "train/2021_08_16_22_26_54",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f890b6f95d3bc10a/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f3083bc00e147fb/rows.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_22_10_10_40",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/6f46bcbf2c5cbae2/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f101ef178468aaf2/rows.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_22_10_46_58",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/634aa433941ce5e0/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c26e6be8af43118d/rows.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_23_11_22_46",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/237efaecef94d3e7/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/bb30e22f91b2202b/rows.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_23_22_31_01",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f63b35776d2754fe/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/866e3aba5f4dff86/rows.jsonl.gz"
+    },
+    {
+      "parent": "train/2021_08_24_21_29_28",
+      "normal": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/a25ac47ca85b7da0/normal.json",
+      "rows_path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a07df9510c2cf7e9/rows.jsonl.gz"
+    }
+  ],
+  "source_inventory": {
+    "cal": {
+      "rows_available": 33,
+      "UNREALIZABLE": 4
+    },
+    "eval": {
+      "rows_available": 25,
+      "UNREALIZABLE": 5
+    },
+    "confirmation": {
+      "counts": {
+        "COMPLETE": 9,
+        "UNREALIZABLE": 6
+      },
+      "tasks": {
+        "d1699f5ab6dafcdc": "COMPLETE",
+        "a9b3a10f6a97eed1": "UNREALIZABLE",
+        "d14371a69054b6c6": "UNREALIZABLE",
+        "b5c410b66a3125f2": "UNREALIZABLE",
+        "06b0901b84d689b0": "UNREALIZABLE",
+        "b09efa93b2594a26": "COMPLETE",
+        "09d9c1da704f13c4": "COMPLETE",
+        "534aa0bfa79ac178": "COMPLETE",
+        "b32b261500f50f2d": "COMPLETE",
+        "411f1a9418d5a5bd": "COMPLETE",
+        "49dc7286fc074b8d": "COMPLETE",
+        "2cd8d07e71a97123": "COMPLETE",
+        "748caf659d7d990e": "COMPLETE",
+        "b07c3e91729e3a15": "UNREALIZABLE",
+        "eac9b8aa8352ab47": "UNREALIZABLE"
+      },
+      "resolved_source": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001/confirmation"
+    }
+  },
+  "rho_artifact_source": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_002/rho.json",
+  "domains": {
+    "existing": {
+      "mixed": {
+        "cal": {
+          "n_all": 73553,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8589,
+                  "unknown": 4889,
+                  "reject": 482
+                },
+                "weighted": {
+                  "accept": 0.589878007124104,
+                  "unknown": 0.3666463201722029,
+                  "reject": 0.04347567270369319
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 213,
+                  "reject": 1139
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.04090909090909091,
+                  "reject": 0.9590909090909091
+                }
+              },
+              "correct_definite": 0.7744844581075065
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8568,
+                  "unknown": 4801,
+                  "reject": 591
+                },
+                "weighted": {
+                  "accept": 0.5889115148105528,
+                  "unknown": 0.36113901184617897,
+                  "reject": 0.04994947334326823
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 144,
+                  "reject": 1208
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.027598905723905724,
+                  "reject": 0.9724010942760942
+                }
+              },
+              "correct_definite": 0.7806563045433235
+            },
+            "Group": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8568,
+                  "unknown": 4800,
+                  "reject": 592
+                },
+                "weighted": {
+                  "accept": 0.5889115148105528,
+                  "unknown": 0.36109515868511666,
+                  "reject": 0.049993326504330554
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 143,
+                  "reject": 1209
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.02740600448933782,
+                  "reject": 0.9725939955106622
+                }
+              },
+              "correct_definite": 0.7807527551606075
+            },
+            "Joint": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8568,
+                  "unknown": 4802,
+                  "reject": 590
+                },
+                "weighted": {
+                  "accept": 0.5889115148105528,
+                  "unknown": 0.36113419271422514,
+                  "reject": 0.04995429247522208
+                }
+              },
+              "false": {
+                "n": 1352,
+                "parents": 5,
+                "epochs": 26,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 144,
+                  "reject": 1208
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.027598905723905724,
+                  "reject": 0.9724010942760942
+                }
+              },
+              "correct_definite": 0.7806563045433235
+            }
+          },
+          "independent_verdict": null
+        },
+        "eval": {
+          "n_all": 50696,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7091,
+                  "unknown": 2692,
+                  "reject": 95
+                },
+                "weighted": {
+                  "accept": 0.5904278603354833,
+                  "unknown": 0.40358898119053455,
+                  "reject": 0.005983158473982056
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 324,
+                  "reject": 457
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.4085755813953489,
+                  "reject": 0.5871630549682876
+                }
+              },
+              "correct_definite": 0.5887954576518855
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7079,
+                  "unknown": 2609,
+                  "reject": 190
+                },
+                "weighted": {
+                  "accept": 0.5894774569510833,
+                  "unknown": 0.39738291594021213,
+                  "reject": 0.013139627108704467
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 153,
+                  "reject": 628
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.20601876321353066,
+                  "reject": 0.7897198731501057
+                }
+              },
+              "correct_definite": 0.6895986650505945
+            },
+            "Group": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7079,
+                  "unknown": 2625,
+                  "reject": 174
+                },
+                "weighted": {
+                  "accept": 0.5894774569510833,
+                  "unknown": 0.3985860442619845,
+                  "reject": 0.011936498786932077
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 211,
+                  "reject": 570
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.28016649048625797,
+                  "reject": 0.7155721458773785
+                }
+              },
+              "correct_definite": 0.6525248014142309
+            },
+            "Joint": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7079,
+                  "unknown": 2587,
+                  "reject": 212
+                },
+                "weighted": {
+                  "accept": 0.5894774569510833,
+                  "unknown": 0.395980859450569,
+                  "reject": 0.014541683598347607
+                }
+              },
+              "false": {
+                "n": 784,
+                "parents": 5,
+                "epochs": 19,
+                "counts": {
+                  "accept": 3,
+                  "unknown": 152,
+                  "reject": 629
+                },
+                "weighted": {
+                  "accept": 0.004261363636363636,
+                  "unknown": 0.20459830866807613,
+                  "reject": 0.7911403276955603
+                }
+              },
+              "correct_definite": 0.6903088923233218
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "pass",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "pass",
+              "active": "pass",
+              "changed_primary": "pass",
+              "false_accept_F1/1": "pass",
+              "false_accept_F1/2": "pass",
+              "false_accept_F2/1": "pass",
+              "false_accept_F2/2": "pass",
+              "coverage_F1/1": "pass",
+              "coverage_F1/2": "pass",
+              "coverage_F2/1": "pass",
+              "coverage_F2/2": "pass",
+              "control_risk_Cond": "pass",
+              "control_risk_Group": "pass"
+            },
+            "status": "not_retained",
+            "support": {
+              "F1/1": {
+                "parents": 5,
+                "entities": 5
+              },
+              "F1/2": {
+                "parents": 5,
+                "entities": 5
+              },
+              "F2/1": {
+                "parents": 5,
+                "entities": 5
+              },
+              "F2/2": {
+                "parents": 4,
+                "entities": 4
+              }
+            }
+          }
+        }
+      },
+      "F1_only": {
+        "cal": {
+          "n_all": 24900,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8476,
+                  "unknown": 5285,
+                  "reject": 199
+                },
+                "weighted": {
+                  "accept": 0.5837135362759811,
+                  "unknown": 0.4031731846512513,
+                  "reject": 0.01311327907276767
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7918567681379906
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8446,
+                  "unknown": 5052,
+                  "reject": 462
+                },
+                "weighted": {
+                  "accept": 0.5822992889634625,
+                  "unknown": 0.38469355316664877,
+                  "reject": 0.033007157869888795
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7911496444817312
+            },
+            "Group": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8446,
+                  "unknown": 5032,
+                  "reject": 482
+                },
+                "weighted": {
+                  "accept": 0.5823422237082475,
+                  "unknown": 0.38458023151725984,
+                  "reject": 0.03307754477449276
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7911711118541238
+            },
+            "Joint": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8445,
+                  "unknown": 5046,
+                  "reject": 469
+                },
+                "weighted": {
+                  "accept": 0.5822306076447812,
+                  "unknown": 0.38482669409347176,
+                  "reject": 0.032942698261747144
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 89
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                }
+              },
+              "correct_definite": 0.7911153038223906
+            }
+          },
+          "independent_verdict": null
+        },
+        "eval": {
+          "n_all": 32019,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7142,
+                  "unknown": 2723,
+                  "reject": 13
+                },
+                "weighted": {
+                  "accept": 0.5950133512696653,
+                  "unknown": 0.40417496406420644,
+                  "reject": 0.0008116846661282269
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 180,
+                  "reject": 169
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.5328729806778587,
+                  "reject": 0.45576338295850494
+                }
+              },
+              "correct_definite": 0.5253883671140851
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7110,
+                  "unknown": 2515,
+                  "reject": 253
+                },
+                "weighted": {
+                  "accept": 0.5923196990898016,
+                  "unknown": 0.3903379931260084,
+                  "reject": 0.017342307784189923
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 120,
+                  "reject": 229
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.3624184352233133,
+                  "reject": 0.6262179284130504
+                }
+              },
+              "correct_definite": 0.6092688137514259
+            },
+            "Group": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7108,
+                  "unknown": 2522,
+                  "reject": 248
+                },
+                "weighted": {
+                  "accept": 0.5922069560694806,
+                  "unknown": 0.39089571139671836,
+                  "reject": 0.016897332533800987
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 146,
+                  "reject": 203
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.43628207158694965,
+                  "reject": 0.552354292049414
+                }
+              },
+              "correct_definite": 0.5722806240594474
+            },
+            "Joint": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7103,
+                  "unknown": 2509,
+                  "reject": 266
+                },
+                "weighted": {
+                  "accept": 0.5919224683554922,
+                  "unknown": 0.3899975096394575,
+                  "reject": 0.01808002200505021
+                }
+              },
+              "false": {
+                "n": 353,
+                "parents": 5,
+                "epochs": 9,
+                "counts": {
+                  "accept": 4,
+                  "unknown": 120,
+                  "reject": 229
+                },
+                "weighted": {
+                  "accept": 0.011363636363636364,
+                  "unknown": 0.3624184352233133,
+                  "reject": 0.6262179284130504
+                }
+              },
+              "correct_definite": 0.6090701983842712
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "pass",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "pass",
+              "active": "pass",
+              "changed_primary": "pass",
+              "false_accept_F2/1": "pass",
+              "false_accept_F2/2": "pass",
+              "coverage_F2/1": "pass",
+              "coverage_F2/2": "pass",
+              "control_risk_Cond": "pass",
+              "control_risk_Group": "pass"
+            },
+            "status": "not_retained",
+            "support": {
+              "F2/1": {
+                "parents": 5,
+                "entities": 5
+              },
+              "F2/2": {
+                "parents": 4,
+                "entities": 4
+              }
+            }
+          }
+        }
+      },
+      "F2_only": {
+        "cal": {
+          "n_all": 22606,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8896,
+                  "unknown": 4815,
+                  "reject": 249
+                },
+                "weighted": {
+                  "accept": 0.6102959340852662,
+                  "unknown": 0.36461271079922,
+                  "reject": 0.025091355115513927
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6998848091478962
+            },
+            "Cond": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8824,
+                  "unknown": 4606,
+                  "reject": 530
+                },
+                "weighted": {
+                  "accept": 0.6057767332410146,
+                  "unknown": 0.34933825276682223,
+                  "reject": 0.04488501399216331
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6976252087257704
+            },
+            "Group": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8835,
+                  "unknown": 4592,
+                  "reject": 533
+                },
+                "weighted": {
+                  "accept": 0.6064634241637122,
+                  "unknown": 0.3485399959528276,
+                  "reject": 0.04499657988346025
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6979685541871192
+            },
+            "Joint": {
+              "true": {
+                "n": 13960,
+                "parents": 5,
+                "epochs": 142,
+                "counts": {
+                  "accept": 8820,
+                  "unknown": 4612,
+                  "reject": 528
+                },
+                "weighted": {
+                  "accept": 0.6055781862797649,
+                  "unknown": 0.349405913080393,
+                  "reject": 0.0450159006398421
+                }
+              },
+              "false": {
+                "n": 19,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 15
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.21052631578947367,
+                  "reject": 0.7894736842105263
+                }
+              },
+              "correct_definite": 0.6975259352451456
+            }
+          },
+          "independent_verdict": null
+        },
+        "eval": {
+          "n_all": 33836,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7141,
+                  "unknown": 2694,
+                  "reject": 43
+                },
+                "weighted": {
+                  "accept": 0.5948003488487289,
+                  "unknown": 0.4024488552841657,
+                  "reject": 0.002750795867105381
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 194,
+                  "reject": 237
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.4410147991543341,
+                  "reject": 0.558985200845666
+                }
+              },
+              "correct_definite": 0.5768927748471975
+            },
+            "Cond": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7107,
+                  "unknown": 2505,
+                  "reject": 266
+                },
+                "weighted": {
+                  "accept": 0.5919819389745796,
+                  "unknown": 0.38979560629072746,
+                  "reject": 0.0182224547346928
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 34,
+                  "reject": 397
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.07727272727272728,
+                  "reject": 0.9227272727272728
+                }
+              },
+              "correct_definite": 0.7573546058509262
+            },
+            "Group": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7105,
+                  "unknown": 2512,
+                  "reject": 261
+                },
+                "weighted": {
+                  "accept": 0.5918527195561347,
+                  "unknown": 0.3903791072355418,
+                  "reject": 0.017768173208323416
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 63,
+                  "reject": 368
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.14318181818181822,
+                  "reject": 0.8568181818181819
+                }
+              },
+              "correct_definite": 0.7243354506871583
+            },
+            "Joint": {
+              "true": {
+                "n": 9878,
+                "parents": 6,
+                "epochs": 147,
+                "counts": {
+                  "accept": 7101,
+                  "unknown": 2502,
+                  "reject": 275
+                },
+                "weighted": {
+                  "accept": 0.5916455354908785,
+                  "unknown": 0.38964671789325805,
+                  "reject": 0.018707746615863337
+                }
+              },
+              "false": {
+                "n": 431,
+                "parents": 5,
+                "epochs": 10,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 34,
+                  "reject": 397
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.07727272727272728,
+                  "reject": 0.9227272727272728
+                }
+              },
+              "correct_definite": 0.7571864041090757
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "pass",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "pass",
+              "active": "pass",
+              "changed_primary": "pass",
+              "false_accept_F1/1": "pass",
+              "false_accept_F1/2": "pass",
+              "coverage_F1/1": "pass",
+              "coverage_F1/2": "pass",
+              "control_risk_Cond": "pass",
+              "control_risk_Group": "pass"
+            },
+            "status": "not_retained",
+            "support": {
+              "F1/1": {
+                "parents": 5,
+                "entities": 5
+              },
+              "F1/2": {
+                "parents": 5,
+                "entities": 5
+              }
+            }
+          }
+        }
+      }
+    },
+    "additional": {
+      "mixed": {
+        "eval": {
+          "n_all": 18439,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3168,
+                  "unknown": 2054,
+                  "reject": 140
+                },
+                "weighted": {
+                  "accept": 0.4486970881909683,
+                  "unknown": 0.5320789226735875,
+                  "reject": 0.019223989135444194
+                }
+              },
+              "false": {
+                "n": 235,
+                "parents": 2,
+                "epochs": 6,
+                "counts": {
+                  "accept": 42,
+                  "unknown": 105,
+                  "reject": 88
+                },
+                "weighted": {
+                  "accept": 0.11931818181818182,
+                  "unknown": 0.45729680526192157,
+                  "reject": 0.4233850129198966
+                }
+              },
+              "correct_definite": 0.43604105055543246
+            },
+            "Cond": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3168,
+                  "unknown": 2051,
+                  "reject": 143
+                },
+                "weighted": {
+                  "accept": 0.4486970881909683,
+                  "unknown": 0.5315886245630853,
+                  "reject": 0.019714287245946288
+                }
+              },
+              "false": {
+                "n": 235,
+                "parents": 2,
+                "epochs": 6,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 73,
+                  "reject": 121
+                },
+                "weighted": {
+                  "accept": 0.11647727272727273,
+                  "unknown": 0.36647286821705427,
+                  "reject": 0.517049859055673
+                }
+              },
+              "correct_definite": 0.48287347362332067
+            },
+            "Group": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3168,
+                  "unknown": 2051,
+                  "reject": 143
+                },
+                "weighted": {
+                  "accept": 0.4486970881909683,
+                  "unknown": 0.5315886245630853,
+                  "reject": 0.019714287245946288
+                }
+              },
+              "false": {
+                "n": 235,
+                "parents": 2,
+                "epochs": 6,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 73,
+                  "reject": 121
+                },
+                "weighted": {
+                  "accept": 0.11647727272727273,
+                  "unknown": 0.36647286821705427,
+                  "reject": 0.517049859055673
+                }
+              },
+              "correct_definite": 0.48287347362332067
+            },
+            "Joint": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3168,
+                  "unknown": 2051,
+                  "reject": 143
+                },
+                "weighted": {
+                  "accept": 0.4486970881909683,
+                  "unknown": 0.5315886245630853,
+                  "reject": 0.019714287245946288
+                }
+              },
+              "false": {
+                "n": 235,
+                "parents": 2,
+                "epochs": 6,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 75,
+                  "reject": 119
+                },
+                "weighted": {
+                  "accept": 0.11647727272727273,
+                  "unknown": 0.3721576227390181,
+                  "reject": 0.5113651045337092
+                }
+              },
+              "correct_definite": 0.48003109636233876
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "fail",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "fail",
+              "active": "pass",
+              "changed_primary": "pass",
+              "false_accept_F1/1": "pass",
+              "false_accept_F1/2": "fail",
+              "false_accept_F2/1": "pass",
+              "false_accept_F2/2": "pass",
+              "coverage_F1/1": "insufficient",
+              "coverage_F1/2": "insufficient",
+              "coverage_F2/1": "insufficient",
+              "coverage_F2/2": "insufficient",
+              "control_risk_Cond": "fail",
+              "control_risk_Group": "fail"
+            },
+            "status": "not_retained",
+            "support": {
+              "F1/1": {
+                "parents": 2,
+                "entities": 2
+              },
+              "F1/2": {
+                "parents": 2,
+                "entities": 2
+              },
+              "F2/1": {
+                "parents": 1,
+                "entities": 1
+              },
+              "F2/2": {
+                "parents": 1,
+                "entities": 1
+              }
+            }
+          }
+        }
+      },
+      "F1_only": {
+        "eval": {
+          "n_all": 10653,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3186,
+                  "unknown": 2151,
+                  "reject": 25
+                },
+                "weighted": {
+                  "accept": 0.4514630605596414,
+                  "unknown": 0.5446591591198844,
+                  "reject": 0.003877780320474125
+                }
+              },
+              "false": {
+                "n": 61,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 36,
+                  "reject": 25
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.5689655172413793,
+                  "reject": 0.43103448275862066
+                }
+              },
+              "correct_definite": 0.441248771659131
+            },
+            "Cond": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3186,
+                  "unknown": 2117,
+                  "reject": 59
+                },
+                "weighted": {
+                  "accept": 0.4514630605596414,
+                  "unknown": 0.5404000996848839,
+                  "reject": 0.008136839755474632
+                }
+              },
+              "false": {
+                "n": 61,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 24,
+                  "reject": 37
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.38146551724137934,
+                  "reject": 0.6185344827586207
+                }
+              },
+              "correct_definite": 0.534998771659131
+            },
+            "Group": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3186,
+                  "unknown": 2118,
+                  "reject": 58
+                },
+                "weighted": {
+                  "accept": 0.4514630605596414,
+                  "unknown": 0.5407942599800343,
+                  "reject": 0.007742679460324238
+                }
+              },
+              "false": {
+                "n": 61,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 19,
+                  "reject": 42
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.30334051724137934,
+                  "reject": 0.6966594827586207
+                }
+              },
+              "correct_definite": 0.574061271659131
+            },
+            "Joint": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3186,
+                  "unknown": 2117,
+                  "reject": 59
+                },
+                "weighted": {
+                  "accept": 0.4514630605596414,
+                  "unknown": 0.5404000996848839,
+                  "reject": 0.008136839755474632
+                }
+              },
+              "false": {
+                "n": 61,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 24,
+                  "reject": 37
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.38146551724137934,
+                  "reject": 0.6185344827586207
+                }
+              },
+              "correct_definite": 0.534998771659131
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "pass",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "fail",
+              "active": "pass",
+              "changed_primary": "fail",
+              "false_accept_F2/1": "pass",
+              "false_accept_F2/2": "pass",
+              "coverage_F2/1": "insufficient",
+              "coverage_F2/2": "insufficient",
+              "control_risk_Cond": "pass",
+              "control_risk_Group": "pass"
+            },
+            "status": "not_retained",
+            "support": {
+              "F2/1": {
+                "parents": 1,
+                "entities": 1
+              },
+              "F2/2": {
+                "parents": 1,
+                "entities": 1
+              }
+            }
+          }
+        }
+      },
+      "F2_only": {
+        "eval": {
+          "n_all": 15134,
+          "system_query": {
+            "Count": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3182,
+                  "unknown": 2093,
+                  "reject": 87
+                },
+                "weighted": {
+                  "accept": 0.45078647549136314,
+                  "unknown": 0.5358402475553696,
+                  "reject": 0.013373276953267118
+                }
+              },
+              "false": {
+                "n": 174,
+                "parents": 2,
+                "epochs": 4,
+                "counts": {
+                  "accept": 42,
+                  "unknown": 75,
+                  "reject": 57
+                },
+                "weighted": {
+                  "accept": 0.23863636363636365,
+                  "unknown": 0.4257047216349542,
+                  "reject": 0.33565891472868215
+                }
+              },
+              "correct_definite": 0.3932226951100226
+            },
+            "Cond": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3182,
+                  "unknown": 2079,
+                  "reject": 101
+                },
+                "weighted": {
+                  "accept": 0.45078647549136314,
+                  "unknown": 0.5340154515855005,
+                  "reject": 0.015198072923136366
+                }
+              },
+              "false": {
+                "n": 174,
+                "parents": 2,
+                "epochs": 4,
+                "counts": {
+                  "accept": 40,
+                  "unknown": 32,
+                  "reject": 102
+                },
+                "weighted": {
+                  "accept": 0.2272727272727273,
+                  "unknown": 0.18113695090439277,
+                  "reject": 0.59159032182288
+                }
+              },
+              "correct_definite": 0.5211883986571215
+            },
+            "Group": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3182,
+                  "unknown": 2077,
+                  "reject": 103
+                },
+                "weighted": {
+                  "accept": 0.45078647549136314,
+                  "unknown": 0.5338268612979002,
+                  "reject": 0.015386663210736555
+                }
+              },
+              "false": {
+                "n": 174,
+                "parents": 2,
+                "epochs": 4,
+                "counts": {
+                  "accept": 40,
+                  "unknown": 31,
+                  "reject": 103
+                },
+                "weighted": {
+                  "accept": 0.2272727272727273,
+                  "unknown": 0.17532299741602067,
+                  "reject": 0.5974042753112521
+                }
+              },
+              "correct_definite": 0.5240953754013076
+            },
+            "Joint": {
+              "true": {
+                "n": 5362,
+                "parents": 3,
+                "epochs": 86,
+                "counts": {
+                  "accept": 3182,
+                  "unknown": 2079,
+                  "reject": 101
+                },
+                "weighted": {
+                  "accept": 0.45078647549136314,
+                  "unknown": 0.5340154515855005,
+                  "reject": 0.015198072923136366
+                }
+              },
+              "false": {
+                "n": 174,
+                "parents": 2,
+                "epochs": 4,
+                "counts": {
+                  "accept": 40,
+                  "unknown": 32,
+                  "reject": 102
+                },
+                "weighted": {
+                  "accept": 0.2272727272727273,
+                  "unknown": 0.18113695090439277,
+                  "reject": 0.59159032182288
+                }
+              },
+              "correct_definite": 0.5211883986571215
+            }
+          },
+          "independent_verdict": {
+            "gates": {
+              "true_reject": "pass",
+              "false_accept": "fail",
+              "true_accept_loss": "pass",
+              "never_accept_increase": "pass",
+              "paired_delay": "pass",
+              "cd_gain_Cond": "fail",
+              "cd_gain_Group": "fail",
+              "active": "pass",
+              "changed_primary": "fail",
+              "false_accept_F1/1": "pass",
+              "false_accept_F1/2": "fail",
+              "coverage_F1/1": "insufficient",
+              "coverage_F1/2": "insufficient",
+              "control_risk_Cond": "fail",
+              "control_risk_Group": "fail"
+            },
+            "status": "not_retained",
+            "support": {
+              "F1/1": {
+                "parents": 2,
+                "entities": 2
+              },
+              "F1/2": {
+                "parents": 2,
+                "entities": 2
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "status": "passed",
+  "implementation": "stdlib_only_no_production_fit_score_calibration_metrics_imports",
+  "arithmetic_tolerance": 1e-08,
+  "decision_comparison": "strict_saved_score_gt_saved_tau_no_epsilon"
+}

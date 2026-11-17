@@ -1,0 +1,10 @@
+{
+  "status": "UNREALIZABLE",
+  "reason": "64-or-fewer frozen candidates exhausted",
+  "attempted": 64,
+  "failure_counts": {
+    "blockage_under_80pct": 12,
+    "GT_compatible": 36,
+    "no_report_opportunity": 16
+  }
+}

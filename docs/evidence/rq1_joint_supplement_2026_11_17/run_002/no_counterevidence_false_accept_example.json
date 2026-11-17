@@ -1,0 +1,67 @@
+{
+  "key": [
+    "748caf659d7d990e",
+    117,
+    98
+  ],
+  "job_id": "748caf659d7d990e",
+  "parent": "validate/2021_08_21_17_30_41",
+  "family": "F1",
+  "attack_k": 2,
+  "epoch": 1,
+  "index": 24,
+  "frame": 117,
+  "timestamp": 2.4000000000000004,
+  "source_ids": [
+    2488,
+    2497,
+    2506
+  ],
+  "Count_inputs": [
+    2.0,
+    0.0,
+    1.0,
+    2.0,
+    2.0
+  ],
+  "n_minus": [
+    0,
+    0,
+    0
+  ],
+  "accept_eligible": true,
+  "reject_eligible": false,
+  "scores": {
+    "Count": 1.008831987884359,
+    "Cond": -0.0,
+    "Group": 0.0,
+    "Joint": 0.0
+  },
+  "decisions": {
+    "Count": "accept",
+    "Cond": "accept",
+    "Group": "accept",
+    "Joint": "accept"
+  },
+  "current_U": [
+    1,
+    1,
+    -1
+  ],
+  "current_groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "current_C": [
+    1.0,
+    1.0,
+    0.0
+  ]
+}

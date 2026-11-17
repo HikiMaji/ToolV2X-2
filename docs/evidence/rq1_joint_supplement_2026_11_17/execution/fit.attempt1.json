@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "scripts.rq1_joint_supplement",
+    "fit",
+    "--config",
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/docs/REALLY_MAYBE/rq1_joint_supplement_2026_11_17/config.json",
+    "--out",
+    "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001"
+  ],
+  "cwd": "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13",
+  "commit": "7dcdf28987bdc6c4a079224640b854f9737a2f1c",
+  "started_utc": "2026-11-17T05:58:14.522557+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 38.75954703241587,
+  "finished_utc": "2026-11-17T05:58:53.282142+00:00"
+}

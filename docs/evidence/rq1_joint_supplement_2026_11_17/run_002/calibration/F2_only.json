@@ -1,0 +1,57 @@
+{
+  "branches": {
+    "Group": {
+      "status": "active",
+      "reason": null,
+      "tau": 19.15510589046641,
+      "base_true_reject": 0.025091355115513903,
+      "delta": 0.02,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4438,
+      "n_candidates": 4438,
+      "added_true_reject_weight": 0.019905224767949214
+    },
+    "Joint": {
+      "status": "active",
+      "reason": null,
+      "tau": 19.850082855897096,
+      "base_true_reject": 0.025091355115513903,
+      "delta": 0.02,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4438,
+      "n_candidates": 4438,
+      "added_true_reject_weight": 0.01992454552433129
+    }
+  },
+  "Cond": {
+    "status": "active",
+    "reason": null,
+    "tau": 19.761596949333658,
+    "base_true_reject": 0.025091355115513903,
+    "delta": 0.02,
+    "n_clean_primary": 13960,
+    "clean_weight_sum": 1.0,
+    "n_eligible": 4438,
+    "n_candidates": 4438,
+    "added_true_reject_weight": 0.01979365887665231
+  },
+  "source_calibration_sufficient": true,
+  "observed_layers": [
+    [
+      "F2",
+      3
+    ]
+  ],
+  "missing_layers": [
+    [
+      "F2",
+      1
+    ],
+    [
+      "F2",
+      2
+    ]
+  ]
+}

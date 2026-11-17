@@ -1,0 +1,209 @@
+{
+  "status": "selected",
+  "rho": 0.25,
+  "objectives": {
+    "0.0": 0.7675055478111472,
+    "0.25": 0.7651405565923793,
+    "0.5": 0.7655906931712452,
+    "0.75": 0.7691695700449113,
+    "0.9": 0.7750367225987027
+  },
+  "by_parent": {
+    "train/2021_08_16_22_26_54": {
+      "weight": 0.16666666666666316,
+      "rows": 9259,
+      "informative_frames": 518,
+      "patterns": {
+        "common_mixed": 17,
+        "common_11": 499,
+        "common_00": 2
+      },
+      "objectives": {
+        "0.0": 0.49687457529880913,
+        "0.25": 0.49643815610680603,
+        "0.5": 0.4961736598624573,
+        "0.75": 0.49616326555342394,
+        "0.9": 0.4965239472896396
+      }
+    },
+    "train/2021_08_22_10_10_40": {
+      "weight": 0.16666666666666688,
+      "rows": 606,
+      "informative_frames": 0,
+      "patterns": {},
+      "objectives": {
+        "0.0": 1.1920620138761475,
+        "0.25": 1.1920620138761475,
+        "0.5": 1.1920620138761475,
+        "0.75": 1.1920620138761475,
+        "0.9": 1.1920620138761475
+      }
+    },
+    "train/2021_08_22_10_46_58": {
+      "weight": 0.1666666666666639,
+      "rows": 2529,
+      "informative_frames": 862,
+      "patterns": {
+        "common_11": 681,
+        "common_mixed": 97,
+        "common_00": 84
+      },
+      "objectives": {
+        "0.0": 0.6754025668900273,
+        "0.25": 0.6615450495868431,
+        "0.5": 0.6559676463721554,
+        "0.75": 0.6573202901927341,
+        "0.9": 0.6641336917479143
+      }
+    },
+    "train/2021_08_23_11_22_46": {
+      "weight": 0.16666666666666474,
+      "rows": 1820,
+      "informative_frames": 199,
+      "patterns": {
+        "common_11": 169,
+        "common_mixed": 30
+      },
+      "objectives": {
+        "0.0": 0.5755458101675696,
+        "0.25": 0.5751368187480074,
+        "0.5": 0.5749017614070231,
+        "0.75": 0.5748700705947055,
+        "0.9": 0.5749662061543106
+      }
+    },
+    "train/2021_08_23_22_31_01": {
+      "weight": 0.16666666666666757,
+      "rows": 2417,
+      "informative_frames": 231,
+      "patterns": {
+        "common_mixed": 72,
+        "common_11": 112,
+        "common_00": 47
+      },
+      "objectives": {
+        "0.0": 1.075961478924453,
+        "0.25": 1.072295161398344,
+        "0.5": 1.0744933235459928,
+        "0.75": 1.0839318697275162,
+        "0.9": 1.099657822399055
+      }
+    },
+    "train/2021_08_24_21_29_28": {
+      "weight": 0.16666666666666718,
+      "rows": 970,
+      "informative_frames": 91,
+      "patterns": {
+        "common_mixed": 31,
+        "common_11": 57,
+        "common_00": 3
+      },
+      "objectives": {
+        "0.0": 0.5891868417099261,
+        "0.25": 0.5933661398381685,
+        "0.5": 0.5999457539637326,
+        "0.75": 0.6106699103249873,
+        "0.9": 0.6228766541251908
+      }
+    }
+  },
+  "weight_sum": 1.0,
+  "n_rows": 17601,
+  "coverage": {
+    "patterns": {
+      "common_mixed": 247,
+      "common_11": 1518,
+      "common_00": 136
+    },
+    "informative_parents": [
+      "train/2021_08_16_22_26_54",
+      "train/2021_08_22_10_46_58",
+      "train/2021_08_23_11_22_46",
+      "train/2021_08_23_22_31_01",
+      "train/2021_08_24_21_29_28"
+    ],
+    "informative_epochs": 73,
+    "informative_frames": 1901
+  },
+  "objective_meaning": "training_selection_with_held_parent_D_not_independent_rho_validation",
+  "source_folds": [
+    {
+      "parent": "train/2021_08_16_22_26_54",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f890b6f95d3bc10a/normal.json",
+        "bytes": 14071,
+        "sha256": "6d9e9f32576b8c1ac23897faf443e553348294544811015b7caedb97471a0ba3"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f3083bc00e147fb/rows.jsonl.gz",
+        "bytes": 1119290,
+        "sha256": "5e35969a9a23e1b9378ba1a32923846f2f82e3b944eef0bd368abf1559391027"
+      }
+    },
+    {
+      "parent": "train/2021_08_22_10_10_40",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/6f46bcbf2c5cbae2/normal.json",
+        "bytes": 14158,
+        "sha256": "955bd93e310d7768caac8eeb5bd9b28894dc1fa6390ede36f30be048471b4b1a"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f101ef178468aaf2/rows.jsonl.gz",
+        "bytes": 113264,
+        "sha256": "436d6c0b7ffc1cf127161b1b67a466722da9bb761b96ba92c1780328306cd83d"
+      }
+    },
+    {
+      "parent": "train/2021_08_22_10_46_58",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/634aa433941ce5e0/normal.json",
+        "bytes": 14082,
+        "sha256": "e9e4bf0533d4dc64a14ae922e91b6d8accae24ef28d1db5063b4830f0ad14829"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c26e6be8af43118d/rows.jsonl.gz",
+        "bytes": 415635,
+        "sha256": "aca6235a96c7fa2843a34e610dde134e266a09856bc9bd9f0acf4fdde793ddb0"
+      }
+    },
+    {
+      "parent": "train/2021_08_23_11_22_46",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/237efaecef94d3e7/normal.json",
+        "bytes": 14072,
+        "sha256": "3379927cf5d678d674478288e0ac58fa05a07ca57e644cf3373d36dd9ead8ce8"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/bb30e22f91b2202b/rows.jsonl.gz",
+        "bytes": 300239,
+        "sha256": "3d9c6760e380e058d9176f29be32351392b644776d3b8ff9721d5f47c5e9864a"
+      }
+    },
+    {
+      "parent": "train/2021_08_23_22_31_01",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f63b35776d2754fe/normal.json",
+        "bytes": 14080,
+        "sha256": "e5a6d5389a87ed786309f8cde1dec8b87e0dfeb1cf5fd5290752c50ff0cb5e6d"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/866e3aba5f4dff86/rows.jsonl.gz",
+        "bytes": 604034,
+        "sha256": "7841a2d5a446ac538515f6d1f297ef7516b19cd9c6a174ceaa2ae1d89f5e56d1"
+      }
+    },
+    {
+      "parent": "train/2021_08_24_21_29_28",
+      "normal": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/a25ac47ca85b7da0/normal.json",
+        "bytes": 14085,
+        "sha256": "b344f9bb1f420b2d8a93ac9aa1fe19fe5f3cb7ab8c969bef60549758823d96d5"
+      },
+      "rows_path": {
+        "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a07df9510c2cf7e9/rows.jsonl.gz",
+        "bytes": 286122,
+        "sha256": "660016dfec86e4b58e384176db53682a934b7d37b66cab48429ddc7b6d078b92"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3203 @@
+{
+  "spec": {
+    "parent": "train/2021_08_23_17_07_55",
+    "source_ids": [
+      407,
+      416,
+      425
+    ],
+    "root": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55",
+    "detections": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55",
+    "frames": [
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81,
+      83,
+      85,
+      87,
+      89,
+      91,
+      93,
+      95,
+      97,
+      99,
+      101,
+      103,
+      105,
+      107,
+      109,
+      111,
+      113,
+      115,
+      117,
+      119,
+      121,
+      123,
+      125,
+      127,
+      129,
+      131,
+      133,
+      135,
+      137,
+      139,
+      141,
+      143,
+      145,
+      147,
+      149,
+      151,
+      153,
+      155,
+      157,
+      159,
+      161,
+      163,
+      165,
+      167,
+      169,
+      171,
+      173,
+      175,
+      177,
+      179,
+      181,
+      183,
+      185,
+      187,
+      189,
+      191,
+      193,
+      195,
+      197,
+      199,
+      201,
+      203,
+      205,
+      207,
+      209,
+      211,
+      213,
+      215,
+      217,
+      219,
+      221,
+      223,
+      225,
+      227,
+      229,
+      231,
+      233,
+      235,
+      237,
+      239
+    ]
+  },
+  "counts": {
+    "pcd_read": 258
+  },
+  "detections": [
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000069_407.npz",
+      "bytes": 1284,
+      "sha256": "70f2d4fcd9fa73b3d79d92ff073a1372e770762e09be64e9184bd0283a3d92cb",
+      "raw_pcd_sha256": "3baee5abd78d0663547ae65604ccf2627968094f4f0e658e0bd6380b134b5cf8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000069.yaml",
+        "bytes": 7640,
+        "sha256": "20dc3947610090a72c3b058af05510f8ed568624919fe82b6e2d48d4e90437dd"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000069_416.npz",
+      "bytes": 1602,
+      "sha256": "4aca81ef8cbb479045144638bc1a9ff8300f37a81b18af9dad934c0b949a5da5",
+      "raw_pcd_sha256": "234c0262907edfd9df2cf24ef3b022c4a23be7ed00e9d82798519dc0f9e67860",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000069.yaml",
+        "bytes": 11076,
+        "sha256": "6a0cfe19acb16b77c8df95520f76adf431105c9e126e306b9ad297aec86cb4fe"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000069_425.npz",
+      "bytes": 1803,
+      "sha256": "fa29663404521d24b813689de257d007b5e6e41046eff13e23bf31c20383de94",
+      "raw_pcd_sha256": "5213613f97947609ad3174bc5714fe1c11e00fd0f5e7d5acf66112a797914ff8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000069.yaml",
+        "bytes": 11074,
+        "sha256": "5fe796c01a6aa00fff0c1d301c561ed0049481bd367d067da1cba75d583f38ef"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000071_407.npz",
+      "bytes": 1320,
+      "sha256": "9aebb7c6203d28db0bf12819d4caf9ea3bb0880300e58b4c42a55ddad1b80893",
+      "raw_pcd_sha256": "4c5fdeea63a2bb3a8a4f4f8b2dd630c694a3302d3bece1fe57ffd06f86e7239d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000071.yaml",
+        "bytes": 7608,
+        "sha256": "200ec38164cdbffb8448593b9cbc4451ac75fdbc4dfec0f0dda0aa352abe08d4"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000071_416.npz",
+      "bytes": 1566,
+      "sha256": "9a65e2310aa551c049321852b6669e3acb90cc5357a26e72bc73f5ce48a1a6d1",
+      "raw_pcd_sha256": "feaeccec5ec5ce181b336c3aebbef1a6ae06dbf8e79caca896937bea0f15bbec",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000071.yaml",
+        "bytes": 11063,
+        "sha256": "3debc9b6e3554f496e131b2002b4ed8c11ea086932c437ef6618d9fc46482c92"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000071_425.npz",
+      "bytes": 1801,
+      "sha256": "ee9c13284ee24dc0b8853ac801c278eac41299b502d46981249b5415b9f5d643",
+      "raw_pcd_sha256": "c62bc897e8d4ea0e5c115165f14418ddae2aae939d21f08acc01d0536b8467ba",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000071.yaml",
+        "bytes": 10996,
+        "sha256": "5bc3e02e30bdbd84fa6d854689352c5443a80ca228454f4a7e0f896913bef11a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000073_407.npz",
+      "bytes": 1351,
+      "sha256": "921839dca26d4304ff6a4741ac74101fd42a42343f9ab14cf1ef752be6429a6c",
+      "raw_pcd_sha256": "08c12dac678f528f83cba8cbdb75ee63085adb7009434fb1e3e244bd96c5fa97",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000073.yaml",
+        "bytes": 7615,
+        "sha256": "5b6cb49b5561f5f5b041802366826e605377b38762598903447d3a8e02a63764"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000073_416.npz",
+      "bytes": 1579,
+      "sha256": "66488708a0715a4f9ab6f540b9cb46e2ccf3a1720e350361d64ccbaf34bbc832",
+      "raw_pcd_sha256": "e5bdfe063a719664b54feae27b3da53f68cd588a51ff9d58220f62f475f9de8d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000073.yaml",
+        "bytes": 11106,
+        "sha256": "1696d11adf181927e7afe8f4ebeb796f83dd5c10dcffa3415fe3025b8b7625e5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000073_425.npz",
+      "bytes": 1799,
+      "sha256": "09124c1c2dfcae8b24dca857c6b19db4fc1ec4740511be03715c3d8528ba3876",
+      "raw_pcd_sha256": "596dd324dfa0d23d24e429f8ca86de6a4154c81aac3547417fa334d850d61568",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000073.yaml",
+        "bytes": 11081,
+        "sha256": "647e4f250e13e630a5b2a112cf132f79c57c30edffa572d8d781ed8fe2f63f88"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000075_407.npz",
+      "bytes": 1481,
+      "sha256": "1df89b239b95a14b73e92429710730683c78265f998e38245dbca00027de1c60",
+      "raw_pcd_sha256": "84485ac92368c94846f01b56796c6379c36e7020929285eea3b628a8a24cfae7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000075.yaml",
+        "bytes": 7588,
+        "sha256": "7064a617e1842c646468f9096e1a58cabec7b1c1a579c99bb2e427da638122fd"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000075_416.npz",
+      "bytes": 1583,
+      "sha256": "bfaaef1ee31cd4b494cff949d7b419c33eadc68a0c1bb28a21da97b8075c0614",
+      "raw_pcd_sha256": "ec3ab6339c5745fd35be69d1802f207225960fe35d4d4ce71177d60df9f26366",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000075.yaml",
+        "bytes": 11533,
+        "sha256": "09418ede294dfd74c79864087b420d2ba9418f3afa24521b7909eb4d444fb69e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000075_425.npz",
+      "bytes": 1807,
+      "sha256": "d6aff002fe396c559bf8bd76a5a3064a04700589d276899f0819bf99c748dec2",
+      "raw_pcd_sha256": "0e605e7b6fc1f110d7561dba14d1eb6e32e0f1a58c5a4b9d8bcc98d784760c5a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000075.yaml",
+        "bytes": 11071,
+        "sha256": "312678c7dd69b853e38f8c46476aa996dea5022b875c88cf347ca96ded190b26"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000077_407.npz",
+      "bytes": 1354,
+      "sha256": "00854eccb513b3a0f5cc5d4aa9b6d4f5d6ffd1cc03bb828725d1f63d234d6794",
+      "raw_pcd_sha256": "71b9f47f6b6c1ca430387b71f0b84fe649980386ac26e7a2db05ea621860e149",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000077.yaml",
+        "bytes": 7602,
+        "sha256": "9e5e2e2221e55befa6ed4f8a6ea4f0e17c412a6997a4381cb711d2298779c2f1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000077_416.npz",
+      "bytes": 1577,
+      "sha256": "84ce675832c93efc9848643ad29716d2e770bd2527c07abc54b397ff9ab309f1",
+      "raw_pcd_sha256": "fcb76ea33e7f488337fdf496902191df303098b3f21fb2d79230284b87636d29",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000077.yaml",
+        "bytes": 11871,
+        "sha256": "18bd0bd9a5260f2d5b7f320cd5f173ad2b09b9bd1a375b54d1c75f400cbabb70"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000077_425.npz",
+      "bytes": 1802,
+      "sha256": "0545ee223bb24f9d31b83d62ab2eb49a67ee782b9aa7dbb6e9f9be08e2655052",
+      "raw_pcd_sha256": "6f09a20b871297790bbadda7be09b915b9cd21be95086e6d267abf07a4ca2f89",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000077.yaml",
+        "bytes": 11486,
+        "sha256": "bdf9906fe7b1248dc7f5b587185d9140e8105a3ecd660451edb2b1bc789af5cf"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000079_407.npz",
+      "bytes": 1287,
+      "sha256": "8c14927699e6a686b1eb37583f9ad12bc77d8522127a8763eba120bf028b6fa1",
+      "raw_pcd_sha256": "fc1c437d40538976c13b95c2e9b6944490a935baa9868cedd63c2ed244fb597c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000079.yaml",
+        "bytes": 7638,
+        "sha256": "a6e805591b3550fcfc8c8f8a6afb7c174f2e25c7400ba456f34ab54265352d2d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000079_416.npz",
+      "bytes": 1580,
+      "sha256": "fe034f92dd3dab757777c2d3e91bf8f7a0bce0bb9a1f444778121833af488e96",
+      "raw_pcd_sha256": "ac91be838ae4f0350f6d0c145c98c2f24d3d9138470e7f54795d0697aef7ae2d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000079.yaml",
+        "bytes": 11859,
+        "sha256": "10c51f777cdb9d40c96d4d00358aadc5af4b42263dab06f6a791bf61b25b26ed"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000079_425.npz",
+      "bytes": 1795,
+      "sha256": "1c04a6ac2d4718ee33af4c8e2ce2a7059bb8aee2f723abad828eb98b67268715",
+      "raw_pcd_sha256": "c60b1ebb699e253b6bf9304ac3f1ab439444d3f75bc0b5b70b04e61fbb5a07f7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000079.yaml",
+        "bytes": 11478,
+        "sha256": "1ea188b4416db06a2580a976339220df3ae3fc12f3e98099502d8367866e1afe"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000081_407.npz",
+      "bytes": 1319,
+      "sha256": "ca621b784982df1f5f4caadc5ba280c935441df6b3c6bb2cc58f4f94964303a3",
+      "raw_pcd_sha256": "18f01530faee8256b568e7682c199c8b225a875faed5c4a94f84d785ac880dcf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000081.yaml",
+        "bytes": 7640,
+        "sha256": "7810df700587f7282cf315fcca1064bbe82e2fa9cad1cc17b983c70991e7d92e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000081_416.npz",
+      "bytes": 1573,
+      "sha256": "0c44e9885cb255d19f55b32acc3c1322ee3fd07f7ade6bd3a0d9252c91c3e18f",
+      "raw_pcd_sha256": "8e69e7ee4b91c3df884f4aeda768819c479de37f74f477ea3b8f15494f40e9b4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000081.yaml",
+        "bytes": 12687,
+        "sha256": "1bfc3f2c8c33c2ccb4f07b66c0b266774d200147fc907c3d7665c6543cc39e2b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000081_425.npz",
+      "bytes": 1792,
+      "sha256": "d430b09f843484d4272e77c9ad7c30b275fdf68fdec8f8075099792e6fe8eab4",
+      "raw_pcd_sha256": "52bf99e34ec0d0b9b728817d4b8741d84d4c5ff1cbe457d18d04e13e53d3212c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000081.yaml",
+        "bytes": 11420,
+        "sha256": "db2ba8f5989c0fea1a60f09986f45f76420fab930eaa874c2f4d5f3f7e0cd5c5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000083_407.npz",
+      "bytes": 1384,
+      "sha256": "e40a266b8622f41a9acab76f4e287db5b186117b8f4f2d9922e6303a9a6ca795",
+      "raw_pcd_sha256": "29f94355d8c3910a41a7fcfe5f38e0645c6ea15b074fb67d3a8b48ac62f44d13",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000083.yaml",
+        "bytes": 8013,
+        "sha256": "f739aa5d00cb3c704e1b0a38dd49fa795c12da7bec541c7cf7634942fcbe224a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000083_416.npz",
+      "bytes": 1577,
+      "sha256": "23fa267cecfab6b21f63000ed93b4f1f92e40e15e90ae90ae29af148872203cb",
+      "raw_pcd_sha256": "18895ed14aace33f2722eb6c7ea357992ec535a25048e6b7e87a25e638b9d58f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000083.yaml",
+        "bytes": 12721,
+        "sha256": "8b9fd59a59f66b8add83fab05a1dea288e7703386ee42ec2a2112ea47608898e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000083_425.npz",
+      "bytes": 1806,
+      "sha256": "213e298cdfb6d5931b8746e2783fc3cde58dafd2dee70a73b6d4cae18255f0fe",
+      "raw_pcd_sha256": "6fdb32c90511a1ec3900c48c711c6a82c564092fcf540356965384601fdfba85",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000083.yaml",
+        "bytes": 11507,
+        "sha256": "3f10daec64d1c9d0ec6dd9135f975657c59242607254923fc57b8be8816ff101"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000085_407.npz",
+      "bytes": 1380,
+      "sha256": "61e8db0aca5a1161014e8d3215af444babf920db82c6aac78cb2e739d80228fa",
+      "raw_pcd_sha256": "b4cd44d91890a99aefde84425829c3621ebb024bdf0e2a535bbb6b6da79c6934",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000085.yaml",
+        "bytes": 7985,
+        "sha256": "ca731bdd6339b84a5934ec10599e7b680eadc37c3bb58cd992c9e9f92e171aa1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000085_416.npz",
+      "bytes": 1577,
+      "sha256": "aed4330021c68a9fe75a77164be9f40004ee67839347562f49ce146a5bc3f7e7",
+      "raw_pcd_sha256": "f001f7a9fdf5dc9d8dd88a71e077521f0571ef2f689bd71472a037e847e4a071",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000085.yaml",
+        "bytes": 12814,
+        "sha256": "564b28f9c0f0143d887d3f3caaf4c1a6b57bb32a2c174280ee45e810771783b3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000085_425.npz",
+      "bytes": 1802,
+      "sha256": "3a41a90ab9db6626eb46b2221d3ed31323ebac830556c4ef2378a33bcb7a65da",
+      "raw_pcd_sha256": "36fbf725f4a2602cf37dc40f7820fa81366d3440c6b0c3d72bf92113a80e8d6e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000085.yaml",
+        "bytes": 11412,
+        "sha256": "a3bb96d3f4946c99aaf2535cc0529591a5e67dd8cd8aaeabf919cbc151b44137"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000087_407.npz",
+      "bytes": 1380,
+      "sha256": "a158dce20e6a03d5a3fe49feeb3ea05a35ed9782d4e210335308ae2342d85ae0",
+      "raw_pcd_sha256": "ff866ed20d235feee13c507df9459e055c1380f92465b00d0630c15c8856b319",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000087.yaml",
+        "bytes": 8151,
+        "sha256": "1c8a54a088cd2671545531f777d9ce37cc9ff1b660996310d00e28e4ce1a9247"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000087_416.npz",
+      "bytes": 1580,
+      "sha256": "b13db8b0739b518b6ab76de8cb46138ad24f8bee3d34e8099b6560ab05492600",
+      "raw_pcd_sha256": "6b292a61a89eb80a56ea4f6ecfb7e70e264a887476eff244652146da3e4f0b7b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000087.yaml",
+        "bytes": 12661,
+        "sha256": "e92665d16284fa78a1702dbb121b2b80c7da72ffe2954682d87b1e5ccd992881"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000087_425.npz",
+      "bytes": 1803,
+      "sha256": "101add15959f316a45d2c273bc4740b655935fb1f1041f6b6b0a4d4e0500bee2",
+      "raw_pcd_sha256": "c9c624f60a326e1864e4bbeed40fa3391c5a31f59565945fd0d05b52e351801b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000087.yaml",
+        "bytes": 11311,
+        "sha256": "ea363a5a80ad0445867ea54dae1eafc45a9073d347348ad726e75f9aef62cad5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000089_407.npz",
+      "bytes": 1447,
+      "sha256": "677191b8bc2cf069bce0b00a00508560c2abfb68caf7b02a19b79a764b06afd0",
+      "raw_pcd_sha256": "472fa99711c98fee4f88d80bd99e3b213c0cb1ca58064a6da8de02afa9413d32",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000089.yaml",
+        "bytes": 8121,
+        "sha256": "fa91d8c8b08fa38ce22495b79f6d39dfab072d2668abb09fd66a7a9dec19e5c6"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000089_416.npz",
+      "bytes": 1615,
+      "sha256": "47b350d9d60e2ba56b9cca69211ef78335a2e9e0555f3ddc69df2fa895d2df6a",
+      "raw_pcd_sha256": "ab9297ff755a638fe2b7c6a1d76d35b5b8dea2b982ed579db8a47723ed1de407",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000089.yaml",
+        "bytes": 12302,
+        "sha256": "14addaed76876597f9c6506e14370fe5d20b6347820b18ce8ea01c2367fbe607"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000089_425.npz",
+      "bytes": 1802,
+      "sha256": "1212d9abc42e0a37df27ed9a0c5bd05b32d8522b2f227d8d081cb3603dadbbb6",
+      "raw_pcd_sha256": "61341b787985170257988b5711d863656f0951476a49d37582a44f613844648d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000089.yaml",
+        "bytes": 11469,
+        "sha256": "884e6a50dbbecf04ccff5ef45eafb5dcebd4da0f449beaa7373f272c811359f5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000091_407.npz",
+      "bytes": 1411,
+      "sha256": "c1f729723400ca71ec1209ab8140e55c66f18f3ec72b4c7fb938e355d8da6894",
+      "raw_pcd_sha256": "5b56f54d5dbab3216e33d7a39e69ec388846ba77ae9bc238fac60c512a1ded7c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000091.yaml",
+        "bytes": 7987,
+        "sha256": "6ecc500835c0c41f9afc4952de8596dc653f1c103757657e1a2b38b28f6099f7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000091_416.npz",
+      "bytes": 1581,
+      "sha256": "0edcf9b1c0452eb95c1282c3d5988933d9739c4fe49fdce4fb1c71ea99c4bdb1",
+      "raw_pcd_sha256": "031649283c252563287cf0daa2022cdf71718d671e758529d934b8922395167a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000091.yaml",
+        "bytes": 12318,
+        "sha256": "5d98de9046742524bf3a333411149d76ce75668c7612d06aa7333fdfb70bb5d8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000091_425.npz",
+      "bytes": 1778,
+      "sha256": "70730cf0d4eeb9b046935799fe5d3254a32dc9731eccaf3c40224c11f08263e7",
+      "raw_pcd_sha256": "e68c9da8cb0cbaffe3c55b9c8acbd574559353b3c4adc13deda109647ca85b5f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000091.yaml",
+        "bytes": 11402,
+        "sha256": "fd16065c5db04a28b6279476e4c790e9ee092847729ac4d3de17c3a738ef5883"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000093_407.npz",
+      "bytes": 1417,
+      "sha256": "38d96624848b87da78aeaf28f5944d5e3a429aa0fb83d313e17df05547e5f499",
+      "raw_pcd_sha256": "734ac1b0c9d69692d87bd0bafffebcda02b3957ca3e72fa29b44abe22cd00283",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000093.yaml",
+        "bytes": 7989,
+        "sha256": "48a9b3b9bb5797d9c41c193d3ca03c5fc29c1b647e2a3c19be0eac5e1598641f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000093_416.npz",
+      "bytes": 1609,
+      "sha256": "24d61fba03820a36ad81d3bd89d343be01b2c3e6d7643eff87e9e0db74e1845f",
+      "raw_pcd_sha256": "c1ef6ed69d349e938a05f8469162a25866fb773d43cce5492437bf7b162d89cb",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000093.yaml",
+        "bytes": 12292,
+        "sha256": "2ab9753e51d82fb65a0cd609e694d93727dc15b52ceb434421c4a9ee0e0299aa"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000093_425.npz",
+      "bytes": 1774,
+      "sha256": "9a17bb480ac889e425dd5279160088b61820624d22171b0d2c680cf70db3309b",
+      "raw_pcd_sha256": "c4fe5324048219af249b3e9d213d21c911c409d14307fc70f618fb78091c442f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000093.yaml",
+        "bytes": 11382,
+        "sha256": "248da3eada15dd9f580ddd95ae187cd9c39f63355c3b2f48c228d47b330cda04"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000095_407.npz",
+      "bytes": 1614,
+      "sha256": "b0fb0ab9fe1aa3206f58afa9b3c369eb0ed497ec050d5153b2d387d3f47cf184",
+      "raw_pcd_sha256": "e8cae91f5759803548b94af1bc11a63480cef982498c7cb486b778ea47c3a8f4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000095.yaml",
+        "bytes": 8015,
+        "sha256": "7229b375afb680a2b86575e6438c9b0e6281f4f009d9503d0114886b61643bdf"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000095_416.npz",
+      "bytes": 1609,
+      "sha256": "95daa39c66491e88a416c309402b5587bf022fb73683d4fa4fb629f9ce46cc4b",
+      "raw_pcd_sha256": "622eb609d8056a9691ca24164f456e8e7215346f266f71d57f3b34adbe58e3bf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000095.yaml",
+        "bytes": 12304,
+        "sha256": "8f09890582c515e57c650203ccebd3785e037379f0f227fd7f68574576671d11"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000095_425.npz",
+      "bytes": 1806,
+      "sha256": "8885f28a8b7bd6919289eda43df45ce271fafe10e7f7f0b03099b543b369ce28",
+      "raw_pcd_sha256": "d02692356d43f96521eeb97ff76bfcf2aa5febd7a6bc4d243541c14b0a116426",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000095.yaml",
+        "bytes": 11436,
+        "sha256": "c9e56c62548f8b1c3460f3db6a3e295066835f4e162fefa5558fc3e424d23648"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000097_407.npz",
+      "bytes": 1542,
+      "sha256": "dc2e7d9af79cddae146ebd5d493bde393caf32e8560ed5cc514ed69eff8b154b",
+      "raw_pcd_sha256": "c46009ddb71a381eb0c1adbb255d298f2e645a6366ada0be7f576085cf8333ac",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000097.yaml",
+        "bytes": 8382,
+        "sha256": "0185c3e2a2d6673c90c07a89203b14a6416daceaed1ea7576425f29660774963"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000097_416.npz",
+      "bytes": 1618,
+      "sha256": "0d6a12deed56859521d54e2daaa1667e80b72162d7f9e0beeb2f0cb62081e05e",
+      "raw_pcd_sha256": "7bf825cc1969f5fada51b32fdd7c82c7fcabefc45ea58a8414789377501153c0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000097.yaml",
+        "bytes": 12346,
+        "sha256": "a6ffcfd32537e009ade97b7d2d3676ee78e5b3a4cc11740074f3897b9579329a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000097_425.npz",
+      "bytes": 1810,
+      "sha256": "ba57d6b614c67f663beefee2ea25c453447bb2f17d76f8f95934097e643956b0",
+      "raw_pcd_sha256": "ad86d9874a3ffbc9ef9fba8357e75bd330189db633977eab846dba05112b3a3e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000097.yaml",
+        "bytes": 11441,
+        "sha256": "fcefbc667f17ff69a3b32f52b4eccaf2b75e6e72156264d3050fd234eca15c72"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000099_407.npz",
+      "bytes": 1414,
+      "sha256": "b9170526c9c5e3dc83444e5bc5d526143c3068e35c29cd9d7f086b8f0c65cdbe",
+      "raw_pcd_sha256": "9372f99670cc94015f75c5ebcead6a08138a7ca233877f2218c52851f9b3d0d3",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000099.yaml",
+        "bytes": 8387,
+        "sha256": "27c140554e1f57f8f8c552b181ca147d5ca62101ae5ce76038d187a267c3fd8e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000099_416.npz",
+      "bytes": 1640,
+      "sha256": "7cef5b46cffdae31d58b54b4baba36dee19f42dc653309efc84216594bb85c09",
+      "raw_pcd_sha256": "dc428fee2717bf41548bfedaf4ce8fec6c3a1274a2c213a6384150018d8fd1e4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000099.yaml",
+        "bytes": 11899,
+        "sha256": "40806c48fc7b1681887fda67d6ad1de5b8b012ed7de7d5d179468e7e94926992"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000099_425.npz",
+      "bytes": 1773,
+      "sha256": "719c0f97d2c51d0653c4d36244f92964bed0bb0952e8b02c6dcde843ce259ba3",
+      "raw_pcd_sha256": "836b4562b3fcdfd6a25f431816569fa933c17eba05ef089f8603797f7634a3d7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000099.yaml",
+        "bytes": 11424,
+        "sha256": "8f7d4c7c22c9f5ddcf999e15053687f2fbf297ec649177231d8ab2ba3ff90100"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000101_407.npz",
+      "bytes": 1608,
+      "sha256": "4977edb447f89d6753b84e09ee2bec0c0e69f370ece6f1f9904940620d290e28",
+      "raw_pcd_sha256": "53adc09d8e88fb8d4be8b59d293c68b8ab93c9500de1f90df4f34101f16e9197",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000101.yaml",
+        "bytes": 8529,
+        "sha256": "8c6ec2ac44b6c3dda7f7be4e97e731b86ea9aa14fe00a6a57955ef2fb86f163a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000101_416.npz",
+      "bytes": 1614,
+      "sha256": "d6c42cddc573ec2059229ed13c77dd0b23b091988901f1c19f0cb69c5aa79db5",
+      "raw_pcd_sha256": "d197fc026ed70578502739886200b362e98406c944d37b284f510d25e2d0414b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000101.yaml",
+        "bytes": 12393,
+        "sha256": "aa8e4af8e25a2a193e8777269a81892d658e472ea51c5552020a16c15b3c96e5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000101_425.npz",
+      "bytes": 1778,
+      "sha256": "5d02f9d02fc90383478ac15baece4761492650e434a6506d50435b3719b44b5a",
+      "raw_pcd_sha256": "2f705b015f03fa4e84a5bb44e9993c14f7a4bb2407c992ccf239b9a4afb11c4b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000101.yaml",
+        "bytes": 11482,
+        "sha256": "cb585f0d4b24ce62198301c13173d79cc0557d762383358d1b181b0db7123ca1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000103_407.npz",
+      "bytes": 1609,
+      "sha256": "a1c49c99669e47439a9ea30f4ffa4cabded0bfb077c44cee2f10777524eac406",
+      "raw_pcd_sha256": "7f84694efe22bedad8e9ff6e159f939492b55d17e393a23881c03b4ca01ca8f4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000103.yaml",
+        "bytes": 8549,
+        "sha256": "e7cc48b6a482e6d9e58832aded25890951cf6c873ae573eecf7b234019bb4277"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000103_416.npz",
+      "bytes": 1611,
+      "sha256": "3be1bae7b8113b827a4760e3b2a8a1979747fc40382e706cbf354192f347c352",
+      "raw_pcd_sha256": "c73aea3a61ebf165edce9245bafa40e7accf156ca852a4ac860b8e13fcb1d235",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000103.yaml",
+        "bytes": 12459,
+        "sha256": "5491b9d7e4bb421589cd8ab206a6970cd97541b7f79e27cd13318f947c1eddb8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000103_425.npz",
+      "bytes": 1776,
+      "sha256": "559ec1a241a7c94f646d95a477e9c743cbd2b6cc0e5c2c4cbe45cee6f2797f7f",
+      "raw_pcd_sha256": "7a7131dbcc358887a42d8f1c3c605d6988e366d04e5903d03d7a6e9f97d53da0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000103.yaml",
+        "bytes": 11459,
+        "sha256": "96c54c5cf38641edee456e32a64b347a26ef158b76158e9a850e52522d961ff8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000105_407.npz",
+      "bytes": 1639,
+      "sha256": "6d0acb1bdf93ca542011bc99c8b62b8bd8693b086214b2315dd0718335933b8c",
+      "raw_pcd_sha256": "341fd989b6e40bca60ac4a7ab94d80081461498b7ab81352712fb25e7952d238",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000105.yaml",
+        "bytes": 8538,
+        "sha256": "85c010992c586df1e377122e6bb44488724176b6034e0d7e1c49a21d6c3577ea"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000105_416.npz",
+      "bytes": 1664,
+      "sha256": "7338d4416fe5b26cb963e8061719010958ad322395cbd20ff23573345fa75cfb",
+      "raw_pcd_sha256": "862c596fee099e73bbe1523a27c8205919addab10fa9c9bd128e3b2456596a83",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000105.yaml",
+        "bytes": 12882,
+        "sha256": "e3016195cf44737a8b8054be0b2a1e241c4612aa4c6f13cae325c02ba527fd49"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000105_425.npz",
+      "bytes": 1807,
+      "sha256": "20df3dcacf929453d29ff2ba4b0d8015c1474cbdd41281b49950ade776bcdc87",
+      "raw_pcd_sha256": "89624f7c3851396a10359c923f542b164208c3a6c2c66fbcc532fc44437d10f7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000105.yaml",
+        "bytes": 11432,
+        "sha256": "bf15de17f2ae4fa4294d29fd3c157368c62099e1602210fda99f164d479f2097"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000107_407.npz",
+      "bytes": 1583,
+      "sha256": "8fffce956e5b1785e16373ce97f9713d255698c02ee7a5ca9668e9872bea7431",
+      "raw_pcd_sha256": "c3e6cdb401140cc360d4a1e611cd3e7379c054113266b1b613e322af7c2b00dc",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000107.yaml",
+        "bytes": 8534,
+        "sha256": "08d786d198a8c8d974bf98f63fd71e2ee09b447c952aeb56fbca17ed8a6aa2aa"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000107_416.npz",
+      "bytes": 1667,
+      "sha256": "b188b9d0dc03b067a30c93726929f1bf3ea9a25d9397ded7dbf1106c9ae32fa5",
+      "raw_pcd_sha256": "3a891291285c8006ef2dfdfce89c810c4ba52eb7de5902aa1eb46d9cbe9aaca6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000107.yaml",
+        "bytes": 12920,
+        "sha256": "02c214ffe0f5ff274080de6e241c068ebd3328679d069e55e070dab7ca359066"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000107_425.npz",
+      "bytes": 1806,
+      "sha256": "6932910829422d92872061ffab95e4cab7c00d5773cd94579ce267c0574bd764",
+      "raw_pcd_sha256": "5249b33d285c78b79003354e413f62fa542c684734dc6ae04a60882b6a29c23e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000107.yaml",
+        "bytes": 11456,
+        "sha256": "97164dc9e5d639515cd865e95659d8054c352c3f560ba73acfcfb733dfc3b9fc"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000109_407.npz",
+      "bytes": 1614,
+      "sha256": "16729d6e811ca76afe2e360f087c129271c14b6a6a5c1fa18c509969cc341573",
+      "raw_pcd_sha256": "519496c2df509fadfe9d0489632731054f48f4ba9b2b668220f6bd8e217cbad3",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000109.yaml",
+        "bytes": 8530,
+        "sha256": "0f60af47b379519fc2d4d5a7455f6ab1e261920a3050759fbadc2afb5a7bd350"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000109_416.npz",
+      "bytes": 1664,
+      "sha256": "155dbf661aa443dbcd9e2059ba5230bb1f0623c107e1e69686ed89fc221af149",
+      "raw_pcd_sha256": "700766589dcf673a0ad7029d2aa4dcf22c189e67d6365dc049f1cba4a42f97ab",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000109.yaml",
+        "bytes": 12844,
+        "sha256": "26879e8a6b3724f0b7ff0f696c7f955af554a7e647845cc4c84cfd5da1b107c9"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000109_425.npz",
+      "bytes": 1810,
+      "sha256": "46022ffc6d00b52cc186afc558c03deb93c9db05347e69258d5f42a39d27b07c",
+      "raw_pcd_sha256": "a62409b75d02d7206d246a997ce6b22b72eee27adf05d1755ae36d88ab836d98",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000109.yaml",
+        "bytes": 11391,
+        "sha256": "a774a67f8905fdee9b871ee74f3c3f3879bdb1c7689bdb86dcffc53f71e99313"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000111_407.npz",
+      "bytes": 1576,
+      "sha256": "d97c433df0cc22d162414ec26f981803257b1da76aad57c44ce34d9426f8a7a4",
+      "raw_pcd_sha256": "a64f8ab56d32e4ba4a58b5fbe79c6d876bd77b66c82257f6ee9500d82d458742",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000111.yaml",
+        "bytes": 8553,
+        "sha256": "a27e5153ccd4f4b38d1cc9caed6bb9046858cbc5fd12724f7de86de83159c502"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000111_416.npz",
+      "bytes": 1716,
+      "sha256": "7d87b9b8d940d0ad5f9655fd858ca3390cac5bc5c58410f406a042b6595ce9e5",
+      "raw_pcd_sha256": "b4adb7a7bb03757a8e98a09ce28f31b119715bbfaff96bd5cd83e521e0def881",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000111.yaml",
+        "bytes": 12851,
+        "sha256": "2032b3e1a8dd97ad7b15bf927dc382cc413434bb565843de640f062ab4a0afc5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000111_425.npz",
+      "bytes": 1803,
+      "sha256": "2217a8333ce7924349f79ef206403fad94683718b6f266f995c81711111f5a2c",
+      "raw_pcd_sha256": "6cd18af8ad7442e921c98b0cec92ac11e681ea69b0879b6be9d54768e4c07c3c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000111.yaml",
+        "bytes": 11314,
+        "sha256": "201ffa7d0d3c96a6bf03cb2d859a75d720c4fda5c45d40af7e30d7209bffb91e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000113_407.npz",
+      "bytes": 1669,
+      "sha256": "74138c3ce65f93c31b93d07e2e4fccb6b4257c4739b47927da7d2b40f5b1e245",
+      "raw_pcd_sha256": "820b59d8d9bf19f327ca09600b3b0c76bcb65775fa11ab8cd0bce5e26aefab28",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000113.yaml",
+        "bytes": 9320,
+        "sha256": "f3cc62d91a105a66543d1ce84d8466e30f0f190cb4ae4bb619ad2798cd51006a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000113_416.npz",
+      "bytes": 1720,
+      "sha256": "ac44f90dc3ad7d160bc1738faed289b62f4895efa5d556e120ee6e6bc84c6b31",
+      "raw_pcd_sha256": "eb57195e95f5279f0c971f4e05242f83ec4fd9a7a67032338a3703b8724a715f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000113.yaml",
+        "bytes": 12886,
+        "sha256": "d23f5b579782d4529bf5954b5439bd707e8108eccf2e5315a34169a035b0b191"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000113_425.npz",
+      "bytes": 1811,
+      "sha256": "7e5bc3d4cedfd22be708106f26007b8f44a6ccafd514634c1de130be7429934b",
+      "raw_pcd_sha256": "db77a5cda2fa887af53e7ff4f1e9c559f771cb87b97c605bff944f08d6348b53",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000113.yaml",
+        "bytes": 11738,
+        "sha256": "dcecafc11de71bc2fa62e7df896a35a342fd35c0c2d7aa7d6328baaf8666a1ae"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000115_407.npz",
+      "bytes": 1631,
+      "sha256": "5509384bd5eeb733d85daa0103d0a283c5e9a403cf667242ace1b598f2b26954",
+      "raw_pcd_sha256": "4fedaf8ab0844552b90744e76af5b645587905e642abb74db0a75a948fbdc1c8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000115.yaml",
+        "bytes": 9670,
+        "sha256": "d13c81de27cee36fac9b3ccebc5f2254a109f81f0c6c655120b21d69e9d0e176"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000115_416.npz",
+      "bytes": 1724,
+      "sha256": "eac16633eaa06d8500a9cc02add6d40844548610402184b84577cb1d0d6fde4c",
+      "raw_pcd_sha256": "7aaf0666a0026bc5c7ba3af41b5338e30827f5e9b05c006a5150f9c02145a78b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000115.yaml",
+        "bytes": 12831,
+        "sha256": "bda28e965dc9bac096323a9d839fa5e03bbae265c093190b4f78022476209329"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000115_425.npz",
+      "bytes": 1802,
+      "sha256": "6f62eddd05ea93cd7652a73de98051fd429f2da6f3c9175e1db7321b8c3612fd",
+      "raw_pcd_sha256": "882c77d5bdda48ccb2499b82b906a880a8581aa5fd5196db160abb3879732dc4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000115.yaml",
+        "bytes": 11344,
+        "sha256": "9321b5578fd0d6ffe36ad5c2902cbc5851c8653a844a585419e121a8fe6928df"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000117_407.npz",
+      "bytes": 1673,
+      "sha256": "acaf280c68f35094858847c7acb0e7e66184b2ccf42a37766542725b36b529a6",
+      "raw_pcd_sha256": "bcecccf9dc7b5d58c29757663eefe1332d7c6e78af62e7b18f47dc8a8150ef08",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000117.yaml",
+        "bytes": 10050,
+        "sha256": "359c24964f7254f3399afe89383ac63619f9feff5dc993145a1377df5d82bd4a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000117_416.npz",
+      "bytes": 1719,
+      "sha256": "05a58e1ed19c7f6e003c1f865ecc78001ad6157b88f1627bd083b77002098783",
+      "raw_pcd_sha256": "80161991e0fa94fad9ab25f51f0af81d8468d8e23f3003a5e1f8af11af4195f3",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000117.yaml",
+        "bytes": 12870,
+        "sha256": "a54768907bdcd2d2dff7789eb9cf6f83cfffb61482071e8d2d742dc4c85c4c5a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000117_425.npz",
+      "bytes": 1800,
+      "sha256": "a45d11dcde68407ab2c5815c1bbc4a3c9c649427b91a517b5fbd762504435fc2",
+      "raw_pcd_sha256": "80463a4377fa7d30754663aae6c6fe610b5a7c0b3a8a778ed9837d3c5bf43749",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000117.yaml",
+        "bytes": 12314,
+        "sha256": "cd219541a3125c12ecab556ca15d3cd10115b766e7bed704185c78dfeff369fb"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000119_407.npz",
+      "bytes": 1578,
+      "sha256": "8123ef2e5f00e3b0d694cabc6ba479759be0e895e49b13814a06293c5e821a06",
+      "raw_pcd_sha256": "89bbf8f3ec20e3087fee96faf5eeb44264e98d4a48fcb7cca2abf1734747a6ad",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000119.yaml",
+        "bytes": 10071,
+        "sha256": "e928db377e7a38fd0db5fd8a50c93b78f38ecc88a6eba5f1a9793e985b6d7e30"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000119_416.npz",
+      "bytes": 1715,
+      "sha256": "219c700bd82c7e712ab8adb2ed0cc4b992edcef2010ab518ce394bece1418693",
+      "raw_pcd_sha256": "e37b3d713d8eabdad3edcc537d8ba2e0bbe8736b258ff02d11b5d2684cd819aa",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000119.yaml",
+        "bytes": 12821,
+        "sha256": "1ebb3229ed740e85df2583bff2b314f45e5326a40fe41179bd20640a1a58a0a0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000119_425.npz",
+      "bytes": 1799,
+      "sha256": "44335a0233f7531ca2f70301cf7353dc024cdcfd9d53ff8df7b1dc8e4c305e9e",
+      "raw_pcd_sha256": "0f5229e792aabb42e3c1c8eda7677bce7895764d6f72902141564e4d0c1efeda",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000119.yaml",
+        "bytes": 12698,
+        "sha256": "e72903f7370a79c349c4180d2a64497f702b03531893df9937ca44c642cb8504"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000121_407.npz",
+      "bytes": 1610,
+      "sha256": "1354cc215087a4dcd03ced495b45a8d3231cb9add4bfadaa3efff686dbdd5e63",
+      "raw_pcd_sha256": "98d2ba9d63dc0a54ffc447fdf8ef6dd20b80a6040f7701edf5fdb9047ce4d9c8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000121.yaml",
+        "bytes": 10071,
+        "sha256": "54c1377e89ce64659b013303129bea38016fab14343e3e5f5fd5f94bcbd81d25"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000121_416.npz",
+      "bytes": 1721,
+      "sha256": "d7059ba36179abc44c7e86e0d5ed6afacfbb14f99251992a3ffacb3910601a9d",
+      "raw_pcd_sha256": "a9e56f45854e03364a35def1e7597f9748c4d73520136fe01c1bf84f1c295b1c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000121.yaml",
+        "bytes": 12454,
+        "sha256": "9a6111724452cb9695a81d64d61dd269fe00539e0f31d4c577ced9487d3fd264"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000121_425.npz",
+      "bytes": 1828,
+      "sha256": "acaf28665f394f5f431d787b73c7de12a15e7b5869845790794c613d59a1b196",
+      "raw_pcd_sha256": "d5ef655270984b719ced269605d70c4310ae260d3c1b2b812697b235f97dac78",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000121.yaml",
+        "bytes": 12726,
+        "sha256": "c87923a8f4d37197d400f3478808d120ec206e4d3389b68df4e4acc2c341a815"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000123_407.npz",
+      "bytes": 1581,
+      "sha256": "55841d7278e99df2f2a38465f6c5e8d8210f4c9181ac493510bc72f115556242",
+      "raw_pcd_sha256": "bd69172ed8dabec56b129bcf3c990f91cd857fbda87781db75b115d7e9b538c7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000123.yaml",
+        "bytes": 10892,
+        "sha256": "227d7f2ed9ec6d726fd8f156a1bad8ad4954483d09fb426e48fcc4357ef22c3d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000123_416.npz",
+      "bytes": 1750,
+      "sha256": "3866e507c2e36da73e17edb57dd1f685ddbc6c2a91b2da6f8d7f62187242b73e",
+      "raw_pcd_sha256": "e3c2352adc92e01a7060ce9bacffa18cd5b95379221595a77bc7e0f7e35bd8e5",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000123.yaml",
+        "bytes": 11762,
+        "sha256": "bebf171776b5b7ef254b2f53ed2391f83e39139c6d45663a30145e3087580880"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000123_425.npz",
+      "bytes": 1797,
+      "sha256": "b7371e10dc11ac7e664da8fd82ce9e58a802aa488e1e63f2bbd3eb36167b8748",
+      "raw_pcd_sha256": "91e2831d76cda3bdb94431149f34bbbe6c23dae61d448f987a562a82bef3e408",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000123.yaml",
+        "bytes": 12702,
+        "sha256": "00f0e6c56001e12d0057f783b4e84a8d3d55342888d22fcfab6a3112e47fe76d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000125_407.npz",
+      "bytes": 1609,
+      "sha256": "6010502976c7f5c72ae2b1647c145efc792fcb741957641631132ed13a7dc8fc",
+      "raw_pcd_sha256": "f17e05a409e29326b98ea7aa83bcbf71d86f49d7752bc11ffad0431a0be66d79",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000125.yaml",
+        "bytes": 11287,
+        "sha256": "639afda5faef8446261cada97d8c318107beced2448b5a44fcede11afa85eb5a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000125_416.npz",
+      "bytes": 1726,
+      "sha256": "05771d6449ef30fb7a9ad6a7b92c2e7a5a4896bd39129e560b547dbd775a888b",
+      "raw_pcd_sha256": "3434d3b92f39653bd25f76cbb2ea75614b015e5b3751bae598df3bbf47e6e48e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000125.yaml",
+        "bytes": 11770,
+        "sha256": "8f451ab951147f84b15aa0b80e926ebfe8749360ebfd85a30cea1af24a5b7e83"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000125_425.npz",
+      "bytes": 1830,
+      "sha256": "ec2aaf6bb237e8ca62ab70fa86145836bcd7c0d7e2bb465e5e4b046e5d1aa269",
+      "raw_pcd_sha256": "b169cf57aedc5416dd6d4ae022dec453e88951f589db541777bda1969e9a2626",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000125.yaml",
+        "bytes": 12738,
+        "sha256": "009224482de7df2ce4395cb0a222b172d19f2110c1f1d070baac4cddf57cd5a5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000127_407.npz",
+      "bytes": 1605,
+      "sha256": "03504b5a7c0e3a9f31b06da246adf9f27773bcc6973cf09c4fc2553b99657d39",
+      "raw_pcd_sha256": "ba087e47e985caf1055fe432c478c985cfa54e28fc874ea20ccb2598c0faa0e6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000127.yaml",
+        "bytes": 11725,
+        "sha256": "5734ee6950838fe04954866a6530133c1be64309982d4939b2c12f5973a9f067"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000127_416.npz",
+      "bytes": 1777,
+      "sha256": "17d79bcfcd32b5eb337ea84df6594b708849c07bdf578c46db49b970eef61e4c",
+      "raw_pcd_sha256": "19688aacf9df43605114f069fea94ca31a31d5d0a4b4d976ddc7e766b30a3169",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000127.yaml",
+        "bytes": 11773,
+        "sha256": "6b84356eeca668d8083b89520757b1bfdccb19324f194dc9b779515e39c6248f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000127_425.npz",
+      "bytes": 1801,
+      "sha256": "3d1964aab2f08a324076e0d50ddfc71a6f40ebbfe09f20a92042908808752beb",
+      "raw_pcd_sha256": "b54bda9e9109e7611b32debcce0846f67f9abbc67fd760b33608ea97141141cf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000127.yaml",
+        "bytes": 12720,
+        "sha256": "d2298336b830a190fb6c8a028200adff0024ad40774f5b407ebd91669ff39908"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000129_407.npz",
+      "bytes": 1633,
+      "sha256": "0d3568a909337cf4736b9d08ebe5948cdca5207f4be15932a467a56679cfd453",
+      "raw_pcd_sha256": "b41800cfbb69df6939d620fe866e124b5fe9eef463f485485b2008a110dd96a8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000129.yaml",
+        "bytes": 12013,
+        "sha256": "94c3a4cb77519229614b32e4178239da5ed98f63a44bf15fc5f5da559e81d06a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000129_416.npz",
+      "bytes": 1728,
+      "sha256": "926c58bd773d35c806e40ce35f90b2ebdb6c2128d09d2ccb8ebe6d62572ca6c3",
+      "raw_pcd_sha256": "a8a0a32d19045dbf721b2e3358a5a9c1faf778f4aef6bd72c0661f21f5697e93",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000129.yaml",
+        "bytes": 11732,
+        "sha256": "7b630552daddeff5f0fa35743656a97235133bbc00f93d4d796887eac1a84317"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000129_425.npz",
+      "bytes": 1833,
+      "sha256": "809a35aeaba15195df2751c98fa064cf57f2bbc91a9af2b64272b0eb4272d91e",
+      "raw_pcd_sha256": "bf934da5bdc8c034ddd6cfbe14ca1f01765f4dcd6f8ae0aa2fd5ebe531e8f039",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000129.yaml",
+        "bytes": 12668,
+        "sha256": "e2e9aeb3a7064968325b95139209fd7233ef9278cf941c816fc8b45578886c71"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000131_407.npz",
+      "bytes": 1637,
+      "sha256": "bc770b9014d858e979e857923a59107a6c5198972684411c73e28118f25b5ae8",
+      "raw_pcd_sha256": "a5a32eb28cac31ff69cf342190d7b6cf34a50be6e983933c274cd2098f47f385",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000131.yaml",
+        "bytes": 12491,
+        "sha256": "fa9e7161a2ed8ecc3672e27063dca0f6007364946f1d2a28574b681b87676875"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000131_416.npz",
+      "bytes": 1753,
+      "sha256": "24b30222a3d38daea4271873383054e1253e626239359fee93e8dda182453a88",
+      "raw_pcd_sha256": "d52b4dfcd7d3697d7b3a9c48ff060a5b835667edb635a57c7a127bf8c113e730",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000131.yaml",
+        "bytes": 11033,
+        "sha256": "5359b8bc152243b06d5046e4c20019d4ba2a17a63053c48e3cbb7ec4e1e0e781"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000131_425.npz",
+      "bytes": 1802,
+      "sha256": "4f41718599ae6454a61c66bb5ac7d05da7c26c55b71cd0ad14a66b47fb12e4b7",
+      "raw_pcd_sha256": "6945e4593246fe9931fd6bdee9a0bd09de03a976bcdb65df18ef87bb64309f8a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000131.yaml",
+        "bytes": 12729,
+        "sha256": "bf8aa9b8514e6b9a823587c5949386eaf4ca41ca6c0b60c9dda547be8cfbd027"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000133_407.npz",
+      "bytes": 1633,
+      "sha256": "c05931d145fe37ed607660a1f179992c6baa016bde8ddc51ac6f3a6f6937e598",
+      "raw_pcd_sha256": "9a0a80473357b4cb3417286f0bd80b2fd624dcd90d73b77de1bd2d9de0703061",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000133.yaml",
+        "bytes": 12836,
+        "sha256": "1ea16cf51295763ffba8c003e2f5c976057c7749e428fb0da1c9016f994d2c10"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000133_416.npz",
+      "bytes": 1744,
+      "sha256": "b3f9c72ae10965feeb5f4867b483dcb7f8141c61acc11e256604abf16edf0fb5",
+      "raw_pcd_sha256": "3dd43911369b3636f6af6a93095f57cae2c24c56031b24426e0e23d223f4eef1",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000133.yaml",
+        "bytes": 11377,
+        "sha256": "f76aec5fb86382f07f6528786553a1211afa4293d7e84038d0368357595ded7c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000133_425.npz",
+      "bytes": 1807,
+      "sha256": "ca4a49a016523b3a0021ec53e8337e6634594e3d381f93b5c4e5f8e70314b075",
+      "raw_pcd_sha256": "7bb5cf029cd2afe64ccd223199180e6b4293a2c6672c13b3754a0182abd0f399",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000133.yaml",
+        "bytes": 12337,
+        "sha256": "e3bcb4c11d453799bc20592171aa7e4a5b1b843667930aee46e15d59918fa1f0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000135_407.npz",
+      "bytes": 1637,
+      "sha256": "20bf36fed46bcd5dd98394cced6d4b4eaf3ccceb692f9fe282432b83bd3520d4",
+      "raw_pcd_sha256": "edf9d8ab919297dbf31855c9ea34dfc7d8707716214669d258d428693bd72414",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000135.yaml",
+        "bytes": 12475,
+        "sha256": "d59ed586e0a08518cc16299a2485a23645e30fdd901306a63c1cb8214045d493"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000135_416.npz",
+      "bytes": 1726,
+      "sha256": "1f4ca1218348459756e342739f8e25c8118f8f33142f87c766b2683833df847d",
+      "raw_pcd_sha256": "c4d0bc280024600e53b789ca14d819a7402f71a3654f661aa6d45ad1c0538eff",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000135.yaml",
+        "bytes": 10969,
+        "sha256": "e35040100c6e17e9ef082e314bfd974cf44c10ed73d9815bbb2283eaa3caeecc"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000135_425.npz",
+      "bytes": 1806,
+      "sha256": "eeeeae09b59a5bd49ecd5f252e946f411f82d2b45cc3b2b10ee302ed0da83282",
+      "raw_pcd_sha256": "ab22e178082db913b9647558b0a7765a13559c966b95442ab4bb77130da05b3f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000135.yaml",
+        "bytes": 11339,
+        "sha256": "b84c496f3985cc92fff15829d01204ae3a3845568a21f4f859047ceacf57c959"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000137_407.npz",
+      "bytes": 1599,
+      "sha256": "c68bfe9ddb2af1f4809bc23c683fce56ada6a8a3084ef3b39e878766eeeb1916",
+      "raw_pcd_sha256": "302959ffa7e9302bb87e2fa6c2acfbbcbebcb2b33eb03036e80bdaa7b33d3685",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000137.yaml",
+        "bytes": 12839,
+        "sha256": "8638bd0ed1cf868e0ad54d0b417496a8a95b40afc1ff5d14b8b9769b6da6eaa3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000137_416.npz",
+      "bytes": 1721,
+      "sha256": "2558ae77c95a7cfa7e28a7e5645b2d2e5fb58ab8a0d39d8e712e56c1c81625d7",
+      "raw_pcd_sha256": "dfdc3111c71d1e86d2fac3514324ceff3ff44300c22817be2fe3abfb2d7ab59d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000137.yaml",
+        "bytes": 10993,
+        "sha256": "98c99817155ac6bd9265b0ea57946366ccb52e1764e99bb38b617a2f76184539"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000137_425.npz",
+      "bytes": 1810,
+      "sha256": "6e7221b5209637d37fceca7143802a8b9dea47f5324ef6959031494ce58152b3",
+      "raw_pcd_sha256": "b1ed9a0ecda262194d91fdf5e382f75f1286c483d708f0e7ef63e53440eb99bf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000137.yaml",
+        "bytes": 11281,
+        "sha256": "110bfbe3808bbe1348c7adc70453b74eef278df791eb1b507b8944a3af0ff503"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000139_407.npz",
+      "bytes": 1663,
+      "sha256": "dbe855a1de7221e3e20752fc873f5cb277a9a046408b4c7228c6b386745d7b40",
+      "raw_pcd_sha256": "5e06340d0e4586747fa2a86244609ec3358991c7a97b543beeb986ee3b53d115",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000139.yaml",
+        "bytes": 12865,
+        "sha256": "317d8dcd288874fee86206dfb8809f2d6232d315b9a96f62b3ef91076b471140"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000139_416.npz",
+      "bytes": 1727,
+      "sha256": "058c752785e7a719381c080fe8291944e42faf7316ae634cb37039874082218d",
+      "raw_pcd_sha256": "6bcf7c3c56928050611b22030cd49ae35644b147dc10b2663388235e2d183ed6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000139.yaml",
+        "bytes": 10967,
+        "sha256": "2753dd96fbb01f0dd19acbe3855d449a6a7846c1418e071c2610b82eafa72bd3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000139_425.npz",
+      "bytes": 1799,
+      "sha256": "941b219d8109ce36fcfea0d52e95c29bf04295af96d979d9195eb1eafbfafd1c",
+      "raw_pcd_sha256": "5aea9915cbb2f5eaf66f7bdbbefdc3c34221e976eaaeea63b92297d234de8fda",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000139.yaml",
+        "bytes": 11717,
+        "sha256": "c7f5035ce5888a9aeb65bfbbceb450499585dd00fdb287ae2890a776cb08c8f4"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000141_407.npz",
+      "bytes": 1638,
+      "sha256": "53f1e3393689220264e238570a07e6cd60a8b245811f08912cbcf834c12728ec",
+      "raw_pcd_sha256": "806c198b8914b6bde818f83dd33a4005233c175f99133a4234c477abce49748d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000141.yaml",
+        "bytes": 12475,
+        "sha256": "3c86b101fc42bd2368ada49d0bc8c7c398057a761ab973e9404f49ca31e225de"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000141_416.npz",
+      "bytes": 1724,
+      "sha256": "75b0247c810717541f82d69ff0b3a717f0ebcd43ebfd2a6c5de3bee8664467e0",
+      "raw_pcd_sha256": "a17fe5c115e11f5b89e813f99f47d6e307b95ef0d1ac2d5d3623b30e3e6a30a7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000141.yaml",
+        "bytes": 11010,
+        "sha256": "de81192cedc356949e90832b0551f258f927a29a185abe8caa465099c9a529ec"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000141_425.npz",
+      "bytes": 1798,
+      "sha256": "cbcd90cc125aa0ebaa5abd62208404d9ea847fa5dec5786b57a28b0131f9939c",
+      "raw_pcd_sha256": "86e9cc5647dfe25d790586c795b9cd6c2919b1e281eabe0f71716533bb5eeae0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000141.yaml",
+        "bytes": 11355,
+        "sha256": "6d182008af992aebce6d16d2e26926992d6e40a5da42d13c75c739bfc86b5d78"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000143_407.npz",
+      "bytes": 1703,
+      "sha256": "8963c7198b05eeff2503299227680676770a900ecc00e57d99cc1fcfaaadb84f",
+      "raw_pcd_sha256": "64801dc2b9bf3cd84d51a416eb768e001b3a357ce17d825e1ec53f2764519286",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000143.yaml",
+        "bytes": 12844,
+        "sha256": "0927c7411673b32c4c919deb1b9df301c9da7bf020cb8fca310d9566660646cb"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000143_416.npz",
+      "bytes": 1723,
+      "sha256": "21a85310bb47e1e2323758118b28df1c43f69232adb02b2649ef2978ad85cb7a",
+      "raw_pcd_sha256": "6a4d4c56633690987cc0e5246a778db5ae0f6ba69e6e558b55aea8fdb59163b0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000143.yaml",
+        "bytes": 10959,
+        "sha256": "c5bb831829984996c0194ab66fd6565266c134f9986b8c4c64f99b5509cbe3cd"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000143_425.npz",
+      "bytes": 1825,
+      "sha256": "0be0368c9c607a125b379632d7abedfbc5ea8db178131b12301672bfcec28337",
+      "raw_pcd_sha256": "83bbb3f3789c8fd9822c455e93f9f5bcd4fd09a78a99cdf3854534aac0be5f20",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000143.yaml",
+        "bytes": 11303,
+        "sha256": "b62d91c2ff7fd8aa1f6c86ce9d7b8ab640846fedd0ad26f29def51b6145ff5db"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000145_407.npz",
+      "bytes": 1749,
+      "sha256": "7f9d66778da2386eb38057444eceb42d3562de7aa2de7d32031ad80e81e1ffc7",
+      "raw_pcd_sha256": "7df35c1eedac4eb6ff12c07398fb735fece5b4d89d53aa7d2c9bdfb25daf2b66",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000145.yaml",
+        "bytes": 12885,
+        "sha256": "297312bb669d9aa3b918ca5399cd545ac77a7623884a4cc8ef8f2b674b9adde7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000145_416.npz",
+      "bytes": 1724,
+      "sha256": "464a7d6f36ad97c483694fd297d166c03f4b26f0605c351e136dfbe8f7c3d9e4",
+      "raw_pcd_sha256": "62c2aad501be681cb52f75b8e6e039375c1e86d4c837822d18e96ecbfa71ecb1",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000145.yaml",
+        "bytes": 10913,
+        "sha256": "52aed4002a80e7d51dbf79dcae2e7c1210ca014495a8c28fd8b6945ef27ca406"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000145_425.npz",
+      "bytes": 1828,
+      "sha256": "68fb2b2731d172528dbb91073e92ce67d0ad153a3d1935078a05f69a3d2d214c",
+      "raw_pcd_sha256": "975aaf8a855cb8c5ed1bf2d339f1fce8bba09476b41bf535dfe78f7e47a00359",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000145.yaml",
+        "bytes": 11353,
+        "sha256": "0e19b2d9ee08b5bee81fcd17117719a96b32e7474974e1d49cede4ffcd979a93"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000147_407.npz",
+      "bytes": 1751,
+      "sha256": "1f56b1f0e184eb1a4f55ea67239c799d5817626a9d3d54d5e5de7e101a71c19f",
+      "raw_pcd_sha256": "5fecf9f2ffc47f693af23e6df77f5305ffc56952a305c2e2f8d0bb741c898caf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000147.yaml",
+        "bytes": 12888,
+        "sha256": "799b14de1fd041bf36a7412d2ea83fd38f3e6f99765c910531e63f9513a73ad7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000147_416.npz",
+      "bytes": 1724,
+      "sha256": "a2364e0a0e2f6639cc55e36ea53d651675a93d40ac6b822c4f7e9dff0ad30ed8",
+      "raw_pcd_sha256": "9e36baa761e1e1f74561b2428d8d9151ca8b1aa6c6afbca8c19c530d07a9e91d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000147.yaml",
+        "bytes": 12057,
+        "sha256": "01cf1ce35eb5826400151498affa4f22976dff85b42bb74ae6df71a9fff4410f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000147_425.npz",
+      "bytes": 1800,
+      "sha256": "c38d708d21faa500bb7c4eaca2b03cb7eab9806f0aae29dfb3ded126f51bc9ec",
+      "raw_pcd_sha256": "4a21cdb845359d2e9ee3a89d1a7e7db3e88ccf78166f6b963caf018aadddf6c1",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000147.yaml",
+        "bytes": 11288,
+        "sha256": "57ea788c1cc76794dc1c61b1c5dd2386ebf5bbdf78c886891632011180c2fa1d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000149_407.npz",
+      "bytes": 1714,
+      "sha256": "06e51cf2944eeae516b5bf919d6dcfc1bb6e2fa1bd922bb0ef10f21653779c43",
+      "raw_pcd_sha256": "5ab5d480df0df1c23566a0b47dd16a8b85c9872a62c98753cd31dc8efb54b771",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000149.yaml",
+        "bytes": 12874,
+        "sha256": "0597f25af5fbc70a88c2939ae798d10f328e404f67279eae0ae07d8dee43f06b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000149_416.npz",
+      "bytes": 1701,
+      "sha256": "0b47e6c17fa32dfcae0126f07df254035e96a420c5d3d5de92a3ae62827c41dc",
+      "raw_pcd_sha256": "8e753a6b26d8c99f7d53840b3adfeb7aa3640b190b8441237a077fb612b89409",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000149.yaml",
+        "bytes": 12063,
+        "sha256": "c2938f7023e0bc625452c7dec4729b23d8b5bb0a558f3b23dd40375b1a1f0251"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000149_425.npz",
+      "bytes": 1811,
+      "sha256": "c75dfb5845f9754ef74c4cdfb46f6268b2ad22badcbab9f89c1b23156a5a5b80",
+      "raw_pcd_sha256": "59a7e7a9aacc6dd8f79d41b71dc0c609fefa770a8bca4b5b3ffafa5145622e6d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000149.yaml",
+        "bytes": 11296,
+        "sha256": "2ca582021a2eb71dd3d796656986b5c5d458f66d4bbac120abff1f9af01acffd"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000151_407.npz",
+      "bytes": 1722,
+      "sha256": "681a8cfb9f8ac743e07dd659919ef0d3861602dd564d224641f3c81601d67c57",
+      "raw_pcd_sha256": "dd685ada7c05b2b7e3c02334357b6dd51d4aea89a3fa5c0edcefb1283c3b5548",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000151.yaml",
+        "bytes": 12454,
+        "sha256": "d715ab52def10b714fb9402035c419d180367dda03f1aa67db359a910dce0bd2"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000151_416.npz",
+      "bytes": 1671,
+      "sha256": "1289f8af0d010268b6e75c22d6a3fdb028041dac2199b48b3d48407809e6756e",
+      "raw_pcd_sha256": "0b4a70a71b1523154ac21716c0b51de9d9e96d203bf9b0fbb82da136685610b0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000151.yaml",
+        "bytes": 12035,
+        "sha256": "2a0331dc47169e7d9b95b26688fd4e2d766ea7965f3765671abc7fd8764dea66"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000151_425.npz",
+      "bytes": 1793,
+      "sha256": "e7ef2f03bda729d803e1e2bbdf8b42e13ef7ebd2e27cd4027a7bc083f5dd8ac3",
+      "raw_pcd_sha256": "1ccc19ee5ecc1886235c8b792d935995202495612355a97e15158b9a986b425a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000151.yaml",
+        "bytes": 11330,
+        "sha256": "38f64e6933c48fd34889eb11296043a6be0fa3fdbdfd8b331667c2223898f0b5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000153_407.npz",
+      "bytes": 1732,
+      "sha256": "20efc7c76ebe2fb0cb3db72e67aa4dd48df64968230b83185675d5c43b7342d7",
+      "raw_pcd_sha256": "d1636f7a2dc29b8d0525404cc17124adbd092dc97d0a63f11605605c89e74da7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000153.yaml",
+        "bytes": 12468,
+        "sha256": "8b8917670de80de925e1a01ff55bbf6481f428176f2f0ea4c89418255339aa86"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000153_416.npz",
+      "bytes": 1696,
+      "sha256": "0d39a54bd4098d74c33040b74daaae71e88d1f560b4bb001e03c7421fb1e4d9b",
+      "raw_pcd_sha256": "04548006df4cea385928a878aec897a26fca230c4e69feb76068f62606b90720",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000153.yaml",
+        "bytes": 12056,
+        "sha256": "4d5681e6d3f851010a7582c0fdb49bf8113de2a93e1a9b31a1cfce89771df938"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000153_425.npz",
+      "bytes": 1806,
+      "sha256": "072237c2d11285d799a55b6b8182918a924879f73bd7c7572224411df44c5140",
+      "raw_pcd_sha256": "6f983b5a3007089f07c3d9bc2a0a91f5740930e6c0ab941a5932604f0d065fb6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000153.yaml",
+        "bytes": 11406,
+        "sha256": "bdf071d02dbc73c54f4543e779f64112c9c65e144ffe27cf539c50e49c74158b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000155_407.npz",
+      "bytes": 1745,
+      "sha256": "377a9a453766c42de803638e66d5fead2f3b193f7818b8439c5b17bd3062098d",
+      "raw_pcd_sha256": "4f87c4ae091ef936ba11d4e05499d9a3072326c71eed9c255ab5a3f763bf4764",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000155.yaml",
+        "bytes": 12451,
+        "sha256": "f79f8beec868ed2de8b0d33f8b50755764ed79fcbb08da697141b9444c0b7e7a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000155_416.npz",
+      "bytes": 1696,
+      "sha256": "344a45b7221897697dd8a1f5b6157d8f61ffff30cea094fefc53854962156d25",
+      "raw_pcd_sha256": "5d66b00566ad41582f203109e5166f3016849d70f764bf39e50bf157d2733be7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000155.yaml",
+        "bytes": 12010,
+        "sha256": "6952299e324e9495b3d983140933644b2b2c28473c2eb5d37821ebe1be21f685"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000155_425.npz",
+      "bytes": 1806,
+      "sha256": "671bfa5992e1a053740e26d88f64df9531bdec41fc92d6197aa132a0db045e9e",
+      "raw_pcd_sha256": "24329b2cd2860063f68caa23446e723db8c17f57995f9ab2733ec604aee07619",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000155.yaml",
+        "bytes": 11323,
+        "sha256": "06b038ea94d3bcc4411ded3dbc3561b2fa196103c73f41ec40a16edbb8a02c15"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000157_407.npz",
+      "bytes": 1831,
+      "sha256": "7c7b30a6a987c06944d33b2da4f7bbebddfa7652629fd1404c4620363c67a7dc",
+      "raw_pcd_sha256": "3c2caaeac4d7e89aa61d6830a72d168abf84888ff276464ebc1e4331f6cd1354",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000157.yaml",
+        "bytes": 12064,
+        "sha256": "2d95c09eae8fb333b4cd794fa896211db69dc37ba2014f5166f13604162da810"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000157_416.npz",
+      "bytes": 1672,
+      "sha256": "e73f0fd157c6306ac1085c8c1c12870b6ae420a2398fab4c14f063a20834ef87",
+      "raw_pcd_sha256": "317cc5d130298f7a20325ecb670ce43d2b95c19efec3b1051a06d2c6c2a9946d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000157.yaml",
+        "bytes": 12060,
+        "sha256": "23d05c1839ac734c0b06fd44aeaf7cf5fadd88a3389d80954e261ea7e328bc02"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000157_425.npz",
+      "bytes": 1806,
+      "sha256": "1a33af05b54c68ec4a7ce4991c287568b872f7746c3a6ffce3d372deca7873d9",
+      "raw_pcd_sha256": "6b0bf921ab9b7e83202d6f42c08b98b9ba1e65fd7feddc78390944e1cd3353b6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000157.yaml",
+        "bytes": 11733,
+        "sha256": "10ddf0c4c60b99b03402b63d7b6410fa9c45e6b7cda0cc6659b6a7f96336e89c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000159_407.npz",
+      "bytes": 1754,
+      "sha256": "fed69dd79df467ea878e8a46e56f3c285c2da28dedc5ef6b64ea329a4028f037",
+      "raw_pcd_sha256": "12ef617c11bd3b7a8f76ae98b249904ed00f9a2d1e585767a4aaa86a93457260",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000159.yaml",
+        "bytes": 11960,
+        "sha256": "60f38c28d752422f3f7e26f0206ad82e6d7ee5d0475b9fe61353cd001f4bb912"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000159_416.npz",
+      "bytes": 1696,
+      "sha256": "e5c95874f36de05744addb9e85ff27eeb1961c94b13605e582ff53cd61e9c0e8",
+      "raw_pcd_sha256": "57ed44e0bf10a47b6626ae8aeb6a607401f9e8a33530bc8ffbfc8517be9a30c7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000159.yaml",
+        "bytes": 12030,
+        "sha256": "16e0a5a3a5bf9693a5a36fd6e2be299b6939d6704e36317171868db8fae0e53d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000159_425.npz",
+      "bytes": 1803,
+      "sha256": "03f4651ddd65d773fca3297d337899a440c8c858270b2d2eb8f552881dec7b3d",
+      "raw_pcd_sha256": "2b92a7b0368b46fc8a297f52c7119c84284d8bc34618c8f235d867876b24bed4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000159.yaml",
+        "bytes": 11305,
+        "sha256": "1493fb464df58ae492a7a34f9d35f05d4cf693e08d0e862fd9b5d010928a3f27"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000161_407.npz",
+      "bytes": 1829,
+      "sha256": "6ecc6c1cc80ccc91abcb0747524649001961497fe1a433d464959ea0df78d8cc",
+      "raw_pcd_sha256": "686a128e0e1667d3f56ad523239ac6aaba45fe1adb0822592dd31d61c08c48e7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000161.yaml",
+        "bytes": 11872,
+        "sha256": "783994d46822cc1f785d31f542d509beae22dc7f81e2d07edc524d2984b7a8d9"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000161_416.npz",
+      "bytes": 1701,
+      "sha256": "bce28dc9826447d7f14d9455a452351afdacf684495154a59f3905a880dba49e",
+      "raw_pcd_sha256": "b49fc130bc7ebf791745b1b5984cd4ce6e16b563bfaf0fa6abd4ee766a81dfca",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000161.yaml",
+        "bytes": 12055,
+        "sha256": "77ae1497c3cba81461af4ccfed4555838a3fd3aec145807d285eea72efcdf297"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000161_425.npz",
+      "bytes": 1801,
+      "sha256": "d3f62df1896b463881d4967a6c43a062c201d063f9a6de1cdb0c7b668afbce0d",
+      "raw_pcd_sha256": "31b175dab33e5ceab1055993bf59a00af8680943a3ada758e6d3c1ec726db7e5",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000161.yaml",
+        "bytes": 11265,
+        "sha256": "72d68a6fe5df4d16faf4b4273f953169b0efb60bf35f8b177c53831039935b06"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000163_407.npz",
+      "bytes": 1828,
+      "sha256": "5d645ce9cfba3672e002d6411b9ec5f77e2b4626dfd4b88df01f869c5c3a35d4",
+      "raw_pcd_sha256": "3a9aa018cea025f0c51e16e03ee0cbec4fc76dd717261797e1f271a072f36fe4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000163.yaml",
+        "bytes": 12842,
+        "sha256": "d24d48dd8a75bba34028fae250f3c5feedb51e2d0cca3d6996aebb4b716d6a86"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000163_416.npz",
+      "bytes": 1704,
+      "sha256": "277f98e7b5fd204c72d49a9d4045d17831c97eae49bc48b9ad57d94d8ce7d688",
+      "raw_pcd_sha256": "a0a625b929c1e4cc56f38663a8a2fb16062443d979e2abad730ddb15306c58ed",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000163.yaml",
+        "bytes": 11990,
+        "sha256": "bed2ec04b85949d335b1b3dae7df3d35d55bbda37466953b48b28b81dc4020b0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000163_425.npz",
+      "bytes": 1809,
+      "sha256": "d5d2a7aecab4e9e3fff0f8532852995ce5a12dcbf6530c3dd9a9ee424e84138a",
+      "raw_pcd_sha256": "bcf6a6e3d0d520813cfcbc9b8ea8b1e2c0a93e1d288f206d5f19adac7085f6ec",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000163.yaml",
+        "bytes": 11244,
+        "sha256": "50dcb6b52179e8f279cd01e2fabdc2f6f24504d8bfecbbb9cb96fe8daa2dccad"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000165_407.npz",
+      "bytes": 1828,
+      "sha256": "18d42ade9f4ef92fc8f260d1369398f8ab6ad7ab61798314b65f648299df0e01",
+      "raw_pcd_sha256": "9c53caa56836851c9312328aafdedc4759fde23930d92c9e2613cc15aeaf004d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000165.yaml",
+        "bytes": 12859,
+        "sha256": "7c2b9e6bed9ef5e7326919ffc21e1d0370f915f78f56a9bb150f8f4b585ba160"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000165_416.npz",
+      "bytes": 1695,
+      "sha256": "2558f57fef3f78eb6308e5232287c49fc6bd7a7e557780c2e25c444c3edd204e",
+      "raw_pcd_sha256": "58a8b53a782ec08b81f68ba311d75c74c7a6910517d8ccf36e30f4c466a4f986",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000165.yaml",
+        "bytes": 11973,
+        "sha256": "69d1c085b991b26d64cae8e0fe0bc6f4206f026485dd170f0d8ae4bbff4d6578"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000165_425.npz",
+      "bytes": 1807,
+      "sha256": "83b9fb1ea23d865227460b59f36b8c34708ee7209e261d87d9b6924eb53885de",
+      "raw_pcd_sha256": "09853347f2ebf3f6a957daf2c8bab2065a1a35cec5bb6811f7b3bec9e7bad142",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000165.yaml",
+        "bytes": 11215,
+        "sha256": "0b1cf770d7d6e5563ceea80725f0589cded94807cb64fbbe66e8725ec4df2907"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000167_407.npz",
+      "bytes": 1802,
+      "sha256": "527a9438dc55fed0903ada6722325a75d57b5e86ddf5300d2ca928f2b7a8c3be",
+      "raw_pcd_sha256": "b2b426c35707b4566100aa5b5fb5243a47b05c142468d0c1fb8af009aff98d19",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000167.yaml",
+        "bytes": 11759,
+        "sha256": "852cfc1854822c59d829a563dfbe3758e97b83950e3f0d5d18e87f01fb3a4678"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000167_416.npz",
+      "bytes": 1666,
+      "sha256": "bf2f247172e5d37894474a59f67105f54abda28c9fff226681515dbc7d19607d",
+      "raw_pcd_sha256": "977e133e60e47bdc1a821b374c1cef67cfe79716420bd15acac210c3e7cd8ff9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000167.yaml",
+        "bytes": 12014,
+        "sha256": "ad6cdc8d298c19159391ebde1ef727cfbc49a94860dd4447bb3ad33e6c62fdbb"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000167_425.npz",
+      "bytes": 1801,
+      "sha256": "776fe8a77ae63356cc3c143bb35d5b12ac5995a14c073bd2fcbad76518db3c4c",
+      "raw_pcd_sha256": "9f32bd7aafd45996a5853bbfe0dddb2996f4abba8ca5d6500bdc50fdda5dd8af",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000167.yaml",
+        "bytes": 11598,
+        "sha256": "23b83fde15d6fd5a4cd8044c0f566fae1797268592434484c75b55a45e9b4de7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000169_407.npz",
+      "bytes": 1856,
+      "sha256": "0c1ed183dcdca49f6de4d1af1d3713d7e6c4e8c7a24b096942f53d77abaf364c",
+      "raw_pcd_sha256": "59ab49ad5c647a2aaea5a9ff5044c26ed91ce654c4035ffb6f3f1251cdd4905c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000169.yaml",
+        "bytes": 11784,
+        "sha256": "97909c6f1962c9391853c883ca8757b30ffd0a4451827b957a252404c6bb67aa"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000169_416.npz",
+      "bytes": 1663,
+      "sha256": "4c192546f529c399d178d5b4d32e443efb756004cd972ce6f0b2dbcf42021781",
+      "raw_pcd_sha256": "251de6156d6f97bb118bdffc845878f253cdc0ee50b4b8fc5bf2bbef4f512ca2",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000169.yaml",
+        "bytes": 12046,
+        "sha256": "17f1ad527dc962e073c52b2076b419b0ca28d9ee89ffe6a79f131d2f830941f5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000169_425.npz",
+      "bytes": 1805,
+      "sha256": "97562d11a446a69ee4b82fea3963d1a16e104e663a9a070924fb52d99c5d4f2c",
+      "raw_pcd_sha256": "9e372ff016b660fd13df8287f006d10606ef6dac8ef039207eb5fd34742deb2a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000169.yaml",
+        "bytes": 11189,
+        "sha256": "6e5c5c05740dde6f955b269646d79522ed92915a9827f8d723929ca2c50fd931"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000171_407.npz",
+      "bytes": 1805,
+      "sha256": "181432288fd0f72ef95b492a9ae2b241785e51e5cc962f210207fb24e04721d0",
+      "raw_pcd_sha256": "f833727a310d1563cd25c16357e623947f0a962d28637405ceb7e0b294c7dd12",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000171.yaml",
+        "bytes": 11943,
+        "sha256": "473aa3705ea327f6ee9cc55165f975f4e5f429d33d535da1cba0dcc2fb6bb5e5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000171_416.npz",
+      "bytes": 1668,
+      "sha256": "a9ea5557f44008e0254e4fccf1bb34a7d3d5927aba503d57d38cc38e4da51d2c",
+      "raw_pcd_sha256": "b49a5315fb66789d8126eb45ad28b88859fa5fe762f472693a764e6f3cae05a9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000171.yaml",
+        "bytes": 11873,
+        "sha256": "0c218596cf5874ee4e05e0a05687f336ce73e2ce9070caf234c0d486b0afbd13"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000171_425.npz",
+      "bytes": 1755,
+      "sha256": "773d8d1af2a4f534c649b4026532ef049900a1bf2e459af11905f70d1c7cdc1e",
+      "raw_pcd_sha256": "0c2b79cf68aab3b3e8aed96c36887f6aded6dfb89cebfcd121cecd222d7a3d36",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000171.yaml",
+        "bytes": 11189,
+        "sha256": "d9ca571c5fc56d8c1ad0fb2a9c9166f728fe86635ce4fab174b5e82d9468e970"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000173_407.npz",
+      "bytes": 1827,
+      "sha256": "b478071196681e18e3b94a23bd70877ed9e43c3156833b3341deb478bdf17ecc",
+      "raw_pcd_sha256": "e4af534aaba5b01e76bf743642655e7c2b4afceaaf53ba731d87674c51c2efa6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000173.yaml",
+        "bytes": 11837,
+        "sha256": "3a0d6ecdc05ef2afd79a6cb4bd427d8a0a3d6555d092fdcf2678ea615be386ea"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000173_416.npz",
+      "bytes": 1658,
+      "sha256": "85b14130bc658ca7595e8c54ca38b7e1459dbf293fa408cdc3be6e7e488f2b2d",
+      "raw_pcd_sha256": "6ab5ae35d0226fae151fa6d66bb6569636682956eec6225a75c13136fb9dd9f5",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000173.yaml",
+        "bytes": 11946,
+        "sha256": "1e8a7f316e9ea8297502ae0252855ae3d7d069bd14d0bbc94c5117cec560e714"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000173_425.npz",
+      "bytes": 1838,
+      "sha256": "535ee95a69f47a6302a97a69fe80e90de7289d7b1cb9c9e86b4d644d825b0b0a",
+      "raw_pcd_sha256": "9dfcd349a31f19e0e466ec1e23055a2a5c15dca60118af28c366cc730328af0e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000173.yaml",
+        "bytes": 11535,
+        "sha256": "cc7f56cd95a951066e7d8bb80493de562f54ee67e2ef6751fd723007a7e89132"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000175_407.npz",
+      "bytes": 1785,
+      "sha256": "dfaa1279accad73d889b2d543940b487cedb51953a0adae6979fb9a2f5327e53",
+      "raw_pcd_sha256": "89d886f1feb38c06261beaaa3473df939b32154e1e83dbc4136ee669e907e499",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000175.yaml",
+        "bytes": 11746,
+        "sha256": "313762e406a22b20838ad2feff5e9775f5686ccb5e8122aa27f1bc872a45e966"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000175_416.npz",
+      "bytes": 1634,
+      "sha256": "12bfc97de3dde8f44bbe128f41292eccf13edd82f75cb0d590ecf3376b4f953e",
+      "raw_pcd_sha256": "43111386a31203d2a523a239cffb76a28fc6bfd251c73127aa3a430c3ffc7378",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000175.yaml",
+        "bytes": 11902,
+        "sha256": "6dadfc947b141416badb2b89c76d9863121b66500e9bf06915006cb72486fa8b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000175_425.npz",
+      "bytes": 1825,
+      "sha256": "a7d98fd93aeb333a73254895392c73ab02b692c75939459db915249998fb335d",
+      "raw_pcd_sha256": "15b7ad485d4e1a5e05f5c0442586c4039e3e4831b64146854f629a3eb84c682f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000175.yaml",
+        "bytes": 11766,
+        "sha256": "8a84c34da512fc758b899370e7c4225b699cc4bc614869c0cad516564d70948c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000177_407.npz",
+      "bytes": 1803,
+      "sha256": "278dcc0c2efabbff17b67b24fe985ab2fccb86b5c22c20e4b28f91e9a53678f2",
+      "raw_pcd_sha256": "638cb5e472229236fed3f63fd56e138d14f4b95192cb909339eaefdcb7590d2f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000177.yaml",
+        "bytes": 11823,
+        "sha256": "d6cb210b249cb8ad543157935b4b178a2d27d507952d435cbda3f96c605f2a36"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000177_416.npz",
+      "bytes": 1634,
+      "sha256": "1e699af0a3281197ca329ff23068f1718347d0fc1405cf605bc9887c3dc8f2c2",
+      "raw_pcd_sha256": "80223ce6a29a4af6d7810250b37cb9cdb56fed7d7981f7650d75133a513df31f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000177.yaml",
+        "bytes": 11939,
+        "sha256": "5b25f6d77ad0133b1a8355c4f235139d21c96cb0d563d199e4743d2ebdfe3f9f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000177_425.npz",
+      "bytes": 1789,
+      "sha256": "5863d69e2831b4a9e94cd3808501de6060ce100b6fea799d67e5fe3f0cb74f3e",
+      "raw_pcd_sha256": "71752ecbfbcf3549964346f32284746e8e158bbe646ebaf319c0c15b735a667e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000177.yaml",
+        "bytes": 11368,
+        "sha256": "5d1c65f8cc63cd6115fd3f375acee9a8b8d44e8271a69aec70449ed83e00e632"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000179_407.npz",
+      "bytes": 1810,
+      "sha256": "7837a0b5d2070f0e412d97c93f08da4ed4404a583490c71e3b1062bf90b2df1e",
+      "raw_pcd_sha256": "d3438a27be49058f3a0708a8de9dc7ec5863c93df8ae79c8e897316a6d19fdb1",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000179.yaml",
+        "bytes": 11380,
+        "sha256": "6b35e7b22cb4b7382df847ef6ec07e2b62a20ad4f73f67069d6c6e099dd32a60"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000179_416.npz",
+      "bytes": 1644,
+      "sha256": "89cfe02fdaa84afff9b64f1c0e7a2502eb9a18889e9d4b8b5bb9dc441fa0c3f6",
+      "raw_pcd_sha256": "2f47369d5524075958b29e4cba82e60940b3928011ba1caaecb1f2e91807dcd7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000179.yaml",
+        "bytes": 11905,
+        "sha256": "fa30f84b79a9fbd23bb2fd53cd84214e97c2db04f62c9f35af7ab24246ec6ed7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000179_425.npz",
+      "bytes": 1801,
+      "sha256": "0549daf28888f7c081c364196d3b0ed35ee00f2390996e073726f7f15d748b4f",
+      "raw_pcd_sha256": "f765efa802d047029e81ea555380f7ad81996f9496a0e8e8df4f3c43849c87fa",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000179.yaml",
+        "bytes": 11783,
+        "sha256": "1d3a13bc209a5b8780ab7f4e79e9749b676696ad0133b9c9e9b421898153a018"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000181_407.npz",
+      "bytes": 1802,
+      "sha256": "d45e24363848b23bbaf1c2bcfb67b9b8f5e063e2926b5c288387353e5780fbe0",
+      "raw_pcd_sha256": "c9bf99a273b83ad2d1ab5625ae10aeeb8d6cc1c707bb04c4d371383ab9274cba",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000181.yaml",
+        "bytes": 11362,
+        "sha256": "586deef3914cec86ea19dbb702ee904f17caa24cfb8f7b3af1f7b8bc0eeb787d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000181_416.npz",
+      "bytes": 1647,
+      "sha256": "ee1809b1c81c56e9988a63886e22c7b09134da61190ae0e4d3c50c049d29c9b7",
+      "raw_pcd_sha256": "73de8092a791fd622ecc4476a35beda40bdfc0722d29bce01189f736b4a8b595",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000181.yaml",
+        "bytes": 11864,
+        "sha256": "b3ceeb3022e8a371b9e079782cfd5f3e6104eea5252e9eef6697618d094dfcf8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000181_425.npz",
+      "bytes": 1795,
+      "sha256": "5bb4b7a32c64fb5f9c48a02a9df9aa1cc4abf9db7489d85b4d7753cddbbd478e",
+      "raw_pcd_sha256": "a20d288e707aa742f8ba330090841f731b2f46ba7baa9ea3d6e61b54cc07aa5a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000181.yaml",
+        "bytes": 11364,
+        "sha256": "163d2f8e510a668bb1ef1c25834c372bd6d7f0a646a300d8d5118dd3ba8e4d3c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000183_407.npz",
+      "bytes": 1776,
+      "sha256": "6fb3fcd572b6392182f4bdd28757ad7c040e1d6aabdd8adf7ad7d90fd71d34a5",
+      "raw_pcd_sha256": "4df49f66e445ede4ec6be38378344e86257a8c8e4f7554d182224350e8594187",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000183.yaml",
+        "bytes": 11338,
+        "sha256": "38b30d3ef2bcf19dd7a0ce95df33c10c11fdfe0f24a6a7902b713ab454146845"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000183_416.npz",
+      "bytes": 1609,
+      "sha256": "b1708c509edfafe6bc727d5a6861d3ce4b743ffb59bfd58a6ace9f51258a1250",
+      "raw_pcd_sha256": "377912e1a613244e6f27eb46cf4be9185e4223973e300b8a81f3550f4ff5ded9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000183.yaml",
+        "bytes": 10956,
+        "sha256": "70658f8a6a8f32bc5d2a7ba8af1022791473092f6fe8595787f577cc158c0d9d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000183_425.npz",
+      "bytes": 1754,
+      "sha256": "7be2942b5121b36bd8b355e087ae25bfdcf98baffd48af37d3c070a7d28c3aea",
+      "raw_pcd_sha256": "a09515e6ae348c96c9c7adac219a444e28eb6193d2250fb1a426f6196509e908",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000183.yaml",
+        "bytes": 11326,
+        "sha256": "46093e9fa306cdf6797464967b15b07bed93007179c4b1367fd38aef79be71d8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000185_407.npz",
+      "bytes": 1746,
+      "sha256": "6d25b6737f9f34f92e9b68e5fbd4fdea1813565f3acbc1da6702b75607df86f0",
+      "raw_pcd_sha256": "785a272b5d926a32efd6d363a227fbf93bb47f80775c8128f031b5b16866ff54",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000185.yaml",
+        "bytes": 11344,
+        "sha256": "8f1bc954cf5d4e2175b96ce2d22aaf7112024c73dbcff0d12804ddfb8431c4a6"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000185_416.npz",
+      "bytes": 1637,
+      "sha256": "c3e6a71e1809f8b9790557c057d1872a7f6d9ea5238c8860da99df7a538595b7",
+      "raw_pcd_sha256": "6b5e68ea689dbca9c86ab0d09c603e44cabd434cb365b261ec60f541f1317258",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000185.yaml",
+        "bytes": 10887,
+        "sha256": "f85961e855ee6a42f7da0ca9cefacaf64a0fdd2b546f6d4d64334bb19314c082"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000185_425.npz",
+      "bytes": 1775,
+      "sha256": "e9fcf355e015947feb775f673b348e1a8ead76858fe38707f5781644cf43ed82",
+      "raw_pcd_sha256": "bb3b3f500c6e0b5e07c26367351cffc143966bdf1e6be872a59b7455a43b873c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000185.yaml",
+        "bytes": 11323,
+        "sha256": "424ed2306f242f871e68bffcaf5f80359651a7aa60d68909f68078bb5991076f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000187_407.npz",
+      "bytes": 1727,
+      "sha256": "6f30677e3189b46e0a479cb8123c8456223b0a560a6b03e4aed1c06b0949a538",
+      "raw_pcd_sha256": "e16339ef074b064160e4325bfa5a31e9a67b2e557aa30e166804f91946e95963",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000187.yaml",
+        "bytes": 11479,
+        "sha256": "698925a73b35ae6d011d0e2d1527c7285f2b5e46ace668f18d02bc44dc74802f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000187_416.npz",
+      "bytes": 1637,
+      "sha256": "b4f6553ba4181530ab72feecc6e0043708c40b42d2ae1229ba2bb54fb8662304",
+      "raw_pcd_sha256": "a424ca2dde4f434c0bec68b78499e57c997957e3c6751265bf34c6e6a9914c44",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000187.yaml",
+        "bytes": 10571,
+        "sha256": "7e0d3872b90ed4b5d7c48c1985f0b274127adaa17f22f6373e4363d586562485"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000187_425.npz",
+      "bytes": 1752,
+      "sha256": "185c7a0da6f863686cc8b0317d4f094bb4dc1a9acb70d8d52ed7567a258a894a",
+      "raw_pcd_sha256": "e716856af3a12d797a23edbcc7a2de2cbf5745a00789829d37effd0b4c9fbdb9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000187.yaml",
+        "bytes": 11378,
+        "sha256": "d603b4681f08d38c193b4d749535e761f3927d0138564dde6366e67b89ddb87b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000189_407.npz",
+      "bytes": 1754,
+      "sha256": "73a67b06de714c0182d9cfd6e45f9480a92b4607945cb1b3e18e2df7dd269f76",
+      "raw_pcd_sha256": "88ec1324214f975c12d86d5cbdcf3e91937c937e4c0abab834a74f54d49a0c95",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000189.yaml",
+        "bytes": 11514,
+        "sha256": "eb72d61e238d2c240f058040037a43a148f22b6396287e48d195421c4cb16f91"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000189_416.npz",
+      "bytes": 1642,
+      "sha256": "94db3a06968e7e8d74ba34d332fa7f5e18f0fc7f545de7ac38f3ed2a51f07350",
+      "raw_pcd_sha256": "c526511a18036bf6b118f46e69036dca6906fac5c26c0c45dd6ff6c2190879f9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000189.yaml",
+        "bytes": 10610,
+        "sha256": "def223f19741081f89b892ba8530ce46f4668f4db7b6166ed60d2eca1f4b92ff"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000189_425.npz",
+      "bytes": 1748,
+      "sha256": "222d005123e970e6087be8a1ff4b8f25e58ac6aea40ab5c4ee1d5b3ed218da23",
+      "raw_pcd_sha256": "f284e140c0f21b6b295eba628066ee59b2bbd5b5eb033a0172402de011e6878a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000189.yaml",
+        "bytes": 11354,
+        "sha256": "0390e7dc2a558812ed22fb28ed62385f6130015deae9c7bdf1ee3526619c808b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000191_407.npz",
+      "bytes": 1778,
+      "sha256": "541245c1fb14349f54fd3f98229cd69b2d5a778e725edb8be5b7f87240a64341",
+      "raw_pcd_sha256": "310a524566b2c1d0dcf9eb7eb349783479b1ddd9874a4b948c61ec775b6a917b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000191.yaml",
+        "bytes": 11485,
+        "sha256": "9facddc718252e189e41d61e254aaf83a237d72d5514cd12e0249dd160c37b3b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000191_416.npz",
+      "bytes": 1646,
+      "sha256": "cfaee71ffb8cf2147a1ecc60828fbd390d8578bfbe6725c056dce30e7bddbd8d",
+      "raw_pcd_sha256": "061889e9d3fda7b694739834a1a5dd9d5ca9b1fff15c54627af9fef897190de2",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000191.yaml",
+        "bytes": 10565,
+        "sha256": "7a1efb67f299f7232ebe419547063a5eacef9c4172e755654e9e7dc724165665"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000191_425.npz",
+      "bytes": 1750,
+      "sha256": "d11b225c83d3d520abdfec82e2336a443a60131c12945ac7ebe4c2a50a49a1d3",
+      "raw_pcd_sha256": "b2cb566f0c3d8ead53f061ee609aecda87b4a119160cb07374143dfb10180ed0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000191.yaml",
+        "bytes": 10927,
+        "sha256": "76b50d5a833e11e305b038258cfef10527870a31520dfbc83f627bfb598df9d8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000193_407.npz",
+      "bytes": 1773,
+      "sha256": "4f6a86dde8e9bb3d25dde056236a0b256226dd2f6af141288d294c09b9073eff",
+      "raw_pcd_sha256": "83e0baeee69a0d38976328901468bc2f066699b2a53e9ee59ffe1af46c825bb6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000193.yaml",
+        "bytes": 11499,
+        "sha256": "1bcb3041a441638af3676223735ba5b4e7b59066bfcd3447b2d5517338088c38"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000193_416.npz",
+      "bytes": 1648,
+      "sha256": "e07edfc67ed7f60c42ca6530fbdacde9d2af277a9db6b755aba6aa044f3b1523",
+      "raw_pcd_sha256": "6d76928d36d168ca56b96889859faf3e97a4250e825dc2d4f59c41f537766edf",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000193.yaml",
+        "bytes": 10535,
+        "sha256": "222361c4fb307506ad2be393a3139c1087defbad20197e7982ce9e2b217c7b7f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000193_425.npz",
+      "bytes": 1743,
+      "sha256": "a9c5406e7fda81a81f9e7704d64ea64cabf2c5f6fbd571a9cca247ef493fb54a",
+      "raw_pcd_sha256": "be8232c082c14e78cc37b0087de037a63b4a6bf05df982c7cfbf49d057b37bc0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000193.yaml",
+        "bytes": 10984,
+        "sha256": "48a0765b3992cee54319cbbbd2329cea3f29a6659b116ec7b66205f2994f9ebc"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000195_407.npz",
+      "bytes": 1774,
+      "sha256": "ed6a77549cafaa86ce488f5060fba78ec12e350c8f62916b94d11b01e6ed6b2b",
+      "raw_pcd_sha256": "591a4ca4e2d7a78888af450ece207db38c5ee1231171efda0ffe78f361813b23",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000195.yaml",
+        "bytes": 11496,
+        "sha256": "7e128cca57673f5f0eed91b988d7eac0354028946bd861ff253b4402dc4b496b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000195_416.npz",
+      "bytes": 1648,
+      "sha256": "a573c6871e4c9ad454c33fde401f244747ebea0c1dd98cc3ad9fdcd7abbc91fe",
+      "raw_pcd_sha256": "734c2e1f70281940b93ca1a20494cde1546f223f7577aea2087c8fd928f0a3d7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000195.yaml",
+        "bytes": 10520,
+        "sha256": "aa531256198664d0aa094ab946898ce26c077b4456e9d5f9eabf30eee174ad63"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000195_425.npz",
+      "bytes": 1726,
+      "sha256": "04099a6342f53f7dce8f9232c3a65c5f8abf862bef9ab4f26a90e8cbe19aee53",
+      "raw_pcd_sha256": "7e8f46a7e3adbedcf356073b91c71c6b68f75c5f45d1154563213dda0b516791",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000195.yaml",
+        "bytes": 10535,
+        "sha256": "1cf4bd7d76f6a61ec68f5d108e2ab9e681d91f5f05cf3ba24fd15400e2f64470"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000197_407.npz",
+      "bytes": 1776,
+      "sha256": "79ebf47ec8d2fce3a5865ed6c204284e04b7ea7c19a18635975da8fbe6f49537",
+      "raw_pcd_sha256": "f875e7a6c861d8221947088cc657644804ac367a6f67b6bf326d19d395ae78e6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000197.yaml",
+        "bytes": 11537,
+        "sha256": "7128d733347343fe2657596d4132ef51f0488be5c726aa58c27b8e0cec6d12a6"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000197_416.npz",
+      "bytes": 1640,
+      "sha256": "0b29088fde371e8f1b2d7288526f5a549d1c85f621826e3f27041391e3bb60c9",
+      "raw_pcd_sha256": "1ff26aa515a421662e19d11580d7ba3a8902ca964a79128768ec2d4dfe796321",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000197.yaml",
+        "bytes": 10475,
+        "sha256": "db7e63d7b12f5cd5d0e553d2c7f3b73d444f7724325c6fe92351af5eaae41331"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000197_425.npz",
+      "bytes": 1753,
+      "sha256": "66ff80356541c781d15763c36fd0129ab1723474d8b018119ccf4ea4f19ca8c0",
+      "raw_pcd_sha256": "2a390b4d458fc7ddfa0c024c20e245d7b1fb06c66ef288794a2e53db29bcfbd2",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000197.yaml",
+        "bytes": 10631,
+        "sha256": "b7781b95a44629184fccc2355c617d96c842457cf2bb56e7b1f985354f018632"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000199_407.npz",
+      "bytes": 1751,
+      "sha256": "a898aec83077c69a1bac4a0b4ea5243080ea7b0ed91f9985501e8823f8f91a84",
+      "raw_pcd_sha256": "595b6c88355dc86e504760eb522671e81bc4a2d1f31c390030a0b6f13430e2ce",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000199.yaml",
+        "bytes": 11367,
+        "sha256": "34a52f2466938bc7d2d9ea7848ae7b4aaddc6ac40435c91c2616057e4935ac75"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000199_416.npz",
+      "bytes": 1642,
+      "sha256": "c7d1ee0c5ccdaf85a2769b920b57de646e33687fda42a58e8bd0a3485b1a9733",
+      "raw_pcd_sha256": "508b7e13eaf5de60b08411246135c386ace96e979954f5134d251db7a4944079",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000199.yaml",
+        "bytes": 10487,
+        "sha256": "e6af5f1baf3e40de8d48441f5be56c6f4e7f55c7e10059e59d5a36b360f6377d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000199_425.npz",
+      "bytes": 1721,
+      "sha256": "2023e36effd52945205582c14d2fe101dc3e78911b3bf912e192a687e0bef41a",
+      "raw_pcd_sha256": "3c3e701e24c4762b4c36f1b165603b7c53bf285ddfdcbe352da31c774c3f311b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000199.yaml",
+        "bytes": 10606,
+        "sha256": "63c7091c5b35dd06ef89502aaaff5e32da02eb817b38318e9ee42305cc91ae30"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000201_407.npz",
+      "bytes": 1753,
+      "sha256": "2227fc362ab2cd3ccc44d225c5f8b98cb0331f51b8a488adef9b0c1b1b9bccfc",
+      "raw_pcd_sha256": "abb46d80f26b36a05f3452fbfd89f8892d125ebfb617306dd745faa21d2fd4f9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000201.yaml",
+        "bytes": 11319,
+        "sha256": "236068b943583859dd0c2074d0ff0513da1637fd7b165031398a1bf4050c8099"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000201_416.npz",
+      "bytes": 1638,
+      "sha256": "d8da22e86f21f449715002cd0d0b35970732c87ebb97fe90f315a2f6f1f794c2",
+      "raw_pcd_sha256": "3c04dbbfdebb983fbeb59f9cda2ea3ee5377ccd14f4d0b0a36b3d5f83c4c8054",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000201.yaml",
+        "bytes": 10433,
+        "sha256": "437dd198c58dae85189dcadbf56f226c9fe967b9e1dd88bca6d6fe07c7e0b898"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000201_425.npz",
+      "bytes": 1771,
+      "sha256": "b476bb24eb80966b016588ab05ae720f4b540f134919d6eb64b5aaf65d704c68",
+      "raw_pcd_sha256": "81514dfabf9c1ab92ddb0365e56cf418185de9a1c88fa1b19fea6b5daf93addd",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000201.yaml",
+        "bytes": 10557,
+        "sha256": "06683b4645b833948a9db7629ec2c0820737e20785db2a3a1e184e20f8d40f93"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000203_407.npz",
+      "bytes": 1725,
+      "sha256": "8bbd4120bf36b60e3f3b5c9fb43eae2191b2b59fdf0a24c55304f8c26a52bc7d",
+      "raw_pcd_sha256": "1856c968a87f6935e64c0c2c3f759424cbb344e758525fae4b6a0f16ec88d59f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000203.yaml",
+        "bytes": 11416,
+        "sha256": "25fa0062a79a58714782075772e3b6f6898c8894b699ca41415a9fcc8c2f07d0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000203_416.npz",
+      "bytes": 1646,
+      "sha256": "d2b216827604cfded4b6e6e00fb736ebfab5cc07d2987a892324e67617cb02bd",
+      "raw_pcd_sha256": "0a49255f61ac1e18c3f717eda6d4af9faf36d0b59b9ffa1cb83af16e3ca3e842",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000203.yaml",
+        "bytes": 10460,
+        "sha256": "7b856a753e3a4e092ab0a717b24f3adcce38adb509a5db1bf81b300858779ff5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000203_425.npz",
+      "bytes": 1726,
+      "sha256": "8e5644afa256072386d826bef38cabd1132035e2fee56aaccc7b0bb9f3318f7e",
+      "raw_pcd_sha256": "228c7a62fe7d91d2de8953e809a28a5c019c09e9f082d2022a4a49e7bdd40985",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000203.yaml",
+        "bytes": 10526,
+        "sha256": "cb346ac3ddfbe8a193dba540688d2ee6a576aab4af67b5e38cb21e59ffce6821"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000205_407.npz",
+      "bytes": 1746,
+      "sha256": "f4a4f53494ce4f5dccd75286543132c63deb0c15f59990fbabfd627bd1a4ab5e",
+      "raw_pcd_sha256": "e37ba437a789b99352bf0abcf68b6e4d2400f217dfbafe0ea93479322abc0416",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000205.yaml",
+        "bytes": 11366,
+        "sha256": "15e6c764f563e1f88292aa2116dc3efc1e96898be5983571ce0268d0f5dd7a8d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000205_416.npz",
+      "bytes": 1647,
+      "sha256": "93356d90db096f89f3432d61b311bc81be2f9713a130b95ed67803372b69d5ed",
+      "raw_pcd_sha256": "f29217f550f281152d0ebd7904a90e6b04b45546c6753a70bd6ed9b64122dcfc",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000205.yaml",
+        "bytes": 10417,
+        "sha256": "666c9a41f2d31d89d6da38eb2fc3ea94ea16e2efdc69bcf9c68741d82c21338c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000205_425.npz",
+      "bytes": 1721,
+      "sha256": "b935283680d5073d3343b27e9b42e0b37a9c3217b58a7b37601cd1e6cc7a1bdd",
+      "raw_pcd_sha256": "a560265a9fd553d5de983f4d9cdeb60dac1bdca9d9d8f621ff864aa707b54a75",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000205.yaml",
+        "bytes": 10601,
+        "sha256": "ebe418c28b8dc17a05e4890489080156a4338ffeb4a90f82af2164f3b35935dd"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000207_407.npz",
+      "bytes": 1726,
+      "sha256": "c1ecc201d1dfae5baf87fcf7be03d5a58d00f00292c6e71d9fb2fb539a9d4b43",
+      "raw_pcd_sha256": "a34bb4fba66912461212a9f85e4f24e3a3df2e798f37854f1eb58b323e0348c7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000207.yaml",
+        "bytes": 10560,
+        "sha256": "24c86140b28e9b56f13aed6eb3d844e52682bcab976149a0f3529b582f6cc845"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000207_416.npz",
+      "bytes": 1640,
+      "sha256": "5ebce5e8c0d3ca22b74864eb7d41b3f1742100df06eecf678a2932c3082a8f9b",
+      "raw_pcd_sha256": "01ff0e6f8bb32716b10c15ad4b9c39a4851f62c6f6e355bf1c07751a7b910ca8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000207.yaml",
+        "bytes": 10369,
+        "sha256": "56c258af979622a90c228d189cd86b79e6ba4e44461987514d73f39e1e511e90"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000207_425.npz",
+      "bytes": 1722,
+      "sha256": "0cecd71461d1df82ad91fb606857410cd43fd43454c37435d2fcc7c4794db4c7",
+      "raw_pcd_sha256": "c36dad44f86779c006348a9c8c984d8febb875d1e338013fa36d916f57f13782",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000207.yaml",
+        "bytes": 10507,
+        "sha256": "3abe26cf749b5785d26d1e844a7e1542cecf7a7f24eb2c761c88662b87cfaf82"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000209_407.npz",
+      "bytes": 1687,
+      "sha256": "be2e8dfb5491270e37fbea30c855320009df6138d7b08f06766b586a6af725f4",
+      "raw_pcd_sha256": "93feea696bdf4fe5823fe7311c48b4538b85bfe45801ff49d8e582a171e20f48",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000209.yaml",
+        "bytes": 10499,
+        "sha256": "cdac7165694cb78496f80ad14c9590c6338e85214dbdaca9609f1e8fa7bddf6b"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000209_416.npz",
+      "bytes": 1644,
+      "sha256": "f3d17c278d6c7895a48db4eb3371cfb74e28bdb79ca2bb40cabb9c7bf4f6f8c1",
+      "raw_pcd_sha256": "ab9c5468f91e723c7e6268704be5cbe4fcb05d06f0f0142d158cb4b746fcc3d6",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000209.yaml",
+        "bytes": 9917,
+        "sha256": "44f7dd41d26bf4aad7c2586c10d4afc9f0dce0e58885384d0f2cf31092660478"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000209_425.npz",
+      "bytes": 1726,
+      "sha256": "e0d662c5df0380c6910382cd9c4a02d71816a139ad9a1297592b7dbffcf9ae6f",
+      "raw_pcd_sha256": "cbf6ca3a243f1a2dc89c9a81066659803f1d7ebef49547ae606a393a9b978da1",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000209.yaml",
+        "bytes": 10540,
+        "sha256": "476fa455fb71f83f2d67b7c074d6a44dc4f35b482938a7a2018a2b171ee1a5f1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000211_407.npz",
+      "bytes": 1693,
+      "sha256": "ff6f0ef573643393fbe07f14a04781bd499cfaa4c086fd011d0f3750bb67f774",
+      "raw_pcd_sha256": "44826a07f84b652e201ea2235f854b72ee2c2d886d6c149d0e99e852373d37a9",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000211.yaml",
+        "bytes": 10964,
+        "sha256": "0bb099fa474793811fdd3ed269df8fa03d63a485fd7f3cd1f91563978948b8d8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000211_416.npz",
+      "bytes": 1635,
+      "sha256": "0c00121e9c18b81b0c4a121ba9509bf102befffeacc954e5460d0a928c95dd40",
+      "raw_pcd_sha256": "90f46d119f2b41710039964400384707728b76fa4555a0cb722a4b4a2c5f612d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000211.yaml",
+        "bytes": 9941,
+        "sha256": "8ac6451f4a8a71810c6eecf04afc8387c8e2747de690dc71ff978680bf2ce689"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000211_425.npz",
+      "bytes": 1725,
+      "sha256": "2b7e2c6da7d6c4e88f7083857b3a45571d959cc632dcbf5aa460cdccacdcd9a3",
+      "raw_pcd_sha256": "1a55cedf252641f55d8090cac7d09559ba834efceca7ecbf4d37c38b0cb3bb5a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000211.yaml",
+        "bytes": 10959,
+        "sha256": "a0f046eaf3a5179136198c6c9bb8dd4b7e2a8ed6b56b9c3f7af4a464680acd7e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000213_407.npz",
+      "bytes": 1697,
+      "sha256": "a098ca9febddc3da2704e3441381c2f613e664a1175f187aa8c39135a52573a8",
+      "raw_pcd_sha256": "f5f564ee66a14d5b512f4ddcec1a9dea1d613acdfaec505e4021723ac1bae838",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000213.yaml",
+        "bytes": 10933,
+        "sha256": "aa8b3c360a7747f9d8cc29973143dfea456e446da84a641bb264e6ffefa0c888"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000213_416.npz",
+      "bytes": 1637,
+      "sha256": "7833c2dbb8493d404822951a364cac6a63b9478a7afbddfa0ba4cfe37871999a",
+      "raw_pcd_sha256": "ddd00e015f22dcbe8bcb7ec56e34d2b0426f6de607a60aa027605eabfd2ae597",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000213.yaml",
+        "bytes": 10212,
+        "sha256": "d74d1214b688a13538312d88bc2f53dde54139df977d8d29b64ad5b3825e07c8"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000213_425.npz",
+      "bytes": 1721,
+      "sha256": "b9668c4ac241a5a5c04b1972f23b8ff67ff5965da0e4f4003f9bdd6e3a261334",
+      "raw_pcd_sha256": "a1a18f47a382cdf91045b3cc85755f4acecb84af35ea647f48a9d41217dd10d5",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000213.yaml",
+        "bytes": 10632,
+        "sha256": "c1e81262082605e005ed5c261ae3270c8c2bbaa674bb3cb60addfdb36751973c"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000215_407.npz",
+      "bytes": 1692,
+      "sha256": "7e767db9a0f6345d1954b23eb03833ee61583fa713e427ef6e2433ee9f2852c5",
+      "raw_pcd_sha256": "5a6794bc6e200425c29200560c5dc1aebd05b22c662c76a87d69cd61e1a58233",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000215.yaml",
+        "bytes": 10937,
+        "sha256": "91ff62ce3b67a4c8d4984b120e8f6fc015739de19e45ffcbfe59a6748c4ddaf1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000215_416.npz",
+      "bytes": 1645,
+      "sha256": "c6a9be56afac3ff5acf83e330f17df2476d29b7312bb329d48bbe58bd37b1eed",
+      "raw_pcd_sha256": "5305f2301ca9f933ddddfad0367e35e87a177f454332a156c7a05bec431851d3",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000215.yaml",
+        "bytes": 10561,
+        "sha256": "6ba2908dd4f234f83961206c13de7721e64deb299bba5f220b6b2dfe880e68b5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000215_425.npz",
+      "bytes": 1718,
+      "sha256": "2674739a37f0650fccc2616eb500423b68ee52c653facc5b663ceba915fcf4b3",
+      "raw_pcd_sha256": "86189958df81c6668ccc277d62555f94f821d503ee596f1313c3d527fb1cf6b8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000215.yaml",
+        "bytes": 10903,
+        "sha256": "55d865f38eee6a8e6e1d6b4b82bd23dc02f1eaeb005de193463ca31abd63ff10"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000217_407.npz",
+      "bytes": 1687,
+      "sha256": "da23c49b7cb1d4d7bd5a48e9168ea83e9e2e9f1b764383cede70e8a29a2b0f76",
+      "raw_pcd_sha256": "dc9545fb9805e1f556f8e33a01a99a5565751a15051445f3942233aad41c1abd",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000217.yaml",
+        "bytes": 11403,
+        "sha256": "323dc4bfeac3bd6411df3d3e119fdf48d6f64037cc71235b676ac12d78d8ab5e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000217_416.npz",
+      "bytes": 1646,
+      "sha256": "9934512c5382ecb361fe7cb86ca63be0d7aee8bc37896c547651e392d8f5e7c1",
+      "raw_pcd_sha256": "1e126ffd67a1949ca7883b1c051f68558ccbb409b7d8b9c4bd6f818bc222e56f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000217.yaml",
+        "bytes": 10555,
+        "sha256": "0c20cf540fce6cfefd584a588a979d86ae62b009b8decfa28c43ad7b78b74d02"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000217_425.npz",
+      "bytes": 1730,
+      "sha256": "f0b495b7d78f116b3da13a9b31b73069f6b870028243dfb44e3faa095f3b9757",
+      "raw_pcd_sha256": "6b248cf30bc29e8e26f88d9c1d19767bd5c3cb3ec2a4070c8e372f27174baa2c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000217.yaml",
+        "bytes": 10955,
+        "sha256": "d79821a3058f5b870247b386b2ee08aeeb6701a8e9bd796cfe8b789c39ca3b3d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000219_407.npz",
+      "bytes": 1718,
+      "sha256": "8bc5e5e95fa0f2db67d7557e1b7b367346b7598770c225218e84a0e6804cbbe2",
+      "raw_pcd_sha256": "b2e2853d30271325c8340104182e341a236a82efe9a238b9149a5d888e561004",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000219.yaml",
+        "bytes": 10995,
+        "sha256": "949c7adb4acf1b3e400f10547f2bf38fbe13aa4710da0016bf4fd72292af83a5"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000219_416.npz",
+      "bytes": 1581,
+      "sha256": "722b8c07f5ca90df46882e2bf7bae4ca56051d51db03cba31b3cfe9d756bab29",
+      "raw_pcd_sha256": "a7e8909f49f35a2056f639ccd71eac85e3ee211200ef69f1b220fd42f93b4b7d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000219.yaml",
+        "bytes": 10630,
+        "sha256": "bf0fe19e0798a4a174edc144cf513377a1b7a912e163c28e13842de6055f5f74"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000219_425.npz",
+      "bytes": 1751,
+      "sha256": "432cd8afc014098c1db4cf49f6a41f95e18b1773ef132e1afe752e7b83f88a2d",
+      "raw_pcd_sha256": "e48c3e02f2c3bda8f3effcf1fbe63f32bc729b23b4186b63e154b96ac2eca6e2",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000219.yaml",
+        "bytes": 10921,
+        "sha256": "ff2cdcf192638b44b5394fc11c437441d0d8ca8b127de6580f96cb982db3b51d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000221_407.npz",
+      "bytes": 1696,
+      "sha256": "8c63f6d2f05df1c46779199bccfd809e19d1ce4f173defa70235b3e9e542d63d",
+      "raw_pcd_sha256": "00fff02f2fd62fda50d5871c9e2000cec6ef47a9dd5313bbc9a44ec3ed45b37a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000221.yaml",
+        "bytes": 11143,
+        "sha256": "e136802347c0496d77a82a1e38c5f5bbd5db6590ad428343b333ff6dfa83acd3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000221_416.npz",
+      "bytes": 1569,
+      "sha256": "620519896f4ff8debaec118902d4b5c43569dcd0e9d839a90a5ab8c26947a6ff",
+      "raw_pcd_sha256": "1e32630b9be3a9b11ace412565bcc447c9fe9c624bd10f3b65f7c00a00ef251c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000221.yaml",
+        "bytes": 10616,
+        "sha256": "35c593c52c7a2b5ee8fab2808f69728ca75641358f22bcbe13644c3c82663e82"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000221_425.npz",
+      "bytes": 1729,
+      "sha256": "f74cb229a81a9ac71f7f3c94658afbc27f35ef9aa645a11209694ec0a851d67d",
+      "raw_pcd_sha256": "9ead9dd74fc5d55881bdfaf9206ef3c9a33e4f7b0bc154b7736e974ea0d0a70c",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000221.yaml",
+        "bytes": 10908,
+        "sha256": "a78b836020cda9c33669eedc5bdc81864b1d257cdc1833e9ac5a79f7d024920f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000223_407.npz",
+      "bytes": 1715,
+      "sha256": "c66102530cd8efe253160bbf2337bf8ad474fcc90df66cfe51df7c6551d2fbf7",
+      "raw_pcd_sha256": "6aa13c698cea7144a99c9573ad439c729f240a20cc650a4660b1e6f58b3e9d5a",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000223.yaml",
+        "bytes": 11127,
+        "sha256": "343420905db9ddb75bd2bd95fab55171d525391c4d4383ddb36a9007ec152d97"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000223_416.npz",
+      "bytes": 1603,
+      "sha256": "1963ebf5e67cd209942fcbb7b21e675284936141fa07886533c3eef4393f3479",
+      "raw_pcd_sha256": "d9883aa488c92f6371a47688b48aeee3b62fb467bae68179534d78a967ad48f4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000223.yaml",
+        "bytes": 10528,
+        "sha256": "c425e34a045158f423a9a7c1e85da55c383f7aea983c436f794be3873a0b5d3d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000223_425.npz",
+      "bytes": 1728,
+      "sha256": "906d1c8ffc4c960918f1458f6006f82815632425a89009f173bdfd66ffc2cb6f",
+      "raw_pcd_sha256": "0714b33a19aaf0c80df1fa4267a2acb17fd37b3453814fac962b8d84fe7e3174",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000223.yaml",
+        "bytes": 11001,
+        "sha256": "168d7e7c9e15cbf4221202cdfb6dfda2ea1a72bfe2c1f954bb9bc87fb446da68"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000225_407.npz",
+      "bytes": 1722,
+      "sha256": "04064467f6bebba2be70c0c732e650d3d8eb6b0a094e5af360adfec191af7afc",
+      "raw_pcd_sha256": "80de7707c9808548a8270b0d795d5cb112dce5b5595d129d97bce213748e3859",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000225.yaml",
+        "bytes": 11181,
+        "sha256": "5a7ee758befbb4a58d2008cc8465cbbdb7f22f3564da8a48a03a3d5df17e26ba"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000225_416.npz",
+      "bytes": 1606,
+      "sha256": "b5cc8fe406a9d748e5463f988e7159c486a0fd455ce719747f2943ca590666ef",
+      "raw_pcd_sha256": "e3060e33c08c42bd1c527c8b23595be12c5a59b7f90af3996ac99ce6dc215bc0",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000225.yaml",
+        "bytes": 10923,
+        "sha256": "c8e6608cecd0731768581285a9b88a212f60936224950e9caec21a62c1b1304e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000225_425.npz",
+      "bytes": 1700,
+      "sha256": "495c20758b538dbafca1a243a7b07457dc35e97c359a05b61d16e2b1051e236d",
+      "raw_pcd_sha256": "1b19342a1d3c61a6e4354e4280c84b78a7a297d7022fd59b934106ac2a00b2c3",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000225.yaml",
+        "bytes": 10940,
+        "sha256": "f4a0702c509caef9eeeec115d184328abccee51d458b67c48b8fef48619ef1f1"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000227_407.npz",
+      "bytes": 1661,
+      "sha256": "64579e5edfa259cfcd20de42bc7503d72d7d3b211a2d7dfef36d09193b975747",
+      "raw_pcd_sha256": "8041d81fadc39d82be2f05c2c769a7a953073e01f1f9debe7da77e9a4a336501",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000227.yaml",
+        "bytes": 11106,
+        "sha256": "ebad6028a9ee532f7c04e202a139cfcf88e04089e18018d20327cbe2e586b3ba"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000227_416.npz",
+      "bytes": 1609,
+      "sha256": "14a30ace9e73d0a06d10bf0d5a82f8ca814e365208913352072dd5619518e16a",
+      "raw_pcd_sha256": "74bd7163f7ac751703e006877826a1516c3e0c6d11788cda450214957df07f4e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000227.yaml",
+        "bytes": 10530,
+        "sha256": "fc225874ca995654034ba99eae795e76e09a60d6892f067fb556d45d5dbbfc38"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000227_425.npz",
+      "bytes": 1696,
+      "sha256": "46376554a08b734a217910f380106e162032800479ae0ad58eb09c55bd01122b",
+      "raw_pcd_sha256": "b09cb90204452afec3291d26d73dedb6f1166f4e6271862d77dc7f91903ff544",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000227.yaml",
+        "bytes": 11344,
+        "sha256": "f1ee24313d87490437071fcfae5b94e5d04d7eba8ad1ae6f675d0936e0f90980"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000229_407.npz",
+      "bytes": 1694,
+      "sha256": "825742b97787de36051a48ca87aad698289c56a3dd497382452fe9ef6a02ff4b",
+      "raw_pcd_sha256": "22afd081e0c12d27c65b2b9f584196428a70ae4560702b396ade4b18262d547e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000229.yaml",
+        "bytes": 11145,
+        "sha256": "0e4b88d1edf2077bdcdd047127f93c6c866a0fde26cb828ed070efc40ba67a7f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000229_416.npz",
+      "bytes": 1548,
+      "sha256": "ce1ec2f66370dca22ea9922f110abdef5ee4835f5177ff4d90cf7bc541e1088f",
+      "raw_pcd_sha256": "03f955cf2c08b0d7bf3adb18e1e4675e83a79e5e6e2b1d6f5991b89d73349b95",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000229.yaml",
+        "bytes": 10501,
+        "sha256": "21f8a687f144b416144c43bda451715635e5ef2cd493a9ac0ce4b7b5a6d8f92f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000229_425.npz",
+      "bytes": 1686,
+      "sha256": "1d3676c7d7c3739ce49c0b351d45ea5dc8cebb6b4badd3a051f5f25799d86df1",
+      "raw_pcd_sha256": "2f52c775b2ebf33dd754262beb07ea7dfac7852377d7bcc138ef2759ea0aed3d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000229.yaml",
+        "bytes": 11302,
+        "sha256": "bcf338be5068999a9a5e98ebcd4a46c67b2046a79fe8be3493bfe78d9f6f6124"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000231_407.npz",
+      "bytes": 1694,
+      "sha256": "c2584b8695dd6bf7e7be1bfbf8b54a6af7367d870931d54ddb78653455d2caa8",
+      "raw_pcd_sha256": "a3b7a3710ec1cb6065fdf7103461f85e11c0a499e20b4755844bbb28b2536606",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000231.yaml",
+        "bytes": 11125,
+        "sha256": "759475cc5ae08a1391235ce69c7e13af392a56197ffa4dd8686d571980161806"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000231_416.npz",
+      "bytes": 1584,
+      "sha256": "b89c54f74e95b0c5442ec7b01b4b6c9ecffc898731ff81ed85aaacce402f6099",
+      "raw_pcd_sha256": "52d38055b81c83e5f4921b0269eba9faa76b2ee169ead39563bdd79c8dac1789",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000231.yaml",
+        "bytes": 10149,
+        "sha256": "08928c3d4d01b19f373515bd71d596b51f1bc6b924ae4468f271152313ef97b3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000231_425.npz",
+      "bytes": 1691,
+      "sha256": "45c1a9bce5de932a5e983735ba6cd85b8a8495900caf1bc0519638a1cbd0907d",
+      "raw_pcd_sha256": "3152b1fd3ae76ee020d0a643c5bc18c4dfce66fa7db1790459aa76d1bba85eeb",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000231.yaml",
+        "bytes": 11288,
+        "sha256": "340ab7592ad2a4b7ed1a1cb349b2b6caadb8ef732508847712d2122e7408588a"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000233_407.npz",
+      "bytes": 1693,
+      "sha256": "6274c817705fa95264041270d7138e41f8cc4727e70b5ef4fbe4ad6a6929525c",
+      "raw_pcd_sha256": "106bf9b54fc02fc246ab2e97b28a7d3fbceaae99358522c835631c32c04f7a71",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000233.yaml",
+        "bytes": 11054,
+        "sha256": "183803169f713c1c00a0a5829067d8b1df7b10af7ab8515acbb451f15958a0b3"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000233_416.npz",
+      "bytes": 1581,
+      "sha256": "030189321f098a08c68dc217ef7ccc2a0b0ee4c7de6fa21172c5e032d4fc5b52",
+      "raw_pcd_sha256": "2371f65a4cb97be4d3cf36f0a1132e9a037fd409f56e138a2edbb45293e44a21",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000233.yaml",
+        "bytes": 10075,
+        "sha256": "0c66ec367e5590103f52629cd87eaec363e06b439f2f9c399f1949e5ac3714f9"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000233_425.npz",
+      "bytes": 1698,
+      "sha256": "426ad4aeec5c0326bef70e27edac3597497dbdb4655937d23c9f59851490caa9",
+      "raw_pcd_sha256": "3c631ed57071e3ee3881f39f806b4d8dc8cde5d98dc88eef91d7861e0f659fd7",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000233.yaml",
+        "bytes": 11246,
+        "sha256": "226eb4080a4020a2387030fc75bc14eb012a85d7d2e56881ac91b0b8d5d5cca7"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000235_407.npz",
+      "bytes": 1696,
+      "sha256": "e8e1da6dc5b66e5947cfa1f8ce0cfba6356decd8cba07eb463c32cd13574d1bd",
+      "raw_pcd_sha256": "f9a4bf7fb2a48908a389b6c5653adfd4659abdc34cccdea7b4872aba369e5dde",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000235.yaml",
+        "bytes": 11055,
+        "sha256": "2198a1b014074aafbf1c2cf0f10565d09108ba0d8e7d29358f0f80ee31386cde"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000235_416.npz",
+      "bytes": 1578,
+      "sha256": "3f09a47d73d21c317e7e196a65b991fe99a04186611c80438c84afb3a30e752e",
+      "raw_pcd_sha256": "5f0efc8369fe65bf1abf76aee894e8d40253a4a1cc84ba70d88a6d75af55fab8",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000235.yaml",
+        "bytes": 10032,
+        "sha256": "a6cfbfc75bd8366fdc94403a04ffc83076a71e3cf0ab9076f818c0a2ebb4e7a6"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000235_425.npz",
+      "bytes": 1691,
+      "sha256": "1cc0d1d4dbce85d2bc5b2c71323d5054de9b1134f802ac0fc7b35f7a2e87334c",
+      "raw_pcd_sha256": "d22d793b1abbfa1592ad021aa59d0bb1b8afad515bee5ac1b38e8327e1a30860",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000235.yaml",
+        "bytes": 10812,
+        "sha256": "770df8333d327c1c23a2c412a8de5a8015ba82aa5028c764780ffe301858206e"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000237_407.npz",
+      "bytes": 1722,
+      "sha256": "c11f2926daf0468dc94d0904337bd3612cf58442b89ff88a3fe9c28dbec767aa",
+      "raw_pcd_sha256": "284697fb3ad70c4a266fa410703ce859d26ff8e415c2247e1ae07ff7530ad3b4",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000237.yaml",
+        "bytes": 11105,
+        "sha256": "06826bfc0124c866ea84a29034e2ce077a06796fbe9fec8a2f1cc5a6d24a68a0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000237_416.npz",
+      "bytes": 1572,
+      "sha256": "a67fc0688378b501f349cbddb9e8e22db6251c48be9acdcd0933bcd2585f9fc7",
+      "raw_pcd_sha256": "b6ae8a288301146dcd8e63d9a581d43f8cc8fe79b9c1984721d5df3a4e47dc1b",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000237.yaml",
+        "bytes": 9612,
+        "sha256": "2204c318fe47191614d7378636585a9bf8ac08d9fbb9bca4e8c8b0ef46906522"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000237_425.npz",
+      "bytes": 1696,
+      "sha256": "455e94e0604442fd2dae55356d61fb6efab1dc1efe498a2e88a2f07842373b43",
+      "raw_pcd_sha256": "3174b7a4f339fdc5c603581c4c8007b2ac34138701a9cd62214d92882ffb84a2",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000237.yaml",
+        "bytes": 11179,
+        "sha256": "a7729c77b5c4acc1e8b828b2f6388e4b44a6c00f50496729c60f75633cac8f3d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000239_407.npz",
+      "bytes": 1724,
+      "sha256": "e3d16bc6dfba29c497c2372be410010bf77174aff133c984275659502876c34a",
+      "raw_pcd_sha256": "7365a9b323622d92cf7ce8829ca3df0b706ef0888d3d6b740038eef30a1ece7d",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/407/000239.yaml",
+        "bytes": 11136,
+        "sha256": "b4a268bf107f233f4956129b7f68da636be41ad4d9e00406864ada39b8452c4d"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000239_416.npz",
+      "bytes": 1569,
+      "sha256": "bf4a8e1c51ed14b098a7b4f790a18a964e0b13fe07da75c194d0ae877809c7c6",
+      "raw_pcd_sha256": "480302d2c16ba01a05fedcd3f8ec2da64dd84e9bc03505885c6dd67cf0c3539e",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/416/000239.yaml",
+        "bytes": 9547,
+        "sha256": "8093abc5b999f0ea548b98fdcea8e13e155caac8725fecbac8b382dab65dc95f"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/ToolV2X/docs/evidence/oqea_expanded_test_2026_10_16/detections/2021_08_23_17_07_55/000239_425.npz",
+      "bytes": 1668,
+      "sha256": "4d6a47492dd7cd1e56cffb53004bab8d63c140df7e1e20da0ba820ccd0365c23",
+      "raw_pcd_sha256": "3e0c398f9d238dee38765496fcede59f3a903c7f31beec73f283f63e1a5aeb2f",
+      "checkpoint_sha256": "84e37c565a9af221b925eaaa89dd12e276f062df3974b348e34b0e0215ae9921",
+      "annotation": {
+        "path": "/root/autodl-tmp/ToolV2X_resources/oqea_raw_extension_2026_10_16/OPV2V/train/2021_08_23_17_07_55/425/000239.yaml",
+        "bytes": 11187,
+        "sha256": "e8709e47cf7092e0a62f8988f0f75435f32a08fd590cf94263f7a402e5595b35"
+      }
+    }
+  ],
+  "fov_source": "native PCD FOVEstimator",
+  "echo_supervision": "clean fit GT OBB raw return proxy; no detection ROI"
+}

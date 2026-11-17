@@ -1,0 +1,682 @@
+{
+  "status": "COMPLETE",
+  "jobs": {
+    "d1699f5ab6dafcdc": {
+      "status": "COMPLETE",
+      "job_id": "d1699f5ab6dafcdc",
+      "origin": "report_freeze",
+      "rows": 1612,
+      "scans": 88,
+      "counts": {
+        "query_truth_-1": 811,
+        "query_truth_1": 801
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "a9b3a10f6a97eed1": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 11,
+        "no_report_opportunity": 53
+      },
+      "origin": "report_freeze",
+      "job_id": "a9b3a10f6a97eed1"
+    },
+    "d14371a69054b6c6": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 11,
+        "no_report_opportunity": 53
+      },
+      "origin": "report_freeze",
+      "job_id": "d14371a69054b6c6"
+    },
+    "b5c410b66a3125f2": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 9,
+        "no_report_opportunity": 48,
+        "anchor_missing": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "b5c410b66a3125f2"
+    },
+    "06b0901b84d689b0": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 9,
+        "no_report_opportunity": 48,
+        "anchor_missing": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "06b0901b84d689b0"
+    },
+    "b09efa93b2594a26": {
+      "status": "COMPLETE",
+      "job_id": "b09efa93b2594a26",
+      "origin": "report_freeze",
+      "rows": 1723,
+      "scans": 86,
+      "counts": {
+        "query_truth_-1": 219,
+        "query_truth_1": 1504
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "09d9c1da704f13c4": {
+      "status": "COMPLETE",
+      "job_id": "09d9c1da704f13c4",
+      "origin": "report_freeze",
+      "rows": 1652,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 220,
+        "query_truth_1": 1390,
+        "query_truth_0": 42
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 42
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 34,
+            "query_present": 34,
+            "query_definite_false": 34,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 34,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 35,
+            "output_present": 35,
+            "output_definite_false": 35,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 35,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 6
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "534aa0bfa79ac178": {
+      "status": "COMPLETE",
+      "job_id": "534aa0bfa79ac178",
+      "origin": "report_freeze",
+      "rows": 1655,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 220,
+        "query_truth_1": 1390,
+        "query_truth_0": 45
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 45
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 37,
+            "query_present": 37,
+            "query_definite_false": 37,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 37,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 38,
+            "output_present": 38,
+            "output_definite_false": 38,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 38,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 3
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "b32b261500f50f2d": {
+      "status": "COMPLETE",
+      "job_id": "b32b261500f50f2d",
+      "origin": "report_freeze",
+      "rows": 1651,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 232,
+        "query_truth_1": 1390,
+        "query_truth_0": 29
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 29
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 5,
+            "query_present": 5,
+            "query_definite_false": 0,
+            "query_gt_compatible": 5,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 5,
+            "query_label_unknown_count": 5,
+            "output_count": 6,
+            "output_present": 6,
+            "output_definite_false": 0,
+            "output_gt_compatible": 6,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 6,
+            "output_label_unknown_count": 6,
+            "no_query": 15
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 33,
+            "query_present": 33,
+            "query_definite_false": 29,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 29,
+            "query_label_unknown": 4,
+            "query_label_unknown_count": 4,
+            "output_count": 34,
+            "output_present": 34,
+            "output_definite_false": 30,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 30,
+            "output_label_unknown": 4,
+            "output_label_unknown_count": 4,
+            "no_query": 7
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 0,
+            "query_gt_compatible": 2,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 8,
+            "query_label_unknown_count": 8,
+            "output_count": 8,
+            "output_present": 8,
+            "output_definite_false": 0,
+            "output_gt_compatible": 2,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 8,
+            "output_label_unknown_count": 8,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "411f1a9418d5a5bd": {
+      "status": "COMPLETE",
+      "job_id": "411f1a9418d5a5bd",
+      "origin": "report_freeze",
+      "rows": 1654,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 232,
+        "query_truth_1": 1390,
+        "query_truth_0": 32
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 32
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 36,
+            "query_present": 36,
+            "query_definite_false": 32,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 32,
+            "query_label_unknown": 4,
+            "query_label_unknown_count": 4,
+            "output_count": 37,
+            "output_present": 37,
+            "output_definite_false": 33,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 33,
+            "output_label_unknown": 4,
+            "output_label_unknown_count": 4,
+            "no_query": 4
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 7,
+            "query_present": 7,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 7,
+            "query_label_unknown_count": 7,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 7,
+            "output_label_unknown_count": 7,
+            "no_query": 13
+          }
+        }
+      }
+    },
+    "49dc7286fc074b8d": {
+      "status": "COMPLETE",
+      "job_id": "49dc7286fc074b8d",
+      "origin": "report_freeze",
+      "rows": 4013,
+      "scans": 157,
+      "counts": {
+        "query_truth_-1": 956,
+        "query_truth_1": 3057
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "2cd8d07e71a97123": {
+      "status": "COMPLETE",
+      "job_id": "2cd8d07e71a97123",
+      "origin": "report_freeze",
+      "rows": 2239,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 386,
+        "query_truth_1": 1810,
+        "query_truth_0": 43
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 43
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 34,
+            "query_present": 34,
+            "query_definite_false": 34,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 34,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 35,
+            "output_present": 35,
+            "output_definite_false": 35,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 35,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 6
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 9,
+            "query_present": 9,
+            "query_definite_false": 9,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 9,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 8,
+            "output_present": 8,
+            "output_definite_false": 8,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 8,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 11
+          }
+        }
+      }
+    },
+    "748caf659d7d990e": {
+      "status": "COMPLETE",
+      "job_id": "748caf659d7d990e",
+      "origin": "report_freeze",
+      "rows": 2240,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 386,
+        "query_truth_1": 1810,
+        "query_truth_0": 44
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 44
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 36,
+            "query_present": 36,
+            "query_definite_false": 36,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 36,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 37,
+            "output_present": 37,
+            "output_definite_false": 37,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 37,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 4
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "b07c3e91729e3a15": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "blockage_under_80pct": 12,
+        "GT_compatible": 36,
+        "no_report_opportunity": 16
+      },
+      "origin": "report_freeze",
+      "job_id": "b07c3e91729e3a15"
+    },
+    "eac9b8aa8352ab47": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "no_report_opportunity": 24,
+        "GT_compatible": 33,
+        "blockage_under_80pct": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "eac9b8aa8352ab47"
+    }
+  },
+  "planned_jobs": 15
+}

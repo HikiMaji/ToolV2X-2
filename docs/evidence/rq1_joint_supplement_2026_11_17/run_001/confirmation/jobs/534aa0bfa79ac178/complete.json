@@ -1,0 +1,93 @@
+{
+  "status": "COMPLETE",
+  "job_id": "534aa0bfa79ac178",
+  "origin": "report_freeze",
+  "rows": 1655,
+  "scans": 80,
+  "counts": {
+    "query_truth_-1": 220,
+    "query_truth_1": 1390,
+    "query_truth_0": 45
+  },
+  "attack_constructed": true,
+  "actual_construction": {
+    "public_occlusion_frames": 0,
+    "target_query_rows": 45
+  },
+  "entity_coverage": {
+    "target": {
+      "pre": {
+        "frames": 20,
+        "injected": 0,
+        "gt_available": 20,
+        "query_count": 0,
+        "query_present": 0,
+        "query_definite_false": 0,
+        "query_gt_compatible": 0,
+        "query_role_conflict": 0,
+        "query_role_conflict_count": 0,
+        "query_definite_false_count": 0,
+        "query_label_unknown": 0,
+        "query_label_unknown_count": 0,
+        "output_count": 0,
+        "output_present": 0,
+        "output_definite_false": 0,
+        "output_gt_compatible": 0,
+        "output_role_conflict": 0,
+        "output_role_conflict_count": 0,
+        "output_definite_false_count": 0,
+        "output_label_unknown": 0,
+        "output_label_unknown_count": 0,
+        "no_query": 20
+      },
+      "active": {
+        "frames": 40,
+        "injected": 40,
+        "gt_available": 40,
+        "query_count": 37,
+        "query_present": 37,
+        "query_definite_false": 37,
+        "query_gt_compatible": 0,
+        "query_role_conflict": 0,
+        "query_role_conflict_count": 0,
+        "query_definite_false_count": 37,
+        "query_label_unknown": 0,
+        "query_label_unknown_count": 0,
+        "output_count": 38,
+        "output_present": 38,
+        "output_definite_false": 38,
+        "output_gt_compatible": 0,
+        "output_role_conflict": 0,
+        "output_role_conflict_count": 0,
+        "output_definite_false_count": 38,
+        "output_label_unknown": 0,
+        "output_label_unknown_count": 0,
+        "no_query": 3
+      },
+      "stopped": {
+        "frames": 20,
+        "injected": 0,
+        "gt_available": 20,
+        "query_count": 8,
+        "query_present": 8,
+        "query_definite_false": 8,
+        "query_gt_compatible": 0,
+        "query_role_conflict": 0,
+        "query_role_conflict_count": 0,
+        "query_definite_false_count": 8,
+        "query_label_unknown": 0,
+        "query_label_unknown_count": 0,
+        "output_count": 7,
+        "output_present": 7,
+        "output_definite_false": 7,
+        "output_gt_compatible": 0,
+        "output_role_conflict": 0,
+        "output_role_conflict_count": 0,
+        "output_definite_false_count": 7,
+        "output_label_unknown": 0,
+        "output_label_unknown_count": 0,
+        "no_query": 12
+      }
+    }
+  }
+}

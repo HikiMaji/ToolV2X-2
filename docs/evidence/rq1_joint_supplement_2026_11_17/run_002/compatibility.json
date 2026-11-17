@@ -1,0 +1,22 @@
+{
+  "cal": {
+    "status": "pass",
+    "job_id": "410fec48a6a1488e",
+    "n_rows": 32,
+    "regimes": [
+      "mixed",
+      "F1_only",
+      "F2_only"
+    ]
+  },
+  "eval": {
+    "status": "pass",
+    "job_id": "610c6969cbff68f1",
+    "n_rows": 32,
+    "regimes": [
+      "mixed",
+      "F1_only",
+      "F2_only"
+    ]
+  }
+}

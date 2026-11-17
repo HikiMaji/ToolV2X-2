@@ -9,3 +9,9 @@
 独立执行 `runtime/bin/python -m unittest discover -s tests -p 'test_rq1_joint*.py'`，十二项测试通过，其中包含完整合成 fit/evaluate、严格门限、生命周期重开、非法输入、rho 零恒等、恢复与控制风险。测试不构成真实效果证据。
 
 独立核验脚本已准备在 `docs/evidence/rq1_joint_supplement_2026_11_17/execution/independent_verify.py`，仅用标准库，合成自检通过。它将在产物完成后独立重建正常目标、分数、门限和核心结果。算术重建容差与严格保存分数大于门限的判决分开，不修改生产门限。
+
+## 状态路径修复复审
+
+真实参数拟合及追加准备后，evaluate 尚未成功开始时发现，四个旧校准不可构造任务的状态文件位于 manifest 显式 `status_path`，原读取却假定都在本批 jobs 目录。修订只将该路径读取改为优先使用 manifest，未改数值、门限或数据选择。新增回归覆盖外部不可构造状态的跳过，以及任务标为完成但行缺失时仍报错。独立重跑九项核心测试通过，修订可用于 run_002 技术续跑。run_001 参数及确认产物保留，fit 与 evaluate 代码来源应分开记账。
+
+独立核验本来仅从已输出预测的 job 定位原始行，不受上述四个缺行任务影响。现补充一次 manifest 级盘点，缺行任务同样优先读取显式 `status_path` 并要求 `UNREALIZABLE`，没有扩大到点云或模型重查。

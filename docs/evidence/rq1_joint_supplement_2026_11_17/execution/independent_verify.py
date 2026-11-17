@@ -510,9 +510,12 @@ def verify_domain(config, run, domain, regime, split, model, rho, score_cache):
     clean=[r for r in produced if primary(r,1)]
     if clean:
         ww=weights(clean,1)
-        nll=dict(n_rows=len(clean),weight_sum=math.fsum(ww),
-            independent=math.fsum(w*r['joint_diagnostics']['nll_ind'] for r,w in zip(clean,ww)),
-            joint=math.fsum(w*r['joint_diagnostics']['nll_joint'] for r,w in zip(clean,ww)))
+        if any(not finite(r['joint_diagnostics'][k]) for r in clean for k in ('nll_ind','nll_joint')):
+            nll=dict(status='failure',n_rows=len(clean))
+        else:
+            nll=dict(status='ok',n_rows=len(clean),weight_sum=math.fsum(ww),
+                independent=math.fsum(w*r['joint_diagnostics']['nll_ind'] for r,w in zip(clean,ww)),
+                joint=math.fsum(w*r['joint_diagnostics']['nll_joint'] for r,w in zip(clean,ww)))
         subset(actual['normal_frame_nll'],nll,(domain,regime,split,'normal_nll'))
     for pattern in ('common_00','common_11','common_mixed'):
         selected=[r for r in produced if r['joint_diagnostics'][pattern]]

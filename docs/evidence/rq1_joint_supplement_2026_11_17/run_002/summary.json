@@ -1,0 +1,2107 @@
+{
+  "status": "complete",
+  "meaning": "development_confirmation_not_blind_test",
+  "rho": {
+    "status": "selected",
+    "rho": 0.25,
+    "objectives": {
+      "0.0": 0.7675055478111472,
+      "0.25": 0.7651405565923793,
+      "0.5": 0.7655906931712452,
+      "0.75": 0.7691695700449113,
+      "0.9": 0.7750367225987027
+    },
+    "by_parent": {
+      "train/2021_08_16_22_26_54": {
+        "weight": 0.16666666666666316,
+        "rows": 9259,
+        "informative_frames": 518,
+        "patterns": {
+          "common_mixed": 17,
+          "common_11": 499,
+          "common_00": 2
+        },
+        "objectives": {
+          "0.0": 0.49687457529880913,
+          "0.25": 0.49643815610680603,
+          "0.5": 0.4961736598624573,
+          "0.75": 0.49616326555342394,
+          "0.9": 0.4965239472896396
+        }
+      },
+      "train/2021_08_22_10_10_40": {
+        "weight": 0.16666666666666688,
+        "rows": 606,
+        "informative_frames": 0,
+        "patterns": {},
+        "objectives": {
+          "0.0": 1.1920620138761475,
+          "0.25": 1.1920620138761475,
+          "0.5": 1.1920620138761475,
+          "0.75": 1.1920620138761475,
+          "0.9": 1.1920620138761475
+        }
+      },
+      "train/2021_08_22_10_46_58": {
+        "weight": 0.1666666666666639,
+        "rows": 2529,
+        "informative_frames": 862,
+        "patterns": {
+          "common_11": 681,
+          "common_mixed": 97,
+          "common_00": 84
+        },
+        "objectives": {
+          "0.0": 0.6754025668900273,
+          "0.25": 0.6615450495868431,
+          "0.5": 0.6559676463721554,
+          "0.75": 0.6573202901927341,
+          "0.9": 0.6641336917479143
+        }
+      },
+      "train/2021_08_23_11_22_46": {
+        "weight": 0.16666666666666474,
+        "rows": 1820,
+        "informative_frames": 199,
+        "patterns": {
+          "common_11": 169,
+          "common_mixed": 30
+        },
+        "objectives": {
+          "0.0": 0.5755458101675696,
+          "0.25": 0.5751368187480074,
+          "0.5": 0.5749017614070231,
+          "0.75": 0.5748700705947055,
+          "0.9": 0.5749662061543106
+        }
+      },
+      "train/2021_08_23_22_31_01": {
+        "weight": 0.16666666666666757,
+        "rows": 2417,
+        "informative_frames": 231,
+        "patterns": {
+          "common_mixed": 72,
+          "common_11": 112,
+          "common_00": 47
+        },
+        "objectives": {
+          "0.0": 1.075961478924453,
+          "0.25": 1.072295161398344,
+          "0.5": 1.0744933235459928,
+          "0.75": 1.0839318697275162,
+          "0.9": 1.099657822399055
+        }
+      },
+      "train/2021_08_24_21_29_28": {
+        "weight": 0.16666666666666718,
+        "rows": 970,
+        "informative_frames": 91,
+        "patterns": {
+          "common_mixed": 31,
+          "common_11": 57,
+          "common_00": 3
+        },
+        "objectives": {
+          "0.0": 0.5891868417099261,
+          "0.25": 0.5933661398381685,
+          "0.5": 0.5999457539637326,
+          "0.75": 0.6106699103249873,
+          "0.9": 0.6228766541251908
+        }
+      }
+    },
+    "weight_sum": 1.0,
+    "n_rows": 17601,
+    "coverage": {
+      "patterns": {
+        "common_mixed": 247,
+        "common_11": 1518,
+        "common_00": 136
+      },
+      "informative_parents": [
+        "train/2021_08_16_22_26_54",
+        "train/2021_08_22_10_46_58",
+        "train/2021_08_23_11_22_46",
+        "train/2021_08_23_22_31_01",
+        "train/2021_08_24_21_29_28"
+      ],
+      "informative_epochs": 73,
+      "informative_frames": 1901
+    },
+    "objective_meaning": "training_selection_with_held_parent_D_not_independent_rho_validation",
+    "source_folds": [
+      {
+        "parent": "train/2021_08_16_22_26_54",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f890b6f95d3bc10a/normal.json",
+          "bytes": 14071,
+          "sha256": "6d9e9f32576b8c1ac23897faf443e553348294544811015b7caedb97471a0ba3"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/7f3083bc00e147fb/rows.jsonl.gz",
+          "bytes": 1119290,
+          "sha256": "5e35969a9a23e1b9378ba1a32923846f2f82e3b944eef0bd368abf1559391027"
+        }
+      },
+      {
+        "parent": "train/2021_08_22_10_10_40",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/6f46bcbf2c5cbae2/normal.json",
+          "bytes": 14158,
+          "sha256": "955bd93e310d7768caac8eeb5bd9b28894dc1fa6390ede36f30be048471b4b1a"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/f101ef178468aaf2/rows.jsonl.gz",
+          "bytes": 113264,
+          "sha256": "436d6c0b7ffc1cf127161b1b67a466722da9bb761b96ba92c1780328306cd83d"
+        }
+      },
+      {
+        "parent": "train/2021_08_22_10_46_58",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/634aa433941ce5e0/normal.json",
+          "bytes": 14082,
+          "sha256": "e9e4bf0533d4dc64a14ae922e91b6d8accae24ef28d1db5063b4830f0ad14829"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/c26e6be8af43118d/rows.jsonl.gz",
+          "bytes": 415635,
+          "sha256": "aca6235a96c7fa2843a34e610dde134e266a09856bc9bd9f0acf4fdde793ddb0"
+        }
+      },
+      {
+        "parent": "train/2021_08_23_11_22_46",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/237efaecef94d3e7/normal.json",
+          "bytes": 14072,
+          "sha256": "3379927cf5d678d674478288e0ac58fa05a07ca57e644cf3373d36dd9ead8ce8"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/bb30e22f91b2202b/rows.jsonl.gz",
+          "bytes": 300239,
+          "sha256": "3d9c6760e380e058d9176f29be32351392b644776d3b8ff9721d5f47c5e9864a"
+        }
+      },
+      {
+        "parent": "train/2021_08_23_22_31_01",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/f63b35776d2754fe/normal.json",
+          "bytes": 14080,
+          "sha256": "e5a6d5389a87ed786309f8cde1dec8b87e0dfeb1cf5fd5290752c50ff0cb5e6d"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/866e3aba5f4dff86/rows.jsonl.gz",
+          "bytes": 604034,
+          "sha256": "7841a2d5a446ac538515f6d1f297ef7516b19cd9c6a174ceaa2ae1d89f5e56d1"
+        }
+      },
+      {
+        "parent": "train/2021_08_24_21_29_28",
+        "normal": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_score_revision_2026_11_13/run_001/folds/a25ac47ca85b7da0/normal.json",
+          "bytes": 14085,
+          "sha256": "b344f9bb1f420b2d8a93ac9aa1fe19fe5f3cb7ab8c969bef60549758823d96d5"
+        },
+        "rows_path": {
+          "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_temporal_2026_11_12/run_001/jobs/a07df9510c2cf7e9/rows.jsonl.gz",
+          "bytes": 286122,
+          "sha256": "660016dfec86e4b58e384176db53682a934b7d37b66cab48429ddc7b6d078b92"
+        }
+      }
+    ]
+  },
+  "additional_status": "complete",
+  "additional_task_statuses": {
+    "d1699f5ab6dafcdc": {
+      "status": "COMPLETE",
+      "job_id": "d1699f5ab6dafcdc",
+      "origin": "report_freeze",
+      "rows": 1612,
+      "scans": 88,
+      "counts": {
+        "query_truth_-1": 811,
+        "query_truth_1": 801
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "a9b3a10f6a97eed1": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 11,
+        "no_report_opportunity": 53
+      },
+      "origin": "report_freeze",
+      "job_id": "a9b3a10f6a97eed1"
+    },
+    "d14371a69054b6c6": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 11,
+        "no_report_opportunity": 53
+      },
+      "origin": "report_freeze",
+      "job_id": "d14371a69054b6c6"
+    },
+    "b5c410b66a3125f2": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 9,
+        "no_report_opportunity": 48,
+        "anchor_missing": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "b5c410b66a3125f2"
+    },
+    "06b0901b84d689b0": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "GT_compatible": 9,
+        "no_report_opportunity": 48,
+        "anchor_missing": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "06b0901b84d689b0"
+    },
+    "b09efa93b2594a26": {
+      "status": "COMPLETE",
+      "job_id": "b09efa93b2594a26",
+      "origin": "report_freeze",
+      "rows": 1723,
+      "scans": 86,
+      "counts": {
+        "query_truth_-1": 219,
+        "query_truth_1": 1504
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "09d9c1da704f13c4": {
+      "status": "COMPLETE",
+      "job_id": "09d9c1da704f13c4",
+      "origin": "report_freeze",
+      "rows": 1652,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 220,
+        "query_truth_1": 1390,
+        "query_truth_0": 42
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 42
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 34,
+            "query_present": 34,
+            "query_definite_false": 34,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 34,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 35,
+            "output_present": 35,
+            "output_definite_false": 35,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 35,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 6
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "534aa0bfa79ac178": {
+      "status": "COMPLETE",
+      "job_id": "534aa0bfa79ac178",
+      "origin": "report_freeze",
+      "rows": 1655,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 220,
+        "query_truth_1": 1390,
+        "query_truth_0": 45
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 45
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 37,
+            "query_present": 37,
+            "query_definite_false": 37,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 37,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 38,
+            "output_present": 38,
+            "output_definite_false": 38,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 38,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 3
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "b32b261500f50f2d": {
+      "status": "COMPLETE",
+      "job_id": "b32b261500f50f2d",
+      "origin": "report_freeze",
+      "rows": 1651,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 232,
+        "query_truth_1": 1390,
+        "query_truth_0": 29
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 29
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 5,
+            "query_present": 5,
+            "query_definite_false": 0,
+            "query_gt_compatible": 5,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 5,
+            "query_label_unknown_count": 5,
+            "output_count": 6,
+            "output_present": 6,
+            "output_definite_false": 0,
+            "output_gt_compatible": 6,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 6,
+            "output_label_unknown_count": 6,
+            "no_query": 15
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 33,
+            "query_present": 33,
+            "query_definite_false": 29,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 29,
+            "query_label_unknown": 4,
+            "query_label_unknown_count": 4,
+            "output_count": 34,
+            "output_present": 34,
+            "output_definite_false": 30,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 30,
+            "output_label_unknown": 4,
+            "output_label_unknown_count": 4,
+            "no_query": 7
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 0,
+            "query_gt_compatible": 2,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 8,
+            "query_label_unknown_count": 8,
+            "output_count": 8,
+            "output_present": 8,
+            "output_definite_false": 0,
+            "output_gt_compatible": 2,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 8,
+            "output_label_unknown_count": 8,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "411f1a9418d5a5bd": {
+      "status": "COMPLETE",
+      "job_id": "411f1a9418d5a5bd",
+      "origin": "report_freeze",
+      "rows": 1654,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 232,
+        "query_truth_1": 1390,
+        "query_truth_0": 32
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 32
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 36,
+            "query_present": 36,
+            "query_definite_false": 32,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 32,
+            "query_label_unknown": 4,
+            "query_label_unknown_count": 4,
+            "output_count": 37,
+            "output_present": 37,
+            "output_definite_false": 33,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 33,
+            "output_label_unknown": 4,
+            "output_label_unknown_count": 4,
+            "no_query": 4
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 7,
+            "query_present": 7,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 7,
+            "query_label_unknown_count": 7,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 7,
+            "output_label_unknown_count": 7,
+            "no_query": 13
+          }
+        }
+      }
+    },
+    "49dc7286fc074b8d": {
+      "status": "COMPLETE",
+      "job_id": "49dc7286fc074b8d",
+      "origin": "report_freeze",
+      "rows": 4013,
+      "scans": 157,
+      "counts": {
+        "query_truth_-1": 956,
+        "query_truth_1": 3057
+      },
+      "attack_constructed": false,
+      "actual_construction": {
+        "public_occlusion_frames": 0
+      },
+      "entity_coverage": {}
+    },
+    "2cd8d07e71a97123": {
+      "status": "COMPLETE",
+      "job_id": "2cd8d07e71a97123",
+      "origin": "report_freeze",
+      "rows": 2239,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 386,
+        "query_truth_1": 1810,
+        "query_truth_0": 43
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 43
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 34,
+            "query_present": 34,
+            "query_definite_false": 34,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 34,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 35,
+            "output_present": 35,
+            "output_definite_false": 35,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 35,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 6
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 9,
+            "query_present": 9,
+            "query_definite_false": 9,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 9,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 8,
+            "output_present": 8,
+            "output_definite_false": 8,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 8,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 11
+          }
+        }
+      }
+    },
+    "748caf659d7d990e": {
+      "status": "COMPLETE",
+      "job_id": "748caf659d7d990e",
+      "origin": "report_freeze",
+      "rows": 2240,
+      "scans": 80,
+      "counts": {
+        "query_truth_-1": 386,
+        "query_truth_1": 1810,
+        "query_truth_0": 44
+      },
+      "attack_constructed": true,
+      "actual_construction": {
+        "public_occlusion_frames": 0,
+        "target_query_rows": 44
+      },
+      "entity_coverage": {
+        "target": {
+          "pre": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 0,
+            "query_present": 0,
+            "query_definite_false": 0,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 0,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 0,
+            "output_present": 0,
+            "output_definite_false": 0,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 0,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 20
+          },
+          "active": {
+            "frames": 40,
+            "injected": 40,
+            "gt_available": 40,
+            "query_count": 36,
+            "query_present": 36,
+            "query_definite_false": 36,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 36,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 37,
+            "output_present": 37,
+            "output_definite_false": 37,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 37,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 4
+          },
+          "stopped": {
+            "frames": 20,
+            "injected": 0,
+            "gt_available": 20,
+            "query_count": 8,
+            "query_present": 8,
+            "query_definite_false": 8,
+            "query_gt_compatible": 0,
+            "query_role_conflict": 0,
+            "query_role_conflict_count": 0,
+            "query_definite_false_count": 8,
+            "query_label_unknown": 0,
+            "query_label_unknown_count": 0,
+            "output_count": 7,
+            "output_present": 7,
+            "output_definite_false": 7,
+            "output_gt_compatible": 0,
+            "output_role_conflict": 0,
+            "output_role_conflict_count": 0,
+            "output_definite_false_count": 7,
+            "output_label_unknown": 0,
+            "output_label_unknown_count": 0,
+            "no_query": 12
+          }
+        }
+      }
+    },
+    "b07c3e91729e3a15": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "blockage_under_80pct": 12,
+        "GT_compatible": 36,
+        "no_report_opportunity": 16
+      },
+      "origin": "report_freeze",
+      "job_id": "b07c3e91729e3a15"
+    },
+    "eac9b8aa8352ab47": {
+      "status": "UNREALIZABLE",
+      "reason": "64-or-fewer frozen candidates exhausted",
+      "attempted": 64,
+      "failure_counts": {
+        "no_report_opportunity": 24,
+        "GT_compatible": 33,
+        "blockage_under_80pct": 7
+      },
+      "origin": "report_freeze",
+      "job_id": "eac9b8aa8352ab47"
+    }
+  },
+  "retention": {
+    "existing/mixed": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.014541683598347609,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "pass",
+          "value": 0.004261363636363636,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.017045454545454544,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": 0.0007102272727272929,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "pass",
+          "value": 0.03778409090909085,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "pass",
+          "value": 37,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F1/1": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F1/2": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/1": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/2": {
+          "status": "pass",
+          "value": 4,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 37,
+      "risk_status": {
+        "Cond": "retained",
+        "Group": "retained",
+        "Joint": "retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.013139627108704467,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.004261363636363636,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.017045454545454544,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.011936498786932077,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.004261363636363636,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.017045454545454544,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.014541683598347609,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.004261363636363636,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.017045454545454544,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "supported"
+    },
+    "additional/mixed": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.01971428724594629,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "fail",
+          "value": 0.11647727272727273,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "fail",
+          "value": 0.46590909090909094,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": -0.00284237726098191,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "fail",
+          "value": -0.00284237726098191,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "pass",
+          "value": 2,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F1/1": {
+          "status": "insufficient",
+          "value": 2,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F1/2": {
+          "status": "insufficient",
+          "value": 2,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/1": {
+          "status": "insufficient",
+          "value": 1,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/2": {
+          "status": "insufficient",
+          "value": 1,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 2,
+      "risk_status": {
+        "Cond": "not_retained",
+        "Group": "not_retained",
+        "Joint": "not_retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01971428724594629,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.11647727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.46590909090909094,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01971428724594629,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.11647727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.46590909090909094,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01971428724594629,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.11647727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.46590909090909094,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "limited_by_control_risk"
+    },
+    "existing/F1_only": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.018080022005050215,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "pass",
+          "value": 0.011363636363636364,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.022727272727272728,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": -0.00019861536715470862,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "pass",
+          "value": 0.03678957432482399,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.00039723073430941724,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "pass",
+          "value": 13,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F2/1": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/2": {
+          "status": "pass",
+          "value": 4,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 13,
+      "risk_status": {
+        "Cond": "retained",
+        "Group": "retained",
+        "Joint": "retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01734230778418993,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.011363636363636364,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.022727272727272728,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01689733253380099,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.011363636363636364,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.022727272727272728,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.018080022005050215,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.011363636363636364,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.022727272727272728,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "supported"
+    },
+    "additional/F1_only": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.008136839755474632,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": 0.0,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "fail",
+          "value": -0.0390625,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F2/1": {
+          "status": "insufficient",
+          "value": 1,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F2/2": {
+          "status": "insufficient",
+          "value": 1,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 0,
+      "risk_status": {
+        "Cond": "retained",
+        "Group": "retained",
+        "Joint": "retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.008136839755474632,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.0077426794603242385,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.008136839755474632,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F2/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "supported"
+    },
+    "existing/F2_only": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.018707746615863337,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": -0.00016820174185061543,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "pass",
+          "value": 0.03285095342191735,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.00033640348370123085,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "pass",
+          "value": 15,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F1/1": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F1/2": {
+          "status": "pass",
+          "value": 5,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 15,
+      "risk_status": {
+        "Cond": "retained",
+        "Group": "retained",
+        "Joint": "retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.018222454734692802,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.01776817320832342,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.018707746615863337,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "supported"
+    },
+    "additional/F2_only": {
+      "status": "not_retained",
+      "checks": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.015198072923136368,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "fail",
+          "value": 0.2272727272727273,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "fail",
+          "value": 0.4545454545454546,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "cd_gain_Cond": {
+          "status": "fail",
+          "value": 0.0,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "cd_gain_Group": {
+          "status": "fail",
+          "value": -0.0029069767441860517,
+          "limit": 0.01,
+          "direction": "min"
+        },
+        "true_accept_loss": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "never_accept_increase": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.02,
+          "direction": "max"
+        },
+        "paired_delay": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.5,
+          "direction": "max"
+        },
+        "active": {
+          "status": "pass",
+          "value": 1,
+          "limit": 1,
+          "direction": "min"
+        },
+        "changed_primary": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Cond": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "control_risk_Group": {
+          "status": "fail",
+          "value": 0,
+          "limit": 1,
+          "direction": "min"
+        },
+        "coverage_F1/1": {
+          "status": "insufficient",
+          "value": 2,
+          "limit": 3,
+          "direction": "min"
+        },
+        "coverage_F1/2": {
+          "status": "insufficient",
+          "value": 2,
+          "limit": 3,
+          "direction": "min"
+        }
+      },
+      "n_changed_primary": 0,
+      "risk_status": {
+        "Cond": "not_retained",
+        "Group": "not_retained",
+        "Joint": "not_retained"
+      },
+      "risk_checks": {
+        "Cond": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.015198072923136368,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.2272727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.4545454545454546,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Group": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.015386663210736558,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.2272727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.4545454545454546,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        },
+        "Joint": {
+          "true_reject": {
+            "status": "pass",
+            "value": 0.015198072923136368,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept": {
+            "status": "fail",
+            "value": 0.2272727272727273,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/1": {
+            "status": "pass",
+            "value": 0.0,
+            "limit": 0.05,
+            "direction": "max"
+          },
+          "false_accept_F1/2": {
+            "status": "fail",
+            "value": 0.4545454545454546,
+            "limit": 0.05,
+            "direction": "max"
+          }
+        }
+      },
+      "same_risk_comparison": "limited_by_control_risk"
+    }
+  },
+  "overall_retention": "not_retained"
+}

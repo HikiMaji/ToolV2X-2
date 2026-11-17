@@ -1,0 +1,26 @@
+{
+  "reason": "technical continuation after a one-line external status_path loader correction; no new experiment or refitting",
+  "rho": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001/rho.json",
+    "bytes": 6885,
+    "sha256": "4c21d2272b798cdc583e3ef34e3bf0929a2509bffc565f835692e38d40f70168"
+  },
+  "original_fit_binding": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001/binding.json",
+    "bytes": 18208,
+    "sha256": "2c9e2c259e188c8928512086972c9391855e07774f42ead504e31d354764fca0"
+  },
+  "original_fit_code_commit": "7dcdf28987bdc6c4a079224640b854f9737a2f1c",
+  "confirmation": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001/confirmation",
+  "confirmation_completion": {
+    "path": "/root/autodl-tmp/ToolV2X/docs/evidence/rq1_joint_supplement_2026_11_17/run_001/confirmation/prepare.complete.json",
+    "bytes": 21609,
+    "sha256": "08a9eaf93da65615b22ea6a26bbbf9eaaddffc5a17419f3b4293ea28e3747370"
+  },
+  "evaluate_code_commit": "ec974aaa7274e3e808f0130e3d66b0f256b29faa",
+  "all_bound_inputs_equal": true,
+  "only_changed_production_file": [
+    "/root/autodl-tmp/ToolV2X/.worktrees/rq1-score-revision-2026-11-13/scripts/rq1_joint_supplement.py"
+  ],
+  "model_formula_budget_data_unchanged": true
+}

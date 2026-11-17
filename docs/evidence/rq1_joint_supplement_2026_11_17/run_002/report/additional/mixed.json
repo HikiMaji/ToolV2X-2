@@ -1,0 +1,6648 @@
+{
+  "metrics": {
+    "eval": {
+      "system_query": {
+        "Count": {
+          "true": {
+            "n": 5362,
+            "parents": 3,
+            "epochs": 86,
+            "counts": {
+              "accept": 3168,
+              "unknown": 2054,
+              "reject": 140
+            },
+            "raw": {
+              "accept": 0.5908243192838493,
+              "unknown": 0.3830660201417382,
+              "reject": 0.02610966057441253
+            },
+            "weighted": {
+              "accept": 0.4486970881909684,
+              "unknown": 0.5320789226735875,
+              "reject": 0.019223989135444198
+            }
+          },
+          "false": {
+            "n": 235,
+            "parents": 2,
+            "epochs": 6,
+            "counts": {
+              "accept": 42,
+              "unknown": 105,
+              "reject": 88
+            },
+            "raw": {
+              "accept": 0.17872340425531916,
+              "unknown": 0.44680851063829785,
+              "reject": 0.37446808510638296
+            },
+            "weighted": {
+              "accept": 0.11931818181818182,
+              "unknown": 0.4572968052619215,
+              "reject": 0.4233850129198967
+            }
+          },
+          "correct_definite": 0.4360410505554325
+        },
+        "Cond": {
+          "true": {
+            "n": 5362,
+            "parents": 3,
+            "epochs": 86,
+            "counts": {
+              "accept": 3168,
+              "unknown": 2051,
+              "reject": 143
+            },
+            "raw": {
+              "accept": 0.5908243192838493,
+              "unknown": 0.3825065274151436,
+              "reject": 0.02666915330100709
+            },
+            "weighted": {
+              "accept": 0.4486970881909684,
+              "unknown": 0.5315886245630853,
+              "reject": 0.01971428724594629
+            }
+          },
+          "false": {
+            "n": 235,
+            "parents": 2,
+            "epochs": 6,
+            "counts": {
+              "accept": 41,
+              "unknown": 73,
+              "reject": 121
+            },
+            "raw": {
+              "accept": 0.17446808510638298,
+              "unknown": 0.31063829787234043,
+              "reject": 0.5148936170212766
+            },
+            "weighted": {
+              "accept": 0.11647727272727273,
+              "unknown": 0.3664728682170542,
+              "reject": 0.517049859055673
+            }
+          },
+          "correct_definite": 0.48287347362332067
+        },
+        "Group": {
+          "true": {
+            "n": 5362,
+            "parents": 3,
+            "epochs": 86,
+            "counts": {
+              "accept": 3168,
+              "unknown": 2051,
+              "reject": 143
+            },
+            "raw": {
+              "accept": 0.5908243192838493,
+              "unknown": 0.3825065274151436,
+              "reject": 0.02666915330100709
+            },
+            "weighted": {
+              "accept": 0.4486970881909684,
+              "unknown": 0.5315886245630853,
+              "reject": 0.01971428724594629
+            }
+          },
+          "false": {
+            "n": 235,
+            "parents": 2,
+            "epochs": 6,
+            "counts": {
+              "accept": 41,
+              "unknown": 73,
+              "reject": 121
+            },
+            "raw": {
+              "accept": 0.17446808510638298,
+              "unknown": 0.31063829787234043,
+              "reject": 0.5148936170212766
+            },
+            "weighted": {
+              "accept": 0.11647727272727273,
+              "unknown": 0.3664728682170542,
+              "reject": 0.517049859055673
+            }
+          },
+          "correct_definite": 0.48287347362332067
+        },
+        "Joint": {
+          "true": {
+            "n": 5362,
+            "parents": 3,
+            "epochs": 86,
+            "counts": {
+              "accept": 3168,
+              "unknown": 2051,
+              "reject": 143
+            },
+            "raw": {
+              "accept": 0.5908243192838493,
+              "unknown": 0.3825065274151436,
+              "reject": 0.02666915330100709
+            },
+            "weighted": {
+              "accept": 0.4486970881909684,
+              "unknown": 0.5315886245630853,
+              "reject": 0.01971428724594629
+            }
+          },
+          "false": {
+            "n": 235,
+            "parents": 2,
+            "epochs": 6,
+            "counts": {
+              "accept": 41,
+              "unknown": 75,
+              "reject": 119
+            },
+            "raw": {
+              "accept": 0.17446808510638298,
+              "unknown": 0.3191489361702128,
+              "reject": 0.5063829787234042
+            },
+            "weighted": {
+              "accept": 0.11647727272727273,
+              "unknown": 0.3721576227390181,
+              "reject": 0.5113651045337091
+            }
+          },
+          "correct_definite": 0.48003109636233876
+        }
+      },
+      "coverage": {
+        "n_rows": 18439,
+        "primary_true": 5362,
+        "primary_false": 235,
+        "unknown_labels": 3662,
+        "attack_true_background": 9180,
+        "auxiliary_occluder": 0,
+        "no_query": 293,
+        "newborn": 293,
+        "numeric_failure": 0,
+        "parents": 3,
+        "jobs": 9,
+        "query_epochs": 586,
+        "primary_false_injected_entities": 6,
+        "primary_true_entities": 63
+      },
+      "normal_frame_nll": {
+        "status": "ok",
+        "n_rows": 5362,
+        "weight_sum": 1.0,
+        "independent": 0.5343486164687818,
+        "joint": 0.5345032263686778
+      },
+      "family_k": {
+        "F0/1": {
+          "family": "F0",
+          "k": 1,
+          "status": "not_tested",
+          "cal_status": "observed",
+          "support": {
+            "rows": 0,
+            "parents": 0,
+            "entities": 0,
+            "epochs": 0
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F1/1": {
+          "family": "F1",
+          "k": 1,
+          "status": "observed",
+          "cal_status": "not_calibrated",
+          "support": {
+            "rows": 85,
+            "parents": 2,
+            "entities": 2,
+            "epochs": 2
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 85,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 34,
+                  "reject": 51
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.4,
+                  "reject": 0.6
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.39534883720930236,
+                  "reject": 0.6046511627906977
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 85,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 20,
+                  "reject": 65
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.23529411764705882,
+                  "reject": 0.7647058823529411
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.2325581395348837,
+                  "reject": 0.7674418604651162
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 85,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 20,
+                  "reject": 65
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.23529411764705882,
+                  "reject": 0.7647058823529411
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.2325581395348837,
+                  "reject": 0.7674418604651162
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 85,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 21,
+                  "reject": 64
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.24705882352941178,
+                  "reject": 0.7529411764705882
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.24418604651162787,
+                  "reject": 0.755813953488372
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F1/2": {
+          "family": "F1",
+          "k": 2,
+          "status": "observed",
+          "cal_status": "observed",
+          "support": {
+            "rows": 89,
+            "parents": 2,
+            "entities": 2,
+            "epochs": 2
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 42,
+                  "unknown": 39,
+                  "reject": 8
+                },
+                "raw": {
+                  "accept": 0.47191011235955055,
+                  "unknown": 0.43820224719101125,
+                  "reject": 0.0898876404494382
+                },
+                "weighted": {
+                  "accept": 0.4772727272727273,
+                  "unknown": 0.4338383838383839,
+                  "reject": 0.08888888888888889
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 21,
+                  "reject": 27
+                },
+                "raw": {
+                  "accept": 0.4606741573033708,
+                  "unknown": 0.23595505617977527,
+                  "reject": 0.30337078651685395
+                },
+                "weighted": {
+                  "accept": 0.46590909090909094,
+                  "unknown": 0.23333333333333328,
+                  "reject": 0.3007575757575757
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 21,
+                  "reject": 27
+                },
+                "raw": {
+                  "accept": 0.4606741573033708,
+                  "unknown": 0.23595505617977527,
+                  "reject": 0.30337078651685395
+                },
+                "weighted": {
+                  "accept": 0.46590909090909094,
+                  "unknown": 0.23333333333333328,
+                  "reject": 0.3007575757575757
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 89,
+                "parents": 2,
+                "epochs": 2,
+                "counts": {
+                  "accept": 41,
+                  "unknown": 22,
+                  "reject": 26
+                },
+                "raw": {
+                  "accept": 0.4606741573033708,
+                  "unknown": 0.24719101123595505,
+                  "reject": 0.29213483146067415
+                },
+                "weighted": {
+                  "accept": 0.46590909090909094,
+                  "unknown": 0.24444444444444438,
+                  "reject": 0.2896464646464646
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F1/3": {
+          "family": "F1",
+          "k": 3,
+          "status": "not_tested",
+          "cal_status": "observed",
+          "support": {
+            "rows": 0,
+            "parents": 0,
+            "entities": 0,
+            "epochs": 0
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F2/1": {
+          "family": "F2",
+          "k": 1,
+          "status": "observed",
+          "cal_status": "not_calibrated",
+          "support": {
+            "rows": 29,
+            "parents": 1,
+            "entities": 1,
+            "epochs": 1
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 29,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 29
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999998
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 29,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 29
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999998
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 29,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 29
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999998
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 29,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 29
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999998
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F2/2": {
+          "family": "F2",
+          "k": 2,
+          "status": "observed",
+          "cal_status": "not_calibrated",
+          "support": {
+            "rows": 32,
+            "parents": 1,
+            "entities": 1,
+            "epochs": 1
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 32,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 32,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 32,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 32,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 32,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 32,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 32,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 32,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        },
+        "F2/3": {
+          "family": "F2",
+          "k": 3,
+          "status": "not_tested",
+          "cal_status": "observed",
+          "support": {
+            "rows": 0,
+            "parents": 0,
+            "entities": 0,
+            "epochs": 0
+          },
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            }
+          }
+        }
+      },
+      "first_windows": {
+        "length_1": {
+          "Count": {
+            "true": {
+              "n": 69,
+              "parents": 3,
+              "epochs": 69,
+              "counts": {
+                "accept": 25,
+                "unknown": 42,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.36231884057971014,
+                "unknown": 0.6086956521739131,
+                "reject": 0.028985507246376812
+              },
+              "weighted": {
+                "accept": 0.3377307912412277,
+                "unknown": 0.6407638324146864,
+                "reject": 0.021505376344086023
+              }
+            },
+            "false": {
+              "n": 6,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 1,
+                "unknown": 3,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.35636539562061387
+          },
+          "Cond": {
+            "true": {
+              "n": 69,
+              "parents": 3,
+              "epochs": 69,
+              "counts": {
+                "accept": 25,
+                "unknown": 42,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.36231884057971014,
+                "unknown": 0.6086956521739131,
+                "reject": 0.028985507246376812
+              },
+              "weighted": {
+                "accept": 0.3377307912412277,
+                "unknown": 0.6407638324146864,
+                "reject": 0.021505376344086023
+              }
+            },
+            "false": {
+              "n": 6,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 1,
+                "unknown": 3,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.35636539562061387
+          },
+          "Group": {
+            "true": {
+              "n": 69,
+              "parents": 3,
+              "epochs": 69,
+              "counts": {
+                "accept": 25,
+                "unknown": 42,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.36231884057971014,
+                "unknown": 0.6086956521739131,
+                "reject": 0.028985507246376812
+              },
+              "weighted": {
+                "accept": 0.3377307912412277,
+                "unknown": 0.6407638324146864,
+                "reject": 0.021505376344086023
+              }
+            },
+            "false": {
+              "n": 6,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 1,
+                "unknown": 3,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.35636539562061387
+          },
+          "Joint": {
+            "true": {
+              "n": 69,
+              "parents": 3,
+              "epochs": 69,
+              "counts": {
+                "accept": 25,
+                "unknown": 42,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.36231884057971014,
+                "unknown": 0.6086956521739131,
+                "reject": 0.028985507246376812
+              },
+              "weighted": {
+                "accept": 0.3377307912412277,
+                "unknown": 0.6407638324146864,
+                "reject": 0.021505376344086023
+              }
+            },
+            "false": {
+              "n": 6,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 1,
+                "unknown": 3,
+                "reject": 2
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.35636539562061387
+          }
+        },
+        "length_2_to_9": {
+          "Count": {
+            "true": {
+              "n": 603,
+              "parents": 3,
+              "epochs": 84,
+              "counts": {
+                "accept": 225,
+                "unknown": 357,
+                "reject": 21
+              },
+              "raw": {
+                "accept": 0.373134328358209,
+                "unknown": 0.5920398009950248,
+                "reject": 0.03482587064676617
+              },
+              "weighted": {
+                "accept": 0.35061795200684087,
+                "unknown": 0.6208106194217304,
+                "reject": 0.02857142857142857
+              }
+            },
+            "false": {
+              "n": 48,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 8,
+                "unknown": 24,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.36280897600342044
+          },
+          "Cond": {
+            "true": {
+              "n": 603,
+              "parents": 3,
+              "epochs": 84,
+              "counts": {
+                "accept": 225,
+                "unknown": 357,
+                "reject": 21
+              },
+              "raw": {
+                "accept": 0.373134328358209,
+                "unknown": 0.5920398009950248,
+                "reject": 0.03482587064676617
+              },
+              "weighted": {
+                "accept": 0.35061795200684087,
+                "unknown": 0.6208106194217304,
+                "reject": 0.02857142857142857
+              }
+            },
+            "false": {
+              "n": 48,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 8,
+                "unknown": 24,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.36280897600342044
+          },
+          "Group": {
+            "true": {
+              "n": 603,
+              "parents": 3,
+              "epochs": 84,
+              "counts": {
+                "accept": 225,
+                "unknown": 357,
+                "reject": 21
+              },
+              "raw": {
+                "accept": 0.373134328358209,
+                "unknown": 0.5920398009950248,
+                "reject": 0.03482587064676617
+              },
+              "weighted": {
+                "accept": 0.35061795200684087,
+                "unknown": 0.6208106194217304,
+                "reject": 0.02857142857142857
+              }
+            },
+            "false": {
+              "n": 48,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 8,
+                "unknown": 24,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.36280897600342044
+          },
+          "Joint": {
+            "true": {
+              "n": 603,
+              "parents": 3,
+              "epochs": 84,
+              "counts": {
+                "accept": 225,
+                "unknown": 357,
+                "reject": 21
+              },
+              "raw": {
+                "accept": 0.373134328358209,
+                "unknown": 0.5920398009950248,
+                "reject": 0.03482587064676617
+              },
+              "weighted": {
+                "accept": 0.35061795200684087,
+                "unknown": 0.6208106194217304,
+                "reject": 0.02857142857142857
+              }
+            },
+            "false": {
+              "n": 48,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 8,
+                "unknown": 24,
+                "reject": 16
+              },
+              "raw": {
+                "accept": 0.16666666666666666,
+                "unknown": 0.5,
+                "reject": 0.3333333333333333
+              },
+              "weighted": {
+                "accept": 0.125,
+                "unknown": 0.5,
+                "reject": 0.375
+              }
+            },
+            "correct_definite": 0.36280897600342044
+          }
+        },
+        "length_10": {
+          "Count": {
+            "true": {
+              "n": 4690,
+              "parents": 3,
+              "epochs": 77,
+              "counts": {
+                "accept": 2918,
+                "unknown": 1655,
+                "reject": 117
+              },
+              "raw": {
+                "accept": 0.6221748400852879,
+                "unknown": 0.35287846481876334,
+                "reject": 0.024946695095948827
+              },
+              "weighted": {
+                "accept": 0.4862481125786116,
+                "unknown": 0.4937438394789173,
+                "reject": 0.020008047942471078
+              }
+            },
+            "false": {
+              "n": 181,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 33,
+                "unknown": 78,
+                "reject": 70
+              },
+              "raw": {
+                "accept": 0.18232044198895028,
+                "unknown": 0.430939226519337,
+                "reject": 0.3867403314917127
+              },
+              "weighted": {
+                "accept": 0.11785714285714285,
+                "unknown": 0.44627684407096163,
+                "reject": 0.4358660130718954
+              }
+            },
+            "correct_definite": 0.4610570628252535
+          },
+          "Cond": {
+            "true": {
+              "n": 4690,
+              "parents": 3,
+              "epochs": 77,
+              "counts": {
+                "accept": 2918,
+                "unknown": 1652,
+                "reject": 120
+              },
+              "raw": {
+                "accept": 0.6221748400852879,
+                "unknown": 0.3522388059701492,
+                "reject": 0.0255863539445629
+              },
+              "weighted": {
+                "accept": 0.4862481125786116,
+                "unknown": 0.49303491313828013,
+                "reject": 0.02071697428310827
+              }
+            },
+            "false": {
+              "n": 181,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 32,
+                "unknown": 46,
+                "reject": 103
+              },
+              "raw": {
+                "accept": 0.17679558011049723,
+                "unknown": 0.2541436464088398,
+                "reject": 0.569060773480663
+              },
+              "weighted": {
+                "accept": 0.11428571428571428,
+                "unknown": 0.33210784313725483,
+                "reject": 0.5536064425770307
+              }
+            },
+            "correct_definite": 0.5199272775778212
+          },
+          "Group": {
+            "true": {
+              "n": 4690,
+              "parents": 3,
+              "epochs": 77,
+              "counts": {
+                "accept": 2918,
+                "unknown": 1652,
+                "reject": 120
+              },
+              "raw": {
+                "accept": 0.6221748400852879,
+                "unknown": 0.3522388059701492,
+                "reject": 0.0255863539445629
+              },
+              "weighted": {
+                "accept": 0.4862481125786116,
+                "unknown": 0.49303491313828013,
+                "reject": 0.02071697428310827
+              }
+            },
+            "false": {
+              "n": 181,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 32,
+                "unknown": 46,
+                "reject": 103
+              },
+              "raw": {
+                "accept": 0.17679558011049723,
+                "unknown": 0.2541436464088398,
+                "reject": 0.569060773480663
+              },
+              "weighted": {
+                "accept": 0.11428571428571428,
+                "unknown": 0.33210784313725483,
+                "reject": 0.5536064425770307
+              }
+            },
+            "correct_definite": 0.5199272775778212
+          },
+          "Joint": {
+            "true": {
+              "n": 4690,
+              "parents": 3,
+              "epochs": 77,
+              "counts": {
+                "accept": 2918,
+                "unknown": 1652,
+                "reject": 120
+              },
+              "raw": {
+                "accept": 0.6221748400852879,
+                "unknown": 0.3522388059701492,
+                "reject": 0.0255863539445629
+              },
+              "weighted": {
+                "accept": 0.4862481125786116,
+                "unknown": 0.49303491313828013,
+                "reject": 0.02071697428310827
+              }
+            },
+            "false": {
+              "n": 181,
+              "parents": 2,
+              "epochs": 6,
+              "counts": {
+                "accept": 32,
+                "unknown": 48,
+                "reject": 101
+              },
+              "raw": {
+                "accept": 0.17679558011049723,
+                "unknown": 0.26519337016574585,
+                "reject": 0.5580110497237569
+              },
+              "weighted": {
+                "accept": 0.11428571428571428,
+                "unknown": 0.33925653594771243,
+                "reject": 0.5464577497665732
+              }
+            },
+            "correct_definite": 0.5163529311725924
+          }
+        }
+      },
+      "by_parent": {
+        "train/2021_08_22_09_43_53": {
+          "Count": {
+            "true": {
+              "n": 801,
+              "parents": 1,
+              "epochs": 29,
+              "counts": {
+                "accept": 39,
+                "unknown": 759,
+                "reject": 3
+              },
+              "raw": {
+                "accept": 0.04868913857677903,
+                "unknown": 0.947565543071161,
+                "reject": 0.003745318352059925
+              },
+              "weighted": {
+                "accept": 0.09780328185542164,
+                "unknown": 0.8992410531199477,
+                "reject": 0.0029556650246305416
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Cond": {
+            "true": {
+              "n": 801,
+              "parents": 1,
+              "epochs": 29,
+              "counts": {
+                "accept": 39,
+                "unknown": 756,
+                "reject": 6
+              },
+              "raw": {
+                "accept": 0.04868913857677903,
+                "unknown": 0.9438202247191011,
+                "reject": 0.00749063670411985
+              },
+              "weighted": {
+                "accept": 0.09780328185542164,
+                "unknown": 0.8977701587884415,
+                "reject": 0.004426559356136821
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Group": {
+            "true": {
+              "n": 801,
+              "parents": 1,
+              "epochs": 29,
+              "counts": {
+                "accept": 39,
+                "unknown": 756,
+                "reject": 6
+              },
+              "raw": {
+                "accept": 0.04868913857677903,
+                "unknown": 0.9438202247191011,
+                "reject": 0.00749063670411985
+              },
+              "weighted": {
+                "accept": 0.09780328185542164,
+                "unknown": 0.8977701587884415,
+                "reject": 0.004426559356136821
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          },
+          "Joint": {
+            "true": {
+              "n": 801,
+              "parents": 1,
+              "epochs": 29,
+              "counts": {
+                "accept": 39,
+                "unknown": 756,
+                "reject": 6
+              },
+              "raw": {
+                "accept": 0.04868913857677903,
+                "unknown": 0.9438202247191011,
+                "reject": 0.00749063670411985
+              },
+              "weighted": {
+                "accept": 0.09780328185542164,
+                "unknown": 0.8977701587884415,
+                "reject": 0.004426559356136821
+              }
+            },
+            "false": {
+              "n": 0,
+              "parents": 0,
+              "epochs": 0,
+              "counts": {
+                "accept": 0,
+                "unknown": 0,
+                "reject": 0
+              },
+              "raw": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              },
+              "weighted": {
+                "accept": null,
+                "unknown": null,
+                "reject": null
+              }
+            },
+            "correct_definite": null
+          }
+        },
+        "train/2021_08_23_17_07_55": {
+          "Count": {
+            "true": {
+              "n": 1504,
+              "parents": 1,
+              "epochs": 22,
+              "counts": {
+                "accept": 1176,
+                "unknown": 314,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.7819148936170213,
+                "unknown": 0.20877659574468085,
+                "reject": 0.009308510638297872
+              },
+              "weighted": {
+                "accept": 0.7426730257961526,
+                "unknown": 0.24817100671454656,
+                "reject": 0.009155967489300823
+              }
+            },
+            "false": {
+              "n": 148,
+              "parents": 1,
+              "epochs": 4,
+              "counts": {
+                "accept": 0,
+                "unknown": 69,
+                "reject": 79
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.46621621621621623,
+                "reject": 0.5337837837837838
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.45555555555555555,
+                "reject": 0.5444444444444443
+              }
+            },
+            "correct_definite": 0.6435587351202985
+          },
+          "Cond": {
+            "true": {
+              "n": 1504,
+              "parents": 1,
+              "epochs": 22,
+              "counts": {
+                "accept": 1176,
+                "unknown": 314,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.7819148936170213,
+                "unknown": 0.20877659574468085,
+                "reject": 0.009308510638297872
+              },
+              "weighted": {
+                "accept": 0.7426730257961526,
+                "unknown": 0.24817100671454656,
+                "reject": 0.009155967489300823
+              }
+            },
+            "false": {
+              "n": 148,
+              "parents": 1,
+              "epochs": 4,
+              "counts": {
+                "accept": 0,
+                "unknown": 53,
+                "reject": 95
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.3581081081081081,
+                "reject": 0.6418918918918919
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.36666666666666664,
+                "reject": 0.6333333333333331
+              }
+            },
+            "correct_definite": 0.6880031795647428
+          },
+          "Group": {
+            "true": {
+              "n": 1504,
+              "parents": 1,
+              "epochs": 22,
+              "counts": {
+                "accept": 1176,
+                "unknown": 314,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.7819148936170213,
+                "unknown": 0.20877659574468085,
+                "reject": 0.009308510638297872
+              },
+              "weighted": {
+                "accept": 0.7426730257961526,
+                "unknown": 0.24817100671454656,
+                "reject": 0.009155967489300823
+              }
+            },
+            "false": {
+              "n": 148,
+              "parents": 1,
+              "epochs": 4,
+              "counts": {
+                "accept": 0,
+                "unknown": 53,
+                "reject": 95
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.3581081081081081,
+                "reject": 0.6418918918918919
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.36666666666666664,
+                "reject": 0.6333333333333331
+              }
+            },
+            "correct_definite": 0.6880031795647428
+          },
+          "Joint": {
+            "true": {
+              "n": 1504,
+              "parents": 1,
+              "epochs": 22,
+              "counts": {
+                "accept": 1176,
+                "unknown": 314,
+                "reject": 14
+              },
+              "raw": {
+                "accept": 0.7819148936170213,
+                "unknown": 0.20877659574468085,
+                "reject": 0.009308510638297872
+              },
+              "weighted": {
+                "accept": 0.7426730257961526,
+                "unknown": 0.24817100671454656,
+                "reject": 0.009155967489300823
+              }
+            },
+            "false": {
+              "n": 148,
+              "parents": 1,
+              "epochs": 4,
+              "counts": {
+                "accept": 0,
+                "unknown": 54,
+                "reject": 94
+              },
+              "raw": {
+                "accept": 0.0,
+                "unknown": 0.36486486486486486,
+                "reject": 0.6351351351351351
+              },
+              "weighted": {
+                "accept": 0.0,
+                "unknown": 0.37222222222222223,
+                "reject": 0.6277777777777775
+              }
+            },
+            "correct_definite": 0.685225401786965
+          }
+        },
+        "validate/2021_08_21_17_30_41": {
+          "Count": {
+            "true": {
+              "n": 3057,
+              "parents": 1,
+              "epochs": 35,
+              "counts": {
+                "accept": 1953,
+                "unknown": 981,
+                "reject": 123
+              },
+              "raw": {
+                "accept": 0.6388616290480864,
+                "unknown": 0.3209028459273798,
+                "reject": 0.040235525024533855
+              },
+              "weighted": {
+                "accept": 0.5056149569213308,
+                "unknown": 0.44882470818626796,
+                "reject": 0.045560334892401216
+              }
+            },
+            "false": {
+              "n": 87,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 42,
+                "unknown": 36,
+                "reject": 9
+              },
+              "raw": {
+                "accept": 0.4827586206896552,
+                "unknown": 0.41379310344827586,
+                "reject": 0.10344827586206896
+              },
+              "weighted": {
+                "accept": 0.4772727272727273,
+                "unknown": 0.41807610993657507,
+                "reject": 0.10465116279069767
+              }
+            },
+            "correct_definite": 0.30513305985601424
+          },
+          "Cond": {
+            "true": {
+              "n": 3057,
+              "parents": 1,
+              "epochs": 35,
+              "counts": {
+                "accept": 1953,
+                "unknown": 981,
+                "reject": 123
+              },
+              "raw": {
+                "accept": 0.6388616290480864,
+                "unknown": 0.3209028459273798,
+                "reject": 0.040235525024533855
+              },
+              "weighted": {
+                "accept": 0.5056149569213308,
+                "unknown": 0.44882470818626796,
+                "reject": 0.045560334892401216
+              }
+            },
+            "false": {
+              "n": 87,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 41,
+                "unknown": 20,
+                "reject": 26
+              },
+              "raw": {
+                "accept": 0.47126436781609193,
+                "unknown": 0.22988505747126436,
+                "reject": 0.2988505747126437
+              },
+              "weighted": {
+                "accept": 0.46590909090909094,
+                "unknown": 0.2325581395348837,
+                "reject": 0.30153276955602537
+              }
+            },
+            "correct_definite": 0.4035738632386781
+          },
+          "Group": {
+            "true": {
+              "n": 3057,
+              "parents": 1,
+              "epochs": 35,
+              "counts": {
+                "accept": 1953,
+                "unknown": 981,
+                "reject": 123
+              },
+              "raw": {
+                "accept": 0.6388616290480864,
+                "unknown": 0.3209028459273798,
+                "reject": 0.040235525024533855
+              },
+              "weighted": {
+                "accept": 0.5056149569213308,
+                "unknown": 0.44882470818626796,
+                "reject": 0.045560334892401216
+              }
+            },
+            "false": {
+              "n": 87,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 41,
+                "unknown": 20,
+                "reject": 26
+              },
+              "raw": {
+                "accept": 0.47126436781609193,
+                "unknown": 0.22988505747126436,
+                "reject": 0.2988505747126437
+              },
+              "weighted": {
+                "accept": 0.46590909090909094,
+                "unknown": 0.2325581395348837,
+                "reject": 0.30153276955602537
+              }
+            },
+            "correct_definite": 0.4035738632386781
+          },
+          "Joint": {
+            "true": {
+              "n": 3057,
+              "parents": 1,
+              "epochs": 35,
+              "counts": {
+                "accept": 1953,
+                "unknown": 981,
+                "reject": 123
+              },
+              "raw": {
+                "accept": 0.6388616290480864,
+                "unknown": 0.3209028459273798,
+                "reject": 0.040235525024533855
+              },
+              "weighted": {
+                "accept": 0.5056149569213308,
+                "unknown": 0.44882470818626796,
+                "reject": 0.045560334892401216
+              }
+            },
+            "false": {
+              "n": 87,
+              "parents": 1,
+              "epochs": 2,
+              "counts": {
+                "accept": 41,
+                "unknown": 21,
+                "reject": 25
+              },
+              "raw": {
+                "accept": 0.47126436781609193,
+                "unknown": 0.2413793103448276,
+                "reject": 0.28735632183908044
+              },
+              "weighted": {
+                "accept": 0.46590909090909094,
+                "unknown": 0.24418604651162787,
+                "reject": 0.28990486257928116
+              }
+            },
+            "correct_definite": 0.397759909750306
+          }
+        }
+      },
+      "paired_timeliness": {
+        "Group": {
+          "status": "ok",
+          "candidate": "Group",
+          "baseline": "Cond",
+          "n_primary_true_epochs": 86,
+          "n_parents": 3,
+          "candidate_never": 0.39774593222869087,
+          "baseline_never": 0.39774593222869087,
+          "never_difference": 0.0,
+          "shared_ever_epochs": 50,
+          "weighted_median_delay_difference_seconds": 0.0,
+          "epochs": [
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                28,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                29,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 3.1,
+                "Cond": 3.1
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                30,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                31,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                32,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                33,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                34,
+                1
+              ],
+              "origin": 0.7000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                35,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                36,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                37,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                79,
+                1
+              ],
+              "origin": 3.6,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                80,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                90,
+                1
+              ],
+              "origin": 2.4000000000000004,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                96,
+                1
+              ],
+              "origin": 2.7,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                110,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Group": 3.8000000000000003,
+                "Cond": 3.8000000000000003
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                112,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Group": 3.4000000000000004,
+                "Cond": 3.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                113,
+                1
+              ],
+              "origin": 3.5,
+              "first_accept": {
+                "Group": 3.5,
+                "Cond": 3.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                125,
+                1
+              ],
+              "origin": 4.1000000000000005,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                139,
+                1
+              ],
+              "origin": 5.0,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                140,
+                1
+              ],
+              "origin": 5.6000000000000005,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                145,
+                1
+              ],
+              "origin": 5.4,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                146,
+                1
+              ],
+              "origin": 5.2,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                147,
+                1
+              ],
+              "origin": 5.300000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                157,
+                1
+              ],
+              "origin": 5.300000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                168,
+                1
+              ],
+              "origin": 5.9,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                173,
+                1
+              ],
+              "origin": 6.0,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                207,
+                1
+              ],
+              "origin": 7.9,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                213,
+                1
+              ],
+              "origin": 7.2,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                241,
+                1
+              ],
+              "origin": 8.6,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                35,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                37,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                38,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                39,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                40,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                41,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                42,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                43,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": 7.300000000000001,
+                "Cond": 7.300000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                44,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": 1.2000000000000002,
+                "Cond": 1.2000000000000002
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                45,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                46,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                47,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                48,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 2.4000000000000004,
+                "Cond": 2.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                49,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 1.5,
+                "Cond": 1.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                50,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 3.1,
+                "Cond": 3.1
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                51,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 2.3000000000000003,
+                "Cond": 2.3000000000000003
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                52,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                53,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 4.0,
+                "Cond": 4.0
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                54,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 2.4000000000000004,
+                "Cond": 2.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                55,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 4.800000000000001,
+                "Cond": 4.800000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                56,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": 2.0,
+                "Cond": 2.0
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                98,
+                1
+              ],
+              "origin": 3.3000000000000003,
+              "first_accept": {
+                "Group": 4.5,
+                "Cond": 4.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                60,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                61,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": 2.9000000000000004,
+                "Cond": 2.9000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                62,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                63,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                64,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                65,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                66,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                67,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                68,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                69,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                70,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                71,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                72,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                73,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                74,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.8,
+                "Cond": 0.8
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                75,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                76,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                77,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                78,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Group": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                79,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Group": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                80,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                81,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                82,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                83,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                84,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Group": 1.6,
+                "Cond": 1.6
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                85,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                86,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": 0.8,
+                "Cond": 0.8
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                87,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                95,
+                1
+              ],
+              "origin": 3.0,
+              "first_accept": {
+                "Group": 3.7,
+                "Cond": 3.7
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                99,
+                1
+              ],
+              "origin": 3.0,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                105,
+                1
+              ],
+              "origin": 4.4,
+              "first_accept": {
+                "Group": 8.3,
+                "Cond": 8.3
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                111,
+                1
+              ],
+              "origin": 9.200000000000001,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                114,
+                1
+              ],
+              "origin": 12.0,
+              "first_accept": {
+                "Group": 12.700000000000001,
+                "Cond": 12.700000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                117,
+                1
+              ],
+              "origin": 12.9,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                119,
+                1
+              ],
+              "origin": 13.5,
+              "first_accept": {
+                "Group": null,
+                "Cond": null
+              }
+            }
+          ]
+        },
+        "Joint": {
+          "status": "ok",
+          "candidate": "Joint",
+          "baseline": "Cond",
+          "n_primary_true_epochs": 86,
+          "n_parents": 3,
+          "candidate_never": 0.39774593222869087,
+          "baseline_never": 0.39774593222869087,
+          "never_difference": 0.0,
+          "shared_ever_epochs": 50,
+          "weighted_median_delay_difference_seconds": 0.0,
+          "epochs": [
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                28,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                29,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 3.1,
+                "Cond": 3.1
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                30,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                31,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                32,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                33,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                34,
+                1
+              ],
+              "origin": 0.7000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                35,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                36,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                37,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                79,
+                1
+              ],
+              "origin": 3.6,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                80,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                90,
+                1
+              ],
+              "origin": 2.4000000000000004,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                96,
+                1
+              ],
+              "origin": 2.7,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                110,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Joint": 3.8000000000000003,
+                "Cond": 3.8000000000000003
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                112,
+                1
+              ],
+              "origin": 3.4000000000000004,
+              "first_accept": {
+                "Joint": 3.4000000000000004,
+                "Cond": 3.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                113,
+                1
+              ],
+              "origin": 3.5,
+              "first_accept": {
+                "Joint": 3.5,
+                "Cond": 3.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.08333333333333333
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                125,
+                1
+              ],
+              "origin": 4.1000000000000005,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                139,
+                1
+              ],
+              "origin": 5.0,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                140,
+                1
+              ],
+              "origin": 5.6000000000000005,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                145,
+                1
+              ],
+              "origin": 5.4,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                146,
+                1
+              ],
+              "origin": 5.2,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                147,
+                1
+              ],
+              "origin": 5.300000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                157,
+                1
+              ],
+              "origin": 5.300000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                168,
+                1
+              ],
+              "origin": 5.9,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                173,
+                1
+              ],
+              "origin": 6.0,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                207,
+                1
+              ],
+              "origin": 7.9,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                213,
+                1
+              ],
+              "origin": 7.2,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_22_09_43_53",
+              "epoch": [
+                "d1699f5ab6dafcdc",
+                241,
+                1
+              ],
+              "origin": 8.6,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                35,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                37,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                38,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                39,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                40,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                41,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                42,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                43,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": 7.300000000000001,
+                "Cond": 7.300000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                44,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": 1.2000000000000002,
+                "Cond": 1.2000000000000002
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                45,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                46,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                47,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                48,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 2.4000000000000004,
+                "Cond": 2.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                49,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 1.5,
+                "Cond": 1.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                50,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 3.1,
+                "Cond": 3.1
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                51,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 2.3000000000000003,
+                "Cond": 2.3000000000000003
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                52,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                53,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 4.0,
+                "Cond": 4.0
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                54,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 2.4000000000000004,
+                "Cond": 2.4000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                55,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 4.800000000000001,
+                "Cond": 4.800000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                56,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": 2.0,
+                "Cond": 2.0
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "train/2021_08_23_17_07_55",
+              "epoch": [
+                "b09efa93b2594a26",
+                98,
+                1
+              ],
+              "origin": 3.3000000000000003,
+              "first_accept": {
+                "Joint": 4.5,
+                "Cond": 4.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.015873015873015872
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                60,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                61,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": 2.9000000000000004,
+                "Cond": 2.9000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                62,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                63,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                64,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                65,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                66,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                67,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                68,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                69,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                70,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                71,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                72,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                73,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                74,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.8,
+                "Cond": 0.8
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                75,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                76,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.4,
+                "Cond": 0.4
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                77,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                78,
+                1
+              ],
+              "origin": 0.30000000000000004,
+              "first_accept": {
+                "Joint": 0.30000000000000004,
+                "Cond": 0.30000000000000004
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                79,
+                1
+              ],
+              "origin": 0.4,
+              "first_accept": {
+                "Joint": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                80,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                81,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                82,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                83,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                84,
+                1
+              ],
+              "origin": 0.6000000000000001,
+              "first_accept": {
+                "Joint": 1.6,
+                "Cond": 1.6
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                85,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 0.5,
+                "Cond": 0.5
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                86,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": 0.8,
+                "Cond": 0.8
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                87,
+                1
+              ],
+              "origin": 0.5,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                95,
+                1
+              ],
+              "origin": 3.0,
+              "first_accept": {
+                "Joint": 3.7,
+                "Cond": 3.7
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                99,
+                1
+              ],
+              "origin": 3.0,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                105,
+                1
+              ],
+              "origin": 4.4,
+              "first_accept": {
+                "Joint": 8.3,
+                "Cond": 8.3
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                111,
+                1
+              ],
+              "origin": 9.200000000000001,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                114,
+                1
+              ],
+              "origin": 12.0,
+              "first_accept": {
+                "Joint": 12.700000000000001,
+                "Cond": 12.700000000000001
+              },
+              "delay_difference_seconds": 0.0,
+              "paired_weight": 0.013333333333333334
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                117,
+                1
+              ],
+              "origin": 12.9,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            },
+            {
+              "parent": "validate/2021_08_21_17_30_41",
+              "epoch": [
+                "49dc7286fc074b8d",
+                119,
+                1
+              ],
+              "origin": 13.5,
+              "first_accept": {
+                "Joint": null,
+                "Cond": null
+              }
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "Group": {
+          "0": {
+            "n": 235,
+            "from_method": "Cond",
+            "to_method": "Group",
+            "cells": {
+              "accept/accept": {
+                "n": 41,
+                "weighted": 0.11647727272727267
+              },
+              "accept/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "accept/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/unknown": {
+                "n": 73,
+                "weighted": 0.3664728682170543
+              },
+              "unknown/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/reject": {
+                "n": 121,
+                "weighted": 0.5170498590556731
+              }
+            }
+          },
+          "1": {
+            "n": 5362,
+            "from_method": "Cond",
+            "to_method": "Group",
+            "cells": {
+              "accept/accept": {
+                "n": 3168,
+                "weighted": 0.44869708819096543
+              },
+              "accept/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "accept/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/unknown": {
+                "n": 2051,
+                "weighted": 0.5315886245630883
+              },
+              "unknown/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/reject": {
+                "n": 143,
+                "weighted": 0.019714287245946305
+              }
+            }
+          }
+        },
+        "Joint": {
+          "0": {
+            "n": 235,
+            "from_method": "Cond",
+            "to_method": "Joint",
+            "cells": {
+              "accept/accept": {
+                "n": 41,
+                "weighted": 0.11647727272727267
+              },
+              "accept/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "accept/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/unknown": {
+                "n": 73,
+                "weighted": 0.3664728682170543
+              },
+              "unknown/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/unknown": {
+                "n": 2,
+                "weighted": 0.005684754521963825
+              },
+              "reject/reject": {
+                "n": 119,
+                "weighted": 0.5113651045337093
+              }
+            }
+          },
+          "1": {
+            "n": 5362,
+            "from_method": "Cond",
+            "to_method": "Joint",
+            "cells": {
+              "accept/accept": {
+                "n": 3168,
+                "weighted": 0.44869708819096543
+              },
+              "accept/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "accept/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "unknown/unknown": {
+                "n": 2051,
+                "weighted": 0.5315886245630883
+              },
+              "unknown/reject": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/accept": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/unknown": {
+                "n": 0,
+                "weighted": 0.0
+              },
+              "reject/reject": {
+                "n": 143,
+                "weighted": 0.019714287245946305
+              }
+            }
+          }
+        }
+      },
+      "method_score_coverage": {
+        "Count": {
+          "n_total": 18439,
+          "n_finite": 18439,
+          "states": {
+            "ok": 18439
+          },
+          "numeric_failures": 0,
+          "primary": {
+            "n_total": 5597,
+            "n_missing_score": 0,
+            "n_failed": 0,
+            "states": {
+              "ok": 5597
+            }
+          }
+        },
+        "Cond": {
+          "n_total": 18439,
+          "n_finite": 18439,
+          "states": {
+            "ok": 18439
+          },
+          "numeric_failures": 0,
+          "primary": {
+            "n_total": 5597,
+            "n_missing_score": 0,
+            "n_failed": 0,
+            "states": {
+              "ok": 5597
+            }
+          }
+        },
+        "Group": {
+          "n_total": 18439,
+          "n_finite": 18439,
+          "states": {
+            "ok": 18439
+          },
+          "numeric_failures": 0,
+          "primary": {
+            "n_total": 5597,
+            "n_missing_score": 0,
+            "n_failed": 0,
+            "states": {
+              "ok": 5597
+            }
+          }
+        },
+        "Joint": {
+          "n_total": 18439,
+          "n_finite": 18439,
+          "states": {
+            "ok": 18439
+          },
+          "numeric_failures": 0,
+          "primary": {
+            "n_total": 5597,
+            "n_missing_score": 0,
+            "n_failed": 0,
+            "states": {
+              "ok": 5597
+            }
+          }
+        }
+      },
+      "group_patterns": {
+        "common_00": {
+          "n_windows": 33,
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 5,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 1
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Cond": {
+              "true": {
+                "n": 5,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 1
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Group": {
+              "true": {
+                "n": 5,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 1
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            },
+            "Joint": {
+              "true": {
+                "n": 5,
+                "parents": 1,
+                "epochs": 1,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 4,
+                  "reject": 1
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.8,
+                  "reject": 0.2
+                }
+              },
+              "false": {
+                "n": 0,
+                "parents": 0,
+                "epochs": 0,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                },
+                "weighted": {
+                  "accept": null,
+                  "unknown": null,
+                  "reject": null
+                }
+              },
+              "correct_definite": null
+            }
+          },
+          "transitions": {
+            "Group": {
+              "0": {
+                "n": 0,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              },
+              "1": {
+                "n": 5,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 4,
+                    "weighted": 0.8
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 1,
+                    "weighted": 0.2
+                  }
+                }
+              }
+            },
+            "Joint": {
+              "0": {
+                "n": 0,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              },
+              "1": {
+                "n": 5,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 4,
+                    "weighted": 0.8
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 1,
+                    "weighted": 0.2
+                  }
+                }
+              }
+            }
+          }
+        },
+        "common_11": {
+          "n_windows": 927,
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 222,
+                "parents": 2,
+                "epochs": 13,
+                "counts": {
+                  "accept": 222,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 1.0,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.9999999999999998,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                }
+              },
+              "false": {
+                "n": 28,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 28,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.9999999999999999,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": 0.4999999999999999
+            },
+            "Cond": {
+              "true": {
+                "n": 222,
+                "parents": 2,
+                "epochs": 13,
+                "counts": {
+                  "accept": 222,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 1.0,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.9999999999999998,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                }
+              },
+              "false": {
+                "n": 28,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 28,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.9999999999999999,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": 0.4999999999999999
+            },
+            "Group": {
+              "true": {
+                "n": 222,
+                "parents": 2,
+                "epochs": 13,
+                "counts": {
+                  "accept": 222,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 1.0,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.9999999999999998,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                }
+              },
+              "false": {
+                "n": 28,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 28,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.9999999999999999,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": 0.4999999999999999
+            },
+            "Joint": {
+              "true": {
+                "n": 222,
+                "parents": 2,
+                "epochs": 13,
+                "counts": {
+                  "accept": 222,
+                  "unknown": 0,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 1.0,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.9999999999999998,
+                  "unknown": 0.0,
+                  "reject": 0.0
+                }
+              },
+              "false": {
+                "n": 28,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 28,
+                  "reject": 0
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 1.0,
+                  "reject": 0.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.9999999999999999,
+                  "reject": 0.0
+                }
+              },
+              "correct_definite": 0.4999999999999999
+            }
+          },
+          "transitions": {
+            "Group": {
+              "0": {
+                "n": 28,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 28,
+                    "weighted": 0.9999999999999997
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              },
+              "1": {
+                "n": 222,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 222,
+                    "weighted": 0.9999999999999971
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              }
+            },
+            "Joint": {
+              "0": {
+                "n": 28,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 28,
+                    "weighted": 0.9999999999999997
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              },
+              "1": {
+                "n": 222,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 222,
+                    "weighted": 0.9999999999999971
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "common_mixed": {
+          "n_windows": 572,
+          "metrics": {
+            "Count": {
+              "true": {
+                "n": 157,
+                "parents": 2,
+                "epochs": 5,
+                "counts": {
+                  "accept": 106,
+                  "unknown": 42,
+                  "reject": 9
+                },
+                "raw": {
+                  "accept": 0.6751592356687898,
+                  "unknown": 0.267515923566879,
+                  "reject": 0.05732484076433121
+                },
+                "weighted": {
+                  "accept": 0.7135714285714287,
+                  "unknown": 0.24625,
+                  "reject": 0.040178571428571425
+                }
+              },
+              "false": {
+                "n": 13,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 13
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999999
+                }
+              },
+              "correct_definite": 0.8567857142857143
+            },
+            "Cond": {
+              "true": {
+                "n": 157,
+                "parents": 2,
+                "epochs": 5,
+                "counts": {
+                  "accept": 106,
+                  "unknown": 42,
+                  "reject": 9
+                },
+                "raw": {
+                  "accept": 0.6751592356687898,
+                  "unknown": 0.267515923566879,
+                  "reject": 0.05732484076433121
+                },
+                "weighted": {
+                  "accept": 0.7135714285714287,
+                  "unknown": 0.24625,
+                  "reject": 0.040178571428571425
+                }
+              },
+              "false": {
+                "n": 13,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 13
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999999
+                }
+              },
+              "correct_definite": 0.8567857142857143
+            },
+            "Group": {
+              "true": {
+                "n": 157,
+                "parents": 2,
+                "epochs": 5,
+                "counts": {
+                  "accept": 106,
+                  "unknown": 42,
+                  "reject": 9
+                },
+                "raw": {
+                  "accept": 0.6751592356687898,
+                  "unknown": 0.267515923566879,
+                  "reject": 0.05732484076433121
+                },
+                "weighted": {
+                  "accept": 0.7135714285714287,
+                  "unknown": 0.24625,
+                  "reject": 0.040178571428571425
+                }
+              },
+              "false": {
+                "n": 13,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 13
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999999
+                }
+              },
+              "correct_definite": 0.8567857142857143
+            },
+            "Joint": {
+              "true": {
+                "n": 157,
+                "parents": 2,
+                "epochs": 5,
+                "counts": {
+                  "accept": 106,
+                  "unknown": 42,
+                  "reject": 9
+                },
+                "raw": {
+                  "accept": 0.6751592356687898,
+                  "unknown": 0.267515923566879,
+                  "reject": 0.05732484076433121
+                },
+                "weighted": {
+                  "accept": 0.7135714285714287,
+                  "unknown": 0.24625,
+                  "reject": 0.040178571428571425
+                }
+              },
+              "false": {
+                "n": 13,
+                "parents": 1,
+                "epochs": 2,
+                "counts": {
+                  "accept": 0,
+                  "unknown": 0,
+                  "reject": 13
+                },
+                "raw": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 1.0
+                },
+                "weighted": {
+                  "accept": 0.0,
+                  "unknown": 0.0,
+                  "reject": 0.9999999999999999
+                }
+              },
+              "correct_definite": 0.8567857142857143
+            }
+          },
+          "transitions": {
+            "Group": {
+              "0": {
+                "n": 13,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 13,
+                    "weighted": 0.9999999999999999
+                  }
+                }
+              },
+              "1": {
+                "n": 157,
+                "from_method": "Cond",
+                "to_method": "Group",
+                "cells": {
+                  "accept/accept": {
+                    "n": 106,
+                    "weighted": 0.7135714285714299
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 42,
+                    "weighted": 0.24624999999999977
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 9,
+                    "weighted": 0.04017857142857142
+                  }
+                }
+              }
+            },
+            "Joint": {
+              "0": {
+                "n": 13,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 13,
+                    "weighted": 0.9999999999999999
+                  }
+                }
+              },
+              "1": {
+                "n": 157,
+                "from_method": "Cond",
+                "to_method": "Joint",
+                "cells": {
+                  "accept/accept": {
+                    "n": 106,
+                    "weighted": 0.7135714285714299
+                  },
+                  "accept/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "accept/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "unknown/unknown": {
+                    "n": 42,
+                    "weighted": 0.24624999999999977
+                  },
+                  "unknown/reject": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/accept": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/unknown": {
+                    "n": 0,
+                    "weighted": 0.0
+                  },
+                  "reject/reject": {
+                    "n": 9,
+                    "weighted": 0.04017857142857142
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "calibration": {
+    "branches": {
+      "Group": {
+        "status": "active",
+        "reason": null,
+        "tau": 22.18789801474823,
+        "base_true_reject": 0.043475672703693055,
+        "delta": 0.006524327296306948,
+        "n_clean_primary": 13960,
+        "clean_weight_sum": 1.0,
+        "n_eligible": 4205,
+        "n_candidates": 4205,
+        "added_true_reject_weight": 0.0065176538006396145
+      },
+      "Joint": {
+        "status": "active",
+        "reason": null,
+        "tau": 22.53320446020296,
+        "base_true_reject": 0.043475672703693055,
+        "delta": 0.006524327296306948,
+        "n_clean_primary": 13960,
+        "clean_weight_sum": 1.0,
+        "n_eligible": 4205,
+        "n_candidates": 4205,
+        "added_true_reject_weight": 0.006478619771530993
+      }
+    },
+    "Cond": {
+      "status": "active",
+      "reason": null,
+      "tau": 22.302099285235826,
+      "base_true_reject": 0.043475672703693055,
+      "delta": 0.006524327296306948,
+      "n_clean_primary": 13960,
+      "clean_weight_sum": 1.0,
+      "n_eligible": 4205,
+      "n_candidates": 4205,
+      "added_true_reject_weight": 0.006473800639577186
+    },
+    "source_calibration_sufficient": true,
+    "observed_layers": [
+      [
+        "F0",
+        1
+      ],
+      [
+        "F1",
+        2
+      ],
+      [
+        "F1",
+        3
+      ],
+      [
+        "F2",
+        3
+      ]
+    ],
+    "missing_layers": [
+      [
+        "F1",
+        1
+      ],
+      [
+        "F2",
+        1
+      ],
+      [
+        "F2",
+        2
+      ]
+    ]
+  },
+  "baseline_reproduction": {},
+  "retention": {
+    "status": "not_retained",
+    "checks": {
+      "true_reject": {
+        "status": "pass",
+        "value": 0.01971428724594629,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "false_accept": {
+        "status": "fail",
+        "value": 0.11647727272727273,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "false_accept_F1/1": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "false_accept_F1/2": {
+        "status": "fail",
+        "value": 0.46590909090909094,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "false_accept_F2/1": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "false_accept_F2/2": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.05,
+        "direction": "max"
+      },
+      "cd_gain_Cond": {
+        "status": "fail",
+        "value": -0.00284237726098191,
+        "limit": 0.01,
+        "direction": "min"
+      },
+      "cd_gain_Group": {
+        "status": "fail",
+        "value": -0.00284237726098191,
+        "limit": 0.01,
+        "direction": "min"
+      },
+      "true_accept_loss": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.02,
+        "direction": "max"
+      },
+      "never_accept_increase": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.02,
+        "direction": "max"
+      },
+      "paired_delay": {
+        "status": "pass",
+        "value": 0.0,
+        "limit": 0.5,
+        "direction": "max"
+      },
+      "active": {
+        "status": "pass",
+        "value": 1,
+        "limit": 1,
+        "direction": "min"
+      },
+      "changed_primary": {
+        "status": "pass",
+        "value": 2,
+        "limit": 1,
+        "direction": "min"
+      },
+      "control_risk_Cond": {
+        "status": "fail",
+        "value": 0,
+        "limit": 1,
+        "direction": "min"
+      },
+      "control_risk_Group": {
+        "status": "fail",
+        "value": 0,
+        "limit": 1,
+        "direction": "min"
+      },
+      "coverage_F1/1": {
+        "status": "insufficient",
+        "value": 2,
+        "limit": 3,
+        "direction": "min"
+      },
+      "coverage_F1/2": {
+        "status": "insufficient",
+        "value": 2,
+        "limit": 3,
+        "direction": "min"
+      },
+      "coverage_F2/1": {
+        "status": "insufficient",
+        "value": 1,
+        "limit": 3,
+        "direction": "min"
+      },
+      "coverage_F2/2": {
+        "status": "insufficient",
+        "value": 1,
+        "limit": 3,
+        "direction": "min"
+      }
+    },
+    "n_changed_primary": 2,
+    "risk_status": {
+      "Cond": "not_retained",
+      "Group": "not_retained",
+      "Joint": "not_retained"
+    },
+    "risk_checks": {
+      "Cond": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.01971428724594629,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "fail",
+          "value": 0.11647727272727273,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "fail",
+          "value": 0.46590909090909094,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        }
+      },
+      "Group": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.01971428724594629,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "fail",
+          "value": 0.11647727272727273,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "fail",
+          "value": 0.46590909090909094,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        }
+      },
+      "Joint": {
+        "true_reject": {
+          "status": "pass",
+          "value": 0.01971428724594629,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept": {
+          "status": "fail",
+          "value": 0.11647727272727273,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F1/2": {
+          "status": "fail",
+          "value": 0.46590909090909094,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/1": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        },
+        "false_accept_F2/2": {
+          "status": "pass",
+          "value": 0.0,
+          "limit": 0.05,
+          "direction": "max"
+        }
+      }
+    },
+    "same_risk_comparison": "limited_by_control_risk"
+  }
+}
